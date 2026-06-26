@@ -1,0 +1,98 @@
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+import 'ppp_model.dart';
+export 'ppp_model.dart';
+
+class PppWidget extends StatefulWidget {
+  const PppWidget({
+    super.key,
+    required this.texts,
+    this.healthone,
+  });
+
+  final String? texts;
+  final String? healthone;
+
+  @override
+  State<PppWidget> createState() => _PppWidgetState();
+}
+
+class _PppWidgetState extends State<PppWidget> {
+  late PppModel _model;
+
+  @override
+  void setState(VoidCallback callback) {
+    super.setState(callback);
+    _model.onUpdate();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _model = createModel(context, () => PppModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
+  }
+
+  @override
+  void dispose() {
+    _model.maybeDispose();
+
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    context.watch<FFAppState>();
+
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            FFAppState().next == widget!.healthone
+                ? FlutterFlowTheme.of(context).secondary
+                : FlutterFlowTheme.of(context).secondaryBackground,
+            FFAppState().next == widget!.healthone
+                ? FlutterFlowTheme.of(context).primary
+                : FlutterFlowTheme.of(context).secondaryBackground
+          ],
+          stops: [0.0, 1.0],
+          begin: AlignmentDirectional(1.0, 0.34),
+          end: AlignmentDirectional(-1.0, -0.34),
+        ),
+        borderRadius: BorderRadius.circular(24.0),
+        border: Border.all(
+          color: FFAppState().next == widget!.healthone
+              ? Color(0x00FFFFFF)
+              : Color(0xFFCED4E6),
+          width: 1.0,
+        ),
+      ),
+      child: Align(
+        alignment: AlignmentDirectional(-1.0, 0.0),
+        child: Padding(
+          padding: EdgeInsetsDirectional.fromSTEB(12.0, 20.0, 12.0, 20.0),
+          child: Text(
+            valueOrDefault<String>(
+              widget!.texts,
+              'na',
+            ),
+            style: FlutterFlowTheme.of(context).labelLarge.override(
+                  fontFamily: FlutterFlowTheme.of(context).labelLargeFamily,
+                  color: FFAppState().next == widget!.healthone
+                      ? FlutterFlowTheme.of(context).secondaryBackground
+                      : FlutterFlowTheme.of(context).secondaryText,
+                  letterSpacing: 0.0,
+                  useGoogleFonts:
+                      !FlutterFlowTheme.of(context).labelLargeIsCustom,
+                ),
+          ),
+        ),
+      ),
+    );
+  }
+}

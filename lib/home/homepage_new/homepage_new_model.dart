@@ -1,0 +1,120 @@
+import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import '/home/widget/buttonsheetpatient/buttonsheetpatient_widget.dart';
+import '/home/widget/late/late_widget.dart';
+import '/home/widget/new_job/new_job_widget.dart';
+import '/home/widget/respon_job/respon_job_widget.dart';
+import '/home/widget/successfull/successfull_widget.dart';
+import '/home/widget/tablecalenda/tablecalenda_widget.dart';
+import '/map/widget/navigatebutton/navigatebutton_widget.dart';
+import '/map/widget/pin/pin_widget.dart';
+import '/utils/navbar/navbar_widget.dart';
+import 'dart:ui';
+import '/index.dart';
+import 'homepage_new_widget.dart' show HomepageNewWidget;
+import 'package:badges/badges.dart' as badges;
+import 'package:flutter/gestures.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+import 'package:simple_gradient_text/simple_gradient_text.dart';
+
+class HomepageNewModel extends FlutterFlowModel<HomepageNewWidget> {
+  ///  State fields for stateful widgets in this page.
+
+  // Model for navigatebutton component.
+  late NavigatebuttonModel navigatebuttonModel;
+  // Model for pin component.
+  late PinModel pinModel1;
+  // Model for pin component.
+  late PinModel pinModel2;
+  // Model for pin component.
+  late PinModel pinModel3;
+  // Model for pin component.
+  late PinModel pinModel4;
+  // Model for pin component.
+  late PinModel pinModel5;
+  // Model for pin component.
+  late PinModel pinModel6;
+  // Model for pin component.
+  late PinModel pinModel7;
+  // Model for pin component.
+  late PinModel pinModel8;
+  // Model for New_Job component.
+  late NewJobModel newJobModel1;
+  // Model for New_Job component.
+  late NewJobModel newJobModel2;
+  // Model for New_Job component.
+  late NewJobModel newJobModel3;
+  // Model for respon_job component.
+  late ResponJobModel responJobModel1;
+  // Model for respon_job component.
+  late ResponJobModel responJobModel2;
+  // Model for respon_job component.
+  late ResponJobModel responJobModel3;
+  // Model for late component.
+  late LateModel lateModel1;
+  // Model for late component.
+  late LateModel lateModel2;
+  // Model for successfull component.
+  late SuccessfullModel successfullModel1;
+  // Model for successfull component.
+  late SuccessfullModel successfullModel2;
+  // Model for tablecalenda component.
+  late TablecalendaModel tablecalendaModel;
+  // Model for Navbar component.
+  late NavbarModel navbarModel;
+
+  @override
+  void initState(BuildContext context) {
+    navigatebuttonModel = createModel(context, () => NavigatebuttonModel());
+    pinModel1 = createModel(context, () => PinModel());
+    pinModel2 = createModel(context, () => PinModel());
+    pinModel3 = createModel(context, () => PinModel());
+    pinModel4 = createModel(context, () => PinModel());
+    pinModel5 = createModel(context, () => PinModel());
+    pinModel6 = createModel(context, () => PinModel());
+    pinModel7 = createModel(context, () => PinModel());
+    pinModel8 = createModel(context, () => PinModel());
+    newJobModel1 = createModel(context, () => NewJobModel());
+    newJobModel2 = createModel(context, () => NewJobModel());
+    newJobModel3 = createModel(context, () => NewJobModel());
+    responJobModel1 = createModel(context, () => ResponJobModel());
+    responJobModel2 = createModel(context, () => ResponJobModel());
+    responJobModel3 = createModel(context, () => ResponJobModel());
+    lateModel1 = createModel(context, () => LateModel());
+    lateModel2 = createModel(context, () => LateModel());
+    successfullModel1 = createModel(context, () => SuccessfullModel());
+    successfullModel2 = createModel(context, () => SuccessfullModel());
+    tablecalendaModel = createModel(context, () => TablecalendaModel());
+    navbarModel = createModel(context, () => NavbarModel());
+  }
+
+  @override
+  void dispose() {
+    navigatebuttonModel.dispose();
+    pinModel1.dispose();
+    pinModel2.dispose();
+    pinModel3.dispose();
+    pinModel4.dispose();
+    pinModel5.dispose();
+    pinModel6.dispose();
+    pinModel7.dispose();
+    pinModel8.dispose();
+    newJobModel1.dispose();
+    newJobModel2.dispose();
+    newJobModel3.dispose();
+    responJobModel1.dispose();
+    responJobModel2.dispose();
+    responJobModel3.dispose();
+    lateModel1.dispose();
+    lateModel2.dispose();
+    successfullModel1.dispose();
+    successfullModel2.dispose();
+    tablecalendaModel.dispose();
+    navbarModel.dispose();
+  }
+}
