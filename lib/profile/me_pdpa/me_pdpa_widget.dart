@@ -51,13 +51,14 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primary,
         appBar: AppBar(
           backgroundColor: FlutterFlowTheme.of(context).primary,
+          toolbarHeight: 48.0,
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
             borderRadius: 30.0,
             borderWidth: 1.0,
-            buttonSize: 54.0,
-            icon: Icon(
+            buttonSize: 44.0,
+            icon: const Icon(
               Icons.arrow_back_ios_new_rounded,
               color: Colors.white,
               size: 18.0,
@@ -76,7 +77,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                       !FlutterFlowTheme.of(context).titleMediumIsCustom,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -90,9 +91,9 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                 FlutterFlowTheme.of(context).primaryBackground,
                 FlutterFlowTheme.of(context).secondaryBackground
               ],
-              stops: [0.0, 0.8, 1.0],
-              begin: AlignmentDirectional(0.0, -1.0),
-              end: AlignmentDirectional(0, 1.0),
+              stops: const [0.0, 0.8, 1.0],
+              begin: const AlignmentDirectional(0.0, -1.0),
+              end: const AlignmentDirectional(0, 1.0),
             ),
           ),
           child: Column(
@@ -101,7 +102,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
             children: [
               Expanded(
                 child: ListView(
-                  padding: EdgeInsets.fromLTRB(
+                  padding: const EdgeInsets.fromLTRB(
                     0,
                     0,
                     0,
@@ -113,7 +114,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Text(
                         'Atlas Monitor ให้ความสำคัญกับความเป็นส่วนตัวและความปลอดภัยของข้อมูลสุขภาพผู้ใช้อย่างสูงสุด โดยมุ่งมั่นปกป้องข้อมูลส่วนบุคคลตามมาตรฐานความปลอดภัยขั้นสูง โปรดศึกษาวิธีที่เรารวบรวม ใช้ และคุ้มครองข้อมูลของคุณเพิ่มเติม',
                         textAlign: TextAlign.center,
@@ -131,13 +132,13 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Container(
                         width: 100.0,
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 4.0,
                               color: Color(0x33000000),
@@ -155,8 +156,8 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                           children: [
                             Container(
                               decoration: BoxDecoration(
-                                color: Color(0xFFC2E9E0),
-                                borderRadius: BorderRadius.only(
+                                color: const Color(0xFFC2E9E0),
+                                borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(24.0),
                                   topRight: Radius.circular(24.0),
                                 ),
@@ -167,7 +168,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                 ),
                               ),
                               child: ClipRRect(
-                                borderRadius: BorderRadius.only(
+                                borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(24.0),
                                   topRight: Radius.circular(24.0),
                                 ),
@@ -191,12 +192,12 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                     }
                                   }(),
                                   fit: BoxFit.cover,
-                                  alignment: Alignment(0.0, 0.0),
+                                  alignment: const Alignment(0.0, 0.0),
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.all(16.0),
+                              padding: const EdgeInsets.all(16.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -233,7 +234,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                                   .bodyMediumIsCustom,
                                         ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                             ),
                           ],
@@ -242,13 +243,13 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Container(
                         width: 100.0,
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 4.0,
                               color: Color(0x33000000),
@@ -266,8 +267,8 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                           children: [
                             Container(
                               decoration: BoxDecoration(
-                                color: Color(0xFFFFECEC),
-                                borderRadius: BorderRadius.only(
+                                color: const Color(0xFFFFECEC),
+                                borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(24.0),
                                   topRight: Radius.circular(24.0),
                                 ),
@@ -278,7 +279,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                 ),
                               ),
                               child: ClipRRect(
-                                borderRadius: BorderRadius.only(
+                                borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(24.0),
                                   topRight: Radius.circular(24.0),
                                 ),
@@ -302,12 +303,12 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                     }
                                   }(),
                                   fit: BoxFit.cover,
-                                  alignment: Alignment(0.0, 0.0),
+                                  alignment: const Alignment(0.0, 0.0),
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.all(16.0),
+                              padding: const EdgeInsets.all(16.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -344,7 +345,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                                   .bodyMediumIsCustom,
                                         ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                             ),
                           ],
@@ -353,13 +354,13 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Container(
                         width: 100.0,
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 4.0,
                               color: Color(0x33000000),
@@ -378,7 +379,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                             Container(
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context).tertiary,
-                                borderRadius: BorderRadius.only(
+                                borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(24.0),
                                   topRight: Radius.circular(24.0),
                                 ),
@@ -389,7 +390,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                 ),
                               ),
                               child: ClipRRect(
-                                borderRadius: BorderRadius.only(
+                                borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(24.0),
                                   topRight: Radius.circular(24.0),
                                 ),
@@ -413,12 +414,12 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                     }
                                   }(),
                                   fit: BoxFit.cover,
-                                  alignment: Alignment(0.0, 0.0),
+                                  alignment: const Alignment(0.0, 0.0),
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.all(16.0),
+                              padding: const EdgeInsets.all(16.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -455,7 +456,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                                   .bodyMediumIsCustom,
                                         ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                             ),
                           ],
@@ -464,13 +465,13 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Container(
                         width: 100.0,
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 4.0,
                               color: Color(0x33000000),
@@ -488,8 +489,8 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                           children: [
                             Container(
                               decoration: BoxDecoration(
-                                color: Color(0xFFADD8DF),
-                                borderRadius: BorderRadius.only(
+                                color: const Color(0xFFADD8DF),
+                                borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(24.0),
                                   topRight: Radius.circular(24.0),
                                 ),
@@ -499,7 +500,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                 ),
                               ),
                               child: ClipRRect(
-                                borderRadius: BorderRadius.only(
+                                borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(24.0),
                                   topRight: Radius.circular(24.0),
                                 ),
@@ -523,12 +524,12 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                     }
                                   }(),
                                   fit: BoxFit.cover,
-                                  alignment: Alignment(0.0, 0.0),
+                                  alignment: const Alignment(0.0, 0.0),
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.all(16.0),
+                              padding: const EdgeInsets.all(16.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -565,7 +566,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                                   .bodyMediumIsCustom,
                                         ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                             ),
                           ],
@@ -574,13 +575,13 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Container(
                         width: 100.0,
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 4.0,
                               color: Color(0x33000000),
@@ -602,8 +603,8 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                           children: [
                             Container(
                               decoration: BoxDecoration(
-                                color: Color(0xFFE8D8FD),
-                                borderRadius: BorderRadius.only(
+                                color: const Color(0xFFE8D8FD),
+                                borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(24.0),
                                   topRight: Radius.circular(24.0),
                                 ),
@@ -614,7 +615,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                 ),
                               ),
                               child: ClipRRect(
-                                borderRadius: BorderRadius.only(
+                                borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(24.0),
                                   topRight: Radius.circular(24.0),
                                 ),
@@ -638,12 +639,12 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                     }
                                   }(),
                                   fit: BoxFit.cover,
-                                  alignment: Alignment(0.0, 0.0),
+                                  alignment: const Alignment(0.0, 0.0),
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.all(16.0),
+                              padding: const EdgeInsets.all(16.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -680,7 +681,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                                   .bodyMediumIsCustom,
                                         ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                             ),
                           ],
@@ -689,13 +690,13 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Container(
                         width: 100.0,
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 4.0,
                               color: Color(0x33000000),
@@ -714,7 +715,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                             Container(
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context).tertiary,
-                                borderRadius: BorderRadius.only(
+                                borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(24.0),
                                   topRight: Radius.circular(24.0),
                                 ),
@@ -725,7 +726,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                 ),
                               ),
                               child: ClipRRect(
-                                borderRadius: BorderRadius.only(
+                                borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(24.0),
                                   topRight: Radius.circular(4.0),
                                 ),
@@ -749,12 +750,12 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                     }
                                   }(),
                                   fit: BoxFit.cover,
-                                  alignment: Alignment(0.0, 0.0),
+                                  alignment: const Alignment(0.0, 0.0),
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.all(16.0),
+                              padding: const EdgeInsets.all(16.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -791,7 +792,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                                   .bodyMediumIsCustom,
                                         ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                             ),
                           ],
@@ -800,13 +801,13 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Container(
                         width: 100.0,
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 4.0,
                               color: Color(0x33000000),
@@ -824,8 +825,8 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                           children: [
                             Container(
                               decoration: BoxDecoration(
-                                color: Color(0xFFFFF8EB),
-                                borderRadius: BorderRadius.only(
+                                color: const Color(0xFFFFF8EB),
+                                borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(24.0),
                                   topRight: Radius.circular(24.0),
                                 ),
@@ -836,7 +837,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                 ),
                               ),
                               child: ClipRRect(
-                                borderRadius: BorderRadius.only(
+                                borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(24.0),
                                   topRight: Radius.circular(24.0),
                                 ),
@@ -860,12 +861,12 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                     }
                                   }(),
                                   fit: BoxFit.cover,
-                                  alignment: Alignment(0.0, 0.0),
+                                  alignment: const Alignment(0.0, 0.0),
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.all(16.0),
+                              padding: const EdgeInsets.all(16.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -902,14 +903,14 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                                                   .bodyMediumIsCustom,
                                         ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                             ),
                           ],
                         ),
                       ),
                     ),
-                  ].divide(SizedBox(height: 12.0)),
+                  ].divide(const SizedBox(height: 12.0)),
                 ),
               ),
             ],

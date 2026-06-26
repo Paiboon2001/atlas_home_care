@@ -68,13 +68,14 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primary,
         appBar: AppBar(
+          toolbarHeight: 48.0,
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
             borderRadius: 30.0,
             borderWidth: 1.0,
-            buttonSize: 54.0,
+            buttonSize: 44.0,
             icon: Icon(
               Icons.arrow_back_ios_new_rounded,
               color: Colors.white,

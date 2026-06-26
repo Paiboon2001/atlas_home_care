@@ -168,6 +168,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
       key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).primary,
       appBar: AppBar(
+        toolbarHeight: 48.0,
         backgroundColor: FlutterFlowTheme.of(context).primary,
         automaticallyImplyLeading: false,
         title: Row(

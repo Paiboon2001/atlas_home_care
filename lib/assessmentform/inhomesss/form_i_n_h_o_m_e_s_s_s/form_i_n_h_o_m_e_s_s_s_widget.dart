@@ -764,6 +764,7 @@ class _FormINHOMESSSWidgetState extends State<FormINHOMESSSWidget>
       key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).primary,
       appBar: AppBar(
+        toolbarHeight: 48.0,
         backgroundColor: FlutterFlowTheme.of(context).primary,
         automaticallyImplyLeading: false,
         title: Row(

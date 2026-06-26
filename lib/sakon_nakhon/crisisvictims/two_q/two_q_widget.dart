@@ -175,6 +175,7 @@ class _TwoQWidgetState extends State<TwoQWidget> with TickerProviderStateMixin {
       key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).primary,
       appBar: AppBar(
+        toolbarHeight: 48.0,
         backgroundColor: FlutterFlowTheme.of(context).primary,
         automaticallyImplyLeading: false,
         title: Row(

@@ -47,18 +47,18 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
             elevation: 0,
             insetPadding: EdgeInsets.zero,
             backgroundColor: Colors.transparent,
-            alignment: AlignmentDirectional(0.0, 1.0)
+            alignment: const AlignmentDirectional(0.0, 1.0)
                 .resolve(Directionality.of(context)),
-            child: Container(
+            child: SizedBox(
               width: 180.0,
-              child: SucessWidget(),
+              child: const SucessWidget(),
             ),
           );
         },
       );
 
       await Future.delayed(
-        Duration(
+        const Duration(
           milliseconds: 2000,
         ),
       );
@@ -104,8 +104,8 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                 borderColor: Colors.transparent,
                 borderRadius: 30.0,
                 borderWidth: 1.0,
-                buttonSize: 54.0,
-                icon: Icon(
+                buttonSize: 44.0,
+                icon: const Icon(
                   Icons.arrow_back_ios_new_rounded,
                   color: Colors.white,
                   size: 18.0,
@@ -119,7 +119,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Container(
                       width: 40.0,
                       height: 40.0,
@@ -128,7 +128,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                         shape: BoxShape.circle,
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Icon(
                           Icons.call,
                           color: FlutterFlowTheme.of(context).customColor1,
@@ -138,7 +138,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -156,7 +156,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.location_on_rounded,
                             color: FlutterFlowTheme.of(context).primary,
@@ -167,7 +167,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -186,7 +186,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.medical_services,
                             color: FlutterFlowTheme.of(context).accent2,
@@ -196,23 +196,23 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                       ),
                     ),
                   ),
-                ].divide(SizedBox(width: 12.0)),
+                ].divide(const SizedBox(width: 12.0)),
               ),
-              actions: [],
+              actions: const [],
               flexibleSpace: FlexibleSpaceBar(
                 background: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 50.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 50.0),
                   child: Container(
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).primary,
                       image: DecorationImage(
                         fit: BoxFit.cover,
-                        alignment: AlignmentDirectional(0.0, 1.0),
+                        alignment: const AlignmentDirectional(0.0, 1.0),
                         image: Image.asset(
                           'assets/images/bgappbar.png',
                         ).image,
                       ),
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(24.0),
                         bottomRight: Radius.circular(24.0),
                       ),
@@ -221,21 +221,21 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                 ),
               ),
               bottom: PreferredSize(
-                preferredSize: Size.fromHeight(140.0),
-                child: Container(
+                preferredSize: const Size.fromHeight(140.0),
+                child: SizedBox(
                   height: 150.0,
                   child: Stack(
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(8.0, 12.0, 8.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(8.0, 12.0, 8.0, 0.0),
                         child: Container(
                           width: double.infinity,
                           height: double.infinity,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 4.0,
                                 color: Color(0x33000000),
@@ -248,14 +248,14 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                             borderRadius: BorderRadius.circular(24.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(12.0),
+                            padding: const EdgeInsets.all(12.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       90.0, 0.0, 0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -268,7 +268,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(-1.0, 0.0),
+                                                const AlignmentDirectional(-1.0, 0.0),
                                             child: Text(
                                               'นายทดลอง ทดสอบ',
                                               style: FlutterFlowTheme.of(
@@ -300,14 +300,14 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                   BorderRadius.circular(100.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(8.0, 6.0, 8.0, 6.0),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
                                                 children: [
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.0, 0.0),
                                                     child: Text(
                                                       'อายุ 48 ปี',
@@ -332,15 +332,15 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                           ),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 8.0)),
+                                                ].divide(const SizedBox(width: 8.0)),
                                               ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 12.0)),
+                                        ].divide(const SizedBox(width: 12.0)),
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.0, 0.0),
+                                            const AlignmentDirectional(-1.0, 0.0),
                                         child: Text(
                                           '11xxxxxxxx123',
                                           style: FlutterFlowTheme.of(context)
@@ -360,7 +360,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                               ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 4.0)),
+                                    ].divide(const SizedBox(height: 4.0)),
                                   ),
                                 ),
                                 SingleChildScrollView(
@@ -373,12 +373,12 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                           borderRadius:
                                               BorderRadius.circular(100.0),
                                           border: Border.all(
-                                            color: Color(0x331D8B6B),
+                                            color: const Color(0x331D8B6B),
                                           ),
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   8.0, 6.0, 8.0, 6.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.min,
@@ -391,7 +391,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                 size: 16.0,
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Text(
                                                   'AB',
@@ -417,7 +417,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                       ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 8.0)),
+                                            ].divide(const SizedBox(width: 8.0)),
                                           ),
                                         ),
                                       ),
@@ -426,12 +426,12 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                           borderRadius:
                                               BorderRadius.circular(100.0),
                                           border: Border.all(
-                                            color: Color(0x331D8B6B),
+                                            color: const Color(0x331D8B6B),
                                           ),
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   8.0, 6.0, 8.0, 6.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.min,
@@ -444,7 +444,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                 size: 16.0,
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Text(
                                                   'ชาย',
@@ -470,7 +470,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                       ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 8.0)),
+                                            ].divide(const SizedBox(width: 8.0)),
                                           ),
                                         ),
                                       ),
@@ -479,12 +479,12 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                           borderRadius:
                                               BorderRadius.circular(100.0),
                                           border: Border.all(
-                                            color: Color(0x331D8B6B),
+                                            color: const Color(0x331D8B6B),
                                           ),
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   8.0, 6.0, 8.0, 6.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.min,
@@ -497,7 +497,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                 size: 16.0,
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Text(
                                                   'สูง 175 cm.',
@@ -523,7 +523,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                       ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 8.0)),
+                                            ].divide(const SizedBox(width: 8.0)),
                                           ),
                                         ),
                                       ),
@@ -532,12 +532,12 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                           borderRadius:
                                               BorderRadius.circular(100.0),
                                           border: Border.all(
-                                            color: Color(0x331D8B6B),
+                                            color: const Color(0x331D8B6B),
                                           ),
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   8.0, 6.0, 8.0, 6.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.min,
@@ -550,7 +550,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                 size: 16.0,
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Text(
                                                   '06xxxx1234',
@@ -576,22 +576,22 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                       ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 8.0)),
+                                            ].divide(const SizedBox(width: 8.0)),
                                           ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                 ),
-                              ].divide(SizedBox(height: 8.0)),
+                              ].divide(const SizedBox(height: 8.0)),
                             ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-1.0, -1.3),
+                        alignment: const AlignmentDirectional(-1.0, -1.3),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               32.0, 0.0, 0.0, 0.0),
                           child: Container(
                             width: 70.0,
@@ -605,12 +605,12 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                               ),
                               gradient: LinearGradient(
                                 colors: [
-                                  Color(0xFF4DCBF9),
+                                  const Color(0xFF4DCBF9),
                                   FlutterFlowTheme.of(context).primary
                                 ],
-                                stops: [0.0, 1.0],
-                                begin: AlignmentDirectional(0.0, -1.0),
-                                end: AlignmentDirectional(0, 1.0),
+                                stops: const [0.0, 1.0],
+                                begin: const AlignmentDirectional(0.0, -1.0),
+                                end: const AlignmentDirectional(0, 1.0),
                               ),
                               shape: BoxShape.circle,
                               border: Border.all(
@@ -622,7 +622,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                             child: Stack(
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(1.0, 1.0),
+                                  alignment: const AlignmentDirectional(1.0, 1.0),
                                   child: Container(
                                     width: 24.0,
                                     height: 24.0,
@@ -632,7 +632,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                       shape: BoxShape.circle,
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Icon(
                                         Icons.camera_alt_rounded,
                                         color: FlutterFlowTheme.of(context)
@@ -652,7 +652,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                 ),
               ),
               centerTitle: true,
-              toolbarHeight: 65.0,
+              toolbarHeight: 48.0,
               elevation: 0.0,
             )
           ],
@@ -661,7 +661,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
               return Column(
                 children: [
                   Align(
-                    alignment: Alignment(-1.0, 0),
+                    alignment: const Alignment(-1.0, 0),
                     child: FlutterFlowButtonTabBar(
                       useToggleButtonStyle: false,
                       isScrollable: true,
@@ -686,19 +686,19 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                           ),
                       labelColor:
                           FlutterFlowTheme.of(context).secondaryBackground,
-                      unselectedLabelColor: Color(0xFF3B94DA),
+                      unselectedLabelColor: const Color(0xFF3B94DA),
                       backgroundColor: FlutterFlowTheme.of(context).primary,
-                      unselectedBackgroundColor: Color(0xFFD2EAFF),
+                      unselectedBackgroundColor: const Color(0xFFD2EAFF),
                       borderWidth: 2.0,
                       borderRadius: 100.0,
                       elevation: 0.0,
                       labelPadding:
-                          EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                       buttonMargin:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 8.0, 8.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 8.0, 8.0),
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
-                      tabs: [
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                      tabs: const [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -749,7 +749,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -821,7 +821,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                               .labelMediumIsCustom,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(width: 2.0)),
+                                            ].divide(const SizedBox(width: 2.0)),
                                           ),
                                         ),
                                       ],
@@ -844,7 +844,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                               padding: MediaQuery.viewInsetsOf(
                                                   context),
                                               child:
-                                                  HomeVisitAppointmentWidget(),
+                                                  const HomeVisitAppointmentWidget(),
                                             );
                                           },
                                         ).then((value) => safeSetState(() {}));
@@ -860,13 +860,13 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                         child: Stack(
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   1.0, -1.0),
                                               child: Padding(
-                                                padding: EdgeInsets.all(8.0),
+                                                padding: const EdgeInsets.all(8.0),
                                                 child: ClipRRect(
                                                   borderRadius:
-                                                      BorderRadius.only(),
+                                                      const BorderRadius.only(),
                                                   child: Image.network(
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/k7b8dc1pd59x/ChatGPT_Image_21_เม.ย._2568_15_14_32.png',
                                                     width: 80.0,
@@ -882,11 +882,11 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                   CrossAxisAlignment.start,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 12.0, 0.0, 0.0),
                                                   child: Container(
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       boxShadow: [
                                                         BoxShadow(
                                                           blurRadius: 4.0,
@@ -923,7 +923,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                     ),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   12.0,
                                                                   6.0,
@@ -935,7 +935,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Icon(
                                                               Icons
@@ -961,7 +961,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                                   letterSpacing:
                                                                       0.1,
                                                                   shadows: [
-                                                                    Shadow(
+                                                                    const Shadow(
                                                                       color: Color(
                                                                           0x32737373),
                                                                       offset: Offset(
@@ -977,14 +977,14 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                                           .bodyMediumIsCustom,
                                                                 ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 8.0)),
                                                       ),
                                                     ),
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(16.0, 0.0, 16.0,
                                                           16.0),
                                                   child: Column(
@@ -1010,7 +1010,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                                   fontFamily: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMediumFamily,
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFFE35832),
                                                                   letterSpacing:
                                                                       0.0,
@@ -1023,7 +1023,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                                           .bodyMediumIsCustom,
                                                                 ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 8.0)),
                                                       ),
                                                       Text(
@@ -1051,20 +1051,20 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 8.0)),
+                                                        const SizedBox(height: 8.0)),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 12.0)),
+                                              ].divide(const SizedBox(height: 12.0)),
                                             ),
                                           ],
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 12.0)),
+                                  ].divide(const SizedBox(height: 12.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -1097,12 +1097,12 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(1.0, -1.0),
+                                                const AlignmentDirectional(1.0, -1.0),
                                             child: Padding(
-                                              padding: EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(8.0),
                                               child: ClipRRect(
                                                 borderRadius:
-                                                    BorderRadius.only(),
+                                                    const BorderRadius.only(),
                                                 child: Image.network(
                                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/k7b8dc1pd59x/ChatGPT_Image_21_เม.ย._2568_15_14_32.png',
                                                   width: 80.0,
@@ -1118,11 +1118,11 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 12.0, 0.0, 0.0),
                                                 child: Container(
-                                                  decoration: BoxDecoration(
+                                                  decoration: const BoxDecoration(
                                                     boxShadow: [
                                                       BoxShadow(
                                                         blurRadius: 4.0,
@@ -1157,7 +1157,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(12.0, 6.0,
                                                                 12.0, 6.0),
                                                     child: Row(
@@ -1166,7 +1166,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                       children: [
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Icon(
                                                             Icons
@@ -1192,7 +1192,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                                 letterSpacing:
                                                                     0.1,
                                                                 shadows: [
-                                                                  Shadow(
+                                                                  const Shadow(
                                                                     color: Color(
                                                                         0x34737373),
                                                                     offset:
@@ -1210,13 +1210,13 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                               ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
                                                   ),
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 16.0),
                                                 child: Column(
@@ -1241,7 +1241,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                                 fontFamily: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMediumFamily,
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF6F57F4),
                                                                 letterSpacing:
                                                                     0.0,
@@ -1255,7 +1255,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                               ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
                                                     Text(
                                                       'โรคเบาหวาน',
@@ -1280,10 +1280,10 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 12.0)),
+                                            ].divide(const SizedBox(height: 12.0)),
                                           ),
                                         ],
                                       ),
@@ -1300,12 +1300,12 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(1.0, -1.0),
+                                                const AlignmentDirectional(1.0, -1.0),
                                             child: Padding(
-                                              padding: EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(8.0),
                                               child: ClipRRect(
                                                 borderRadius:
-                                                    BorderRadius.only(),
+                                                    const BorderRadius.only(),
                                                 child: Image.network(
                                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/k7b8dc1pd59x/ChatGPT_Image_21_เม.ย._2568_15_14_32.png',
                                                   width: 80.0,
@@ -1321,12 +1321,12 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 12.0, 0.0, 0.0),
                                                 child: Container(
                                                   decoration: BoxDecoration(
-                                                    boxShadow: [
+                                                    boxShadow: const [
                                                       BoxShadow(
                                                         blurRadius: 4.0,
                                                         color:
@@ -1339,20 +1339,20 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                     ],
                                                     gradient: LinearGradient(
                                                       colors: [
-                                                        Color(0xFF59C0EF),
+                                                        const Color(0xFF59C0EF),
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .info
                                                       ],
-                                                      stops: [0.0, 1.0],
+                                                      stops: const [0.0, 1.0],
                                                       begin:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               1.0, -1.0),
-                                                      end: AlignmentDirectional(
+                                                      end: const AlignmentDirectional(
                                                           -1.0, 1.0),
                                                     ),
                                                     borderRadius:
-                                                        BorderRadius.only(
+                                                        const BorderRadius.only(
                                                       topRight: Radius.circular(
                                                           100.0),
                                                       bottomRight:
@@ -1362,7 +1362,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(12.0, 6.0,
                                                                 12.0, 6.0),
                                                     child: Row(
@@ -1371,7 +1371,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                       children: [
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Icon(
                                                             Icons
@@ -1397,7 +1397,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                                 letterSpacing:
                                                                     0.1,
                                                                 shadows: [
-                                                                  Shadow(
+                                                                  const Shadow(
                                                                     color: Color(
                                                                         0x34737373),
                                                                     offset:
@@ -1415,13 +1415,13 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                               ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
                                                   ),
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 16.0),
                                                 child: Column(
@@ -1460,7 +1460,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                               ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
                                                     Text(
                                                       'โรคเบาหวาน',
@@ -1485,21 +1485,21 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 12.0)),
+                                            ].divide(const SizedBox(height: 12.0)),
                                           ),
                                         ],
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 12.0)),
+                                  ].divide(const SizedBox(height: 12.0)),
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(height: 12.0))
-                                .addToStart(SizedBox(height: 8.0))
-                                .addToEnd(SizedBox(height: 24.0)),
+                                .divide(const SizedBox(height: 12.0))
+                                .addToStart(const SizedBox(height: 8.0))
+                                .addToEnd(const SizedBox(height: 24.0)),
                           ),
                         ),
                         SingleChildScrollView(
@@ -1508,7 +1508,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Container(
                                   width: double.infinity,
@@ -1518,13 +1518,13 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                     borderRadius: BorderRadius.circular(24.0),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(16.0),
+                                    padding: const EdgeInsets.all(16.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, 0.0),
+                                              const AlignmentDirectional(-1.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.min,
                                             children: [
@@ -1577,17 +1577,17 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                               context)
                                                           .customColor1
                                                     ],
-                                                    stops: [0.0, 1.0],
-                                                    begin: AlignmentDirectional(
+                                                    stops: const [0.0, 1.0],
+                                                    begin: const AlignmentDirectional(
                                                         0.0, -1.0),
-                                                    end: AlignmentDirectional(
+                                                    end: const AlignmentDirectional(
                                                         0, 1.0),
                                                   ),
                                                   shape: BoxShape.circle,
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: FaIcon(
                                                     FontAwesomeIcons.flask,
@@ -1622,7 +1622,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                               .bodyMediumIsCustom,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(width: 8.0)),
+                                            ].divide(const SizedBox(width: 8.0)),
                                           ),
                                         ),
                                       ],
@@ -1631,7 +1631,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Container(
                                   width: double.infinity,
@@ -1641,13 +1641,13 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                     borderRadius: BorderRadius.circular(24.0),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(16.0),
+                                    padding: const EdgeInsets.all(16.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, 0.0),
+                                              const AlignmentDirectional(-1.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.min,
                                             children: [
@@ -1700,17 +1700,17 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                               context)
                                                           .customColor3
                                                     ],
-                                                    stops: [0.0, 1.0],
-                                                    begin: AlignmentDirectional(
+                                                    stops: const [0.0, 1.0],
+                                                    begin: const AlignmentDirectional(
                                                         0.56, -1.0),
-                                                    end: AlignmentDirectional(
+                                                    end: const AlignmentDirectional(
                                                         -0.56, 1.0),
                                                   ),
                                                   shape: BoxShape.circle,
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Icon(
                                                     Icons.medication_rounded,
@@ -1745,7 +1745,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                               .bodyMediumIsCustom,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(width: 8.0)),
+                                            ].divide(const SizedBox(width: 8.0)),
                                           ),
                                         ),
                                         Column(
@@ -1757,12 +1757,12 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                           children: [
                                             Container(
                                               decoration: BoxDecoration(
-                                                color: Color(0x80F5F7FA),
+                                                color: const Color(0x80F5F7FA),
                                                 borderRadius:
                                                     BorderRadius.circular(16.0),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsets.all(12.0),
+                                                padding: const EdgeInsets.all(12.0),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -1810,19 +1810,19 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                             gradient:
                                                                 LinearGradient(
                                                               colors: [
-                                                                Color(
+                                                                const Color(
                                                                     0xFFF3C572),
                                                                 FlutterFlowTheme.of(
                                                                         context)
                                                                     .warning
                                                               ],
-                                                              stops: [0.0, 1.0],
+                                                              stops: const [0.0, 1.0],
                                                               begin:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       1.0,
                                                                       -1.0),
                                                               end:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       -1.0,
                                                                       1.0),
                                                             ),
@@ -1833,11 +1833,11 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           4.0,
@@ -1872,7 +1872,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                           ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
                                                     Text(
                                                       'ผื่น, บวม, คัน, หายใจลำบาก',
@@ -1892,18 +1892,18 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
                                             Container(
                                               decoration: BoxDecoration(
-                                                color: Color(0x80F5F7FA),
+                                                color: const Color(0x80F5F7FA),
                                                 borderRadius:
                                                     BorderRadius.circular(16.0),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsets.all(12.0),
+                                                padding: const EdgeInsets.all(12.0),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -1951,19 +1951,19 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                             gradient:
                                                                 LinearGradient(
                                                               colors: [
-                                                                Color(
+                                                                const Color(
                                                                     0xFFFF9090),
                                                                 FlutterFlowTheme.of(
                                                                         context)
                                                                     .error
                                                               ],
-                                                              stops: [0.0, 1.0],
+                                                              stops: const [0.0, 1.0],
                                                               begin:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       1.0,
                                                                       -1.0),
                                                               end:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       -1.0,
                                                                       1.0),
                                                             ),
@@ -1974,11 +1974,11 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           4.0,
@@ -2013,7 +2013,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                           ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
                                                     Text(
                                                       'ผื่นแดง, คัน, มีไข้, อาจมีอาการทางระบบหายใจ',
@@ -2033,19 +2033,19 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(height: 12.0)),
+                                          ].divide(const SizedBox(height: 12.0)),
                                         ),
-                                      ].divide(SizedBox(height: 12.0)),
+                                      ].divide(const SizedBox(height: 12.0)),
                                     ),
                                   ),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Container(
                                   width: double.infinity,
@@ -2055,7 +2055,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                     borderRadius: BorderRadius.circular(24.0),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(16.0),
+                                    padding: const EdgeInsets.all(16.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -2069,7 +2069,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                               CrossAxisAlignment.start,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.0, 0.0),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -2119,7 +2119,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                         return 32.0;
                                                       }
                                                     }(),
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       gradient: LinearGradient(
                                                         colors: [
                                                           Color(0xFFFFBB7B),
@@ -2137,7 +2137,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                     ),
                                                     child: Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: Icon(
                                                         Icons.coronavirus,
@@ -2160,7 +2160,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                                       context)
                                                                   .bodyMediumFamily,
                                                           color:
-                                                              Color(0xFFFF6C00),
+                                                              const Color(0xFFFF6C00),
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w500,
@@ -2170,7 +2170,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                                   .bodyMediumIsCustom,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 8.0)),
+                                                ].divide(const SizedBox(width: 8.0)),
                                               ),
                                             ),
                                           ],
@@ -2184,12 +2184,12 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                           children: [
                                             Container(
                                               decoration: BoxDecoration(
-                                                color: Color(0x80F5F7FA),
+                                                color: const Color(0x80F5F7FA),
                                                 borderRadius:
                                                     BorderRadius.circular(16.0),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsets.all(12.0),
+                                                padding: const EdgeInsets.all(12.0),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -2216,7 +2216,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                                     fontFamily:
                                                                         FlutterFlowTheme.of(context)
                                                                             .bodyMediumFamily,
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0xFFFF6C00),
                                                                     letterSpacing:
                                                                         0.0,
@@ -2236,19 +2236,19 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                             gradient:
                                                                 LinearGradient(
                                                               colors: [
-                                                                Color(
+                                                                const Color(
                                                                     0xFF5AD660),
                                                                 FlutterFlowTheme.of(
                                                                         context)
                                                                     .success
                                                               ],
-                                                              stops: [0.0, 1.0],
+                                                              stops: const [0.0, 1.0],
                                                               begin:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       1.0,
                                                                       -1.0),
                                                               end:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       -1.0,
                                                                       1.0),
                                                             ),
@@ -2259,11 +2259,11 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           4.0,
@@ -2298,7 +2298,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                           ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
                                                     Text(
                                                       'วันที่เริ่มเป็น : 15/12/2565',
@@ -2318,18 +2318,18 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
                                             Container(
                                               decoration: BoxDecoration(
-                                                color: Color(0x80F5F7FA),
+                                                color: const Color(0x80F5F7FA),
                                                 borderRadius:
                                                     BorderRadius.circular(16.0),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsets.all(12.0),
+                                                padding: const EdgeInsets.all(12.0),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -2356,7 +2356,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                                     fontFamily:
                                                                         FlutterFlowTheme.of(context)
                                                                             .bodyMediumFamily,
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0xFFFF6C00),
                                                                     letterSpacing:
                                                                         0.0,
@@ -2376,19 +2376,19 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                             gradient:
                                                                 LinearGradient(
                                                               colors: [
-                                                                Color(
+                                                                const Color(
                                                                     0xFF5AD660),
                                                                 FlutterFlowTheme.of(
                                                                         context)
                                                                     .success
                                                               ],
-                                                              stops: [0.0, 1.0],
+                                                              stops: const [0.0, 1.0],
                                                               begin:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       1.0,
                                                                       -1.0),
                                                               end:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       -1.0,
                                                                       1.0),
                                                             ),
@@ -2399,11 +2399,11 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           4.0,
@@ -2438,7 +2438,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                           ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
                                                     Text(
                                                       'วันที่เริ่มเป็น : 15/12/2565',
@@ -2458,21 +2458,21 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(height: 12.0)),
+                                          ].divide(const SizedBox(height: 12.0)),
                                         ),
-                                      ].divide(SizedBox(height: 12.0)),
+                                      ].divide(const SizedBox(height: 12.0)),
                                     ),
                                   ),
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(height: 12.0))
-                                .addToStart(SizedBox(height: 8.0))
-                                .addToEnd(SizedBox(height: 24.0)),
+                                .divide(const SizedBox(height: 12.0))
+                                .addToStart(const SizedBox(height: 8.0))
+                                .addToEnd(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ],

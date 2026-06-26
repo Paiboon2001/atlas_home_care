@@ -76,7 +76,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFFB9E0FF),
+        backgroundColor: const Color(0xFFB9E0FF),
         body: NestedScrollView(
           floatHeaderSlivers: true,
           headerSliverBuilder: (context, _) => [
@@ -84,14 +84,15 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
               pinned: false,
               floating: true,
               snap: true,
+              toolbarHeight: 48.0,
               backgroundColor: FlutterFlowTheme.of(context).primary,
               automaticallyImplyLeading: false,
               leading: FlutterFlowIconButton(
                 borderColor: Colors.transparent,
                 borderRadius: 30.0,
                 borderWidth: 1.0,
-                buttonSize: 54.0,
-                icon: Icon(
+                buttonSize: 44.0,
+                icon: const Icon(
                   Icons.arrow_back_ios_new_rounded,
                   color: Colors.white,
                   size: 18.0,
@@ -111,14 +112,14 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                           !FlutterFlowTheme.of(context).titleMediumIsCustom,
                     ),
               ),
-              actions: [],
+              actions: const [],
               flexibleSpace: FlexibleSpaceBar(
                 background: ClipRRect(
-                  borderRadius: BorderRadius.only(),
+                  borderRadius: const BorderRadius.only(),
                   child: Image.network(
                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/gmgqj7bkiter/Background_CGM.png',
                     fit: BoxFit.cover,
-                    alignment: Alignment(0.0, 1.0),
+                    alignment: const Alignment(0.0, 1.0),
                   ),
                 ),
               ),
@@ -138,7 +139,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                 height: double.infinity,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).primaryBackground,
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       blurRadius: 4.0,
                       color: Color(0x33000000),
@@ -152,7 +153,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                 child: Column(
                   children: [
                     Align(
-                      alignment: Alignment(0.0, 0),
+                      alignment: const Alignment(0.0, 0),
                       child: FlutterFlowButtonTabBar(
                         useToggleButtonStyle: true,
                         labelStyle: FlutterFlowTheme.of(context)
@@ -186,9 +187,9 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                         borderRadius: 100.0,
                         elevation: 0.0,
                         buttonMargin:
-                            EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
-                        padding: EdgeInsets.all(8.0),
-                        tabs: [
+                            const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+                        padding: const EdgeInsets.all(8.0),
+                        tabs: const [
                           Tab(
                             text: 'ข้อมูล SN',
                           ),
@@ -210,9 +211,9 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 16.0),
-                                child: Container(
+                                child: SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
                                     controller: _model.textController1,
@@ -234,7 +235,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                     .bodyMediumIsCustom,
                                           ),
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -271,7 +272,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                       filled: true,
                                       fillColor: FlutterFlowTheme.of(context)
                                           .alternate,
-                                      prefixIcon: Icon(
+                                      prefixIcon: const Icon(
                                         Icons.search_rounded,
                                         size: 20.0,
                                       ),
@@ -294,14 +295,14 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                   ),
                                 ),
                               ),
-                              Divider(
+                              const Divider(
                                 height: 1.0,
                                 thickness: 1.0,
                                 color: Color(0xFFD7D8D9),
                               ),
                               Expanded(
                                 child: ListView(
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     16.0,
                                     0,
@@ -311,7 +312,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                   scrollDirection: Axis.vertical,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -404,7 +405,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                       }
                                                     }(),
                                                     decoration: BoxDecoration(
-                                                      color: Color(0xFFE0F9FF),
+                                                      color: const Color(0xFFE0F9FF),
                                                       image: DecorationImage(
                                                         fit: BoxFit.cover,
                                                         image: Image.network(
@@ -467,7 +468,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                             ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 4.0)),
+                                                        const SizedBox(height: 4.0)),
                                                   ),
                                                 ),
                                                 Icon(
@@ -478,14 +479,14 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                       .secondaryText,
                                                   size: 24.0,
                                                 ),
-                                              ].divide(SizedBox(width: 12.0)),
+                                              ].divide(const SizedBox(width: 12.0)),
                                             ),
                                           ),
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
@@ -565,7 +566,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                     }
                                                   }(),
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -624,7 +625,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 4.0)),
+                                                      const SizedBox(height: 4.0)),
                                                 ),
                                               ),
                                               Icon(
@@ -635,13 +636,13 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                         .secondaryText,
                                                 size: 24.0,
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
@@ -721,7 +722,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                     }
                                                   }(),
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -780,7 +781,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 4.0)),
+                                                      const SizedBox(height: 4.0)),
                                                 ),
                                               ),
                                               Icon(
@@ -791,13 +792,13 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                         .secondaryText,
                                                 size: 24.0,
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
@@ -877,7 +878,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                     }
                                                   }(),
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -936,7 +937,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 4.0)),
+                                                      const SizedBox(height: 4.0)),
                                                 ),
                                               ),
                                               Icon(
@@ -947,13 +948,13 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                         .secondaryText,
                                                 size: 24.0,
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
@@ -1033,7 +1034,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                     }
                                                   }(),
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -1092,7 +1093,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 4.0)),
+                                                      const SizedBox(height: 4.0)),
                                                 ),
                                               ),
                                               Icon(
@@ -1103,13 +1104,13 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                         .secondaryText,
                                                 size: 24.0,
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
@@ -1189,7 +1190,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                     }
                                                   }(),
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -1248,7 +1249,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 4.0)),
+                                                      const SizedBox(height: 4.0)),
                                                 ),
                                               ),
                                               Icon(
@@ -1259,13 +1260,13 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                         .secondaryText,
                                                 size: 24.0,
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
@@ -1345,7 +1346,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                     }
                                                   }(),
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -1404,7 +1405,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 4.0)),
+                                                      const SizedBox(height: 4.0)),
                                                 ),
                                               ),
                                               Icon(
@@ -1415,13 +1416,13 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                         .secondaryText,
                                                 size: 24.0,
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
@@ -1501,7 +1502,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                     }
                                                   }(),
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -1560,7 +1561,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 4.0)),
+                                                      const SizedBox(height: 4.0)),
                                                 ),
                                               ),
                                               Icon(
@@ -1571,13 +1572,13 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                         .secondaryText,
                                                 size: 24.0,
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
@@ -1657,7 +1658,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                     }
                                                   }(),
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -1716,7 +1717,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 4.0)),
+                                                      const SizedBox(height: 4.0)),
                                                 ),
                                               ),
                                               Icon(
@@ -1727,13 +1728,13 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                         .secondaryText,
                                                 size: 24.0,
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
@@ -1813,7 +1814,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                     }
                                                   }(),
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -1872,7 +1873,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 4.0)),
+                                                      const SizedBox(height: 4.0)),
                                                 ),
                                               ),
                                               Icon(
@@ -1883,13 +1884,13 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                         .secondaryText,
                                                 size: 24.0,
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
@@ -1969,7 +1970,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                     }
                                                   }(),
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -2028,7 +2029,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 4.0)),
+                                                      const SizedBox(height: 4.0)),
                                                 ),
                                               ),
                                               Icon(
@@ -2039,13 +2040,13 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                         .secondaryText,
                                                 size: 24.0,
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
@@ -2125,7 +2126,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                     }
                                                   }(),
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -2184,7 +2185,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 4.0)),
+                                                      const SizedBox(height: 4.0)),
                                                 ),
                                               ),
                                               Icon(
@@ -2195,12 +2196,12 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                         .secondaryText,
                                                 size: 24.0,
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                               ),
                             ],
@@ -2209,9 +2210,9 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 16.0),
-                                child: Container(
+                                child: SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
                                     controller: _model.textController2,
@@ -2233,7 +2234,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                     .bodyMediumIsCustom,
                                           ),
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -2270,7 +2271,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                       filled: true,
                                       fillColor: FlutterFlowTheme.of(context)
                                           .alternate,
-                                      prefixIcon: Icon(
+                                      prefixIcon: const Icon(
                                         Icons.search_rounded,
                                         size: 20.0,
                                       ),
@@ -2293,14 +2294,14 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                   ),
                                 ),
                               ),
-                              Divider(
+                              const Divider(
                                 height: 1.0,
                                 thickness: 1.0,
                                 color: Color(0xFFD7D8D9),
                               ),
                               Expanded(
                                 child: ListView(
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     16.0,
                                     0,
@@ -2310,7 +2311,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                   scrollDirection: Axis.vertical,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Container(
                                         decoration: BoxDecoration(
@@ -2321,7 +2322,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                         ),
                                         child: Container(
                                           width: double.infinity,
-                                          color: Color(0x00000000),
+                                          color: const Color(0x00000000),
                                           child: ExpandableNotifier(
                                             controller: _model
                                                 .expandableExpandableController,
@@ -2404,7 +2405,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                         decoration:
                                                             BoxDecoration(
                                                           color:
-                                                              Color(0xFFE0F9FF),
+                                                              const Color(0xFFE0F9FF),
                                                           image:
                                                               DecorationImage(
                                                             fit: BoxFit.cover,
@@ -2468,22 +2469,22 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                                           .labelSmallIsCustom,
                                                                 ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             height: 4.0)),
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 12.0)),
+                                                      const SizedBox(width: 12.0)),
                                                 ),
                                               ),
                                               collapsed: Container(),
                                               expanded: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         2.0, 0.0, 2.0, 2.0),
                                                 child: Container(
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFEFF9FF),
+                                                    color: const Color(0xFFEFF9FF),
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             14.0),
@@ -2574,7 +2575,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                                                 useGoogleFonts: !FlutterFlowTheme.of(context).labelSmallIsCustom,
                                                                               ),
                                                                         ),
-                                                                      ].divide(SizedBox(
+                                                                      ].divide(const SizedBox(
                                                                               height: 4.0)),
                                                                     ),
                                                                   ),
@@ -2586,12 +2587,12 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                                         .secondaryText,
                                                                     size: 24.0,
                                                                   ),
-                                                                ].divide(SizedBox(
+                                                                ].divide(const SizedBox(
                                                                     width:
                                                                         12.0)),
                                                               ),
                                                             ),
-                                                            Divider(
+                                                            const Divider(
                                                               height: 1.0,
                                                               thickness: 1.0,
                                                               indent: 12.0,
@@ -2684,7 +2685,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                                                 useGoogleFonts: !FlutterFlowTheme.of(context).labelSmallIsCustom,
                                                                               ),
                                                                         ),
-                                                                      ].divide(SizedBox(
+                                                                      ].divide(const SizedBox(
                                                                               height: 4.0)),
                                                                     ),
                                                                   ),
@@ -2696,12 +2697,12 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                                         .secondaryText,
                                                                     size: 24.0,
                                                                   ),
-                                                                ].divide(SizedBox(
+                                                                ].divide(const SizedBox(
                                                                     width:
                                                                         12.0)),
                                                               ),
                                                             ),
-                                                            Divider(
+                                                            const Divider(
                                                               height: 1.0,
                                                               thickness: 1.0,
                                                               indent: 12.0,
@@ -2713,11 +2714,11 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                                         ),
                                                       ),
                                                     ].addToEnd(
-                                                        SizedBox(height: 12.0)),
+                                                        const SizedBox(height: 12.0)),
                                                   ),
                                                 ),
                                               ),
-                                              theme: ExpandableThemeData(
+                                              theme: const ExpandableThemeData(
                                                 tapHeaderToExpand: true,
                                                 tapBodyToExpand: false,
                                                 tapBodyToCollapse: false,
@@ -2734,7 +2735,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                               ),
                             ],

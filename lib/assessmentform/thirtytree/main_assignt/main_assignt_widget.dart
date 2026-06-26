@@ -884,6 +884,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
       key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).primary,
       appBar: AppBar(
+        toolbarHeight: 48.0,
         backgroundColor: FlutterFlowTheme.of(context).primary,
         automaticallyImplyLeading: false,
         title: Row(

@@ -55,8 +55,9 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
       key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).primary,
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(64.0),
+        preferredSize: const Size.fromHeight(48.0),
         child: AppBar(
+          toolbarHeight: 48.0,
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Row(
@@ -73,7 +74,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                 child: Container(
                   width: 32.0,
                   height: 32.0,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -95,7 +96,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Container(
                         width: () {
                           if (MediaQuery.sizeOf(context).width <
@@ -126,7 +127,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                           }
                         }(),
                         decoration: BoxDecoration(
-                          color: Color(0xFFA8E8FF),
+                          color: const Color(0xFFA8E8FF),
                           shape: BoxShape.circle,
                           border: Border.all(
                             color: FlutterFlowTheme.of(context)
@@ -137,13 +138,13 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                           width: 300.0,
                           height: 300.0,
                           clipBehavior: Clip.antiAlias,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                           ),
                           child: Image.network(
                             'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/16ztnqju67da/student_girl.png',
                             fit: BoxFit.cover,
-                            alignment: Alignment(0.0, 1.0),
+                            alignment: const Alignment(0.0, 1.0),
                           ),
                         ),
                       ),
@@ -154,7 +155,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Align(
-                            alignment: AlignmentDirectional(-1.0, 0.0),
+                            alignment: const AlignmentDirectional(-1.0, 0.0),
                             child: Text(
                               'เด็กญิงปฐมา สมศรี',
                               style: FlutterFlowTheme.of(context)
@@ -172,7 +173,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(-1.0, 0.0),
+                            alignment: const AlignmentDirectional(-1.0, 0.0),
                             child: Text(
                               'SN : 1750020969',
                               style: FlutterFlowTheme.of(context)
@@ -191,10 +192,10 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                   ),
                             ),
                           ),
-                        ].divide(SizedBox(height: 4.0)),
+                        ].divide(const SizedBox(height: 4.0)),
                       ),
                     ),
-                  ].divide(SizedBox(width: 12.0)),
+                  ].divide(const SizedBox(width: 12.0)),
                 ),
               ),
               Container(
@@ -203,7 +204,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                   borderRadius: BorderRadius.circular(100.0),
                 ),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(8.0, 4.0, 8.0, 4.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(8.0, 4.0, 8.0, 4.0),
                   child: Text(
                     'อาการผิดปกติ',
                     style: FlutterFlowTheme.of(context).labelSmall.override(
@@ -218,9 +219,9 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                   ),
                 ),
               ),
-            ].divide(SizedBox(width: 8.0)),
+            ].divide(const SizedBox(width: 8.0)),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -231,20 +232,20 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
           borderRadius: BorderRadius.circular(0.0),
         ),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
           child: ListView(
-            padding: EdgeInsets.fromLTRB(
+            padding: const EdgeInsets.fromLTRB(
               0,
               16.0,
               0,
@@ -258,21 +259,21 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                   Container(
                     width: 250.0,
                     height: 250.0,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Color(0x4DFFFFFF),
                       shape: BoxShape.circle,
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(16.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: Container(
                         width: 100.0,
                         height: 100.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0x80FFFFFF),
                           shape: BoxShape.circle,
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(16.0),
+                          padding: const EdgeInsets.all(16.0),
                           child: Container(
                             width: 100.0,
                             height: 100.0,
@@ -287,7 +288,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 16.0, 0.0, 24.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -360,7 +361,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                   borderRadius: BorderRadius.circular(24.0),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.all(12.0),
+                  padding: const EdgeInsets.all(12.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -401,7 +402,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                               .bodySmallIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(height: 2.0)),
+                            ].divide(const SizedBox(height: 2.0)),
                           ),
                           Container(
                             decoration: BoxDecoration(
@@ -413,7 +414,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 4.0, 12.0, 4.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -432,7 +433,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                                   .labelSmallIsCustom,
                                         ),
                                   ),
-                                ].divide(SizedBox(width: 8.0)),
+                                ].divide(const SizedBox(width: 8.0)),
                               ),
                             ),
                           ),
@@ -440,11 +441,11 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                       ),
                       Container(
                         height: 350.0,
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                         child: Column(
                           children: [
                             Align(
-                              alignment: Alignment(0.0, 0),
+                              alignment: const Alignment(0.0, 0),
                               child: FlutterFlowButtonTabBar(
                                 useToggleButtonStyle: true,
                                 labelStyle: FlutterFlowTheme.of(context)
@@ -483,9 +484,9 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                 borderWidth: 1.0,
                                 borderRadius: 100.0,
                                 elevation: 0.0,
-                                buttonMargin: EdgeInsetsDirectional.fromSTEB(
+                                buttonMargin: const EdgeInsetsDirectional.fromSTEB(
                                     8.0, 0.0, 8.0, 0.0),
-                                tabs: [
+                                tabs: const [
                                   Tab(
                                     text: '3hr',
                                   ),
@@ -515,7 +516,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                 controller: _model.tabBarController,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 8.0, 0.0, 0.0),
                                     child: Container(
                                       width: 100.0,
@@ -524,10 +525,10 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                       ),
-                                      child: Container(
+                                      child: SizedBox(
                                         width: double.infinity,
                                         height: double.infinity,
-                                        child: custom_widgets.CGMChart(
+                                        child: const custom_widgets.CGMChart(
                                           width: double.infinity,
                                           height: double.infinity,
                                         ),
@@ -535,7 +536,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 8.0, 0.0, 0.0),
                                     child: Container(
                                       width: 100.0,
@@ -546,10 +547,10 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                       ),
-                                      child: Container(
+                                      child: SizedBox(
                                         width: double.infinity,
                                         height: double.infinity,
-                                        child: custom_widgets.CGMChart(
+                                        child: const custom_widgets.CGMChart(
                                           width: double.infinity,
                                           height: double.infinity,
                                         ),
@@ -557,7 +558,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 8.0, 0.0, 0.0),
                                     child: Container(
                                       width: 100.0,
@@ -568,10 +569,10 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                       ),
-                                      child: Container(
+                                      child: SizedBox(
                                         width: double.infinity,
                                         height: double.infinity,
-                                        child: custom_widgets.CGMChart(
+                                        child: const custom_widgets.CGMChart(
                                           width: double.infinity,
                                           height: double.infinity,
                                         ),
@@ -579,7 +580,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 8.0, 0.0, 0.0),
                                     child: Container(
                                       width: 100.0,
@@ -590,10 +591,10 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                       ),
-                                      child: Container(
+                                      child: SizedBox(
                                         width: double.infinity,
                                         height: double.infinity,
-                                        child: custom_widgets.CGMChart(
+                                        child: const custom_widgets.CGMChart(
                                           width: double.infinity,
                                           height: double.infinity,
                                         ),
@@ -606,12 +607,12 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                           ],
                         ),
                       ),
-                    ].divide(SizedBox(height: 12.0)),
+                    ].divide(const SizedBox(height: 12.0)),
                   ),
                 ),
               ),
               MasonryGridView.builder(
-                gridDelegate: SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                gridDelegate: const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                 ),
                 crossAxisSpacing: 16.0,
@@ -628,7 +629,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                             borderRadius: BorderRadius.circular(24.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -681,9 +682,9 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                                     .labelSmallIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 12.0)),
+                                  ].divide(const SizedBox(width: 12.0)),
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -695,7 +696,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                             borderRadius: BorderRadius.circular(24.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -748,9 +749,9 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                                     .labelSmallIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 12.0)),
+                                  ].divide(const SizedBox(width: 12.0)),
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -762,7 +763,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                             borderRadius: BorderRadius.circular(24.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -815,9 +816,9 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                                     .labelSmallIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 12.0)),
+                                  ].divide(const SizedBox(width: 12.0)),
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -829,7 +830,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                             borderRadius: BorderRadius.circular(24.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -859,7 +860,7 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
                                                     .headlineSmallFamily,
-                                            color: Color(0xFFFF8600),
+                                            color: const Color(0xFFFF8600),
                                             letterSpacing: 0.0,
                                             lineHeight: 1.0,
                                             useGoogleFonts:
@@ -881,16 +882,16 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                                     .labelSmallIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 12.0)),
+                                  ].divide(const SizedBox(width: 12.0)),
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
                   ][index]();
                 },
               ),
-            ].divide(SizedBox(height: 16.0)),
+            ].divide(const SizedBox(height: 16.0)),
           ),
         ),
       ),
