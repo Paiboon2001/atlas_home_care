@@ -46,7 +46,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
                 child: Center(
                   child: Image.asset(
-                    'assets/images/AtlasHomeCareLogo-512.png',
+                    'assets/images/AHC_V2.webp',
                     width: 220.0,
                     height: 200.0,
                     fit: BoxFit.contain,
@@ -54,7 +54,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                 ),
               ),
             )
-          : LoginWidget(),
+          : const LoginWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
@@ -65,7 +65,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                     child: Center(
                       child: Image.asset(
-                        'assets/images/AtlasHomeCareLogo-512.png',
+                        'assets/images/AHC_V2.webp',
                         width: 220.0,
                         height: 200.0,
                         fit: BoxFit.contain,
@@ -73,147 +73,147 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                     ),
                   ),
                 )
-              : LoginWidget(),
+              : const LoginWidget(),
         ),
         FFRoute(
           name: LoginWidget.routeName,
           path: LoginWidget.routePath,
-          builder: (context, params) => LoginWidget(),
+          builder: (context, params) => const LoginWidget(),
         ),
         FFRoute(
           name: PdpaWidget.routeName,
           path: PdpaWidget.routePath,
-          builder: (context, params) => PdpaWidget(),
+          builder: (context, params) => const PdpaWidget(),
         ),
         FFRoute(
           name: PINCodeWidget.routeName,
           path: PINCodeWidget.routePath,
-          builder: (context, params) => PINCodeWidget(),
+          builder: (context, params) => const PINCodeWidget(),
         ),
         FFRoute(
           name: MapWidget.routeName,
           path: MapWidget.routePath,
-          builder: (context, params) => MapWidget(),
+          builder: (context, params) => const MapWidget(),
         ),
         FFRoute(
           name: NewsdetailWidget.routeName,
           path: NewsdetailWidget.routePath,
-          builder: (context, params) => NewsdetailWidget(),
+          builder: (context, params) => const NewsdetailWidget(),
         ),
         FFRoute(
           name: HomevisitlistWidget.routeName,
           path: HomevisitlistWidget.routePath,
-          builder: (context, params) => HomevisitlistWidget(),
+          builder: (context, params) => const HomevisitlistWidget(),
         ),
         FFRoute(
           name: SettingWidget.routeName,
           path: SettingWidget.routePath,
-          builder: (context, params) => SettingWidget(),
+          builder: (context, params) => const SettingWidget(),
         ),
         FFRoute(
           name: ConnectdevicesWidget.routeName,
           path: ConnectdevicesWidget.routePath,
-          builder: (context, params) => ConnectdevicesWidget(),
+          builder: (context, params) => const ConnectdevicesWidget(),
         ),
         FFRoute(
           name: MapHomeWidget.routeName,
           path: MapHomeWidget.routePath,
-          builder: (context, params) => MapHomeWidget(),
+          builder: (context, params) => const MapHomeWidget(),
         ),
         FFRoute(
           name: AddVisitinginformationWidget.routeName,
           path: AddVisitinginformationWidget.routePath,
-          builder: (context, params) => AddVisitinginformationWidget(),
+          builder: (context, params) => const AddVisitinginformationWidget(),
         ),
         FFRoute(
           name: PatientinfoWidget.routeName,
           path: PatientinfoWidget.routePath,
-          builder: (context, params) => PatientinfoWidget(),
+          builder: (context, params) => const PatientinfoWidget(),
         ),
         FFRoute(
           name: AppointmentHistoryWidget.routeName,
           path: AppointmentHistoryWidget.routePath,
-          builder: (context, params) => AppointmentHistoryWidget(),
+          builder: (context, params) => const AppointmentHistoryWidget(),
         ),
         FFRoute(
           name: HomeVisitWidget.routeName,
           path: HomeVisitWidget.routePath,
-          builder: (context, params) => HomeVisitWidget(),
+          builder: (context, params) => const HomeVisitWidget(),
         ),
         FFRoute(
           name: PlanForVisitWidget.routeName,
           path: PlanForVisitWidget.routePath,
-          builder: (context, params) => PlanForVisitWidget(),
+          builder: (context, params) => const PlanForVisitWidget(),
         ),
         FFRoute(
           name: NotiWidget.routeName,
           path: NotiWidget.routePath,
-          builder: (context, params) => NotiWidget(),
+          builder: (context, params) => const NotiWidget(),
         ),
         FFRoute(
           name: DetailesPatientNewtaskWidget.routeName,
           path: DetailesPatientNewtaskWidget.routePath,
-          builder: (context, params) => DetailesPatientNewtaskWidget(),
+          builder: (context, params) => const DetailesPatientNewtaskWidget(),
         ),
         FFRoute(
           name: CalendarWidget.routeName,
           path: CalendarWidget.routePath,
-          builder: (context, params) => CalendarWidget(),
+          builder: (context, params) => const CalendarWidget(),
         ),
         FFRoute(
           name: InformationCommunityOneWidget.routeName,
           path: InformationCommunityOneWidget.routePath,
-          builder: (context, params) => InformationCommunityOneWidget(),
+          builder: (context, params) => const InformationCommunityOneWidget(),
         ),
         FFRoute(
           name: SelectLabFormWidget.routeName,
           path: SelectLabFormWidget.routePath,
-          builder: (context, params) => SelectLabFormWidget(),
+          builder: (context, params) => const SelectLabFormWidget(),
         ),
         FFRoute(
           name: LABResultWidget.routeName,
           path: LABResultWidget.routePath,
-          builder: (context, params) => LABResultWidget(),
+          builder: (context, params) => const LABResultWidget(),
         ),
         FFRoute(
           name: PhotoLABWidget.routeName,
           path: PhotoLABWidget.routePath,
-          builder: (context, params) => PhotoLABWidget(),
+          builder: (context, params) => const PhotoLABWidget(),
         ),
         FFRoute(
           name: MainAssigntWidget.routeName,
           path: MainAssigntWidget.routePath,
-          builder: (context, params) => MainAssigntWidget(),
+          builder: (context, params) => const MainAssigntWidget(),
         ),
         FFRoute(
           name: AllSummaryWidget.routeName,
           path: AllSummaryWidget.routePath,
-          builder: (context, params) => AllSummaryWidget(),
+          builder: (context, params) => const AllSummaryWidget(),
         ),
         FFRoute(
           name: DetailsSummaryWidget.routeName,
           path: DetailsSummaryWidget.routePath,
-          builder: (context, params) => DetailsSummaryWidget(),
+          builder: (context, params) => const DetailsSummaryWidget(),
         ),
         FFRoute(
           name: AuthenCodeWidget.routeName,
           path: AuthenCodeWidget.routePath,
-          builder: (context, params) => AuthenCodeWidget(),
+          builder: (context, params) => const AuthenCodeWidget(),
         ),
         FFRoute(
           name: LABDiabetesWidget.routeName,
           path: LABDiabetesWidget.routePath,
-          builder: (context, params) => LABDiabetesWidget(),
+          builder: (context, params) => const LABDiabetesWidget(),
         ),
         FFRoute(
           name: LABBloodpressureWidget.routeName,
           path: LABBloodpressureWidget.routePath,
-          builder: (context, params) => LABBloodpressureWidget(),
+          builder: (context, params) => const LABBloodpressureWidget(),
         ),
         FFRoute(
           name: LABBloodfatWidget.routeName,
           path: LABBloodfatWidget.routePath,
-          builder: (context, params) => LABBloodfatWidget(),
+          builder: (context, params) => const LABBloodfatWidget(),
         ),
         FFRoute(
           name: BarthelIndexScoreWidget.routeName,
@@ -238,22 +238,22 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: MainBloodWidget.routeName,
           path: MainBloodWidget.routePath,
-          builder: (context, params) => MainBloodWidget(),
+          builder: (context, params) => const MainBloodWidget(),
         ),
         FFRoute(
           name: BloodSummaryWidget.routeName,
           path: BloodSummaryWidget.routePath,
-          builder: (context, params) => BloodSummaryWidget(),
+          builder: (context, params) => const BloodSummaryWidget(),
         ),
         FFRoute(
           name: SummaryPressureWidget.routeName,
           path: SummaryPressureWidget.routePath,
-          builder: (context, params) => SummaryPressureWidget(),
+          builder: (context, params) => const SummaryPressureWidget(),
         ),
         FFRoute(
           name: FormPalliativeCareWidget.routeName,
           path: FormPalliativeCareWidget.routePath,
-          builder: (context, params) => FormPalliativeCareWidget(),
+          builder: (context, params) => const FormPalliativeCareWidget(),
         ),
         FFRoute(
           name: ChooseHosWidget.routeName,
@@ -276,152 +276,152 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: FormINHOMESSSWidget.routeName,
           path: FormINHOMESSSWidget.routePath,
-          builder: (context, params) => FormINHOMESSSWidget(),
+          builder: (context, params) => const FormINHOMESSSWidget(),
         ),
         FFRoute(
           name: HomepageNewWidget.routeName,
           path: HomepageNewWidget.routePath,
-          builder: (context, params) => HomepageNewWidget(),
+          builder: (context, params) => const HomepageNewWidget(),
         ),
         FFRoute(
           name: HoldJobWidget.routeName,
           path: HoldJobWidget.routePath,
-          builder: (context, params) => HoldJobWidget(),
+          builder: (context, params) => const HoldJobWidget(),
         ),
         FFRoute(
           name: PlanvisitNewWidget.routeName,
           path: PlanvisitNewWidget.routePath,
-          builder: (context, params) => PlanvisitNewWidget(),
+          builder: (context, params) => const PlanvisitNewWidget(),
         ),
         FFRoute(
           name: TwoQWidget.routeName,
           path: TwoQWidget.routePath,
-          builder: (context, params) => TwoQWidget(),
+          builder: (context, params) => const TwoQWidget(),
         ),
         FFRoute(
           name: NineQWidget.routeName,
           path: NineQWidget.routePath,
-          builder: (context, params) => NineQWidget(),
+          builder: (context, params) => const NineQWidget(),
         ),
         FFRoute(
           name: EightQWidget.routeName,
           path: EightQWidget.routePath,
-          builder: (context, params) => EightQWidget(),
+          builder: (context, params) => const EightQWidget(),
         ),
         FFRoute(
           name: MNAShortWidget.routeName,
           path: MNAShortWidget.routePath,
-          builder: (context, params) => MNAShortWidget(),
+          builder: (context, params) => const MNAShortWidget(),
         ),
         FFRoute(
           name: MNAFullWidget.routeName,
           path: MNAFullWidget.routePath,
-          builder: (context, params) => MNAFullWidget(),
+          builder: (context, params) => const MNAFullWidget(),
         ),
         FFRoute(
           name: CareWidget.routeName,
           path: CareWidget.routePath,
-          builder: (context, params) => CareWidget(),
+          builder: (context, params) => const CareWidget(),
         ),
         FFRoute(
           name: EsasWidget.routeName,
           path: EsasWidget.routePath,
-          builder: (context, params) => EsasWidget(),
+          builder: (context, params) => const EsasWidget(),
         ),
         FFRoute(
           name: RespiratorySystemWidget.routeName,
           path: RespiratorySystemWidget.routePath,
-          builder: (context, params) => RespiratorySystemWidget(),
+          builder: (context, params) => const RespiratorySystemWidget(),
         ),
         FFRoute(
           name: BreatheWidget.routeName,
           path: BreatheWidget.routePath,
-          builder: (context, params) => BreatheWidget(),
+          builder: (context, params) => const BreatheWidget(),
         ),
         FFRoute(
           name: MarkmapWidget.routeName,
           path: MarkmapWidget.routePath,
-          builder: (context, params) => MarkmapWidget(),
+          builder: (context, params) => const MarkmapWidget(),
         ),
         FFRoute(
           name: AddressWidget.routeName,
           path: AddressWidget.routePath,
-          builder: (context, params) => AddressWidget(),
+          builder: (context, params) => const AddressWidget(),
         ),
         FFRoute(
           name: HistoryWidget.routeName,
           path: HistoryWidget.routePath,
-          builder: (context, params) => HistoryWidget(),
+          builder: (context, params) => const HistoryWidget(),
         ),
         FFRoute(
           name: SelectLocationWidget.routeName,
           path: SelectLocationWidget.routePath,
-          builder: (context, params) => SelectLocationWidget(),
+          builder: (context, params) => const SelectLocationWidget(),
         ),
         FFRoute(
           name: OldPINWidget.routeName,
           path: OldPINWidget.routePath,
-          builder: (context, params) => OldPINWidget(),
+          builder: (context, params) => const OldPINWidget(),
         ),
         FFRoute(
           name: SetNewPINWidget.routeName,
           path: SetNewPINWidget.routePath,
-          builder: (context, params) => SetNewPINWidget(),
+          builder: (context, params) => const SetNewPINWidget(),
         ),
         FFRoute(
           name: MePdpaWidget.routeName,
           path: MePdpaWidget.routePath,
-          builder: (context, params) => MePdpaWidget(),
+          builder: (context, params) => const MePdpaWidget(),
         ),
         FFRoute(
           name: ReportWidget.routeName,
           path: ReportWidget.routePath,
-          builder: (context, params) => ReportWidget(),
+          builder: (context, params) => const ReportWidget(),
         ),
         FFRoute(
           name: RunWayWidget.routeName,
           path: RunWayWidget.routePath,
-          builder: (context, params) => RunWayWidget(),
+          builder: (context, params) => const RunWayWidget(),
         ),
         FFRoute(
           name: InhomesssSummaryWidget.routeName,
           path: InhomesssSummaryWidget.routePath,
-          builder: (context, params) => InhomesssSummaryWidget(),
+          builder: (context, params) => const InhomesssSummaryWidget(),
         ),
         FFRoute(
           name: InhomessResultWidget.routeName,
           path: InhomessResultWidget.routePath,
-          builder: (context, params) => InhomessResultWidget(),
+          builder: (context, params) => const InhomessResultWidget(),
         ),
         FFRoute(
           name: HomepageBlankWidget.routeName,
           path: HomepageBlankWidget.routePath,
-          builder: (context, params) => HomepageBlankWidget(),
+          builder: (context, params) => const HomepageBlankWidget(),
         ),
         FFRoute(
           name: NoInternetWidget.routeName,
           path: NoInternetWidget.routePath,
-          builder: (context, params) => NoInternetWidget(),
+          builder: (context, params) => const NoInternetWidget(),
         ),
         FFRoute(
           name: NotiBlankWidget.routeName,
           path: NotiBlankWidget.routePath,
-          builder: (context, params) => NotiBlankWidget(),
+          builder: (context, params) => const NotiBlankWidget(),
         ),
         FFRoute(
           name: AddHomeWidget.routeName,
           path: AddHomeWidget.routePath,
-          builder: (context, params) => AddHomeWidget(),
+          builder: (context, params) => const AddHomeWidget(),
         ),
         FFRoute(
           name: AddHomememberWidget.routeName,
           path: AddHomememberWidget.routePath,
-          builder: (context, params) => AddHomememberWidget(),
+          builder: (context, params) => const AddHomememberWidget(),
         ),
         FFRoute(
           name: HistoryBlankWidget.routeName,
           path: HistoryBlankWidget.routePath,
-          builder: (context, params) => HistoryBlankWidget(),
+          builder: (context, params) => const HistoryBlankWidget(),
         ),
         FFRoute(
           name: CgmDetailsWidget.routeName,
@@ -444,7 +444,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: CgmResultWidget.routeName,
           path: CgmResultWidget.routePath,
-          builder: (context, params) => CgmResultWidget(),
+          builder: (context, params) => const CgmResultWidget(),
         ),
         FFRoute(
           name: MedicaldeliveryWidget.routeName,
@@ -467,7 +467,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: DeliveryMapWidget.routeName,
           path: DeliveryMapWidget.routePath,
-          builder: (context, params) => DeliveryMapWidget(),
+          builder: (context, params) => const DeliveryMapWidget(),
         ),
         FFRoute(
           name: DetailsWidget.routeName,
@@ -490,12 +490,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: CgmResultHistoryWidget.routeName,
           path: CgmResultHistoryWidget.routePath,
-          builder: (context, params) => CgmResultHistoryWidget(),
+          builder: (context, params) => const CgmResultHistoryWidget(),
         ),
         FFRoute(
           name: HealthhistoryWidget.routeName,
           path: HealthhistoryWidget.routePath,
-          builder: (context, params) => HealthhistoryWidget(),
+          builder: (context, params) => const HealthhistoryWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -661,7 +661,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(
+  static TransitionInfo appDefault() => const TransitionInfo(
         hasTransition: true,
         transitionType: PageTransitionType.fade,
         duration: Duration(milliseconds: 100),

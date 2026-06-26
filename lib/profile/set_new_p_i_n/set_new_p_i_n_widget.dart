@@ -124,13 +124,14 @@ class _SetNewPINWidgetState extends State<SetNewPINWidget>
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
+          toolbarHeight: 48.0,
           backgroundColor: Colors.transparent,
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
             borderRadius: 30.0,
             borderWidth: 1.0,
-            buttonSize: 54.0,
+            buttonSize: 44.0,
             icon: Icon(
               Icons.arrow_back_ios_new_rounded,
               color: FlutterFlowTheme.of(context).secondaryText,
@@ -404,7 +405,7 @@ class _SetNewPINWidgetState extends State<SetNewPINWidget>
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                         child: Image.asset(
-                                          'assets/images/AtlasHomeCareLogo-512.png',
+                                          'assets/images/AHC_V2.webp',
                                           width: double.infinity,
                                           height: double.infinity,
                                           fit: BoxFit.cover,
