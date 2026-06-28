@@ -66,7 +66,7 @@ class _HomeCareWidgetState extends State<HomeCareWidget> {
         width: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               blurRadius: 4.0,
               color: Color(0x17000000),
@@ -82,7 +82,7 @@ class _HomeCareWidgetState extends State<HomeCareWidget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 12.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 12.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -93,7 +93,7 @@ class _HomeCareWidgetState extends State<HomeCareWidget> {
                       children: [
                         Text(
                           valueOrDefault<String>(
-                            widget!.homename,
+                            widget.homename,
                             'na',
                           ),
                           maxLines: 1,
@@ -111,7 +111,7 @@ class _HomeCareWidgetState extends State<HomeCareWidget> {
                         ),
                         Text(
                           valueOrDefault<String>(
-                            widget!.numhome,
+                            widget.numhome,
                             'na',
                           ),
                           maxLines: 1,
@@ -125,7 +125,7 @@ class _HomeCareWidgetState extends State<HomeCareWidget> {
                                     .labelSmallIsCustom,
                               ),
                         ),
-                      ].divide(SizedBox(width: 12.0)),
+                      ].divide(const SizedBox(width: 12.0)),
                     ),
                   ),
                   Container(
@@ -159,7 +159,7 @@ class _HomeCareWidgetState extends State<HomeCareWidget> {
                       color: FlutterFlowTheme.of(context).primaryBackground,
                       shape: BoxShape.circle,
                     ),
-                    child: Icon(
+                    child: const Icon(
                       Icons.keyboard_arrow_right_rounded,
                       color: Color(0xFF9DA7A7),
                       size: 20.0,
@@ -181,7 +181,7 @@ class _HomeCareWidgetState extends State<HomeCareWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
@@ -196,7 +196,7 @@ class _HomeCareWidgetState extends State<HomeCareWidget> {
                         ),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(12.0),
+                        padding: const EdgeInsets.all(12.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.center,
@@ -255,7 +255,7 @@ class _HomeCareWidgetState extends State<HomeCareWidget> {
                                       children: [
                                         TextSpan(
                                           text: valueOrDefault<String>(
-                                            widget!.manyhome,
+                                            widget.manyhome,
                                             'na',
                                           ),
                                           style: FlutterFlowTheme.of(context)
@@ -322,10 +322,10 @@ class _HomeCareWidgetState extends State<HomeCareWidget> {
                                           ),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 4.0)),
+                                ].divide(const SizedBox(height: 4.0)),
                               ),
                             ),
-                          ].divide(SizedBox(width: 12.0)),
+                          ].divide(const SizedBox(width: 12.0)),
                         ),
                       ),
                     ),
@@ -341,7 +341,7 @@ class _HomeCareWidgetState extends State<HomeCareWidget> {
                         ),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(12.0),
+                        padding: const EdgeInsets.all(12.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.center,
@@ -401,7 +401,7 @@ class _HomeCareWidgetState extends State<HomeCareWidget> {
                                       children: [
                                         TextSpan(
                                           text: valueOrDefault<String>(
-                                            widget!.manypoeple,
+                                            widget.manypoeple,
                                             'na',
                                           ),
                                           style: FlutterFlowTheme.of(context)
@@ -468,18 +468,18 @@ class _HomeCareWidgetState extends State<HomeCareWidget> {
                                           ),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 4.0)),
+                                ].divide(const SizedBox(height: 4.0)),
                               ),
                             ),
-                          ].divide(SizedBox(width: 12.0)),
+                          ].divide(const SizedBox(width: 12.0)),
                         ),
                       ),
                     ),
                   ),
                 ]
-                    .divide(SizedBox(width: 12.0))
-                    .addToStart(SizedBox(width: 16.0))
-                    .addToEnd(SizedBox(width: 16.0)),
+                    .divide(const SizedBox(width: 12.0))
+                    .addToStart(const SizedBox(width: 16.0))
+                    .addToEnd(const SizedBox(width: 16.0)),
               ),
             ),
           ],

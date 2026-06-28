@@ -47,13 +47,13 @@ class _SearchIcd9WidgetState extends State<SearchIcd9Widget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: MediaQuery.sizeOf(context).height * 0.95,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -62,7 +62,7 @@ class _SearchIcd9WidgetState extends State<SearchIcd9Widget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -94,7 +94,7 @@ class _SearchIcd9WidgetState extends State<SearchIcd9Widget> {
                         return 40.0;
                       }
                     }(),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                   ),
@@ -112,14 +112,14 @@ class _SearchIcd9WidgetState extends State<SearchIcd9Widget> {
                   wrapWithModel(
                     model: _model.closeModel,
                     updateCallback: () => safeSetState(() {}),
-                    child: CloseWidget(),
+                    child: const CloseWidget(),
                   ),
                 ],
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-              child: Container(
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+              child: SizedBox(
                 width: double.infinity,
                 child: TextFormField(
                   controller: _model.textController,
@@ -139,14 +139,14 @@ class _SearchIcd9WidgetState extends State<SearchIcd9Widget> {
                               !FlutterFlowTheme.of(context).labelMediumIsCustom,
                         ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0x00000000),
                         width: 1.0,
                       ),
                       borderRadius: BorderRadius.circular(100.0),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0x00000000),
                         width: 1.0,
                       ),
@@ -168,7 +168,7 @@ class _SearchIcd9WidgetState extends State<SearchIcd9Widget> {
                     ),
                     filled: true,
                     fillColor: FlutterFlowTheme.of(context).alternate,
-                    prefixIcon: Icon(
+                    prefixIcon: const Icon(
                       Icons.search_rounded,
                       size: 20.0,
                     ),
@@ -188,7 +188,7 @@ class _SearchIcd9WidgetState extends State<SearchIcd9Widget> {
             ),
             Expanded(
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -196,7 +196,7 @@ class _SearchIcd9WidgetState extends State<SearchIcd9Widget> {
                       wrapWithModel(
                         model: _model.itemSelecid9Model1,
                         updateCallback: () => safeSetState(() {}),
-                        child: ItemSelecid9Widget(
+                        child: const ItemSelecid9Widget(
                           cid9code: '3025002',
                           decription:
                               'Projective test (การทดสอบบุคลึกภาพและพยาธิสภาพทางจิต)',
@@ -205,7 +205,7 @@ class _SearchIcd9WidgetState extends State<SearchIcd9Widget> {
                       wrapWithModel(
                         model: _model.itemSelecid9Model2,
                         updateCallback: () => safeSetState(() {}),
-                        child: ItemSelecid9Widget(
+                        child: const ItemSelecid9Widget(
                           cid9code: '3025403',
                           decription: 'การดูดเสมหะจากท่อหลอดลม',
                         ),
@@ -213,15 +213,15 @@ class _SearchIcd9WidgetState extends State<SearchIcd9Widget> {
                       wrapWithModel(
                         model: _model.itemSelecid9Model3,
                         updateCallback: () => safeSetState(() {}),
-                        child: ItemSelecid9Widget(
+                        child: const ItemSelecid9Widget(
                           cid9code: '3024094',
                           decription:
                               'Neuropsychological tost (การประเมินพยาธิสภาพทางสมอง)',
                         ),
                       ),
                     ]
-                        .divide(SizedBox(height: 8.0))
-                        .addToEnd(SizedBox(height: 48.0)),
+                        .divide(const SizedBox(height: 8.0))
+                        .addToEnd(const SizedBox(height: 48.0)),
                   ),
                 ),
               ),

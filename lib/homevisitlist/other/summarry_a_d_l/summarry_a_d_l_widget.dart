@@ -47,8 +47,8 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
             curve: Curves.easeInOut,
             delay: 600.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -61,8 +61,8 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -81,9 +81,9 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 0.0),
+      alignment: const AlignmentDirectional(0.0, 0.0),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 24.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 24.0),
         child: Container(
           width: () {
             if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
@@ -116,7 +116,7 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -124,7 +124,7 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
                     Container(
                       width: 32.0,
                       height: 32.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                       ),
                     ),
@@ -149,12 +149,12 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
                       child: Container(
                         width: 32.0,
                         height: 32.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0x266C6C6C),
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.close_rounded,
                             color: FlutterFlowTheme.of(context).secondaryText,
@@ -170,7 +170,7 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    Container(
+                    SizedBox(
                       width: 250.0,
                       height: 250.0,
                       child: Stack(
@@ -178,19 +178,19 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
                           Opacity(
                             opacity: 0.1,
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Container(
                                 width: double.infinity,
                                 height: double.infinity,
                                 decoration: BoxDecoration(
                                   gradient: LinearGradient(
                                     colors: [
-                                      Color(0xFFA0D6FF),
+                                      const Color(0xFFA0D6FF),
                                       FlutterFlowTheme.of(context).primary
                                     ],
-                                    stops: [0.0, 1.0],
-                                    begin: AlignmentDirectional(0.0, -1.0),
-                                    end: AlignmentDirectional(0, 1.0),
+                                    stops: const [0.0, 1.0],
+                                    begin: const AlignmentDirectional(0.0, -1.0),
+                                    end: const AlignmentDirectional(0, 1.0),
                                   ),
                                   shape: BoxShape.circle,
                                 ),
@@ -201,19 +201,19 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
                           Opacity(
                             opacity: 0.1,
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Container(
                                 width: 200.0,
                                 height: 200.0,
                                 decoration: BoxDecoration(
                                   gradient: LinearGradient(
                                     colors: [
-                                      Color(0xFFA0D6FF),
+                                      const Color(0xFFA0D6FF),
                                       FlutterFlowTheme.of(context).primary
                                     ],
-                                    stops: [0.0, 1.0],
-                                    begin: AlignmentDirectional(0.0, -1.0),
-                                    end: AlignmentDirectional(0, 1.0),
+                                    stops: const [0.0, 1.0],
+                                    begin: const AlignmentDirectional(0.0, -1.0),
+                                    end: const AlignmentDirectional(0, 1.0),
                                   ),
                                   shape: BoxShape.circle,
                                 ),
@@ -222,24 +222,24 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Container(
                               width: 150.0,
                               height: 150.0,
                               decoration: BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
-                                    Color(0xFFA0D6FF),
+                                    const Color(0xFFA0D6FF),
                                     FlutterFlowTheme.of(context).primary
                                   ],
-                                  stops: [0.0, 1.0],
-                                  begin: AlignmentDirectional(0.0, -1.0),
-                                  end: AlignmentDirectional(0, 1.0),
+                                  stops: const [0.0, 1.0],
+                                  begin: const AlignmentDirectional(0.0, -1.0),
+                                  end: const AlignmentDirectional(0, 1.0),
                                 ),
                                 shape: BoxShape.circle,
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
@@ -275,7 +275,7 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
                                                     .titleMediumIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                               ),
                             ),
@@ -285,7 +285,7 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Text(
                         'ภาวะพึ่งพารุนแรง : low initial score, severe dependence',
                         textAlign: TextAlign.center,
@@ -300,11 +300,11 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
                             ),
                       ),
                     ),
-                  ].divide(SizedBox(height: 24.0)),
+                  ].divide(const SizedBox(height: 24.0)),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 13.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 13.0),
                 child: FFButtonWidget(
                   onPressed: () async {
                     context.pushNamed(AddVisitinginformationWidget.routeName);
@@ -314,10 +314,10 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
                     width: double.infinity,
                     height: 48.0,
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     iconAlignment: IconAlignment.start,
                     iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).customColor5,
                     textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily:
@@ -329,7 +329,7 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
                               !FlutterFlowTheme.of(context).bodyMediumIsCustom,
                         ),
                     elevation: 0.0,
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       color: Colors.transparent,
                       width: 0.0,
                     ),

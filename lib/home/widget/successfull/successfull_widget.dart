@@ -53,7 +53,7 @@ class _SuccessfullWidgetState extends State<SuccessfullWidget> {
       width: double.infinity,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             blurRadius: 4.0,
             color: Color(0x17000000),
@@ -69,7 +69,7 @@ class _SuccessfullWidgetState extends State<SuccessfullWidget> {
         mainAxisSize: MainAxisSize.max,
         children: [
           Padding(
-            padding: EdgeInsets.all(12.0),
+            padding: const EdgeInsets.all(12.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -111,10 +111,10 @@ class _SuccessfullWidgetState extends State<SuccessfullWidget> {
                         image: DecorationImage(
                           fit: BoxFit.cover,
                           image: Image.network(
-                            widget!.img!,
+                            widget.img!,
                           ).image,
                         ),
-                        gradient: LinearGradient(
+                        gradient: const LinearGradient(
                           colors: [Color(0xFFA8FFCC), Color(0xFF117D4C)],
                           stops: [0.0, 1.0],
                           begin: AlignmentDirectional(0.0, -1.0),
@@ -129,7 +129,7 @@ class _SuccessfullWidgetState extends State<SuccessfullWidget> {
                       children: [
                         Text(
                           valueOrDefault<String>(
-                            widget!.mainname,
+                            widget.mainname,
                             'na',
                           ),
                           style: FlutterFlowTheme.of(context)
@@ -177,7 +177,7 @@ class _SuccessfullWidgetState extends State<SuccessfullWidget> {
                                               .bodySmallIsCustom,
                                     ),
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text: ' ปี ',
                                 style: TextStyle(),
                               ),
@@ -195,7 +195,7 @@ class _SuccessfullWidgetState extends State<SuccessfullWidget> {
                                               .bodySmallIsCustom,
                                     ),
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text: ' เดือน ',
                                 style: TextStyle(),
                               ),
@@ -213,7 +213,7 @@ class _SuccessfullWidgetState extends State<SuccessfullWidget> {
                                               .bodySmallIsCustom,
                                     ),
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text: ' วัน',
                                 style: TextStyle(),
                               )
@@ -291,7 +291,7 @@ class _SuccessfullWidgetState extends State<SuccessfullWidget> {
                     color: FlutterFlowTheme.of(context).primaryBackground,
                     shape: BoxShape.circle,
                   ),
-                  child: Icon(
+                  child: const Icon(
                     Icons.keyboard_arrow_right_rounded,
                     color: Color(0xFF9DA7A7),
                     size: 20.0,
@@ -303,7 +303,7 @@ class _SuccessfullWidgetState extends State<SuccessfullWidget> {
           Container(
             width: double.infinity,
             decoration: BoxDecoration(
-              gradient: LinearGradient(
+              gradient: const LinearGradient(
                 colors: [Color(0xFFECFBEC), Color(0xFFD8FDE4)],
                 stops: [0.0, 1.0],
                 begin: AlignmentDirectional(0.0, -1.0),
@@ -316,7 +316,7 @@ class _SuccessfullWidgetState extends State<SuccessfullWidget> {
               ),
             ),
             child: Padding(
-              padding: EdgeInsets.all(12.0),
+              padding: const EdgeInsets.all(12.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
@@ -351,7 +351,7 @@ class _SuccessfullWidgetState extends State<SuccessfullWidget> {
                                     .bodyMediumIsCustom,
                               ),
                         ),
-                      ].divide(SizedBox(height: 6.0)),
+                      ].divide(const SizedBox(height: 6.0)),
                     ),
                   ),
                   SizedBox(
@@ -393,7 +393,7 @@ class _SuccessfullWidgetState extends State<SuccessfullWidget> {
                                     .bodyMediumIsCustom,
                               ),
                         ),
-                      ].divide(SizedBox(height: 6.0)),
+                      ].divide(const SizedBox(height: 6.0)),
                     ),
                   ),
                   SizedBox(
@@ -435,10 +435,10 @@ class _SuccessfullWidgetState extends State<SuccessfullWidget> {
                                     .bodyMediumIsCustom,
                               ),
                         ),
-                      ].divide(SizedBox(height: 6.0)),
+                      ].divide(const SizedBox(height: 6.0)),
                     ),
                   ),
-                ].divide(SizedBox(width: 12.0)),
+                ].divide(const SizedBox(width: 12.0)),
               ),
             ),
           ),

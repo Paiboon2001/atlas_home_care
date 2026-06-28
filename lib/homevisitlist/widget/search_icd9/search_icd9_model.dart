@@ -1,13 +1,8 @@
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/homevisitlist/other/item_selecid9/item_selecid9_widget.dart';
 import '/utils/close/close_widget.dart';
-import 'dart:ui';
 import 'search_icd9_widget.dart' show SearchIcd9Widget;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class SearchIcd9Model extends FlutterFlowModel<SearchIcd9Widget> {
   ///  State fields for stateful widgets in this component.

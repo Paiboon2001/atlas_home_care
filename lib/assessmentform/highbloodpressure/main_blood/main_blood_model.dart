@@ -1,35 +1,19 @@
 import '/assessmentform/highbloodpressure/widget/bloodpage/bloodpage_widget.dart';
 import '/assessmentform/highbloodpressure/widget/drink/drink_widget.dart';
-import '/assessmentform/highbloodpressure/widget/many_al/many_al_widget.dart';
-import '/assessmentform/highbloodpressure/widget/manysk/manysk_widget.dart';
 import '/assessmentform/highbloodpressure/widget/per_six/per_six_widget.dart';
-import '/assessmentform/highbloodpressure/widget/skde/skde_widget.dart';
 import '/assessmentform/highbloodpressure/widget/smokes/smokes_widget.dart';
 import '/assessmentform/highbloodpressure/widget/sum/sum_widget.dart';
 import '/assessmentform/thirtytree/widget/cb_click/cb_click_widget.dart';
-import '/assessmentform/thirtytree/widget/choose_cancer/choose_cancer_widget.dart';
 import '/assessmentform/thirtytree/widget/per_five/per_five_widget.dart';
 import '/assessmentform/thirtytree/widget/per_fore/per_fore_widget.dart';
 import '/assessmentform/thirtytree/widget/per_one/per_one_widget.dart';
 import '/assessmentform/thirtytree/widget/per_three/per_three_widget.dart';
 import '/assessmentform/thirtytree/widget/per_two/per_two_widget.dart';
 import '/assessmentform/thirtytree/widget/start_as_bottom/start_as_bottom_widget.dart';
-import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
 import '/index.dart';
 import 'main_blood_widget.dart' show MainBloodWidget;
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class MainBloodModel extends FlutterFlowModel<MainBloodWidget> {
   ///  Local state fields for this page.

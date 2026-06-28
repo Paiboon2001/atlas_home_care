@@ -51,7 +51,7 @@ class _NumberWidgetState extends State<NumberWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
@@ -60,23 +60,23 @@ class _NumberWidgetState extends State<NumberWidget> {
             height: 48.0,
             decoration: BoxDecoration(
               color: valueOrDefault<Color>(
-                widget!.ccorlor,
+                widget.ccorlor,
                 FlutterFlowTheme.of(context).secondaryBackground,
               ),
               shape: BoxShape.circle,
             ),
             child: Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: Text(
                 valueOrDefault<String>(
-                  widget!.ctext,
+                  widget.ctext,
                   '0',
                 ),
                 textAlign: TextAlign.center,
                 style: FlutterFlowTheme.of(context).titleMedium.override(
                       fontFamily:
                           FlutterFlowTheme.of(context).titleMediumFamily,
-                      color: widget!.pcorlor,
+                      color: widget.pcorlor,
                       letterSpacing: 0.0,
                       useGoogleFonts:
                           !FlutterFlowTheme.of(context).titleMediumIsCustom,
@@ -91,7 +91,7 @@ class _NumberWidgetState extends State<NumberWidget> {
               Container(
                 width: 6.0,
                 height: 6.0,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0xFFFFC83B),
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(24.0),
@@ -104,13 +104,13 @@ class _NumberWidgetState extends State<NumberWidget> {
                 height: 6.0,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).error,
-                  borderRadius: BorderRadius.only(),
+                  borderRadius: const BorderRadius.only(),
                 ),
               ),
               Container(
                 width: 6.0,
                 height: 6.0,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0xFF2ED235),
                   borderRadius: BorderRadius.only(),
                 ),
@@ -120,7 +120,7 @@ class _NumberWidgetState extends State<NumberWidget> {
                 height: 6.0,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).accent1,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     topRight: Radius.circular(24.0),
                     bottomRight: Radius.circular(24.0),
                   ),

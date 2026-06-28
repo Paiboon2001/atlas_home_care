@@ -62,7 +62,7 @@ class _ItemSelecPPSpecialcodesWidgetState
             color: FlutterFlowTheme.of(context).secondaryBackground,
           ),
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 8.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 8.0),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -70,7 +70,7 @@ class _ItemSelecPPSpecialcodesWidgetState
               children: [
                 Text(
                   valueOrDefault<String>(
-                    widget!.ppSpecialcodes,
+                    widget.ppSpecialcodes,
                     'ppSpecialcodes',
                   ),
                   textAlign: TextAlign.start,
@@ -85,7 +85,7 @@ class _ItemSelecPPSpecialcodesWidgetState
                 ),
                 Text(
                   valueOrDefault<String>(
-                    widget!.decription,
+                    widget.decription,
                     'decription',
                   ),
                   textAlign: TextAlign.start,
@@ -98,7 +98,7 @@ class _ItemSelecPPSpecialcodesWidgetState
                             !FlutterFlowTheme.of(context).bodySmallIsCustom,
                       ),
                 ),
-              ].divide(SizedBox(height: 4.0)),
+              ].divide(const SizedBox(height: 4.0)),
             ),
           ),
         ),

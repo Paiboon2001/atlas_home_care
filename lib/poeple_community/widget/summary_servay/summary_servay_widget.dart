@@ -46,9 +46,9 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
       children: [
         Expanded(
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
             child: ListView(
-              padding: EdgeInsets.fromLTRB(
+              padding: const EdgeInsets.fromLTRB(
                 0,
                 16.0,
                 0,
@@ -93,16 +93,16 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                 gradient: LinearGradient(
                                   colors: [
                                     FlutterFlowTheme.of(context).success,
-                                    Color(0xFF62D3A0)
+                                    const Color(0xFF62D3A0)
                                   ],
-                                  stops: [0.0, 1.0],
-                                  begin: AlignmentDirectional(1.0, -1.0),
-                                  end: AlignmentDirectional(-1.0, 1.0),
+                                  stops: const [0.0, 1.0],
+                                  begin: const AlignmentDirectional(1.0, -1.0),
+                                  end: const AlignmentDirectional(-1.0, 1.0),
                                 ),
                                 shape: BoxShape.circle,
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Icon(
                                   Icons.family_restroom_rounded,
                                   color: FlutterFlowTheme.of(context)
@@ -127,7 +127,7 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                     ),
                               ),
                             ),
-                          ].divide(SizedBox(width: 8.0)),
+                          ].divide(const SizedBox(width: 8.0)),
                         ),
                         ClipRRect(
                           borderRadius: BorderRadius.circular(16.0),
@@ -189,8 +189,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -244,14 +244,14 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                               ],
                             ),
                           ),
                         ),
-                      ].divide(SizedBox(height: 8.0)),
+                      ].divide(const SizedBox(height: 8.0)),
                     ),
                   ),
                 ),
@@ -291,16 +291,16 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                 gradient: LinearGradient(
                                   colors: [
                                     FlutterFlowTheme.of(context).primary,
-                                    Color(0xFF216DAA)
+                                    const Color(0xFF216DAA)
                                   ],
-                                  stops: [0.0, 1.0],
-                                  begin: AlignmentDirectional(0.0, -1.0),
-                                  end: AlignmentDirectional(0, 1.0),
+                                  stops: const [0.0, 1.0],
+                                  begin: const AlignmentDirectional(0.0, -1.0),
+                                  end: const AlignmentDirectional(0, 1.0),
                                 ),
                                 shape: BoxShape.circle,
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Icon(
                                   Icons.person,
                                   color: FlutterFlowTheme.of(context)
@@ -325,7 +325,7 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                     ),
                               ),
                             ),
-                          ].divide(SizedBox(width: 8.0)),
+                          ].divide(const SizedBox(width: 8.0)),
                         ),
                         ClipRRect(
                           borderRadius: BorderRadius.circular(16.0),
@@ -387,8 +387,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -396,7 +396,7 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                   color: FlutterFlowTheme.of(context).alternate,
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 14.0, 0.0, 14.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -420,8 +420,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                         ),
                                       ),
                                     ]
-                                        .divide(SizedBox(width: 16.0))
-                                        .around(SizedBox(width: 16.0)),
+                                        .divide(const SizedBox(width: 16.0))
+                                        .around(const SizedBox(width: 16.0)),
                                   ),
                                 ),
                                 Divider(
@@ -476,8 +476,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -531,8 +531,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -586,8 +586,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -641,8 +641,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -696,14 +696,14 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                               ],
                             ),
                           ),
                         ),
-                      ].divide(SizedBox(height: 8.0)),
+                      ].divide(const SizedBox(height: 8.0)),
                     ),
                   ),
                 ),
@@ -739,7 +739,7 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                             Container(
                               width: 24.0,
                               height: 24.0,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
                                     Color(0xFFFCD792),
@@ -752,7 +752,7 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                 shape: BoxShape.circle,
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Icon(
                                   Icons.monitor_heart_rounded,
                                   color: FlutterFlowTheme.of(context)
@@ -777,7 +777,7 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                     ),
                               ),
                             ),
-                          ].divide(SizedBox(width: 8.0)),
+                          ].divide(const SizedBox(width: 8.0)),
                         ),
                         ClipRRect(
                           borderRadius: BorderRadius.circular(16.0),
@@ -839,8 +839,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -894,14 +894,14 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                               ],
                             ),
                           ),
                         ),
-                      ].divide(SizedBox(height: 8.0)),
+                      ].divide(const SizedBox(height: 8.0)),
                     ),
                   ),
                 ),
@@ -937,7 +937,7 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                             Container(
                               width: 24.0,
                               height: 24.0,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
                                     Color(0xFF46D8AD),
@@ -950,7 +950,7 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                 shape: BoxShape.circle,
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Icon(
                                   Icons.description,
                                   color: FlutterFlowTheme.of(context)
@@ -975,7 +975,7 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                     ),
                               ),
                             ),
-                          ].divide(SizedBox(width: 8.0)),
+                          ].divide(const SizedBox(width: 8.0)),
                         ),
                         ClipRRect(
                           borderRadius: BorderRadius.circular(16.0),
@@ -1037,8 +1037,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -1092,8 +1092,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -1147,8 +1147,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -1202,8 +1202,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -1257,8 +1257,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -1312,8 +1312,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -1367,8 +1367,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -1422,8 +1422,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -1477,14 +1477,14 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                               ],
                             ),
                           ),
                         ),
-                      ].divide(SizedBox(height: 8.0)),
+                      ].divide(const SizedBox(height: 8.0)),
                     ),
                   ),
                 ),
@@ -1520,7 +1520,7 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                             Container(
                               width: 24.0,
                               height: 24.0,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
                                     Color(0xFFFE9393),
@@ -1533,7 +1533,7 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                 shape: BoxShape.circle,
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Icon(
                                   Icons.bloodtype_sharp,
                                   color: FlutterFlowTheme.of(context)
@@ -1558,7 +1558,7 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                     ),
                               ),
                             ),
-                          ].divide(SizedBox(width: 8.0)),
+                          ].divide(const SizedBox(width: 8.0)),
                         ),
                         ClipRRect(
                           borderRadius: BorderRadius.circular(16.0),
@@ -1620,8 +1620,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -1675,8 +1675,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -1730,8 +1730,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -1785,8 +1785,8 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -1855,18 +1855,18 @@ class _SummaryServayWidgetState extends State<SummaryServayWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                               ],
                             ),
                           ),
                         ),
-                      ].divide(SizedBox(height: 8.0)),
+                      ].divide(const SizedBox(height: 8.0)),
                     ),
                   ),
                 ),
-              ].divide(SizedBox(height: 12.0)),
+              ].divide(const SizedBox(height: 12.0)),
             ),
           ),
         ),

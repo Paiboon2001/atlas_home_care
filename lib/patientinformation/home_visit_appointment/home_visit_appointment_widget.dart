@@ -67,13 +67,13 @@ class _HomeVisitAppointmentWidgetState
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).primaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -82,7 +82,7 @@ class _HomeVisitAppointmentWidgetState
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -114,7 +114,7 @@ class _HomeVisitAppointmentWidgetState
                         return 40.0;
                       }
                     }(),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                   ),
@@ -132,14 +132,14 @@ class _HomeVisitAppointmentWidgetState
                   wrapWithModel(
                     model: _model.closeModel,
                     updateCallback: () => safeSetState(() {}),
-                    child: CloseWidget(),
+                    child: const CloseWidget(),
                   ),
                 ],
               ),
             ),
             Expanded(
               child: ListView(
-                padding: EdgeInsets.fromLTRB(
+                padding: const EdgeInsets.fromLTRB(
                   0,
                   0,
                   0,
@@ -150,7 +150,7 @@ class _HomeVisitAppointmentWidgetState
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
@@ -160,7 +160,7 @@ class _HomeVisitAppointmentWidgetState
                             'assets/images/bgappbar.png',
                           ).image,
                         ),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 6.0,
                             color: Color(0x25000000),
@@ -173,16 +173,16 @@ class _HomeVisitAppointmentWidgetState
                         gradient: LinearGradient(
                           colors: [
                             FlutterFlowTheme.of(context).primary,
-                            Color(0xFF1F72BB)
+                            const Color(0xFF1F72BB)
                           ],
-                          stops: [0.0, 1.0],
-                          begin: AlignmentDirectional(0.0, -1.0),
-                          end: AlignmentDirectional(0, 1.0),
+                          stops: const [0.0, 1.0],
+                          begin: const AlignmentDirectional(0.0, -1.0),
+                          end: const AlignmentDirectional(0, 1.0),
                         ),
                         borderRadius: BorderRadius.circular(24.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -241,7 +241,7 @@ class _HomeVisitAppointmentWidgetState
                                 borderRadius: BorderRadius.circular(100.0),
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: InkWell(
                                   splashColor: Colors.transparent,
                                   focusColor: Colors.transparent,
@@ -257,7 +257,7 @@ class _HomeVisitAppointmentWidgetState
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Icon(
                                           Icons.add_home_rounded,
                                           color: FlutterFlowTheme.of(context)
@@ -267,7 +267,7 @@ class _HomeVisitAppointmentWidgetState
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Text(
                                           'บันทึกเยี่ยมบ้าน',
                                           style: FlutterFlowTheme.of(context)
@@ -287,25 +287,25 @@ class _HomeVisitAppointmentWidgetState
                                               ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                 ),
                               ),
                             ),
-                          ].divide(SizedBox(height: 12.0)),
+                          ].divide(const SizedBox(height: 12.0)),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
@@ -323,12 +323,12 @@ class _HomeVisitAppointmentWidgetState
                                               .labelMediumIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 12.0)),
+                            ].divide(const SizedBox(width: 12.0)),
                           ),
                         ),
                         Container(
                           decoration: BoxDecoration(
-                            gradient: LinearGradient(
+                            gradient: const LinearGradient(
                               colors: [Color(0xFFF98D74), Color(0xFFE35832)],
                               stops: [0.0, 1.0],
                               begin: AlignmentDirectional(1.0, -1.0),
@@ -337,7 +337,7 @@ class _HomeVisitAppointmentWidgetState
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 6.0, 16.0, 6.0),
                             child: Text(
                               'อีก 1 วันถึงนัด',
@@ -362,14 +362,14 @@ class _HomeVisitAppointmentWidgetState
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: Container(
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
                         borderRadius: BorderRadius.circular(24.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -417,19 +417,19 @@ class _HomeVisitAppointmentWidgetState
                                       decoration: BoxDecoration(
                                         gradient: LinearGradient(
                                           colors: [
-                                            Color(0xFFAAF5AD),
+                                            const Color(0xFFAAF5AD),
                                             FlutterFlowTheme.of(context).success
                                           ],
-                                          stops: [0.0, 1.0],
+                                          stops: const [0.0, 1.0],
                                           begin:
-                                              AlignmentDirectional(0.56, -1.0),
-                                          end: AlignmentDirectional(-0.56, 1.0),
+                                              const AlignmentDirectional(0.56, -1.0),
+                                          end: const AlignmentDirectional(-0.56, 1.0),
                                         ),
                                         shape: BoxShape.circle,
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Icon(
                                           Icons.local_hospital_rounded,
                                           color: FlutterFlowTheme.of(context)
@@ -453,9 +453,9 @@ class _HomeVisitAppointmentWidgetState
                                                     .labelSmallIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 8.0)),
+                                  ].divide(const SizedBox(width: 8.0)),
                                 ),
-                                Container(
+                                SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
                                     controller: _model.textController1,
@@ -466,7 +466,7 @@ class _HomeVisitAppointmentWidgetState
                                     decoration: InputDecoration(
                                       isDense: true,
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -474,7 +474,7 @@ class _HomeVisitAppointmentWidgetState
                                             BorderRadius.circular(8.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -521,7 +521,7 @@ class _HomeVisitAppointmentWidgetState
                                         .asValidator(context),
                                   ),
                                 ),
-                              ].divide(SizedBox(height: 8.0)),
+                              ].divide(const SizedBox(height: 8.0)),
                             ),
                             Column(
                               mainAxisSize: MainAxisSize.max,
@@ -568,18 +568,18 @@ class _HomeVisitAppointmentWidgetState
                                           colors: [
                                             FlutterFlowTheme.of(context)
                                                 .primary,
-                                            Color(0xFF216DAA)
+                                            const Color(0xFF216DAA)
                                           ],
-                                          stops: [0.0, 1.0],
+                                          stops: const [0.0, 1.0],
                                           begin:
-                                              AlignmentDirectional(0.0, -1.0),
-                                          end: AlignmentDirectional(0, 1.0),
+                                              const AlignmentDirectional(0.0, -1.0),
+                                          end: const AlignmentDirectional(0, 1.0),
                                         ),
                                         shape: BoxShape.circle,
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Icon(
                                           Icons.calendar_month_rounded,
                                           color: FlutterFlowTheme.of(context)
@@ -603,9 +603,9 @@ class _HomeVisitAppointmentWidgetState
                                                     .labelSmallIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 8.0)),
+                                  ].divide(const SizedBox(width: 8.0)),
                                 ),
-                                Container(
+                                SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
                                     controller: _model.textController2,
@@ -616,7 +616,7 @@ class _HomeVisitAppointmentWidgetState
                                     decoration: InputDecoration(
                                       isDense: true,
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -624,7 +624,7 @@ class _HomeVisitAppointmentWidgetState
                                             BorderRadius.circular(8.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -671,7 +671,7 @@ class _HomeVisitAppointmentWidgetState
                                         .asValidator(context),
                                   ),
                                 ),
-                              ].divide(SizedBox(height: 8.0)),
+                              ].divide(const SizedBox(height: 8.0)),
                             ),
                             Column(
                               mainAxisSize: MainAxisSize.max,
@@ -713,7 +713,7 @@ class _HomeVisitAppointmentWidgetState
                                           return 32.0;
                                         }
                                       }(),
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         gradient: LinearGradient(
                                           colors: [
                                             Color(0xFFFE9393),
@@ -728,7 +728,7 @@ class _HomeVisitAppointmentWidgetState
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: FaIcon(
                                           FontAwesomeIcons.userInjured,
                                           color: FlutterFlowTheme.of(context)
@@ -752,9 +752,9 @@ class _HomeVisitAppointmentWidgetState
                                                     .labelSmallIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 8.0)),
+                                  ].divide(const SizedBox(width: 8.0)),
                                 ),
-                                Container(
+                                SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
                                     controller: _model.textController3,
@@ -765,7 +765,7 @@ class _HomeVisitAppointmentWidgetState
                                     decoration: InputDecoration(
                                       isDense: true,
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -773,7 +773,7 @@ class _HomeVisitAppointmentWidgetState
                                             BorderRadius.circular(8.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -820,7 +820,7 @@ class _HomeVisitAppointmentWidgetState
                                         .asValidator(context),
                                   ),
                                 ),
-                              ].divide(SizedBox(height: 8.0)),
+                              ].divide(const SizedBox(height: 8.0)),
                             ),
                             Column(
                               mainAxisSize: MainAxisSize.max,
@@ -862,7 +862,7 @@ class _HomeVisitAppointmentWidgetState
                                           return 32.0;
                                         }
                                       }(),
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         gradient: LinearGradient(
                                           colors: [
                                             Color(0xFF46D8AD),
@@ -877,7 +877,7 @@ class _HomeVisitAppointmentWidgetState
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Icon(
                                           Icons.person_rounded,
                                           color: FlutterFlowTheme.of(context)
@@ -901,9 +901,9 @@ class _HomeVisitAppointmentWidgetState
                                                     .labelSmallIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 8.0)),
+                                  ].divide(const SizedBox(width: 8.0)),
                                 ),
-                                Container(
+                                SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
                                     controller: _model.textController4,
@@ -914,7 +914,7 @@ class _HomeVisitAppointmentWidgetState
                                     decoration: InputDecoration(
                                       isDense: true,
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -922,7 +922,7 @@ class _HomeVisitAppointmentWidgetState
                                             BorderRadius.circular(8.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -969,7 +969,7 @@ class _HomeVisitAppointmentWidgetState
                                         .asValidator(context),
                                   ),
                                 ),
-                              ].divide(SizedBox(height: 8.0)),
+                              ].divide(const SizedBox(height: 8.0)),
                             ),
                             Column(
                               mainAxisSize: MainAxisSize.max,
@@ -1011,7 +1011,7 @@ class _HomeVisitAppointmentWidgetState
                                           return 32.0;
                                         }
                                       }(),
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         gradient: LinearGradient(
                                           colors: [
                                             Color(0xFFFCD792),
@@ -1026,7 +1026,7 @@ class _HomeVisitAppointmentWidgetState
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Icon(
                                           Icons.note_add_rounded,
                                           color: FlutterFlowTheme.of(context)
@@ -1050,9 +1050,9 @@ class _HomeVisitAppointmentWidgetState
                                                     .labelSmallIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 8.0)),
+                                  ].divide(const SizedBox(width: 8.0)),
                                 ),
-                                Container(
+                                SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
                                     controller: _model.textController5,
@@ -1063,7 +1063,7 @@ class _HomeVisitAppointmentWidgetState
                                     decoration: InputDecoration(
                                       isDense: true,
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -1071,7 +1071,7 @@ class _HomeVisitAppointmentWidgetState
                                             BorderRadius.circular(8.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -1118,23 +1118,23 @@ class _HomeVisitAppointmentWidgetState
                                         .asValidator(context),
                                   ),
                                 ),
-                              ].divide(SizedBox(height: 8.0)),
+                              ].divide(const SizedBox(height: 8.0)),
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: Container(
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
                         borderRadius: BorderRadius.circular(24.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -1182,19 +1182,19 @@ class _HomeVisitAppointmentWidgetState
                                       decoration: BoxDecoration(
                                         gradient: LinearGradient(
                                           colors: [
-                                            Color(0xFF98CBF4),
+                                            const Color(0xFF98CBF4),
                                             FlutterFlowTheme.of(context).primary
                                           ],
-                                          stops: [0.0, 1.0],
+                                          stops: const [0.0, 1.0],
                                           begin:
-                                              AlignmentDirectional(0.56, -1.0),
-                                          end: AlignmentDirectional(-0.56, 1.0),
+                                              const AlignmentDirectional(0.56, -1.0),
+                                          end: const AlignmentDirectional(-0.56, 1.0),
                                         ),
                                         shape: BoxShape.circle,
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Icon(
                                           Icons.local_hospital_rounded,
                                           color: FlutterFlowTheme.of(context)
@@ -1218,9 +1218,9 @@ class _HomeVisitAppointmentWidgetState
                                                     .labelSmallIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 8.0)),
+                                  ].divide(const SizedBox(width: 8.0)),
                                 ),
-                                Container(
+                                SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
                                     controller: _model.textController6,
@@ -1231,7 +1231,7 @@ class _HomeVisitAppointmentWidgetState
                                     decoration: InputDecoration(
                                       isDense: true,
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -1239,7 +1239,7 @@ class _HomeVisitAppointmentWidgetState
                                             BorderRadius.circular(8.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -1287,14 +1287,14 @@ class _HomeVisitAppointmentWidgetState
                                         .asValidator(context),
                                   ),
                                 ),
-                              ].divide(SizedBox(height: 8.0)),
+                              ].divide(const SizedBox(height: 8.0)),
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 16.0)),
+                ].divide(const SizedBox(height: 16.0)),
               ),
             ),
           ],

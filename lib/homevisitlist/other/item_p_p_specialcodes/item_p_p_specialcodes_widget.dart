@@ -55,11 +55,11 @@ class _ItemPPSpecialcodesWidgetState extends State<ItemPPSpecialcodesWidget> {
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
-        color: Color(0x0E4CAF50),
+        color: const Color(0x0E4CAF50),
         borderRadius: BorderRadius.circular(24.0),
       ),
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -70,7 +70,7 @@ class _ItemPPSpecialcodesWidgetState extends State<ItemPPSpecialcodesWidget> {
               children: [
                 Text(
                   valueOrDefault<String>(
-                    widget!.ppcode,
+                    widget.ppcode,
                     'ppcode',
                   ),
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -84,7 +84,7 @@ class _ItemPPSpecialcodesWidgetState extends State<ItemPPSpecialcodesWidget> {
                       ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
+                  alignment: const AlignmentDirectional(0.0, 0.0),
                   child: Icon(
                     Icons.delete_forever,
                     color: FlutterFlowTheme.of(context).error,
@@ -95,7 +95,7 @@ class _ItemPPSpecialcodesWidgetState extends State<ItemPPSpecialcodesWidget> {
             ),
             Text(
               valueOrDefault<String>(
-                widget!.ppcodesdecription,
+                widget.ppcodesdecription,
                 'decription',
               ),
               style: FlutterFlowTheme.of(context).bodySmall.override(
@@ -106,7 +106,7 @@ class _ItemPPSpecialcodesWidgetState extends State<ItemPPSpecialcodesWidget> {
                         !FlutterFlowTheme.of(context).bodySmallIsCustom,
                   ),
             ),
-          ].divide(SizedBox(height: 12.0)),
+          ].divide(const SizedBox(height: 12.0)),
         ),
       ),
     );

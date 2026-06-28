@@ -115,6 +115,155 @@ class _PINCodeWidgetState extends State<PINCodeWidget>
     super.dispose();
   }
 
+  Future<void> _appendDigit(String digit) async {
+    final current = _model.pinCodeController?.text ?? '';
+    if (current.length >= 6) {
+      return;
+    }
+    final next = current + digit;
+    _model.pinCodeController?.text = next;
+    safeSetState(() {});
+    if (next.length == 6) {
+      // Show the loading overlay for 2 seconds before going to the home page.
+      showModalBottomSheet(
+        isScrollControlled: true,
+        isDismissible: false,
+        backgroundColor: Colors.transparent,
+        enableDrag: false,
+        context: context,
+        builder: (context) {
+          return GestureDetector(
+            onTap: () {
+              FocusScope.of(context).unfocus();
+              FocusManager.instance.primaryFocus?.unfocus();
+            },
+            child: Padding(
+              padding: MediaQuery.viewInsetsOf(context),
+              child: LoadingWidget(),
+            ),
+          );
+        },
+      );
+
+      await Future.delayed(const Duration(seconds: 2));
+      if (!mounted) {
+        return;
+      }
+      // Dismiss the loading overlay, then navigate.
+      Navigator.of(context).pop();
+      context.pushNamed(HomepageNewWidget.routeName);
+    }
+  }
+
+  void _backspace() {
+    final current = _model.pinCodeController?.text ?? '';
+    if (current.isEmpty) {
+      return;
+    }
+    _model.pinCodeController?.text =
+        current.substring(0, current.length - 1);
+    safeSetState(() {});
+  }
+
+  Widget _keyButton(String digit) {
+    return Align(
+      alignment: AlignmentDirectional(0.0, 0.0),
+      child: FFButtonWidget(
+        onPressed: () => _appendDigit(digit),
+        text: digit,
+        options: FFButtonOptions(
+          width: 72.0,
+          height: 72.0,
+          padding: EdgeInsets.all(0.0),
+          iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+          color: Colors.transparent,
+          textStyle: FlutterFlowTheme.of(context).headlineSmall.override(
+                fontFamily: FlutterFlowTheme.of(context).headlineSmallFamily,
+                color: const Color(0xFF004078),
+                fontSize: 24.0,
+                letterSpacing: 0.0,
+                fontWeight: FontWeight.w500,
+                useGoogleFonts:
+                    !FlutterFlowTheme.of(context).headlineSmallIsCustom,
+              ),
+          elevation: 0.0,
+          borderSide: const BorderSide(
+            color: Color(0xFF004078),
+            width: 1.0,
+          ),
+          borderRadius: BorderRadius.circular(36.0),
+          hoverColor: const Color(0xFF004078),
+          hoverTextColor: FlutterFlowTheme.of(context).secondaryBackground,
+        ),
+        showLoadingIndicator: false,
+      ),
+    );
+  }
+
+  Widget _faceIdButton() {
+    return Align(
+      alignment: AlignmentDirectional(0.0, 0.0),
+      child: FFButtonWidget(
+        onPressed: () {},
+        text: '',
+        icon: Icon(
+          Icons.face,
+          size: 32.0,
+          color: FlutterFlowTheme.of(context).secondaryText,
+        ),
+        options: FFButtonOptions(
+          width: 72.0,
+          height: 72.0,
+          padding: EdgeInsets.all(0.0),
+          iconPadding: EdgeInsets.all(0.0),
+          color: Colors.transparent,
+          textStyle: FlutterFlowTheme.of(context).headlineSmall.override(
+                fontFamily: FlutterFlowTheme.of(context).headlineSmallFamily,
+                letterSpacing: 0.0,
+                useGoogleFonts:
+                    !FlutterFlowTheme.of(context).headlineSmallIsCustom,
+              ),
+          elevation: 0.0,
+          borderSide: BorderSide.none,
+          borderRadius: BorderRadius.circular(36.0),
+        ),
+        showLoadingIndicator: false,
+      ),
+    );
+  }
+
+  Widget _backspaceButton() {
+    return Align(
+      alignment: AlignmentDirectional(0.0, 0.0),
+      child: FFButtonWidget(
+        onPressed: () => _backspace(),
+        text: '',
+        icon: FaIcon(
+          FontAwesomeIcons.backspace,
+          size: 24.0,
+          color: FlutterFlowTheme.of(context).secondaryText,
+        ),
+        options: FFButtonOptions(
+          width: 72.0,
+          height: 72.0,
+          padding: EdgeInsets.all(0.0),
+          iconPadding: EdgeInsets.all(0.0),
+          color: Colors.transparent,
+          textStyle: FlutterFlowTheme.of(context).headlineSmall.override(
+                fontFamily: FlutterFlowTheme.of(context).headlineSmallFamily,
+                letterSpacing: 0.0,
+                useGoogleFonts:
+                    !FlutterFlowTheme.of(context).headlineSmallIsCustom,
+              ),
+          elevation: 0.0,
+          borderSide: BorderSide.none,
+          borderRadius: BorderRadius.circular(36.0),
+        ),
+        showLoadingIndicator: false,
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -159,1447 +308,173 @@ class _PINCodeWidgetState extends State<PINCodeWidget>
         body: Container(
           width: double.infinity,
           height: double.infinity,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              fit: BoxFit.cover,
-              alignment: AlignmentDirectional(0.0, 1.0),
-              image: Image.asset(
-                'assets/images/bg_pin.png',
-              ).image,
-            ),
-          ),
-          child: Stack(
-            children: [
-              Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+          color: const Color(0xFFF2FAFF),
+          child: SafeArea(
+            child: Center(
+              child: SingleChildScrollView(
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                  padding:
+                      EdgeInsetsDirectional.fromSTEB(24.0, 16.0, 24.0, 16.0),
                   child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      Column(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Container(
-                            width: () {
-                              if (MediaQuery.sizeOf(context).width <
-                                  kBreakpointSmall) {
-                                return 200.0;
-                              } else if (MediaQuery.sizeOf(context).width <
-                                  kBreakpointMedium) {
-                                return 200.0;
-                              } else if (MediaQuery.sizeOf(context).width <
-                                  kBreakpointLarge) {
-                                return 290.0;
-                              } else {
-                                return 290.0;
-                              }
-                            }(),
-                            height: () {
-                              if (MediaQuery.sizeOf(context).width <
-                                  kBreakpointSmall) {
-                                return 200.0;
-                              } else if (MediaQuery.sizeOf(context).width <
-                                  kBreakpointMedium) {
-                                return 200.0;
-                              } else if (MediaQuery.sizeOf(context).width <
-                                  kBreakpointLarge) {
-                                return 290.0;
-                              } else {
-                                return 290.0;
-                              }
-                            }(),
-                            child: Stack(
-                              children: [
-                                Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
-                                  child: Container(
-                                    width: () {
-                                      if (MediaQuery.sizeOf(context).width <
-                                          kBreakpointSmall) {
-                                        return 200.0;
-                                      } else if (MediaQuery.sizeOf(context)
-                                              .width <
-                                          kBreakpointMedium) {
-                                        return 200.0;
-                                      } else if (MediaQuery.sizeOf(context)
-                                              .width <
-                                          kBreakpointLarge) {
-                                        return 290.0;
-                                      } else {
-                                        return 290.0;
-                                      }
-                                    }(),
-                                    height: () {
-                                      if (MediaQuery.sizeOf(context).width <
-                                          kBreakpointSmall) {
-                                        return 200.0;
-                                      } else if (MediaQuery.sizeOf(context)
-                                              .width <
-                                          kBreakpointMedium) {
-                                        return 200.0;
-                                      } else if (MediaQuery.sizeOf(context)
-                                              .width <
-                                          kBreakpointLarge) {
-                                        return 290.0;
-                                      } else {
-                                        return 290.0;
-                                      }
-                                    }(),
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      border: Border.all(
-                                        color: Color(0xFF62B8FC),
-                                      ),
-                                    ),
-                                  ).animateOnPageLoad(animationsMap[
-                                      'containerOnPageLoadAnimation1']!),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
-                                  child: Container(
-                                    width: () {
-                                      if (MediaQuery.sizeOf(context).width <
-                                          kBreakpointSmall) {
-                                        return 170.0;
-                                      } else if (MediaQuery.sizeOf(context)
-                                              .width <
-                                          kBreakpointMedium) {
-                                        return 170.0;
-                                      } else if (MediaQuery.sizeOf(context)
-                                              .width <
-                                          kBreakpointLarge) {
-                                        return 230.0;
-                                      } else {
-                                        return 230.0;
-                                      }
-                                    }(),
-                                    height: () {
-                                      if (MediaQuery.sizeOf(context).width <
-                                          kBreakpointSmall) {
-                                        return 170.0;
-                                      } else if (MediaQuery.sizeOf(context)
-                                              .width <
-                                          kBreakpointMedium) {
-                                        return 170.0;
-                                      } else if (MediaQuery.sizeOf(context)
-                                              .width <
-                                          kBreakpointLarge) {
-                                        return 230.0;
-                                      } else {
-                                        return 230.0;
-                                      }
-                                    }(),
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      border: Border.all(
-                                        color: Color(0xFF81C3F8),
-                                      ),
-                                    ),
-                                  ).animateOnPageLoad(animationsMap[
-                                      'containerOnPageLoadAnimation2']!),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
-                                  child: Container(
-                                    width: () {
-                                      if (MediaQuery.sizeOf(context).width <
-                                          kBreakpointSmall) {
-                                        return 140.0;
-                                      } else if (MediaQuery.sizeOf(context)
-                                              .width <
-                                          kBreakpointMedium) {
-                                        return 140.0;
-                                      } else if (MediaQuery.sizeOf(context)
-                                              .width <
-                                          kBreakpointLarge) {
-                                        return 170.0;
-                                      } else {
-                                        return 170.0;
-                                      }
-                                    }(),
-                                    height: () {
-                                      if (MediaQuery.sizeOf(context).width <
-                                          kBreakpointSmall) {
-                                        return 140.0;
-                                      } else if (MediaQuery.sizeOf(context)
-                                              .width <
-                                          kBreakpointMedium) {
-                                        return 140.0;
-                                      } else if (MediaQuery.sizeOf(context)
-                                              .width <
-                                          kBreakpointLarge) {
-                                        return 170.0;
-                                      } else {
-                                        return 170.0;
-                                      }
-                                    }(),
-                                    decoration: BoxDecoration(
-                                      gradient: LinearGradient(
-                                        colors: [
-                                          Color(0xFFF8FCFF),
-                                          Color(0xFFCFEBFF)
-                                        ],
-                                        stops: [0.0, 1.0],
-                                        begin: AlignmentDirectional(0.0, -1.0),
-                                        end: AlignmentDirectional(0, 1.0),
-                                      ),
-                                      shape: BoxShape.circle,
-                                      border: Border.all(
-                                        color: Color(0xFF96CEF9),
-                                      ),
-                                    ),
-                                  ).animateOnPageLoad(animationsMap[
-                                      'containerOnPageLoadAnimation3']!),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
-                                  child: Container(
-                                    width: () {
-                                      if (MediaQuery.sizeOf(context).width <
-                                          kBreakpointSmall) {
-                                        return 110.0;
-                                      } else if (MediaQuery.sizeOf(context)
-                                              .width <
-                                          kBreakpointMedium) {
-                                        return 110.0;
-                                      } else if (MediaQuery.sizeOf(context)
-                                              .width <
-                                          kBreakpointLarge) {
-                                        return 140.0;
-                                      } else {
-                                        return 140.0;
-                                      }
-                                    }(),
-                                    height: () {
-                                      if (MediaQuery.sizeOf(context).width <
-                                          kBreakpointSmall) {
-                                        return 110.0;
-                                      } else if (MediaQuery.sizeOf(context)
-                                              .width <
-                                          kBreakpointMedium) {
-                                        return 110.0;
-                                      } else if (MediaQuery.sizeOf(context)
-                                              .width <
-                                          kBreakpointLarge) {
-                                        return 140.0;
-                                      } else {
-                                        return 140.0;
-                                      }
-                                    }(),
-                                    decoration: BoxDecoration(
-                                      boxShadow: [
-                                        BoxShadow(
-                                          blurRadius: 16.0,
-                                          color: Color(0x1AFFFFFF),
-                                          offset: Offset(
-                                            0.0,
-                                            0.0,
-                                          ),
-                                        )
-                                      ],
-                                      shape: BoxShape.circle,
-                                    ),
-                                    child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: ClipRRect(
-                                        borderRadius:
-                                            BorderRadius.circular(8.0),
-                                        child: Image.asset(
-                                          'assets/images/AHC_V2.webp',
-                                          width: double.infinity,
-                                          height: double.infinity,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Text(
-                            'ใส่รหัส PIN เพื่อดำเนินการต่อ',
-                            textAlign: TextAlign.center,
-                            style: FlutterFlowTheme.of(context)
-                                .bodyLarge
-                                .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyLargeFamily,
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
-                                  letterSpacing: 0.0,
-                                  fontWeight: FontWeight.w300,
-                                  lineHeight: 1.7,
-                                  useGoogleFonts: !FlutterFlowTheme.of(context)
-                                      .bodyLargeIsCustom,
-                                ),
-                          ),
-                        ].divide(SizedBox(height: 8.0)),
+                      // Logo
+                      Image.asset(
+                        'assets/images/AHC_V2.webp',
+                        width: 120.0,
+                        height: 120.0,
+                        fit: BoxFit.contain,
                       ),
-                      Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
-                        child: Container(
-                          width: () {
-                            if (MediaQuery.sizeOf(context).width <
-                                kBreakpointSmall) {
-                              return 300.0;
-                            } else if (MediaQuery.sizeOf(context).width <
-                                kBreakpointMedium) {
-                              return 300.0;
-                            } else if (MediaQuery.sizeOf(context).width <
-                                kBreakpointLarge) {
-                              return 400.0;
-                            } else {
-                              return 400.0;
-                            }
-                          }(),
-                          decoration: BoxDecoration(),
-                          child: PinCodeTextField(
-                            autoDisposeControllers: false,
-                            appContext: context,
-                            length: 6,
-                            textStyle: FlutterFlowTheme.of(context)
-                                .bodySmall
-                                .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodySmallFamily,
-                                  color: Color(0x006C6C6C),
-                                  letterSpacing: 0.0,
-                                  useGoogleFonts: !FlutterFlowTheme.of(context)
-                                      .bodySmallIsCustom,
-                                ),
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            enableActiveFill: true,
-                            autoFocus: false,
-                            focusNode: _model.pinCodeFocusNode,
-                            enablePinAutofill: false,
-                            errorTextSpace: 0.0,
-                            showCursor: false,
-                            cursorColor: FlutterFlowTheme.of(context).primary,
-                            obscureText: false,
-                            keyboardType: TextInputType.number,
-                            inputFormatters: [
-                              FilteringTextInputFormatter.digitsOnly
-                            ],
-                            pinTheme: PinTheme(
-                              fieldHeight: 16.0,
-                              fieldWidth: 20.0,
-                              borderWidth: 1.5,
-                              borderRadius: BorderRadius.only(
-                                bottomLeft: Radius.circular(100.0),
-                                bottomRight: Radius.circular(100.0),
-                                topLeft: Radius.circular(100.0),
-                                topRight: Radius.circular(100.0),
+                      SizedBox(height: 12.0),
+                      // Title
+                      Text(
+                        'กรุณาใส่รหัส PIN',
+                        textAlign: TextAlign.center,
+                        style: FlutterFlowTheme.of(context).bodyLarge.override(
+                              fontFamily:
+                                  FlutterFlowTheme.of(context).bodyLargeFamily,
+                              color: const Color(0xFF041228),
+                              fontSize: 16.0,
+                              letterSpacing: 0.0,
+                              fontWeight: FontWeight.w600,
+                              useGoogleFonts: !FlutterFlowTheme.of(context)
+                                  .bodyLargeIsCustom,
+                            ),
+                      ),
+                      SizedBox(height: 32.0),
+                      // PIN indicator dots
+                      SizedBox(
+                        width: 176.0,
+                        child: PinCodeTextField(
+                          autoDisposeControllers: false,
+                          appContext: context,
+                          length: 6,
+                          textStyle: FlutterFlowTheme.of(context)
+                              .bodySmall
+                              .override(
+                                fontFamily: FlutterFlowTheme.of(context)
+                                    .bodySmallFamily,
+                                color: Colors.transparent,
+                                letterSpacing: 0.0,
+                                useGoogleFonts: !FlutterFlowTheme.of(context)
+                                    .bodySmallIsCustom,
                               ),
-                              shape: PinCodeFieldShape.circle,
-                              activeColor:
-                                  FlutterFlowTheme.of(context).customColor5,
-                              inactiveColor:
-                                  FlutterFlowTheme.of(context).primary,
-                              selectedColor:
-                                  FlutterFlowTheme.of(context).customColor5,
-                              activeFillColor:
-                                  FlutterFlowTheme.of(context).customColor5,
-                              inactiveFillColor: Color(0x00E2E2E8),
-                              selectedFillColor:
-                                  FlutterFlowTheme.of(context).customColor5,
-                            ),
-                            controller: _model.pinCodeController,
-                            onChanged: (_) {},
-                            onCompleted: (_) async {
-                              if (_model.pinCodeController!.text == '111111') {
-                                context.pushNamed(HomepageNewWidget.routeName);
-                              }
-                            },
-                            autovalidateMode:
-                                AutovalidateMode.onUserInteraction,
-                            validator: _model.pinCodeControllerValidator
-                                .asValidator(context),
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          enableActiveFill: true,
+                          autoFocus: false,
+                          focusNode: _model.pinCodeFocusNode,
+                          enablePinAutofill: false,
+                          errorTextSpace: 0.0,
+                          showCursor: false,
+                          cursorColor: FlutterFlowTheme.of(context).primary,
+                          obscureText: false,
+                          keyboardType: TextInputType.number,
+                          inputFormatters: [
+                            FilteringTextInputFormatter.digitsOnly
+                          ],
+                          pinTheme: PinTheme(
+                            fieldHeight: 12.0,
+                            fieldWidth: 12.0,
+                            borderWidth: 0.0,
+                            shape: PinCodeFieldShape.circle,
+                            activeColor: const Color(0xFF004078),
+                            inactiveColor: const Color(0xFFCBD5E0),
+                            selectedColor: const Color(0xFFCBD5E0),
+                            activeFillColor: const Color(0xFF004078),
+                            inactiveFillColor: const Color(0xFFCBD5E0),
+                            selectedFillColor: const Color(0xFFCBD5E0),
                           ),
+                          controller: _model.pinCodeController,
+                          onChanged: (_) {},
+                          onCompleted: (_) async {},
+                          autovalidateMode: AutovalidateMode.onUserInteraction,
+                          validator: _model.pinCodeControllerValidator
+                              .asValidator(context),
                         ),
                       ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            0.0,
-                            0.0,
-                            0.0,
-                            valueOrDefault<double>(
-                              () {
-                                if (MediaQuery.sizeOf(context).width <
-                                    kBreakpointSmall) {
-                                  return 32.0;
-                                } else if (MediaQuery.sizeOf(context).width <
-                                    kBreakpointMedium) {
-                                  return 32.0;
-                                } else if (MediaQuery.sizeOf(context).width <
-                                    kBreakpointLarge) {
-                                  return 24.0;
-                                } else {
-                                  return 24.0;
-                                }
-                              }(),
-                              0.0,
-                            )),
-                        child: Container(
-                          width: () {
-                            if (MediaQuery.sizeOf(context).width <
-                                kBreakpointSmall) {
-                              return 400.0;
-                            } else if (MediaQuery.sizeOf(context).width <
-                                kBreakpointMedium) {
-                              return 400.0;
-                            } else if (MediaQuery.sizeOf(context).width <
-                                kBreakpointLarge) {
-                              return 500.0;
-                            } else {
-                              return 500.0;
-                            }
-                          }(),
-                          decoration: BoxDecoration(),
-                          child: MasonryGridView.builder(
-                            physics: const NeverScrollableScrollPhysics(),
-                            gridDelegate:
-                                SliverSimpleGridDelegateWithFixedCrossAxisCount(
-                              crossAxisCount: 3,
-                            ),
-                            crossAxisSpacing: 8.0,
-                            mainAxisSpacing: () {
-                              if (MediaQuery.sizeOf(context).width <
-                                  kBreakpointSmall) {
-                                return 16.0;
-                              } else if (MediaQuery.sizeOf(context).width <
-                                  kBreakpointMedium) {
-                                return 16.0;
-                              } else if (MediaQuery.sizeOf(context).width <
-                                  kBreakpointLarge) {
-                                return 32.0;
-                              } else {
-                                return 32.0;
-                              }
-                            }(),
-                            itemCount: 12,
-                            shrinkWrap: true,
-                            itemBuilder: (context, index) {
-                              return [
-                                () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: FFButtonWidget(
-                                        onPressed: () async {
-                                          showModalBottomSheet(
-                                            isScrollControlled: true,
-                                            backgroundColor: Colors.transparent,
-                                            enableDrag: false,
-                                            context: context,
-                                            builder: (context) {
-                                              return GestureDetector(
-                                                onTap: () {
-                                                  FocusScope.of(context)
-                                                      .unfocus();
-                                                  FocusManager
-                                                      .instance.primaryFocus
-                                                      ?.unfocus();
-                                                },
-                                                child: Padding(
-                                                  padding:
-                                                      MediaQuery.viewInsetsOf(
-                                                          context),
-                                                  child: LoadingWidget(),
-                                                ),
-                                              );
-                                            },
-                                          ).then(
-                                              (value) => safeSetState(() {}));
-
-                                          await Future.delayed(
-                                            Duration(
-                                              milliseconds: 1000,
-                                            ),
-                                          );
-
-                                          context.pushNamed(
-                                              HomepageNewWidget.routeName);
-                                        },
-                                        text: '1',
-                                        options: FFButtonOptions(
-                                          width: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          height: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          padding: EdgeInsets.all(0.0),
-                                          iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
-                                          textStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .headlineSmall
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineSmallFamily,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                letterSpacing: 0.0,
-                                                useGoogleFonts:
-                                                    !FlutterFlowTheme.of(
-                                                            context)
-                                                        .headlineSmallIsCustom,
-                                              ),
-                                          elevation: 0.0,
-                                          borderRadius:
-                                              BorderRadius.circular(100.0),
-                                          hoverColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .primary,
-                                          hoverTextColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .secondaryBackground,
-                                        ),
-                                        showLoadingIndicator: false,
-                                      ),
-                                    ),
-                                () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: FFButtonWidget(
-                                        onPressed: () async {
-                                          context.pushNamed(
-                                              HomepageBlankWidget.routeName);
-                                        },
-                                        text: '2',
-                                        options: FFButtonOptions(
-                                          width: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          height: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          padding: EdgeInsets.all(0.0),
-                                          iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
-                                          textStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .headlineSmall
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineSmallFamily,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                letterSpacing: 0.0,
-                                                useGoogleFonts:
-                                                    !FlutterFlowTheme.of(
-                                                            context)
-                                                        .headlineSmallIsCustom,
-                                              ),
-                                          elevation: 0.0,
-                                          borderRadius:
-                                              BorderRadius.circular(100.0),
-                                          hoverColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .primary,
-                                          hoverTextColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .secondaryBackground,
-                                        ),
-                                        showLoadingIndicator: false,
-                                      ),
-                                    ),
-                                () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: FFButtonWidget(
-                                        onPressed: () {
-                                          print('Button pressed ...');
-                                        },
-                                        text: '3',
-                                        options: FFButtonOptions(
-                                          width: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          height: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          padding: EdgeInsets.all(0.0),
-                                          iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
-                                          textStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .headlineSmall
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineSmallFamily,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                letterSpacing: 0.0,
-                                                useGoogleFonts:
-                                                    !FlutterFlowTheme.of(
-                                                            context)
-                                                        .headlineSmallIsCustom,
-                                              ),
-                                          elevation: 0.0,
-                                          borderRadius:
-                                              BorderRadius.circular(100.0),
-                                          hoverColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .primary,
-                                          hoverTextColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .secondaryBackground,
-                                        ),
-                                        showLoadingIndicator: false,
-                                      ),
-                                    ),
-                                () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: FFButtonWidget(
-                                        onPressed: () {
-                                          print('Button pressed ...');
-                                        },
-                                        text: '4',
-                                        options: FFButtonOptions(
-                                          width: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          height: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          padding: EdgeInsets.all(0.0),
-                                          iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
-                                          textStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .headlineSmall
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineSmallFamily,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                letterSpacing: 0.0,
-                                                useGoogleFonts:
-                                                    !FlutterFlowTheme.of(
-                                                            context)
-                                                        .headlineSmallIsCustom,
-                                              ),
-                                          elevation: 0.0,
-                                          borderRadius:
-                                              BorderRadius.circular(100.0),
-                                          hoverColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .primary,
-                                          hoverTextColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .secondaryBackground,
-                                        ),
-                                        showLoadingIndicator: false,
-                                      ),
-                                    ),
-                                () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: FFButtonWidget(
-                                        onPressed: () {
-                                          print('Button pressed ...');
-                                        },
-                                        text: '5',
-                                        options: FFButtonOptions(
-                                          width: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          height: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          padding: EdgeInsets.all(0.0),
-                                          iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
-                                          textStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .headlineSmall
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineSmallFamily,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                letterSpacing: 0.0,
-                                                useGoogleFonts:
-                                                    !FlutterFlowTheme.of(
-                                                            context)
-                                                        .headlineSmallIsCustom,
-                                              ),
-                                          elevation: 0.0,
-                                          borderRadius:
-                                              BorderRadius.circular(100.0),
-                                          hoverColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .primary,
-                                          hoverTextColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .secondaryBackground,
-                                        ),
-                                        showLoadingIndicator: false,
-                                      ),
-                                    ),
-                                () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: FFButtonWidget(
-                                        onPressed: () {
-                                          print('Button pressed ...');
-                                        },
-                                        text: '6',
-                                        options: FFButtonOptions(
-                                          width: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          height: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          padding: EdgeInsets.all(0.0),
-                                          iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
-                                          textStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .headlineSmall
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineSmallFamily,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                letterSpacing: 0.0,
-                                                useGoogleFonts:
-                                                    !FlutterFlowTheme.of(
-                                                            context)
-                                                        .headlineSmallIsCustom,
-                                              ),
-                                          elevation: 0.0,
-                                          borderRadius:
-                                              BorderRadius.circular(100.0),
-                                          hoverColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .primary,
-                                          hoverTextColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .secondaryBackground,
-                                        ),
-                                        showLoadingIndicator: false,
-                                      ),
-                                    ),
-                                () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: FFButtonWidget(
-                                        onPressed: () {
-                                          print('Button pressed ...');
-                                        },
-                                        text: '7',
-                                        options: FFButtonOptions(
-                                          width: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          height: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          padding: EdgeInsets.all(0.0),
-                                          iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
-                                          textStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .headlineSmall
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineSmallFamily,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                letterSpacing: 0.0,
-                                                useGoogleFonts:
-                                                    !FlutterFlowTheme.of(
-                                                            context)
-                                                        .headlineSmallIsCustom,
-                                              ),
-                                          elevation: 0.0,
-                                          borderRadius:
-                                              BorderRadius.circular(100.0),
-                                          hoverColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .primary,
-                                          hoverTextColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .secondaryBackground,
-                                        ),
-                                        showLoadingIndicator: false,
-                                      ),
-                                    ),
-                                () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: FFButtonWidget(
-                                        onPressed: () {
-                                          print('Button pressed ...');
-                                        },
-                                        text: '8',
-                                        options: FFButtonOptions(
-                                          width: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          height: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          padding: EdgeInsets.all(0.0),
-                                          iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
-                                          textStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .headlineSmall
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineSmallFamily,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                letterSpacing: 0.0,
-                                                useGoogleFonts:
-                                                    !FlutterFlowTheme.of(
-                                                            context)
-                                                        .headlineSmallIsCustom,
-                                              ),
-                                          elevation: 0.0,
-                                          borderRadius:
-                                              BorderRadius.circular(100.0),
-                                          hoverColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .primary,
-                                          hoverTextColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .secondaryBackground,
-                                        ),
-                                        showLoadingIndicator: false,
-                                      ),
-                                    ),
-                                () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: FFButtonWidget(
-                                        onPressed: () {
-                                          print('Button pressed ...');
-                                        },
-                                        text: '9',
-                                        options: FFButtonOptions(
-                                          width: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          height: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          padding: EdgeInsets.all(0.0),
-                                          iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
-                                          textStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .headlineSmall
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineSmallFamily,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                letterSpacing: 0.0,
-                                                useGoogleFonts:
-                                                    !FlutterFlowTheme.of(
-                                                            context)
-                                                        .headlineSmallIsCustom,
-                                              ),
-                                          elevation: 0.0,
-                                          borderRadius:
-                                              BorderRadius.circular(100.0),
-                                          hoverColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .primary,
-                                          hoverTextColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .secondaryBackground,
-                                        ),
-                                        showLoadingIndicator: false,
-                                      ),
-                                    ),
-                                () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: FFButtonWidget(
-                                        onPressed: () async {
-                                          await showModalBottomSheet(
-                                            isScrollControlled: true,
-                                            backgroundColor: Colors.transparent,
-                                            enableDrag: false,
-                                            context: context,
-                                            builder: (context) {
-                                              return GestureDetector(
-                                                onTap: () {
-                                                  FocusScope.of(context)
-                                                      .unfocus();
-                                                  FocusManager
-                                                      .instance.primaryFocus
-                                                      ?.unfocus();
-                                                },
-                                                child: Padding(
-                                                  padding:
-                                                      MediaQuery.viewInsetsOf(
-                                                          context),
-                                                  child: ForgetPinWidget(),
-                                                ),
-                                              );
-                                            },
-                                          ).then(
-                                              (value) => safeSetState(() {}));
-                                        },
-                                        text: 'ลืมรหัส PIN',
-                                        options: FFButtonOptions(
-                                          height: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 0.0, 16.0, 0.0),
-                                          iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x005C6AC4),
-                                          textStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                letterSpacing: 0.0,
-                                                useGoogleFonts:
-                                                    !FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMediumIsCustom,
-                                              ),
-                                          elevation: 0.0,
-                                          borderRadius:
-                                              BorderRadius.circular(100.0),
-                                          hoverColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .primary,
-                                          hoverTextColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .secondaryBackground,
-                                        ),
-                                        showLoadingIndicator: false,
-                                      ),
-                                    ),
-                                () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: FFButtonWidget(
-                                        onPressed: () {
-                                          print('Button pressed ...');
-                                        },
-                                        text: '0',
-                                        options: FFButtonOptions(
-                                          width: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          height: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 0.0, 16.0, 0.0),
-                                          iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
-                                          textStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .headlineSmall
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineSmallFamily,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                letterSpacing: 0.0,
-                                                useGoogleFonts:
-                                                    !FlutterFlowTheme.of(
-                                                            context)
-                                                        .headlineSmallIsCustom,
-                                              ),
-                                          elevation: 0.0,
-                                          borderRadius:
-                                              BorderRadius.circular(100.0),
-                                          hoverColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .primary,
-                                          hoverTextColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .secondaryBackground,
-                                        ),
-                                        showLoadingIndicator: false,
-                                      ),
-                                    ),
-                                () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: FFButtonWidget(
-                                        onPressed: () {
-                                          print('Button pressed ...');
-                                        },
-                                        text: '',
-                                        icon: FaIcon(
-                                          FontAwesomeIcons.backspace,
-                                          size: 20.0,
-                                        ),
-                                        options: FFButtonOptions(
-                                          width: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          height: () {
-                                            if (MediaQuery.sizeOf(context)
-                                                    .width <
-                                                kBreakpointSmall) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointMedium) {
-                                              return 64.0;
-                                            } else if (MediaQuery.sizeOf(
-                                                        context)
-                                                    .width <
-                                                kBreakpointLarge) {
-                                              return 80.0;
-                                            } else {
-                                              return 80.0;
-                                            }
-                                          }(),
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  6.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
-                                          textStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .titleMedium
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleMediumFamily,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                letterSpacing: 0.0,
-                                                useGoogleFonts:
-                                                    !FlutterFlowTheme.of(
-                                                            context)
-                                                        .titleMediumIsCustom,
-                                              ),
-                                          elevation: 0.0,
-                                          borderRadius:
-                                              BorderRadius.circular(100.0),
-                                          hoverColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .primary,
-                                          hoverTextColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .secondaryBackground,
-                                        ),
-                                        showLoadingIndicator: false,
-                                      ),
-                                    ),
-                              ][index]();
-                            },
+                      SizedBox(height: 32.0),
+                      // Keypad
+                      SizedBox(
+                        width: 296.0,
+                        child: MasonryGridView.builder(
+                          physics: const NeverScrollableScrollPhysics(),
+                          gridDelegate:
+                              SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 3,
                           ),
+                          crossAxisSpacing: 16.0,
+                          mainAxisSpacing: 24.0,
+                          itemCount: 12,
+                          shrinkWrap: true,
+                          itemBuilder: (context, index) {
+                            return [
+                              () => _keyButton('1'),
+                              () => _keyButton('2'),
+                              () => _keyButton('3'),
+                              () => _keyButton('4'),
+                              () => _keyButton('5'),
+                              () => _keyButton('6'),
+                              () => _keyButton('7'),
+                              () => _keyButton('8'),
+                              () => _keyButton('9'),
+                              () => _faceIdButton(),
+                              () => _keyButton('0'),
+                              () => _backspaceButton(),
+                            ][index]();
+                          },
                         ),
                       ),
-                    ].divide(SizedBox(height: 1.0)),
+                      SizedBox(height: 32.0),
+                      // Forgot PIN link
+                      InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {
+                          await showModalBottomSheet(
+                            isScrollControlled: true,
+                            backgroundColor: Colors.transparent,
+                            enableDrag: false,
+                            context: context,
+                            builder: (context) {
+                              return GestureDetector(
+                                onTap: () {
+                                  FocusScope.of(context).unfocus();
+                                  FocusManager.instance.primaryFocus
+                                      ?.unfocus();
+                                },
+                                child: Padding(
+                                  padding: MediaQuery.viewInsetsOf(context),
+                                  child: ForgetPinWidget(),
+                                ),
+                              );
+                            },
+                          ).then((value) => safeSetState(() {}));
+                        },
+                        child: Text(
+                          'ลืมรหัสผ่าน',
+                          textAlign: TextAlign.center,
+                          style: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                fontFamily: FlutterFlowTheme.of(context)
+                                    .bodyMediumFamily,
+                                color: FlutterFlowTheme.of(context).primary,
+                                fontSize: 16.0,
+                                letterSpacing: 0.0,
+                                fontWeight: FontWeight.w400,
+                                decoration: TextDecoration.underline,
+                                useGoogleFonts: !FlutterFlowTheme.of(context)
+                                    .bodyMediumIsCustom,
+                              ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
-            ],
+            ),
           ),
         ),
       ),

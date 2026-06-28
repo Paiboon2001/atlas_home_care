@@ -4,36 +4,15 @@ import '/assessmentform/thirtytree/widget/checkone/checkone_widget.dart';
 import '/assessmentform/thirtytree/widget/checkseven/checkseven_widget.dart';
 import '/assessmentform/thirtytree/widget/checkthree/checkthree_widget.dart';
 import '/assessmentform/thirtytree/widget/checktwo/checktwo_widget.dart';
-import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_drop_down.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
-import '/planvisit_home/widget/adi/adi_widget.dart';
-import '/planvisit_home/widget/boool/boool_widget.dart';
 import '/planvisit_home/widget/checkit/checkit_widget.dart';
-import '/planvisit_home/widget/close_out/close_out_widget.dart';
 import '/planvisit_home/widget/contract_visit/contract_visit_widget.dart';
-import '/planvisit_home/widget/medical/medical_widget.dart';
-import '/planvisit_home/widget/mongo/mongo_widget.dart';
-import '/planvisit_home/widget/postmen/postmen_widget.dart';
-import '/planvisit_home/widget/search_staff/search_staff_widget.dart';
-import 'dart:math';
-import 'dart:ui';
 import '/index.dart';
 import 'planvisit_new_widget.dart' show PlanvisitNewWidget;
 import 'package:expandable/expandable.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class PlanvisitNewModel extends FlutterFlowModel<PlanvisitNewWidget> {
   ///  Local state fields for this page.

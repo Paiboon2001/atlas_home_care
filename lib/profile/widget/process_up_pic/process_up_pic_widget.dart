@@ -106,7 +106,7 @@ class _ProcessUpPicWidgetState extends State<ProcessUpPicWidget> {
                                       .labelSmallIsCustom,
                                 ),
                           ),
-                        ].divide(SizedBox(height: 8.0)),
+                        ].divide(const SizedBox(height: 8.0)),
                       ),
                     ),
                 () => InkWell(
@@ -121,28 +121,28 @@ class _ProcessUpPicWidgetState extends State<ProcessUpPicWidget> {
                       child: wrapWithModel(
                         model: _model.picModel1,
                         updateCallback: () => safeSetState(() {}),
-                        child: PicWidget(),
+                        child: const PicWidget(),
                       ),
                     ),
                 () => wrapWithModel(
                       model: _model.picModel2,
                       updateCallback: () => safeSetState(() {}),
-                      child: PicWidget(),
+                      child: const PicWidget(),
                     ),
                 () => wrapWithModel(
                       model: _model.picModel3,
                       updateCallback: () => safeSetState(() {}),
-                      child: PicWidget(),
+                      child: const PicWidget(),
                     ),
                 () => wrapWithModel(
                       model: _model.picModel4,
                       updateCallback: () => safeSetState(() {}),
-                      child: PicWidget(),
+                      child: const PicWidget(),
                     ),
                 () => wrapWithModel(
                       model: _model.picModel5,
                       updateCallback: () => safeSetState(() {}),
-                      child: PicWidget(),
+                      child: const PicWidget(),
                     ),
               ][index]();
             },
@@ -162,7 +162,7 @@ class _ProcessUpPicWidgetState extends State<ProcessUpPicWidget> {
                 builder: (context) {
                   return Padding(
                     padding: MediaQuery.viewInsetsOf(context),
-                    child: UploadPicWidget(),
+                    child: const UploadPicWidget(),
                   );
                 },
               ).then((value) => safeSetState(() {}));
@@ -177,7 +177,7 @@ class _ProcessUpPicWidgetState extends State<ProcessUpPicWidget> {
                 ),
               ),
               child: Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -197,7 +197,7 @@ class _ProcessUpPicWidgetState extends State<ProcessUpPicWidget> {
                                 .labelSmallIsCustom,
                           ),
                     ),
-                  ].divide(SizedBox(height: 8.0)),
+                  ].divide(const SizedBox(height: 8.0)),
                 ),
               ),
             ),

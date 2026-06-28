@@ -46,7 +46,7 @@ class _CGMChartState extends State<CGMChart> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: widget.width ?? double.infinity,
       height: widget.height ?? 300,
       child: Row(
@@ -68,7 +68,7 @@ class _CGMChartState extends State<CGMChart> {
                       maxY: _maxY,
 
                       /// grid
-                      gridData: FlGridData(
+                      gridData: const FlGridData(
                         show: true,
                         verticalInterval: 0.5,
                         horizontalInterval: 30,

@@ -64,7 +64,7 @@ class _ItemServicelocationsWidgetState
             children: [
               Text(
                 valueOrDefault<String>(
-                  widget!.servicelocations,
+                  widget.servicelocations,
                   'Servicelocations',
                 ),
                 textAlign: TextAlign.start,

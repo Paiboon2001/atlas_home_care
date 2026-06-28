@@ -62,7 +62,7 @@ class _LateWidgetState extends State<LateWidget> {
         width: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               blurRadius: 4.0,
               color: Color(0x17000000),
@@ -78,7 +78,7 @@ class _LateWidgetState extends State<LateWidget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsets.all(12.0),
+              padding: const EdgeInsets.all(12.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -120,17 +120,17 @@ class _LateWidgetState extends State<LateWidget> {
                           image: DecorationImage(
                             fit: BoxFit.cover,
                             image: Image.network(
-                              widget!.img!,
+                              widget.img!,
                             ).image,
                           ),
                           gradient: LinearGradient(
                             colors: [
-                              Color(0xFFFDC0C0),
+                              const Color(0xFFFDC0C0),
                               FlutterFlowTheme.of(context).error
                             ],
-                            stops: [0.0, 1.0],
-                            begin: AlignmentDirectional(0.0, -1.0),
-                            end: AlignmentDirectional(0, 1.0),
+                            stops: const [0.0, 1.0],
+                            begin: const AlignmentDirectional(0.0, -1.0),
+                            end: const AlignmentDirectional(0, 1.0),
                           ),
                           shape: BoxShape.circle,
                         ),
@@ -141,7 +141,7 @@ class _LateWidgetState extends State<LateWidget> {
                         children: [
                           Text(
                             valueOrDefault<String>(
-                              widget!.mainname,
+                              widget.mainname,
                               'na',
                             ),
                             style: FlutterFlowTheme.of(context)
@@ -188,7 +188,7 @@ class _LateWidgetState extends State<LateWidget> {
                                                 .bodySmallIsCustom,
                                       ),
                                 ),
-                                TextSpan(
+                                const TextSpan(
                                   text: ' ปี ',
                                   style: TextStyle(),
                                 ),
@@ -206,7 +206,7 @@ class _LateWidgetState extends State<LateWidget> {
                                                 .bodySmallIsCustom,
                                       ),
                                 ),
-                                TextSpan(
+                                const TextSpan(
                                   text: ' เดือน ',
                                   style: TextStyle(),
                                 ),
@@ -224,7 +224,7 @@ class _LateWidgetState extends State<LateWidget> {
                                                 .bodySmallIsCustom,
                                       ),
                                 ),
-                                TextSpan(
+                                const TextSpan(
                                   text: ' วัน',
                                   style: TextStyle(),
                                 )
@@ -303,7 +303,7 @@ class _LateWidgetState extends State<LateWidget> {
                       color: FlutterFlowTheme.of(context).primaryBackground,
                       shape: BoxShape.circle,
                     ),
-                    child: Icon(
+                    child: const Icon(
                       Icons.keyboard_arrow_right_rounded,
                       color: Color(0xFF9DA7A7),
                       size: 20.0,
@@ -315,7 +315,7 @@ class _LateWidgetState extends State<LateWidget> {
             Container(
               width: double.infinity,
               decoration: BoxDecoration(
-                gradient: LinearGradient(
+                gradient: const LinearGradient(
                   colors: [Color(0xFFFFF4F4), Color(0xFFFFDBDB)],
                   stops: [0.0, 1.0],
                   begin: AlignmentDirectional(0.0, -1.0),
@@ -328,7 +328,7 @@ class _LateWidgetState extends State<LateWidget> {
                 ),
               ),
               child: Padding(
-                padding: EdgeInsets.all(12.0),
+                padding: const EdgeInsets.all(12.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -362,7 +362,7 @@ class _LateWidgetState extends State<LateWidget> {
                                       .bodyMediumIsCustom,
                                 ),
                           ),
-                        ].divide(SizedBox(height: 6.0)),
+                        ].divide(const SizedBox(height: 6.0)),
                       ),
                     ),
                     SizedBox(
@@ -403,10 +403,10 @@ class _LateWidgetState extends State<LateWidget> {
                                       .bodyMediumIsCustom,
                                 ),
                           ),
-                        ].divide(SizedBox(height: 6.0)),
+                        ].divide(const SizedBox(height: 6.0)),
                       ),
                     ),
-                  ].divide(SizedBox(width: 12.0)),
+                  ].divide(const SizedBox(width: 12.0)),
                 ),
               ),
             ),

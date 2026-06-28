@@ -53,37 +53,37 @@ class _HealthtwoWidgetState extends State<HealthtwoWidget> {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            FFAppState().healthtwo == widget!.healthtwo
+            FFAppState().healthtwo == widget.healthtwo
                 ? FlutterFlowTheme.of(context).secondary
                 : FlutterFlowTheme.of(context).secondaryBackground,
-            FFAppState().healthtwo == widget!.healthtwo
+            FFAppState().healthtwo == widget.healthtwo
                 ? FlutterFlowTheme.of(context).primary
                 : FlutterFlowTheme.of(context).secondaryBackground
           ],
-          stops: [0.0, 1.0],
-          begin: AlignmentDirectional(1.0, 0.34),
-          end: AlignmentDirectional(-1.0, -0.34),
+          stops: const [0.0, 1.0],
+          begin: const AlignmentDirectional(1.0, 0.34),
+          end: const AlignmentDirectional(-1.0, -0.34),
         ),
         borderRadius: BorderRadius.circular(24.0),
         border: Border.all(
-          color: FFAppState().healthtwo == widget!.healthtwo
-              ? Color(0x00FFFFFF)
-              : Color(0xFFCED4E6),
+          color: FFAppState().healthtwo == widget.healthtwo
+              ? const Color(0x00FFFFFF)
+              : const Color(0xFFCED4E6),
           width: 1.0,
         ),
       ),
       child: Align(
-        alignment: AlignmentDirectional(0.0, 0.0),
+        alignment: const AlignmentDirectional(0.0, 0.0),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(12.0, 20.0, 12.0, 20.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(12.0, 20.0, 12.0, 20.0),
           child: Text(
             valueOrDefault<String>(
-              widget!.texts,
+              widget.texts,
               'na',
             ),
             style: FlutterFlowTheme.of(context).labelLarge.override(
                   fontFamily: FlutterFlowTheme.of(context).labelLargeFamily,
-                  color: FFAppState().healthtwo == widget!.healthtwo
+                  color: FFAppState().healthtwo == widget.healthtwo
                       ? FlutterFlowTheme.of(context).secondaryBackground
                       : FlutterFlowTheme.of(context).secondaryText,
                   letterSpacing: 0.0,

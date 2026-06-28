@@ -50,7 +50,7 @@ class _ButtonnolmalWidgetState extends State<ButtonnolmalWidget> {
       width: 500.0,
       height: 56.0,
       decoration: BoxDecoration(
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             blurRadius: 4.0,
             color: Color(0x1A000000),
@@ -61,10 +61,10 @@ class _ButtonnolmalWidgetState extends State<ButtonnolmalWidget> {
           )
         ],
         gradient: LinearGradient(
-          colors: [Color(0xFF71BFFF), FlutterFlowTheme.of(context).primary],
-          stops: [0.0, 1.0],
-          begin: AlignmentDirectional(1.0, -1.0),
-          end: AlignmentDirectional(-1.0, 1.0),
+          colors: [const Color(0xFF71BFFF), FlutterFlowTheme.of(context).primary],
+          stops: const [0.0, 1.0],
+          begin: const AlignmentDirectional(1.0, -1.0),
+          end: const AlignmentDirectional(-1.0, 1.0),
         ),
         borderRadius: BorderRadius.circular(100.0),
         border: Border.all(
@@ -75,13 +75,13 @@ class _ButtonnolmalWidgetState extends State<ButtonnolmalWidget> {
         onPressed: () {
           print('Button pressed ...');
         },
-        text: widget!.text!,
+        text: widget.text!,
         options: FFButtonOptions(
           height: 40.0,
-          padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
           iconAlignment: IconAlignment.start,
-          iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-          color: Color(0x00339FF3),
+          iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+          color: const Color(0x00339FF3),
           textStyle: FlutterFlowTheme.of(context).labelMedium.override(
                 fontFamily: FlutterFlowTheme.of(context).labelMediumFamily,
                 color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -90,7 +90,7 @@ class _ButtonnolmalWidgetState extends State<ButtonnolmalWidget> {
                     !FlutterFlowTheme.of(context).labelMediumIsCustom,
               ),
           elevation: 0.0,
-          borderSide: BorderSide(
+          borderSide: const BorderSide(
             width: 0.0,
           ),
           borderRadius: BorderRadius.circular(100.0),

@@ -42,9 +42,9 @@ class _InfoHelpWidgetState extends State<InfoHelpWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 0.0),
+      alignment: const AlignmentDirectional(0.0, 0.0),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 32.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 32.0),
         child: Container(
           width: () {
             if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
@@ -75,7 +75,7 @@ class _InfoHelpWidgetState extends State<InfoHelpWidget> {
                     ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: Container(
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).primaryBackground,
@@ -141,8 +141,8 @@ class _InfoHelpWidgetState extends State<InfoHelpWidget> {
                                   ),
                             ),
                           ]
-                              .divide(SizedBox(width: 24.0))
-                              .addToStart(SizedBox(width: 16.0)),
+                              .divide(const SizedBox(width: 24.0))
+                              .addToStart(const SizedBox(width: 16.0)),
                         ),
                         Divider(
                           height: 0.4,
@@ -174,8 +174,8 @@ class _InfoHelpWidgetState extends State<InfoHelpWidget> {
                                   ),
                             ),
                           ]
-                              .divide(SizedBox(width: 24.0))
-                              .addToStart(SizedBox(width: 16.0)),
+                              .divide(const SizedBox(width: 24.0))
+                              .addToStart(const SizedBox(width: 16.0)),
                         ),
                         Divider(
                           height: 0.4,
@@ -207,8 +207,8 @@ class _InfoHelpWidgetState extends State<InfoHelpWidget> {
                                   ),
                             ),
                           ]
-                              .divide(SizedBox(width: 24.0))
-                              .addToStart(SizedBox(width: 16.0)),
+                              .divide(const SizedBox(width: 24.0))
+                              .addToStart(const SizedBox(width: 16.0)),
                         ),
                       ].divide(SizedBox(height: () {
                         if (MediaQuery.sizeOf(context).width <
@@ -229,10 +229,10 @@ class _InfoHelpWidgetState extends State<InfoHelpWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Color(0xFFFFE3E1),
+                    color: const Color(0xFFFFE3E1),
                     borderRadius: BorderRadius.circular(24.0),
                   ),
                   child: Padding(
@@ -277,13 +277,13 @@ class _InfoHelpWidgetState extends State<InfoHelpWidget> {
                                 ),
                           ),
                         ),
-                      ].divide(SizedBox(width: 16.0)),
+                      ].divide(const SizedBox(width: 16.0)),
                     ),
                   ),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -309,9 +309,9 @@ class _InfoHelpWidgetState extends State<InfoHelpWidget> {
                               return 56.0;
                             }
                           }(),
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
@@ -355,9 +355,9 @@ class _InfoHelpWidgetState extends State<InfoHelpWidget> {
                               return 56.0;
                             }
                           }(),
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).customColor5,
                           textStyle: FlutterFlowTheme.of(context)
@@ -376,10 +376,10 @@ class _InfoHelpWidgetState extends State<InfoHelpWidget> {
                         ),
                       ),
                     ),
-                  ].divide(SizedBox(width: 12.0)),
+                  ].divide(const SizedBox(width: 12.0)),
                 ),
               ),
-            ].divide(SizedBox(height: 16.0)).addToStart(SizedBox(height: 16.0)),
+            ].divide(const SizedBox(height: 16.0)).addToStart(const SizedBox(height: 16.0)),
           ),
         ),
       ),

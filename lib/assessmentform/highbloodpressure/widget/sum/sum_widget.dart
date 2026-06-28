@@ -81,16 +81,16 @@ class _SumWidgetState extends State<SumWidget> {
                           gradient: LinearGradient(
                             colors: [
                               FlutterFlowTheme.of(context).success,
-                              Color(0xFF62D3A0)
+                              const Color(0xFF62D3A0)
                             ],
-                            stops: [0.0, 1.0],
-                            begin: AlignmentDirectional(1.0, -1.0),
-                            end: AlignmentDirectional(-1.0, 1.0),
+                            stops: const [0.0, 1.0],
+                            begin: const AlignmentDirectional(1.0, -1.0),
+                            end: const AlignmentDirectional(-1.0, 1.0),
                           ),
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.family_restroom_rounded,
                             color: FlutterFlowTheme.of(context)
@@ -110,7 +110,7 @@ class _SumWidgetState extends State<SumWidget> {
                                   .bodyLargeIsCustom,
                             ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16.0),
@@ -169,8 +169,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -221,14 +221,14 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                         ],
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ),
@@ -267,16 +267,16 @@ class _SumWidgetState extends State<SumWidget> {
                           gradient: LinearGradient(
                             colors: [
                               FlutterFlowTheme.of(context).primary,
-                              Color(0xFF216DAA)
+                              const Color(0xFF216DAA)
                             ],
-                            stops: [0.0, 1.0],
-                            begin: AlignmentDirectional(0.0, -1.0),
-                            end: AlignmentDirectional(0, 1.0),
+                            stops: const [0.0, 1.0],
+                            begin: const AlignmentDirectional(0.0, -1.0),
+                            end: const AlignmentDirectional(0, 1.0),
                           ),
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.person,
                             color: FlutterFlowTheme.of(context)
@@ -300,7 +300,7 @@ class _SumWidgetState extends State<SumWidget> {
                               ),
                         ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16.0),
@@ -359,8 +359,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -411,8 +411,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -463,8 +463,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -515,8 +515,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -567,8 +567,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -619,8 +619,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -671,8 +671,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -723,8 +723,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -775,8 +775,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -827,8 +827,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -879,8 +879,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -931,8 +931,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -983,8 +983,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -1035,8 +1035,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -1087,8 +1087,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -1139,8 +1139,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -1191,8 +1191,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -1243,8 +1243,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -1321,14 +1321,14 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                         ],
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ),
@@ -1363,7 +1363,7 @@ class _SumWidgetState extends State<SumWidget> {
                       Container(
                         width: 24.0,
                         height: 24.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           gradient: LinearGradient(
                             colors: [Color(0xFFFCD792), Color(0xFFED9F0F)],
                             stops: [0.0, 1.0],
@@ -1373,7 +1373,7 @@ class _SumWidgetState extends State<SumWidget> {
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.smoking_rooms,
                             color: FlutterFlowTheme.of(context)
@@ -1393,7 +1393,7 @@ class _SumWidgetState extends State<SumWidget> {
                                   .bodyLargeIsCustom,
                             ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16.0),
@@ -1452,8 +1452,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -1461,7 +1461,7 @@ class _SumWidgetState extends State<SumWidget> {
                             color: FlutterFlowTheme.of(context).alternate,
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 8.0, 16.0, 8.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -1506,7 +1506,7 @@ class _SumWidgetState extends State<SumWidget> {
                                             ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(width: 8.0)),
+                                  ].divide(const SizedBox(width: 8.0)),
                                 ),
                                 Text(
                                   '- ชนิดของบุหรี่ : กล่องทิพย์ ',
@@ -1545,7 +1545,7 @@ class _SumWidgetState extends State<SumWidget> {
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ),
@@ -1580,7 +1580,7 @@ class _SumWidgetState extends State<SumWidget> {
                       Container(
                         width: 24.0,
                         height: 24.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           gradient: LinearGradient(
                             colors: [Color(0xFF46D8AD), Color(0xFF1D8B6B)],
                             stops: [0.0, 1.0],
@@ -1590,7 +1590,7 @@ class _SumWidgetState extends State<SumWidget> {
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.water_drop_sharp,
                             color: FlutterFlowTheme.of(context)
@@ -1614,7 +1614,7 @@ class _SumWidgetState extends State<SumWidget> {
                               ),
                         ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16.0),
@@ -1674,8 +1674,8 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -1683,7 +1683,7 @@ class _SumWidgetState extends State<SumWidget> {
                             color: FlutterFlowTheme.of(context).alternate,
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 12.0, 16.0, 12.0),
                             child: Text(
                               '- 3 ครั้ง/สัปดาห์',
@@ -1705,7 +1705,7 @@ class _SumWidgetState extends State<SumWidget> {
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ),
@@ -1740,7 +1740,7 @@ class _SumWidgetState extends State<SumWidget> {
                       Container(
                         width: 24.0,
                         height: 24.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           gradient: LinearGradient(
                             colors: [Color(0xFFFE9393), Color(0xFFE24747)],
                             stops: [0.0, 1.0],
@@ -1750,7 +1750,7 @@ class _SumWidgetState extends State<SumWidget> {
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.emoji_people,
                             color: FlutterFlowTheme.of(context)
@@ -1774,7 +1774,7 @@ class _SumWidgetState extends State<SumWidget> {
                               ),
                         ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16.0),
@@ -1859,14 +1859,14 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                         ],
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ),
@@ -1907,14 +1907,14 @@ class _SumWidgetState extends State<SumWidget> {
                               FlutterFlowTheme.of(context).secondary,
                               FlutterFlowTheme.of(context).accent2
                             ],
-                            stops: [0.0, 1.0],
-                            begin: AlignmentDirectional(0.56, -1.0),
-                            end: AlignmentDirectional(-0.56, 1.0),
+                            stops: const [0.0, 1.0],
+                            begin: const AlignmentDirectional(0.56, -1.0),
+                            end: const AlignmentDirectional(-0.56, 1.0),
                           ),
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.fastfood_rounded,
                             color: FlutterFlowTheme.of(context)
@@ -1938,7 +1938,7 @@ class _SumWidgetState extends State<SumWidget> {
                               ),
                         ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16.0),
@@ -1997,21 +1997,21 @@ class _SumWidgetState extends State<SumWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                         ],
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ),
         ]
-            .divide(SizedBox(height: 12.0))
-            .addToStart(SizedBox(height: 16.0))
-            .addToEnd(SizedBox(height: 104.0)),
+            .divide(const SizedBox(height: 12.0))
+            .addToStart(const SizedBox(height: 16.0))
+            .addToEnd(const SizedBox(height: 104.0)),
       ),
     );
   }

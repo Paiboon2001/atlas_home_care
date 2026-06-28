@@ -54,27 +54,27 @@ class _BloodpageWidgetState extends State<BloodpageWidget> {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            FFAppState().exer == widget!.exer
+            FFAppState().exer == widget.exer
                 ? FlutterFlowTheme.of(context).secondary
                 : FlutterFlowTheme.of(context).secondaryBackground,
-            FFAppState().exer == widget!.exer
+            FFAppState().exer == widget.exer
                 ? FlutterFlowTheme.of(context).primary
                 : FlutterFlowTheme.of(context).secondaryBackground
           ],
-          stops: [0.0, 1.0],
-          begin: AlignmentDirectional(1.0, 0.34),
-          end: AlignmentDirectional(-1.0, -0.34),
+          stops: const [0.0, 1.0],
+          begin: const AlignmentDirectional(1.0, 0.34),
+          end: const AlignmentDirectional(-1.0, -0.34),
         ),
         borderRadius: BorderRadius.circular(24.0),
         border: Border.all(
-          color: FFAppState().exer == widget!.exer
-              ? Color(0x00FFFFFF)
-              : Color(0xFFCED4E6),
+          color: FFAppState().exer == widget.exer
+              ? const Color(0x00FFFFFF)
+              : const Color(0xFFCED4E6),
           width: 1.0,
         ),
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(12.0, 20.0, 12.0, 20.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(12.0, 20.0, 12.0, 20.0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -82,12 +82,12 @@ class _BloodpageWidgetState extends State<BloodpageWidget> {
             Expanded(
               child: Text(
                 valueOrDefault<String>(
-                  widget!.text,
+                  widget.text,
                   'na',
                 ),
                 style: FlutterFlowTheme.of(context).labelLarge.override(
                       fontFamily: FlutterFlowTheme.of(context).labelLargeFamily,
-                      color: FFAppState().exer == widget!.exer
+                      color: FFAppState().exer == widget.exer
                           ? FlutterFlowTheme.of(context).secondaryBackground
                           : FlutterFlowTheme.of(context).secondaryText,
                       letterSpacing: 0.0,
@@ -97,7 +97,7 @@ class _BloodpageWidgetState extends State<BloodpageWidget> {
                     ),
               ),
             ),
-          ].divide(SizedBox(width: 4.0)),
+          ].divide(const SizedBox(width: 4.0)),
         ),
       ),
     );

@@ -132,7 +132,7 @@ class _ItemHouseHoldMembersWidgetState
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -145,9 +145,9 @@ class _ItemHouseHoldMembersWidgetState
                             FlutterFlowTheme.of(context).accent1,
                             FlutterFlowTheme.of(context).primary
                           ],
-                          stops: [0.0, 1.0],
-                          begin: AlignmentDirectional(0.0, -1.0),
-                          end: AlignmentDirectional(0, 1.0),
+                          stops: const [0.0, 1.0],
+                          begin: const AlignmentDirectional(0.0, -1.0),
+                          end: const AlignmentDirectional(0, 1.0),
                         ),
                         shape: BoxShape.circle,
                         border: Border.all(
@@ -160,11 +160,11 @@ class _ItemHouseHoldMembersWidgetState
                         width: 200.0,
                         height: 200.0,
                         clipBehavior: Clip.antiAlias,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                         ),
                         child: Image.network(
-                          widget!.img!,
+                          widget.img!,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -184,7 +184,7 @@ class _ItemHouseHoldMembersWidgetState
                                   children: [
                                     TextSpan(
                                       text: valueOrDefault<String>(
-                                        widget!.fullname,
+                                        widget.fullname,
                                         'fullname',
                                       ),
                                       style: FlutterFlowTheme.of(context)
@@ -218,7 +218,7 @@ class _ItemHouseHoldMembersWidgetState
                                     ),
                                     TextSpan(
                                       text: valueOrDefault<String>(
-                                        widget!.age,
+                                        widget.age,
                                         '0',
                                       ),
                                       style: FlutterFlowTheme.of(context)
@@ -275,15 +275,15 @@ class _ItemHouseHoldMembersWidgetState
                           ),
                           Container(
                             decoration: BoxDecoration(
-                              color: Color(0x19339FF3),
+                              color: const Color(0x19339FF3),
                               borderRadius: BorderRadius.circular(100.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 4.0, 12.0, 4.0),
                               child: Text(
                                 valueOrDefault<String>(
-                                  widget!.residencestatus,
+                                  widget.residencestatus,
                                   'Residence status',
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -302,13 +302,13 @@ class _ItemHouseHoldMembersWidgetState
                               ),
                             ),
                           ),
-                        ].divide(SizedBox(height: 8.0)),
+                        ].divide(const SizedBox(height: 8.0)),
                       ),
                     ),
-                  ].divide(SizedBox(width: 16.0)),
+                  ].divide(const SizedBox(width: 16.0)),
                 ),
               ),
-            ].divide(SizedBox(height: 8.0)),
+            ].divide(const SizedBox(height: 8.0)),
           ),
           Divider(
             height: 1.0,
@@ -316,7 +316,7 @@ class _ItemHouseHoldMembersWidgetState
             color: FlutterFlowTheme.of(context).alternate,
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -327,7 +327,7 @@ class _ItemHouseHoldMembersWidgetState
                     children: [
                       TextSpan(
                         text: valueOrDefault<String>(
-                          widget!.date,
+                          widget.date,
                           'date',
                         ),
                         style:
@@ -352,7 +352,7 @@ class _ItemHouseHoldMembersWidgetState
                       ),
                       TextSpan(
                         text: valueOrDefault<String>(
-                          widget!.time,
+                          widget.time,
                           'time',
                         ),
                         style:
@@ -409,16 +409,16 @@ class _ItemHouseHoldMembersWidgetState
                   itemBuilder: (context, index) {
                     return [
                       () => Align(
-                            alignment: AlignmentDirectional(0.0, -1.0),
+                            alignment: const AlignmentDirectional(0.0, -1.0),
                             child: Container(
                               width: double.infinity,
                               height: 80.0,
                               decoration: BoxDecoration(
-                                color: widget!.diabetescolor1,
+                                color: widget.diabetescolor1,
                                 borderRadius: BorderRadius.circular(16.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Stack(
                                   children: [
                                     Column(
@@ -437,7 +437,7 @@ class _ItemHouseHoldMembersWidgetState
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
                                                         .labelMediumFamily,
-                                                color: widget!.diabetescolor2,
+                                                color: widget.diabetescolor2,
                                                 letterSpacing: 0.0,
                                                 useGoogleFonts:
                                                     !FlutterFlowTheme.of(
@@ -447,7 +447,7 @@ class _ItemHouseHoldMembersWidgetState
                                         ),
                                         Text(
                                           valueOrDefault<String>(
-                                            widget!.diabetesstatus,
+                                            widget.diabetesstatus,
                                             'status',
                                           ),
                                           textAlign: TextAlign.center,
@@ -457,7 +457,7 @@ class _ItemHouseHoldMembersWidgetState
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLargeFamily,
-                                                color: widget!.diabetescolor2,
+                                                color: widget.diabetescolor2,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
                                                 useGoogleFonts:
@@ -469,7 +469,7 @@ class _ItemHouseHoldMembersWidgetState
                                       ],
                                     ),
                                     Align(
-                                      alignment: AlignmentDirectional(1.0, 0.0),
+                                      alignment: const AlignmentDirectional(1.0, 0.0),
                                       child: ClipRRect(
                                         borderRadius:
                                             BorderRadius.circular(8.0),
@@ -487,16 +487,16 @@ class _ItemHouseHoldMembersWidgetState
                             ),
                           ),
                       () => Align(
-                            alignment: AlignmentDirectional(0.0, -1.0),
+                            alignment: const AlignmentDirectional(0.0, -1.0),
                             child: Container(
                               width: double.infinity,
                               height: 80.0,
                               decoration: BoxDecoration(
-                                color: widget!.pressurecolor1,
+                                color: widget.pressurecolor1,
                                 borderRadius: BorderRadius.circular(16.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Stack(
                                   children: [
                                     Column(
@@ -515,7 +515,7 @@ class _ItemHouseHoldMembersWidgetState
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
                                                         .labelMediumFamily,
-                                                color: widget!.pressurecolor2,
+                                                color: widget.pressurecolor2,
                                                 letterSpacing: 0.0,
                                                 useGoogleFonts:
                                                     !FlutterFlowTheme.of(
@@ -525,7 +525,7 @@ class _ItemHouseHoldMembersWidgetState
                                         ),
                                         Text(
                                           valueOrDefault<String>(
-                                            widget!.pressurestatus,
+                                            widget.pressurestatus,
                                             'status',
                                           ),
                                           textAlign: TextAlign.center,
@@ -535,7 +535,7 @@ class _ItemHouseHoldMembersWidgetState
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLargeFamily,
-                                                color: widget!.pressurecolor2,
+                                                color: widget.pressurecolor2,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
                                                 useGoogleFonts:
@@ -547,7 +547,7 @@ class _ItemHouseHoldMembersWidgetState
                                       ],
                                     ),
                                     Align(
-                                      alignment: AlignmentDirectional(1.0, 0.0),
+                                      alignment: const AlignmentDirectional(1.0, 0.0),
                                       child: ClipRRect(
                                         borderRadius:
                                             BorderRadius.circular(8.0),
@@ -565,16 +565,16 @@ class _ItemHouseHoldMembersWidgetState
                             ),
                           ),
                       () => Align(
-                            alignment: AlignmentDirectional(0.0, -1.0),
+                            alignment: const AlignmentDirectional(0.0, -1.0),
                             child: Container(
                               width: double.infinity,
                               height: 80.0,
                               decoration: BoxDecoration(
-                                color: widget!.strokecolor1,
+                                color: widget.strokecolor1,
                                 borderRadius: BorderRadius.circular(16.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Stack(
                                   children: [
                                     Column(
@@ -593,7 +593,7 @@ class _ItemHouseHoldMembersWidgetState
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
                                                         .labelMediumFamily,
-                                                color: widget!.strokecolor2,
+                                                color: widget.strokecolor2,
                                                 letterSpacing: 0.0,
                                                 useGoogleFonts:
                                                     !FlutterFlowTheme.of(
@@ -603,7 +603,7 @@ class _ItemHouseHoldMembersWidgetState
                                         ),
                                         Text(
                                           valueOrDefault<String>(
-                                            widget!.strokestatus,
+                                            widget.strokestatus,
                                             'status',
                                           ),
                                           textAlign: TextAlign.center,
@@ -613,7 +613,7 @@ class _ItemHouseHoldMembersWidgetState
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLargeFamily,
-                                                color: widget!.strokecolor2,
+                                                color: widget.strokecolor2,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
                                                 useGoogleFonts:
@@ -625,7 +625,7 @@ class _ItemHouseHoldMembersWidgetState
                                       ],
                                     ),
                                     Align(
-                                      alignment: AlignmentDirectional(1.0, 0.0),
+                                      alignment: const AlignmentDirectional(1.0, 0.0),
                                       child: ClipRRect(
                                         borderRadius:
                                             BorderRadius.circular(8.0),
@@ -643,16 +643,16 @@ class _ItemHouseHoldMembersWidgetState
                             ),
                           ),
                       () => Align(
-                            alignment: AlignmentDirectional(0.0, -1.0),
+                            alignment: const AlignmentDirectional(0.0, -1.0),
                             child: Container(
                               width: double.infinity,
                               height: 80.0,
                               decoration: BoxDecoration(
-                                color: widget!.potbellycolor1,
+                                color: widget.potbellycolor1,
                                 borderRadius: BorderRadius.circular(16.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Stack(
                                   children: [
                                     Column(
@@ -671,7 +671,7 @@ class _ItemHouseHoldMembersWidgetState
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
                                                         .labelMediumFamily,
-                                                color: widget!.potbellycolor2,
+                                                color: widget.potbellycolor2,
                                                 letterSpacing: 0.0,
                                                 useGoogleFonts:
                                                     !FlutterFlowTheme.of(
@@ -681,7 +681,7 @@ class _ItemHouseHoldMembersWidgetState
                                         ),
                                         Text(
                                           valueOrDefault<String>(
-                                            widget!.potbellystatus,
+                                            widget.potbellystatus,
                                             'status',
                                           ),
                                           textAlign: TextAlign.center,
@@ -691,7 +691,7 @@ class _ItemHouseHoldMembersWidgetState
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLargeFamily,
-                                                color: widget!.potbellycolor2,
+                                                color: widget.potbellycolor2,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
                                                 useGoogleFonts:
@@ -703,7 +703,7 @@ class _ItemHouseHoldMembersWidgetState
                                       ],
                                     ),
                                     Align(
-                                      alignment: AlignmentDirectional(1.0, 0.0),
+                                      alignment: const AlignmentDirectional(1.0, 0.0),
                                       child: ClipRRect(
                                         borderRadius:
                                             BorderRadius.circular(8.0),
@@ -723,10 +723,10 @@ class _ItemHouseHoldMembersWidgetState
                     ][index]();
                   },
                 ),
-              ].divide(SizedBox(height: 8.0)),
+              ].divide(const SizedBox(height: 8.0)),
             ),
           ),
-        ].divide(SizedBox(height: 12.0)),
+        ].divide(const SizedBox(height: 12.0)),
       ),
     );
   }

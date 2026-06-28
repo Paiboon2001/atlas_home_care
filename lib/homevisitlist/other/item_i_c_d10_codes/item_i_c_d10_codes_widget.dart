@@ -54,11 +54,11 @@ class _ItemICD10CodesWidgetState extends State<ItemICD10CodesWidget> {
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
-        color: Color(0x19339FF3),
+        color: const Color(0x19339FF3),
         borderRadius: BorderRadius.circular(24.0),
       ),
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -69,7 +69,7 @@ class _ItemICD10CodesWidgetState extends State<ItemICD10CodesWidget> {
               children: [
                 Text(
                   valueOrDefault<String>(
-                    widget!.icd10Codes,
+                    widget.icd10Codes,
                     'icd10Codes',
                   ),
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -83,7 +83,7 @@ class _ItemICD10CodesWidgetState extends State<ItemICD10CodesWidget> {
                       ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
+                  alignment: const AlignmentDirectional(0.0, 0.0),
                   child: Icon(
                     Icons.delete_forever,
                     color: FlutterFlowTheme.of(context).error,
@@ -94,7 +94,7 @@ class _ItemICD10CodesWidgetState extends State<ItemICD10CodesWidget> {
             ),
             Text(
               valueOrDefault<String>(
-                widget!.icd10Codesdecription,
+                widget.icd10Codesdecription,
                 'decription',
               ),
               style: FlutterFlowTheme.of(context).bodySmall.override(
@@ -105,7 +105,7 @@ class _ItemICD10CodesWidgetState extends State<ItemICD10CodesWidget> {
                         !FlutterFlowTheme.of(context).bodySmallIsCustom,
                   ),
             ),
-          ].divide(SizedBox(height: 12.0)),
+          ].divide(const SizedBox(height: 12.0)),
         ),
       ),
     );

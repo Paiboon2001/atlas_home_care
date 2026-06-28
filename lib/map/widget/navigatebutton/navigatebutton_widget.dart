@@ -108,7 +108,7 @@ class _NavigatebuttonWidgetState extends State<NavigatebuttonWidget>
                   return 56.0;
                 }
               }(),
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 boxShadow: [
                   BoxShadow(
                     blurRadius: 4.0,
@@ -128,7 +128,7 @@ class _NavigatebuttonWidgetState extends State<NavigatebuttonWidget>
                 shape: BoxShape.circle,
               ),
               child: Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Icon(
                   Icons.navigation_rounded,
                   color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -183,7 +183,7 @@ class _NavigatebuttonWidgetState extends State<NavigatebuttonWidget>
               }(),
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     blurRadius: 4.0,
                     color: Color(0x46000000),
@@ -196,7 +196,7 @@ class _NavigatebuttonWidgetState extends State<NavigatebuttonWidget>
                 shape: BoxShape.circle,
               ),
               child: Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Icon(
                   Icons.navigation_outlined,
                   color: FlutterFlowTheme.of(context).primary,

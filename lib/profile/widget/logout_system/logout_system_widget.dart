@@ -53,8 +53,8 @@ class _LogoutSystemWidgetState extends State<LogoutSystemWidget>
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 1500.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -72,8 +72,8 @@ class _LogoutSystemWidgetState extends State<LogoutSystemWidget>
             curve: Curves.easeInOut,
             delay: 100.0.ms,
             duration: 1000.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -111,9 +111,9 @@ class _LogoutSystemWidgetState extends State<LogoutSystemWidget>
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 0.0),
+      alignment: const AlignmentDirectional(0.0, 0.0),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
         child: Container(
           width: () {
             if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
@@ -146,14 +146,14 @@ class _LogoutSystemWidgetState extends State<LogoutSystemWidget>
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
-                child: Container(
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
+                child: SizedBox(
                   width: 160.0,
                   height: 160.0,
                   child: Stack(
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Container(
                           width: 160.0,
                           height: 160.0,
@@ -167,7 +167,7 @@ class _LogoutSystemWidgetState extends State<LogoutSystemWidget>
                             animationsMap['containerOnPageLoadAnimation1']!),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Container(
                           width: 130.0,
                           height: 130.0,
@@ -181,11 +181,11 @@ class _LogoutSystemWidgetState extends State<LogoutSystemWidget>
                             animationsMap['containerOnPageLoadAnimation2']!),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Container(
                           width: 100.0,
                           height: 100.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             gradient: LinearGradient(
                               colors: [Color(0xFFFFCFD1), Color(0xFFFF928A)],
                               stops: [0.0, 1.0],
@@ -195,18 +195,18 @@ class _LogoutSystemWidgetState extends State<LogoutSystemWidget>
                             shape: BoxShape.circle,
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Container(
                               width: 80.0,
                               height: 80.0,
                               clipBehavior: Clip.antiAlias,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 shape: BoxShape.circle,
                               ),
                               child: Image.network(
                                 'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/we7mtveexqh4/logout.png',
                                 fit: BoxFit.cover,
-                                alignment: Alignment(0.0, 0.0),
+                                alignment: const Alignment(0.0, 0.0),
                               ),
                             ).animateOnPageLoad(animationsMap[
                                 'circleImageOnPageLoadAnimation']!),
@@ -227,7 +227,7 @@ class _LogoutSystemWidgetState extends State<LogoutSystemWidget>
                     ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -244,7 +244,7 @@ class _LogoutSystemWidgetState extends State<LogoutSystemWidget>
                         child: wrapWithModel(
                           model: _model.bottonCancelModel,
                           updateCallback: () => safeSetState(() {}),
-                          child: BottonCancelWidget(),
+                          child: const BottonCancelWidget(),
                         ),
                       ),
                     ),
@@ -269,9 +269,9 @@ class _LogoutSystemWidgetState extends State<LogoutSystemWidget>
                               return 56.0;
                             }
                           }(),
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).customColor5,
                           textStyle: FlutterFlowTheme.of(context)
@@ -290,7 +290,7 @@ class _LogoutSystemWidgetState extends State<LogoutSystemWidget>
                         ),
                       ),
                     ),
-                  ].divide(SizedBox(width: 12.0)),
+                  ].divide(const SizedBox(width: 12.0)),
                 ),
               ),
             ],

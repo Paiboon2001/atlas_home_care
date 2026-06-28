@@ -43,13 +43,13 @@ class _UploadPicWidgetState extends State<UploadPicWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: 300.0,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).primaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -59,7 +59,7 @@ class _UploadPicWidgetState extends State<UploadPicWidget> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -67,7 +67,7 @@ class _UploadPicWidgetState extends State<UploadPicWidget> {
                   wrapWithModel(
                     model: _model.closeModel,
                     updateCallback: () => safeSetState(() {}),
-                    child: CloseWidget(),
+                    child: const CloseWidget(),
                   ),
                 ],
               ),
@@ -86,7 +86,7 @@ class _UploadPicWidgetState extends State<UploadPicWidget> {
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -107,7 +107,7 @@ class _UploadPicWidgetState extends State<UploadPicWidget> {
                                     .bodyMediumIsCustom,
                               ),
                         ),
-                      ].divide(SizedBox(width: 16.0)),
+                      ].divide(const SizedBox(width: 16.0)),
                     ),
                   ),
                   Divider(
@@ -118,7 +118,7 @@ class _UploadPicWidgetState extends State<UploadPicWidget> {
                     color: FlutterFlowTheme.of(context).alternate,
                   ),
                   Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -139,7 +139,7 @@ class _UploadPicWidgetState extends State<UploadPicWidget> {
                                     .bodyMediumIsCustom,
                               ),
                         ),
-                      ].divide(SizedBox(width: 16.0)),
+                      ].divide(const SizedBox(width: 16.0)),
                     ),
                   ),
                   Divider(
@@ -150,7 +150,7 @@ class _UploadPicWidgetState extends State<UploadPicWidget> {
                     color: FlutterFlowTheme.of(context).alternate,
                   ),
                   Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -171,10 +171,10 @@ class _UploadPicWidgetState extends State<UploadPicWidget> {
                                     .bodyMediumIsCustom,
                               ),
                         ),
-                      ].divide(SizedBox(width: 16.0)),
+                      ].divide(const SizedBox(width: 16.0)),
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ],

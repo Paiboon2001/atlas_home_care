@@ -62,7 +62,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
       }(),
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             blurRadius: 8.0,
             color: Color(0x1A000000),
@@ -77,7 +77,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
       child: Stack(
         children: [
           Align(
-            alignment: AlignmentDirectional(-1.0, -1.0),
+            alignment: const AlignmentDirectional(-1.0, -1.0),
             child: Container(
               width: double.infinity,
               height: 90.0,
@@ -90,14 +90,14 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                 ),
                 gradient: LinearGradient(
                   colors: [
-                    Color(0xFF2370BC),
+                    const Color(0xFF2370BC),
                     FlutterFlowTheme.of(context).primary
                   ],
-                  stops: [0.0, 1.0],
-                  begin: AlignmentDirectional(0.0, -1.0),
-                  end: AlignmentDirectional(0, 1.0),
+                  stops: const [0.0, 1.0],
+                  begin: const AlignmentDirectional(0.0, -1.0),
+                  end: const AlignmentDirectional(0, 1.0),
                 ),
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(24.0),
                   topRight: Radius.circular(24.0),
                 ),
@@ -108,7 +108,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Expanded(
-                child: Container(
+                child: SizedBox(
                   width: double.infinity,
                   height: 500.0,
                   child: PageView(
@@ -120,7 +120,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -153,7 +153,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                   hoverColor: Colors.transparent,
                                   highlightColor: Colors.transparent,
                                   onTap: () async {
-                                    final _datePicked1Date =
+                                    final datePicked1Date =
                                         await showDatePicker(
                                       context: context,
                                       barrierDismissible: false,
@@ -162,12 +162,12 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                       lastDate: DateTime(2050),
                                     );
 
-                                    if (_datePicked1Date != null) {
+                                    if (datePicked1Date != null) {
                                       safeSetState(() {
                                         _model.datePicked1 = DateTime(
-                                          _datePicked1Date.year,
-                                          _datePicked1Date.month,
-                                          _datePicked1Date.day,
+                                          datePicked1Date.year,
+                                          datePicked1Date.month,
+                                          datePicked1Date.day,
                                         );
                                       });
                                     } else if (_model.datePicked1 != null) {
@@ -202,7 +202,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                         await _model.pageViewController
                                             ?.animateToPage(
                                           1,
-                                          duration: Duration(milliseconds: 500),
+                                          duration: const Duration(milliseconds: 500),
                                           curve: Curves.ease,
                                         );
                                       },
@@ -213,13 +213,13 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                         size: 24.0,
                                       ),
                                     ),
-                                  ].divide(SizedBox(width: 32.0)),
+                                  ].divide(const SizedBox(width: 32.0)),
                                 ),
-                              ].divide(SizedBox(width: 32.0)),
+                              ].divide(const SizedBox(width: 32.0)),
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 8.0, 0.0, 8.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -358,17 +358,17 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                         ),
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 16.0)),
+                              ].divide(const SizedBox(width: 16.0)),
                             ),
                           ),
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 0.0, 8.0, 0.0),
                               child: MasonryGridView.builder(
                                 physics: const NeverScrollableScrollPhysics(),
                                 gridDelegate:
-                                    SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                    const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                   crossAxisCount: 7,
                                 ),
                                 crossAxisSpacing: 12.0,
@@ -387,7 +387,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                   }
                                 }(),
                                 itemCount: 35,
-                                padding: EdgeInsets.fromLTRB(
+                                padding: const EdgeInsets.fromLTRB(
                                   0,
                                   8.0,
                                   0,
@@ -426,7 +426,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel3,
                                             updateCallback: () =>
@@ -443,7 +443,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel4,
                                             updateCallback: () =>
@@ -460,7 +460,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel5,
                                             updateCallback: () =>
@@ -477,7 +477,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel6,
                                             updateCallback: () =>
@@ -494,7 +494,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel7,
                                             updateCallback: () =>
@@ -511,7 +511,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel8,
                                             updateCallback: () =>
@@ -528,7 +528,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel9,
                                             updateCallback: () =>
@@ -545,7 +545,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel10,
                                             updateCallback: () =>
@@ -562,7 +562,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel11,
                                             updateCallback: () =>
@@ -579,7 +579,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel12,
                                             updateCallback: () =>
@@ -596,7 +596,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel13,
                                             updateCallback: () =>
@@ -613,7 +613,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel14,
                                             updateCallback: () =>
@@ -630,7 +630,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel15,
                                             updateCallback: () =>
@@ -647,7 +647,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel16,
                                             updateCallback: () =>
@@ -664,7 +664,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel17,
                                             updateCallback: () =>
@@ -681,7 +681,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel18,
                                             updateCallback: () =>
@@ -698,7 +698,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel19,
                                             updateCallback: () =>
@@ -715,7 +715,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel20,
                                             updateCallback: () =>
@@ -732,7 +732,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel21,
                                             updateCallback: () =>
@@ -749,7 +749,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel22,
                                             updateCallback: () =>
@@ -766,7 +766,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel23,
                                             updateCallback: () =>
@@ -783,7 +783,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel24,
                                             updateCallback: () =>
@@ -800,7 +800,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel25,
                                             updateCallback: () =>
@@ -817,7 +817,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel26,
                                             updateCallback: () =>
@@ -834,7 +834,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel27,
                                             updateCallback: () =>
@@ -851,7 +851,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel28,
                                             updateCallback: () =>
@@ -868,7 +868,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel29,
                                             updateCallback: () =>
@@ -885,7 +885,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel30,
                                             updateCallback: () =>
@@ -902,7 +902,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel31,
                                             updateCallback: () =>
@@ -919,7 +919,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel32,
                                             updateCallback: () =>
@@ -936,7 +936,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel33,
                                             updateCallback: () =>
@@ -953,7 +953,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel34,
                                             updateCallback: () =>
@@ -970,7 +970,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel35,
                                             updateCallback: () =>
@@ -992,14 +992,14 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                             ),
                           ),
                         ]
-                            .divide(SizedBox(height: 16.0))
-                            .addToStart(SizedBox(height: 16.0)),
+                            .divide(const SizedBox(height: 16.0))
+                            .addToStart(const SizedBox(height: 16.0)),
                       ),
                       Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 12.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1046,7 +1046,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                                 PointerDeviceKind.unknown
                                               },
                                             ),
-                                            child: Container(
+                                            child: SizedBox(
                                               height: MediaQuery.of(context)
                                                       .size
                                                       .height /
@@ -1107,7 +1107,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                         await _model.pageViewController
                                             ?.animateToPage(
                                           0,
-                                          duration: Duration(milliseconds: 500),
+                                          duration: const Duration(milliseconds: 500),
                                           curve: Curves.ease,
                                         );
                                       },
@@ -1127,7 +1127,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                         await _model.pageViewController
                                             ?.animateToPage(
                                           2,
-                                          duration: Duration(milliseconds: 500),
+                                          duration: const Duration(milliseconds: 500),
                                           curve: Curves.ease,
                                         );
                                       },
@@ -1138,13 +1138,13 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                         size: 24.0,
                                       ),
                                     ),
-                                  ].divide(SizedBox(width: 32.0)),
+                                  ].divide(const SizedBox(width: 32.0)),
                                 ),
-                              ].divide(SizedBox(width: 32.0)),
+                              ].divide(const SizedBox(width: 32.0)),
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 8.0, 0.0, 8.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1283,17 +1283,17 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                         ),
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 16.0)),
+                              ].divide(const SizedBox(width: 16.0)),
                             ),
                           ),
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 0.0, 8.0, 0.0),
                               child: MasonryGridView.builder(
                                 physics: const NeverScrollableScrollPhysics(),
                                 gridDelegate:
-                                    SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                    const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                   crossAxisCount: 7,
                                 ),
                                 crossAxisSpacing: 12.0,
@@ -1312,7 +1312,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                   }
                                 }(),
                                 itemCount: 35,
-                                padding: EdgeInsets.fromLTRB(
+                                padding: const EdgeInsets.fromLTRB(
                                   0,
                                   8.0,
                                   0,
@@ -1351,7 +1351,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel38,
                                             updateCallback: () =>
@@ -1368,7 +1368,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel39,
                                             updateCallback: () =>
@@ -1385,7 +1385,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel40,
                                             updateCallback: () =>
@@ -1402,7 +1402,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel41,
                                             updateCallback: () =>
@@ -1419,7 +1419,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel42,
                                             updateCallback: () =>
@@ -1436,7 +1436,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel43,
                                             updateCallback: () =>
@@ -1453,7 +1453,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel44,
                                             updateCallback: () =>
@@ -1470,7 +1470,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel45,
                                             updateCallback: () =>
@@ -1487,7 +1487,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel46,
                                             updateCallback: () =>
@@ -1504,7 +1504,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel47,
                                             updateCallback: () =>
@@ -1521,7 +1521,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel48,
                                             updateCallback: () =>
@@ -1538,7 +1538,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel49,
                                             updateCallback: () =>
@@ -1555,7 +1555,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel50,
                                             updateCallback: () =>
@@ -1572,7 +1572,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel51,
                                             updateCallback: () =>
@@ -1589,7 +1589,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel52,
                                             updateCallback: () =>
@@ -1606,7 +1606,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel53,
                                             updateCallback: () =>
@@ -1623,7 +1623,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel54,
                                             updateCallback: () =>
@@ -1640,7 +1640,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel55,
                                             updateCallback: () =>
@@ -1657,7 +1657,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel56,
                                             updateCallback: () =>
@@ -1674,7 +1674,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel57,
                                             updateCallback: () =>
@@ -1691,7 +1691,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel58,
                                             updateCallback: () =>
@@ -1708,7 +1708,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel59,
                                             updateCallback: () =>
@@ -1725,7 +1725,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel60,
                                             updateCallback: () =>
@@ -1742,7 +1742,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel61,
                                             updateCallback: () =>
@@ -1759,7 +1759,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel62,
                                             updateCallback: () =>
@@ -1776,7 +1776,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel63,
                                             updateCallback: () =>
@@ -1793,7 +1793,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel64,
                                             updateCallback: () =>
@@ -1810,7 +1810,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel65,
                                             updateCallback: () =>
@@ -1827,7 +1827,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel66,
                                             updateCallback: () =>
@@ -1844,7 +1844,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
@@ -1855,7 +1855,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                                 CalendarWidget.routeName,
                                                 extra: <String, dynamic>{
                                                   '__transition_info__':
-                                                      TransitionInfo(
+                                                      const TransitionInfo(
                                                     hasTransition: true,
                                                     transitionType:
                                                         PageTransitionType.fade,
@@ -1881,7 +1881,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel68,
                                             updateCallback: () =>
@@ -1898,7 +1898,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel69,
                                             updateCallback: () =>
@@ -1915,7 +1915,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel70,
                                             updateCallback: () =>
@@ -1937,14 +1937,14 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                             ),
                           ),
                         ]
-                            .divide(SizedBox(height: 16.0))
-                            .addToStart(SizedBox(height: 16.0)),
+                            .divide(const SizedBox(height: 16.0))
+                            .addToStart(const SizedBox(height: 16.0)),
                       ),
                       Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1977,7 +1977,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                   hoverColor: Colors.transparent,
                                   highlightColor: Colors.transparent,
                                   onTap: () async {
-                                    final _datePicked3Date =
+                                    final datePicked3Date =
                                         await showDatePicker(
                                       context: context,
                                       barrierDismissible: false,
@@ -1986,12 +1986,12 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                       lastDate: DateTime(2050),
                                     );
 
-                                    if (_datePicked3Date != null) {
+                                    if (datePicked3Date != null) {
                                       safeSetState(() {
                                         _model.datePicked3 = DateTime(
-                                          _datePicked3Date.year,
-                                          _datePicked3Date.month,
-                                          _datePicked3Date.day,
+                                          datePicked3Date.year,
+                                          datePicked3Date.month,
+                                          datePicked3Date.day,
                                         );
                                       });
                                     } else if (_model.datePicked3 != null) {
@@ -2020,7 +2020,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                         await _model.pageViewController
                                             ?.animateToPage(
                                           1,
-                                          duration: Duration(milliseconds: 500),
+                                          duration: const Duration(milliseconds: 500),
                                           curve: Curves.ease,
                                         );
                                       },
@@ -2037,13 +2037,13 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           .secondaryBackground,
                                       size: 24.0,
                                     ),
-                                  ].divide(SizedBox(width: 32.0)),
+                                  ].divide(const SizedBox(width: 32.0)),
                                 ),
-                              ].divide(SizedBox(width: 32.0)),
+                              ].divide(const SizedBox(width: 32.0)),
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 8.0, 0.0, 8.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -2182,16 +2182,16 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                         ),
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 16.0)),
+                              ].divide(const SizedBox(width: 16.0)),
                             ),
                           ),
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 0.0, 8.0, 0.0),
                               child: MasonryGridView.builder(
                                 gridDelegate:
-                                    SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                    const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                   crossAxisCount: 7,
                                 ),
                                 crossAxisSpacing: 12.0,
@@ -2210,7 +2210,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                   }
                                 }(),
                                 itemCount: 35,
-                                padding: EdgeInsets.fromLTRB(
+                                padding: const EdgeInsets.fromLTRB(
                                   0,
                                   8.0,
                                   0,
@@ -2249,7 +2249,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel73,
                                             updateCallback: () =>
@@ -2266,7 +2266,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel74,
                                             updateCallback: () =>
@@ -2283,7 +2283,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel75,
                                             updateCallback: () =>
@@ -2300,7 +2300,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel76,
                                             updateCallback: () =>
@@ -2317,7 +2317,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel77,
                                             updateCallback: () =>
@@ -2334,7 +2334,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel78,
                                             updateCallback: () =>
@@ -2351,7 +2351,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel79,
                                             updateCallback: () =>
@@ -2368,7 +2368,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel80,
                                             updateCallback: () =>
@@ -2385,7 +2385,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel81,
                                             updateCallback: () =>
@@ -2402,7 +2402,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel82,
                                             updateCallback: () =>
@@ -2419,7 +2419,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel83,
                                             updateCallback: () =>
@@ -2436,7 +2436,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel84,
                                             updateCallback: () =>
@@ -2453,7 +2453,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel85,
                                             updateCallback: () =>
@@ -2470,7 +2470,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel86,
                                             updateCallback: () =>
@@ -2487,7 +2487,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel87,
                                             updateCallback: () =>
@@ -2504,7 +2504,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel88,
                                             updateCallback: () =>
@@ -2521,7 +2521,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel89,
                                             updateCallback: () =>
@@ -2538,7 +2538,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel90,
                                             updateCallback: () =>
@@ -2555,7 +2555,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel91,
                                             updateCallback: () =>
@@ -2572,7 +2572,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel92,
                                             updateCallback: () =>
@@ -2589,7 +2589,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel93,
                                             updateCallback: () =>
@@ -2606,7 +2606,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel94,
                                             updateCallback: () =>
@@ -2623,7 +2623,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel95,
                                             updateCallback: () =>
@@ -2640,7 +2640,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel96,
                                             updateCallback: () =>
@@ -2657,7 +2657,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel97,
                                             updateCallback: () =>
@@ -2674,7 +2674,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel98,
                                             updateCallback: () =>
@@ -2691,7 +2691,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model: _model.numberCalendarModel99,
                                             updateCallback: () =>
@@ -2708,7 +2708,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model:
                                                 _model.numberCalendarModel100,
@@ -2726,7 +2726,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model:
                                                 _model.numberCalendarModel101,
@@ -2744,7 +2744,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model:
                                                 _model.numberCalendarModel102,
@@ -2762,7 +2762,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model:
                                                 _model.numberCalendarModel103,
@@ -2780,7 +2780,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model:
                                                 _model.numberCalendarModel104,
@@ -2798,7 +2798,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                           ),
                                         ),
                                     () => Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: wrapWithModel(
                                             model:
                                                 _model.numberCalendarModel105,
@@ -2821,14 +2821,14 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                             ),
                           ),
                         ]
-                            .divide(SizedBox(height: 16.0))
-                            .addToStart(SizedBox(height: 16.0)),
+                            .divide(const SizedBox(height: 16.0))
+                            .addToStart(const SizedBox(height: 16.0)),
                       ),
                     ],
                   ),
                 ),
               ),
-            ].divide(SizedBox(height: 16.0)),
+            ].divide(const SizedBox(height: 16.0)),
           ),
         ],
       ),

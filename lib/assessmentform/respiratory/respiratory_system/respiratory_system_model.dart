@@ -1,24 +1,13 @@
 import '/assessmentform/thirtytree/widget/start_as_bottom/start_as_bottom_widget.dart';
-import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/sakon_nakhon/crisisvictims/widget/ninefive/ninefive_widget.dart';
 import '/sakon_nakhon/crisisvictims/widget/ninefore/ninefore_widget.dart';
 import '/sakon_nakhon/crisisvictims/widget/nineone/nineone_widget.dart';
 import '/sakon_nakhon/crisisvictims/widget/ninethree/ninethree_widget.dart';
 import '/sakon_nakhon/crisisvictims/widget/ninetwo/ninetwo_widget.dart';
-import 'dart:math';
-import 'dart:ui';
 import '/index.dart';
 import 'respiratory_system_widget.dart' show RespiratorySystemWidget;
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class RespiratorySystemModel extends FlutterFlowModel<RespiratorySystemWidget> {
   ///  Local state fields for this page.

@@ -54,9 +54,9 @@ class _ManyskWidgetState extends State<ManyskWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 0.0),
+      alignment: const AlignmentDirectional(0.0, 0.0),
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Container(
           width: () {
             if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
@@ -78,7 +78,7 @@ class _ManyskWidgetState extends State<ManyskWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -101,7 +101,7 @@ class _ManyskWidgetState extends State<ManyskWidget> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Expanded(
-                    child: Container(
+                    child: SizedBox(
                       width: 200.0,
                       child: TextFormField(
                         controller: _model.textController1,
@@ -131,7 +131,7 @@ class _ManyskWidgetState extends State<ManyskWidget> {
                                     .labelSmallIsCustom,
                               ),
                           enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xFFBBBBBB),
                               width: 1.0,
                             ),
@@ -179,7 +179,7 @@ class _ManyskWidgetState extends State<ManyskWidget> {
                     ),
                   ),
                   Expanded(
-                    child: Container(
+                    child: SizedBox(
                       width: 200.0,
                       child: TextFormField(
                         controller: _model.textController2,
@@ -209,7 +209,7 @@ class _ManyskWidgetState extends State<ManyskWidget> {
                                     .labelSmallIsCustom,
                               ),
                           enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xFFBBBBBB),
                               width: 1.0,
                             ),
@@ -256,14 +256,14 @@ class _ManyskWidgetState extends State<ManyskWidget> {
                       ),
                     ),
                   ),
-                ].divide(SizedBox(width: 12.0)).around(SizedBox(width: 12.0)),
+                ].divide(const SizedBox(width: 12.0)).around(const SizedBox(width: 12.0)),
               ),
               Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Expanded(
-                    child: Container(
+                    child: SizedBox(
                       width: 200.0,
                       child: TextFormField(
                         controller: _model.textController3,
@@ -293,7 +293,7 @@ class _ManyskWidgetState extends State<ManyskWidget> {
                                     .labelSmallIsCustom,
                               ),
                           enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xFFBBBBBB),
                               width: 1.0,
                             ),
@@ -340,14 +340,14 @@ class _ManyskWidgetState extends State<ManyskWidget> {
                       ),
                     ),
                   ),
-                ].divide(SizedBox(width: 12.0)).around(SizedBox(width: 12.0)),
+                ].divide(const SizedBox(width: 12.0)).around(const SizedBox(width: 12.0)),
               ),
               Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Expanded(
-                    child: Container(
+                    child: SizedBox(
                       width: 200.0,
                       child: TextFormField(
                         controller: _model.textController4,
@@ -377,7 +377,7 @@ class _ManyskWidgetState extends State<ManyskWidget> {
                                     .labelSmallIsCustom,
                               ),
                           enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xFFBBBBBB),
                               width: 1.0,
                             ),
@@ -424,10 +424,10 @@ class _ManyskWidgetState extends State<ManyskWidget> {
                       ),
                     ),
                   ),
-                ].divide(SizedBox(width: 12.0)).around(SizedBox(width: 12.0)),
+                ].divide(const SizedBox(width: 12.0)).around(const SizedBox(width: 12.0)),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
                 child: FFButtonWidget(
                   onPressed: () async {
                     Navigator.pop(context);
@@ -451,10 +451,10 @@ class _ManyskWidgetState extends State<ManyskWidget> {
                       }
                     }(),
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     iconAlignment: IconAlignment.start,
                     iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).customColor5,
                     textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily:
@@ -466,7 +466,7 @@ class _ManyskWidgetState extends State<ManyskWidget> {
                               !FlutterFlowTheme.of(context).bodyMediumIsCustom,
                         ),
                     elevation: 0.0,
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       color: Colors.transparent,
                       width: 0.0,
                     ),
@@ -474,7 +474,7 @@ class _ManyskWidgetState extends State<ManyskWidget> {
                   ),
                 ),
               ),
-            ].divide(SizedBox(height: 12.0)),
+            ].divide(const SizedBox(height: 12.0)),
           ),
         ),
       ),

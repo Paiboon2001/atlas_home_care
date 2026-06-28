@@ -52,9 +52,9 @@ class _PicWidgetState extends State<PicWidget> {
           ),
         ),
         Align(
-          alignment: AlignmentDirectional(1.0, -1.0),
+          alignment: const AlignmentDirectional(1.0, -1.0),
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
             child: Container(
               width: () {
                 if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
@@ -82,12 +82,12 @@ class _PicWidgetState extends State<PicWidget> {
                   return 36.0;
                 }
               }(),
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Color(0xACF5F7FA),
                 shape: BoxShape.circle,
               ),
               child: Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Icon(
                   Icons.close_rounded,
                   color: FlutterFlowTheme.of(context).secondaryBackground,

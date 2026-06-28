@@ -51,9 +51,9 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
         Container(
           width: double.infinity,
           height: 104.0,
-          decoration: BoxDecoration(),
+          decoration: const BoxDecoration(),
           child: ListView(
-            padding: EdgeInsets.fromLTRB(
+            padding: const EdgeInsets.fromLTRB(
               16.0,
               0,
               16.0,
@@ -73,7 +73,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                 },
                 child: Container(
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -93,7 +93,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(1.0),
+                          padding: const EdgeInsets.all(1.0),
                           child: Container(
                             width: 80.0,
                             height: 80.0,
@@ -109,9 +109,9 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   FlutterFlowTheme.of(context).accent1,
                                   FlutterFlowTheme.of(context).primary
                                 ],
-                                stops: [0.0, 1.0],
-                                begin: AlignmentDirectional(0.0, -1.0),
-                                end: AlignmentDirectional(0, 1.0),
+                                stops: const [0.0, 1.0],
+                                begin: const AlignmentDirectional(0.0, -1.0),
+                                end: const AlignmentDirectional(0, 1.0),
                               ),
                               shape: BoxShape.circle,
                               border: Border.all(
@@ -123,7 +123,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                             child: Stack(
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(1.0, 1.0),
+                                  alignment: const AlignmentDirectional(1.0, 1.0),
                                   child: Container(
                                     width: 24.0,
                                     height: 24.0,
@@ -132,7 +132,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                       shape: BoxShape.circle,
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Icon(
                                         Icons.airline_seat_flat_angled_rounded,
                                         color: FlutterFlowTheme.of(context)
@@ -181,7 +181,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                 },
                 child: Container(
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -201,7 +201,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(1.0),
+                          padding: const EdgeInsets.all(1.0),
                           child: Container(
                             width: 80.0,
                             height: 80.0,
@@ -211,9 +211,9 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   FlutterFlowTheme.of(context).accent1,
                                   FlutterFlowTheme.of(context).primary
                                 ],
-                                stops: [0.0, 1.0],
-                                begin: AlignmentDirectional(0.0, -1.0),
-                                end: AlignmentDirectional(0, 1.0),
+                                stops: const [0.0, 1.0],
+                                begin: const AlignmentDirectional(0.0, -1.0),
+                                end: const AlignmentDirectional(0, 1.0),
                               ),
                               shape: BoxShape.circle,
                               border: Border.all(
@@ -228,7 +228,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   width: 200.0,
                                   height: 200.0,
                                   clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
@@ -275,7 +275,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                 },
                 child: Container(
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -295,7 +295,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(1.0),
+                          padding: const EdgeInsets.all(1.0),
                           child: Container(
                             width: 80.0,
                             height: 80.0,
@@ -305,9 +305,9 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   FlutterFlowTheme.of(context).accent1,
                                   FlutterFlowTheme.of(context).primary
                                 ],
-                                stops: [0.0, 1.0],
-                                begin: AlignmentDirectional(0.0, -1.0),
-                                end: AlignmentDirectional(0, 1.0),
+                                stops: const [0.0, 1.0],
+                                begin: const AlignmentDirectional(0.0, -1.0),
+                                end: const AlignmentDirectional(0, 1.0),
                               ),
                               shape: BoxShape.circle,
                               border: Border.all(
@@ -322,7 +322,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   width: 200.0,
                                   height: 200.0,
                                   clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
@@ -369,7 +369,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                 },
                 child: Container(
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -389,7 +389,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(1.0),
+                          padding: const EdgeInsets.all(1.0),
                           child: Container(
                             width: 80.0,
                             height: 80.0,
@@ -399,9 +399,9 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   FlutterFlowTheme.of(context).accent1,
                                   FlutterFlowTheme.of(context).primary
                                 ],
-                                stops: [0.0, 1.0],
-                                begin: AlignmentDirectional(0.0, -1.0),
-                                end: AlignmentDirectional(0, 1.0),
+                                stops: const [0.0, 1.0],
+                                begin: const AlignmentDirectional(0.0, -1.0),
+                                end: const AlignmentDirectional(0, 1.0),
                               ),
                               shape: BoxShape.circle,
                               border: Border.all(
@@ -416,7 +416,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   width: 200.0,
                                   height: 200.0,
                                   clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
@@ -463,7 +463,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                 },
                 child: Container(
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -483,7 +483,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(1.0),
+                          padding: const EdgeInsets.all(1.0),
                           child: Container(
                             width: 80.0,
                             height: 80.0,
@@ -493,9 +493,9 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   FlutterFlowTheme.of(context).accent1,
                                   FlutterFlowTheme.of(context).primary
                                 ],
-                                stops: [0.0, 1.0],
-                                begin: AlignmentDirectional(0.0, -1.0),
-                                end: AlignmentDirectional(0, 1.0),
+                                stops: const [0.0, 1.0],
+                                begin: const AlignmentDirectional(0.0, -1.0),
+                                end: const AlignmentDirectional(0, 1.0),
                               ),
                               shape: BoxShape.circle,
                               border: Border.all(
@@ -510,7 +510,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   width: 200.0,
                                   height: 200.0,
                                   clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
@@ -557,7 +557,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                 },
                 child: Container(
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -577,7 +577,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(1.0),
+                          padding: const EdgeInsets.all(1.0),
                           child: Container(
                             width: 80.0,
                             height: 80.0,
@@ -587,9 +587,9 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   FlutterFlowTheme.of(context).accent1,
                                   FlutterFlowTheme.of(context).primary
                                 ],
-                                stops: [0.0, 1.0],
-                                begin: AlignmentDirectional(0.0, -1.0),
-                                end: AlignmentDirectional(0, 1.0),
+                                stops: const [0.0, 1.0],
+                                begin: const AlignmentDirectional(0.0, -1.0),
+                                end: const AlignmentDirectional(0, 1.0),
                               ),
                               shape: BoxShape.circle,
                               border: Border.all(
@@ -604,7 +604,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   width: 200.0,
                                   height: 200.0,
                                   clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
@@ -651,7 +651,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                 },
                 child: Container(
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -671,7 +671,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(1.0),
+                          padding: const EdgeInsets.all(1.0),
                           child: Container(
                             width: 80.0,
                             height: 80.0,
@@ -681,9 +681,9 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   FlutterFlowTheme.of(context).accent1,
                                   FlutterFlowTheme.of(context).primary
                                 ],
-                                stops: [0.0, 1.0],
-                                begin: AlignmentDirectional(0.0, -1.0),
-                                end: AlignmentDirectional(0, 1.0),
+                                stops: const [0.0, 1.0],
+                                begin: const AlignmentDirectional(0.0, -1.0),
+                                end: const AlignmentDirectional(0, 1.0),
                               ),
                               shape: BoxShape.circle,
                               border: Border.all(
@@ -698,7 +698,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   width: 200.0,
                                   height: 200.0,
                                   clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
@@ -745,7 +745,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                 },
                 child: Container(
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -765,7 +765,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(1.0),
+                          padding: const EdgeInsets.all(1.0),
                           child: Container(
                             width: 80.0,
                             height: 80.0,
@@ -775,9 +775,9 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   FlutterFlowTheme.of(context).accent1,
                                   FlutterFlowTheme.of(context).primary
                                 ],
-                                stops: [0.0, 1.0],
-                                begin: AlignmentDirectional(0.0, -1.0),
-                                end: AlignmentDirectional(0, 1.0),
+                                stops: const [0.0, 1.0],
+                                begin: const AlignmentDirectional(0.0, -1.0),
+                                end: const AlignmentDirectional(0, 1.0),
                               ),
                               shape: BoxShape.circle,
                               border: Border.all(
@@ -792,7 +792,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   width: 200.0,
                                   height: 200.0,
                                   clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
@@ -839,7 +839,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                 },
                 child: Container(
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -859,7 +859,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(1.0),
+                          padding: const EdgeInsets.all(1.0),
                           child: Container(
                             width: 80.0,
                             height: 80.0,
@@ -869,9 +869,9 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   FlutterFlowTheme.of(context).accent1,
                                   FlutterFlowTheme.of(context).primary
                                 ],
-                                stops: [0.0, 1.0],
-                                begin: AlignmentDirectional(0.0, -1.0),
-                                end: AlignmentDirectional(0, 1.0),
+                                stops: const [0.0, 1.0],
+                                begin: const AlignmentDirectional(0.0, -1.0),
+                                end: const AlignmentDirectional(0, 1.0),
                               ),
                               shape: BoxShape.circle,
                               border: Border.all(
@@ -886,7 +886,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   width: 200.0,
                                   height: 200.0,
                                   clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
@@ -933,7 +933,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                 },
                 child: Container(
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -953,7 +953,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(1.0),
+                          padding: const EdgeInsets.all(1.0),
                           child: Container(
                             width: 80.0,
                             height: 80.0,
@@ -963,9 +963,9 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   FlutterFlowTheme.of(context).accent1,
                                   FlutterFlowTheme.of(context).primary
                                 ],
-                                stops: [0.0, 1.0],
-                                begin: AlignmentDirectional(0.0, -1.0),
-                                end: AlignmentDirectional(0, 1.0),
+                                stops: const [0.0, 1.0],
+                                begin: const AlignmentDirectional(0.0, -1.0),
+                                end: const AlignmentDirectional(0, 1.0),
                               ),
                               shape: BoxShape.circle,
                               border: Border.all(
@@ -980,7 +980,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                   width: 200.0,
                                   height: 200.0,
                                   clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
@@ -1016,7 +1016,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                   ),
                 ),
               ),
-            ].divide(SizedBox(width: 12.0)),
+            ].divide(const SizedBox(width: 12.0)),
           ),
         ),
         Column(
@@ -1024,7 +1024,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
           children: [
             if (FFAppState().parents == 1)
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -1046,13 +1046,13 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                       pressurestatus: 'ปกติ',
                       strokestatus: 'เสี่ยง',
                       potbellystatus: 'ปกติ',
-                      diabetescolor1: Color(0x324CAF50),
+                      diabetescolor1: const Color(0x324CAF50),
                       diabetescolor2: FlutterFlowTheme.of(context).customColor1,
-                      pressurecolor1: Color(0x324CAF50),
+                      pressurecolor1: const Color(0x324CAF50),
                       pressurecolor2: FlutterFlowTheme.of(context).customColor1,
-                      strokecolor1: Color(0x32F44336),
+                      strokecolor1: const Color(0x32F44336),
                       strokecolor2: FlutterFlowTheme.of(context).customColor3,
-                      potbellycolor1: Color(0x324CAF50),
+                      potbellycolor1: const Color(0x324CAF50),
                       potbellycolor2: FlutterFlowTheme.of(context).customColor1,
                       img:
                           'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/jsj3wzutwz6p/man1.png',
@@ -1062,7 +1062,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
               ),
             if (FFAppState().parents == 2)
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: wrapWithModel(
                   model: _model.itemHouseHoldMembersModel2,
                   updateCallback: () => safeSetState(() {}),
@@ -1095,7 +1095,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
               ),
             if (FFAppState().parents == 3)
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: wrapWithModel(
                   model: _model.itemHouseHoldMembersModel3,
                   updateCallback: () => safeSetState(() {}),
@@ -1128,7 +1128,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
               ),
           ],
         ),
-      ].divide(SizedBox(height: 16.0)),
+      ].divide(const SizedBox(height: 16.0)),
     );
   }
 }

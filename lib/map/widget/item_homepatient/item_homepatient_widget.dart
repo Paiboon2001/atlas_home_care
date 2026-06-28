@@ -63,7 +63,7 @@ class _ItemHomepatientWidgetState extends State<ItemHomepatientWidget> {
       width: double.infinity,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             blurRadius: 4.0,
             color: Color(0x19000000),
@@ -80,14 +80,14 @@ class _ItemHomepatientWidgetState extends State<ItemHomepatientWidget> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   valueOrDefault<String>(
-                    widget!.location,
+                    widget.location,
                     'location',
                   ),
                   maxLines: 2,
@@ -100,12 +100,12 @@ class _ItemHomepatientWidgetState extends State<ItemHomepatientWidget> {
                             !FlutterFlowTheme.of(context).bodyMediumIsCustom,
                       ),
                 ),
-              ].divide(SizedBox(height: 12.0)),
+              ].divide(const SizedBox(height: 12.0)),
             ),
           ),
           Container(
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 bottomLeft: Radius.circular(24.0),
                 bottomRight: Radius.circular(24.0),
               ),
@@ -114,12 +114,12 @@ class _ItemHomepatientWidgetState extends State<ItemHomepatientWidget> {
               ),
             ),
             child: Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: Stack(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 children: [
                   ClipRRect(
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(24.0),
                       bottomRight: Radius.circular(24.0),
                     ),
@@ -131,11 +131,11 @@ class _ItemHomepatientWidgetState extends State<ItemHomepatientWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(-0.03, 0.06),
+                    alignment: const AlignmentDirectional(-0.03, 0.06),
                     child: wrapWithModel(
                       model: _model.pinModel,
                       updateCallback: () => safeSetState(() {}),
-                      child: PinWidget(
+                      child: const PinWidget(
                         num: '1',
                         color2: Color(0xFFFFBD00),
                         color1: Color(0xFFFFE7A2),
@@ -146,7 +146,7 @@ class _ItemHomepatientWidgetState extends State<ItemHomepatientWidget> {
               ),
             ),
           ),
-        ].divide(SizedBox(height: 8.0)),
+        ].divide(const SizedBox(height: 8.0)),
       ),
     );
   }

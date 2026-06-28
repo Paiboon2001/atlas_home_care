@@ -98,7 +98,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
             curve: Curves.easeInOut,
             delay: 1300.0.ms,
             duration: 2000.0.ms,
-            color: Color(0x80FFFFFF),
+            color: const Color(0x80FFFFFF),
             angle: 0.524,
           ),
         ],
@@ -123,7 +123,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
       mainAxisSize: MainAxisSize.max,
       children: [
         Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
           child: Container(
             width: double.infinity,
             decoration: BoxDecoration(
@@ -131,13 +131,13 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
               borderRadius: BorderRadius.circular(24.0),
             ),
             child: Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -160,7 +160,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                             print('Button pressed ...');
                           },
                           text: 'Clear',
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.restart_alt,
                             size: 15.0,
                           ),
@@ -179,11 +179,11 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                 return 40.0;
                               }
                             }(),
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: Color(0x00CEEAFF),
+                            color: const Color(0x00CEEAFF),
                             textStyle: FlutterFlowTheme.of(context)
                                 .labelSmall
                                 .override(
@@ -201,7 +201,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
-                      ].divide(SizedBox(width: 8.0)),
+                      ].divide(const SizedBox(width: 8.0)),
                     ),
                   ),
                   if (responsiveVisibility(
@@ -222,10 +222,10 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.all(8.0),
                             child: Container(
                               width: double.infinity,
-                              color: Color(0x00000000),
+                              color: const Color(0x00000000),
                               child: ExpandableNotifier(
                                 controller:
                                     _model.expandableExpandableController1,
@@ -239,19 +239,19 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                         decoration: BoxDecoration(
                                           gradient: LinearGradient(
                                             colors: [
-                                              Color(0xFF8AC9FF),
+                                              const Color(0xFF8AC9FF),
                                               FlutterFlowTheme.of(context).info
                                             ],
-                                            stops: [0.0, 1.0],
+                                            stops: const [0.0, 1.0],
                                             begin:
-                                                AlignmentDirectional(0.0, -1.0),
-                                            end: AlignmentDirectional(0, 1.0),
+                                                const AlignmentDirectional(0.0, -1.0),
+                                            end: const AlignmentDirectional(0, 1.0),
                                           ),
                                           shape: BoxShape.circle,
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Icon(
                                             Icons.auto_awesome_sharp,
                                             color: FlutterFlowTheme.of(context)
@@ -297,11 +297,11 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                       .labelMediumIsCustom,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                   collapsed: Container(),
                                   expanded: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 8.0, 0.0, 0.0),
                                     child: Container(
                                       width: double.infinity,
@@ -313,7 +313,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                             BorderRadius.circular(8.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8.0, 0.0, 8.0, 0.0),
                                         child: SingleChildScrollView(
                                           child: Column(
@@ -341,7 +341,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         ),
                                                       ),
                                                       unselectedWidgetColor:
-                                                          Color(0xFFA3A3A3),
+                                                          const Color(0xFFA3A3A3),
                                                     ),
                                                     child: Checkbox(
                                                       value: _model
@@ -354,12 +354,12 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                             newValue!);
                                                       },
                                                       side:
-                                                          (Color(0xFFA3A3A3) !=
+                                                          (const Color(0xFFA3A3A3) !=
                                                                   null)
                                                               ? BorderSide(
                                                                   width: 2,
-                                                                  color: Color(
-                                                                      0xFFA3A3A3)!,
+                                                                  color: const Color(
+                                                                      0xFFA3A3A3),
                                                                 )
                                                               : null,
                                                       activeColor:
@@ -402,7 +402,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                   .bodySmallIsCustom,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
                                               Divider(
                                                 height: 1.0,
@@ -433,7 +433,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         ),
                                                       ),
                                                       unselectedWidgetColor:
-                                                          Color(0xFFA3A3A3),
+                                                          const Color(0xFFA3A3A3),
                                                     ),
                                                     child: Checkbox(
                                                       value: _model
@@ -446,12 +446,12 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                             newValue!);
                                                       },
                                                       side:
-                                                          (Color(0xFFA3A3A3) !=
+                                                          (const Color(0xFFA3A3A3) !=
                                                                   null)
                                                               ? BorderSide(
                                                                   width: 2,
-                                                                  color: Color(
-                                                                      0xFFA3A3A3)!,
+                                                                  color: const Color(
+                                                                      0xFFA3A3A3),
                                                                 )
                                                               : null,
                                                       activeColor:
@@ -494,7 +494,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                   .bodySmallIsCustom,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
                                               Divider(
                                                 height: 1.0,
@@ -525,7 +525,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         ),
                                                       ),
                                                       unselectedWidgetColor:
-                                                          Color(0xFFA3A3A3),
+                                                          const Color(0xFFA3A3A3),
                                                     ),
                                                     child: Checkbox(
                                                       value: _model
@@ -538,12 +538,12 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                             newValue!);
                                                       },
                                                       side:
-                                                          (Color(0xFFA3A3A3) !=
+                                                          (const Color(0xFFA3A3A3) !=
                                                                   null)
                                                               ? BorderSide(
                                                                   width: 2,
-                                                                  color: Color(
-                                                                      0xFFA3A3A3)!,
+                                                                  color: const Color(
+                                                                      0xFFA3A3A3),
                                                                 )
                                                               : null,
                                                       activeColor:
@@ -586,7 +586,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                   .bodySmallIsCustom,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
                                               Divider(
                                                 height: 1.0,
@@ -617,7 +617,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         ),
                                                       ),
                                                       unselectedWidgetColor:
-                                                          Color(0xFFA3A3A3),
+                                                          const Color(0xFFA3A3A3),
                                                     ),
                                                     child: Checkbox(
                                                       value: _model
@@ -630,12 +630,12 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                             newValue!);
                                                       },
                                                       side:
-                                                          (Color(0xFFA3A3A3) !=
+                                                          (const Color(0xFFA3A3A3) !=
                                                                   null)
                                                               ? BorderSide(
                                                                   width: 2,
-                                                                  color: Color(
-                                                                      0xFFA3A3A3)!,
+                                                                  color: const Color(
+                                                                      0xFFA3A3A3),
                                                                 )
                                                               : null,
                                                       activeColor:
@@ -678,7 +678,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                   .bodySmallIsCustom,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
                                               Divider(
                                                 height: 1.0,
@@ -709,7 +709,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         ),
                                                       ),
                                                       unselectedWidgetColor:
-                                                          Color(0xFFA3A3A3),
+                                                          const Color(0xFFA3A3A3),
                                                     ),
                                                     child: Checkbox(
                                                       value: _model
@@ -722,12 +722,12 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                             newValue!);
                                                       },
                                                       side:
-                                                          (Color(0xFFA3A3A3) !=
+                                                          (const Color(0xFFA3A3A3) !=
                                                                   null)
                                                               ? BorderSide(
                                                                   width: 2,
-                                                                  color: Color(
-                                                                      0xFFA3A3A3)!,
+                                                                  color: const Color(
+                                                                      0xFFA3A3A3),
                                                                 )
                                                               : null,
                                                       activeColor:
@@ -770,7 +770,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                   .bodySmallIsCustom,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
                                               Divider(
                                                 height: 1.0,
@@ -801,7 +801,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         ),
                                                       ),
                                                       unselectedWidgetColor:
-                                                          Color(0xFFA3A3A3),
+                                                          const Color(0xFFA3A3A3),
                                                     ),
                                                     child: Checkbox(
                                                       value: _model
@@ -814,12 +814,12 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                             newValue!);
                                                       },
                                                       side:
-                                                          (Color(0xFFA3A3A3) !=
+                                                          (const Color(0xFFA3A3A3) !=
                                                                   null)
                                                               ? BorderSide(
                                                                   width: 2,
-                                                                  color: Color(
-                                                                      0xFFA3A3A3)!,
+                                                                  color: const Color(
+                                                                      0xFFA3A3A3),
                                                                 )
                                                               : null,
                                                       activeColor:
@@ -862,17 +862,17 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                   .bodySmallIsCustom,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
                                             ]
-                                                .divide(SizedBox(height: 8.0))
-                                                .around(SizedBox(height: 8.0)),
+                                                .divide(const SizedBox(height: 8.0))
+                                                .around(const SizedBox(height: 8.0)),
                                           ),
                                         ),
                                       ),
                                     ),
                                   ),
-                                  theme: ExpandableThemeData(
+                                  theme: const ExpandableThemeData(
                                     tapHeaderToExpand: true,
                                     tapBodyToExpand: true,
                                     tapBodyToCollapse: false,
@@ -886,7 +886,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                           ),
                         ),
                         Container(
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16.0),
@@ -896,10 +896,10 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(8.0),
                               child: Container(
                                 width: double.infinity,
-                                color: Color(0x00000000),
+                                color: const Color(0x00000000),
                                 child: ExpandableNotifier(
                                   controller:
                                       _model.expandableExpandableController2,
@@ -913,20 +913,20 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF8AC9FF),
+                                                const Color(0xFF8AC9FF),
                                                 FlutterFlowTheme.of(context)
                                                     .info
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.0, -1.0),
-                                              end: AlignmentDirectional(0, 1.0),
+                                              end: const AlignmentDirectional(0, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.chat_rounded,
                                               color:
@@ -954,7 +954,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         .labelMediumIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     collapsed: Container(),
                                     expanded: Column(
@@ -962,7 +962,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 0.0),
                                           child: Container(
                                             width: double.infinity,
@@ -980,7 +980,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(8.0, 0.0,
                                                                 8.0, 0.0),
                                                     child: Row(
@@ -1003,7 +1003,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                             ),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(8.0),
                                                               child: Text(
                                                                 'เป็นอย่างไรบ้างคับคุณยาย',
@@ -1045,19 +1045,19 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                             gradient:
                                                                 LinearGradient(
                                                               colors: [
-                                                                Color(
+                                                                const Color(
                                                                     0xFFD7E9FF),
                                                                 FlutterFlowTheme.of(
                                                                         context)
                                                                     .primary
                                                               ],
-                                                              stops: [0.0, 1.0],
+                                                              stops: const [0.0, 1.0],
                                                               begin:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0,
                                                                       -1.0),
                                                               end:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0, 1.0),
                                                             ),
                                                             shape:
@@ -1065,15 +1065,15 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                           ),
                                                         ),
                                                       ]
-                                                          .divide(SizedBox(
+                                                          .divide(const SizedBox(
                                                               width: 8.0))
-                                                          .addToStart(SizedBox(
+                                                          .addToStart(const SizedBox(
                                                               width: 56.0)),
                                                     ),
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(8.0, 0.0,
                                                                 8.0, 0.0),
                                                     child: Row(
@@ -1106,13 +1106,13 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                         context)
                                                                     .secondary
                                                               ],
-                                                              stops: [0.0, 1.0],
+                                                              stops: const [0.0, 1.0],
                                                               begin:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0,
                                                                       -1.0),
                                                               end:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0, 1.0),
                                                             ),
                                                             shape:
@@ -1133,7 +1133,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                             ),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(8.0),
                                                               child: Text(
                                                                 'ฉันมีอาการปวดหัวและไม่สบายมาหลายวันแล้ว และก็กินข้าวไม่ค่อยได้',
@@ -1157,15 +1157,15 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                           ),
                                                         ),
                                                       ]
-                                                          .divide(SizedBox(
+                                                          .divide(const SizedBox(
                                                               width: 8.0))
-                                                          .addToEnd(SizedBox(
+                                                          .addToEnd(const SizedBox(
                                                               width: 56.0)),
                                                     ),
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(8.0, 0.0,
                                                                 8.0, 0.0),
                                                     child: Row(
@@ -1198,13 +1198,13 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                         context)
                                                                     .secondary
                                                               ],
-                                                              stops: [0.0, 1.0],
+                                                              stops: const [0.0, 1.0],
                                                               begin:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0,
                                                                       -1.0),
                                                               end:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0, 1.0),
                                                             ),
                                                             shape:
@@ -1225,7 +1225,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                             ),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(8.0),
                                                               child: Text(
                                                                 'นอนไม่หลับเลยลูก',
@@ -1249,15 +1249,15 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                           ),
                                                         ),
                                                       ]
-                                                          .divide(SizedBox(
+                                                          .divide(const SizedBox(
                                                               width: 8.0))
-                                                          .addToEnd(SizedBox(
+                                                          .addToEnd(const SizedBox(
                                                               width: 56.0)),
                                                     ),
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(8.0, 0.0,
                                                                 8.0, 0.0),
                                                     child: Row(
@@ -1280,7 +1280,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                             ),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(8.0),
                                                               child: Text(
                                                                 'แล้วเป็นอยู่ยังไงบ้างครับ',
@@ -1322,19 +1322,19 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                             gradient:
                                                                 LinearGradient(
                                                               colors: [
-                                                                Color(
+                                                                const Color(
                                                                     0xFFD7E9FF),
                                                                 FlutterFlowTheme.of(
                                                                         context)
                                                                     .primary
                                                               ],
-                                                              stops: [0.0, 1.0],
+                                                              stops: const [0.0, 1.0],
                                                               begin:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0,
                                                                       -1.0),
                                                               end:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0, 1.0),
                                                             ),
                                                             shape:
@@ -1342,26 +1342,26 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                           ),
                                                         ),
                                                       ]
-                                                          .divide(SizedBox(
+                                                          .divide(const SizedBox(
                                                               width: 8.0))
-                                                          .addToStart(SizedBox(
+                                                          .addToStart(const SizedBox(
                                                               width: 56.0)),
                                                     ),
                                                   ),
                                                 ]
                                                     .divide(
-                                                        SizedBox(height: 12.0))
+                                                        const SizedBox(height: 12.0))
                                                     .addToStart(
-                                                        SizedBox(height: 8.0))
+                                                        const SizedBox(height: 8.0))
                                                     .addToEnd(
-                                                        SizedBox(height: 8.0)),
+                                                        const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                           ),
                                         ),
                                       ],
                                     ),
-                                    theme: ExpandableThemeData(
+                                    theme: const ExpandableThemeData(
                                       tapHeaderToExpand: true,
                                       tapBodyToExpand: true,
                                       tapBodyToCollapse: false,
@@ -1375,7 +1375,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                             ),
                           ),
                         ),
-                      ].divide(SizedBox(height: 12.0)),
+                      ].divide(const SizedBox(height: 12.0)),
                     ),
                   if (responsiveVisibility(
                     context: context,
@@ -1397,10 +1397,10 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Container(
                                 width: double.infinity,
-                                color: Color(0x00000000),
+                                color: const Color(0x00000000),
                                 child: ExpandableNotifier(
                                   controller:
                                       _model.expandableExpandableController3,
@@ -1450,20 +1450,20 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF8AC9FF),
+                                                const Color(0xFF8AC9FF),
                                                 FlutterFlowTheme.of(context)
                                                     .info
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.0, -1.0),
-                                              end: AlignmentDirectional(0, 1.0),
+                                              end: const AlignmentDirectional(0, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.auto_awesome_sharp,
                                               color:
@@ -1488,11 +1488,11 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         .labelMediumIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     collapsed: Container(),
                                     expanded: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 8.0, 0.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
@@ -1505,7 +1505,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   8.0, 0.0, 8.0, 0.0),
                                           child: SingleChildScrollView(
                                             child: Column(
@@ -1534,7 +1534,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                           ),
                                                         ),
                                                         unselectedWidgetColor:
-                                                            Color(0xFFA3A3A3),
+                                                            const Color(0xFFA3A3A3),
                                                       ),
                                                       child: Checkbox(
                                                         value: _model
@@ -1547,12 +1547,12 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                   newValue!);
                                                         },
                                                         side:
-                                                            (Color(0xFFA3A3A3) !=
+                                                            (const Color(0xFFA3A3A3) !=
                                                                     null)
                                                                 ? BorderSide(
                                                                     width: 2,
-                                                                    color: Color(
-                                                                        0xFFA3A3A3)!,
+                                                                    color: const Color(
+                                                                        0xFFA3A3A3),
                                                                   )
                                                                 : null,
                                                         activeColor:
@@ -1598,7 +1598,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 4.0)),
+                                                      const SizedBox(width: 4.0)),
                                                 ),
                                                 Divider(
                                                   height: 1.0,
@@ -1630,7 +1630,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                           ),
                                                         ),
                                                         unselectedWidgetColor:
-                                                            Color(0xFFA3A3A3),
+                                                            const Color(0xFFA3A3A3),
                                                       ),
                                                       child: Checkbox(
                                                         value: _model
@@ -1643,12 +1643,12 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                   newValue!);
                                                         },
                                                         side:
-                                                            (Color(0xFFA3A3A3) !=
+                                                            (const Color(0xFFA3A3A3) !=
                                                                     null)
                                                                 ? BorderSide(
                                                                     width: 2,
-                                                                    color: Color(
-                                                                        0xFFA3A3A3)!,
+                                                                    color: const Color(
+                                                                        0xFFA3A3A3),
                                                                   )
                                                                 : null,
                                                         activeColor:
@@ -1694,7 +1694,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 4.0)),
+                                                      const SizedBox(width: 4.0)),
                                                 ),
                                                 Divider(
                                                   height: 1.0,
@@ -1726,7 +1726,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                           ),
                                                         ),
                                                         unselectedWidgetColor:
-                                                            Color(0xFFA3A3A3),
+                                                            const Color(0xFFA3A3A3),
                                                       ),
                                                       child: Checkbox(
                                                         value: _model
@@ -1739,12 +1739,12 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                   newValue!);
                                                         },
                                                         side:
-                                                            (Color(0xFFA3A3A3) !=
+                                                            (const Color(0xFFA3A3A3) !=
                                                                     null)
                                                                 ? BorderSide(
                                                                     width: 2,
-                                                                    color: Color(
-                                                                        0xFFA3A3A3)!,
+                                                                    color: const Color(
+                                                                        0xFFA3A3A3),
                                                                   )
                                                                 : null,
                                                         activeColor:
@@ -1790,7 +1790,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 4.0)),
+                                                      const SizedBox(width: 4.0)),
                                                 ),
                                                 Divider(
                                                   height: 1.0,
@@ -1822,7 +1822,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                           ),
                                                         ),
                                                         unselectedWidgetColor:
-                                                            Color(0xFFA3A3A3),
+                                                            const Color(0xFFA3A3A3),
                                                       ),
                                                       child: Checkbox(
                                                         value: _model
@@ -1835,12 +1835,12 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                   newValue!);
                                                         },
                                                         side:
-                                                            (Color(0xFFA3A3A3) !=
+                                                            (const Color(0xFFA3A3A3) !=
                                                                     null)
                                                                 ? BorderSide(
                                                                     width: 2,
-                                                                    color: Color(
-                                                                        0xFFA3A3A3)!,
+                                                                    color: const Color(
+                                                                        0xFFA3A3A3),
                                                                   )
                                                                 : null,
                                                         activeColor:
@@ -1886,7 +1886,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 4.0)),
+                                                      const SizedBox(width: 4.0)),
                                                 ),
                                                 Divider(
                                                   height: 1.0,
@@ -1918,7 +1918,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                           ),
                                                         ),
                                                         unselectedWidgetColor:
-                                                            Color(0xFFA3A3A3),
+                                                            const Color(0xFFA3A3A3),
                                                       ),
                                                       child: Checkbox(
                                                         value: _model
@@ -1931,12 +1931,12 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                   newValue!);
                                                         },
                                                         side:
-                                                            (Color(0xFFA3A3A3) !=
+                                                            (const Color(0xFFA3A3A3) !=
                                                                     null)
                                                                 ? BorderSide(
                                                                     width: 2,
-                                                                    color: Color(
-                                                                        0xFFA3A3A3)!,
+                                                                    color: const Color(
+                                                                        0xFFA3A3A3),
                                                                   )
                                                                 : null,
                                                         activeColor:
@@ -1982,7 +1982,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 4.0)),
+                                                      const SizedBox(width: 4.0)),
                                                 ),
                                                 Divider(
                                                   height: 1.0,
@@ -2014,7 +2014,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                           ),
                                                         ),
                                                         unselectedWidgetColor:
-                                                            Color(0xFFA3A3A3),
+                                                            const Color(0xFFA3A3A3),
                                                       ),
                                                       child: Checkbox(
                                                         value: _model
@@ -2027,12 +2027,12 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                   newValue!);
                                                         },
                                                         side:
-                                                            (Color(0xFFA3A3A3) !=
+                                                            (const Color(0xFFA3A3A3) !=
                                                                     null)
                                                                 ? BorderSide(
                                                                     width: 2,
-                                                                    color: Color(
-                                                                        0xFFA3A3A3)!,
+                                                                    color: const Color(
+                                                                        0xFFA3A3A3),
                                                                   )
                                                                 : null,
                                                         activeColor:
@@ -2078,18 +2078,18 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 4.0)),
+                                                      const SizedBox(width: 4.0)),
                                                 ),
                                               ]
-                                                  .divide(SizedBox(height: 8.0))
+                                                  .divide(const SizedBox(height: 8.0))
                                                   .around(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                             ),
                                           ),
                                         ),
                                       ),
                                     ),
-                                    theme: ExpandableThemeData(
+                                    theme: const ExpandableThemeData(
                                       tapHeaderToExpand: true,
                                       tapBodyToExpand: true,
                                       tapBodyToCollapse: false,
@@ -2112,10 +2112,10 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Container(
                                 width: double.infinity,
-                                color: Color(0x00000000),
+                                color: const Color(0x00000000),
                                 child: ExpandableNotifier(
                                   controller:
                                       _model.expandableExpandableController4,
@@ -2165,20 +2165,20 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF8AC9FF),
+                                                const Color(0xFF8AC9FF),
                                                 FlutterFlowTheme.of(context)
                                                     .info
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.0, -1.0),
-                                              end: AlignmentDirectional(0, 1.0),
+                                              end: const AlignmentDirectional(0, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.chat_rounded,
                                               color:
@@ -2203,11 +2203,11 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         .labelMediumIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     collapsed: Container(),
                                     expanded: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 8.0, 0.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
@@ -2223,7 +2223,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         8.0, 0.0, 8.0, 0.0),
                                                 child: Row(
@@ -2246,7 +2246,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   8.0),
                                                           child: Text(
                                                             'เป็นอย่างไรบ้างคับคุณยาย',
@@ -2286,17 +2286,17 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         gradient:
                                                             LinearGradient(
                                                           colors: [
-                                                            Color(0xFFD7E9FF),
+                                                            const Color(0xFFD7E9FF),
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primary
                                                           ],
-                                                          stops: [0.0, 1.0],
+                                                          stops: const [0.0, 1.0],
                                                           begin:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, -1.0),
                                                           end:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0, 1.0),
                                                         ),
                                                         shape: BoxShape.circle,
@@ -2304,13 +2304,13 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                     ),
                                                   ]
                                                       .divide(
-                                                          SizedBox(width: 8.0))
-                                                      .addToStart(SizedBox(
+                                                          const SizedBox(width: 8.0))
+                                                      .addToStart(const SizedBox(
                                                           width: 56.0)),
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         8.0, 0.0, 8.0, 0.0),
                                                 child: Row(
@@ -2339,12 +2339,12 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                     context)
                                                                 .secondary
                                                           ],
-                                                          stops: [0.0, 1.0],
+                                                          stops: const [0.0, 1.0],
                                                           begin:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, -1.0),
                                                           end:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0, 1.0),
                                                         ),
                                                         shape: BoxShape.circle,
@@ -2364,7 +2364,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   8.0),
                                                           child: Text(
                                                             'ฉันมีอาการปวดหัวและไม่สบายมาหลายวันแล้ว และก็กินข้าวไม่ค่อยได้',
@@ -2390,13 +2390,13 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                     ),
                                                   ]
                                                       .divide(
-                                                          SizedBox(width: 8.0))
-                                                      .addToEnd(SizedBox(
+                                                          const SizedBox(width: 8.0))
+                                                      .addToEnd(const SizedBox(
                                                           width: 56.0)),
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         8.0, 0.0, 8.0, 0.0),
                                                 child: Row(
@@ -2425,12 +2425,12 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                     context)
                                                                 .secondary
                                                           ],
-                                                          stops: [0.0, 1.0],
+                                                          stops: const [0.0, 1.0],
                                                           begin:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, -1.0),
                                                           end:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0, 1.0),
                                                         ),
                                                         shape: BoxShape.circle,
@@ -2450,7 +2450,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   8.0),
                                                           child: Text(
                                                             'นอนไม่หลับเลยลูก',
@@ -2476,13 +2476,13 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                     ),
                                                   ]
                                                       .divide(
-                                                          SizedBox(width: 8.0))
-                                                      .addToEnd(SizedBox(
+                                                          const SizedBox(width: 8.0))
+                                                      .addToEnd(const SizedBox(
                                                           width: 56.0)),
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         8.0, 0.0, 8.0, 0.0),
                                                 child: Row(
@@ -2505,7 +2505,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   8.0),
                                                           child: Text(
                                                             'แล้วเป็นอยู่ยังไงบ้างครับ',
@@ -2545,17 +2545,17 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         gradient:
                                                             LinearGradient(
                                                           colors: [
-                                                            Color(0xFFD7E9FF),
+                                                            const Color(0xFFD7E9FF),
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primary
                                                           ],
-                                                          stops: [0.0, 1.0],
+                                                          stops: const [0.0, 1.0],
                                                           begin:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, -1.0),
                                                           end:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0, 1.0),
                                                         ),
                                                         shape: BoxShape.circle,
@@ -2563,22 +2563,22 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                     ),
                                                   ]
                                                       .divide(
-                                                          SizedBox(width: 8.0))
-                                                      .addToStart(SizedBox(
+                                                          const SizedBox(width: 8.0))
+                                                      .addToStart(const SizedBox(
                                                           width: 56.0)),
                                                 ),
                                               ),
                                             ]
-                                                .divide(SizedBox(height: 12.0))
+                                                .divide(const SizedBox(height: 12.0))
                                                 .addToStart(
-                                                    SizedBox(height: 8.0))
+                                                    const SizedBox(height: 8.0))
                                                 .addToEnd(
-                                                    SizedBox(height: 8.0)),
+                                                    const SizedBox(height: 8.0)),
                                           ),
                                         ),
                                       ),
                                     ),
-                                    theme: ExpandableThemeData(
+                                    theme: const ExpandableThemeData(
                                       tapHeaderToExpand: true,
                                       tapBodyToExpand: true,
                                       tapBodyToCollapse: false,
@@ -2592,11 +2592,11 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                             ),
                           ),
                         ),
-                      ].divide(SizedBox(width: 12.0)),
+                      ].divide(const SizedBox(width: 12.0)),
                     ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
@@ -2605,9 +2605,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                             FlutterFlowTheme.of(context).primaryBackground,
                             FlutterFlowTheme.of(context).alternate
                           ],
-                          stops: [0.0, 1.0],
-                          begin: AlignmentDirectional(0.0, -1.0),
-                          end: AlignmentDirectional(0, 1.0),
+                          stops: const [0.0, 1.0],
+                          begin: const AlignmentDirectional(0.0, -1.0),
+                          end: const AlignmentDirectional(0, 1.0),
                         ),
                         borderRadius: BorderRadius.circular(12.0),
                         border: Border.all(
@@ -2616,7 +2616,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                         ),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(8.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -2634,7 +2634,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                   builder: (context) {
                                     return Padding(
                                       padding: MediaQuery.viewInsetsOf(context),
-                                      child: TolkChatWidget(),
+                                      child: const TolkChatWidget(),
                                     );
                                   },
                                 ).then((value) => safeSetState(() {}));
@@ -2643,7 +2643,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                 width: 72.0,
                                 height: 72.0,
                                 decoration: BoxDecoration(
-                                  boxShadow: [
+                                  boxShadow: const [
                                     BoxShadow(
                                       blurRadius: 4.0,
                                       color: Color(0xFF9EACB4),
@@ -2653,7 +2653,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                       ),
                                     )
                                   ],
-                                  gradient: LinearGradient(
+                                  gradient: const LinearGradient(
                                     colors: [
                                       Color(0xFF76C4FF),
                                       Color(0xFF0080E3)
@@ -2664,7 +2664,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                   ),
                                   shape: BoxShape.circle,
                                   border: Border.all(
-                                    color: Color(0xFF8DCDFF),
+                                    color: const Color(0xFF8DCDFF),
                                     width: 2.0,
                                   ),
                                 ),
@@ -2689,7 +2689,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                             .bodyMediumIsCustom,
                                   ),
                             ),
-                          ].divide(SizedBox(height: 8.0)),
+                          ].divide(const SizedBox(height: 8.0)),
                         ),
                       ),
                     ),
@@ -2699,13 +2699,13 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
             ),
           ),
         ),
-        Divider(
+        const Divider(
           height: 1.0,
           thickness: 1.0,
           color: Color(0xFFD7D8D9),
         ),
         Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
           child: Container(
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -2715,7 +2715,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2747,7 +2747,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                             builder: (context) {
                               return Padding(
                                 padding: MediaQuery.viewInsetsOf(context),
-                                child: SearchTempletesWidget(),
+                                child: const SearchTempletesWidget(),
                               );
                             },
                           ).then((value) => safeSetState(() {}));
@@ -2758,7 +2758,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 6.0, 12.0, 6.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -2784,7 +2784,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                 .bodySmallIsCustom,
                                       ),
                                 ),
-                              ].divide(SizedBox(width: 4.0)),
+                              ].divide(const SizedBox(width: 4.0)),
                             ),
                           ),
                         ),
@@ -2799,7 +2799,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                 ),
                 if (FFAppState().tm == true)
                   Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -2811,7 +2811,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                 width: 48.0,
                                 height: 48.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFFE8F4FF),
+                                  color: const Color(0xFFE8F4FF),
                                   borderRadius: BorderRadius.circular(12.0),
                                   shape: BoxShape.rectangle,
                                 ),
@@ -2838,7 +2838,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                   overflow: TextOverflow.ellipsis,
                                 ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                         ),
                         InkWell(
@@ -2856,12 +2856,12 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                             size: 24.0,
                           ),
                         ),
-                      ].divide(SizedBox(width: 8.0)),
+                      ].divide(const SizedBox(width: 8.0)),
                     ),
                   ),
                 if (FFAppState().tm == false)
                   Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -2888,7 +2888,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                             overflow: TextOverflow.ellipsis,
                           ),
                         ),
-                      ].divide(SizedBox(height: 8.0)),
+                      ].divide(const SizedBox(height: 8.0)),
                     ),
                   ),
               ],
@@ -2900,7 +2900,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
               child: Text(
                 'ผลสรุปการประเมินภาวะสุขภาพ',
                 style: FlutterFlowTheme.of(context).titleSmall.override(
@@ -2938,7 +2938,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                       ),
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(16.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -2978,17 +2978,17 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                 decoration: BoxDecoration(
                                   gradient: LinearGradient(
                                     colors: [
-                                      Color(0xFFA5E8A7),
+                                      const Color(0xFFA5E8A7),
                                       FlutterFlowTheme.of(context).success
                                     ],
-                                    stops: [0.0, 1.0],
-                                    begin: AlignmentDirectional(0.56, -1.0),
-                                    end: AlignmentDirectional(-0.56, 1.0),
+                                    stops: const [0.0, 1.0],
+                                    begin: const AlignmentDirectional(0.56, -1.0),
+                                    end: const AlignmentDirectional(-0.56, 1.0),
                                   ),
                                   shape: BoxShape.circle,
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: FaIcon(
                                     FontAwesomeIcons.bookReader,
                                     color: FlutterFlowTheme.of(context)
@@ -3010,9 +3010,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                               .labelSmallIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
-                          Container(
+                          SizedBox(
                             width: double.infinity,
                             child: TextFormField(
                               controller: _model.textController1,
@@ -3022,7 +3022,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                               decoration: InputDecoration(
                                 isDense: true,
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0x00000000),
                                     width: 1.0,
                                   ),
@@ -3072,7 +3072,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                   .asValidator(context),
                             ),
                           ),
-                        ].divide(SizedBox(height: 8.0)),
+                        ].divide(const SizedBox(height: 8.0)),
                       ),
                     ),
                   ),
@@ -3098,7 +3098,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                       ),
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(16.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -3138,17 +3138,17 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                 decoration: BoxDecoration(
                                   gradient: LinearGradient(
                                     colors: [
-                                      Color(0xFFA5E8A7),
+                                      const Color(0xFFA5E8A7),
                                       FlutterFlowTheme.of(context).success
                                     ],
-                                    stops: [0.0, 1.0],
-                                    begin: AlignmentDirectional(0.56, -1.0),
-                                    end: AlignmentDirectional(-0.56, 1.0),
+                                    stops: const [0.0, 1.0],
+                                    begin: const AlignmentDirectional(0.56, -1.0),
+                                    end: const AlignmentDirectional(-0.56, 1.0),
                                   ),
                                   shape: BoxShape.circle,
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Icon(
                                     Icons.account_box,
                                     color: FlutterFlowTheme.of(context)
@@ -3170,9 +3170,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                               .labelSmallIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
-                          Container(
+                          SizedBox(
                             width: double.infinity,
                             child: TextFormField(
                               controller: _model.textController2,
@@ -3182,7 +3182,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                               decoration: InputDecoration(
                                 isDense: true,
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0x00000000),
                                     width: 1.0,
                                   ),
@@ -3232,7 +3232,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                   .asValidator(context),
                             ),
                           ),
-                        ].divide(SizedBox(height: 8.0)),
+                        ].divide(const SizedBox(height: 8.0)),
                       ),
                     ),
                   ),
@@ -3258,7 +3258,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                       ),
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(16.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -3298,17 +3298,17 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                 decoration: BoxDecoration(
                                   gradient: LinearGradient(
                                     colors: [
-                                      Color(0xFFA5E8A7),
+                                      const Color(0xFFA5E8A7),
                                       FlutterFlowTheme.of(context).success
                                     ],
-                                    stops: [0.0, 1.0],
-                                    begin: AlignmentDirectional(0.56, -1.0),
-                                    end: AlignmentDirectional(-0.56, 1.0),
+                                    stops: const [0.0, 1.0],
+                                    begin: const AlignmentDirectional(0.56, -1.0),
+                                    end: const AlignmentDirectional(-0.56, 1.0),
                                   ),
                                   shape: BoxShape.circle,
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Icon(
                                     Icons.heart_broken,
                                     color: FlutterFlowTheme.of(context)
@@ -3330,9 +3330,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                               .labelSmallIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
-                          Container(
+                          SizedBox(
                             width: double.infinity,
                             child: TextFormField(
                               controller: _model.textController3,
@@ -3342,7 +3342,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                               decoration: InputDecoration(
                                 isDense: true,
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0x00000000),
                                     width: 1.0,
                                   ),
@@ -3392,24 +3392,24 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                   .asValidator(context),
                             ),
                           ),
-                        ].divide(SizedBox(height: 8.0)),
+                        ].divide(const SizedBox(height: 8.0)),
                       ),
                     ),
                   ),
                 ]
-                    .divide(SizedBox(width: 12.0))
-                    .addToStart(SizedBox(width: 16.0))
-                    .addToEnd(SizedBox(width: 16.0)),
+                    .divide(const SizedBox(width: 12.0))
+                    .addToStart(const SizedBox(width: 16.0))
+                    .addToEnd(const SizedBox(width: 16.0)),
               ),
             ),
-          ].divide(SizedBox(height: 8.0)),
+          ].divide(const SizedBox(height: 8.0)),
         ),
         Column(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
               child: Text(
                 'ผลสรุปทั่วไป',
                 style: FlutterFlowTheme.of(context).titleSmall.override(
@@ -3447,7 +3447,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                       ),
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(16.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -3488,16 +3488,16 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                   gradient: LinearGradient(
                                     colors: [
                                       FlutterFlowTheme.of(context).secondary,
-                                      Color(0xFF6555C3)
+                                      const Color(0xFF6555C3)
                                     ],
-                                    stops: [0.0, 1.0],
-                                    begin: AlignmentDirectional(0.56, -1.0),
-                                    end: AlignmentDirectional(-0.56, 1.0),
+                                    stops: const [0.0, 1.0],
+                                    begin: const AlignmentDirectional(0.56, -1.0),
+                                    end: const AlignmentDirectional(-0.56, 1.0),
                                   ),
                                   shape: BoxShape.circle,
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Icon(
                                     Icons.report_sharp,
                                     color: FlutterFlowTheme.of(context)
@@ -3519,9 +3519,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                               .labelSmallIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
-                          Container(
+                          SizedBox(
                             width: double.infinity,
                             child: TextFormField(
                               controller: _model.textController4,
@@ -3531,7 +3531,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                               decoration: InputDecoration(
                                 isDense: true,
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0x00000000),
                                     width: 1.0,
                                   ),
@@ -3581,7 +3581,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                   .asValidator(context),
                             ),
                           ),
-                        ].divide(SizedBox(height: 8.0)),
+                        ].divide(const SizedBox(height: 8.0)),
                       ),
                     ),
                   ),
@@ -3607,7 +3607,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                       ),
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(16.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -3648,16 +3648,16 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                   gradient: LinearGradient(
                                     colors: [
                                       FlutterFlowTheme.of(context).secondary,
-                                      Color(0xFF6555C3)
+                                      const Color(0xFF6555C3)
                                     ],
-                                    stops: [0.0, 1.0],
-                                    begin: AlignmentDirectional(0.56, -1.0),
-                                    end: AlignmentDirectional(-0.56, 1.0),
+                                    stops: const [0.0, 1.0],
+                                    begin: const AlignmentDirectional(0.56, -1.0),
+                                    end: const AlignmentDirectional(-0.56, 1.0),
                                   ),
                                   shape: BoxShape.circle,
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Icon(
                                     Icons.lan_rounded,
                                     color: FlutterFlowTheme.of(context)
@@ -3679,9 +3679,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                               .labelSmallIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
-                          Container(
+                          SizedBox(
                             width: double.infinity,
                             child: TextFormField(
                               controller: _model.textController5,
@@ -3691,7 +3691,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                               decoration: InputDecoration(
                                 isDense: true,
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0x00000000),
                                     width: 1.0,
                                   ),
@@ -3741,7 +3741,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                   .asValidator(context),
                             ),
                           ),
-                        ].divide(SizedBox(height: 8.0)),
+                        ].divide(const SizedBox(height: 8.0)),
                       ),
                     ),
                   ),
@@ -3767,7 +3767,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                       ),
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(16.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -3808,16 +3808,16 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                   gradient: LinearGradient(
                                     colors: [
                                       FlutterFlowTheme.of(context).secondary,
-                                      Color(0xFF6555C3)
+                                      const Color(0xFF6555C3)
                                     ],
-                                    stops: [0.0, 1.0],
-                                    begin: AlignmentDirectional(0.56, -1.0),
-                                    end: AlignmentDirectional(-0.56, 1.0),
+                                    stops: const [0.0, 1.0],
+                                    begin: const AlignmentDirectional(0.56, -1.0),
+                                    end: const AlignmentDirectional(-0.56, 1.0),
                                   ),
                                   shape: BoxShape.circle,
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Icon(
                                     Icons.menu_book_sharp,
                                     color: FlutterFlowTheme.of(context)
@@ -3839,9 +3839,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                               .labelSmallIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
-                          Container(
+                          SizedBox(
                             width: double.infinity,
                             child: TextFormField(
                               controller: _model.textController6,
@@ -3851,7 +3851,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                               decoration: InputDecoration(
                                 isDense: true,
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0x00000000),
                                     width: 1.0,
                                   ),
@@ -3901,17 +3901,17 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                   .asValidator(context),
                             ),
                           ),
-                        ].divide(SizedBox(height: 8.0)),
+                        ].divide(const SizedBox(height: 8.0)),
                       ),
                     ),
                   ),
                 ]
-                    .divide(SizedBox(width: 12.0))
-                    .addToStart(SizedBox(width: 16.0))
-                    .addToEnd(SizedBox(width: 16.0)),
+                    .divide(const SizedBox(width: 12.0))
+                    .addToStart(const SizedBox(width: 16.0))
+                    .addToEnd(const SizedBox(width: 16.0)),
               ),
             ),
-          ].divide(SizedBox(height: 8.0)),
+          ].divide(const SizedBox(height: 8.0)),
         ),
         Column(
           mainAxisSize: MainAxisSize.max,
@@ -3921,7 +3921,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
                   child: Text(
                     'สรุปผลการเยี่ยม',
                     style: FlutterFlowTheme.of(context).titleSmall.override(
@@ -3936,14 +3936,14 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                 Expanded(
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 16.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Container(
                           decoration: BoxDecoration(
-                            gradient: LinearGradient(
+                            gradient: const LinearGradient(
                               colors: [Color(0xFF4A99F5), Color(0xFFD747FF)],
                               stops: [0.0, 1.0],
                               begin: AlignmentDirectional(1.0, -1.0),
@@ -3953,13 +3953,13 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                             shape: BoxShape.rectangle,
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 8.0, 4.0, 8.0, 4.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Icon(
                                     Icons.auto_awesome_rounded,
                                     color: FlutterFlowTheme.of(context)
@@ -3985,18 +3985,18 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                       ),
                                 ).animateOnPageLoad(
                                     animationsMap['textOnPageLoadAnimation']!),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                           ),
                         ),
-                      ].divide(SizedBox(width: 8.0)),
+                      ].divide(const SizedBox(width: 8.0)),
                     ),
                   ),
                 ),
               ],
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
               child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
@@ -4007,7 +4007,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -4048,17 +4048,17 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                             decoration: BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [
-                                  Color(0xFF8AC9FF),
+                                  const Color(0xFF8AC9FF),
                                   FlutterFlowTheme.of(context).info
                                 ],
-                                stops: [0.0, 1.0],
-                                begin: AlignmentDirectional(0.0, -1.0),
-                                end: AlignmentDirectional(0, 1.0),
+                                stops: const [0.0, 1.0],
+                                begin: const AlignmentDirectional(0.0, -1.0),
+                                end: const AlignmentDirectional(0, 1.0),
                               ),
                               shape: BoxShape.circle,
                             ),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Icon(
                                 Icons.summarize,
                                 color: FlutterFlowTheme.of(context)
@@ -4079,9 +4079,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                       .labelSmallIsCustom,
                                 ),
                           ),
-                        ].divide(SizedBox(width: 8.0)),
+                        ].divide(const SizedBox(width: 8.0)),
                       ),
-                      Container(
+                      SizedBox(
                         width: double.infinity,
                         child: TextFormField(
                           controller: _model.textController7,
@@ -4091,7 +4091,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                           decoration: InputDecoration(
                             isDense: true,
                             enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0x00000000),
                                 width: 1.0,
                               ),
@@ -4140,13 +4140,13 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                               .asValidator(context),
                         ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                 ),
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
               child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
@@ -4157,14 +4157,14 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -4200,17 +4200,17 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                               decoration: BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
-                                    Color(0xFF8AC9FF),
+                                    const Color(0xFF8AC9FF),
                                     FlutterFlowTheme.of(context).info
                                   ],
-                                  stops: [0.0, 1.0],
-                                  begin: AlignmentDirectional(0.0, -1.0),
-                                  end: AlignmentDirectional(0, 1.0),
+                                  stops: const [0.0, 1.0],
+                                  begin: const AlignmentDirectional(0.0, -1.0),
+                                  end: const AlignmentDirectional(0, 1.0),
                                 ),
                                 shape: BoxShape.circle,
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Icon(
                                   Icons.photo,
                                   color: FlutterFlowTheme.of(context)
@@ -4234,14 +4234,14 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                     ),
                               ),
                             ),
-                          ].divide(SizedBox(width: 8.0)),
+                          ].divide(const SizedBox(width: 8.0)),
                         ),
                       ),
                       Expanded(
                         child: wrapWithModel(
                           model: _model.processUpPicModel,
                           updateCallback: () => safeSetState(() {}),
-                          child: ProcessUpPicWidget(),
+                          child: const ProcessUpPicWidget(),
                         ),
                       ),
                     ],
@@ -4249,14 +4249,14 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                 ),
               ),
             ),
-          ].divide(SizedBox(height: 8.0)),
+          ].divide(const SizedBox(height: 8.0)),
         ),
         Column(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
               child: Text(
                 'ลายเซ็นผู้ป่วย',
                 style: FlutterFlowTheme.of(context).titleSmall.override(
@@ -4268,7 +4268,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(24.0),
                 child: Container(
@@ -4281,7 +4281,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                     ),
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -4312,7 +4312,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
@@ -4410,7 +4410,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                         print('IconButton pressed ...');
                                       },
                                     ),
-                                  ].divide(SizedBox(width: 12.0)),
+                                  ].divide(const SizedBox(width: 12.0)),
                                 ),
                               ),
                               FlutterFlowIconButton(
@@ -4456,18 +4456,18 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                   print('IconButton pressed ...');
                                 },
                               ),
-                            ].divide(SizedBox(width: 12.0)),
+                            ].divide(const SizedBox(width: 12.0)),
                           ),
                         ),
-                      ].divide(SizedBox(height: 8.0)),
+                      ].divide(const SizedBox(height: 8.0)),
                     ),
                   ),
                 ),
               ),
             ),
-          ].divide(SizedBox(height: 8.0)),
+          ].divide(const SizedBox(height: 8.0)),
         ),
-      ].divide(SizedBox(height: 16.0)).addToStart(SizedBox(height: 16.0)),
+      ].divide(const SizedBox(height: 16.0)).addToStart(const SizedBox(height: 16.0)),
     );
   }
 }

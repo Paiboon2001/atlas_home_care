@@ -51,8 +51,8 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, -10.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, -10.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -65,8 +65,8 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 700.0.ms,
-            begin: Offset(0.0, -20.0),
-            end: Offset(0.0, 10.0),
+            begin: const Offset(0.0, -20.0),
+            end: const Offset(0.0, 10.0),
           ),
         ],
       ),
@@ -79,8 +79,8 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 800.0.ms,
-            begin: Offset(0.0, -30.0),
-            end: Offset(0.0, 20.0),
+            begin: const Offset(0.0, -30.0),
+            end: const Offset(0.0, 20.0),
           ),
         ],
       ),
@@ -93,8 +93,8 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 900.0.ms,
-            begin: Offset(0.0, -20.0),
-            end: Offset(0.0, 10.0),
+            begin: const Offset(0.0, -20.0),
+            end: const Offset(0.0, 10.0),
           ),
         ],
       ),
@@ -107,8 +107,8 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 1000.0.ms,
-            begin: Offset(0.0, -30.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, -30.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -121,8 +121,8 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 1100.0.ms,
-            begin: Offset(0.0, -20.0),
-            end: Offset(0.0, 10.0),
+            begin: const Offset(0.0, -20.0),
+            end: const Offset(0.0, 10.0),
           ),
         ],
       ),
@@ -135,8 +135,8 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 1200.0.ms,
-            begin: Offset(0.0, -10.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, -10.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -157,7 +157,7 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
     context.watch<FFAppState>();
 
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: () {
@@ -173,7 +173,7 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
         }(),
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -183,7 +183,7 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -215,7 +215,7 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
                         return 40.0;
                       }
                     }(),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                   ),
@@ -232,47 +232,47 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
                   wrapWithModel(
                     model: _model.closeModel,
                     updateCallback: () => safeSetState(() {}),
-                    child: CloseWidget(),
+                    child: const CloseWidget(),
                   ),
                 ],
               ),
             ),
             Expanded(
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
                 child: Container(
                   width: double.infinity,
                   height: 350.0,
                   decoration: BoxDecoration(
-                    color: Color(0x19339FF3),
+                    color: const Color(0x19339FF3),
                     borderRadius: BorderRadius.circular(24.0),
                   ),
-                  child: Container(
+                  child: SizedBox(
                     width: double.infinity,
                     height: double.infinity,
                     child: Stack(
                       children: [
                         if (FFAppState().mice == true)
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Container(
                                     width: 18.0,
                                     height: 20.0,
                                     decoration: BoxDecoration(
                                       gradient: LinearGradient(
                                         colors: [
-                                          Color(0xFF80C4FC),
+                                          const Color(0xFF80C4FC),
                                           FlutterFlowTheme.of(context).primary
                                         ],
-                                        stops: [0.0, 1.0],
-                                        begin: AlignmentDirectional(0.0, -1.0),
-                                        end: AlignmentDirectional(0, 1.0),
+                                        stops: const [0.0, 1.0],
+                                        begin: const AlignmentDirectional(0.0, -1.0),
+                                        end: const AlignmentDirectional(0, 1.0),
                                       ),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
@@ -281,19 +281,19 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
                                       'containerOnPageLoadAnimation1']!),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Container(
                                     width: 18.0,
                                     height: 60.0,
                                     decoration: BoxDecoration(
                                       gradient: LinearGradient(
                                         colors: [
-                                          Color(0xFF80C4FC),
+                                          const Color(0xFF80C4FC),
                                           FlutterFlowTheme.of(context).primary
                                         ],
-                                        stops: [0.0, 1.0],
-                                        begin: AlignmentDirectional(0.0, -1.0),
-                                        end: AlignmentDirectional(0, 1.0),
+                                        stops: const [0.0, 1.0],
+                                        begin: const AlignmentDirectional(0.0, -1.0),
+                                        end: const AlignmentDirectional(0, 1.0),
                                       ),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
@@ -302,19 +302,19 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
                                       'containerOnPageLoadAnimation2']!),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Container(
                                     width: 18.0,
                                     height: 110.0,
                                     decoration: BoxDecoration(
                                       gradient: LinearGradient(
                                         colors: [
-                                          Color(0xFF80C4FC),
+                                          const Color(0xFF80C4FC),
                                           FlutterFlowTheme.of(context).primary
                                         ],
-                                        stops: [0.0, 1.0],
-                                        begin: AlignmentDirectional(0.0, -1.0),
-                                        end: AlignmentDirectional(0, 1.0),
+                                        stops: const [0.0, 1.0],
+                                        begin: const AlignmentDirectional(0.0, -1.0),
+                                        end: const AlignmentDirectional(0, 1.0),
                                       ),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
@@ -323,19 +323,19 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
                                       'containerOnPageLoadAnimation3']!),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Container(
                                     width: 18.0,
                                     height: 150.0,
                                     decoration: BoxDecoration(
                                       gradient: LinearGradient(
                                         colors: [
-                                          Color(0xFF80C4FC),
+                                          const Color(0xFF80C4FC),
                                           FlutterFlowTheme.of(context).primary
                                         ],
-                                        stops: [0.0, 1.0],
-                                        begin: AlignmentDirectional(0.0, -1.0),
-                                        end: AlignmentDirectional(0, 1.0),
+                                        stops: const [0.0, 1.0],
+                                        begin: const AlignmentDirectional(0.0, -1.0),
+                                        end: const AlignmentDirectional(0, 1.0),
                                       ),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
@@ -344,19 +344,19 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
                                       'containerOnPageLoadAnimation4']!),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Container(
                                     width: 18.0,
                                     height: 110.0,
                                     decoration: BoxDecoration(
                                       gradient: LinearGradient(
                                         colors: [
-                                          Color(0xFF80C4FC),
+                                          const Color(0xFF80C4FC),
                                           FlutterFlowTheme.of(context).primary
                                         ],
-                                        stops: [0.0, 1.0],
-                                        begin: AlignmentDirectional(0.0, -1.0),
-                                        end: AlignmentDirectional(0, 1.0),
+                                        stops: const [0.0, 1.0],
+                                        begin: const AlignmentDirectional(0.0, -1.0),
+                                        end: const AlignmentDirectional(0, 1.0),
                                       ),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
@@ -365,19 +365,19 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
                                       'containerOnPageLoadAnimation5']!),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Container(
                                     width: 18.0,
                                     height: 60.0,
                                     decoration: BoxDecoration(
                                       gradient: LinearGradient(
                                         colors: [
-                                          Color(0xFF80C4FC),
+                                          const Color(0xFF80C4FC),
                                           FlutterFlowTheme.of(context).primary
                                         ],
-                                        stops: [0.0, 1.0],
-                                        begin: AlignmentDirectional(0.0, -1.0),
-                                        end: AlignmentDirectional(0, 1.0),
+                                        stops: const [0.0, 1.0],
+                                        begin: const AlignmentDirectional(0.0, -1.0),
+                                        end: const AlignmentDirectional(0, 1.0),
                                       ),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
@@ -386,19 +386,19 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
                                       'containerOnPageLoadAnimation6']!),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Container(
                                     width: 18.0,
                                     height: 20.0,
                                     decoration: BoxDecoration(
                                       gradient: LinearGradient(
                                         colors: [
-                                          Color(0xFF80C4FC),
+                                          const Color(0xFF80C4FC),
                                           FlutterFlowTheme.of(context).primary
                                         ],
-                                        stops: [0.0, 1.0],
-                                        begin: AlignmentDirectional(0.0, -1.0),
-                                        end: AlignmentDirectional(0, 1.0),
+                                        stops: const [0.0, 1.0],
+                                        begin: const AlignmentDirectional(0.0, -1.0),
+                                        end: const AlignmentDirectional(0, 1.0),
                                       ),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
@@ -406,11 +406,11 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
                                   ).animateOnPageLoad(animationsMap[
                                       'containerOnPageLoadAnimation7']!),
                                 ),
-                              ].divide(SizedBox(width: 12.0)),
+                              ].divide(const SizedBox(width: 12.0)),
                             ),
                           ),
                         Padding(
-                          padding: EdgeInsets.all(2.0),
+                          padding: const EdgeInsets.all(2.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(24.0),
                             child: BackdropFilter(
@@ -423,14 +423,14 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Expanded(
-                                    child: Container(
+                                    child: SizedBox(
                                       width: double.infinity,
                                       child: TextFormField(
                                         controller: _model.textController,
                                         focusNode: _model.textFieldFocusNode,
                                         autofocus: false,
                                         obscureText: false,
-                                        decoration: InputDecoration(
+                                        decoration: const InputDecoration(
                                           isDense: true,
                                           enabledBorder: InputBorder.none,
                                           focusedBorder: InputBorder.none,
@@ -463,7 +463,7 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 16.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -480,7 +480,7 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.restart_alt_rounded,
                                               color:
@@ -503,9 +503,9 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Padding(
-                                              padding: EdgeInsets.all(2.0),
+                                              padding: const EdgeInsets.all(2.0),
                                               child: Container(
                                                 width: double.infinity,
                                                 height: double.infinity,
@@ -517,7 +517,7 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: ToggleIcon(
                                                     onPressed: () async {
@@ -559,7 +559,7 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.check_rounded,
                                               color:
@@ -572,7 +572,7 @@ class _SpeechtotextWidgetState extends State<SpeechtotextWidget>
                                       ],
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                             ),
                           ),

@@ -51,14 +51,14 @@ class _DetailsLabWidgetState extends State<DetailsLabWidget> {
       mainAxisSize: MainAxisSize.max,
       children: [
         Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(24.0, 16.0, 24.0, 16.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(24.0, 16.0, 24.0, 16.0),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text(
                 valueOrDefault<String>(
-                  widget!.namelab,
+                  widget.namelab,
                   'name_lab',
                 ),
                 textAlign: TextAlign.start,
@@ -70,7 +70,7 @@ class _DetailsLabWidgetState extends State<DetailsLabWidget> {
                           !FlutterFlowTheme.of(context).bodyMediumIsCustom,
                     ),
               ),
-            ].divide(SizedBox(width: 8.0)),
+            ].divide(const SizedBox(width: 8.0)),
           ),
         ),
         Divider(

@@ -53,14 +53,14 @@ class _ItemClinicWidgetState extends State<ItemClinicWidget> {
         Container(
           width: double.infinity,
           height: 48.0,
-          decoration: BoxDecoration(),
+          decoration: const BoxDecoration(),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
                 valueOrDefault<String>(
-                  widget!.nameclinic,
+                  widget.nameclinic,
                   'nameclinic',
                 ),
                 textAlign: TextAlign.start,

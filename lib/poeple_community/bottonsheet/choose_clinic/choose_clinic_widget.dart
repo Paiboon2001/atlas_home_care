@@ -47,13 +47,13 @@ class _ChooseClinicWidgetState extends State<ChooseClinicWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: MediaQuery.sizeOf(context).height * 0.95,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -62,7 +62,7 @@ class _ChooseClinicWidgetState extends State<ChooseClinicWidget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -94,7 +94,7 @@ class _ChooseClinicWidgetState extends State<ChooseClinicWidget> {
                         return 40.0;
                       }
                     }(),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                   ),
@@ -114,14 +114,14 @@ class _ChooseClinicWidgetState extends State<ChooseClinicWidget> {
                   wrapWithModel(
                     model: _model.closeModel,
                     updateCallback: () => safeSetState(() {}),
-                    child: CloseWidget(),
+                    child: const CloseWidget(),
                   ),
-                ].divide(SizedBox(width: 8.0)),
+                ].divide(const SizedBox(width: 8.0)),
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-              child: Container(
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+              child: SizedBox(
                 width: double.infinity,
                 child: TextFormField(
                   controller: _model.textController,
@@ -139,14 +139,14 @@ class _ChooseClinicWidgetState extends State<ChooseClinicWidget> {
                               !FlutterFlowTheme.of(context).bodyMediumIsCustom,
                         ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0x00000000),
                         width: 1.0,
                       ),
                       borderRadius: BorderRadius.circular(100.0),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0x00000000),
                         width: 1.0,
                       ),
@@ -168,7 +168,7 @@ class _ChooseClinicWidgetState extends State<ChooseClinicWidget> {
                     ),
                     filled: true,
                     fillColor: FlutterFlowTheme.of(context).alternate,
-                    prefixIcon: Icon(
+                    prefixIcon: const Icon(
                       Icons.search_rounded,
                       size: 20.0,
                     ),
@@ -188,7 +188,7 @@ class _ChooseClinicWidgetState extends State<ChooseClinicWidget> {
             ),
             Expanded(
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -196,7 +196,7 @@ class _ChooseClinicWidgetState extends State<ChooseClinicWidget> {
                       wrapWithModel(
                         model: _model.itemClinicModel1,
                         updateCallback: () => safeSetState(() {}),
-                        child: ItemClinicWidget(
+                        child: const ItemClinicWidget(
                           nameclinic: 'คลินิกเบาหวาน',
                         ),
                       ),
@@ -204,7 +204,7 @@ class _ChooseClinicWidgetState extends State<ChooseClinicWidget> {
                         child: wrapWithModel(
                           model: _model.itemClinicModel2,
                           updateCallback: () => safeSetState(() {}),
-                          child: ItemClinicWidget(
+                          child: const ItemClinicWidget(
                             nameclinic: 'ความดันโลหิตสูง',
                           ),
                         ),
@@ -213,7 +213,7 @@ class _ChooseClinicWidgetState extends State<ChooseClinicWidget> {
                         child: wrapWithModel(
                           model: _model.itemClinicModel3,
                           updateCallback: () => safeSetState(() {}),
-                          child: ItemClinicWidget(
+                          child: const ItemClinicWidget(
                             nameclinic: 'คลินิกหัวใจและหลอดเลือด',
                           ),
                         ),
@@ -222,7 +222,7 @@ class _ChooseClinicWidgetState extends State<ChooseClinicWidget> {
                         child: wrapWithModel(
                           model: _model.itemClinicModel4,
                           updateCallback: () => safeSetState(() {}),
-                          child: ItemClinicWidget(
+                          child: const ItemClinicWidget(
                             nameclinic: 'คลินิกตับ',
                           ),
                         ),
@@ -231,7 +231,7 @@ class _ChooseClinicWidgetState extends State<ChooseClinicWidget> {
                         child: wrapWithModel(
                           model: _model.itemClinicModel5,
                           updateCallback: () => safeSetState(() {}),
-                          child: ItemClinicWidget(
+                          child: const ItemClinicWidget(
                             nameclinic: 'คลินิกไต',
                           ),
                         ),
@@ -240,7 +240,7 @@ class _ChooseClinicWidgetState extends State<ChooseClinicWidget> {
                         child: wrapWithModel(
                           model: _model.itemClinicModel6,
                           updateCallback: () => safeSetState(() {}),
-                          child: ItemClinicWidget(
+                          child: const ItemClinicWidget(
                             nameclinic: 'คลินิกมะเร็ง',
                           ),
                         ),
@@ -249,7 +249,7 @@ class _ChooseClinicWidgetState extends State<ChooseClinicWidget> {
                         child: wrapWithModel(
                           model: _model.itemClinicModel7,
                           updateCallback: () => safeSetState(() {}),
-                          child: ItemClinicWidget(
+                          child: const ItemClinicWidget(
                             nameclinic: 'หญิงหลังคลอด',
                           ),
                         ),
@@ -258,14 +258,14 @@ class _ChooseClinicWidgetState extends State<ChooseClinicWidget> {
                         child: wrapWithModel(
                           model: _model.itemClinicModel8,
                           updateCallback: () => safeSetState(() {}),
-                          child: ItemClinicWidget(
+                          child: const ItemClinicWidget(
                             nameclinic: 'เด็กทารก',
                           ),
                         ),
                       ),
                     ]
-                        .divide(SizedBox(height: 8.0))
-                        .addToEnd(SizedBox(height: 48.0)),
+                        .divide(const SizedBox(height: 8.0))
+                        .addToEnd(const SizedBox(height: 48.0)),
                   ),
                 ),
               ),

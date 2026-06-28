@@ -67,7 +67,7 @@ class _ClnWidgetState extends State<ClnWidget> {
         mainAxisSize: MainAxisSize.max,
         children: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 12.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 12.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.start,
@@ -92,7 +92,7 @@ class _ClnWidgetState extends State<ClnWidget> {
                     side: (FlutterFlowTheme.of(context).secondaryText != null)
                         ? BorderSide(
                             width: 2,
-                            color: FlutterFlowTheme.of(context).secondaryText!,
+                            color: FlutterFlowTheme.of(context).secondaryText,
                           )
                         : null,
                     activeColor: FlutterFlowTheme.of(context).primary,
@@ -102,7 +102,7 @@ class _ClnWidgetState extends State<ClnWidget> {
                 ),
                 Text(
                   valueOrDefault<String>(
-                    widget!.namelab,
+                    widget.namelab,
                     'name_lab',
                   ),
                   textAlign: TextAlign.start,
@@ -117,7 +117,7 @@ class _ClnWidgetState extends State<ClnWidget> {
                             !FlutterFlowTheme.of(context).bodyMediumIsCustom,
                       ),
                 ),
-              ].divide(SizedBox(width: 8.0)),
+              ].divide(const SizedBox(width: 8.0)),
             ),
           ),
           Divider(

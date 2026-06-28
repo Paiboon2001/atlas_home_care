@@ -1,16 +1,8 @@
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/home/widget/respon_job/respon_job_widget.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'hold_job_widget.dart' show HoldJobWidget;
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class HoldJobModel extends FlutterFlowModel<HoldJobWidget> {
   ///  State fields for stateful widgets in this page.

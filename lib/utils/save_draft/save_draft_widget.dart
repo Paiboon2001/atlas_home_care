@@ -53,8 +53,8 @@ class _SaveDraftWidgetState extends State<SaveDraftWidget>
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 1500.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -72,8 +72,8 @@ class _SaveDraftWidgetState extends State<SaveDraftWidget>
             curve: Curves.easeInOut,
             delay: 100.0.ms,
             duration: 1000.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -111,9 +111,9 @@ class _SaveDraftWidgetState extends State<SaveDraftWidget>
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 0.0),
+      alignment: const AlignmentDirectional(0.0, 0.0),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
         child: Container(
           width: () {
             if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
@@ -146,7 +146,7 @@ class _SaveDraftWidgetState extends State<SaveDraftWidget>
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -180,7 +180,7 @@ class _SaveDraftWidgetState extends State<SaveDraftWidget>
                           return 40.0;
                         }
                       }(),
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                       ),
                     ),
@@ -197,52 +197,52 @@ class _SaveDraftWidgetState extends State<SaveDraftWidget>
                     wrapWithModel(
                       model: _model.closeModel,
                       updateCallback: () => safeSetState(() {}),
-                      child: CloseWidget(),
+                      child: const CloseWidget(),
                     ),
                   ],
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
-                child: Container(
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                child: SizedBox(
                   width: 160.0,
                   height: 160.0,
                   child: Stack(
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Container(
                           width: 160.0,
                           height: 160.0,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border: Border.all(
-                              color: Color(0xFFFFD200),
+                              color: const Color(0xFFFFD200),
                             ),
                           ),
                         ).animateOnPageLoad(
                             animationsMap['containerOnPageLoadAnimation1']!),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Container(
                           width: 130.0,
                           height: 130.0,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border: Border.all(
-                              color: Color(0xFFFFD200),
+                              color: const Color(0xFFFFD200),
                             ),
                           ),
                         ).animateOnPageLoad(
                             animationsMap['containerOnPageLoadAnimation2']!),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Container(
                           width: 100.0,
                           height: 100.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             gradient: LinearGradient(
                               colors: [Color(0xFFFFF3D3), Color(0xFFFFE18B)],
                               stops: [0.0, 1.0],
@@ -252,18 +252,18 @@ class _SaveDraftWidgetState extends State<SaveDraftWidget>
                             shape: BoxShape.circle,
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Container(
                               width: 80.0,
                               height: 80.0,
                               clipBehavior: Clip.antiAlias,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 shape: BoxShape.circle,
                               ),
                               child: Image.network(
                                 'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/8aox7hicguwb/infoalert.png',
                                 fit: BoxFit.cover,
-                                alignment: Alignment(0.0, 0.0),
+                                alignment: const Alignment(0.0, 0.0),
                               ),
                             ).animateOnPageLoad(animationsMap[
                                 'circleImageOnPageLoadAnimation']!),
@@ -295,7 +295,7 @@ class _SaveDraftWidgetState extends State<SaveDraftWidget>
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -324,10 +324,10 @@ class _SaveDraftWidgetState extends State<SaveDraftWidget>
                               return 56.0;
                             }
                           }(),
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           iconAlignment: IconAlignment.start,
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
@@ -376,10 +376,10 @@ class _SaveDraftWidgetState extends State<SaveDraftWidget>
                               return 56.0;
                             }
                           }(),
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           iconAlignment: IconAlignment.start,
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).customColor5,
                           textStyle: FlutterFlowTheme.of(context)
@@ -394,7 +394,7 @@ class _SaveDraftWidgetState extends State<SaveDraftWidget>
                                     .bodyMediumIsCustom,
                               ),
                           elevation: 0.0,
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Colors.transparent,
                             width: 0.0,
                           ),
@@ -402,7 +402,7 @@ class _SaveDraftWidgetState extends State<SaveDraftWidget>
                         ),
                       ),
                     ),
-                  ].divide(SizedBox(width: 16.0)).around(SizedBox(width: 16.0)),
+                  ].divide(const SizedBox(width: 16.0)).around(const SizedBox(width: 16.0)),
                 ),
               ),
             ],

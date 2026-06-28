@@ -50,8 +50,8 @@ class _CbClickWidgetState extends State<CbClickWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -97,7 +97,7 @@ class _CbClickWidgetState extends State<CbClickWidget>
               .forward(from: 0.0);
         }
         await Future.delayed(
-          Duration(
+          const Duration(
             milliseconds: 100,
           ),
         );
@@ -115,29 +115,29 @@ class _CbClickWidgetState extends State<CbClickWidget>
                   ? FlutterFlowTheme.of(context).primary
                   : FlutterFlowTheme.of(context).secondaryBackground
             ],
-            stops: [0.0, 1.0],
-            begin: AlignmentDirectional(1.0, 0.34),
-            end: AlignmentDirectional(-1.0, -0.34),
+            stops: const [0.0, 1.0],
+            begin: const AlignmentDirectional(1.0, 0.34),
+            end: const AlignmentDirectional(-1.0, -0.34),
           ),
           borderRadius: BorderRadius.circular(24.0),
           border: Border.all(
             color: _model.checkbox01Value == true
-                ? Color(0x00FFFFFF)
-                : Color(0xFFCED4E6),
+                ? const Color(0x00FFFFFF)
+                : const Color(0xFFCED4E6),
             width: 1.0,
           ),
         ),
         child: Stack(
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(12.0, 20.0, 12.0, 20.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(12.0, 20.0, 12.0, 20.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
                     valueOrDefault<String>(
-                      widget!.text,
+                      widget.text,
                       'na',
                     ),
                     style: FlutterFlowTheme.of(context).labelLarge.override(
@@ -151,7 +151,7 @@ class _CbClickWidgetState extends State<CbClickWidget>
                               !FlutterFlowTheme.of(context).labelLargeIsCustom,
                         ),
                   ),
-                ].divide(SizedBox(width: 4.0)),
+                ].divide(const SizedBox(width: 4.0)),
               ),
             ),
             Theme(
@@ -163,21 +163,21 @@ class _CbClickWidgetState extends State<CbClickWidget>
                     borderRadius: BorderRadius.circular(4.0),
                   ),
                 ),
-                unselectedWidgetColor: Color(0x00FFFFFF),
+                unselectedWidgetColor: const Color(0x00FFFFFF),
               ),
               child: Checkbox(
                 value: _model.checkbox01Value ??= false,
                 onChanged: (newValue) async {
                   safeSetState(() => _model.checkbox01Value = newValue!);
                 },
-                side: (Color(0x00FFFFFF) != null)
+                side: (const Color(0x00FFFFFF) != null)
                     ? BorderSide(
                         width: 2,
-                        color: Color(0x00FFFFFF)!,
+                        color: const Color(0x00FFFFFF),
                       )
                     : null,
-                activeColor: Color(0x00FFFFFF),
-                checkColor: Color(0x00FFFFFF),
+                activeColor: const Color(0x00FFFFFF),
+                checkColor: const Color(0x00FFFFFF),
               ),
             ),
           ],

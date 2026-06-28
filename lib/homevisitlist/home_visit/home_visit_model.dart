@@ -1,15 +1,8 @@
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/homevisitlist/widget/home_care/home_care_widget.dart';
-import '/homevisitlist/widget/search_village/search_village_widget.dart';
 import '/utils/navbar/navbar_widget.dart';
-import 'dart:ui';
 import 'home_visit_widget.dart' show HomeVisitWidget;
 import 'package:flutter/material.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class HomeVisitModel extends FlutterFlowModel<HomeVisitWidget> {
   ///  State fields for stateful widgets in this page.

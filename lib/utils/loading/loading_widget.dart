@@ -42,11 +42,11 @@ class _LoadingWidgetState extends State<LoadingWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 0.0),
+      alignment: const AlignmentDirectional(0.0, 0.0),
       child: Container(
         width: 100.0,
         height: 100.0,
-        decoration: BoxDecoration(),
+        decoration: const BoxDecoration(),
         child: Lottie.asset(
           'assets/jsons/Dowload.json',
           width: 200.0,

@@ -62,7 +62,7 @@ class _ResponJobWidgetState extends State<ResponJobWidget> {
         width: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               blurRadius: 4.0,
               color: Color(0x17000000),
@@ -78,7 +78,7 @@ class _ResponJobWidgetState extends State<ResponJobWidget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsets.all(12.0),
+              padding: const EdgeInsets.all(12.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -120,10 +120,10 @@ class _ResponJobWidgetState extends State<ResponJobWidget> {
                           image: DecorationImage(
                             fit: BoxFit.cover,
                             image: Image.network(
-                              widget!.img!,
+                              widget.img!,
                             ).image,
                           ),
-                          gradient: LinearGradient(
+                          gradient: const LinearGradient(
                             colors: [Color(0xFFFFE7A2), Color(0xFFFFBD00)],
                             stops: [0.0, 1.0],
                             begin: AlignmentDirectional(0.0, -1.0),
@@ -138,7 +138,7 @@ class _ResponJobWidgetState extends State<ResponJobWidget> {
                         children: [
                           Text(
                             valueOrDefault<String>(
-                              widget!.mainname,
+                              widget.mainname,
                               'na',
                             ),
                             style: FlutterFlowTheme.of(context)
@@ -146,7 +146,7 @@ class _ResponJobWidgetState extends State<ResponJobWidget> {
                                 .override(
                                   fontFamily: FlutterFlowTheme.of(context)
                                       .titleSmallFamily,
-                                  color: Color(0xFF944D04),
+                                  color: const Color(0xFF944D04),
                                   letterSpacing: 0.0,
                                   useGoogleFonts: !FlutterFlowTheme.of(context)
                                       .titleSmallIsCustom,
@@ -185,7 +185,7 @@ class _ResponJobWidgetState extends State<ResponJobWidget> {
                                                 .bodySmallIsCustom,
                                       ),
                                 ),
-                                TextSpan(
+                                const TextSpan(
                                   text: ' ปี ',
                                   style: TextStyle(),
                                 ),
@@ -203,7 +203,7 @@ class _ResponJobWidgetState extends State<ResponJobWidget> {
                                                 .bodySmallIsCustom,
                                       ),
                                 ),
-                                TextSpan(
+                                const TextSpan(
                                   text: ' เดือน ',
                                   style: TextStyle(),
                                 ),
@@ -221,7 +221,7 @@ class _ResponJobWidgetState extends State<ResponJobWidget> {
                                                 .bodySmallIsCustom,
                                       ),
                                 ),
-                                TextSpan(
+                                const TextSpan(
                                   text: ' วัน',
                                   style: TextStyle(),
                                 )
@@ -300,7 +300,7 @@ class _ResponJobWidgetState extends State<ResponJobWidget> {
                       color: FlutterFlowTheme.of(context).primaryBackground,
                       shape: BoxShape.circle,
                     ),
-                    child: Icon(
+                    child: const Icon(
                       Icons.keyboard_arrow_right_rounded,
                       color: Color(0xFF9DA7A7),
                       size: 20.0,
@@ -312,7 +312,7 @@ class _ResponJobWidgetState extends State<ResponJobWidget> {
             Container(
               width: double.infinity,
               decoration: BoxDecoration(
-                gradient: LinearGradient(
+                gradient: const LinearGradient(
                   colors: [Color(0xFFFFFBE6), Color(0xFFFFF5C9)],
                   stops: [0.0, 1.0],
                   begin: AlignmentDirectional(0.0, -1.0),
@@ -325,7 +325,7 @@ class _ResponJobWidgetState extends State<ResponJobWidget> {
                 ),
               ),
               child: Padding(
-                padding: EdgeInsets.all(12.0),
+                padding: const EdgeInsets.all(12.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -341,7 +341,7 @@ class _ResponJobWidgetState extends State<ResponJobWidget> {
                                 .override(
                                   fontFamily: FlutterFlowTheme.of(context)
                                       .labelSmallFamily,
-                                  color: Color(0xFF944D04),
+                                  color: const Color(0xFF944D04),
                                   letterSpacing: 0.0,
                                   useGoogleFonts: !FlutterFlowTheme.of(context)
                                       .labelSmallIsCustom,
@@ -359,10 +359,10 @@ class _ResponJobWidgetState extends State<ResponJobWidget> {
                                       .bodyMediumIsCustom,
                                 ),
                           ),
-                        ].divide(SizedBox(height: 6.0)),
+                        ].divide(const SizedBox(height: 6.0)),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 40.0,
                       child: VerticalDivider(
                         width: 1.0,
@@ -382,7 +382,7 @@ class _ResponJobWidgetState extends State<ResponJobWidget> {
                                 .override(
                                   fontFamily: FlutterFlowTheme.of(context)
                                       .labelSmallFamily,
-                                  color: Color(0xFF944D04),
+                                  color: const Color(0xFF944D04),
                                   letterSpacing: 0.0,
                                   useGoogleFonts: !FlutterFlowTheme.of(context)
                                       .labelSmallIsCustom,
@@ -400,10 +400,10 @@ class _ResponJobWidgetState extends State<ResponJobWidget> {
                                       .bodyMediumIsCustom,
                                 ),
                           ),
-                        ].divide(SizedBox(height: 6.0)),
+                        ].divide(const SizedBox(height: 6.0)),
                       ),
                     ),
-                  ].divide(SizedBox(width: 12.0)),
+                  ].divide(const SizedBox(width: 12.0)),
                 ),
               ),
             ),

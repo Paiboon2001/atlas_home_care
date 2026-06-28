@@ -1,13 +1,8 @@
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/map/widget/item_clinic/item_clinic_widget.dart';
 import '/utils/close/close_widget.dart';
-import 'dart:ui';
 import 'choose_clinic_widget.dart' show ChooseClinicWidget;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class ChooseClinicModel extends FlutterFlowModel<ChooseClinicWidget> {
   ///  State fields for stateful widgets in this component.

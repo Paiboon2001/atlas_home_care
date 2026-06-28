@@ -46,7 +46,7 @@ class _NonSmartcardWidgetState extends State<NonSmartcardWidget> {
       width: double.infinity,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             blurRadius: 6.0,
             color: Color(0x27000000),
@@ -61,11 +61,11 @@ class _NonSmartcardWidgetState extends State<NonSmartcardWidget> {
       child: Stack(
         children: [
           Align(
-            alignment: AlignmentDirectional(1.0, -1.0),
+            alignment: const AlignmentDirectional(1.0, -1.0),
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 6.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 6.0, 0.0),
               child: ClipRRect(
-                borderRadius: BorderRadius.only(),
+                borderRadius: const BorderRadius.only(),
                 child: Image.asset(
                   'assets/images/ChatGPT_Image_11_.._2568_08_51_28.png',
                   width: () {
@@ -105,7 +105,7 @@ class _NonSmartcardWidgetState extends State<NonSmartcardWidget> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -142,16 +142,16 @@ class _NonSmartcardWidgetState extends State<NonSmartcardWidget> {
                         gradient: LinearGradient(
                           colors: [
                             FlutterFlowTheme.of(context).secondaryText,
-                            Color(0xFF6E6E6E)
+                            const Color(0xFF6E6E6E)
                           ],
-                          stops: [0.0, 1.0],
-                          begin: AlignmentDirectional(0.56, -1.0),
-                          end: AlignmentDirectional(-0.56, 1.0),
+                          stops: const [0.0, 1.0],
+                          begin: const AlignmentDirectional(0.56, -1.0),
+                          end: const AlignmentDirectional(-0.56, 1.0),
                         ),
                         shape: BoxShape.circle,
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: FaIcon(
                           FontAwesomeIcons.userAlt,
                           color:
@@ -171,13 +171,13 @@ class _NonSmartcardWidgetState extends State<NonSmartcardWidget> {
                                 .titleSmallIsCustom,
                           ),
                     ),
-                  ].divide(SizedBox(width: 8.0)),
+                  ].divide(const SizedBox(width: 8.0)),
                 ),
               ),
               Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  color: Color(0x27A2A2A2),
+                  color: const Color(0x27A2A2A2),
                   borderRadius: BorderRadius.circular(24.0),
                   border: Border.all(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -192,9 +192,9 @@ class _NonSmartcardWidgetState extends State<NonSmartcardWidget> {
                       sigmaY: 5.0,
                     ),
                     child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Wrap(
                           spacing: 16.0,
                           runSpacing: 8.0,
@@ -229,7 +229,7 @@ class _NonSmartcardWidgetState extends State<NonSmartcardWidget> {
                   ),
                 ),
               ),
-            ].divide(SizedBox(height: 8.0)),
+            ].divide(const SizedBox(height: 8.0)),
           ),
         ],
       ),

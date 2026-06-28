@@ -56,7 +56,7 @@ class _ItemPPTemplateWidgetState extends State<ItemPPTemplateWidget> {
             color: FlutterFlowTheme.of(context).secondaryBackground,
           ),
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 16.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 16.0),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -64,7 +64,7 @@ class _ItemPPTemplateWidgetState extends State<ItemPPTemplateWidget> {
               children: [
                 Text(
                   valueOrDefault<String>(
-                    widget!.pptemplate,
+                    widget.pptemplate,
                     'nameTemplate',
                   ),
                   textAlign: TextAlign.start,
@@ -77,7 +77,7 @@ class _ItemPPTemplateWidgetState extends State<ItemPPTemplateWidget> {
                             !FlutterFlowTheme.of(context).labelMediumIsCustom,
                       ),
                 ),
-              ].divide(SizedBox(height: 4.0)),
+              ].divide(const SizedBox(height: 4.0)),
             ),
           ),
         ),

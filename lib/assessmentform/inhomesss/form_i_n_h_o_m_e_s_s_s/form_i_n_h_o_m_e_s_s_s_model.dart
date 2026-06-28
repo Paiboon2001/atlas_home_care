@@ -1,27 +1,9 @@
 import '/assessmentform/highbloodpressure/widget/bloodpage/bloodpage_widget.dart';
-import '/assessmentform/inhomesss/widget/allgo/allgo_widget.dart';
-import '/assessmentform/inhomesss/widget/fam/fam_widget.dart';
-import '/assessmentform/inhomesss/widget/fromfood/fromfood_widget.dart';
-import '/assessmentform/inhomesss/widget/homes/homes_widget.dart';
-import '/assessmentform/inhomesss/widget/sssk/sssk_widget.dart';
-import '/assessmentform/inhomesss/widget/tem/tem_widget.dart';
 import '/assessmentform/thirtytree/widget/start_as_bottom/start_as_bottom_widget.dart';
-import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
 import '/index.dart';
 import 'form_i_n_h_o_m_e_s_s_s_widget.dart' show FormINHOMESSSWidget;
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class FormINHOMESSSModel extends FlutterFlowModel<FormINHOMESSSWidget> {
   ///  Local state fields for this page.

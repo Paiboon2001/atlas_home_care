@@ -1,15 +1,9 @@
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/poeple_community/widget/choose_lab/choose_lab_widget.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'select_lab_form_widget.dart' show SelectLabFormWidget;
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class SelectLabFormModel extends FlutterFlowModel<SelectLabFormWidget> {
   ///  State fields for stateful widgets in this page.

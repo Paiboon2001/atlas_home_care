@@ -1,19 +1,9 @@
-import '/flutter_flow/flutter_flow_button_tabbar.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/planvisit_home/widget/detaile_done/detaile_done_widget.dart';
 import '/planvisit_home/widget/detaile_visit/detaile_visit_widget.dart';
-import '/planvisit_home/widget/search_patient/search_patient_widget.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'plan_for_visit_widget.dart' show PlanForVisitWidget;
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class PlanForVisitModel extends FlutterFlowModel<PlanForVisitWidget> {
   ///  State fields for stateful widgets in this page.

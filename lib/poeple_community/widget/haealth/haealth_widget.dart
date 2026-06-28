@@ -50,7 +50,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -62,7 +62,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
               borderRadius: BorderRadius.circular(24.0),
             ),
             child: Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
@@ -101,17 +101,17 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
                             colors: [
-                              Color(0xFFAAF5AD),
+                              const Color(0xFFAAF5AD),
                               FlutterFlowTheme.of(context).success
                             ],
-                            stops: [0.0, 1.0],
-                            begin: AlignmentDirectional(0.56, -1.0),
-                            end: AlignmentDirectional(-0.56, 1.0),
+                            stops: const [0.0, 1.0],
+                            begin: const AlignmentDirectional(0.56, -1.0),
+                            end: const AlignmentDirectional(-0.56, 1.0),
                           ),
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.personal_injury_sharp,
                             color: FlutterFlowTheme.of(context)
@@ -130,7 +130,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                   .labelSmallIsCustom,
                             ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   Container(
                     width: double.infinity,
@@ -139,9 +139,9 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     child: Align(
-                      alignment: AlignmentDirectional(-1.0, 0.0),
+                      alignment: const AlignmentDirectional(-1.0, 0.0),
                       child: Padding(
-                        padding: EdgeInsets.all(12.0),
+                        padding: const EdgeInsets.all(12.0),
                         child: Text(
                           'ผู้ป่วยชายอายุ 20 ปี 284 วัน มีประวัติความดันโลหิตสูงหลายครั้งในช่วง 3 เดือนล่าสุด โดยมีค่า Systolic BP 141-149 mmHg และ Diastolic BP 90 mmHg จำนวน 2 ครั้ง (วันที่ 17/06/2568 และ 30/06/2568) เข้าเกณฑ์โรคความดันโลหิตสูง นอกจากนี้ยังมีอาการเวียนหัวตอนเช้าและเหนื่อยง่าย ซึ่งอาจบ่งชี้ถึงภาวะอื่นที่เกี่ยวข้องกับระบบทางเดินหายใจ',
                           textAlign: TextAlign.start,
@@ -159,7 +159,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ),
@@ -170,7 +170,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
               borderRadius: BorderRadius.circular(24.0),
             ),
             child: Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
@@ -209,17 +209,17 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
                             colors: [
-                              Color(0xFF78C7FF),
+                              const Color(0xFF78C7FF),
                               FlutterFlowTheme.of(context).primary
                             ],
-                            stops: [0.0, 1.0],
-                            begin: AlignmentDirectional(0.56, -1.0),
-                            end: AlignmentDirectional(-0.56, 1.0),
+                            stops: const [0.0, 1.0],
+                            begin: const AlignmentDirectional(0.56, -1.0),
+                            end: const AlignmentDirectional(-0.56, 1.0),
                           ),
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.info_rounded,
                             color: FlutterFlowTheme.of(context)
@@ -238,7 +238,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                   .labelSmallIsCustom,
                             ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   Container(
                     width: double.infinity,
@@ -247,9 +247,9 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     child: Align(
-                      alignment: AlignmentDirectional(-1.0, 0.0),
+                      alignment: const AlignmentDirectional(-1.0, 0.0),
                       child: Padding(
-                        padding: EdgeInsets.all(12.0),
+                        padding: const EdgeInsets.all(12.0),
                         child: Text(
                           'ข้าเกณฑ์โรคความดันโลหิตสูง นอกจากนี้ยังมีอาการเวียนหัวตอนเช้าและเหนื่อยง่าย ซึ่งอาจบ่งชี้ถึงภาวะอื่นที่เกี่ยวข้องกับระบบทางเดินหายใจ',
                           textAlign: TextAlign.start,
@@ -267,7 +267,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ),
@@ -277,7 +277,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
               borderRadius: BorderRadius.circular(24.0),
             ),
             child: Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -318,7 +318,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                 return 32.0;
                               }
                             }(),
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [Color(0xFFFFB85C), Color(0xFFFF7600)],
                                 stops: [0.0, 1.0],
@@ -328,7 +328,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                               shape: BoxShape.circle,
                             ),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: FaIcon(
                                 FontAwesomeIcons.bacterium,
                                 color: FlutterFlowTheme.of(context)
@@ -350,7 +350,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                       .labelSmallIsCustom,
                                 ),
                           ),
-                        ].divide(SizedBox(width: 8.0)),
+                        ].divide(const SizedBox(width: 8.0)),
                       ),
                       Container(
                         width: double.infinity,
@@ -359,9 +359,9 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsets.all(12.0),
+                            padding: const EdgeInsets.all(12.0),
                             child: Text(
                               'โรคเบาหวาน, ระบบประสาทและสมอง',
                               style: FlutterFlowTheme.of(context)
@@ -379,7 +379,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                   Column(
                     mainAxisSize: MainAxisSize.max,
@@ -417,7 +417,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                 return 32.0;
                               }
                             }(),
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [Color(0xFFFFB85C), Color(0xFFFF7600)],
                                 stops: [0.0, 1.0],
@@ -427,7 +427,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                               shape: BoxShape.circle,
                             ),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: FaIcon(
                                 FontAwesomeIcons.capsules,
                                 color: FlutterFlowTheme.of(context)
@@ -449,7 +449,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                       .labelSmallIsCustom,
                                 ),
                           ),
-                        ].divide(SizedBox(width: 8.0)),
+                        ].divide(const SizedBox(width: 8.0)),
                       ),
                       Container(
                         width: double.infinity,
@@ -458,9 +458,9 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsets.all(12.0),
+                            padding: const EdgeInsets.all(12.0),
                             child: Text(
                               'ยาตราเสือน้ำดำ',
                               style: FlutterFlowTheme.of(context)
@@ -478,7 +478,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                   Column(
                     mainAxisSize: MainAxisSize.max,
@@ -516,7 +516,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                 return 32.0;
                               }
                             }(),
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [Color(0xFF46D8AD), Color(0xFF1D8B6B)],
                                 stops: [0.0, 1.0],
@@ -526,7 +526,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                               shape: BoxShape.circle,
                             ),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Icon(
                                 Icons.golf_course_sharp,
                                 color: FlutterFlowTheme.of(context)
@@ -548,7 +548,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                       .labelSmallIsCustom,
                                 ),
                           ),
-                        ].divide(SizedBox(width: 8.0)),
+                        ].divide(const SizedBox(width: 8.0)),
                       ),
                       Container(
                         width: double.infinity,
@@ -557,9 +557,9 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsets.all(12.0),
+                            padding: const EdgeInsets.all(12.0),
                             child: Text(
                               'ตรวจการรับประทานยา',
                               style: FlutterFlowTheme.of(context)
@@ -577,9 +577,9 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
-                ].divide(SizedBox(height: 16.0)),
+                ].divide(const SizedBox(height: 16.0)),
               ),
             ),
           ),
@@ -590,12 +590,12 @@ class _HaealthWidgetState extends State<HaealthWidget> {
             ),
             child: Container(
               width: double.infinity,
-              color: Color(0x00000000),
+              color: const Color(0x00000000),
               child: ExpandableNotifier(
                 controller: _model.expandableExpandableController1,
                 child: ExpandablePanel(
                   header: Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -634,14 +634,14 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                 FlutterFlowTheme.of(context).customColor4,
                                 FlutterFlowTheme.of(context).customColor3
                               ],
-                              stops: [0.0, 1.0],
-                              begin: AlignmentDirectional(0.56, -1.0),
-                              end: AlignmentDirectional(-0.56, 1.0),
+                              stops: const [0.0, 1.0],
+                              begin: const AlignmentDirectional(0.56, -1.0),
+                              end: const AlignmentDirectional(-0.56, 1.0),
                             ),
                             shape: BoxShape.circle,
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Icon(
                               Icons.view_list,
                               color: FlutterFlowTheme.of(context)
@@ -662,7 +662,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                     .labelSmallIsCustom,
                               ),
                         ),
-                      ].divide(SizedBox(width: 8.0)),
+                      ].divide(const SizedBox(width: 8.0)),
                     ),
                   ),
                   collapsed: Container(),
@@ -674,7 +674,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 16.0),
                             child: Container(
                               width: double.infinity,
@@ -684,9 +684,9 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(-1.0, 0.0),
+                                alignment: const AlignmentDirectional(-1.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsets.all(12.0),
+                                  padding: const EdgeInsets.all(12.0),
                                   child: Text(
                                     'ควรเยี่ยมเพื่อติดตามภาวะความดันโลหิตสูง',
                                     textAlign: TextAlign.start,
@@ -713,7 +713,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                             color: FlutterFlowTheme.of(context).alternate,
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 1.0, 0.0, 0.0, 0.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -765,8 +765,8 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -820,8 +820,8 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -875,8 +875,8 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -930,8 +930,8 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -985,8 +985,8 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -1040,8 +1040,8 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -1095,8 +1095,8 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                                 Divider(
                                   height: 1.0,
@@ -1150,17 +1150,17 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 16.0))
-                                      .around(SizedBox(width: 16.0)),
+                                      .divide(const SizedBox(width: 16.0))
+                                      .around(const SizedBox(width: 16.0)),
                                 ),
                               ],
                             ),
                           ),
                         ],
                       ),
-                    ].divide(SizedBox(height: 12.0)),
+                    ].divide(const SizedBox(height: 12.0)),
                   ),
-                  theme: ExpandableThemeData(
+                  theme: const ExpandableThemeData(
                     tapHeaderToExpand: true,
                     tapBodyToExpand: false,
                     tapBodyToCollapse: false,
@@ -1179,12 +1179,12 @@ class _HaealthWidgetState extends State<HaealthWidget> {
             ),
             child: Container(
               width: double.infinity,
-              color: Color(0x00000000),
+              color: const Color(0x00000000),
               child: ExpandableNotifier(
                 controller: _model.expandableExpandableController2,
                 child: ExpandablePanel(
                   header: Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -1223,14 +1223,14 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                 FlutterFlowTheme.of(context).secondary,
                                 FlutterFlowTheme.of(context).accent2
                               ],
-                              stops: [0.0, 1.0],
-                              begin: AlignmentDirectional(0.56, -1.0),
-                              end: AlignmentDirectional(-0.56, 1.0),
+                              stops: const [0.0, 1.0],
+                              begin: const AlignmentDirectional(0.56, -1.0),
+                              end: const AlignmentDirectional(-0.56, 1.0),
                             ),
                             shape: BoxShape.circle,
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Icon(
                               Icons.eco,
                               color: FlutterFlowTheme.of(context)
@@ -1251,7 +1251,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                     .labelSmallIsCustom,
                               ),
                         ),
-                      ].divide(SizedBox(width: 8.0)),
+                      ].divide(const SizedBox(width: 8.0)),
                     ),
                   ),
                   collapsed: Container(),
@@ -1275,7 +1275,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                               color: FlutterFlowTheme.of(context).alternate,
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   1.0, 0.0, 0.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -1329,8 +1329,8 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                         ),
                                       ),
                                     ]
-                                        .divide(SizedBox(width: 16.0))
-                                        .around(SizedBox(width: 16.0)),
+                                        .divide(const SizedBox(width: 16.0))
+                                        .around(const SizedBox(width: 16.0)),
                                   ),
                                   Divider(
                                     height: 1.0,
@@ -1387,8 +1387,8 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                         ),
                                       ),
                                     ]
-                                        .divide(SizedBox(width: 16.0))
-                                        .around(SizedBox(width: 16.0)),
+                                        .divide(const SizedBox(width: 16.0))
+                                        .around(const SizedBox(width: 16.0)),
                                   ),
                                   Divider(
                                     height: 1.0,
@@ -1445,8 +1445,8 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                         ),
                                       ),
                                     ]
-                                        .divide(SizedBox(width: 16.0))
-                                        .around(SizedBox(width: 16.0)),
+                                        .divide(const SizedBox(width: 16.0))
+                                        .around(const SizedBox(width: 16.0)),
                                   ),
                                   Divider(
                                     height: 1.0,
@@ -1503,8 +1503,8 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                         ),
                                       ),
                                     ]
-                                        .divide(SizedBox(width: 16.0))
-                                        .around(SizedBox(width: 16.0)),
+                                        .divide(const SizedBox(width: 16.0))
+                                        .around(const SizedBox(width: 16.0)),
                                   ),
                                   Divider(
                                     height: 1.0,
@@ -1561,8 +1561,8 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                         ),
                                       ),
                                     ]
-                                        .divide(SizedBox(width: 16.0))
-                                        .around(SizedBox(width: 16.0)),
+                                        .divide(const SizedBox(width: 16.0))
+                                        .around(const SizedBox(width: 16.0)),
                                   ),
                                   Divider(
                                     height: 1.0,
@@ -1619,18 +1619,18 @@ class _HaealthWidgetState extends State<HaealthWidget> {
                                         ),
                                       ),
                                     ]
-                                        .divide(SizedBox(width: 16.0))
-                                        .around(SizedBox(width: 16.0)),
+                                        .divide(const SizedBox(width: 16.0))
+                                        .around(const SizedBox(width: 16.0)),
                                   ),
                                 ],
                               ),
                             ),
-                          ].addToStart(SizedBox(height: 16.0)),
+                          ].addToStart(const SizedBox(height: 16.0)),
                         ),
                       ),
-                    ].divide(SizedBox(height: 12.0)),
+                    ].divide(const SizedBox(height: 12.0)),
                   ),
-                  theme: ExpandableThemeData(
+                  theme: const ExpandableThemeData(
                     tapHeaderToExpand: true,
                     tapBodyToExpand: false,
                     tapBodyToCollapse: false,
@@ -1642,7 +1642,7 @@ class _HaealthWidgetState extends State<HaealthWidget> {
               ),
             ),
           ),
-        ].divide(SizedBox(height: 12.0)).addToStart(SizedBox(height: 16.0)),
+        ].divide(const SizedBox(height: 12.0)).addToStart(const SizedBox(height: 16.0)),
       ),
     );
   }

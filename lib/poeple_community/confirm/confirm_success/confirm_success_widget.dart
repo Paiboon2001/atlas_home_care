@@ -53,8 +53,8 @@ class _ConfirmSuccessWidgetState extends State<ConfirmSuccessWidget>
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 1500.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -72,8 +72,8 @@ class _ConfirmSuccessWidgetState extends State<ConfirmSuccessWidget>
             curve: Curves.easeInOut,
             delay: 100.0.ms,
             duration: 1000.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -92,9 +92,9 @@ class _ConfirmSuccessWidgetState extends State<ConfirmSuccessWidget>
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 0.0),
+      alignment: const AlignmentDirectional(0.0, 0.0),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
         child: Container(
           width: () {
             if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
@@ -117,46 +117,46 @@ class _ConfirmSuccessWidgetState extends State<ConfirmSuccessWidget>
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
-                child: Container(
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
+                child: SizedBox(
                   width: 160.0,
                   height: 160.0,
                   child: Stack(
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Container(
                           width: 160.0,
                           height: 160.0,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border: Border.all(
-                              color: Color(0xFF4BBA54),
+                              color: const Color(0xFF4BBA54),
                             ),
                           ),
                         ).animateOnPageLoad(
                             animationsMap['containerOnPageLoadAnimation1']!),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Container(
                           width: 130.0,
                           height: 130.0,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border: Border.all(
-                              color: Color(0xFF69E476),
+                              color: const Color(0xFF69E476),
                             ),
                           ),
                         ).animateOnPageLoad(
                             animationsMap['containerOnPageLoadAnimation2']!),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Container(
                           width: 100.0,
                           height: 100.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             gradient: LinearGradient(
                               colors: [Color(0xFFDAFFD2), Color(0xFF86E98A)],
                               stops: [0.0, 1.0],
@@ -166,7 +166,7 @@ class _ConfirmSuccessWidgetState extends State<ConfirmSuccessWidget>
                             shape: BoxShape.circle,
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(8.0),
                               child: Image.asset(
@@ -208,11 +208,11 @@ class _ConfirmSuccessWidgetState extends State<ConfirmSuccessWidget>
                                 .labelLargeIsCustom,
                           ),
                     ),
-                  ].divide(SizedBox(height: 16.0)),
+                  ].divide(const SizedBox(height: 16.0)),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -238,10 +238,10 @@ class _ConfirmSuccessWidgetState extends State<ConfirmSuccessWidget>
                               return 56.0;
                             }
                           }(),
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           iconAlignment: IconAlignment.start,
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
@@ -278,18 +278,18 @@ class _ConfirmSuccessWidgetState extends State<ConfirmSuccessWidget>
                                   elevation: 0,
                                   insetPadding: EdgeInsets.zero,
                                   backgroundColor: Colors.transparent,
-                                  alignment: AlignmentDirectional(0.0, 1.0)
+                                  alignment: const AlignmentDirectional(0.0, 1.0)
                                       .resolve(Directionality.of(context)),
-                                  child: Container(
+                                  child: SizedBox(
                                     width: 180.0,
-                                    child: SucessWidget(),
+                                    child: const SucessWidget(),
                                   ),
                                 );
                               },
                             );
 
                             await Future.delayed(
-                              Duration(
+                              const Duration(
                                 milliseconds: 2000,
                               ),
                             );
@@ -317,10 +317,10 @@ class _ConfirmSuccessWidgetState extends State<ConfirmSuccessWidget>
                                 return 56.0;
                               }
                             }(),
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             iconAlignment: IconAlignment.start,
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context).customColor5,
                             textStyle: FlutterFlowTheme.of(context)
@@ -335,7 +335,7 @@ class _ConfirmSuccessWidgetState extends State<ConfirmSuccessWidget>
                                       .bodyMediumIsCustom,
                                 ),
                             elevation: 0.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 0.0,
                             ),
@@ -344,7 +344,7 @@ class _ConfirmSuccessWidgetState extends State<ConfirmSuccessWidget>
                         ),
                       ),
                     ),
-                  ].divide(SizedBox(width: 16.0)).around(SizedBox(width: 16.0)),
+                  ].divide(const SizedBox(width: 16.0)).around(const SizedBox(width: 16.0)),
                 ),
               ),
             ],

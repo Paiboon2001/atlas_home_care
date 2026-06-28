@@ -44,7 +44,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
@@ -84,16 +84,16 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                           gradient: LinearGradient(
                             colors: [
                               FlutterFlowTheme.of(context).success,
-                              Color(0xFF62D3A0)
+                              const Color(0xFF62D3A0)
                             ],
-                            stops: [0.0, 1.0],
-                            begin: AlignmentDirectional(1.0, -1.0),
-                            end: AlignmentDirectional(-1.0, 1.0),
+                            stops: const [0.0, 1.0],
+                            begin: const AlignmentDirectional(1.0, -1.0),
+                            end: const AlignmentDirectional(-1.0, 1.0),
                           ),
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.directions_run_rounded,
                             color: FlutterFlowTheme.of(context)
@@ -148,7 +148,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16.0),
@@ -203,12 +203,12 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                             ),
                           ),
                         ]
-                            .divide(SizedBox(width: 16.0))
-                            .around(SizedBox(width: 16.0)),
+                            .divide(const SizedBox(width: 16.0))
+                            .around(const SizedBox(width: 16.0)),
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ),
@@ -248,16 +248,16 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                           gradient: LinearGradient(
                             colors: [
                               FlutterFlowTheme.of(context).primary,
-                              Color(0xFF216DAA)
+                              const Color(0xFF216DAA)
                             ],
-                            stops: [0.0, 1.0],
-                            begin: AlignmentDirectional(0.0, -1.0),
-                            end: AlignmentDirectional(0, 1.0),
+                            stops: const [0.0, 1.0],
+                            begin: const AlignmentDirectional(0.0, -1.0),
+                            end: const AlignmentDirectional(0, 1.0),
                           ),
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.fastfood_outlined,
                             color: FlutterFlowTheme.of(context)
@@ -312,7 +312,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16.0),
@@ -370,8 +370,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -379,7 +379,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                             color: FlutterFlowTheme.of(context).alternate,
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 14.0, 0.0, 14.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -401,8 +401,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                   ),
                                 ),
                               ]
-                                  .divide(SizedBox(width: 16.0))
-                                  .around(SizedBox(width: 16.0)),
+                                  .divide(const SizedBox(width: 16.0))
+                                  .around(const SizedBox(width: 16.0)),
                             ),
                           ),
                           Divider(
@@ -453,8 +453,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -504,8 +504,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -555,8 +555,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -606,8 +606,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -657,8 +657,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -708,8 +708,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -759,14 +759,14 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                         ],
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ),
@@ -802,7 +802,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                       Container(
                         width: 24.0,
                         height: 24.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           gradient: LinearGradient(
                             colors: [Color(0xFFFCD792), Color(0xFFED9F0F)],
                             stops: [0.0, 1.0],
@@ -812,7 +812,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.home_rounded,
                             color: FlutterFlowTheme.of(context)
@@ -867,7 +867,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16.0),
@@ -925,8 +925,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -976,14 +976,14 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                         ],
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ),
@@ -1019,7 +1019,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                       Container(
                         width: 24.0,
                         height: 24.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           gradient: LinearGradient(
                             colors: [Color(0xFFF7C2E2), Color(0xFFFF55D9)],
                             stops: [0.0, 1.0],
@@ -1029,7 +1029,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.family_restroom,
                             color: FlutterFlowTheme.of(context)
@@ -1084,7 +1084,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16.0),
@@ -1142,8 +1142,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -1151,7 +1151,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                             color: FlutterFlowTheme.of(context).alternate,
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 14.0, 0.0, 14.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1173,8 +1173,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                   ),
                                 ),
                               ]
-                                  .divide(SizedBox(width: 16.0))
-                                  .around(SizedBox(width: 16.0)),
+                                  .divide(const SizedBox(width: 16.0))
+                                  .around(const SizedBox(width: 16.0)),
                             ),
                           ),
                           Divider(
@@ -1225,8 +1225,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -1276,8 +1276,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -1340,14 +1340,14 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                         ],
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ),
@@ -1386,17 +1386,17 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
                             colors: [
-                              Color(0xFFA0E1F7),
+                              const Color(0xFFA0E1F7),
                               FlutterFlowTheme.of(context).accent1
                             ],
-                            stops: [0.0, 1.0],
-                            begin: AlignmentDirectional(0.56, -1.0),
-                            end: AlignmentDirectional(-0.56, 1.0),
+                            stops: const [0.0, 1.0],
+                            begin: const AlignmentDirectional(0.56, -1.0),
+                            end: const AlignmentDirectional(-0.56, 1.0),
                           ),
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: FaIcon(
                             FontAwesomeIcons.capsules,
                             color: FlutterFlowTheme.of(context)
@@ -1451,7 +1451,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16.0),
@@ -1509,8 +1509,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -1560,8 +1560,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -1611,8 +1611,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -1662,8 +1662,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -1713,14 +1713,14 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                         ],
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ),
@@ -1756,7 +1756,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                       Container(
                         width: 24.0,
                         height: 24.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           gradient: LinearGradient(
                             colors: [Color(0xFF46D8AD), Color(0xFF1D8B6B)],
                             stops: [0.0, 1.0],
@@ -1766,7 +1766,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: FaIcon(
                             FontAwesomeIcons.flask,
                             color: FlutterFlowTheme.of(context)
@@ -1821,7 +1821,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16.0),
@@ -1837,7 +1837,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 14.0, 0.0, 14.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1860,8 +1860,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                   ),
                                 ),
                               ]
-                                  .divide(SizedBox(width: 16.0))
-                                  .around(SizedBox(width: 16.0)),
+                                  .divide(const SizedBox(width: 16.0))
+                                  .around(const SizedBox(width: 16.0)),
                             ),
                           ),
                           Divider(
@@ -1912,8 +1912,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -1963,8 +1963,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -2014,8 +2014,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -2065,8 +2065,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -2116,8 +2116,8 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                           Divider(
                             height: 1.0,
@@ -2167,14 +2167,14 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(width: 16.0))
-                                .around(SizedBox(width: 16.0)),
+                                .divide(const SizedBox(width: 16.0))
+                                .around(const SizedBox(width: 16.0)),
                           ),
                         ],
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ),
@@ -2210,7 +2210,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                       Container(
                         width: 24.0,
                         height: 24.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           gradient: LinearGradient(
                             colors: [Color(0xFFB8ADF9), Color(0xFF6F57F4)],
                             stops: [0.0, 1.0],
@@ -2220,7 +2220,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.health_and_safety_sharp,
                             color: FlutterFlowTheme.of(context)
@@ -2275,7 +2275,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16.0),
@@ -2330,12 +2330,12 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                             ),
                           ),
                         ]
-                            .divide(SizedBox(width: 16.0))
-                            .around(SizedBox(width: 16.0)),
+                            .divide(const SizedBox(width: 16.0))
+                            .around(const SizedBox(width: 16.0)),
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ),
@@ -2371,7 +2371,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                       Container(
                         width: 24.0,
                         height: 24.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           gradient: LinearGradient(
                             colors: [Color(0xFFFFC0A3), Color(0xFFFF6F00)],
                             stops: [0.0, 1.0],
@@ -2381,7 +2381,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.heart_broken_sharp,
                             color: FlutterFlowTheme.of(context)
@@ -2436,7 +2436,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16.0),
@@ -2491,12 +2491,12 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                             ),
                           ),
                         ]
-                            .divide(SizedBox(width: 16.0))
-                            .around(SizedBox(width: 16.0)),
+                            .divide(const SizedBox(width: 16.0))
+                            .around(const SizedBox(width: 16.0)),
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ),
@@ -2532,7 +2532,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                       Container(
                         width: 24.0,
                         height: 24.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           gradient: LinearGradient(
                             colors: [Color(0xFFFE9393), Color(0xFFE24747)],
                             stops: [0.0, 1.0],
@@ -2542,7 +2542,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: FaIcon(
                             FontAwesomeIcons.solidHospital,
                             color: FlutterFlowTheme.of(context)
@@ -2597,7 +2597,7 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16.0),
@@ -2652,16 +2652,16 @@ class _ResultINHOMESSSWidgetState extends State<ResultINHOMESSSWidget> {
                             ),
                           ),
                         ]
-                            .divide(SizedBox(width: 16.0))
-                            .around(SizedBox(width: 16.0)),
+                            .divide(const SizedBox(width: 16.0))
+                            .around(const SizedBox(width: 16.0)),
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ),
-        ].divide(SizedBox(height: 12.0)),
+        ].divide(const SizedBox(height: 12.0)),
       ),
     );
   }

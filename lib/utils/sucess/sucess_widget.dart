@@ -51,8 +51,8 @@ class _SucessWidgetState extends State<SucessWidget>
             curve: Curves.easeOut,
             delay: 600.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 50.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 50.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -71,21 +71,21 @@ class _SucessWidgetState extends State<SucessWidget>
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 112.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 112.0),
         child: Container(
           width: 170.0,
           height: 56.0,
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Color(0xFF7BE6C6),
+                const Color(0xFF7BE6C6),
                 FlutterFlowTheme.of(context).customColor1
               ],
-              stops: [0.0, 1.0],
-              begin: AlignmentDirectional(0.0, -1.0),
-              end: AlignmentDirectional(0, 1.0),
+              stops: const [0.0, 1.0],
+              begin: const AlignmentDirectional(0.0, -1.0),
+              end: const AlignmentDirectional(0, 1.0),
             ),
             borderRadius: BorderRadius.circular(16.0),
             border: Border.all(
@@ -94,7 +94,7 @@ class _SucessWidgetState extends State<SucessWidget>
             ),
           ),
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 8.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 8.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -117,7 +117,7 @@ class _SucessWidgetState extends State<SucessWidget>
                             !FlutterFlowTheme.of(context).titleSmallIsCustom,
                       ),
                 ),
-              ].divide(SizedBox(width: 8.0)),
+              ].divide(const SizedBox(width: 8.0)),
             ),
           ),
         ).animateOnPageLoad(animationsMap['containerOnPageLoadAnimation']!),

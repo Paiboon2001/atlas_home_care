@@ -56,13 +56,13 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: MediaQuery.sizeOf(context).height * 0.95,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -71,14 +71,14 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     width: 50.0,
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -124,7 +124,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                     },
                     child: Container(
                       width: 50.0,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Text(
                         'ตกลง',
                         textAlign: TextAlign.end,
@@ -139,14 +139,14 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                       ),
                     ),
                   ),
-                ].divide(SizedBox(width: 8.0)),
+                ].divide(const SizedBox(width: 8.0)),
               ),
             ),
             Expanded(
               child: Column(
                 children: [
                   Align(
-                    alignment: Alignment(0.0, 0),
+                    alignment: const Alignment(0.0, 0),
                     child: TabBar(
                       labelColor: FlutterFlowTheme.of(context).primaryText,
                       unselectedLabelColor:
@@ -171,8 +171,8 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                           ),
                       indicatorColor: FlutterFlowTheme.of(context).primary,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                      tabs: [
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                      tabs: const [
                         Tab(
                           text: 'Profile',
                         ),
@@ -194,9 +194,9 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
-                              child: Container(
+                              child: SizedBox(
                                 width: double.infinity,
                                 child: TextFormField(
                                   controller: _model.textController1,
@@ -218,7 +218,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                   .bodyMediumIsCustom,
                                         ),
                                     enabledBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
@@ -226,7 +226,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                           BorderRadius.circular(100.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
@@ -254,7 +254,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                     filled: true,
                                     fillColor:
                                         FlutterFlowTheme.of(context).alternate,
-                                    prefixIcon: Icon(
+                                    prefixIcon: const Icon(
                                       Icons.search_rounded,
                                       size: 20.0,
                                     ),
@@ -277,10 +277,10 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: ListView(
-                                padding: EdgeInsets.fromLTRB(
+                                padding: const EdgeInsets.fromLTRB(
                                   0,
                                   8.0,
                                   0,
@@ -307,7 +307,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 12.0, 0.0, 12.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -320,7 +320,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                   Container(
                                                     width: 32.0,
                                                     height: 32.0,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: Stack(
@@ -328,7 +328,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                         Theme(
                                                           data: ThemeData(
                                                             checkboxTheme:
-                                                                CheckboxThemeData(
+                                                                const CheckboxThemeData(
                                                               visualDensity:
                                                                   VisualDensity
                                                                       .compact,
@@ -361,7 +361,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                                     width: 2,
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .secondaryText!,
+                                                                        .secondaryText,
                                                                   )
                                                                 : null,
                                                             activeColor:
@@ -376,7 +376,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                         ),
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Container(
                                                             width: 14.0,
@@ -393,7 +393,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                         ),
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Container(
                                                             width: 8.0,
@@ -446,13 +446,13 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                                       .bodyMediumIsCustom,
                                                             ),
                                                   ),
-                                                ].divide(SizedBox(width: 8.0)),
+                                                ].divide(const SizedBox(width: 8.0)),
                                               ),
                                               if (_model.checkboxValue1 ?? true)
                                                 Container(
                                                   width: double.infinity,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0x0B2397FF),
+                                                    color: const Color(0x0B2397FF),
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             24.0),
@@ -471,7 +471,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                       Expanded(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       8.0,
                                                                       0.0,
@@ -484,7 +484,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                                 safeSetState(
                                                                     () {}),
                                                             child:
-                                                                ItemLabWidget(
+                                                                const ItemLabWidget(
                                                               namelab:
                                                                   'ADA (Adenosine Deaminase Test)',
                                                             ),
@@ -494,7 +494,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                       Expanded(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       8.0,
                                                                       0.0,
@@ -507,7 +507,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                                 safeSetState(
                                                                     () {}),
                                                             child:
-                                                                ItemLabWidget(
+                                                                const ItemLabWidget(
                                                               namelab:
                                                                   'Amylase (Body fluid)',
                                                             ),
@@ -517,7 +517,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                       Expanded(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       8.0,
                                                                       0.0,
@@ -530,7 +530,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                                 safeSetState(
                                                                     () {}),
                                                             child:
-                                                                ItemLabWidget(
+                                                                const ItemLabWidget(
                                                               namelab:
                                                                   'Anion Gap',
                                                             ),
@@ -540,7 +540,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                       Expanded(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       8.0,
                                                                       0.0,
@@ -553,7 +553,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                                 safeSetState(
                                                                     () {}),
                                                             child:
-                                                                ItemLabWidget(
+                                                                const ItemLabWidget(
                                                               namelab:
                                                                   'Albumin',
                                                             ),
@@ -563,7 +563,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                       Expanded(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       8.0,
                                                                       0.0,
@@ -576,7 +576,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                                 safeSetState(
                                                                     () {}),
                                                             child:
-                                                                ItemLabWidget(
+                                                                const ItemLabWidget(
                                                               namelab:
                                                                   'Alk. Phos.. Total',
                                                             ),
@@ -586,7 +586,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                       Expanded(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       8.0,
                                                                       0.0,
@@ -599,7 +599,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                                 safeSetState(
                                                                     () {}),
                                                             child:
-                                                                ItemLabWidget(
+                                                                const ItemLabWidget(
                                                               namelab:
                                                                   'Amylase (serum)',
                                                             ),
@@ -607,7 +607,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                         ),
                                                       ),
                                                     ].addToEnd(
-                                                        SizedBox(height: 16.0)),
+                                                        const SizedBox(height: 16.0)),
                                                   ),
                                                 ),
                                             ],
@@ -640,7 +640,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 12.0, 0.0, 12.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -653,7 +653,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                   Container(
                                                     width: 32.0,
                                                     height: 32.0,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: Stack(
@@ -661,7 +661,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                         Theme(
                                                           data: ThemeData(
                                                             checkboxTheme:
-                                                                CheckboxThemeData(
+                                                                const CheckboxThemeData(
                                                               visualDensity:
                                                                   VisualDensity
                                                                       .compact,
@@ -694,7 +694,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                                     width: 2,
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .secondaryText!,
+                                                                        .secondaryText,
                                                                   )
                                                                 : null,
                                                             activeColor:
@@ -709,7 +709,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                         ),
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Container(
                                                             width: 14.0,
@@ -726,7 +726,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                         ),
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Container(
                                                             width: 8.0,
@@ -779,13 +779,13 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                                       .bodyMediumIsCustom,
                                                             ),
                                                   ),
-                                                ].divide(SizedBox(width: 8.0)),
+                                                ].divide(const SizedBox(width: 8.0)),
                                               ),
                                               if (_model.checkboxValue2 ?? true)
                                                 Container(
                                                   width: double.infinity,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0x0B2397FF),
+                                                    color: const Color(0x0B2397FF),
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             24.0),
@@ -804,7 +804,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                       Expanded(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       8.0,
                                                                       0.0,
@@ -817,7 +817,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                                 safeSetState(
                                                                     () {}),
                                                             child:
-                                                                ItemLabWidget(
+                                                                const ItemLabWidget(
                                                               namelab:
                                                                   'Albumin',
                                                             ),
@@ -827,7 +827,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                       Expanded(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       8.0,
                                                                       0.0,
@@ -840,7 +840,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                                 safeSetState(
                                                                     () {}),
                                                             child:
-                                                                ItemLabWidget(
+                                                                const ItemLabWidget(
                                                               namelab:
                                                                   'Alk. Phos.. Total',
                                                             ),
@@ -850,7 +850,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                       Expanded(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       8.0,
                                                                       0.0,
@@ -863,7 +863,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                                 safeSetState(
                                                                     () {}),
                                                             child:
-                                                                ItemLabWidget(
+                                                                const ItemLabWidget(
                                                               namelab:
                                                                   'Amylase (serum)',
                                                             ),
@@ -871,7 +871,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                         ),
                                                       ),
                                                     ].addToEnd(
-                                                        SizedBox(height: 16.0)),
+                                                        const SizedBox(height: 16.0)),
                                                   ),
                                                 ),
                                             ],
@@ -889,15 +889,15 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                 ],
                               ),
                             ),
-                          ].addToStart(SizedBox(height: 16.0)),
+                          ].addToStart(const SizedBox(height: 16.0)),
                         ),
                         Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
-                              child: Container(
+                              child: SizedBox(
                                 width: double.infinity,
                                 child: TextFormField(
                                   controller: _model.textController2,
@@ -919,7 +919,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                                   .bodyMediumIsCustom,
                                         ),
                                     enabledBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
@@ -927,7 +927,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                           BorderRadius.circular(100.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
@@ -955,7 +955,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                     filled: true,
                                     fillColor:
                                         FlutterFlowTheme.of(context).alternate,
-                                    prefixIcon: Icon(
+                                    prefixIcon: const Icon(
                                       Icons.search_rounded,
                                       size: 20.0,
                                     ),
@@ -979,10 +979,10 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: ListView(
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     8.0,
                                     0,
@@ -994,17 +994,17 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                     wrapWithModel(
                                       model: _model.itemLabModel10,
                                       updateCallback: () => safeSetState(() {}),
-                                      child: ItemLabWidget(
+                                      child: const ItemLabWidget(
                                         namelab: 'Amylase (serum)',
                                       ),
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: wrapWithModel(
                                         model: _model.itemLabModel11,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: ItemLabWidget(
+                                        child: const ItemLabWidget(
                                           namelab:
                                               'ADA (Adenosine Deaminase Test)',
                                         ),
@@ -1015,7 +1015,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                         model: _model.itemLabModel12,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: ItemLabWidget(
+                                        child: const ItemLabWidget(
                                           namelab: 'Albumin',
                                         ),
                                       ),
@@ -1024,7 +1024,7 @@ class _ChooseOptionWidgetState extends State<ChooseOptionWidget>
                                 ),
                               ),
                             ),
-                          ].addToStart(SizedBox(height: 16.0)),
+                          ].addToStart(const SizedBox(height: 16.0)),
                         ),
                       ],
                     ),

@@ -1,13 +1,8 @@
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/homevisitlist/other/item_p_p_template/item_p_p_template_widget.dart';
 import '/utils/close/close_widget.dart';
-import 'dart:ui';
 import 'search_task_widget.dart' show SearchTaskWidget;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class SearchTaskModel extends FlutterFlowModel<SearchTaskWidget> {
   ///  State fields for stateful widgets in this component.

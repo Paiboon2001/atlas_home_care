@@ -51,13 +51,13 @@ class _CalendarWidgetState extends State<CalendarWidget> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
           borderRadius: BorderRadius.circular(0.0),
         ),
@@ -67,7 +67,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
             Stack(
               children: [
                 Align(
-                  alignment: AlignmentDirectional(-1.0, -1.0),
+                  alignment: const AlignmentDirectional(-1.0, -1.0),
                   child: Container(
                     width: double.infinity,
                     height: 92.0,
@@ -80,21 +80,21 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                       ),
                       gradient: LinearGradient(
                         colors: [
-                          Color(0xFF2370BC),
+                          const Color(0xFF2370BC),
                           FlutterFlowTheme.of(context).primary
                         ],
-                        stops: [0.0, 1.0],
-                        begin: AlignmentDirectional(0.0, -1.0),
-                        end: AlignmentDirectional(0, 1.0),
+                        stops: const [0.0, 1.0],
+                        begin: const AlignmentDirectional(0.0, -1.0),
+                        end: const AlignmentDirectional(0, 1.0),
                       ),
-                      borderRadius: BorderRadius.only(),
+                      borderRadius: const BorderRadius.only(),
                     ),
                   ),
                 ),
                 Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    Container(
+                    SizedBox(
                       width: double.infinity,
                       height: 175.0,
                       child: PageView(
@@ -106,7 +106,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -151,7 +151,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 24.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -159,7 +159,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                         hoverColor: Colors.transparent,
                                         highlightColor: Colors.transparent,
                                         onTap: () async {
-                                          final _datePickedDate =
+                                          final datePickedDate =
                                               await showDatePicker(
                                             context: context,
                                             barrierDismissible: false,
@@ -168,12 +168,12 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                             lastDate: DateTime(2050),
                                           );
 
-                                          if (_datePickedDate != null) {
+                                          if (datePickedDate != null) {
                                             safeSetState(() {
                                               _model.datePicked = DateTime(
-                                                _datePickedDate.year,
-                                                _datePickedDate.month,
-                                                _datePickedDate.day,
+                                                datePickedDate.year,
+                                                datePickedDate.month,
+                                                datePickedDate.day,
                                               );
                                             });
                                           } else if (_model.datePicked !=
@@ -211,7 +211,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 ?.animateToPage(
                                               0,
                                               duration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               curve: Curves.ease,
                                             );
                                           },
@@ -222,13 +222,13 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                             size: 24.0,
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 32.0)),
+                                      ].divide(const SizedBox(width: 32.0)),
                                     ),
-                                  ].divide(SizedBox(width: 8.0)),
+                                  ].divide(const SizedBox(width: 8.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     24.0, 0.0, 24.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -354,7 +354,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                     .bodySmallIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 16.0)),
+                                  ].divide(const SizedBox(width: 16.0)),
                                 ),
                               ),
                               Container(
@@ -364,7 +364,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                       .secondaryBackground,
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 0.0, 8.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -460,20 +460,20 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(height: 12.0))
-                                .addToStart(SizedBox(height: 16.0)),
+                                .divide(const SizedBox(height: 12.0))
+                                .addToStart(const SizedBox(height: 16.0)),
                           ),
                           Container(),
                           Container(),
                         ],
                       ),
                     ),
-                  ].divide(SizedBox(height: 16.0)),
+                  ].divide(const SizedBox(height: 16.0)),
                 ),
               ],
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 12.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 12.0),
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -484,19 +484,19 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           colors: [
-                            Color(0xFFFFC745),
+                            const Color(0xFFFFC745),
                             FlutterFlowTheme.of(context).warning
                           ],
-                          stops: [0.0, 1.0],
-                          begin: AlignmentDirectional(1.0, 0.34),
-                          end: AlignmentDirectional(-1.0, -0.34),
+                          stops: const [0.0, 1.0],
+                          begin: const AlignmentDirectional(1.0, 0.34),
+                          end: const AlignmentDirectional(-1.0, -0.34),
                         ),
                         borderRadius: BorderRadius.circular(100.0),
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               8.0, 4.0, 8.0, 4.0),
                           child: Text(
                             'งานที่มอบหมาย',
@@ -509,7 +509,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                       .secondaryBackground,
                                   letterSpacing: 0.0,
                                   shadows: [
-                                    Shadow(
+                                    const Shadow(
                                       color: Color(0x42000000),
                                       offset: Offset(1.0, 1.0),
                                       blurRadius: 1.0,
@@ -529,16 +529,16 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                             FlutterFlowTheme.of(context).customColor4,
                             FlutterFlowTheme.of(context).error
                           ],
-                          stops: [0.0, 1.0],
-                          begin: AlignmentDirectional(1.0, 0.34),
-                          end: AlignmentDirectional(-1.0, -0.34),
+                          stops: const [0.0, 1.0],
+                          begin: const AlignmentDirectional(1.0, 0.34),
+                          end: const AlignmentDirectional(-1.0, -0.34),
                         ),
                         borderRadius: BorderRadius.circular(100.0),
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               8.0, 4.0, 8.0, 4.0),
                           child: Text(
                             'งานที่เกินกำหนด',
@@ -551,7 +551,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                       .secondaryBackground,
                                   letterSpacing: 0.0,
                                   shadows: [
-                                    Shadow(
+                                    const Shadow(
                                       color: Color(0x42000000),
                                       offset: Offset(1.0, 1.0),
                                       blurRadius: 1.0,
@@ -569,18 +569,18 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                         gradient: LinearGradient(
                           colors: [
                             FlutterFlowTheme.of(context).success,
-                            Color(0xFF1D8B6B)
+                            const Color(0xFF1D8B6B)
                           ],
-                          stops: [0.0, 1.0],
-                          begin: AlignmentDirectional(1.0, 0.34),
-                          end: AlignmentDirectional(-1.0, -0.34),
+                          stops: const [0.0, 1.0],
+                          begin: const AlignmentDirectional(1.0, 0.34),
+                          end: const AlignmentDirectional(-1.0, -0.34),
                         ),
                         borderRadius: BorderRadius.circular(100.0),
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               8.0, 4.0, 8.0, 4.0),
                           child: Text(
                             'งานสำเร็จ',
@@ -593,7 +593,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                       .secondaryBackground,
                                   letterSpacing: 0.0,
                                   shadows: [
-                                    Shadow(
+                                    const Shadow(
                                       color: Color(0x42000000),
                                       offset: Offset(1.0, 1.0),
                                       blurRadius: 1.0,
@@ -611,18 +611,18 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                         gradient: LinearGradient(
                           colors: [
                             FlutterFlowTheme.of(context).accent1,
-                            Color(0xFF0761B8)
+                            const Color(0xFF0761B8)
                           ],
-                          stops: [0.0, 1.0],
-                          begin: AlignmentDirectional(1.0, 0.34),
-                          end: AlignmentDirectional(-1.0, -0.34),
+                          stops: const [0.0, 1.0],
+                          begin: const AlignmentDirectional(1.0, 0.34),
+                          end: const AlignmentDirectional(-1.0, -0.34),
                         ),
                         borderRadius: BorderRadius.circular(100.0),
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               8.0, 4.0, 8.0, 4.0),
                           child: Text(
                             'งานล่วงหน้า',
@@ -635,7 +635,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                       .secondaryBackground,
                                   letterSpacing: 0.0,
                                   shadows: [
-                                    Shadow(
+                                    const Shadow(
                                       color: Color(0x42000000),
                                       offset: Offset(1.0, 1.0),
                                       blurRadius: 1.0,
@@ -649,17 +649,17 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                       ),
                     ),
                   ]
-                      .divide(SizedBox(width: 8.0))
-                      .addToStart(SizedBox(width: 16.0))
-                      .addToEnd(SizedBox(width: 16.0)),
+                      .divide(const SizedBox(width: 8.0))
+                      .addToStart(const SizedBox(width: 16.0))
+                      .addToEnd(const SizedBox(width: 16.0)),
                 ),
               ),
             ),
             Expanded(
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: ListView(
-                  padding: EdgeInsets.fromLTRB(
+                  padding: const EdgeInsets.fromLTRB(
                     0,
                     0,
                     0,
@@ -680,11 +680,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '00.00',
                                       style: FlutterFlowTheme.of(context)
@@ -715,7 +715,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -723,11 +723,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '01.00',
                                       style: FlutterFlowTheme.of(context)
@@ -758,7 +758,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -766,11 +766,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '02.00',
                                       style: FlutterFlowTheme.of(context)
@@ -801,7 +801,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -809,11 +809,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '03.00',
                                       style: FlutterFlowTheme.of(context)
@@ -844,7 +844,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -852,11 +852,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '04.00',
                                       style: FlutterFlowTheme.of(context)
@@ -887,7 +887,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -895,11 +895,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '05.00',
                                       style: FlutterFlowTheme.of(context)
@@ -930,7 +930,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -938,11 +938,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '06.00',
                                       style: FlutterFlowTheme.of(context)
@@ -973,7 +973,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -981,11 +981,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '07.00',
                                       style: FlutterFlowTheme.of(context)
@@ -1016,7 +1016,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1024,11 +1024,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '08.00',
                                       style: FlutterFlowTheme.of(context)
@@ -1059,7 +1059,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1073,7 +1073,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '09.00',
                                       style: FlutterFlowTheme.of(context)
@@ -1104,7 +1104,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1112,11 +1112,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '10.00',
                                       style: FlutterFlowTheme.of(context)
@@ -1147,7 +1147,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1155,11 +1155,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '11.00',
                                       style: FlutterFlowTheme.of(context)
@@ -1190,7 +1190,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1198,11 +1198,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '12.00',
                                       style: FlutterFlowTheme.of(context)
@@ -1233,7 +1233,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1241,11 +1241,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '13.00',
                                       style: FlutterFlowTheme.of(context)
@@ -1276,7 +1276,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1284,11 +1284,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '14.00',
                                       style: FlutterFlowTheme.of(context)
@@ -1319,7 +1319,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1327,11 +1327,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '15.00',
                                       style: FlutterFlowTheme.of(context)
@@ -1362,7 +1362,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1370,11 +1370,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '16.00',
                                       style: FlutterFlowTheme.of(context)
@@ -1405,7 +1405,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1413,11 +1413,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '17.00',
                                       style: FlutterFlowTheme.of(context)
@@ -1448,7 +1448,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1456,11 +1456,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '18.00',
                                       style: FlutterFlowTheme.of(context)
@@ -1491,7 +1491,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1499,11 +1499,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '19.00',
                                       style: FlutterFlowTheme.of(context)
@@ -1534,7 +1534,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1542,11 +1542,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '20.00',
                                       style: FlutterFlowTheme.of(context)
@@ -1577,7 +1577,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1585,11 +1585,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '21.00',
                                       style: FlutterFlowTheme.of(context)
@@ -1620,7 +1620,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1628,11 +1628,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '22.00',
                                       style: FlutterFlowTheme.of(context)
@@ -1663,7 +1663,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1671,11 +1671,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '23.00',
                                       style: FlutterFlowTheme.of(context)
@@ -1706,7 +1706,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1714,11 +1714,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       '00.00',
                                       style: FlutterFlowTheme.of(context)
@@ -1749,9 +1749,9 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
-                          ].divide(SizedBox(height: 20.0)),
+                          ].divide(const SizedBox(height: 20.0)),
                         ),
                         Column(
                           mainAxisSize: MainAxisSize.max,
@@ -1771,8 +1771,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -1790,8 +1790,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -1809,8 +1809,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -1828,8 +1828,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -1847,8 +1847,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -1866,8 +1866,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -1885,8 +1885,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -1904,8 +1904,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -1923,8 +1923,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -1936,7 +1936,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                       width: 56.0,
                                       height: 52.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFFFF5E0),
+                                        color: const Color(0xFFFFF5E0),
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
@@ -1946,7 +1946,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                           Container(
                                             width: 8.0,
                                             height: 100.0,
-                                            decoration: BoxDecoration(
+                                            decoration: const BoxDecoration(
                                               color: Color(0xFFFFC83B),
                                               borderRadius: BorderRadius.only(
                                                 topLeft: Radius.circular(8.0),
@@ -1957,7 +1957,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1968,7 +1968,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'นายทดสอบ BMSTest',
@@ -1990,7 +1990,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'สมองบวมจากเนื้อราย',
@@ -2014,10 +2014,10 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                         ),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 4.0)),
+                                              ].divide(const SizedBox(height: 4.0)),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ),
                                   ),
@@ -2026,7 +2026,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                       width: 56.0,
                                       height: 52.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFD7F5FF),
+                                        color: const Color(0xFFD7F5FF),
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
@@ -2040,7 +2040,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .accent1,
-                                              borderRadius: BorderRadius.only(
+                                              borderRadius: const BorderRadius.only(
                                                 topLeft: Radius.circular(8.0),
                                                 bottomLeft:
                                                     Radius.circular(8.0),
@@ -2049,7 +2049,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -2060,7 +2060,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'นายทดสอบ BMSTest',
@@ -2082,7 +2082,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'สมองบวมจากเนื้อราย',
@@ -2106,16 +2106,16 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                         ),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 4.0)),
+                                              ].divide(const SizedBox(height: 4.0)),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -2127,7 +2127,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                       width: 56.0,
                                       height: 52.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFFFF5E0),
+                                        color: const Color(0xFFFFF5E0),
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
@@ -2137,7 +2137,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                           Container(
                                             width: 8.0,
                                             height: 100.0,
-                                            decoration: BoxDecoration(
+                                            decoration: const BoxDecoration(
                                               color: Color(0xFFFFC83B),
                                               borderRadius: BorderRadius.only(
                                                 topLeft: Radius.circular(8.0),
@@ -2148,7 +2148,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -2159,7 +2159,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'นายทดสอบ BMSTest',
@@ -2181,7 +2181,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'โรคเบาหวาน',
@@ -2205,10 +2205,10 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                         ),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 4.0)),
+                                              ].divide(const SizedBox(height: 4.0)),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ),
                                   ),
@@ -2217,7 +2217,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                       width: 56.0,
                                       height: 52.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFD4EFD4),
+                                        color: const Color(0xFFD4EFD4),
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
@@ -2231,7 +2231,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .success,
-                                              borderRadius: BorderRadius.only(
+                                              borderRadius: const BorderRadius.only(
                                                 topLeft: Radius.circular(8.0),
                                                 bottomLeft:
                                                     Radius.circular(8.0),
@@ -2240,7 +2240,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -2251,7 +2251,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'นายทดสอบ BMSTest',
@@ -2273,7 +2273,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'โรคเลือดจาง',
@@ -2297,16 +2297,16 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                         ),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 4.0)),
+                                              ].divide(const SizedBox(height: 4.0)),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -2318,7 +2318,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                       width: 56.0,
                                       height: 52.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFFFDDDF),
+                                        color: const Color(0xFFFFDDDF),
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
@@ -2332,7 +2332,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .error,
-                                              borderRadius: BorderRadius.only(
+                                              borderRadius: const BorderRadius.only(
                                                 topLeft: Radius.circular(8.0),
                                                 bottomLeft:
                                                     Radius.circular(8.0),
@@ -2341,7 +2341,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -2352,7 +2352,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'นายทดสอบ BMSTest',
@@ -2374,7 +2374,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'โรคกระเพาะอักเสบ',
@@ -2398,16 +2398,16 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                         ),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 4.0)),
+                                              ].divide(const SizedBox(height: 4.0)),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -2425,8 +2425,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -2438,7 +2438,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                       width: 56.0,
                                       height: 52.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFD4EFD4),
+                                        color: const Color(0xFFD4EFD4),
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
@@ -2452,7 +2452,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .success,
-                                              borderRadius: BorderRadius.only(
+                                              borderRadius: const BorderRadius.only(
                                                 topLeft: Radius.circular(8.0),
                                                 bottomLeft:
                                                     Radius.circular(8.0),
@@ -2461,7 +2461,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -2472,7 +2472,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'นายทดสอบ BMSTest',
@@ -2494,7 +2494,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'โรคหัวใจ',
@@ -2518,16 +2518,16 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                         ),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 4.0)),
+                                              ].divide(const SizedBox(height: 4.0)),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -2539,7 +2539,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                       width: 56.0,
                                       height: 52.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFFFF5E0),
+                                        color: const Color(0xFFFFF5E0),
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
@@ -2549,7 +2549,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                           Container(
                                             width: 8.0,
                                             height: 100.0,
-                                            decoration: BoxDecoration(
+                                            decoration: const BoxDecoration(
                                               color: Color(0xFFFFC83B),
                                               borderRadius: BorderRadius.only(
                                                 topLeft: Radius.circular(8.0),
@@ -2560,7 +2560,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -2571,7 +2571,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'นายทดสอบ BMSTest',
@@ -2593,7 +2593,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'โรคมะเร็ง',
@@ -2617,10 +2617,10 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                         ),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 4.0)),
+                                              ].divide(const SizedBox(height: 4.0)),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ),
                                   ),
@@ -2629,7 +2629,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                       width: 56.0,
                                       height: 52.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFFFF5E0),
+                                        color: const Color(0xFFFFF5E0),
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
@@ -2639,7 +2639,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                           Container(
                                             width: 8.0,
                                             height: 100.0,
-                                            decoration: BoxDecoration(
+                                            decoration: const BoxDecoration(
                                               color: Color(0xFFFFC83B),
                                               borderRadius: BorderRadius.only(
                                                 topLeft: Radius.circular(8.0),
@@ -2650,7 +2650,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -2661,7 +2661,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'นายทดสอบ BMSTest',
@@ -2683,7 +2683,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'โรคมะเร็ง',
@@ -2707,16 +2707,16 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                         ),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 4.0)),
+                                              ].divide(const SizedBox(height: 4.0)),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -2728,7 +2728,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                       width: 56.0,
                                       height: 52.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFFFF5E0),
+                                        color: const Color(0xFFFFF5E0),
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
@@ -2738,7 +2738,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                           Container(
                                             width: 8.0,
                                             height: 100.0,
-                                            decoration: BoxDecoration(
+                                            decoration: const BoxDecoration(
                                               color: Color(0xFFFFC83B),
                                               borderRadius: BorderRadius.only(
                                                 topLeft: Radius.circular(8.0),
@@ -2749,7 +2749,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -2760,7 +2760,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'นายทดสอบ BMSTest',
@@ -2782,7 +2782,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'โรคตับ',
@@ -2806,16 +2806,16 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                         ),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 4.0)),
+                                              ].divide(const SizedBox(height: 4.0)),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -2827,7 +2827,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                       width: 56.0,
                                       height: 52.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFFFF5E0),
+                                        color: const Color(0xFFFFF5E0),
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
@@ -2837,7 +2837,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                           Container(
                                             width: 8.0,
                                             height: 100.0,
-                                            decoration: BoxDecoration(
+                                            decoration: const BoxDecoration(
                                               color: Color(0xFFFFC83B),
                                               borderRadius: BorderRadius.only(
                                                 topLeft: Radius.circular(8.0),
@@ -2848,7 +2848,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -2859,7 +2859,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'นายทดสอบ BMSTest',
@@ -2881,7 +2881,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Text(
                                                     'ความดันโลหิตสูง',
@@ -2905,16 +2905,16 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                         ),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 4.0)),
+                                              ].divide(const SizedBox(height: 4.0)),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -2932,8 +2932,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -2951,8 +2951,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -2970,8 +2970,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -2989,8 +2989,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -3008,8 +3008,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -3027,8 +3027,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                             Expanded(
@@ -3046,13 +3046,13 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 4.0))
-                                    .addToStart(SizedBox(width: 66.0)),
+                                    .divide(const SizedBox(width: 4.0))
+                                    .addToStart(const SizedBox(width: 66.0)),
                               ),
                             ),
                           ]
-                              .divide(SizedBox(height: 8.0))
-                              .addToStart(SizedBox(height: 24.0)),
+                              .divide(const SizedBox(height: 8.0))
+                              .addToStart(const SizedBox(height: 24.0)),
                         ),
                       ],
                     ),

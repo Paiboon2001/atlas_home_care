@@ -1,5 +1,3 @@
-import '/assessmentform/thirtytree/widget/amount/amount_widget.dart';
-import '/assessmentform/thirtytree/widget/amount_1/amount1_widget.dart';
 import '/assessmentform/thirtytree/widget/cb_click/cb_click_widget.dart';
 import '/assessmentform/thirtytree/widget/checkeight/checkeight_widget.dart';
 import '/assessmentform/thirtytree/widget/checkfive/checkfive_widget.dart';
@@ -10,7 +8,6 @@ import '/assessmentform/thirtytree/widget/checkseven/checkseven_widget.dart';
 import '/assessmentform/thirtytree/widget/checksix/checksix_widget.dart';
 import '/assessmentform/thirtytree/widget/checkthree/checkthree_widget.dart';
 import '/assessmentform/thirtytree/widget/checktwo/checktwo_widget.dart';
-import '/assessmentform/thirtytree/widget/choose_cancer/choose_cancer_widget.dart';
 import '/assessmentform/thirtytree/widget/eatb/eatb_widget.dart';
 import '/assessmentform/thirtytree/widget/healthone/healthone_widget.dart';
 import '/assessmentform/thirtytree/widget/healthtwo/healthtwo_widget.dart';
@@ -25,23 +22,11 @@ import '/assessmentform/thirtytree/widget/riskone/riskone_widget.dart';
 import '/assessmentform/thirtytree/widget/riskthree/riskthree_widget.dart';
 import '/assessmentform/thirtytree/widget/risktwo/risktwo_widget.dart';
 import '/assessmentform/thirtytree/widget/start_as_bottom/start_as_bottom_widget.dart';
-import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import '/poeple_community/confirm/warming_family/warming_family_widget.dart';
 import '/poeple_community/widget/summary_servay/summary_servay_widget.dart';
-import 'dart:math';
-import 'dart:ui';
 import '/index.dart';
 import 'main_assignt_widget.dart' show MainAssigntWidget;
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class MainAssigntModel extends FlutterFlowModel<MainAssigntWidget> {
   ///  Local state fields for this page.

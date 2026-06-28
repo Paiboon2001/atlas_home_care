@@ -70,7 +70,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Container(
                       width: () {
                         if (MediaQuery.sizeOf(context).width <
@@ -103,12 +103,12 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           colors: [
-                            Color(0xFFA0D6FF),
+                            const Color(0xFFA0D6FF),
                             FlutterFlowTheme.of(context).primary
                           ],
-                          stops: [0.0, 1.0],
-                          begin: AlignmentDirectional(0.0, -1.0),
-                          end: AlignmentDirectional(0, 1.0),
+                          stops: const [0.0, 1.0],
+                          begin: const AlignmentDirectional(0.0, -1.0),
+                          end: const AlignmentDirectional(0, 1.0),
                         ),
                         shape: BoxShape.circle,
                         border: Border.all(
@@ -122,13 +122,13 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                             width: 300.0,
                             height: 300.0,
                             clipBehavior: Clip.antiAlias,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               shape: BoxShape.circle,
                             ),
                             child: Image.asset(
                               'assets/images/doc1.png',
                               fit: BoxFit.cover,
-                              alignment: Alignment(0.0, 1.0),
+                              alignment: const Alignment(0.0, 1.0),
                             ),
                           ),
                         ],
@@ -140,7 +140,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(-1.0, 0.0),
+                        alignment: const AlignmentDirectional(-1.0, 0.0),
                         child: Text(
                           'รพ.บางกอก เมดิคอล เทคโนโลยี',
                           style: FlutterFlowTheme.of(context)
@@ -158,7 +158,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-1.0, 0.0),
+                        alignment: const AlignmentDirectional(-1.0, 0.0),
                         child: RichText(
                           textScaler: MediaQuery.of(context).textScaler,
                           text: TextSpan(
@@ -186,7 +186,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                     .override(
                                       fontFamily: FlutterFlowTheme.of(context)
                                           .bodyMediumFamily,
-                                      color: Color(0xFFF9E7C9),
+                                      color: const Color(0xFFF9E7C9),
                                       letterSpacing: 0.0,
                                       useGoogleFonts:
                                           !FlutterFlowTheme.of(context)
@@ -209,19 +209,19 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(height: 4.0)),
+                    ].divide(const SizedBox(height: 4.0)),
                   ),
-                ].divide(SizedBox(width: 12.0)),
+                ].divide(const SizedBox(width: 12.0)),
               ),
               actions: [
                 Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(-0.63, 0.0),
+                      alignment: const AlignmentDirectional(-0.63, 0.0),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -233,12 +233,12 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                           child: Container(
                             width: 40.0,
                             height: 40.0,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Color(0x93164874),
                               shape: BoxShape.circle,
                             ),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Icon(
                                 Icons.history_rounded,
                                 color: FlutterFlowTheme.of(context)
@@ -252,7 +252,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 16.0, 0.0),
                       child: badges.Badge(
                         badgeContent: Text(
                           '5',
@@ -267,12 +267,12 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                         shape: badges.BadgeShape.circle,
                         badgeColor: FlutterFlowTheme.of(context).error,
                         elevation: 0.0,
-                        padding: EdgeInsets.all(6.0),
+                        padding: const EdgeInsets.all(6.0),
                         position: badges.BadgePosition.topEnd(),
                         animationType: badges.BadgeAnimationType.scale,
                         toAnimate: true,
                         child: Align(
-                          alignment: AlignmentDirectional(-0.63, 0.0),
+                          alignment: const AlignmentDirectional(-0.63, 0.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -284,12 +284,12 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                             child: Container(
                               width: 40.0,
                               height: 40.0,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: Color(0x93164874),
                                 shape: BoxShape.circle,
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Icon(
                                   Icons.notifications_outlined,
                                   color: FlutterFlowTheme.of(context)
@@ -302,7 +302,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                         ),
                       ),
                     ),
-                  ].divide(SizedBox(width: 12.0)),
+                  ].divide(const SizedBox(width: 12.0)),
                 ),
               ],
               centerTitle: false,
@@ -317,34 +317,34 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      Color(0xFF339FF3),
+                      const Color(0xFF339FF3),
                       FlutterFlowTheme.of(context).primaryBackground,
                       FlutterFlowTheme.of(context).primaryBackground
                     ],
-                    stops: [0.0, 0.3, 1.0],
-                    begin: AlignmentDirectional(0.0, -1.0),
-                    end: AlignmentDirectional(0, 1.0),
+                    stops: const [0.0, 0.3, 1.0],
+                    begin: const AlignmentDirectional(0.0, -1.0),
+                    end: const AlignmentDirectional(0, 1.0),
                   ),
                 ),
                 child: Stack(
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Container(
                                 width: double.infinity,
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  boxShadow: [
+                                  boxShadow: const [
                                     BoxShadow(
                                       blurRadius: 8.0,
                                       color: Color(0x1A000000),
@@ -360,7 +360,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsets.all(12.0),
+                                      padding: const EdgeInsets.all(12.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         crossAxisAlignment:
@@ -409,7 +409,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                   }
                                                 }(),
                                                 decoration: BoxDecoration(
-                                                  gradient: LinearGradient(
+                                                  gradient: const LinearGradient(
                                                     colors: [
                                                       Color(0xFFFFE7A2),
                                                       Color(0xFFFFBD00)
@@ -422,12 +422,12 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                   ),
                                                   shape: BoxShape.circle,
                                                   border: Border.all(
-                                                    color: Color(0xFFFFDB00),
+                                                    color: const Color(0xFFFFDB00),
                                                   ),
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Icon(
                                                     Icons.topic,
@@ -478,7 +478,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                                         context)
                                                                     .titleMediumIsCustom,
                                                           ),
-                                                  colors: [
+                                                  colors: const [
                                                     Color(0xFFC86807),
                                                     Color(0xFFF7C921)
                                                   ],
@@ -509,13 +509,13 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                   }
                                                 }(),
                                                 decoration: BoxDecoration(
-                                                  boxShadow: [
+                                                  boxShadow: const [
                                                     BoxShadow(
                                                       blurRadius: 4.0,
                                                       color: Color(0x6AD3A30D),
                                                     )
                                                   ],
-                                                  gradient: LinearGradient(
+                                                  gradient: const LinearGradient(
                                                     colors: [
                                                       Color(0xFFFFE7A2),
                                                       Color(0xFFFFBD00)
@@ -530,16 +530,16 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                       BorderRadius.circular(
                                                           100.0),
                                                   border: Border.all(
-                                                    color: Color(0xFFFFDB00),
+                                                    color: const Color(0xFFFFDB00),
                                                   ),
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(12.0, 4.0,
                                                                 12.0, 4.0),
                                                     child: Text(
@@ -557,7 +557,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                                 .secondaryBackground,
                                                             letterSpacing: 0.0,
                                                             shadows: [
-                                                              Shadow(
+                                                              const Shadow(
                                                                 color: Color(
                                                                     0xFF9B7C4A),
                                                                 offset: Offset(
@@ -575,7 +575,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 8.0)),
+                                            ].divide(const SizedBox(width: 8.0)),
                                           ),
                                           Container(
                                             width: double.infinity,
@@ -588,7 +588,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                   BorderRadius.circular(100.0),
                                             ),
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.0, 0.0),
                                               child: Container(
                                                 width:
@@ -597,7 +597,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                         0.2,
                                                 height: 8.0,
                                                 decoration: BoxDecoration(
-                                                  gradient: LinearGradient(
+                                                  gradient: const LinearGradient(
                                                     colors: [
                                                       Color(0xFFFFE7A2),
                                                       Color(0xFFFFBD00)
@@ -615,7 +615,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                               ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 12.0)),
+                                        ].divide(const SizedBox(height: 12.0)),
                                       ),
                                     ),
                                     Container(
@@ -657,9 +657,9 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(1.0, 1.0),
+                                                const AlignmentDirectional(1.0, 1.0),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 0.0, 8.0, 8.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
@@ -672,7 +672,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                     updateCallback: () =>
                                                         safeSetState(() {}),
                                                     child:
-                                                        NavigatebuttonWidget(),
+                                                        const NavigatebuttonWidget(),
                                                   ),
                                                   Container(
                                                     width: () {
@@ -719,7 +719,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                         return 56.0;
                                                       }
                                                     }(),
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       boxShadow: [
                                                         BoxShadow(
                                                           blurRadius: 4.0,
@@ -797,7 +797,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                       },
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                           ),
@@ -851,21 +851,21 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                   .titleMediumIsCustom,
                                         ),
                                   ),
-                                ].divide(SizedBox(height: 16.0)),
+                                ].divide(const SizedBox(height: 16.0)),
                               ),
                             ),
                           ]
-                              .addToStart(SizedBox(height: 16.0))
-                              .addToEnd(SizedBox(height: 112.0)),
+                              .addToStart(const SizedBox(height: 16.0))
+                              .addToEnd(const SizedBox(height: 112.0)),
                         ),
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0.0, 1.0),
+                      alignment: const AlignmentDirectional(0.0, 1.0),
                       child: wrapWithModel(
                         model: _model.navbarModel,
                         updateCallback: () => safeSetState(() {}),
-                        child: NavbarWidget(
+                        child: const NavbarWidget(
                           navbar: 1,
                           hide: false,
                         ),

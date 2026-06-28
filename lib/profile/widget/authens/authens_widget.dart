@@ -53,14 +53,14 @@ class _AuthensWidgetState extends State<AuthensWidget> {
         borderRadius: BorderRadius.circular(16.0),
       ),
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           children: [
             Expanded(
               child: Text(
                 valueOrDefault<String>(
-                  widget!.names,
+                  widget.names,
                   'na',
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(

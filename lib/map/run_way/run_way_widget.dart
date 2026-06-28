@@ -96,14 +96,14 @@ class _RunWayWidgetState extends State<RunWayWidget>
                   ).image,
                 ),
               ),
-              child: Stack(
+              child: const Stack(
                 children: [],
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8.0),
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   boxShadow: [
                     BoxShadow(
                       blurRadius: 4.0,
@@ -134,30 +134,30 @@ class _RunWayWidgetState extends State<RunWayWidget>
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(1.0, 1.0),
+                    alignment: const AlignmentDirectional(1.0, 1.0),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 16.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 16.0),
                       child: wrapWithModel(
                         model: _model.navigatebuttonModel,
                         updateCallback: () => safeSetState(() {}),
-                        child: NavigatebuttonWidget(),
+                        child: const NavigatebuttonWidget(),
                       ),
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.0, 1.0),
+                    alignment: const AlignmentDirectional(0.0, 1.0),
                     child: Container(
                       width: double.infinity,
                       height: MediaQuery.sizeOf(context).height * 0.34,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 4.0,
                             color: Color(0x35000000),
@@ -167,7 +167,7 @@ class _RunWayWidgetState extends State<RunWayWidget>
                             ),
                           )
                         ],
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           topLeft: Radius.circular(24.0),
                           topRight: Radius.circular(24.0),
                         ),
@@ -176,7 +176,7 @@ class _RunWayWidgetState extends State<RunWayWidget>
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -301,7 +301,7 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                               ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 2.0)),
+                                    ].divide(const SizedBox(height: 2.0)),
                                   ),
                                 ),
                                 InkWell(
@@ -324,14 +324,14 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                           FlutterFlowTheme.of(context)
                                               .customColor1
                                         ],
-                                        stops: [0.0, 1.0],
-                                        begin: AlignmentDirectional(0.0, -1.0),
-                                        end: AlignmentDirectional(0, 1.0),
+                                        stops: const [0.0, 1.0],
+                                        begin: const AlignmentDirectional(0.0, -1.0),
+                                        end: const AlignmentDirectional(0, 1.0),
                                       ),
                                       shape: BoxShape.circle,
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Icon(
                                         Icons.person_add_alt_rounded,
                                         color: FlutterFlowTheme.of(context)
@@ -350,7 +350,7 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                     context.pushNamed(
                                       MapHomeWidget.routeName,
                                       extra: <String, dynamic>{
-                                        '__transition_info__': TransitionInfo(
+                                        '__transition_info__': const TransitionInfo(
                                           hasTransition: true,
                                           transitionType:
                                               PageTransitionType.fade,
@@ -391,12 +391,12 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                         return 40.0;
                                       }
                                     }(),
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0x266C6C6C),
                                       shape: BoxShape.circle,
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Icon(
                                         Icons.close_rounded,
                                         color: FlutterFlowTheme.of(context)
@@ -421,10 +421,10 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                     ),
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 12.0)),
+                              ].divide(const SizedBox(width: 12.0)),
                             ),
                           ),
-                          Divider(
+                          const Divider(
                             height: 1.0,
                             thickness: 1.0,
                             color: Color(0xFFDCE0EA),
@@ -435,14 +435,14 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
-                                        boxShadow: [
+                                        boxShadow: const [
                                           BoxShadow(
                                             blurRadius: 4.0,
                                             color: Color(0x19000000),
@@ -456,7 +456,7 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                             BorderRadius.circular(24.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(16.0),
+                                        padding: const EdgeInsets.all(16.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
@@ -509,23 +509,23 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                                   decoration: BoxDecoration(
                                                     gradient: LinearGradient(
                                                       colors: [
-                                                        Color(0xFF83C3FC),
+                                                        const Color(0xFF83C3FC),
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .primary
                                                       ],
-                                                      stops: [0.0, 1.0],
+                                                      stops: const [0.0, 1.0],
                                                       begin:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, -1.0),
-                                                      end: AlignmentDirectional(
+                                                      end: const AlignmentDirectional(
                                                           0, 1.0),
                                                     ),
                                                     shape: BoxShape.circle,
                                                   ),
                                                   child: Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Icon(
                                                       Icons.location_on_rounded,
@@ -559,7 +559,7 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                                                 .bodyMediumIsCustom,
                                                       ),
                                                 ),
-                                              ].divide(SizedBox(width: 8.0)),
+                                              ].divide(const SizedBox(width: 8.0)),
                                             ),
                                             Text(
                                               'หมู่บ้านกฤษดานคร หมู่ 6  บ้านเลขที่ 1 แขวงราษฎร์บูรณะ เขตราษฎร์บูรณะ กรุงเทพมหานคร 10140',
@@ -581,7 +581,7 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                                                 .bodyMediumIsCustom,
                                                       ),
                                             ),
-                                          ].divide(SizedBox(height: 8.0)),
+                                          ].divide(const SizedBox(height: 8.0)),
                                         ),
                                       ),
                                     ),
@@ -589,15 +589,15 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                   wrapWithModel(
                                     model: _model.totalParentsModel,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: TotalParentsWidget(),
+                                    child: const TotalParentsWidget(),
                                   ),
                                 ]
-                                    .divide(SizedBox(height: 16.0))
-                                    .around(SizedBox(height: 16.0)),
+                                    .divide(const SizedBox(height: 16.0))
+                                    .around(const SizedBox(height: 16.0)),
                               ),
                             ),
                           ),
-                          Divider(
+                          const Divider(
                             height: 1.0,
                             thickness: 1.0,
                             color: Color(0xFFDCE0EA),
@@ -608,12 +608,12 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                   .secondaryBackground,
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 12.0, 16.0, 24.0),
                               child: MasonryGridView.builder(
                                 physics: const NeverScrollableScrollPhysics(),
                                 gridDelegate:
-                                    SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                    const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                   crossAxisCount: 2,
                                 ),
                                 crossAxisSpacing: 8.0,
@@ -644,7 +644,7 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                             }
                                           }(),
                                           decoration: BoxDecoration(
-                                            color: Color(0xFFC8F4FF),
+                                            color: const Color(0xFFC8F4FF),
                                             borderRadius:
                                                 BorderRadius.circular(100.0),
                                           ),
@@ -654,7 +654,7 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                                 MainAxisAlignment.center,
                                             children: [
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Icon(
                                                   Icons.navigation_rounded,
@@ -668,7 +668,7 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                                 ),
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
                                                   'เริ่มต้น',
@@ -692,7 +692,7 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                                       ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                     () => Container(
@@ -722,7 +722,7 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                             borderRadius:
                                                 BorderRadius.circular(100.0),
                                             border: Border.all(
-                                              color: Color(0xFFE0E4F0),
+                                              color: const Color(0xFFE0E4F0),
                                             ),
                                           ),
                                           child: Row(
@@ -738,7 +738,7 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                                 size: 24.0,
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
                                                   'google Map',
@@ -762,7 +762,7 @@ class _RunWayWidgetState extends State<RunWayWidget>
                                                       ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                   ][index]();

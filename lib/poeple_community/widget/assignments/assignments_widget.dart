@@ -60,7 +60,7 @@ class _AssignmentsWidgetState extends State<AssignmentsWidget> {
           return 116.0;
         }
       }(),
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
@@ -96,7 +96,7 @@ class _AssignmentsWidgetState extends State<AssignmentsWidget> {
                 image: DecorationImage(
                   fit: BoxFit.cover,
                   image: Image.network(
-                    widget!.picture!,
+                    widget.picture!,
                   ).image,
                 ),
                 shape: BoxShape.rectangle,
@@ -105,7 +105,7 @@ class _AssignmentsWidgetState extends State<AssignmentsWidget> {
           ),
           Text(
             valueOrDefault<String>(
-              widget!.text,
+              widget.text,
               'na',
             ),
             textAlign: TextAlign.center,
@@ -119,7 +119,7 @@ class _AssignmentsWidgetState extends State<AssignmentsWidget> {
                 ),
             overflow: TextOverflow.ellipsis,
           ),
-        ].divide(SizedBox(height: 4.0)),
+        ].divide(const SizedBox(height: 4.0)),
       ),
     );
   }

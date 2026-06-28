@@ -99,7 +99,7 @@ class _VisitDoneWidgetState extends State<VisitDoneWidget> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Stack(
-            alignment: AlignmentDirectional(1.0, 1.0),
+            alignment: const AlignmentDirectional(1.0, 1.0),
             children: [
               Container(
                 width: () {
@@ -132,23 +132,23 @@ class _VisitDoneWidgetState extends State<VisitDoneWidget> {
                   image: DecorationImage(
                     fit: BoxFit.cover,
                     image: Image.network(
-                      widget!.picture!,
+                      widget.picture!,
                     ).image,
                   ),
                   gradient: LinearGradient(
                     colors: [
                       valueOrDefault<Color>(
-                        widget!.gradienttwo,
+                        widget.gradienttwo,
                         FlutterFlowTheme.of(context).tertiary,
                       ),
                       valueOrDefault<Color>(
-                        widget!.gradientone,
+                        widget.gradientone,
                         FlutterFlowTheme.of(context).primary,
                       )
                     ],
-                    stops: [0.0, 1.0],
-                    begin: AlignmentDirectional(0.0, -1.0),
-                    end: AlignmentDirectional(0, 1.0),
+                    stops: const [0.0, 1.0],
+                    begin: const AlignmentDirectional(0.0, -1.0),
+                    end: const AlignmentDirectional(0, 1.0),
                   ),
                   shape: BoxShape.circle,
                 ),
@@ -157,7 +157,7 @@ class _VisitDoneWidgetState extends State<VisitDoneWidget> {
                 width: 20.0,
                 height: 20.0,
                 decoration: BoxDecoration(
-                  color: widget!.colore,
+                  color: widget.colore,
                   shape: BoxShape.circle,
                   border: Border.all(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -165,8 +165,8 @@ class _VisitDoneWidgetState extends State<VisitDoneWidget> {
                   ),
                 ),
                 child: Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
-                  child: widget!.iconse!,
+                  alignment: const AlignmentDirectional(0.0, 0.0),
+                  child: widget.iconse!,
                 ),
               ),
             ],
@@ -178,13 +178,13 @@ class _VisitDoneWidgetState extends State<VisitDoneWidget> {
               children: [
                 Text(
                   valueOrDefault<String>(
-                    widget!.textre,
+                    widget.textre,
                     'na',
                   ),
                   style: FlutterFlowTheme.of(context).labelMedium.override(
                         fontFamily:
                             FlutterFlowTheme.of(context).labelMediumFamily,
-                        color: widget!.textcolor,
+                        color: widget.textcolor,
                         letterSpacing: 0.0,
                         useGoogleFonts:
                             !FlutterFlowTheme.of(context).labelMediumIsCustom,
@@ -208,14 +208,14 @@ class _VisitDoneWidgetState extends State<VisitDoneWidget> {
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily:
                               FlutterFlowTheme.of(context).bodyMediumFamily,
-                          color: Color(0xFFF9E7C9),
+                          color: const Color(0xFFF9E7C9),
                           letterSpacing: 0.0,
                           useGoogleFonts:
                               !FlutterFlowTheme.of(context).bodyMediumIsCustom,
                         ),
                   ),
                 ),
-              ].divide(SizedBox(height: 6.0)),
+              ].divide(const SizedBox(height: 6.0)),
             ),
           ),
           Column(
@@ -237,11 +237,11 @@ class _VisitDoneWidgetState extends State<VisitDoneWidget> {
                 width: 8.0,
                 height: 8.0,
                 decoration: BoxDecoration(
-                  color: widget!.pincolor,
+                  color: widget.pincolor,
                   shape: BoxShape.circle,
                 ),
               ),
-            ].divide(SizedBox(height: 16.0)),
+            ].divide(const SizedBox(height: 16.0)),
           ),
         ].divide(SizedBox(width: () {
           if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {

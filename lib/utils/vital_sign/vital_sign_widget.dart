@@ -80,7 +80,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
     context.watch<FFAppState>();
 
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
@@ -89,11 +89,11 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Color(0xE6FFFFFF),
-                    boxShadow: [
+                    color: const Color(0xE6FFFFFF),
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 4.0,
                         color: Color(0x4D2196F3),
@@ -142,7 +142,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                           }
                         }(),
                         decoration: BoxDecoration(
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 4.0,
                               color: Color(0x4D2196F3),
@@ -154,20 +154,20 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                           ],
                           gradient: LinearGradient(
                             colors: [
-                              Color(0xFF7EC3FC),
+                              const Color(0xFF7EC3FC),
                               FlutterFlowTheme.of(context).info
                             ],
-                            stops: [0.0, 1.0],
-                            begin: AlignmentDirectional(0.56, -1.0),
-                            end: AlignmentDirectional(-0.56, 1.0),
+                            stops: const [0.0, 1.0],
+                            begin: const AlignmentDirectional(0.56, -1.0),
+                            end: const AlignmentDirectional(-0.56, 1.0),
                           ),
                           shape: BoxShape.circle,
                           border: Border.all(
-                            color: Color(0x9AFFFFFF),
+                            color: const Color(0x9AFFFFFF),
                           ),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: ToggleIcon(
                             onPressed: () async {
                               safeSetState(() => FFAppState().bluetooth =
@@ -229,7 +229,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                               fit: BoxFit.contain,
                               animate: true,
                             ),
-                          ].divide(SizedBox(width: 8.0)),
+                          ].divide(const SizedBox(width: 8.0)),
                         ),
                       Lottie.asset(
                         'assets/jsons/Animation_-_1742874161706.json',
@@ -239,8 +239,8 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                         animate: true,
                       ),
                     ]
-                        .divide(SizedBox(width: 12.0))
-                        .addToEnd(SizedBox(width: 8.0)),
+                        .divide(const SizedBox(width: 12.0))
+                        .addToEnd(const SizedBox(width: 8.0)),
                   ),
                 ),
               ),
@@ -266,7 +266,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
             crossAxisSpacing: 12.0,
             mainAxisSpacing: 12.0,
             itemCount: 8,
-            padding: EdgeInsets.fromLTRB(
+            padding: const EdgeInsets.fromLTRB(
               0,
               0,
               0,
@@ -282,7 +282,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                         borderRadius: BorderRadius.circular(24.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -293,7 +293,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
@@ -338,17 +338,17 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                               FlutterFlowTheme.of(context)
                                                   .primary
                                             ],
-                                            stops: [0.0, 1.0],
-                                            begin: AlignmentDirectional(
+                                            stops: const [0.0, 1.0],
+                                            begin: const AlignmentDirectional(
                                                 0.56, -1.0),
-                                            end: AlignmentDirectional(
+                                            end: const AlignmentDirectional(
                                                 -0.56, 1.0),
                                           ),
                                           shape: BoxShape.circle,
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Icon(
                                             Icons.thermostat_sharp,
                                             color: FlutterFlowTheme.of(context)
@@ -376,14 +376,14 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                                       .bodyMediumIsCustom,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                 ),
                               ],
                             ),
                             Stack(
                               children: [
-                                Container(
+                                SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
                                     controller: _model.textController1,
@@ -476,9 +476,9 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1.0, 0.0),
+                                  alignment: const AlignmentDirectional(1.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 16.0, 0.0, 0.0),
                                     child: Text(
                                       'องศา',
@@ -499,7 +499,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                 ),
                               ],
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
@@ -510,14 +510,14 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                         borderRadius: BorderRadius.circular(24.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(-1.0, 0.0),
+                              alignment: const AlignmentDirectional(-1.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
@@ -554,7 +554,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                         return 32.0;
                                       }
                                     }(),
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       gradient: LinearGradient(
                                         colors: [
                                           Color(0xFFEE6A61),
@@ -567,7 +567,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                       shape: BoxShape.circle,
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Icon(
                                         Icons.monitor_heart_rounded,
                                         color: FlutterFlowTheme.of(context)
@@ -585,7 +585,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMediumFamily,
-                                          color: Color(0xFFD83B30),
+                                          color: const Color(0xFFD83B30),
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w500,
                                           useGoogleFonts:
@@ -593,7 +593,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                                   .bodyMediumIsCustom,
                                         ),
                                   ),
-                                ].divide(SizedBox(width: 8.0)),
+                                ].divide(const SizedBox(width: 8.0)),
                               ),
                             ),
                             Row(
@@ -604,8 +604,8 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
-                                        child: Container(
+                                            const AlignmentDirectional(0.0, 0.0),
+                                        child: SizedBox(
                                           width: double.infinity,
                                           child: TextFormField(
                                             controller: _model.textController2,
@@ -720,10 +720,10 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(1.0, 0.0),
+                                            const AlignmentDirectional(1.0, 0.0),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 16.0, 0.0, 0.0),
                                           child: Text(
                                             'mmHg',
@@ -765,8 +765,8 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
-                                        child: Container(
+                                            const AlignmentDirectional(0.0, 0.0),
+                                        child: SizedBox(
                                           width: double.infinity,
                                           child: TextFormField(
                                             controller: _model.textController3,
@@ -881,10 +881,10 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(1.0, 0.0),
+                                            const AlignmentDirectional(1.0, 0.0),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 16.0, 0.0, 0.0),
                                           child: Text(
                                             'mmHg',
@@ -923,7 +923,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                 }
                               }())),
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
@@ -934,7 +934,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                         borderRadius: BorderRadius.circular(24.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -945,7 +945,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
@@ -982,7 +982,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                             return 32.0;
                                           }
                                         }(),
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           gradient: LinearGradient(
                                             colors: [
                                               Color(0xFFFDBA55),
@@ -998,7 +998,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Icon(
                                             Icons.water_drop_rounded,
                                             color: FlutterFlowTheme.of(context)
@@ -1016,7 +1016,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMediumFamily,
-                                              color: Color(0xFFFF7600),
+                                              color: const Color(0xFFFF7600),
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w500,
                                               useGoogleFonts:
@@ -1024,14 +1024,14 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                                       .bodyMediumIsCustom,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                 ),
                               ],
                             ),
                             Stack(
                               children: [
-                                Container(
+                                SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
                                     controller: _model.textController4,
@@ -1124,9 +1124,9 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1.0, 0.0),
+                                  alignment: const AlignmentDirectional(1.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 16.0, 0.0, 0.0),
                                     child: Text(
                                       'Mg/dL',
@@ -1147,7 +1147,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                 ),
                               ],
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
@@ -1158,7 +1158,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                         borderRadius: BorderRadius.circular(24.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -1169,7 +1169,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
@@ -1206,7 +1206,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                             return 32.0;
                                           }
                                         }(),
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           gradient: LinearGradient(
                                             colors: [
                                               Color(0xFFF7D0CD),
@@ -1222,7 +1222,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Icon(
                                             Icons.blur_on,
                                             color: FlutterFlowTheme.of(context)
@@ -1240,7 +1240,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMediumFamily,
-                                              color: Color(0xFFF86E78),
+                                              color: const Color(0xFFF86E78),
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w500,
                                               useGoogleFonts:
@@ -1248,14 +1248,14 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                                       .bodyMediumIsCustom,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                 ),
                               ],
                             ),
                             Stack(
                               children: [
-                                Container(
+                                SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
                                     controller: _model.textController5,
@@ -1348,9 +1348,9 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1.0, 0.0),
+                                  alignment: const AlignmentDirectional(1.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 16.0, 0.0, 0.0),
                                     child: Text(
                                       'Spo2/%',
@@ -1371,7 +1371,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                 ),
                               ],
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
@@ -1382,7 +1382,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                         borderRadius: BorderRadius.circular(24.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -1393,7 +1393,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
@@ -1430,7 +1430,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                             return 32.0;
                                           }
                                         }(),
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           gradient: LinearGradient(
                                             colors: [
                                               Color(0xFF89B7FF),
@@ -1446,7 +1446,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Icon(
                                             Icons.scale_rounded,
                                             color: FlutterFlowTheme.of(context)
@@ -1474,14 +1474,14 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                                       .bodyMediumIsCustom,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                 ),
                               ],
                             ),
                             Stack(
                               children: [
-                                Container(
+                                SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
                                     controller: _model.textController6,
@@ -1574,9 +1574,9 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1.0, 0.0),
+                                  alignment: const AlignmentDirectional(1.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 16.0, 0.0, 0.0),
                                     child: Text(
                                       'กิโลกรัม',
@@ -1597,7 +1597,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                 ),
                               ],
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
@@ -1608,7 +1608,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                         borderRadius: BorderRadius.circular(24.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -1619,7 +1619,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
@@ -1659,21 +1659,21 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                         decoration: BoxDecoration(
                                           gradient: LinearGradient(
                                             colors: [
-                                              Color(0xFFA5E8A7),
+                                              const Color(0xFFA5E8A7),
                                               FlutterFlowTheme.of(context)
                                                   .success
                                             ],
-                                            stops: [0.0, 1.0],
-                                            begin: AlignmentDirectional(
+                                            stops: const [0.0, 1.0],
+                                            begin: const AlignmentDirectional(
                                                 0.56, -1.0),
-                                            end: AlignmentDirectional(
+                                            end: const AlignmentDirectional(
                                                 -0.56, 1.0),
                                           ),
                                           shape: BoxShape.circle,
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Icon(
                                             Icons.man_4,
                                             color: FlutterFlowTheme.of(context)
@@ -1701,14 +1701,14 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                                       .bodyMediumIsCustom,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                 ),
                               ],
                             ),
                             Stack(
                               children: [
-                                Container(
+                                SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
                                     controller: _model.textController7,
@@ -1801,9 +1801,9 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1.0, 0.0),
+                                  alignment: const AlignmentDirectional(1.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 16.0, 0.0, 0.0),
                                     child: Text(
                                       'เซนติเมตร',
@@ -1824,7 +1824,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                 ),
                               ],
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
@@ -1835,7 +1835,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                         borderRadius: BorderRadius.circular(24.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -1846,7 +1846,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
@@ -1891,17 +1891,17 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                               FlutterFlowTheme.of(context)
                                                   .accent2
                                             ],
-                                            stops: [0.0, 1.0],
-                                            begin: AlignmentDirectional(
+                                            stops: const [0.0, 1.0],
+                                            begin: const AlignmentDirectional(
                                                 0.56, -1.0),
-                                            end: AlignmentDirectional(
+                                            end: const AlignmentDirectional(
                                                 -0.56, 1.0),
                                           ),
                                           shape: BoxShape.circle,
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Icon(
                                             Icons.motion_photos_on_outlined,
                                             color: FlutterFlowTheme.of(context)
@@ -1929,7 +1929,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                                       .bodyMediumIsCustom,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                 ),
                               ],
@@ -1937,8 +1937,8 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                             Stack(
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
-                                  child: Container(
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
+                                  child: SizedBox(
                                     width: double.infinity,
                                     child: TextFormField(
                                       controller: _model.textController8,
@@ -2033,9 +2033,9 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1.0, 0.0),
+                                  alignment: const AlignmentDirectional(1.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 16.0, 0.0, 0.0),
                                     child: Text(
                                       'เซนติเมตร',
@@ -2056,7 +2056,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                 ),
                               ],
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
@@ -2067,14 +2067,14 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                         borderRadius: BorderRadius.circular(24.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(-1.0, 0.0),
+                              alignment: const AlignmentDirectional(-1.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
@@ -2111,7 +2111,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                         return 32.0;
                                       }
                                     }(),
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       gradient: LinearGradient(
                                         colors: [
                                           Color(0xFFF89DEF),
@@ -2124,7 +2124,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                       shape: BoxShape.circle,
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Icon(
                                         Icons.favorite_rounded,
                                         color: FlutterFlowTheme.of(context)
@@ -2142,7 +2142,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMediumFamily,
-                                          color: Color(0xFFD830CA),
+                                          color: const Color(0xFFD830CA),
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w500,
                                           useGoogleFonts:
@@ -2150,12 +2150,12 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                                   .bodyMediumIsCustom,
                                         ),
                                   ),
-                                ].divide(SizedBox(width: 8.0)),
+                                ].divide(const SizedBox(width: 8.0)),
                               ),
                             ),
                             Stack(
                               children: [
-                                Container(
+                                SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
                                     controller: _model.textController9,
@@ -2248,9 +2248,9 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1.0, 0.0),
+                                  alignment: const AlignmentDirectional(1.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 16.0, 0.0, 0.0),
                                     child: Text(
                                       'bpm',
@@ -2271,7 +2271,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                 ),
                               ],
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
@@ -2279,7 +2279,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
             },
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -2300,7 +2300,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                     borderRadius: BorderRadius.circular(24.0),
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -2340,17 +2340,17 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                               decoration: BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
-                                    Color(0xFFA0E1F7),
+                                    const Color(0xFFA0E1F7),
                                     FlutterFlowTheme.of(context).accent1
                                   ],
-                                  stops: [0.0, 1.0],
-                                  begin: AlignmentDirectional(0.56, -1.0),
-                                  end: AlignmentDirectional(-0.56, 1.0),
+                                  stops: const [0.0, 1.0],
+                                  begin: const AlignmentDirectional(0.56, -1.0),
+                                  end: const AlignmentDirectional(-0.56, 1.0),
                                 ),
                                 shape: BoxShape.circle,
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Icon(
                                   Icons.info_rounded,
                                   color: FlutterFlowTheme.of(context)
@@ -2373,9 +2373,9 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                             .labelSmallIsCustom,
                                   ),
                             ),
-                          ].divide(SizedBox(width: 8.0)),
+                          ].divide(const SizedBox(width: 8.0)),
                         ),
-                        Container(
+                        SizedBox(
                           width: double.infinity,
                           child: TextFormField(
                             controller: _model.textController10,
@@ -2406,7 +2406,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                             .labelMediumIsCustom,
                                   ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0x00000000),
                                   width: 1.0,
                                 ),
@@ -2455,7 +2455,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                 .asValidator(context),
                           ),
                         ),
-                      ].divide(SizedBox(height: 8.0)),
+                      ].divide(const SizedBox(height: 8.0)),
                     ),
                   ),
                 ),
@@ -2465,7 +2465,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                     borderRadius: BorderRadius.circular(24.0),
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -2502,7 +2502,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                   return 32.0;
                                 }
                               }(),
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
                                     Color(0xFF46D8AD),
@@ -2515,7 +2515,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                 shape: BoxShape.circle,
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Icon(
                                   Icons.assignment_late_rounded,
                                   color: FlutterFlowTheme.of(context)
@@ -2538,9 +2538,9 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                             .labelSmallIsCustom,
                                   ),
                             ),
-                          ].divide(SizedBox(width: 8.0)),
+                          ].divide(const SizedBox(width: 8.0)),
                         ),
-                        Container(
+                        SizedBox(
                           width: double.infinity,
                           child: TextFormField(
                             controller: _model.textController11,
@@ -2571,7 +2571,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                             .labelMediumIsCustom,
                                   ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0x00000000),
                                   width: 1.0,
                                 ),
@@ -2620,14 +2620,14 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
                                 .asValidator(context),
                           ),
                         ),
-                      ].divide(SizedBox(height: 8.0)),
+                      ].divide(const SizedBox(height: 8.0)),
                     ),
                   ),
                 ),
-              ].divide(SizedBox(height: 12.0)),
+              ].divide(const SizedBox(height: 12.0)),
             ),
           ),
-        ].divide(SizedBox(height: 12.0)).addToStart(SizedBox(height: 16.0)),
+        ].divide(const SizedBox(height: 12.0)).addToStart(const SizedBox(height: 16.0)),
       ),
     );
   }

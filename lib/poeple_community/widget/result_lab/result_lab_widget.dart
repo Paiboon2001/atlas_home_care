@@ -63,7 +63,7 @@ class _ResultLabWidgetState extends State<ResultLabWidget> {
         ),
       ),
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -77,7 +77,7 @@ class _ResultLabWidgetState extends State<ResultLabWidget> {
                   Expanded(
                     child: Text(
                       valueOrDefault<String>(
-                        widget!.namelab,
+                        widget.namelab,
                         'name_lab',
                       ),
                       textAlign: TextAlign.start,
@@ -92,7 +92,7 @@ class _ResultLabWidgetState extends State<ResultLabWidget> {
                   ),
                   Text(
                     valueOrDefault<String>(
-                      widget!.discrib,
+                      widget.discrib,
                       'dis',
                     ),
                     textAlign: TextAlign.start,
@@ -104,7 +104,7 @@ class _ResultLabWidgetState extends State<ResultLabWidget> {
                               !FlutterFlowTheme.of(context).labelSmallIsCustom,
                         ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
             InkWell(
@@ -121,18 +121,18 @@ class _ResultLabWidgetState extends State<ResultLabWidget> {
                   builder: (context) {
                     return Padding(
                       padding: MediaQuery.viewInsetsOf(context),
-                      child: DeleteLabWidget(),
+                      child: const DeleteLabWidget(),
                     );
                   },
                 ).then((value) => safeSetState(() {}));
               },
-              child: FaIcon(
+              child: const FaIcon(
                 FontAwesomeIcons.solidTrashAlt,
                 color: Color(0xFFD5D5D5),
                 size: 16.0,
               ),
             ),
-          ].divide(SizedBox(width: 12.0)),
+          ].divide(const SizedBox(width: 12.0)),
         ),
       ),
     );

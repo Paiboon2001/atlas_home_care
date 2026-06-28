@@ -84,7 +84,7 @@ class _NewJobWidgetState extends State<NewJobWidget> {
         }(),
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               blurRadius: 4.0,
               color: Color(0x17000000),
@@ -100,7 +100,7 @@ class _NewJobWidgetState extends State<NewJobWidget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsets.all(12.0),
+              padding: const EdgeInsets.all(12.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -137,10 +137,10 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                       image: DecorationImage(
                         fit: BoxFit.cover,
                         image: Image.network(
-                          widget!.img!,
+                          widget.img!,
                         ).image,
                       ),
-                      gradient: LinearGradient(
+                      gradient: const LinearGradient(
                         colors: [Color(0xFFFFCA76), Color(0xFFFF7100)],
                         stops: [0.0, 1.0],
                         begin: AlignmentDirectional(0.0, -1.0),
@@ -156,7 +156,7 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                       children: [
                         Text(
                           valueOrDefault<String>(
-                            widget!.mainname,
+                            widget.mainname,
                             'na',
                           ),
                           style: FlutterFlowTheme.of(context)
@@ -164,7 +164,7 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                               .override(
                                 fontFamily: FlutterFlowTheme.of(context)
                                     .titleSmallFamily,
-                                color: Color(0xFFFF7600),
+                                color: const Color(0xFFFF7600),
                                 letterSpacing: 0.0,
                                 useGoogleFonts: !FlutterFlowTheme.of(context)
                                     .titleSmallIsCustom,
@@ -191,7 +191,7 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                               ),
                               TextSpan(
                                 text: valueOrDefault<String>(
-                                  widget!.year,
+                                  widget.year,
                                   'na',
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -206,13 +206,13 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                                               .bodySmallIsCustom,
                                     ),
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text: ' ปี ',
                                 style: TextStyle(),
                               ),
                               TextSpan(
                                 text: valueOrDefault<String>(
-                                  widget!.month,
+                                  widget.month,
                                   'na',
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -227,13 +227,13 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                                               .bodySmallIsCustom,
                                     ),
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text: ' เดือน ',
                                 style: TextStyle(),
                               ),
                               TextSpan(
                                 text: valueOrDefault<String>(
-                                  widget!.day,
+                                  widget.day,
                                   'na',
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -248,7 +248,7 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                                               .bodySmallIsCustom,
                                     ),
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text: ' วัน',
                                 style: TextStyle(),
                               )
@@ -313,7 +313,7 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                       color: FlutterFlowTheme.of(context).primaryBackground,
                       shape: BoxShape.circle,
                     ),
-                    child: Icon(
+                    child: const Icon(
                       Icons.keyboard_arrow_right_rounded,
                       color: Color(0xFF9DA7A7),
                       size: 20.0,
@@ -337,7 +337,7 @@ class _NewJobWidgetState extends State<NewJobWidget> {
             Container(
               width: double.infinity,
               decoration: BoxDecoration(
-                gradient: LinearGradient(
+                gradient: const LinearGradient(
                   colors: [Color(0xFFFCF3EB), Color(0xFFFFE9D5)],
                   stops: [0.1, 1.0],
                   begin: AlignmentDirectional(0.0, -1.0),
@@ -350,7 +350,7 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                 ),
               ),
               child: Padding(
-                padding: EdgeInsets.all(12.0),
+                padding: const EdgeInsets.all(12.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -370,7 +370,7 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                                     .override(
                                       fontFamily: FlutterFlowTheme.of(context)
                                           .labelSmallFamily,
-                                      color: Color(0xFFFF7600),
+                                      color: const Color(0xFFFF7600),
                                       letterSpacing: 0.0,
                                       useGoogleFonts:
                                           !FlutterFlowTheme.of(context)
@@ -379,7 +379,7 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                               ),
                               Text(
                                 valueOrDefault<String>(
-                                  widget!.date,
+                                  widget.date,
                                   'na',
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -393,7 +393,7 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                                               .bodyMediumIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(height: 2.0)),
+                            ].divide(const SizedBox(height: 2.0)),
                           ),
                         ),
                         Expanded(
@@ -408,7 +408,7 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                                     .override(
                                       fontFamily: FlutterFlowTheme.of(context)
                                           .labelSmallFamily,
-                                      color: Color(0xFFFF7600),
+                                      color: const Color(0xFFFF7600),
                                       letterSpacing: 0.0,
                                       useGoogleFonts:
                                           !FlutterFlowTheme.of(context)
@@ -417,7 +417,7 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                               ),
                               Text(
                                 valueOrDefault<String>(
-                                  widget!.time,
+                                  widget.time,
                                   'na',
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -431,10 +431,10 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                                               .bodyMediumIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(height: 2.0)),
+                            ].divide(const SizedBox(height: 2.0)),
                           ),
                         ),
-                      ].divide(SizedBox(width: 8.0)),
+                      ].divide(const SizedBox(width: 8.0)),
                     ),
                     Column(
                       mainAxisSize: MainAxisSize.max,
@@ -447,7 +447,7 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                               .override(
                                 fontFamily: FlutterFlowTheme.of(context)
                                     .labelSmallFamily,
-                                color: Color(0xFFFF7600),
+                                color: const Color(0xFFFF7600),
                                 letterSpacing: 0.0,
                                 useGoogleFonts: !FlutterFlowTheme.of(context)
                                     .labelSmallIsCustom,
@@ -455,7 +455,7 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                         ),
                         Text(
                           valueOrDefault<String>(
-                            widget!.details,
+                            widget.details,
                             'na',
                           ),
                           maxLines: 1,
@@ -470,9 +470,9 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                               ),
                           overflow: TextOverflow.ellipsis,
                         ),
-                      ].divide(SizedBox(height: 2.0)),
+                      ].divide(const SizedBox(height: 2.0)),
                     ),
-                  ].divide(SizedBox(height: 12.0)),
+                  ].divide(const SizedBox(height: 12.0)),
                 ),
               ),
             ),

@@ -79,7 +79,7 @@ class _ContractVisitWidgetState extends State<ContractVisitWidget> {
               side: (FlutterFlowTheme.of(context).secondaryText != null)
                   ? BorderSide(
                       width: 2,
-                      color: FlutterFlowTheme.of(context).secondaryText!,
+                      color: FlutterFlowTheme.of(context).secondaryText,
                     )
                   : null,
               activeColor: FlutterFlowTheme.of(context).primary,
@@ -88,9 +88,9 @@ class _ContractVisitWidgetState extends State<ContractVisitWidget> {
           ),
           Expanded(
             child: Align(
-              alignment: AlignmentDirectional(-1.0, 0.0),
+              alignment: const AlignmentDirectional(-1.0, 0.0),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
                 child: Text(
                   'fact that a reader will be distracted',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(

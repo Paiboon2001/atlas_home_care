@@ -48,7 +48,7 @@ class _SaveMenuWidgetState extends State<SaveMenuWidget> {
 
     return Container(
       width: double.infinity,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [Color(0x00F5F7FA), Color(0xDAF5F7FA), Color(0xE6F5F7FA)],
           stops: [0.0, 0.2, 0.7],
@@ -67,7 +67,7 @@ class _SaveMenuWidgetState extends State<SaveMenuWidget> {
                 Expanded(
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 0.0, 16.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 0.0, 16.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -82,7 +82,7 @@ class _SaveMenuWidgetState extends State<SaveMenuWidget> {
                           builder: (context) {
                             return Padding(
                               padding: MediaQuery.viewInsetsOf(context),
-                              child: OutCIDWidget(),
+                              child: const OutCIDWidget(),
                             );
                           },
                         ).then((value) => safeSetState(() {}));
@@ -110,7 +110,7 @@ class _SaveMenuWidgetState extends State<SaveMenuWidget> {
                             BoxShadow(
                               blurRadius: 4.0,
                               color: FlutterFlowTheme.of(context).tertiary,
-                              offset: Offset(
+                              offset: const Offset(
                                 0.0,
                                 0.0,
                               ),
@@ -123,7 +123,7 @@ class _SaveMenuWidgetState extends State<SaveMenuWidget> {
                           ),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Text(
                             'หยุดเชื่อมต่อ CID',
                             textAlign: TextAlign.center,
@@ -146,7 +146,7 @@ class _SaveMenuWidgetState extends State<SaveMenuWidget> {
                 Expanded(
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 16.0, 16.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 16.0, 16.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -161,7 +161,7 @@ class _SaveMenuWidgetState extends State<SaveMenuWidget> {
                           builder: (context) {
                             return Padding(
                               padding: MediaQuery.viewInsetsOf(context),
-                              child: ConfirmSuccessWidget(),
+                              child: const ConfirmSuccessWidget(),
                             );
                           },
                         ).then((value) => safeSetState(() {}));
@@ -187,13 +187,13 @@ class _SaveMenuWidgetState extends State<SaveMenuWidget> {
                             BoxShadow(
                               blurRadius: 4.0,
                               color: FlutterFlowTheme.of(context).tertiary,
-                              offset: Offset(
+                              offset: const Offset(
                                 0.0,
                                 0.0,
                               ),
                             )
                           ],
-                          gradient: LinearGradient(
+                          gradient: const LinearGradient(
                             colors: [Color(0xFF339FF3), Color(0xFF267EC6)],
                             stops: [0.0, 1.0],
                             begin: AlignmentDirectional(0.56, -1.0),
@@ -206,7 +206,7 @@ class _SaveMenuWidgetState extends State<SaveMenuWidget> {
                           ),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Text(
                             'บันทึก',
                             textAlign: TextAlign.center,
@@ -227,12 +227,12 @@ class _SaveMenuWidgetState extends State<SaveMenuWidget> {
                     ),
                   ),
                 ),
-              ].divide(SizedBox(width: 12.0)),
+              ].divide(const SizedBox(width: 12.0)),
             ),
           wrapWithModel(
             model: _model.navbarModel,
             updateCallback: () => safeSetState(() {}),
-            child: NavbarWidget(
+            child: const NavbarWidget(
               navbar: 5,
               hide: false,
             ),

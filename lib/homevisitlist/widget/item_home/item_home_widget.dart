@@ -61,12 +61,12 @@ class _ItemHomeWidgetState extends State<ItemHomeWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
       child: Container(
         width: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               blurRadius: 4.0,
               color: Color(0x17000000),
@@ -82,7 +82,7 @@ class _ItemHomeWidgetState extends State<ItemHomeWidget> {
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -126,12 +126,12 @@ class _ItemHomeWidgetState extends State<ItemHomeWidget> {
                       ),
                       gradient: LinearGradient(
                         colors: [
-                          Color(0xFF9FD5FF),
+                          const Color(0xFF9FD5FF),
                           FlutterFlowTheme.of(context).primary
                         ],
-                        stops: [0.0, 1.0],
-                        begin: AlignmentDirectional(0.0, -1.0),
-                        end: AlignmentDirectional(0, 1.0),
+                        stops: const [0.0, 1.0],
+                        begin: const AlignmentDirectional(0.0, -1.0),
+                        end: const AlignmentDirectional(0, 1.0),
                       ),
                       shape: BoxShape.circle,
                     ),
@@ -168,7 +168,7 @@ class _ItemHomeWidgetState extends State<ItemHomeWidget> {
                                     ),
                                     TextSpan(
                                       text: valueOrDefault<String>(
-                                        widget!.homenumber,
+                                        widget.homenumber,
                                         '0',
                                       ),
                                       style: FlutterFlowTheme.of(context)
@@ -205,23 +205,23 @@ class _ItemHomeWidgetState extends State<ItemHomeWidget> {
                               decoration: BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
-                                    Color(0xFF9FD5FF),
+                                    const Color(0xFF9FD5FF),
                                     FlutterFlowTheme.of(context).primary
                                   ],
-                                  stops: [0.0, 1.0],
-                                  begin: AlignmentDirectional(0.0, -1.0),
-                                  end: AlignmentDirectional(0, 1.0),
+                                  stops: const [0.0, 1.0],
+                                  begin: const AlignmentDirectional(0.0, -1.0),
+                                  end: const AlignmentDirectional(0, 1.0),
                                 ),
                                 shape: BoxShape.circle,
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 2.0),
                                   child: Text(
                                     valueOrDefault<String>(
-                                      widget!.peoplinhouse,
+                                      widget.peoplinhouse,
                                       '0',
                                     ),
                                     style: FlutterFlowTheme.of(context)
@@ -242,17 +242,17 @@ class _ItemHomeWidgetState extends State<ItemHomeWidget> {
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Icon(
                                 Icons.keyboard_arrow_right_rounded,
                                 color: valueOrDefault<Color>(
-                                  widget!.colorarrow,
+                                  widget.colorarrow,
                                   FlutterFlowTheme.of(context).secondaryText,
                                 ),
                                 size: 24.0,
                               ),
                             ),
-                          ].divide(SizedBox(width: 8.0)),
+                          ].divide(const SizedBox(width: 8.0)),
                         ),
                         RichText(
                           textScaler: MediaQuery.of(context).textScaler,
@@ -296,7 +296,7 @@ class _ItemHomeWidgetState extends State<ItemHomeWidget> {
                                 ),
                           ),
                         ),
-                      ].divide(SizedBox(height: 4.0)),
+                      ].divide(const SizedBox(height: 4.0)),
                     ),
                   ),
                 ].divide(SizedBox(width: () {
@@ -321,7 +321,7 @@ class _ItemHomeWidgetState extends State<ItemHomeWidget> {
               ),
               Text(
                 valueOrDefault<String>(
-                  widget!.location,
+                  widget.location,
                   'location',
                 ),
                 textAlign: TextAlign.start,
@@ -333,7 +333,7 @@ class _ItemHomeWidgetState extends State<ItemHomeWidget> {
                           !FlutterFlowTheme.of(context).bodySmallIsCustom,
                     ),
               ),
-            ].divide(SizedBox(height: 12.0)),
+            ].divide(const SizedBox(height: 12.0)),
           ),
         ),
       ),

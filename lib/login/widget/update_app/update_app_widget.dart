@@ -43,10 +43,10 @@ class _UpdateAppWidgetState extends State<UpdateAppWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(32.0),
             topRight: Radius.circular(32.0),
@@ -55,7 +55,7 @@ class _UpdateAppWidgetState extends State<UpdateAppWidget> {
         child: Stack(
           children: [
             Align(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               child: Container(
                 width: double.infinity,
                 height: 350.0,
@@ -65,11 +65,11 @@ class _UpdateAppWidgetState extends State<UpdateAppWidget> {
                       FlutterFlowTheme.of(context).primaryBackground,
                       FlutterFlowTheme.of(context).secondaryBackground
                     ],
-                    stops: [0.0, 1.0],
-                    begin: AlignmentDirectional(0.0, -1.0),
-                    end: AlignmentDirectional(0, 1.0),
+                    stops: const [0.0, 1.0],
+                    begin: const AlignmentDirectional(0.0, -1.0),
+                    end: const AlignmentDirectional(0, 1.0),
                   ),
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(32.0),
                     topRight: Radius.circular(32.0),
                   ),
@@ -77,7 +77,7 @@ class _UpdateAppWidgetState extends State<UpdateAppWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -96,7 +96,7 @@ class _UpdateAppWidgetState extends State<UpdateAppWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 24.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 24.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -117,8 +117,8 @@ class _UpdateAppWidgetState extends State<UpdateAppWidget> {
                               ),
                           colors: [
                             FlutterFlowTheme.of(context).primary,
-                            Color(0xFF6A78FA),
-                            Color(0xFF673AB7)
+                            const Color(0xFF6A78FA),
+                            const Color(0xFF673AB7)
                           ],
                           gradientDirection: GradientDirection.ltr,
                           gradientType: GradientType.linear,
@@ -137,12 +137,12 @@ class _UpdateAppWidgetState extends State<UpdateAppWidget> {
                                     .headlineSmallIsCustom,
                               ),
                         ),
-                      ].divide(SizedBox(width: 8.0)),
+                      ].divide(const SizedBox(width: 8.0)),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 32.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 32.0),
                     child: Text(
                       'กรุณาทำการอัปเดตแอปพลิเคชัน Atlas Home Care เป็นเวอร์ชันล่าสุด ก่อนเข้าใช้งาน',
                       textAlign: TextAlign.center,
@@ -158,7 +158,7 @@ class _UpdateAppWidgetState extends State<UpdateAppWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
                     child: Container(
                       width: double.infinity,
                       height: () {
@@ -180,13 +180,13 @@ class _UpdateAppWidgetState extends State<UpdateAppWidget> {
                           BoxShadow(
                             blurRadius: 4.0,
                             color: FlutterFlowTheme.of(context).tertiary,
-                            offset: Offset(
+                            offset: const Offset(
                               0.0,
                               0.0,
                             ),
                           )
                         ],
-                        gradient: LinearGradient(
+                        gradient: const LinearGradient(
                           colors: [Color(0xFF339FF3), Color(0xFF267EC6)],
                           stops: [0.0, 1.0],
                           begin: AlignmentDirectional(0.56, -1.0),
@@ -199,7 +199,7 @@ class _UpdateAppWidgetState extends State<UpdateAppWidget> {
                         ),
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           'อัปเดต',
                           textAlign: TextAlign.center,

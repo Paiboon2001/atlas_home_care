@@ -74,25 +74,25 @@ class _CheckitWidgetState extends State<CheckitWidget> {
                       ? FlutterFlowTheme.of(context).primary
                       : FlutterFlowTheme.of(context).secondaryBackground
                 ],
-                stops: [0.0, 1.0],
-                begin: AlignmentDirectional(1.0, 0.34),
-                end: AlignmentDirectional(-1.0, -0.34),
+                stops: const [0.0, 1.0],
+                begin: const AlignmentDirectional(1.0, 0.34),
+                end: const AlignmentDirectional(-1.0, -0.34),
               ),
               borderRadius: BorderRadius.circular(16.0),
               border: Border.all(
                 color: _model.ffValue == true
                     ? FlutterFlowTheme.of(context).secondaryBackground
-                    : Color(0xFFCED4E6),
+                    : const Color(0xFFCED4E6),
                 width: 1.0,
               ),
             ),
             child: Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(12.0, 16.0, 12.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(12.0, 16.0, 12.0, 16.0),
                 child: Text(
                   valueOrDefault<String>(
-                    widget!.text,
+                    widget.text,
                     'na',
                   ),
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -129,7 +129,7 @@ class _CheckitWidgetState extends State<CheckitWidget> {
             side: (Colors.transparent != null)
                 ? BorderSide(
                     width: 2,
-                    color: Colors.transparent!,
+                    color: Colors.transparent,
                   )
                 : null,
             activeColor: Colors.transparent,

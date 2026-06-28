@@ -123,7 +123,7 @@ class _HealthSumaryAIWidgetState extends State<HealthSumaryAIWidget>
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: () {
@@ -139,7 +139,7 @@ class _HealthSumaryAIWidgetState extends State<HealthSumaryAIWidget>
         }(),
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -149,7 +149,7 @@ class _HealthSumaryAIWidgetState extends State<HealthSumaryAIWidget>
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -181,7 +181,7 @@ class _HealthSumaryAIWidgetState extends State<HealthSumaryAIWidget>
                         return 40.0;
                       }
                     }(),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                   ),
@@ -198,14 +198,14 @@ class _HealthSumaryAIWidgetState extends State<HealthSumaryAIWidget>
                   wrapWithModel(
                     model: _model.closeModel,
                     updateCallback: () => safeSetState(() {}),
-                    child: CloseWidget(),
+                    child: const CloseWidget(),
                   ),
                 ],
               ),
             ),
             Expanded(
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
                 child: Container(
                   height: () {
                     if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
@@ -221,7 +221,7 @@ class _HealthSumaryAIWidgetState extends State<HealthSumaryAIWidget>
                     }
                   }(),
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(
+                    gradient: const LinearGradient(
                       colors: [Color(0x4DA7DEED), Color(0x26B9C0FF)],
                       stops: [0.0, 1.0],
                       begin: AlignmentDirectional(0.0, -1.0),
@@ -234,59 +234,59 @@ class _HealthSumaryAIWidgetState extends State<HealthSumaryAIWidget>
                       Stack(
                         children: [
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Container(
                               width: 50.0,
                               height: 180.0,
                               decoration: BoxDecoration(
-                                color: Color(0x76B9C0FF),
+                                color: const Color(0x76B9C0FF),
                                 borderRadius: BorderRadius.circular(100.0),
                               ),
                             ).animateOnPageLoad(animationsMap[
                                 'containerOnPageLoadAnimation1']!),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Container(
                               width: 180.0,
                               height: 50.0,
                               decoration: BoxDecoration(
-                                color: Color(0x76B9C0FF),
+                                color: const Color(0x76B9C0FF),
                                 borderRadius: BorderRadius.circular(100.0),
                               ),
                             ).animateOnPageLoad(animationsMap[
                                 'containerOnPageLoadAnimation2']!),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Container(
                               width: 50.0,
                               height: 130.0,
                               decoration: BoxDecoration(
-                                color: Color(0x76B9C0FF),
+                                color: const Color(0x76B9C0FF),
                                 borderRadius: BorderRadius.circular(100.0),
                               ),
                             ).animateOnPageLoad(animationsMap[
                                 'containerOnPageLoadAnimation3']!),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Container(
                               width: 130.0,
                               height: 50.0,
                               decoration: BoxDecoration(
-                                color: Color(0x76B9C0FF),
+                                color: const Color(0x76B9C0FF),
                                 borderRadius: BorderRadius.circular(100.0),
                               ),
                             ).animateOnPageLoad(animationsMap[
                                 'containerOnPageLoadAnimation4']!),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Container(
                               width: 100.0,
                               height: 100.0,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: Color(0x76B9C0FF),
                                 shape: BoxShape.circle,
                               ),
@@ -296,9 +296,9 @@ class _HealthSumaryAIWidgetState extends State<HealthSumaryAIWidget>
                         ],
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-1.0, 0.0),
+                        alignment: const AlignmentDirectional(-1.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsets.all(2.0),
+                          padding: const EdgeInsets.all(2.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(24.0),
                             child: BackdropFilter(
@@ -312,7 +312,7 @@ class _HealthSumaryAIWidgetState extends State<HealthSumaryAIWidget>
                                 autofocus: false,
                                 readOnly: true,
                                 obscureText: false,
-                                decoration: InputDecoration(
+                                decoration: const InputDecoration(
                                   isDense: false,
                                   alignLabelWithHint: false,
                                   enabledBorder: InputBorder.none,
@@ -336,7 +336,7 @@ class _HealthSumaryAIWidgetState extends State<HealthSumaryAIWidget>
                                               .bodyMediumIsCustom,
                                     ),
                                 maxLines: 100,
-                                cursorColor: Color(0x002196F3),
+                                cursorColor: const Color(0x002196F3),
                                 validator: _model.textControllerValidator
                                     .asValidator(context),
                               ),

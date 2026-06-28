@@ -1,21 +1,8 @@
-import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import '/homevisitlist/widget/search_templetes/search_templetes_widget.dart';
-import '/homevisitlist/widget/tolk_chat/tolk_chat_widget.dart';
 import '/profile/widget/process_up_pic/process_up_pic_widget.dart';
-import 'dart:math';
-import 'dart:ui';
 import 'visit_h_o_m_e_s_widget.dart' show VisitHOMESWidget;
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:signature/signature.dart';
 
 class VisitHOMESModel extends FlutterFlowModel<VisitHOMESWidget> {

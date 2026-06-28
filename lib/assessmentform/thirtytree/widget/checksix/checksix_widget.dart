@@ -53,37 +53,37 @@ class _ChecksixWidgetState extends State<ChecksixWidget> {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            FFAppState().checksix == widget!.checksix
+            FFAppState().checksix == widget.checksix
                 ? FlutterFlowTheme.of(context).secondary
                 : FlutterFlowTheme.of(context).secondaryBackground,
-            FFAppState().checksix == widget!.checksix
+            FFAppState().checksix == widget.checksix
                 ? FlutterFlowTheme.of(context).primary
                 : FlutterFlowTheme.of(context).secondaryBackground
           ],
-          stops: [0.0, 1.0],
-          begin: AlignmentDirectional(1.0, 0.34),
-          end: AlignmentDirectional(-1.0, -0.34),
+          stops: const [0.0, 1.0],
+          begin: const AlignmentDirectional(1.0, 0.34),
+          end: const AlignmentDirectional(-1.0, -0.34),
         ),
         borderRadius: BorderRadius.circular(16.0),
         border: Border.all(
-          color: FFAppState().checksix == widget!.checksix
-              ? Color(0x00FFFFFF)
-              : Color(0xFFCED4E6),
+          color: FFAppState().checksix == widget.checksix
+              ? const Color(0x00FFFFFF)
+              : const Color(0xFFCED4E6),
           width: 1.0,
         ),
       ),
       child: Align(
-        alignment: AlignmentDirectional(0.0, 0.0),
+        alignment: const AlignmentDirectional(0.0, 0.0),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(12.0, 16.0, 12.0, 16.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(12.0, 16.0, 12.0, 16.0),
           child: Text(
             valueOrDefault<String>(
-              widget!.names,
+              widget.names,
               'na',
             ),
             style: FlutterFlowTheme.of(context).bodyMedium.override(
                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                  color: FFAppState().checksix == widget!.checksix
+                  color: FFAppState().checksix == widget.checksix
                       ? FlutterFlowTheme.of(context).secondaryBackground
                       : FlutterFlowTheme.of(context).secondaryText,
                   letterSpacing: 0.0,

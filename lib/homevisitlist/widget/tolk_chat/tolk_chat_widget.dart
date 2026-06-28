@@ -48,18 +48,18 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
     context.watch<FFAppState>();
 
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: MediaQuery.sizeOf(context).height * 0.95,
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFFE8F8FF), FlutterFlowTheme.of(context).alternate],
-            stops: [0.0, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            colors: [const Color(0xFFE8F8FF), FlutterFlowTheme.of(context).alternate],
+            stops: const [0.0, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -70,13 +70,13 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
             Container(
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(24.0),
                   topRight: Radius.circular(24.0),
                 ),
               ),
               child: Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -110,7 +110,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                           return 40.0;
                         }
                       }(),
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                       ),
                     ),
@@ -128,7 +128,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                     wrapWithModel(
                       model: _model.closeModel,
                       updateCallback: () => safeSetState(() {}),
-                      child: CloseWidget(),
+                      child: const CloseWidget(),
                     ),
                   ],
                 ),
@@ -141,7 +141,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
             ),
             Expanded(
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -156,7 +156,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(8.0),
                               child: Text(
                                 'เป็นอย่างไรบ้างคับคุณยาย',
                                 style: FlutterFlowTheme.of(context)
@@ -187,19 +187,19 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                               ),
                               gradient: LinearGradient(
                                 colors: [
-                                  Color(0xFFD7E9FF),
+                                  const Color(0xFFD7E9FF),
                                   FlutterFlowTheme.of(context).primary
                                 ],
-                                stops: [0.0, 1.0],
-                                begin: AlignmentDirectional(0.0, -1.0),
-                                end: AlignmentDirectional(0, 1.0),
+                                stops: const [0.0, 1.0],
+                                begin: const AlignmentDirectional(0.0, -1.0),
+                                end: const AlignmentDirectional(0, 1.0),
                               ),
                               shape: BoxShape.circle,
                             ),
                           ),
                         ]
-                            .divide(SizedBox(width: 8.0))
-                            .addToStart(SizedBox(width: 56.0)),
+                            .divide(const SizedBox(width: 8.0))
+                            .addToStart(const SizedBox(width: 56.0)),
                       ),
                       Row(
                         mainAxisSize: MainAxisSize.max,
@@ -220,9 +220,9 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                                   FlutterFlowTheme.of(context).alternate,
                                   FlutterFlowTheme.of(context).secondary
                                 ],
-                                stops: [0.0, 1.0],
-                                begin: AlignmentDirectional(0.0, -1.0),
-                                end: AlignmentDirectional(0, 1.0),
+                                stops: const [0.0, 1.0],
+                                begin: const AlignmentDirectional(0.0, -1.0),
+                                end: const AlignmentDirectional(0, 1.0),
                               ),
                               shape: BoxShape.circle,
                             ),
@@ -235,7 +235,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                                 borderRadius: BorderRadius.circular(12.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(8.0),
                                 child: Text(
                                   'ฉันมีอาการปวดหัวและไม่สบายมาหลายวันแล้ว และก็กินข้าวไม่ค่อยได้',
                                   style: FlutterFlowTheme.of(context)
@@ -254,8 +254,8 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                             ),
                           ),
                         ]
-                            .divide(SizedBox(width: 8.0))
-                            .addToEnd(SizedBox(width: 56.0)),
+                            .divide(const SizedBox(width: 8.0))
+                            .addToEnd(const SizedBox(width: 56.0)),
                       ),
                       Row(
                         mainAxisSize: MainAxisSize.max,
@@ -276,9 +276,9 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                                   FlutterFlowTheme.of(context).alternate,
                                   FlutterFlowTheme.of(context).secondary
                                 ],
-                                stops: [0.0, 1.0],
-                                begin: AlignmentDirectional(0.0, -1.0),
-                                end: AlignmentDirectional(0, 1.0),
+                                stops: const [0.0, 1.0],
+                                begin: const AlignmentDirectional(0.0, -1.0),
+                                end: const AlignmentDirectional(0, 1.0),
                               ),
                               shape: BoxShape.circle,
                             ),
@@ -290,7 +290,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(8.0),
                               child: Text(
                                 'นอนไม่หลับเลยลูก',
                                 style: FlutterFlowTheme.of(context)
@@ -308,8 +308,8 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                             ),
                           ),
                         ]
-                            .divide(SizedBox(width: 8.0))
-                            .addToEnd(SizedBox(width: 56.0)),
+                            .divide(const SizedBox(width: 8.0))
+                            .addToEnd(const SizedBox(width: 56.0)),
                       ),
                       Row(
                         mainAxisSize: MainAxisSize.max,
@@ -321,7 +321,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(8.0),
                               child: Text(
                                 'แล้วเป็นอยู่ยังไงบ้างครับ',
                                 style: FlutterFlowTheme.of(context)
@@ -352,24 +352,24 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                               ),
                               gradient: LinearGradient(
                                 colors: [
-                                  Color(0xFFD7E9FF),
+                                  const Color(0xFFD7E9FF),
                                   FlutterFlowTheme.of(context).primary
                                 ],
-                                stops: [0.0, 1.0],
-                                begin: AlignmentDirectional(0.0, -1.0),
-                                end: AlignmentDirectional(0, 1.0),
+                                stops: const [0.0, 1.0],
+                                begin: const AlignmentDirectional(0.0, -1.0),
+                                end: const AlignmentDirectional(0, 1.0),
                               ),
                               shape: BoxShape.circle,
                             ),
                           ),
                         ]
-                            .divide(SizedBox(width: 8.0))
-                            .addToStart(SizedBox(width: 56.0)),
+                            .divide(const SizedBox(width: 8.0))
+                            .addToStart(const SizedBox(width: 56.0)),
                       ),
                     ]
-                        .divide(SizedBox(height: 24.0))
-                        .addToStart(SizedBox(height: 16.0))
-                        .addToEnd(SizedBox(height: 16.0)),
+                        .divide(const SizedBox(height: 24.0))
+                        .addToStart(const SizedBox(height: 16.0))
+                        .addToEnd(const SizedBox(height: 16.0)),
                   ),
                 ),
               ),
@@ -383,14 +383,14 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
               width: double.infinity,
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
-                borderRadius: BorderRadius.only(),
+                borderRadius: const BorderRadius.only(),
               ),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -410,7 +410,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                                 ),
                             colors: [
                               FlutterFlowTheme.of(context).primary,
-                              Color(0xFF4F5EEE)
+                              const Color(0xFF4F5EEE)
                             ],
                             gradientDirection: GradientDirection.ltr,
                             gradientType: GradientType.linear,
@@ -426,7 +426,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                               highlightColor: Colors.transparent,
                               onTap: () async {
                                 await _model.pageViewController?.previousPage(
-                                  duration: Duration(milliseconds: 300),
+                                  duration: const Duration(milliseconds: 300),
                                   curve: Curves.ease,
                                 );
                               },
@@ -457,7 +457,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                               highlightColor: Colors.transparent,
                               onTap: () async {
                                 await _model.pageViewController?.nextPage(
-                                  duration: Duration(milliseconds: 300),
+                                  duration: const Duration(milliseconds: 300),
                                   curve: Curves.ease,
                                 );
                               },
@@ -468,16 +468,16 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                                 size: 24.0,
                               ),
                             ),
-                          ].divide(SizedBox(width: 8.0)),
+                          ].divide(const SizedBox(width: 8.0)),
                         ),
                       ]
-                          .addToStart(SizedBox(width: 16.0))
-                          .addToEnd(SizedBox(width: 16.0)),
+                          .addToStart(const SizedBox(width: 16.0))
+                          .addToEnd(const SizedBox(width: 16.0)),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                     child: Container(
                       width: double.infinity,
                       height: 60.0,
@@ -487,9 +487,9 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                             FlutterFlowTheme.of(context).primaryBackground,
                             FlutterFlowTheme.of(context).alternate
                           ],
-                          stops: [0.0, 1.0],
-                          begin: AlignmentDirectional(0.0, -1.0),
-                          end: AlignmentDirectional(0, 1.0),
+                          stops: const [0.0, 1.0],
+                          begin: const AlignmentDirectional(0.0, -1.0),
+                          end: const AlignmentDirectional(0, 1.0),
                         ),
                         borderRadius: BorderRadius.circular(12.0),
                         border: Border.all(
@@ -497,7 +497,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                           width: 2.0,
                         ),
                       ),
-                      child: Container(
+                      child: SizedBox(
                         width: double.infinity,
                         height: 500.0,
                         child: PageView(
@@ -519,7 +519,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                                             BorderRadius.circular(4.0),
                                       ),
                                     ),
-                                    unselectedWidgetColor: Color(0xFFA3A3A3),
+                                    unselectedWidgetColor: const Color(0xFFA3A3A3),
                                   ),
                                   child: Checkbox(
                                     value: _model.checkboxValue1 ??= false,
@@ -527,10 +527,10 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                                       safeSetState(() =>
                                           _model.checkboxValue1 = newValue!);
                                     },
-                                    side: (Color(0xFFA3A3A3) != null)
+                                    side: (const Color(0xFFA3A3A3) != null)
                                         ? BorderSide(
                                             width: 2,
-                                            color: Color(0xFFA3A3A3)!,
+                                            color: const Color(0xFFA3A3A3),
                                           )
                                         : null,
                                     activeColor:
@@ -565,9 +565,9 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                                   ),
                                 ),
                               ]
-                                  .divide(SizedBox(width: 4.0))
-                                  .addToStart(SizedBox(width: 8.0))
-                                  .addToEnd(SizedBox(width: 12.0)),
+                                  .divide(const SizedBox(width: 4.0))
+                                  .addToStart(const SizedBox(width: 8.0))
+                                  .addToEnd(const SizedBox(width: 12.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -583,7 +583,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                                             BorderRadius.circular(4.0),
                                       ),
                                     ),
-                                    unselectedWidgetColor: Color(0xFFA3A3A3),
+                                    unselectedWidgetColor: const Color(0xFFA3A3A3),
                                   ),
                                   child: Checkbox(
                                     value: _model.checkboxValue2 ??= false,
@@ -591,10 +591,10 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                                       safeSetState(() =>
                                           _model.checkboxValue2 = newValue!);
                                     },
-                                    side: (Color(0xFFA3A3A3) != null)
+                                    side: (const Color(0xFFA3A3A3) != null)
                                         ? BorderSide(
                                             width: 2,
-                                            color: Color(0xFFA3A3A3)!,
+                                            color: const Color(0xFFA3A3A3),
                                           )
                                         : null,
                                     activeColor:
@@ -629,9 +629,9 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                                   ),
                                 ),
                               ]
-                                  .divide(SizedBox(width: 4.0))
-                                  .addToStart(SizedBox(width: 8.0))
-                                  .addToEnd(SizedBox(width: 12.0)),
+                                  .divide(const SizedBox(width: 4.0))
+                                  .addToStart(const SizedBox(width: 8.0))
+                                  .addToEnd(const SizedBox(width: 12.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -647,7 +647,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                                             BorderRadius.circular(4.0),
                                       ),
                                     ),
-                                    unselectedWidgetColor: Color(0xFFA3A3A3),
+                                    unselectedWidgetColor: const Color(0xFFA3A3A3),
                                   ),
                                   child: Checkbox(
                                     value: _model.checkboxValue3 ??= false,
@@ -655,10 +655,10 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                                       safeSetState(() =>
                                           _model.checkboxValue3 = newValue!);
                                     },
-                                    side: (Color(0xFFA3A3A3) != null)
+                                    side: (const Color(0xFFA3A3A3) != null)
                                         ? BorderSide(
                                             width: 2,
-                                            color: Color(0xFFA3A3A3)!,
+                                            color: const Color(0xFFA3A3A3),
                                           )
                                         : null,
                                     activeColor:
@@ -693,9 +693,9 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                                   ),
                                 ),
                               ]
-                                  .divide(SizedBox(width: 4.0))
-                                  .addToStart(SizedBox(width: 8.0))
-                                  .addToEnd(SizedBox(width: 12.0)),
+                                  .divide(const SizedBox(width: 4.0))
+                                  .addToStart(const SizedBox(width: 8.0))
+                                  .addToEnd(const SizedBox(width: 12.0)),
                             ),
                           ],
                         ),
@@ -704,7 +704,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 24.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 24.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -742,7 +742,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                                   width: 72.0,
                                   height: 72.0,
                                   decoration: BoxDecoration(
-                                    boxShadow: [
+                                    boxShadow: const [
                                       BoxShadow(
                                         blurRadius: 4.0,
                                         color: Color(0xFF9EACB4),
@@ -752,7 +752,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                                         ),
                                       )
                                     ],
-                                    gradient: LinearGradient(
+                                    gradient: const LinearGradient(
                                       colors: [
                                         Color(0xFF76C4FF),
                                         Color(0xFF0080E3)
@@ -763,7 +763,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                                     ),
                                     shape: BoxShape.circle,
                                     border: Border.all(
-                                      color: Color(0xFF8DCDFF),
+                                      color: const Color(0xFF8DCDFF),
                                       width: 2.0,
                                     ),
                                   ),
@@ -810,7 +810,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                             Navigator.pop(context);
                           },
                         ),
-                      ].divide(SizedBox(width: 40.0)),
+                      ].divide(const SizedBox(width: 40.0)),
                     ),
                   ),
                 ],

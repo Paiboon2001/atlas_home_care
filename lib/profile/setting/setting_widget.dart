@@ -62,19 +62,19 @@ class _SettingWidgetState extends State<SettingWidget> {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Color(0xFF339FF3),
+                const Color(0xFF339FF3),
                 FlutterFlowTheme.of(context).primaryBackground,
                 FlutterFlowTheme.of(context).primaryBackground
               ],
-              stops: [0.0, 0.3, 1.0],
-              begin: AlignmentDirectional(0.0, -1.0),
-              end: AlignmentDirectional(0, 1.0),
+              stops: const [0.0, 0.3, 1.0],
+              begin: const AlignmentDirectional(0.0, -1.0),
+              end: const AlignmentDirectional(0, 1.0),
             ),
           ),
           child: Stack(
             children: [
               ListView(
-                padding: EdgeInsets.fromLTRB(
+                padding: const EdgeInsets.fromLTRB(
                   0,
                   16.0,
                   0,
@@ -84,7 +84,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
@@ -94,7 +94,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                             'assets/images/bgappbar.png',
                           ).image,
                         ),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 8.0,
                             color: Color(0x1A000000),
@@ -107,17 +107,17 @@ class _SettingWidgetState extends State<SettingWidget> {
                         ],
                         gradient: LinearGradient(
                           colors: [
-                            Color(0xFF2370BC),
+                            const Color(0xFF2370BC),
                             FlutterFlowTheme.of(context).primary
                           ],
-                          stops: [0.0, 1.0],
-                          begin: AlignmentDirectional(0.0, -1.0),
-                          end: AlignmentDirectional(0, 1.0),
+                          stops: const [0.0, 1.0],
+                          begin: const AlignmentDirectional(0.0, -1.0),
+                          end: const AlignmentDirectional(0, 1.0),
                         ),
                         borderRadius: BorderRadius.circular(24.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(15.0),
+                        padding: const EdgeInsets.all(15.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -154,12 +154,12 @@ class _SettingWidgetState extends State<SettingWidget> {
                               decoration: BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
-                                    Color(0xFFA0D6FF),
+                                    const Color(0xFFA0D6FF),
                                     FlutterFlowTheme.of(context).primary
                                   ],
-                                  stops: [0.0, 1.0],
-                                  begin: AlignmentDirectional(0.0, -1.0),
-                                  end: AlignmentDirectional(0, 1.0),
+                                  stops: const [0.0, 1.0],
+                                  begin: const AlignmentDirectional(0.0, -1.0),
+                                  end: const AlignmentDirectional(0, 1.0),
                                 ),
                                 shape: BoxShape.circle,
                                 border: Border.all(
@@ -171,7 +171,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                 width: double.infinity,
                                 height: double.infinity,
                                 clipBehavior: Clip.antiAlias,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   shape: BoxShape.circle,
                                 ),
                                 child: Image.asset(
@@ -217,7 +217,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMediumFamily,
-                                          color: Color(0xFFF9E7C9),
+                                          color: const Color(0xFFF9E7C9),
                                           letterSpacing: 0.0,
                                           useGoogleFonts:
                                               !FlutterFlowTheme.of(context)
@@ -232,24 +232,24 @@ class _SettingWidgetState extends State<SettingWidget> {
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMediumFamily,
-                                          color: Color(0xFFF9E7C9),
+                                          color: const Color(0xFFF9E7C9),
                                           letterSpacing: 0.0,
                                           useGoogleFonts:
                                               !FlutterFlowTheme.of(context)
                                                   .bodyMediumIsCustom,
                                         ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                             ),
-                          ].divide(SizedBox(width: 12.0)),
+                          ].divide(const SizedBox(width: 12.0)),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -275,7 +275,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                             borderRadius: BorderRadius.circular(24.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -283,7 +283,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                 Container(
                                   width: double.infinity,
                                   height: 48.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.rectangle,
                                   ),
                                   child: Row(
@@ -341,16 +341,16 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .customColor1
                                                 ],
-                                                stops: [0.0, 1.0],
-                                                begin: AlignmentDirectional(
+                                                stops: const [0.0, 1.0],
+                                                begin: const AlignmentDirectional(
                                                     0.56, -1.0),
-                                                end: AlignmentDirectional(
+                                                end: const AlignmentDirectional(
                                                     -0.56, 1.0),
                                               ),
                                               shape: BoxShape.circle,
                                             ),
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 Icons.notifications_sharp,
@@ -377,13 +377,13 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                           .labelMediumIsCustom,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 12.0)),
+                                        ].divide(const SizedBox(width: 12.0)),
                                       ),
                                       Switch.adaptive(
                                         value: _model.switchValue1!,
                                         onChanged: (newValue) async {
                                           safeSetState(() =>
-                                              _model.switchValue1 = newValue!);
+                                              _model.switchValue1 = newValue);
                                         },
                                         activeColor:
                                             FlutterFlowTheme.of(context)
@@ -409,7 +409,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                 Container(
                                   width: double.infinity,
                                   height: 48.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.rectangle,
                                   ),
                                   child: Row(
@@ -462,20 +462,20 @@ class _SettingWidgetState extends State<SettingWidget> {
                                             decoration: BoxDecoration(
                                               gradient: LinearGradient(
                                                 colors: [
-                                                  Color(0xFF90F598),
+                                                  const Color(0xFF90F598),
                                                   FlutterFlowTheme.of(context)
                                                       .success
                                                 ],
-                                                stops: [0.0, 1.0],
-                                                begin: AlignmentDirectional(
+                                                stops: const [0.0, 1.0],
+                                                begin: const AlignmentDirectional(
                                                     0.56, -1.0),
-                                                end: AlignmentDirectional(
+                                                end: const AlignmentDirectional(
                                                     -0.56, 1.0),
                                               ),
                                               shape: BoxShape.circle,
                                             ),
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 Icons.call,
@@ -502,13 +502,13 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                           .labelMediumIsCustom,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 12.0)),
+                                        ].divide(const SizedBox(width: 12.0)),
                                       ),
                                       Switch.adaptive(
                                         value: _model.switchValue2!,
                                         onChanged: (newValue) async {
                                           safeSetState(() =>
-                                              _model.switchValue2 = newValue!);
+                                              _model.switchValue2 = newValue);
                                         },
                                         activeColor:
                                             FlutterFlowTheme.of(context)
@@ -534,7 +534,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                 Container(
                                   width: double.infinity,
                                   height: 48.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.rectangle,
                                   ),
                                   child: Row(
@@ -587,20 +587,20 @@ class _SettingWidgetState extends State<SettingWidget> {
                                             decoration: BoxDecoration(
                                               gradient: LinearGradient(
                                                 colors: [
-                                                  Color(0xFFA0E1F7),
+                                                  const Color(0xFFA0E1F7),
                                                   FlutterFlowTheme.of(context)
                                                       .accent1
                                                 ],
-                                                stops: [0.0, 1.0],
-                                                begin: AlignmentDirectional(
+                                                stops: const [0.0, 1.0],
+                                                begin: const AlignmentDirectional(
                                                     0.56, -1.0),
-                                                end: AlignmentDirectional(
+                                                end: const AlignmentDirectional(
                                                     -0.56, 1.0),
                                               ),
                                               shape: BoxShape.circle,
                                             ),
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 Icons.diversity_3,
@@ -627,13 +627,13 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                           .labelMediumIsCustom,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 12.0)),
+                                        ].divide(const SizedBox(width: 12.0)),
                                       ),
                                       Switch.adaptive(
                                         value: _model.switchValue3!,
                                         onChanged: (newValue) async {
                                           safeSetState(() =>
-                                              _model.switchValue3 = newValue!);
+                                              _model.switchValue3 = newValue);
                                         },
                                         activeColor:
                                             FlutterFlowTheme.of(context)
@@ -668,7 +668,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                   child: Container(
                                     width: double.infinity,
                                     height: 48.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       shape: BoxShape.rectangle,
                                     ),
                                     child: Row(
@@ -718,7 +718,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                   return 32.0;
                                                 }
                                               }(),
-                                              decoration: BoxDecoration(
+                                              decoration: const BoxDecoration(
                                                 gradient: LinearGradient(
                                                   colors: [
                                                     Color(0xFFF7C2E2),
@@ -733,7 +733,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                 shape: BoxShape.circle,
                                               ),
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: FaIcon(
                                                   FontAwesomeIcons.code,
@@ -761,7 +761,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                                 .labelMediumIsCustom,
                                                       ),
                                             ),
-                                          ].divide(SizedBox(width: 12.0)),
+                                          ].divide(const SizedBox(width: 12.0)),
                                         ),
                                         Icon(
                                           Icons.keyboard_arrow_right_rounded,
@@ -793,7 +793,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                             elevation: 0,
                                             insetPadding: EdgeInsets.zero,
                                             backgroundColor: Colors.transparent,
-                                            alignment: AlignmentDirectional(
+                                            alignment: const AlignmentDirectional(
                                                     0.0, 1.0)
                                                 .resolve(
                                                     Directionality.of(context)),
@@ -805,7 +805,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                     .instance.primaryFocus
                                                     ?.unfocus();
                                               },
-                                              child: ChooseCompanyWidget(),
+                                              child: const ChooseCompanyWidget(),
                                             ),
                                           );
                                         },
@@ -814,7 +814,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                     child: Container(
                                       width: double.infinity,
                                       height: 48.0,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         shape: BoxShape.rectangle,
                                       ),
                                       child: Row(
@@ -864,7 +864,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                     return 32.0;
                                                   }
                                                 }(),
-                                                decoration: BoxDecoration(
+                                                decoration: const BoxDecoration(
                                                   gradient: LinearGradient(
                                                     colors: [
                                                       Color(0xFF89B7FF),
@@ -880,7 +880,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Icon(
                                                     Icons
@@ -909,7 +909,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                                   .labelMediumIsCustom,
                                                         ),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                           Icon(
                                             Icons.keyboard_arrow_right_rounded,
@@ -930,7 +930,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                 Container(
                                   width: double.infinity,
                                   height: 48.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.rectangle,
                                   ),
                                   child: InkWell(
@@ -991,20 +991,20 @@ class _SettingWidgetState extends State<SettingWidget> {
                                               decoration: BoxDecoration(
                                                 gradient: LinearGradient(
                                                   colors: [
-                                                    Color(0xFFF8EDAB),
+                                                    const Color(0xFFF8EDAB),
                                                     FlutterFlowTheme.of(context)
                                                         .warning
                                                   ],
-                                                  stops: [0.0, 1.0],
-                                                  begin: AlignmentDirectional(
+                                                  stops: const [0.0, 1.0],
+                                                  begin: const AlignmentDirectional(
                                                       0.56, -1.0),
-                                                  end: AlignmentDirectional(
+                                                  end: const AlignmentDirectional(
                                                       -0.56, 1.0),
                                                 ),
                                                 shape: BoxShape.circle,
                                               ),
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Icon(
                                                   Icons.pin_rounded,
@@ -1032,7 +1032,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                                 .labelMediumIsCustom,
                                                       ),
                                             ),
-                                          ].divide(SizedBox(width: 12.0)),
+                                          ].divide(const SizedBox(width: 12.0)),
                                         ),
                                         Icon(
                                           Icons.keyboard_arrow_right_rounded,
@@ -1052,7 +1052,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                 Container(
                                   width: double.infinity,
                                   height: 48.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.rectangle,
                                   ),
                                   child: InkWell(
@@ -1110,7 +1110,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                   return 32.0;
                                                 }
                                               }(),
-                                              decoration: BoxDecoration(
+                                              decoration: const BoxDecoration(
                                                 gradient: LinearGradient(
                                                   colors: [
                                                     Color(0xFFFFC0A3),
@@ -1125,7 +1125,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                 shape: BoxShape.circle,
                                               ),
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Icon(
                                                   Icons.report_problem_rounded,
@@ -1153,7 +1153,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                                 .labelMediumIsCustom,
                                                       ),
                                             ),
-                                          ].divide(SizedBox(width: 12.0)),
+                                          ].divide(const SizedBox(width: 12.0)),
                                         ),
                                         Icon(
                                           Icons.keyboard_arrow_right_rounded,
@@ -1165,7 +1165,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                     ),
                                   ),
                                 ),
-                              ].divide(SizedBox(height: 8.0)),
+                              ].divide(const SizedBox(height: 8.0)),
                             ),
                           ),
                         ),
@@ -1177,7 +1177,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                             borderRadius: BorderRadius.circular(24.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -1194,7 +1194,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                   child: Container(
                                     width: double.infinity,
                                     height: 48.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       shape: BoxShape.rectangle,
                                     ),
                                     child: Row(
@@ -1204,7 +1204,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, 0.0),
+                                              const AlignmentDirectional(-1.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.min,
                                             children: [
@@ -1247,7 +1247,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                     return 32.0;
                                                   }
                                                 }(),
-                                                decoration: BoxDecoration(
+                                                decoration: const BoxDecoration(
                                                   gradient: LinearGradient(
                                                     colors: [
                                                       Color(0xFFF7D0CD),
@@ -1263,7 +1263,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Icon(
                                                     Icons
@@ -1293,7 +1293,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                                   .labelMediumIsCustom,
                                                         ),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Icon(
@@ -1314,7 +1314,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                 Container(
                                   width: double.infinity,
                                   height: 48.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.rectangle,
                                   ),
                                   child: InkWell(
@@ -1332,7 +1332,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, 0.0),
+                                              const AlignmentDirectional(-1.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.min,
                                             children: [
@@ -1375,7 +1375,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                     return 32.0;
                                                   }
                                                 }(),
-                                                decoration: BoxDecoration(
+                                                decoration: const BoxDecoration(
                                                   gradient: LinearGradient(
                                                     colors: [
                                                       Color(0xFFB8ADF9),
@@ -1391,7 +1391,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Icon(
                                                     Icons.verified_user_rounded,
@@ -1420,7 +1420,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                                   .labelMediumIsCustom,
                                                         ),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Icon(
@@ -1441,7 +1441,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                 Container(
                                   width: double.infinity,
                                   height: 48.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.rectangle,
                                   ),
                                   child: Row(
@@ -1494,20 +1494,20 @@ class _SettingWidgetState extends State<SettingWidget> {
                                             decoration: BoxDecoration(
                                               gradient: LinearGradient(
                                                 colors: [
-                                                  Color(0xFF90D4FA),
+                                                  const Color(0xFF90D4FA),
                                                   FlutterFlowTheme.of(context)
                                                       .info
                                                 ],
-                                                stops: [0.0, 1.0],
-                                                begin: AlignmentDirectional(
+                                                stops: const [0.0, 1.0],
+                                                begin: const AlignmentDirectional(
                                                     0.56, -1.0),
-                                                end: AlignmentDirectional(
+                                                end: const AlignmentDirectional(
                                                     -0.56, 1.0),
                                               ),
                                               shape: BoxShape.circle,
                                             ),
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 Icons.info,
@@ -1535,7 +1535,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                           .labelMediumIsCustom,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 12.0)),
+                                        ].divide(const SizedBox(width: 12.0)),
                                       ),
                                       Text(
                                         'เวอร์ชัน 2.0.0',
@@ -1558,7 +1558,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(height: 8.0)),
+                              ].divide(const SizedBox(height: 8.0)),
                             ),
                           ),
                         ),
@@ -1570,7 +1570,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                             borderRadius: BorderRadius.circular(24.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -1596,7 +1596,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                           child: Padding(
                                             padding: MediaQuery.viewInsetsOf(
                                                 context),
-                                            child: LogoutSystemWidget(),
+                                            child: const LogoutSystemWidget(),
                                           ),
                                         );
                                       },
@@ -1604,7 +1604,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                   },
                                   child: Container(
                                     width: double.infinity,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       shape: BoxShape.rectangle,
                                     ),
                                     child: Row(
@@ -1614,7 +1614,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, 0.0),
+                                              const AlignmentDirectional(-1.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.min,
                                             children: [
@@ -1660,22 +1660,22 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                 decoration: BoxDecoration(
                                                   gradient: LinearGradient(
                                                     colors: [
-                                                      Color(0xFFFFA7A7),
+                                                      const Color(0xFFFFA7A7),
                                                       FlutterFlowTheme.of(
                                                               context)
                                                           .error
                                                     ],
-                                                    stops: [0.0, 1.0],
-                                                    begin: AlignmentDirectional(
+                                                    stops: const [0.0, 1.0],
+                                                    begin: const AlignmentDirectional(
                                                         0.56, -1.0),
-                                                    end: AlignmentDirectional(
+                                                    end: const AlignmentDirectional(
                                                         -0.56, 1.0),
                                                   ),
                                                   shape: BoxShape.circle,
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Icon(
                                                     Icons.arrow_circle_right,
@@ -1704,7 +1704,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                                   .labelMediumIsCustom,
                                                         ),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Icon(
@@ -1717,23 +1717,23 @@ class _SettingWidgetState extends State<SettingWidget> {
                                     ),
                                   ),
                                 ),
-                              ].divide(SizedBox(height: 8.0)),
+                              ].divide(const SizedBox(height: 8.0)),
                             ),
                           ),
                         ),
                       ]
-                          .divide(SizedBox(height: 12.0))
-                          .addToEnd(SizedBox(height: 24.0)),
+                          .divide(const SizedBox(height: 12.0))
+                          .addToEnd(const SizedBox(height: 24.0)),
                     ),
                   ),
-                ].divide(SizedBox(height: 16.0)),
+                ].divide(const SizedBox(height: 16.0)),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 1.0),
+                alignment: const AlignmentDirectional(0.0, 1.0),
                 child: wrapWithModel(
                   model: _model.navbarModel,
                   updateCallback: () => safeSetState(() {}),
-                  child: NavbarWidget(
+                  child: const NavbarWidget(
                     navbar: 4,
                     hide: false,
                   ),

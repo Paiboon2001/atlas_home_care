@@ -1,7 +1,4 @@
-import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/sakon_nakhon/crisisvictims/widget/ninefive/ninefive_widget.dart';
 import '/sakon_nakhon/crisisvictims/widget/ninefore/ninefore_widget.dart';
 import '/sakon_nakhon/crisisvictims/widget/nineone/nineone_widget.dart';
@@ -9,17 +6,9 @@ import '/sakon_nakhon/crisisvictims/widget/nineseven/nineseven_widget.dart';
 import '/sakon_nakhon/crisisvictims/widget/ninesix/ninesix_widget.dart';
 import '/sakon_nakhon/crisisvictims/widget/ninethree/ninethree_widget.dart';
 import '/sakon_nakhon/crisisvictims/widget/ninetwo/ninetwo_widget.dart';
-import 'dart:math';
-import 'dart:ui';
 import '/index.dart';
 import 'm_n_a_short_widget.dart' show MNAShortWidget;
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class MNAShortModel extends FlutterFlowModel<MNAShortWidget> {
   ///  Local state fields for this page.

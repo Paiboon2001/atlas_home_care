@@ -44,13 +44,13 @@ class _AddLABWidgetState extends State<AddLABWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: MediaQuery.sizeOf(context).height * 0.5,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -59,7 +59,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -91,7 +91,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                         return 40.0;
                       }
                     }(),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                   ),
@@ -111,14 +111,14 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                   wrapWithModel(
                     model: _model.closeModel,
                     updateCallback: () => safeSetState(() {}),
-                    child: CloseWidget(),
+                    child: const CloseWidget(),
                   ),
-                ].divide(SizedBox(width: 8.0)),
+                ].divide(const SizedBox(width: 8.0)),
               ),
             ),
             Expanded(
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -141,7 +141,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                           context.pushNamed(SelectLabFormWidget.routeName);
 
                           await Future.delayed(
-                            Duration(
+                            const Duration(
                               milliseconds: 400,
                             ),
                           );
@@ -150,7 +150,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 12.0, 0.0, 12.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -159,14 +159,14 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                   Container(
                                     width: 32.0,
                                     height: 32.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       shape: BoxShape.circle,
                                     ),
                                     child: Stack(
                                       children: [
                                         Theme(
                                           data: ThemeData(
-                                            checkboxTheme: CheckboxThemeData(
+                                            checkboxTheme: const CheckboxThemeData(
                                               visualDensity:
                                                   VisualDensity.compact,
                                               materialTapTargetSize:
@@ -192,7 +192,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                                     width: 2,
                                                     color: FlutterFlowTheme.of(
                                                             context)
-                                                        .secondaryText!,
+                                                        .secondaryText,
                                                   )
                                                 : null,
                                             activeColor:
@@ -205,7 +205,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Container(
                                             width: 14.0,
                                             height: 14.0,
@@ -219,7 +219,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Container(
                                             width: 8.0,
                                             height: 8.0,
@@ -257,7 +257,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                                   .bodyMediumIsCustom,
                                         ),
                                   ),
-                                ].divide(SizedBox(width: 8.0)),
+                                ].divide(const SizedBox(width: 8.0)),
                               ),
                             ),
                             Divider(
@@ -287,7 +287,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                           context.pushNamed(LABDiabetesWidget.routeName);
 
                           await Future.delayed(
-                            Duration(
+                            const Duration(
                               milliseconds: 400,
                             ),
                           );
@@ -296,7 +296,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 12.0, 0.0, 12.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -305,14 +305,14 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                   Container(
                                     width: 32.0,
                                     height: 32.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       shape: BoxShape.circle,
                                     ),
                                     child: Stack(
                                       children: [
                                         Theme(
                                           data: ThemeData(
-                                            checkboxTheme: CheckboxThemeData(
+                                            checkboxTheme: const CheckboxThemeData(
                                               visualDensity:
                                                   VisualDensity.compact,
                                               materialTapTargetSize:
@@ -338,7 +338,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                                     width: 2,
                                                     color: FlutterFlowTheme.of(
                                                             context)
-                                                        .secondaryText!,
+                                                        .secondaryText,
                                                   )
                                                 : null,
                                             activeColor:
@@ -351,7 +351,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Container(
                                             width: 14.0,
                                             height: 14.0,
@@ -365,7 +365,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Container(
                                             width: 8.0,
                                             height: 8.0,
@@ -403,7 +403,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                                   .bodyMediumIsCustom,
                                         ),
                                   ),
-                                ].divide(SizedBox(width: 8.0)),
+                                ].divide(const SizedBox(width: 8.0)),
                               ),
                             ),
                             Divider(
@@ -433,7 +433,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                           context.pushNamed(LABBloodpressureWidget.routeName);
 
                           await Future.delayed(
-                            Duration(
+                            const Duration(
                               milliseconds: 400,
                             ),
                           );
@@ -442,7 +442,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 12.0, 0.0, 12.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -451,14 +451,14 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                   Container(
                                     width: 32.0,
                                     height: 32.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       shape: BoxShape.circle,
                                     ),
                                     child: Stack(
                                       children: [
                                         Theme(
                                           data: ThemeData(
-                                            checkboxTheme: CheckboxThemeData(
+                                            checkboxTheme: const CheckboxThemeData(
                                               visualDensity:
                                                   VisualDensity.compact,
                                               materialTapTargetSize:
@@ -484,7 +484,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                                     width: 2,
                                                     color: FlutterFlowTheme.of(
                                                             context)
-                                                        .secondaryText!,
+                                                        .secondaryText,
                                                   )
                                                 : null,
                                             activeColor:
@@ -497,7 +497,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Container(
                                             width: 14.0,
                                             height: 14.0,
@@ -511,7 +511,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Container(
                                             width: 8.0,
                                             height: 8.0,
@@ -549,7 +549,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                                   .bodyMediumIsCustom,
                                         ),
                                   ),
-                                ].divide(SizedBox(width: 8.0)),
+                                ].divide(const SizedBox(width: 8.0)),
                               ),
                             ),
                             Divider(
@@ -579,7 +579,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                           context.pushNamed(LABBloodfatWidget.routeName);
 
                           await Future.delayed(
-                            Duration(
+                            const Duration(
                               milliseconds: 400,
                             ),
                           );
@@ -588,7 +588,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 12.0, 0.0, 12.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -597,14 +597,14 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                   Container(
                                     width: 32.0,
                                     height: 32.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       shape: BoxShape.circle,
                                     ),
                                     child: Stack(
                                       children: [
                                         Theme(
                                           data: ThemeData(
-                                            checkboxTheme: CheckboxThemeData(
+                                            checkboxTheme: const CheckboxThemeData(
                                               visualDensity:
                                                   VisualDensity.compact,
                                               materialTapTargetSize:
@@ -630,7 +630,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                                     width: 2,
                                                     color: FlutterFlowTheme.of(
                                                             context)
-                                                        .secondaryText!,
+                                                        .secondaryText,
                                                   )
                                                 : null,
                                             activeColor:
@@ -643,7 +643,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Container(
                                             width: 14.0,
                                             height: 14.0,
@@ -657,7 +657,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Container(
                                             width: 8.0,
                                             height: 8.0,
@@ -695,7 +695,7 @@ class _AddLABWidgetState extends State<AddLABWidget> {
                                                   .bodyMediumIsCustom,
                                         ),
                                   ),
-                                ].divide(SizedBox(width: 8.0)),
+                                ].divide(const SizedBox(width: 8.0)),
                               ),
                             ),
                             Divider(

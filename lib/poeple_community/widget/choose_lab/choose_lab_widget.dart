@@ -48,7 +48,7 @@ class _ChooseLabWidgetState extends State<ChooseLabWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
       child: InkWell(
         splashColor: Colors.transparent,
         focusColor: Colors.transparent,
@@ -69,7 +69,7 @@ class _ChooseLabWidgetState extends State<ChooseLabWidget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 12.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 12.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -95,7 +95,7 @@ class _ChooseLabWidgetState extends State<ChooseLabWidget> {
                           ? BorderSide(
                               width: 2,
                               color:
-                                  FlutterFlowTheme.of(context).secondaryText!,
+                                  FlutterFlowTheme.of(context).secondaryText,
                             )
                           : null,
                       activeColor: FlutterFlowTheme.of(context).primary,
@@ -105,7 +105,7 @@ class _ChooseLabWidgetState extends State<ChooseLabWidget> {
                   ),
                   Text(
                     valueOrDefault<String>(
-                      widget!.namelab,
+                      widget.namelab,
                       'name_lab',
                     ),
                     textAlign: TextAlign.start,
@@ -120,10 +120,10 @@ class _ChooseLabWidgetState extends State<ChooseLabWidget> {
                               !FlutterFlowTheme.of(context).bodyMediumIsCustom,
                         ),
                   ),
-                ].divide(SizedBox(width: 8.0)),
+                ].divide(const SizedBox(width: 8.0)),
               ),
             ),
-            Divider(
+            const Divider(
               height: 1.0,
               thickness: 1.0,
               indent: 40.0,

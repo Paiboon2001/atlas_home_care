@@ -47,7 +47,7 @@ class _StartAsBottomWidgetState extends State<StartAsBottomWidget> {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.only(
+      borderRadius: const BorderRadius.only(
         topLeft: Radius.circular(24.0),
         topRight: Radius.circular(24.0),
       ),
@@ -57,7 +57,7 @@ class _StartAsBottomWidgetState extends State<StartAsBottomWidget> {
           sigmaY: 2.0,
         ),
         child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Color(0x4BF5F7FA),
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(24.0),
@@ -67,12 +67,12 @@ class _StartAsBottomWidgetState extends State<StartAsBottomWidget> {
           child: Stack(
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
                 child: FFButtonWidget(
                   onPressed: () {
                     print('Button pressed ...');
                   },
-                  text: widget!.text!,
+                  text: widget.text!,
                   options: FFButtonOptions(
                     width: double.infinity,
                     height: () {
@@ -89,10 +89,10 @@ class _StartAsBottomWidgetState extends State<StartAsBottomWidget> {
                       }
                     }(),
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     iconAlignment: IconAlignment.start,
                     iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).customColor5,
                     textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily:
@@ -104,7 +104,7 @@ class _StartAsBottomWidgetState extends State<StartAsBottomWidget> {
                               !FlutterFlowTheme.of(context).bodyMediumIsCustom,
                         ),
                     elevation: 0.0,
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       color: Colors.transparent,
                       width: 0.0,
                     ),
@@ -115,7 +115,7 @@ class _StartAsBottomWidgetState extends State<StartAsBottomWidget> {
               Container(
                 width: double.infinity,
                 height: 88.0,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.transparent,
                 ),
               ),

@@ -46,7 +46,7 @@ class _SmartcardCerectWidgetState extends State<SmartcardCerectWidget> {
       width: double.infinity,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             blurRadius: 6.0,
             color: Color(0x27000000),
@@ -64,7 +64,7 @@ class _SmartcardCerectWidgetState extends State<SmartcardCerectWidget> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 8.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 8.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.start,
@@ -105,12 +105,12 @@ class _SmartcardCerectWidgetState extends State<SmartcardCerectWidget> {
                     ),
                     gradient: LinearGradient(
                       colors: [
-                        Color(0xFF87F08B),
+                        const Color(0xFF87F08B),
                         FlutterFlowTheme.of(context).success
                       ],
-                      stops: [0.0, 1.0],
-                      begin: AlignmentDirectional(0.56, -1.0),
-                      end: AlignmentDirectional(-0.56, 1.0),
+                      stops: const [0.0, 1.0],
+                      begin: const AlignmentDirectional(0.56, -1.0),
+                      end: const AlignmentDirectional(-0.56, 1.0),
                     ),
                     shape: BoxShape.circle,
                   ),
@@ -168,15 +168,15 @@ class _SmartcardCerectWidgetState extends State<SmartcardCerectWidget> {
                             ),
                       ),
                     ),
-                  ].divide(SizedBox(height: 4.0)),
+                  ].divide(const SizedBox(height: 4.0)),
                 ),
-              ].divide(SizedBox(width: 8.0)),
+              ].divide(const SizedBox(width: 8.0)),
             ),
           ),
           Container(
             width: double.infinity,
             decoration: BoxDecoration(
-              color: Color(0x1A4CAF50),
+              color: const Color(0x1A4CAF50),
               borderRadius: BorderRadius.circular(24.0),
               border: Border.all(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -196,7 +196,7 @@ class _SmartcardCerectWidgetState extends State<SmartcardCerectWidget> {
                   children: [
                     Expanded(
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 16.0, 0.0, 16.0),
                         child: Wrap(
                           spacing: 16.0,
@@ -389,7 +389,7 @@ class _SmartcardCerectWidgetState extends State<SmartcardCerectWidget> {
                                     .override(
                                       fontFamily: FlutterFlowTheme.of(context)
                                           .labelMediumFamily,
-                                      color: Color(0xFF06694D),
+                                      color: const Color(0xFF06694D),
                                       letterSpacing: 0.0,
                                       useGoogleFonts:
                                           !FlutterFlowTheme.of(context)

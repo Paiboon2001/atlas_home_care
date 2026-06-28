@@ -112,17 +112,17 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    Color(0xFF0079D8),
+                    const Color(0xFF0079D8),
                     FlutterFlowTheme.of(context).customColor5
                   ],
-                  stops: [0.0, 1.0],
-                  begin: AlignmentDirectional(0.0, -1.0),
-                  end: AlignmentDirectional(0, 1.0),
+                  stops: const [0.0, 1.0],
+                  begin: const AlignmentDirectional(0.0, -1.0),
+                  end: const AlignmentDirectional(0, 1.0),
                 ),
                 borderRadius: BorderRadius.circular(24.0),
               ),
               child: Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -158,17 +158,17 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           colors: [
-                            Color(0xFF91DBF7),
+                            const Color(0xFF91DBF7),
                             FlutterFlowTheme.of(context).primary
                           ],
-                          stops: [0.0, 1.0],
-                          begin: AlignmentDirectional(0.56, -1.0),
-                          end: AlignmentDirectional(-0.56, 1.0),
+                          stops: const [0.0, 1.0],
+                          begin: const AlignmentDirectional(0.56, -1.0),
+                          end: const AlignmentDirectional(-0.56, 1.0),
                         ),
                         shape: BoxShape.circle,
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: FaIcon(
                           FontAwesomeIcons.flask,
                           color:
@@ -193,7 +193,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 4.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 4.0, 0.0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
@@ -208,7 +208,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                             builder: (context) {
                               return Padding(
                                 padding: MediaQuery.viewInsetsOf(context),
-                                child: FilterWidget(),
+                                child: const FilterWidget(),
                               );
                             },
                           ).then((value) => safeSetState(() {}));
@@ -243,7 +243,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                             }
                           }(),
                           decoration: BoxDecoration(
-                            color: Color(0x26FFFFFF),
+                            color: const Color(0x26FFFFFF),
                             shape: BoxShape.circle,
                             border: Border.all(
                               color: FlutterFlowTheme.of(context).alternate,
@@ -251,7 +251,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                             ),
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: FaIcon(
                               FontAwesomeIcons.slidersH,
                               color: FlutterFlowTheme.of(context)
@@ -289,7 +289,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                           builder: (context) {
                             return Padding(
                               padding: MediaQuery.viewInsetsOf(context),
-                              child: AddLABWidget(),
+                              child: const AddLABWidget(),
                             );
                           },
                         ).then((value) => safeSetState(() {}));
@@ -315,7 +315,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                           borderRadius: BorderRadius.circular(100.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               8.0, 0.0, 8.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -341,12 +341,12 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                               .bodySmallIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 4.0)),
+                            ].divide(const SizedBox(width: 4.0)),
                           ),
                         ),
                       ),
                     ),
-                  ].divide(SizedBox(width: 8.0)),
+                  ].divide(const SizedBox(width: 8.0)),
                 ),
               ),
             ),
@@ -358,7 +358,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
               ),
               child: Container(
                 width: double.infinity,
-                color: Color(0x00000000),
+                color: const Color(0x00000000),
                 child: ExpandableNotifier(
                   controller: _model.expandableExpandableController1,
                   child: ExpandablePanel(
@@ -438,7 +438,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                         children: [
                           Container(
                             decoration: BoxDecoration(
-                              gradient: LinearGradient(
+                              gradient: const LinearGradient(
                                 colors: [Color(0x7789C9FA), Color(0xD24CAAF8)],
                                 stops: [0.0, 1.0],
                                 begin: AlignmentDirectional(0.0, -1.0),
@@ -447,7 +447,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                               borderRadius: BorderRadius.circular(100.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 4.0, 12.0, 4.0),
                               child: Text(
                                 'BloodBank',
@@ -547,7 +547,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                               shape: BoxShape.circle,
                             ),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Icon(
                                 Icons.keyboard_arrow_down_rounded,
                                 color: FlutterFlowTheme.of(context).primaryText,
@@ -555,7 +555,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                               ),
                             ),
                           ),
-                        ].divide(SizedBox(width: 8.0)),
+                        ].divide(const SizedBox(width: 8.0)),
                       ),
                     ),
                     collapsed: Container(),
@@ -570,12 +570,12 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                           lineStyle: DividerLineStyle.dashed,
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 0.0),
                           child: Container(
                             width: double.infinity,
                             decoration: BoxDecoration(
-                              color: Color(0x0B2397FF),
+                              color: const Color(0x0B2397FF),
                               borderRadius: BorderRadius.circular(24.0),
                               border: Border.all(
                                 color: FlutterFlowTheme.of(context)
@@ -613,7 +613,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
                                                   .bodySmallFamily,
-                                          color: Color(0xFF0069B7),
+                                          color: const Color(0xFF0069B7),
                                           letterSpacing: 0.0,
                                           useGoogleFonts:
                                               !FlutterFlowTheme.of(context)
@@ -627,10 +627,10 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                         FlutterFlowTheme.of(context).alternate,
                                   ),
                                   Container(
-                                    constraints: BoxConstraints(
+                                    constraints: const BoxConstraints(
                                       minHeight: 40.0,
                                     ),
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.min,
                                       mainAxisAlignment:
@@ -662,12 +662,12 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                               MainAxisAlignment.center,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Container(
                                                 width: 24.0,
                                                 height: 24.0,
-                                                decoration: BoxDecoration(
+                                                decoration: const BoxDecoration(
                                                   gradient: LinearGradient(
                                                     colors: [
                                                       Color(0xFFFFB960),
@@ -683,7 +683,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Icon(
                                                     Icons.hourglass_top_rounded,
@@ -714,7 +714,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                                       padding: MediaQuery
                                                           .viewInsetsOf(
                                                               context),
-                                                      child: FixWidget(),
+                                                      child: const FixWidget(),
                                                     );
                                                   },
                                                 ).then((value) =>
@@ -723,13 +723,13 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                               child: Container(
                                                 width: 24.0,
                                                 height: 24.0,
-                                                decoration: BoxDecoration(
+                                                decoration: const BoxDecoration(
                                                   color: Color(0x59A7C6ED),
                                                   shape: BoxShape.circle,
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Text(
                                                     '...',
@@ -772,7 +772,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                             }
                                           }())),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                   ),
                                   Divider(
@@ -782,10 +782,10 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                         FlutterFlowTheme.of(context).alternate,
                                   ),
                                   Container(
-                                    constraints: BoxConstraints(
+                                    constraints: const BoxConstraints(
                                       minHeight: 40.0,
                                     ),
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
@@ -814,12 +814,12 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                               MainAxisAlignment.center,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Container(
                                                 width: 24.0,
                                                 height: 24.0,
-                                                decoration: BoxDecoration(
+                                                decoration: const BoxDecoration(
                                                   gradient: LinearGradient(
                                                     colors: [
                                                       Color(0xFFFFB960),
@@ -835,7 +835,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Icon(
                                                     Icons.hourglass_top_rounded,
@@ -866,7 +866,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                                       padding: MediaQuery
                                                           .viewInsetsOf(
                                                               context),
-                                                      child: FixWidget(),
+                                                      child: const FixWidget(),
                                                     );
                                                   },
                                                 ).then((value) =>
@@ -875,13 +875,13 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                               child: Container(
                                                 width: 24.0,
                                                 height: 24.0,
-                                                decoration: BoxDecoration(
+                                                decoration: const BoxDecoration(
                                                   color: Color(0x59A7C6ED),
                                                   shape: BoxShape.circle,
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Text(
                                                     '...',
@@ -924,7 +924,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                             }
                                           }())),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                   ),
                                   Divider(
@@ -934,10 +934,10 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                         FlutterFlowTheme.of(context).alternate,
                                   ),
                                   Container(
-                                    constraints: BoxConstraints(
+                                    constraints: const BoxConstraints(
                                       minHeight: 40.0,
                                     ),
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
@@ -966,12 +966,12 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                               MainAxisAlignment.center,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Container(
                                                 width: 24.0,
                                                 height: 24.0,
-                                                decoration: BoxDecoration(
+                                                decoration: const BoxDecoration(
                                                   gradient: LinearGradient(
                                                     colors: [
                                                       Color(0xFFFFB960),
@@ -987,7 +987,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Icon(
                                                     Icons.hourglass_top_rounded,
@@ -1018,7 +1018,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                                       padding: MediaQuery
                                                           .viewInsetsOf(
                                                               context),
-                                                      child: FixWidget(),
+                                                      child: const FixWidget(),
                                                     );
                                                   },
                                                 ).then((value) =>
@@ -1027,13 +1027,13 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                               child: Container(
                                                 width: 24.0,
                                                 height: 24.0,
-                                                decoration: BoxDecoration(
+                                                decoration: const BoxDecoration(
                                                   color: Color(0x59A7C6ED),
                                                   shape: BoxShape.circle,
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Text(
                                                     '...',
@@ -1076,17 +1076,17 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                             }
                                           }())),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                             ),
                           ),
                         ),
                       ],
                     ),
-                    theme: ExpandableThemeData(
+                    theme: const ExpandableThemeData(
                       tapHeaderToExpand: true,
                       tapBodyToExpand: false,
                       tapBodyToCollapse: false,
@@ -1097,7 +1097,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                 ),
               ),
             ),
-          ].divide(SizedBox(height: 8.0)),
+          ].divide(const SizedBox(height: 8.0)),
         ),
         Column(
           mainAxisSize: MainAxisSize.max,
@@ -1118,7 +1118,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 4.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 4.0, 0.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -1133,7 +1133,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                         builder: (context) {
                           return Padding(
                             padding: MediaQuery.viewInsetsOf(context),
-                            child: FilterWidget(),
+                            child: const FilterWidget(),
                           );
                         },
                       ).then((value) => safeSetState(() {}));
@@ -1168,15 +1168,15 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                         }
                       }(),
                       decoration: BoxDecoration(
-                        color: Color(0x396C6C6C),
+                        color: const Color(0x396C6C6C),
                         shape: BoxShape.circle,
                         border: Border.all(
-                          color: Color(0xFFA8A8A8),
+                          color: const Color(0xFFA8A8A8),
                           width: 0.4,
                         ),
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: FaIcon(
                           FontAwesomeIcons.slidersH,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -1199,7 +1199,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                     ),
                   ),
                 ),
-              ].divide(SizedBox(width: 8.0)),
+              ].divide(const SizedBox(width: 8.0)),
             ),
             Container(
               width: double.infinity,
@@ -1209,7 +1209,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
               ),
               child: Container(
                 width: double.infinity,
-                color: Color(0x00000000),
+                color: const Color(0x00000000),
                 child: ExpandableNotifier(
                   controller: _model.expandableExpandableController2,
                   child: ExpandablePanel(
@@ -1289,7 +1289,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                         children: [
                           Container(
                             decoration: BoxDecoration(
-                              gradient: LinearGradient(
+                              gradient: const LinearGradient(
                                 colors: [Color(0x7789C9FA), Color(0xD24CAAF8)],
                                 stops: [0.0, 1.0],
                                 begin: AlignmentDirectional(0.0, -1.0),
@@ -1298,7 +1298,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                               borderRadius: BorderRadius.circular(100.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 4.0, 12.0, 4.0),
                               child: Text(
                                 'CYTOLOGY',
@@ -1398,7 +1398,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                               shape: BoxShape.circle,
                             ),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Icon(
                                 Icons.keyboard_arrow_down_rounded,
                                 color: FlutterFlowTheme.of(context).primaryText,
@@ -1406,7 +1406,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                               ),
                             ),
                           ),
-                        ].divide(SizedBox(width: 8.0)),
+                        ].divide(const SizedBox(width: 8.0)),
                       ),
                     ),
                     collapsed: Container(),
@@ -1421,12 +1421,12 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                           lineStyle: DividerLineStyle.dashed,
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 0.0),
                           child: Container(
                             width: double.infinity,
                             decoration: BoxDecoration(
-                              color: Color(0x0B2397FF),
+                              color: const Color(0x0B2397FF),
                               borderRadius: BorderRadius.circular(24.0),
                               border: Border.all(
                                 color: FlutterFlowTheme.of(context)
@@ -1464,7 +1464,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
                                                   .bodySmallFamily,
-                                          color: Color(0xFF0069B7),
+                                          color: const Color(0xFF0069B7),
                                           letterSpacing: 0.0,
                                           useGoogleFonts:
                                               !FlutterFlowTheme.of(context)
@@ -1478,10 +1478,10 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                         FlutterFlowTheme.of(context).alternate,
                                   ),
                                   Container(
-                                    constraints: BoxConstraints(
+                                    constraints: const BoxConstraints(
                                       minHeight: 40.0,
                                     ),
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.min,
                                       mainAxisAlignment:
@@ -1513,11 +1513,11 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                               MainAxisAlignment.center,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  gradient: LinearGradient(
+                                                  gradient: const LinearGradient(
                                                     colors: [
                                                       Color(0x3D7AF4A5),
                                                       Color(0x621EBE4E)
@@ -1533,7 +1533,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                                           100.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 4.0, 12.0, 4.0),
                                                   child: Text(
@@ -1580,7 +1580,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                                       padding: MediaQuery
                                                           .viewInsetsOf(
                                                               context),
-                                                      child: FixWidget(),
+                                                      child: const FixWidget(),
                                                     );
                                                   },
                                                 ).then((value) =>
@@ -1589,13 +1589,13 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                               child: Container(
                                                 width: 24.0,
                                                 height: 24.0,
-                                                decoration: BoxDecoration(
+                                                decoration: const BoxDecoration(
                                                   color: Color(0x59A7C6ED),
                                                   shape: BoxShape.circle,
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Text(
                                                     '...',
@@ -1638,7 +1638,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                             }
                                           }())),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                   ),
                                   Container(
@@ -1721,10 +1721,10 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                         FlutterFlowTheme.of(context).alternate,
                                   ),
                                   Container(
-                                    constraints: BoxConstraints(
+                                    constraints: const BoxConstraints(
                                       minHeight: 40.0,
                                     ),
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
@@ -1753,11 +1753,11 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                               MainAxisAlignment.center,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  gradient: LinearGradient(
+                                                  gradient: const LinearGradient(
                                                     colors: [
                                                       Color(0x19F47A86),
                                                       Color(0x25BE1E2D)
@@ -1773,7 +1773,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                                           100.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 4.0, 12.0, 4.0),
                                                   child: Text(
@@ -1820,7 +1820,7 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                                       padding: MediaQuery
                                                           .viewInsetsOf(
                                                               context),
-                                                      child: FixWidget(),
+                                                      child: const FixWidget(),
                                                     );
                                                   },
                                                 ).then((value) =>
@@ -1829,13 +1829,13 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                               child: Container(
                                                 width: 24.0,
                                                 height: 24.0,
-                                                decoration: BoxDecoration(
+                                                decoration: const BoxDecoration(
                                                   color: Color(0x59A7C6ED),
                                                   shape: BoxShape.circle,
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Text(
                                                     '...',
@@ -1878,17 +1878,17 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                                             }
                                           }())),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                             ),
                           ),
                         ),
                       ],
                     ),
-                    theme: ExpandableThemeData(
+                    theme: const ExpandableThemeData(
                       tapHeaderToExpand: true,
                       tapBodyToExpand: false,
                       tapBodyToCollapse: false,
@@ -1899,9 +1899,9 @@ class _LabWidgetState extends State<LabWidget> with TickerProviderStateMixin {
                 ),
               ),
             ),
-          ].divide(SizedBox(height: 8.0)),
+          ].divide(const SizedBox(height: 8.0)),
         ),
-      ].divide(SizedBox(height: 16.0)),
+      ].divide(const SizedBox(height: 16.0)),
     );
   }
 }

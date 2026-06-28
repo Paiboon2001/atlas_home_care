@@ -48,13 +48,13 @@ class _ButtonsheetpatientWidgetState extends State<ButtonsheetpatientWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: 840.0,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).primaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -63,7 +63,7 @@ class _ButtonsheetpatientWidgetState extends State<ButtonsheetpatientWidget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -161,7 +161,7 @@ class _ButtonsheetpatientWidgetState extends State<ButtonsheetpatientWidget> {
                                 ),
                           ),
                         ),
-                      ].divide(SizedBox(height: 2.0)),
+                      ].divide(const SizedBox(height: 2.0)),
                     ),
                   ),
                   InkWell(
@@ -181,14 +181,14 @@ class _ButtonsheetpatientWidgetState extends State<ButtonsheetpatientWidget> {
                             FlutterFlowTheme.of(context).customColor2,
                             FlutterFlowTheme.of(context).customColor1
                           ],
-                          stops: [0.0, 1.0],
-                          begin: AlignmentDirectional(0.0, -1.0),
-                          end: AlignmentDirectional(0, 1.0),
+                          stops: const [0.0, 1.0],
+                          begin: const AlignmentDirectional(0.0, -1.0),
+                          end: const AlignmentDirectional(0, 1.0),
                         ),
                         shape: BoxShape.circle,
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Icon(
                           Icons.person_add_alt_rounded,
                           color:
@@ -235,12 +235,12 @@ class _ButtonsheetpatientWidgetState extends State<ButtonsheetpatientWidget> {
                           return 40.0;
                         }
                       }(),
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0x266C6C6C),
                         shape: BoxShape.circle,
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Icon(
                           Icons.close_rounded,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -262,10 +262,10 @@ class _ButtonsheetpatientWidgetState extends State<ButtonsheetpatientWidget> {
                       ),
                     ),
                   ),
-                ].divide(SizedBox(width: 12.0)),
+                ].divide(const SizedBox(width: 12.0)),
               ),
             ),
-            Divider(
+            const Divider(
               height: 1.0,
               thickness: 1.0,
               color: Color(0xFFDCE0EA),
@@ -277,11 +277,11 @@ class _ButtonsheetpatientWidgetState extends State<ButtonsheetpatientWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: wrapWithModel(
                         model: _model.itemHomepatientModel,
                         updateCallback: () => safeSetState(() {}),
-                        child: ItemHomepatientWidget(
+                        child: const ItemHomepatientWidget(
                           homenumber: '1',
                           location:
                               'หมู่บ้านกฤษดานคร หมู่ 6  บ้านเลขที่ 1 แขวงราษฎร์บูรณะ เขตราษฎร์บูรณะ กรุงเทพมหานคร 10140',
@@ -291,15 +291,15 @@ class _ButtonsheetpatientWidgetState extends State<ButtonsheetpatientWidget> {
                     wrapWithModel(
                       model: _model.totalParentsModel,
                       updateCallback: () => safeSetState(() {}),
-                      child: TotalParentsWidget(),
+                      child: const TotalParentsWidget(),
                     ),
                   ]
-                      .divide(SizedBox(height: 16.0))
-                      .around(SizedBox(height: 16.0)),
+                      .divide(const SizedBox(height: 16.0))
+                      .around(const SizedBox(height: 16.0)),
                 ),
               ),
             ),
-            Divider(
+            const Divider(
               height: 1.0,
               thickness: 1.0,
               color: Color(0xFFDCE0EA),
@@ -307,7 +307,7 @@ class _ButtonsheetpatientWidgetState extends State<ButtonsheetpatientWidget> {
             wrapWithModel(
               model: _model.bottonWayModel,
               updateCallback: () => safeSetState(() {}),
-              child: BottonWayWidget(),
+              child: const BottonWayWidget(),
             ),
           ],
         ),

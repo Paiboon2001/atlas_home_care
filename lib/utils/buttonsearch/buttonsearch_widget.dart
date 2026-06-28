@@ -47,7 +47,7 @@ class _ButtonsearchWidgetState extends State<ButtonsearchWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
       child: Container(
         width: 40.0,
         height: 40.0,
@@ -56,8 +56,8 @@ class _ButtonsearchWidgetState extends State<ButtonsearchWidget> {
           shape: BoxShape.circle,
         ),
         child: Align(
-          alignment: AlignmentDirectional(0.0, 0.0),
-          child: widget!.icon!,
+          alignment: const AlignmentDirectional(0.0, 0.0),
+          child: widget.icon!,
         ),
       ),
     );

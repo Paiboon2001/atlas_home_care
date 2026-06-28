@@ -44,13 +44,13 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: 400.0,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -60,7 +60,7 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -92,7 +92,7 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
                         return 40.0;
                       }
                     }(),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                   ),
@@ -109,13 +109,13 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
                   wrapWithModel(
                     model: _model.closeModel,
                     updateCallback: () => safeSetState(() {}),
-                    child: CloseWidget(),
+                    child: const CloseWidget(),
                   ),
                 ],
               ),
             ),
             ListView(
-              padding: EdgeInsets.fromLTRB(
+              padding: const EdgeInsets.fromLTRB(
                 0,
                 0,
                 0,
@@ -125,7 +125,7 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
               scrollDirection: Axis.vertical,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -141,7 +141,7 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
                           width: double.infinity,
                           height: 80.0,
                           decoration: BoxDecoration(
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 4.0,
                                 color: Color(0x19000000),
@@ -154,20 +154,20 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
                             gradient: LinearGradient(
                               colors: [
                                 FlutterFlowTheme.of(context).primary,
-                                Color(0xFF2D8CD8)
+                                const Color(0xFF2D8CD8)
                               ],
-                              stops: [0.0, 1.0],
-                              begin: AlignmentDirectional(1.0, -1.0),
-                              end: AlignmentDirectional(-1.0, 1.0),
+                              stops: const [0.0, 1.0],
+                              begin: const AlignmentDirectional(1.0, -1.0),
+                              end: const AlignmentDirectional(-1.0, 1.0),
                             ),
                             borderRadius: BorderRadius.circular(24.0),
                           ),
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(-1.0, 0.0),
+                                alignment: const AlignmentDirectional(-1.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsets.all(16.0),
+                                  padding: const EdgeInsets.all(16.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
@@ -189,14 +189,14 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
                                                       .titleMediumIsCustom,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.0, -1.0),
+                                alignment: const AlignmentDirectional(1.0, -1.0),
                                 child: ClipRRect(
-                                  borderRadius: BorderRadius.only(
+                                  borderRadius: const BorderRadius.only(
                                     topRight: Radius.circular(24.0),
                                     bottomRight: Radius.circular(24.0),
                                   ),
@@ -211,11 +211,11 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -231,7 +231,7 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
                           width: double.infinity,
                           height: 80.0,
                           decoration: BoxDecoration(
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 4.0,
                                 color: Color(0x19000000),
@@ -241,7 +241,7 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
                                 ),
                               )
                             ],
-                            gradient: LinearGradient(
+                            gradient: const LinearGradient(
                               colors: [Color(0xFF39C59C), Color(0xFF1D8B6B)],
                               stops: [0.0, 1.0],
                               begin: AlignmentDirectional(1.0, -1.0),
@@ -252,9 +252,9 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(1.0, -1.0),
+                                alignment: const AlignmentDirectional(1.0, -1.0),
                                 child: ClipRRect(
-                                  borderRadius: BorderRadius.only(
+                                  borderRadius: const BorderRadius.only(
                                     topRight: Radius.circular(24.0),
                                     bottomRight: Radius.circular(24.0),
                                   ),
@@ -266,9 +266,9 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.0, 0.0),
+                                alignment: const AlignmentDirectional(-1.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsets.all(16.0),
+                                  padding: const EdgeInsets.all(16.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
@@ -290,7 +290,7 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
                                                       .titleMediumIsCustom,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                 ),
                               ),
@@ -298,11 +298,11 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -318,7 +318,7 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
                           width: double.infinity,
                           height: 80.0,
                           decoration: BoxDecoration(
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 4.0,
                                 color: Color(0x19000000),
@@ -333,18 +333,18 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
                                 FlutterFlowTheme.of(context).customColor4,
                                 FlutterFlowTheme.of(context).customColor3
                               ],
-                              stops: [0.0, 1.0],
-                              begin: AlignmentDirectional(1.0, -1.0),
-                              end: AlignmentDirectional(-1.0, 1.0),
+                              stops: const [0.0, 1.0],
+                              begin: const AlignmentDirectional(1.0, -1.0),
+                              end: const AlignmentDirectional(-1.0, 1.0),
                             ),
                             borderRadius: BorderRadius.circular(24.0),
                           ),
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(1.0, -1.0),
+                                alignment: const AlignmentDirectional(1.0, -1.0),
                                 child: ClipRRect(
-                                  borderRadius: BorderRadius.only(
+                                  borderRadius: const BorderRadius.only(
                                     topRight: Radius.circular(24.0),
                                     bottomRight: Radius.circular(24.0),
                                   ),
@@ -356,9 +356,9 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.0, 0.0),
+                                alignment: const AlignmentDirectional(-1.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsets.all(16.0),
+                                  padding: const EdgeInsets.all(16.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
@@ -380,7 +380,7 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
                                                       .titleMediumIsCustom,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                 ),
                               ),
@@ -388,10 +388,10 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                 ),
-              ].divide(SizedBox(height: 16.0)),
+              ].divide(const SizedBox(height: 16.0)),
             ),
           ],
         ),

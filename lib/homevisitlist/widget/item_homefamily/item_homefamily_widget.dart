@@ -65,7 +65,7 @@ class _ItemHomefamilyWidgetState extends State<ItemHomefamilyWidget> {
       width: double.infinity,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             blurRadius: 4.0,
             color: Color(0x19000000),
@@ -86,7 +86,7 @@ class _ItemHomefamilyWidgetState extends State<ItemHomefamilyWidget> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -107,7 +107,7 @@ class _ItemHomefamilyWidgetState extends State<ItemHomefamilyWidget> {
                                     .override(
                                       fontFamily: FlutterFlowTheme.of(context)
                                           .titleMediumFamily,
-                                      color: Color(0xFF1D8B6B),
+                                      color: const Color(0xFF1D8B6B),
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
                                       useGoogleFonts:
@@ -117,7 +117,7 @@ class _ItemHomefamilyWidgetState extends State<ItemHomefamilyWidget> {
                               ),
                               TextSpan(
                                 text: valueOrDefault<String>(
-                                  widget!.homenumber,
+                                  widget.homenumber,
                                   '0',
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -187,7 +187,7 @@ class _ItemHomefamilyWidgetState extends State<ItemHomefamilyWidget> {
                                 ),
                           ),
                         ),
-                      ].divide(SizedBox(height: 2.0)),
+                      ].divide(const SizedBox(height: 2.0)),
                     ),
                     InkWell(
                       splashColor: Colors.transparent,
@@ -201,14 +201,14 @@ class _ItemHomefamilyWidgetState extends State<ItemHomefamilyWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Align(
-                            alignment: AlignmentDirectional(1.0, 0.0),
+                            alignment: const AlignmentDirectional(1.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
-                                color: Color(0x1A46D8AD),
+                                color: const Color(0x1A46D8AD),
                                 borderRadius: BorderRadius.circular(100.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     4.0, 4.0, 16.0, 4.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.min,
@@ -224,16 +224,16 @@ class _ItemHomefamilyWidgetState extends State<ItemHomefamilyWidget> {
                                             FlutterFlowTheme.of(context)
                                                 .customColor1
                                           ],
-                                          stops: [0.0, 1.0],
+                                          stops: const [0.0, 1.0],
                                           begin:
-                                              AlignmentDirectional(0.0, -1.0),
-                                          end: AlignmentDirectional(0, 1.0),
+                                              const AlignmentDirectional(0.0, -1.0),
+                                          end: const AlignmentDirectional(0, 1.0),
                                         ),
                                         shape: BoxShape.circle,
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Icon(
                                           Icons.person_add_alt_rounded,
                                           color: FlutterFlowTheme.of(context)
@@ -259,12 +259,12 @@ class _ItemHomefamilyWidgetState extends State<ItemHomefamilyWidget> {
                                                     .bodyMediumIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 8.0)),
+                                  ].divide(const SizedBox(width: 8.0)),
                                 ),
                               ),
                             ),
                           ),
-                        ].divide(SizedBox(width: 8.0)),
+                        ].divide(const SizedBox(width: 8.0)),
                       ),
                     ),
                   ],
@@ -276,10 +276,10 @@ class _ItemHomefamilyWidgetState extends State<ItemHomefamilyWidget> {
                 color: FlutterFlowTheme.of(context).alternate,
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
                 child: Text(
                   valueOrDefault<String>(
-                    widget!.location,
+                    widget.location,
                     'location',
                   ),
                   maxLines: 2,
@@ -297,7 +297,7 @@ class _ItemHomefamilyWidgetState extends State<ItemHomefamilyWidget> {
           ),
           Container(
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 bottomLeft: Radius.circular(24.0),
                 bottomRight: Radius.circular(24.0),
               ),
@@ -306,9 +306,9 @@ class _ItemHomefamilyWidgetState extends State<ItemHomefamilyWidget> {
               ),
             ),
             child: Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: Stack(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 children: [
                   InkWell(
                     splashColor: Colors.transparent,
@@ -319,7 +319,7 @@ class _ItemHomefamilyWidgetState extends State<ItemHomefamilyWidget> {
                       context.pushNamed(MapHomeWidget.routeName);
                     },
                     child: ClipRRect(
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(24.0),
                         bottomRight: Radius.circular(24.0),
                       ),
@@ -345,7 +345,7 @@ class _ItemHomefamilyWidgetState extends State<ItemHomefamilyWidget> {
                       child: PinLocateWidget(
                         color2: FlutterFlowTheme.of(context).error,
                         color1: FlutterFlowTheme.of(context).customColor4,
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.home_sharp,
                         ),
                       ),

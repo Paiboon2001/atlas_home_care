@@ -71,12 +71,12 @@ class _CloseWidgetState extends State<CloseWidget> {
             return 40.0;
           }
         }(),
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0x266C6C6C),
           shape: BoxShape.circle,
         ),
         child: Align(
-          alignment: AlignmentDirectional(0.0, 0.0),
+          alignment: const AlignmentDirectional(0.0, 0.0),
           child: Icon(
             Icons.close_rounded,
             color: FlutterFlowTheme.of(context).secondaryText,

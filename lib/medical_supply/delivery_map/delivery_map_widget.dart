@@ -93,18 +93,18 @@ class _DeliveryMapWidgetState extends State<DeliveryMapWidget>
                   ).image,
                 ),
               ),
-              child: Stack(
+              child: const Stack(
                 children: [],
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 4.0,
@@ -132,32 +132,32 @@ class _DeliveryMapWidgetState extends State<DeliveryMapWidget>
                       },
                     ),
                   ),
-                ].divide(SizedBox(width: 8.0)),
+                ].divide(const SizedBox(width: 8.0)),
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(1.0, 1.0),
+                    alignment: const AlignmentDirectional(1.0, 1.0),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 16.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 16.0),
                       child: wrapWithModel(
                         model: _model.navigatebuttonModel,
                         updateCallback: () => safeSetState(() {}),
-                        child: NavigatebuttonWidget(),
+                        child: const NavigatebuttonWidget(),
                       ),
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.0, 1.0),
+                    alignment: const AlignmentDirectional(0.0, 1.0),
                     child: Container(
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 4.0,
                             color: Color(0x35000000),
@@ -167,7 +167,7 @@ class _DeliveryMapWidgetState extends State<DeliveryMapWidget>
                             ),
                           )
                         ],
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           topLeft: Radius.circular(24.0),
                           topRight: Radius.circular(24.0),
                         ),
@@ -176,7 +176,7 @@ class _DeliveryMapWidgetState extends State<DeliveryMapWidget>
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 16.0, 16.0, 24.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -208,7 +208,7 @@ class _DeliveryMapWidgetState extends State<DeliveryMapWidget>
                                           ),
                                     ),
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Icon(
                                         Icons.location_on_rounded,
                                         color: FlutterFlowTheme.of(context)
@@ -234,7 +234,7 @@ class _DeliveryMapWidgetState extends State<DeliveryMapWidget>
                                           ),
                                     ),
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Icon(
                                         Icons.location_on_rounded,
                                         color:
@@ -242,7 +242,7 @@ class _DeliveryMapWidgetState extends State<DeliveryMapWidget>
                                         size: 24.0,
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                                 Expanded(
                                   child: Column(
@@ -318,10 +318,10 @@ class _DeliveryMapWidgetState extends State<DeliveryMapWidget>
                                           overflow: TextOverflow.ellipsis,
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 18.0)),
+                                    ].divide(const SizedBox(height: 18.0)),
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 16.0)),
+                              ].divide(const SizedBox(width: 16.0)),
                             ),
                           ),
                           Divider(
@@ -335,7 +335,7 @@ class _DeliveryMapWidgetState extends State<DeliveryMapWidget>
                                   .secondaryBackground,
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 16.0, 0.0, 24.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -359,12 +359,12 @@ class _DeliveryMapWidgetState extends State<DeliveryMapWidget>
                                         }
                                       }(),
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFC8F4FF),
+                                        color: const Color(0xFFC8F4FF),
                                         borderRadius:
                                             BorderRadius.circular(100.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -372,7 +372,7 @@ class _DeliveryMapWidgetState extends State<DeliveryMapWidget>
                                               MainAxisAlignment.center,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 Icons.navigation_rounded,
@@ -386,7 +386,7 @@ class _DeliveryMapWidgetState extends State<DeliveryMapWidget>
                                               ),
                                             ),
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Text(
                                                 'เริ่มต้น',
@@ -410,7 +410,7 @@ class _DeliveryMapWidgetState extends State<DeliveryMapWidget>
                                                     ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 12.0)),
+                                          ].divide(const SizedBox(width: 12.0)),
                                         ),
                                       ),
                                     ),
@@ -439,11 +439,11 @@ class _DeliveryMapWidgetState extends State<DeliveryMapWidget>
                                         borderRadius:
                                             BorderRadius.circular(100.0),
                                         border: Border.all(
-                                          color: Color(0xFFE0E4F0),
+                                          color: const Color(0xFFE0E4F0),
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -458,7 +458,7 @@ class _DeliveryMapWidgetState extends State<DeliveryMapWidget>
                                               size: 20.0,
                                             ),
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Text(
                                                 'google Map',
@@ -482,15 +482,15 @@ class _DeliveryMapWidgetState extends State<DeliveryMapWidget>
                                                     ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 12.0)),
+                                          ].divide(const SizedBox(width: 12.0)),
                                         ),
                                       ),
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(width: 8.0))
-                                    .addToStart(SizedBox(width: 16.0))
-                                    .addToEnd(SizedBox(width: 16.0)),
+                                    .divide(const SizedBox(width: 8.0))
+                                    .addToStart(const SizedBox(width: 16.0))
+                                    .addToEnd(const SizedBox(width: 16.0)),
                               ),
                             ),
                           ),

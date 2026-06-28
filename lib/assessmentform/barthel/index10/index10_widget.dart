@@ -56,21 +56,21 @@ class _Index10WidgetState extends State<Index10Widget> {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            FFAppState().Bquest10 == widget!.barthel
+            FFAppState().Bquest10 == widget.barthel
                 ? FlutterFlowTheme.of(context).secondary
                 : FlutterFlowTheme.of(context).secondaryBackground,
-            FFAppState().Bquest10 == widget!.barthel
+            FFAppState().Bquest10 == widget.barthel
                 ? FlutterFlowTheme.of(context).primary
                 : FlutterFlowTheme.of(context).secondaryBackground
           ],
-          stops: [0.0, 1.0],
-          begin: AlignmentDirectional(1.0, 0.34),
-          end: AlignmentDirectional(-1.0, -0.34),
+          stops: const [0.0, 1.0],
+          begin: const AlignmentDirectional(1.0, 0.34),
+          end: const AlignmentDirectional(-1.0, -0.34),
         ),
         borderRadius: BorderRadius.circular(24.0),
       ),
       child: Padding(
-        padding: EdgeInsets.all(12.0),
+        padding: const EdgeInsets.all(12.0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -78,16 +78,16 @@ class _Index10WidgetState extends State<Index10Widget> {
               width: 40.0,
               height: 40.0,
               decoration: BoxDecoration(
-                color: FFAppState().Bquest10 == widget!.barthel
+                color: FFAppState().Bquest10 == widget.barthel
                     ? FlutterFlowTheme.of(context).secondaryBackground
-                    : Color(0xFFDBF0FF),
+                    : const Color(0xFFDBF0FF),
                 shape: BoxShape.circle,
               ),
               child: Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Text(
                   valueOrDefault<String>(
-                    widget!.num,
+                    widget.num,
                     '0',
                   ),
                   style: FlutterFlowTheme.of(context).titleLarge.override(
@@ -105,12 +105,12 @@ class _Index10WidgetState extends State<Index10Widget> {
             Expanded(
               child: Text(
                 valueOrDefault<String>(
-                  widget!.text,
+                  widget.text,
                   'na',
                 ),
                 style: FlutterFlowTheme.of(context).titleSmall.override(
                       fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
-                      color: FFAppState().Bquest10 == widget!.barthel
+                      color: FFAppState().Bquest10 == widget.barthel
                           ? FlutterFlowTheme.of(context).secondaryBackground
                           : FlutterFlowTheme.of(context).primaryText,
                       letterSpacing: 0.0,
@@ -121,7 +121,7 @@ class _Index10WidgetState extends State<Index10Widget> {
                     ),
               ),
             ),
-          ].divide(SizedBox(width: 8.0)),
+          ].divide(const SizedBox(width: 8.0)),
         ),
       ),
     );

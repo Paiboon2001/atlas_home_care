@@ -51,8 +51,8 @@ class _LoginErrerWidgetState extends State<LoginErrerWidget>
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 1500.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -70,8 +70,8 @@ class _LoginErrerWidgetState extends State<LoginErrerWidget>
             curve: Curves.easeInOut,
             delay: 100.0.ms,
             duration: 1000.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -109,9 +109,9 @@ class _LoginErrerWidgetState extends State<LoginErrerWidget>
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 0.0),
+      alignment: const AlignmentDirectional(0.0, 0.0),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
         child: Container(
           width: () {
             if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
@@ -132,45 +132,45 @@ class _LoginErrerWidgetState extends State<LoginErrerWidget>
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Container(
+              SizedBox(
                 width: 160.0,
                 height: 160.0,
                 child: Stack(
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Container(
                         width: 160.0,
                         height: 160.0,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(
-                            color: Color(0xFFFF0000),
+                            color: const Color(0xFFFF0000),
                           ),
                         ),
                       ).animateOnPageLoad(
                           animationsMap['containerOnPageLoadAnimation1']!),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Container(
                         width: 130.0,
                         height: 130.0,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(
-                            color: Color(0xFFFF0000),
+                            color: const Color(0xFFFF0000),
                           ),
                         ),
                       ).animateOnPageLoad(
                           animationsMap['containerOnPageLoadAnimation2']!),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Container(
                         width: 100.0,
                         height: 100.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           gradient: LinearGradient(
                             colors: [Color(0xFFFF9F9F), Color(0xFFFF5050)],
                             stops: [0.0, 1.0],
@@ -180,18 +180,18 @@ class _LoginErrerWidgetState extends State<LoginErrerWidget>
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Container(
                             width: 80.0,
                             height: 80.0,
                             clipBehavior: Clip.antiAlias,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               shape: BoxShape.circle,
                             ),
                             child: Image.network(
                               'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/76ukkswyis72/nonac.png',
                               fit: BoxFit.cover,
-                              alignment: Alignment(0.0, 0.0),
+                              alignment: const Alignment(0.0, 0.0),
                             ),
                           ).animateOnPageLoad(
                               animationsMap['circleImageOnPageLoadAnimation']!),
@@ -229,12 +229,12 @@ class _LoginErrerWidgetState extends State<LoginErrerWidget>
                               !FlutterFlowTheme.of(context).labelLargeIsCustom,
                         ),
                   ),
-                ].divide(SizedBox(height: 16.0)),
+                ].divide(const SizedBox(height: 16.0)),
               ),
             ]
-                .divide(SizedBox(height: 32.0))
-                .addToStart(SizedBox(height: 32.0))
-                .addToEnd(SizedBox(height: 32.0)),
+                .divide(const SizedBox(height: 32.0))
+                .addToStart(const SizedBox(height: 32.0))
+                .addToEnd(const SizedBox(height: 32.0)),
           ),
         ),
       ),

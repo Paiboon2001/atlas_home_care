@@ -49,13 +49,13 @@ class _SearchitemPPSpecialcodesWidgetState
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: MediaQuery.sizeOf(context).height * 0.95,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -64,7 +64,7 @@ class _SearchitemPPSpecialcodesWidgetState
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -96,7 +96,7 @@ class _SearchitemPPSpecialcodesWidgetState
                         return 40.0;
                       }
                     }(),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                   ),
@@ -114,14 +114,14 @@ class _SearchitemPPSpecialcodesWidgetState
                   wrapWithModel(
                     model: _model.closeModel,
                     updateCallback: () => safeSetState(() {}),
-                    child: CloseWidget(),
+                    child: const CloseWidget(),
                   ),
                 ],
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-              child: Container(
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+              child: SizedBox(
                 width: double.infinity,
                 child: TextFormField(
                   controller: _model.textController,
@@ -141,14 +141,14 @@ class _SearchitemPPSpecialcodesWidgetState
                               !FlutterFlowTheme.of(context).labelMediumIsCustom,
                         ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0x00000000),
                         width: 1.0,
                       ),
                       borderRadius: BorderRadius.circular(100.0),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0x00000000),
                         width: 1.0,
                       ),
@@ -170,7 +170,7 @@ class _SearchitemPPSpecialcodesWidgetState
                     ),
                     filled: true,
                     fillColor: FlutterFlowTheme.of(context).alternate,
-                    prefixIcon: Icon(
+                    prefixIcon: const Icon(
                       Icons.search_rounded,
                       size: 20.0,
                     ),
@@ -190,7 +190,7 @@ class _SearchitemPPSpecialcodesWidgetState
             ),
             Expanded(
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -199,7 +199,7 @@ class _SearchitemPPSpecialcodesWidgetState
                         child: wrapWithModel(
                           model: _model.itemSelecPPSpecialcodesModel1,
                           updateCallback: () => safeSetState(() {}),
-                          child: ItemSelecPPSpecialcodesWidget(
+                          child: const ItemSelecPPSpecialcodesWidget(
                             ppSpecialcodes: '1B0033 ',
                             decription:
                                 '1B0033 ตรวจคัดกรองได้ผลปกติ ไม่ระบุว่าผู้รับบริการเคยตรวจด้วยคนเองหรือไม่',
@@ -210,7 +210,7 @@ class _SearchitemPPSpecialcodesWidgetState
                         child: wrapWithModel(
                           model: _model.itemSelecPPSpecialcodesModel2,
                           updateCallback: () => safeSetState(() {}),
-                          child: ItemSelecPPSpecialcodesWidget(
+                          child: const ItemSelecPPSpecialcodesWidget(
                             ppSpecialcodes: '1B114',
                             decription:
                                 '1B114 การตรวจคัดกรองสมรรถภาพทางการได้ยิน',
@@ -218,8 +218,8 @@ class _SearchitemPPSpecialcodesWidgetState
                         ),
                       ),
                     ]
-                        .divide(SizedBox(height: 8.0))
-                        .addToEnd(SizedBox(height: 48.0)),
+                        .divide(const SizedBox(height: 8.0))
+                        .addToEnd(const SizedBox(height: 48.0)),
                   ),
                 ),
               ),

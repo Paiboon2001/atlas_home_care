@@ -60,9 +60,9 @@ class _NoInternetWidgetState extends State<NoInternetWidget> {
                 FlutterFlowTheme.of(context).primaryBackground,
                 FlutterFlowTheme.of(context).secondaryBackground
               ],
-              stops: [0.0, 0.8, 1.0],
-              begin: AlignmentDirectional(0.0, -1.0),
-              end: AlignmentDirectional(0, 1.0),
+              stops: const [0.0, 0.8, 1.0],
+              begin: const AlignmentDirectional(0.0, -1.0),
+              end: const AlignmentDirectional(0, 1.0),
             ),
           ),
           child: Column(
@@ -82,7 +82,7 @@ class _NoInternetWidgetState extends State<NoInternetWidget> {
                         height: 100.0,
                         decoration: BoxDecoration(
                           color: FlutterFlowTheme.of(context).primaryBackground,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 4.0,
                               color: Color(0x33000000),
@@ -95,7 +95,7 @@ class _NoInternetWidgetState extends State<NoInternetWidget> {
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.wifi_off_rounded,
                             color: FlutterFlowTheme.of(context).primary,
@@ -146,12 +146,12 @@ class _NoInternetWidgetState extends State<NoInternetWidget> {
                 }())),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: Container(
                   width: 600.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 4.0,
                         color: Color(0x33000000),
@@ -223,8 +223,8 @@ class _NoInternetWidgetState extends State<NoInternetWidget> {
                                   ),
                             ),
                           ]
-                              .divide(SizedBox(width: 24.0))
-                              .addToStart(SizedBox(width: 16.0)),
+                              .divide(const SizedBox(width: 24.0))
+                              .addToStart(const SizedBox(width: 16.0)),
                         ),
                         Divider(
                           height: 0.4,
@@ -256,8 +256,8 @@ class _NoInternetWidgetState extends State<NoInternetWidget> {
                                   ),
                             ),
                           ]
-                              .divide(SizedBox(width: 24.0))
-                              .addToStart(SizedBox(width: 16.0)),
+                              .divide(const SizedBox(width: 24.0))
+                              .addToStart(const SizedBox(width: 16.0)),
                         ),
                         Divider(
                           height: 0.4,
@@ -289,8 +289,8 @@ class _NoInternetWidgetState extends State<NoInternetWidget> {
                                   ),
                             ),
                           ]
-                              .divide(SizedBox(width: 24.0))
-                              .addToStart(SizedBox(width: 16.0)),
+                              .divide(const SizedBox(width: 24.0))
+                              .addToStart(const SizedBox(width: 16.0)),
                         ),
                       ].divide(SizedBox(height: () {
                         if (MediaQuery.sizeOf(context).width <
@@ -311,12 +311,12 @@ class _NoInternetWidgetState extends State<NoInternetWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: FFButtonWidget(
                         onPressed: () async {
                           showModalBottomSheet(
@@ -332,21 +332,21 @@ class _NoInternetWidgetState extends State<NoInternetWidget> {
                                 },
                                 child: Padding(
                                   padding: MediaQuery.viewInsetsOf(context),
-                                  child: LoadingWidget(),
+                                  child: const LoadingWidget(),
                                 ),
                               );
                             },
                           ).then((value) => safeSetState(() {}));
 
                           await Future.delayed(
-                            Duration(
+                            const Duration(
                               milliseconds: 2000,
                             ),
                           );
                           Navigator.pop(context);
                         },
                         text: 'ลองอีกครั้ง',
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.replay,
                           size: 18.0,
                         ),
@@ -366,9 +366,9 @@ class _NoInternetWidgetState extends State<NoInternetWidget> {
                               return 56.0;
                             }
                           }(),
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               24.0, 0.0, 24.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).customColor5,
                           textStyle: FlutterFlowTheme.of(context)
@@ -383,7 +383,7 @@ class _NoInternetWidgetState extends State<NoInternetWidget> {
                                     .bodyLargeIsCustom,
                               ),
                           elevation: 0.0,
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Colors.transparent,
                             width: 1.0,
                           ),
@@ -392,7 +392,7 @@ class _NoInternetWidgetState extends State<NoInternetWidget> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: FFButtonWidget(
                         onPressed: () async {
                           await showModalBottomSheet(
@@ -408,14 +408,14 @@ class _NoInternetWidgetState extends State<NoInternetWidget> {
                                 },
                                 child: Padding(
                                   padding: MediaQuery.viewInsetsOf(context),
-                                  child: InfoHelpWidget(),
+                                  child: const InfoHelpWidget(),
                                 ),
                               );
                             },
                           ).then((value) => safeSetState(() {}));
                         },
                         text: 'ตั้งค่าเครือข่าย',
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.settings,
                           size: 18.0,
                         ),
@@ -435,9 +435,9 @@ class _NoInternetWidgetState extends State<NoInternetWidget> {
                               return 56.0;
                             }
                           }(),
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               24.0, 0.0, 24.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).primary,
                           textStyle: FlutterFlowTheme.of(context)
@@ -457,13 +457,13 @@ class _NoInternetWidgetState extends State<NoInternetWidget> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: FFButtonWidget(
                         onPressed: () {
                           print('Button pressed ...');
                         },
                         text: 'ปิดแอพพลิเคชัน',
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.close_rounded,
                           size: 18.0,
                         ),
@@ -483,9 +483,9 @@ class _NoInternetWidgetState extends State<NoInternetWidget> {
                               return 56.0;
                             }
                           }(),
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               24.0, 0.0, 24.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).error,
                           textStyle: FlutterFlowTheme.of(context)
@@ -500,7 +500,7 @@ class _NoInternetWidgetState extends State<NoInternetWidget> {
                                     .bodyLargeIsCustom,
                               ),
                           elevation: 0.0,
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Colors.transparent,
                             width: 1.0,
                           ),
@@ -523,7 +523,7 @@ class _NoInternetWidgetState extends State<NoInternetWidget> {
                   }())),
                 ),
               ),
-            ].divide(SizedBox(height: 56.0)),
+            ].divide(const SizedBox(height: 56.0)),
           ),
         ),
       ),

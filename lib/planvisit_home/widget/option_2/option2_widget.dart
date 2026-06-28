@@ -45,13 +45,13 @@ class _Option2WidgetState extends State<Option2Widget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: 200.0,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -60,7 +60,7 @@ class _Option2WidgetState extends State<Option2Widget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -68,13 +68,13 @@ class _Option2WidgetState extends State<Option2Widget> {
                   wrapWithModel(
                     model: _model.closeModel,
                     updateCallback: () => safeSetState(() {}),
-                    child: CloseWidget(),
+                    child: const CloseWidget(),
                   ),
-                ].divide(SizedBox(width: 8.0)),
+                ].divide(const SizedBox(width: 8.0)),
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: InkWell(
                 splashColor: Colors.transparent,
                 focusColor: Colors.transparent,
@@ -90,7 +90,7 @@ class _Option2WidgetState extends State<Option2Widget> {
                     builder: (context) {
                       return Padding(
                         padding: MediaQuery.viewInsetsOf(context),
-                        child: ResonccWidget(),
+                        child: const ResonccWidget(),
                       );
                     },
                   ).then((value) => safeSetState(() {}));
@@ -114,8 +114,8 @@ class _Option2WidgetState extends State<Option2Widget> {
                           ),
                     ),
                   ]
-                      .divide(SizedBox(width: 16.0))
-                      .addToStart(SizedBox(width: 8.0)),
+                      .divide(const SizedBox(width: 16.0))
+                      .addToStart(const SizedBox(width: 8.0)),
                 ),
               ),
             ),

@@ -48,10 +48,10 @@ class _BottonWayWidgetState extends State<BottonWayWidget> {
         color: FlutterFlowTheme.of(context).secondaryBackground,
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 24.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 24.0),
         child: MasonryGridView.builder(
           physics: const NeverScrollableScrollPhysics(),
-          gridDelegate: SliverSimpleGridDelegateWithFixedCrossAxisCount(
+          gridDelegate: const SliverSimpleGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
           ),
           crossAxisSpacing: 8.0,
@@ -88,7 +88,7 @@ class _BottonWayWidgetState extends State<BottonWayWidget> {
                         color: FlutterFlowTheme.of(context).secondaryBackground,
                         borderRadius: BorderRadius.circular(100.0),
                         border: Border.all(
-                          color: Color(0xFFE0E4F0),
+                          color: const Color(0xFFE0E4F0),
                           width: 1.0,
                         ),
                       ),
@@ -102,7 +102,7 @@ class _BottonWayWidgetState extends State<BottonWayWidget> {
                             size: 24.0,
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Text(
                               'ดูเส้นทาง',
                               style: FlutterFlowTheme.of(context)
@@ -119,7 +119,7 @@ class _BottonWayWidgetState extends State<BottonWayWidget> {
                                   ),
                             ),
                           ),
-                        ].divide(SizedBox(width: 12.0)),
+                        ].divide(const SizedBox(width: 12.0)),
                       ),
                     ),
                   ),
@@ -142,7 +142,7 @@ class _BottonWayWidgetState extends State<BottonWayWidget> {
                       color: FlutterFlowTheme.of(context).secondaryBackground,
                       borderRadius: BorderRadius.circular(100.0),
                       border: Border.all(
-                        color: Color(0xFFE0E4F0),
+                        color: const Color(0xFFE0E4F0),
                       ),
                     ),
                     child: Row(
@@ -155,7 +155,7 @@ class _BottonWayWidgetState extends State<BottonWayWidget> {
                           size: 24.0,
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Text(
                             'google Map',
                             style: FlutterFlowTheme.of(context)
@@ -171,7 +171,7 @@ class _BottonWayWidgetState extends State<BottonWayWidget> {
                                 ),
                           ),
                         ),
-                      ].divide(SizedBox(width: 12.0)),
+                      ].divide(const SizedBox(width: 12.0)),
                     ),
                   ),
             ][index]();

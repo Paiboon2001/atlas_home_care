@@ -99,7 +99,7 @@ class _NewsWidgetState extends State<NewsWidget> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Stack(
-            alignment: AlignmentDirectional(1.0, 1.0),
+            alignment: const AlignmentDirectional(1.0, 1.0),
             children: [
               Container(
                 width: () {
@@ -133,7 +133,7 @@ class _NewsWidgetState extends State<NewsWidget> {
                   image: DecorationImage(
                     fit: BoxFit.cover,
                     image: Image.network(
-                      widget!.picture!,
+                      widget.picture!,
                     ).image,
                   ),
                   shape: BoxShape.circle,
@@ -143,7 +143,7 @@ class _NewsWidgetState extends State<NewsWidget> {
                 width: 20.0,
                 height: 20.0,
                 decoration: BoxDecoration(
-                  color: widget!.colore,
+                  color: widget.colore,
                   shape: BoxShape.circle,
                   border: Border.all(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -151,8 +151,8 @@ class _NewsWidgetState extends State<NewsWidget> {
                   ),
                 ),
                 child: Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
-                  child: widget!.iconse!,
+                  alignment: const AlignmentDirectional(0.0, 0.0),
+                  child: widget.iconse!,
                 ),
               ),
             ],
@@ -164,13 +164,13 @@ class _NewsWidgetState extends State<NewsWidget> {
               children: [
                 Text(
                   valueOrDefault<String>(
-                    widget!.textre,
+                    widget.textre,
                     'na',
                   ),
                   style: FlutterFlowTheme.of(context).labelMedium.override(
                         fontFamily:
                             FlutterFlowTheme.of(context).labelMediumFamily,
-                        color: widget!.textcolor,
+                        color: widget.textcolor,
                         letterSpacing: 0.0,
                         useGoogleFonts:
                             !FlutterFlowTheme.of(context).labelMediumIsCustom,
@@ -194,14 +194,14 @@ class _NewsWidgetState extends State<NewsWidget> {
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily:
                               FlutterFlowTheme.of(context).bodyMediumFamily,
-                          color: Color(0xFFF9E7C9),
+                          color: const Color(0xFFF9E7C9),
                           letterSpacing: 0.0,
                           useGoogleFonts:
                               !FlutterFlowTheme.of(context).bodyMediumIsCustom,
                         ),
                   ),
                 ),
-              ].divide(SizedBox(height: 6.0)),
+              ].divide(const SizedBox(height: 6.0)),
             ),
           ),
           Column(
@@ -223,11 +223,11 @@ class _NewsWidgetState extends State<NewsWidget> {
                 width: 8.0,
                 height: 8.0,
                 decoration: BoxDecoration(
-                  color: widget!.pincolor,
+                  color: widget.pincolor,
                   shape: BoxShape.circle,
                 ),
               ),
-            ].divide(SizedBox(height: 16.0)),
+            ].divide(const SizedBox(height: 16.0)),
           ),
         ].divide(SizedBox(width: () {
           if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {

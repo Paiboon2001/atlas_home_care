@@ -45,13 +45,13 @@ class _VirusWidgetState extends State<VirusWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: MediaQuery.sizeOf(context).height * 0.7,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -60,14 +60,14 @@ class _VirusWidgetState extends State<VirusWidget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     width: 50.0,
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -107,7 +107,7 @@ class _VirusWidgetState extends State<VirusWidget> {
                   ),
                   Container(
                     width: 50.0,
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -134,7 +134,7 @@ class _VirusWidgetState extends State<VirusWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
               child: Container(
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).alternate,
@@ -143,7 +143,7 @@ class _VirusWidgetState extends State<VirusWidget> {
                 child: FlutterFlowDropDown<String>(
                   controller: _model.dropDownValueController ??=
                       FormFieldController<String>(null),
-                  options: ['โรคเบาหวาน', 'โรคความดันโลหิต'],
+                  options: const ['โรคเบาหวาน', 'โรคความดันโลหิต'],
                   onChanged: (val) =>
                       safeSetState(() => _model.dropDownValue = val),
                   width: double.infinity,
@@ -164,7 +164,7 @@ class _VirusWidgetState extends State<VirusWidget> {
                   borderColor: Colors.transparent,
                   borderWidth: 0.0,
                   borderRadius: 100.0,
-                  margin: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  margin: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   hidesUnderline: true,
                   isOverButton: false,
                   isSearchable: false,
@@ -174,7 +174,7 @@ class _VirusWidgetState extends State<VirusWidget> {
             ),
             Expanded(
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -183,7 +183,7 @@ class _VirusWidgetState extends State<VirusWidget> {
                         child: wrapWithModel(
                           model: _model.clnModel1,
                           updateCallback: () => safeSetState(() {}),
-                          child: ClnWidget(
+                          child: const ClnWidget(
                             namelab: 'ตรวจเช็กอาการ',
                           ),
                         ),
@@ -192,7 +192,7 @@ class _VirusWidgetState extends State<VirusWidget> {
                         child: wrapWithModel(
                           model: _model.clnModel2,
                           updateCallback: () => safeSetState(() {}),
-                          child: ClnWidget(
+                          child: const ClnWidget(
                             namelab: 'ตรวจเช็กอาการ',
                           ),
                         ),
@@ -201,7 +201,7 @@ class _VirusWidgetState extends State<VirusWidget> {
                         child: wrapWithModel(
                           model: _model.clnModel3,
                           updateCallback: () => safeSetState(() {}),
-                          child: ClnWidget(
+                          child: const ClnWidget(
                             namelab: 'ตรวจเช็กอาการ',
                           ),
                         ),
@@ -210,7 +210,7 @@ class _VirusWidgetState extends State<VirusWidget> {
                         child: wrapWithModel(
                           model: _model.clnModel4,
                           updateCallback: () => safeSetState(() {}),
-                          child: ClnWidget(
+                          child: const ClnWidget(
                             namelab: 'ตรวจเช็กอาการ',
                           ),
                         ),
@@ -219,7 +219,7 @@ class _VirusWidgetState extends State<VirusWidget> {
                         child: wrapWithModel(
                           model: _model.clnModel5,
                           updateCallback: () => safeSetState(() {}),
-                          child: ClnWidget(
+                          child: const ClnWidget(
                             namelab: 'ตรวจเช็กอาการ',
                           ),
                         ),
@@ -228,7 +228,7 @@ class _VirusWidgetState extends State<VirusWidget> {
                         child: wrapWithModel(
                           model: _model.clnModel6,
                           updateCallback: () => safeSetState(() {}),
-                          child: ClnWidget(
+                          child: const ClnWidget(
                             namelab: 'ตรวจเช็กอาการ',
                           ),
                         ),
@@ -237,12 +237,12 @@ class _VirusWidgetState extends State<VirusWidget> {
                         child: wrapWithModel(
                           model: _model.clnModel7,
                           updateCallback: () => safeSetState(() {}),
-                          child: ClnWidget(
+                          child: const ClnWidget(
                             namelab: 'ตรวจเช็กอาการ',
                           ),
                         ),
                       ),
-                    ].addToEnd(SizedBox(height: 48.0)),
+                    ].addToEnd(const SizedBox(height: 48.0)),
                   ),
                 ),
               ),

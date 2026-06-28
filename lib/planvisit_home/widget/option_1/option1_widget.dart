@@ -44,13 +44,13 @@ class _Option1WidgetState extends State<Option1Widget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: 200.0,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -59,7 +59,7 @@ class _Option1WidgetState extends State<Option1Widget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -67,16 +67,16 @@ class _Option1WidgetState extends State<Option1Widget> {
                   wrapWithModel(
                     model: _model.closeModel,
                     updateCallback: () => safeSetState(() {}),
-                    child: CloseWidget(),
+                    child: const CloseWidget(),
                   ),
-                ].divide(SizedBox(width: 8.0)),
+                ].divide(const SizedBox(width: 8.0)),
               ),
             ),
             Column(
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -106,8 +106,8 @@ class _Option1WidgetState extends State<Option1Widget> {
                               ),
                         ),
                       ]
-                          .divide(SizedBox(width: 16.0))
-                          .addToStart(SizedBox(width: 8.0)),
+                          .divide(const SizedBox(width: 16.0))
+                          .addToStart(const SizedBox(width: 8.0)),
                     ),
                   ),
                 ),
@@ -118,7 +118,7 @@ class _Option1WidgetState extends State<Option1Widget> {
                   endIndent: 16.0,
                   color: FlutterFlowTheme.of(context).alternate,
                 ),
-              ].divide(SizedBox(height: 8.0)),
+              ].divide(const SizedBox(height: 8.0)),
             ),
           ],
         ),

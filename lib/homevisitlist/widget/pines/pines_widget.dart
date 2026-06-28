@@ -72,7 +72,7 @@ class _PinesWidgetState extends State<PinesWidget> {
           shape: BoxShape.circle,
         ),
         child: Align(
-          alignment: AlignmentDirectional(0.0, 0.0),
+          alignment: const AlignmentDirectional(0.0, 0.0),
           child: Icon(
             Icons.my_location_rounded,
             color: FlutterFlowTheme.of(context).primary,

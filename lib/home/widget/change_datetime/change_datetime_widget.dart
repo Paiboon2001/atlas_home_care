@@ -57,9 +57,9 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 0.0),
+      alignment: const AlignmentDirectional(0.0, 0.0),
       child: Padding(
-        padding: EdgeInsets.all(32.0),
+        padding: const EdgeInsets.all(32.0),
         child: Container(
           width: () {
             if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
@@ -92,13 +92,13 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Text(
                         'เลื่อนการนัดหมาย',
                         style: FlutterFlowTheme.of(context).titleSmall.override(
@@ -106,7 +106,7 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                   FlutterFlowTheme.of(context).titleSmallFamily,
                               letterSpacing: 0.0,
                               shadows: [
-                                Shadow(
+                                const Shadow(
                                   color: Color(0x0F6C6C6C),
                                   offset: Offset(2.0, 2.0),
                                   blurRadius: 2.0,
@@ -117,20 +117,20 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                             ),
                       ),
                     ),
-                  ].divide(SizedBox(width: 8.0)),
+                  ].divide(const SizedBox(width: 8.0)),
                 ),
               ),
               Expanded(
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       MasonryGridView.builder(
                         physics: const NeverScrollableScrollPhysics(),
                         gridDelegate:
-                            SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                            const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
                         ),
                         crossAxisSpacing: 12.0,
@@ -190,18 +190,18 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                               colors: [
                                                 FlutterFlowTheme.of(context)
                                                     .primary,
-                                                Color(0xFF216DAA)
+                                                const Color(0xFF216DAA)
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.0, -1.0),
-                                              end: AlignmentDirectional(0, 1.0),
+                                              end: const AlignmentDirectional(0, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.calendar_month_rounded,
                                               color:
@@ -227,7 +227,7 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                                         .labelSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     Container(
                                       width: double.infinity,
@@ -242,8 +242,8 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(-1.0, 0.0),
-                                            child: Container(
+                                                const AlignmentDirectional(-1.0, 0.0),
+                                            child: SizedBox(
                                               width: double.infinity,
                                               child: TextFormField(
                                                 controller:
@@ -278,7 +278,7 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                                   focusedErrorBorder:
                                                       InputBorder.none,
                                                   contentPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(16.0, 0.0,
                                                               16.0, 0.0),
                                                 ),
@@ -306,9 +306,9 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(1.0, 0.0),
+                                                const AlignmentDirectional(1.0, 0.0),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 0.0, 12.0, 0.0),
                                               child: Icon(
@@ -344,7 +344,7 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                                               .unknown
                                                         },
                                                       ),
-                                                      child: Container(
+                                                      child: SizedBox(
                                                         height: MediaQuery.of(
                                                                     context)
                                                                 .size
@@ -386,13 +386,13 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                             child: Container(
                                               width: double.infinity,
                                               height: double.infinity,
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                             ),
                                           ),
                                         ],
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                             () => Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -443,21 +443,21 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF78C7FF),
+                                                const Color(0xFF78C7FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.access_time_filled_rounded,
                                               color:
@@ -483,7 +483,7 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                                         .labelSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     Container(
                                       width: double.infinity,
@@ -498,8 +498,8 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(-1.0, 0.0),
-                                            child: Container(
+                                                const AlignmentDirectional(-1.0, 0.0),
+                                            child: SizedBox(
                                               width: double.infinity,
                                               child: TextFormField(
                                                 controller:
@@ -534,7 +534,7 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                                   focusedErrorBorder:
                                                       InputBorder.none,
                                                   contentPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(16.0, 0.0,
                                                               16.0, 0.0),
                                                 ),
@@ -562,9 +562,9 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(1.0, 0.0),
+                                                const AlignmentDirectional(1.0, 0.0),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 0.0, 12.0, 0.0),
                                               child: Icon(
@@ -600,7 +600,7 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                                               .unknown
                                                         },
                                                       ),
-                                                      child: Container(
+                                                      child: SizedBox(
                                                         height: MediaQuery.of(
                                                                     context)
                                                                 .size
@@ -642,18 +642,18 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                             child: Container(
                                               width: double.infinity,
                                               height: double.infinity,
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                             ),
                                           ),
                                         ],
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                           ][index]();
                         },
                       ),
-                      Container(
+                      SizedBox(
                         width: double.infinity,
                         child: TextFormField(
                           controller: _model.textController3,
@@ -683,7 +683,7 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                       .labelSmallIsCustom,
                                 ),
                             enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFFBBBBBB),
                                 width: 1.0,
                               ),
@@ -734,12 +734,12 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                               .asValidator(context),
                         ),
                       ),
-                    ].divide(SizedBox(height: 16.0)),
+                    ].divide(const SizedBox(height: 16.0)),
                   ),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -747,7 +747,7 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                       child: wrapWithModel(
                         model: _model.bottonCancelModel,
                         updateCallback: () => safeSetState(() {}),
-                        child: BottonCancelWidget(),
+                        child: const BottonCancelWidget(),
                       ),
                     ),
                     Expanded(
@@ -771,9 +771,9 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                               return 56.0;
                             }
                           }(),
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).customColor5,
                           textStyle: FlutterFlowTheme.of(context)
@@ -793,9 +793,9 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                       ),
                     ),
                   ]
-                      .divide(SizedBox(width: 12.0))
-                      .addToStart(SizedBox(width: 16.0))
-                      .addToEnd(SizedBox(width: 16.0)),
+                      .divide(const SizedBox(width: 12.0))
+                      .addToStart(const SizedBox(width: 16.0))
+                      .addToEnd(const SizedBox(width: 16.0)),
                 ),
               ),
             ],

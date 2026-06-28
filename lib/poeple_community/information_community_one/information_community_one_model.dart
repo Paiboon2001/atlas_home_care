@@ -1,8 +1,4 @@
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import '/poeple_community/confirm/open_visit/open_visit_widget.dart';
 import '/poeple_community/widget/assignments/assignments_widget.dart';
 import '/poeple_community/widget/lab/lab_widget.dart';
 import '/poeple_community/widget/non_smartcard/non_smartcard_widget.dart';
@@ -10,16 +6,10 @@ import '/poeple_community/widget/save_menu/save_menu_widget.dart';
 import '/poeple_community/widget/smartcard_cerect/smartcard_cerect_widget.dart';
 import '/profile/widget/process_up_pic/process_up_pic_widget.dart';
 import '/utils/vital_sign/vital_sign_widget.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'information_community_one_widget.dart'
     show InformationCommunityOneWidget;
-import 'package:sticky_headers/sticky_headers.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:signature/signature.dart';
 
 class InformationCommunityOneModel

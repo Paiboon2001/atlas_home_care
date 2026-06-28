@@ -53,22 +53,22 @@ class _HospitalCsWidgetState extends State<HospitalCsWidget> {
     context.watch<FFAppState>();
 
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
       child: Container(
         width: double.infinity,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              FFAppState().cshospi == widget!.chand
+              FFAppState().cshospi == widget.chand
                   ? FlutterFlowTheme.of(context).secondary
                   : FlutterFlowTheme.of(context).secondaryBackground,
-              FFAppState().cshospi == widget!.chand
+              FFAppState().cshospi == widget.chand
                   ? FlutterFlowTheme.of(context).primary
                   : FlutterFlowTheme.of(context).secondaryBackground
             ],
-            stops: [0.0, 1.0],
-            begin: AlignmentDirectional(1.0, 0.34),
-            end: AlignmentDirectional(-1.0, -0.34),
+            stops: const [0.0, 1.0],
+            begin: const AlignmentDirectional(1.0, 0.34),
+            end: const AlignmentDirectional(-1.0, -0.34),
           ),
           borderRadius: BorderRadius.circular(16.0),
         ),
@@ -119,22 +119,22 @@ class _HospitalCsWidgetState extends State<HospitalCsWidget> {
                     }
                   }(),
                   decoration: BoxDecoration(
-                    color: FFAppState().cshospi == widget!.chand
+                    color: FFAppState().cshospi == widget.chand
                         ? FlutterFlowTheme.of(context).secondaryBackground
-                        : Color(0xFFE0F9FF),
+                        : const Color(0xFFE0F9FF),
                     shape: BoxShape.circle,
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(4.0),
+                    padding: const EdgeInsets.all(4.0),
                     child: Container(
                       width: 200.0,
                       height: 200.0,
                       clipBehavior: Clip.antiAlias,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                       ),
                       child: Image.network(
-                        widget!.photo!,
+                        widget.photo!,
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -144,13 +144,13 @@ class _HospitalCsWidgetState extends State<HospitalCsWidget> {
               Expanded(
                 child: Text(
                   valueOrDefault<String>(
-                    widget!.text,
+                    widget.text,
                     'na',
                   ),
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily:
                             FlutterFlowTheme.of(context).bodyMediumFamily,
-                        color: FFAppState().cshospi == widget!.chand
+                        color: FFAppState().cshospi == widget.chand
                             ? FlutterFlowTheme.of(context).secondaryBackground
                             : FlutterFlowTheme.of(context).primaryText,
                         letterSpacing: 0.0,
@@ -160,7 +160,7 @@ class _HospitalCsWidgetState extends State<HospitalCsWidget> {
                       ),
                 ),
               ),
-            ].divide(SizedBox(width: 12.0)),
+            ].divide(const SizedBox(width: 12.0)),
           ),
         ),
       ),

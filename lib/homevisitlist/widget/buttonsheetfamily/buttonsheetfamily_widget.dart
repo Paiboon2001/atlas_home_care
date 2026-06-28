@@ -47,13 +47,13 @@ class _ButtonsheetfamilyWidgetState extends State<ButtonsheetfamilyWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: 800.0,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).primaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -62,7 +62,7 @@ class _ButtonsheetfamilyWidgetState extends State<ButtonsheetfamilyWidget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -94,7 +94,7 @@ class _ButtonsheetfamilyWidgetState extends State<ButtonsheetfamilyWidget> {
                         return 40.0;
                       }
                     }(),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                   ),
@@ -112,12 +112,12 @@ class _ButtonsheetfamilyWidgetState extends State<ButtonsheetfamilyWidget> {
                   wrapWithModel(
                     model: _model.closeModel,
                     updateCallback: () => safeSetState(() {}),
-                    child: CloseWidget(),
+                    child: const CloseWidget(),
                   ),
                 ],
               ),
             ),
-            Divider(
+            const Divider(
               height: 1.0,
               thickness: 1.0,
               color: Color(0xFFDCE0EA),
@@ -129,11 +129,11 @@ class _ButtonsheetfamilyWidgetState extends State<ButtonsheetfamilyWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: wrapWithModel(
                         model: _model.itemHomefamilyModel,
                         updateCallback: () => safeSetState(() {}),
-                        child: ItemHomefamilyWidget(
+                        child: const ItemHomefamilyWidget(
                           homenumber: '1',
                           location:
                               'บ้านเลขที่ 1 หมู่ 6 บ้านกฤษดานคร แขวงราษฎร์บูรณะ เขตราษฎร์บูรณะ กรุงเทพมหานคร 10140',
@@ -144,15 +144,15 @@ class _ButtonsheetfamilyWidgetState extends State<ButtonsheetfamilyWidget> {
                     wrapWithModel(
                       model: _model.totalParentsModel,
                       updateCallback: () => safeSetState(() {}),
-                      child: TotalParentsWidget(),
+                      child: const TotalParentsWidget(),
                     ),
                   ]
-                      .divide(SizedBox(height: 16.0))
-                      .around(SizedBox(height: 16.0)),
+                      .divide(const SizedBox(height: 16.0))
+                      .around(const SizedBox(height: 16.0)),
                 ),
               ),
             ),
-            Divider(
+            const Divider(
               height: 1.0,
               thickness: 1.0,
               color: Color(0xFFDCE0EA),
@@ -160,7 +160,7 @@ class _ButtonsheetfamilyWidgetState extends State<ButtonsheetfamilyWidget> {
             wrapWithModel(
               model: _model.bottonWayModel,
               updateCallback: () => safeSetState(() {}),
-              child: BottonWayWidget(),
+              child: const BottonWayWidget(),
             ),
           ],
         ),

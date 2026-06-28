@@ -47,9 +47,9 @@ class _ResonCancelWidgetState extends State<ResonCancelWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 0.0),
+      alignment: const AlignmentDirectional(0.0, 0.0),
       child: Padding(
-        padding: EdgeInsets.all(32.0),
+        padding: const EdgeInsets.all(32.0),
         child: Container(
           width: () {
             if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
@@ -82,7 +82,7 @@ class _ResonCancelWidgetState extends State<ResonCancelWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -107,8 +107,8 @@ class _ResonCancelWidgetState extends State<ResonCancelWidget> {
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                      child: Container(
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                      child: SizedBox(
                         width: 200.0,
                         child: TextFormField(
                           controller: _model.textController,
@@ -138,7 +138,7 @@ class _ResonCancelWidgetState extends State<ResonCancelWidget> {
                                       .labelSmallIsCustom,
                                 ),
                             enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFFBBBBBB),
                                 width: 1.0,
                               ),
@@ -204,7 +204,7 @@ class _ResonCancelWidgetState extends State<ResonCancelWidget> {
                 }())),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -220,7 +220,7 @@ class _ResonCancelWidgetState extends State<ResonCancelWidget> {
                         child: wrapWithModel(
                           model: _model.bottonCancelModel,
                           updateCallback: () => safeSetState(() {}),
-                          child: BottonCancelWidget(),
+                          child: const BottonCancelWidget(),
                         ),
                       ),
                     ),
@@ -245,9 +245,9 @@ class _ResonCancelWidgetState extends State<ResonCancelWidget> {
                               return 56.0;
                             }
                           }(),
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).customColor5,
                           textStyle: FlutterFlowTheme.of(context)
@@ -267,9 +267,9 @@ class _ResonCancelWidgetState extends State<ResonCancelWidget> {
                       ),
                     ),
                   ]
-                      .divide(SizedBox(width: 12.0))
-                      .addToStart(SizedBox(width: 16.0))
-                      .addToEnd(SizedBox(width: 16.0)),
+                      .divide(const SizedBox(width: 12.0))
+                      .addToStart(const SizedBox(width: 16.0))
+                      .addToEnd(const SizedBox(width: 16.0)),
                 ),
               ),
             ],

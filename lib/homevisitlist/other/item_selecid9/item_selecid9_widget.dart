@@ -60,7 +60,7 @@ class _ItemSelecid9WidgetState extends State<ItemSelecid9Widget> {
             color: FlutterFlowTheme.of(context).secondaryBackground,
           ),
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 8.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 8.0),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -68,7 +68,7 @@ class _ItemSelecid9WidgetState extends State<ItemSelecid9Widget> {
               children: [
                 Text(
                   valueOrDefault<String>(
-                    widget!.cid9code,
+                    widget.cid9code,
                     'cid9code',
                   ),
                   textAlign: TextAlign.start,
@@ -83,7 +83,7 @@ class _ItemSelecid9WidgetState extends State<ItemSelecid9Widget> {
                 ),
                 Text(
                   valueOrDefault<String>(
-                    widget!.decription,
+                    widget.decription,
                     'decription',
                   ),
                   textAlign: TextAlign.start,
@@ -98,7 +98,7 @@ class _ItemSelecid9WidgetState extends State<ItemSelecid9Widget> {
                       ),
                   overflow: TextOverflow.ellipsis,
                 ),
-              ].divide(SizedBox(height: 4.0)),
+              ].divide(const SizedBox(height: 4.0)),
             ),
           ),
         ),

@@ -48,7 +48,7 @@ class _NewsdetailWidgetState extends State<NewsdetailWidget> {
       body: Stack(
         children: [
           ListView(
-            padding: EdgeInsets.fromLTRB(
+            padding: const EdgeInsets.fromLTRB(
               0,
               0,
               0,
@@ -109,13 +109,13 @@ class _NewsdetailWidgetState extends State<NewsdetailWidget> {
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           topLeft: Radius.circular(24.0),
                           topRight: Radius.circular(24.0),
                         ),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -127,7 +127,7 @@ class _NewsdetailWidgetState extends State<NewsdetailWidget> {
                                   .override(
                                     fontFamily: FlutterFlowTheme.of(context)
                                         .titleMediumFamily,
-                                    color: Color(0xFF1A5383),
+                                    color: const Color(0xFF1A5383),
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                     lineHeight: 1.7,
@@ -246,7 +246,7 @@ class _NewsdetailWidgetState extends State<NewsdetailWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 16.0, 0.0, 0.0),
                               child: Text(
                                 '5 ท่าบริหาร \"ข้อเข่าเสื่อม\" ช่วยลดปวด เสริมความแข็งแรง ',
@@ -511,7 +511,7 @@ class _NewsdetailWidgetState extends State<NewsdetailWidget> {
                                     ),
                               ),
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
@@ -533,7 +533,7 @@ class _NewsdetailWidgetState extends State<NewsdetailWidget> {
                 return 80.0;
               }
             }(),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                 colors: [Color(0x80339FF3), Color(0x0C339FF3)],
                 stops: [0.4, 1.0],
@@ -567,9 +567,9 @@ class _NewsdetailWidgetState extends State<NewsdetailWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 6.0,

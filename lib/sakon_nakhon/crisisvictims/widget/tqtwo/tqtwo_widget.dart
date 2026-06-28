@@ -53,37 +53,37 @@ class _TqtwoWidgetState extends State<TqtwoWidget> {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            FFAppState().twoq2 == widget!.tqone
+            FFAppState().twoq2 == widget.tqone
                 ? FlutterFlowTheme.of(context).secondary
                 : FlutterFlowTheme.of(context).secondaryBackground,
-            FFAppState().twoq2 == widget!.tqone
+            FFAppState().twoq2 == widget.tqone
                 ? FlutterFlowTheme.of(context).primary
                 : FlutterFlowTheme.of(context).secondaryBackground
           ],
-          stops: [0.0, 1.0],
-          begin: AlignmentDirectional(1.0, 0.34),
-          end: AlignmentDirectional(-1.0, -0.34),
+          stops: const [0.0, 1.0],
+          begin: const AlignmentDirectional(1.0, 0.34),
+          end: const AlignmentDirectional(-1.0, -0.34),
         ),
         borderRadius: BorderRadius.circular(24.0),
         border: Border.all(
-          color: FFAppState().twoq2 == widget!.tqone
-              ? Color(0x00FFFFFF)
-              : Color(0xFFCED4E6),
+          color: FFAppState().twoq2 == widget.tqone
+              ? const Color(0x00FFFFFF)
+              : const Color(0xFFCED4E6),
           width: 1.0,
         ),
       ),
       child: Align(
-        alignment: AlignmentDirectional(0.0, 0.0),
+        alignment: const AlignmentDirectional(0.0, 0.0),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(12.0, 20.0, 12.0, 20.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(12.0, 20.0, 12.0, 20.0),
           child: Text(
             valueOrDefault<String>(
-              widget!.texts,
+              widget.texts,
               'na',
             ),
             style: FlutterFlowTheme.of(context).labelLarge.override(
                   fontFamily: FlutterFlowTheme.of(context).labelLargeFamily,
-                  color: FFAppState().twoq2 == widget!.tqone
+                  color: FFAppState().twoq2 == widget.tqone
                       ? FlutterFlowTheme.of(context).secondaryBackground
                       : FlutterFlowTheme.of(context).secondaryText,
                   fontSize: 18.0,

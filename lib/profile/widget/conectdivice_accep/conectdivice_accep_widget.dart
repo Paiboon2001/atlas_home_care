@@ -53,8 +53,8 @@ class _ConectdiviceAccepWidgetState extends State<ConectdiviceAccepWidget>
             curve: Curves.easeInOut,
             delay: 600.0.ms,
             duration: 2000.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -72,8 +72,8 @@ class _ConectdiviceAccepWidgetState extends State<ConectdiviceAccepWidget>
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 1500.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -91,8 +91,8 @@ class _ConectdiviceAccepWidgetState extends State<ConectdiviceAccepWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 1000.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -130,9 +130,9 @@ class _ConectdiviceAccepWidgetState extends State<ConectdiviceAccepWidget>
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 24.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 24.0),
         child: Container(
           width: double.infinity,
           height: () {
@@ -155,7 +155,7 @@ class _ConectdiviceAccepWidgetState extends State<ConectdiviceAccepWidget>
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -189,7 +189,7 @@ class _ConectdiviceAccepWidgetState extends State<ConectdiviceAccepWidget>
                           return 40.0;
                         }
                       }(),
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                       ),
                     ),
@@ -206,88 +206,88 @@ class _ConectdiviceAccepWidgetState extends State<ConectdiviceAccepWidget>
                     wrapWithModel(
                       model: _model.closeModel,
                       updateCallback: () => safeSetState(() {}),
-                      child: CloseWidget(),
+                      child: const CloseWidget(),
                     ),
                   ],
                 ),
               ),
-              Container(
+              SizedBox(
                 width: 350.0,
                 height: 350.0,
                 child: Stack(
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Container(
                         width: 350.0,
                         height: 350.0,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(
-                            color: Color(0x4D339FF3),
+                            color: const Color(0x4D339FF3),
                           ),
                         ),
                       ).animateOnPageLoad(
                           animationsMap['containerOnPageLoadAnimation1']!),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Container(
                         width: 300.0,
                         height: 300.0,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(
-                            color: Color(0x4D339FF3),
+                            color: const Color(0x4D339FF3),
                           ),
                         ),
                       ).animateOnPageLoad(
                           animationsMap['containerOnPageLoadAnimation2']!),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Container(
                         width: 250.0,
                         height: 250.0,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(
-                            color: Color(0x4D339FF3),
+                            color: const Color(0x4D339FF3),
                           ),
                         ),
                       ).animateOnPageLoad(
                           animationsMap['containerOnPageLoadAnimation3']!),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Container(
                         width: 200.0,
                         height: 200.0,
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
                             colors: [
-                              Color(0xFFA0D6FF),
+                              const Color(0xFFA0D6FF),
                               FlutterFlowTheme.of(context).primary
                             ],
-                            stops: [0.0, 1.0],
-                            begin: AlignmentDirectional(0.0, -1.0),
-                            end: AlignmentDirectional(0, 1.0),
+                            stops: const [0.0, 1.0],
+                            begin: const AlignmentDirectional(0.0, -1.0),
+                            end: const AlignmentDirectional(0, 1.0),
                           ),
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Container(
                             width: 200.0,
                             height: 200.0,
                             clipBehavior: Clip.antiAlias,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               shape: BoxShape.circle,
                             ),
                             child: Image.asset(
                               'assets/images/cf.png',
                               fit: BoxFit.cover,
-                              alignment: Alignment(0.0, 0.0),
+                              alignment: const Alignment(0.0, 0.0),
                             ),
                           ).animateOnPageLoad(
                               animationsMap['circleImageOnPageLoadAnimation']!),
@@ -298,7 +298,7 @@ class _ConectdiviceAccepWidgetState extends State<ConectdiviceAccepWidget>
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
                 child: FFButtonWidget(
                   onPressed: () async {
                     Navigator.pop(context);
@@ -320,10 +320,10 @@ class _ConectdiviceAccepWidgetState extends State<ConectdiviceAccepWidget>
                       }
                     }(),
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     iconAlignment: IconAlignment.start,
                     iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).customColor5,
                     textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily:
@@ -335,7 +335,7 @@ class _ConectdiviceAccepWidgetState extends State<ConectdiviceAccepWidget>
                               !FlutterFlowTheme.of(context).bodyMediumIsCustom,
                         ),
                     elevation: 0.0,
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       color: Colors.transparent,
                       width: 0.0,
                     ),

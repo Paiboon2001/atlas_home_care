@@ -51,7 +51,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Color(0xFFE9F0F9),
+        color: const Color(0xFFE9F0F9),
         borderRadius: BorderRadius.circular(16.0),
         border: Border.all(
           color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -83,7 +83,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
               children: [
                 Text(
                   valueOrDefault<String>(
-                    widget!.text,
+                    widget.text,
                     'na',
                   ),
                   textAlign: TextAlign.start,
@@ -112,7 +112,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                 ),
                 Text(
                   valueOrDefault<String>(
-                    widget!.rate,
+                    widget.rate,
                     'na',
                   ),
                   textAlign: TextAlign.start,
@@ -207,7 +207,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Text(
                                   '0',
                                   style: FlutterFlowTheme.of(context)
@@ -231,7 +231,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Theme(
                                   data: ThemeData(
                                     checkboxTheme: CheckboxThemeData(
@@ -268,7 +268,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                     side: (Colors.transparent != null)
                                         ? BorderSide(
                                             width: 2,
-                                            color: Colors.transparent!,
+                                            color: Colors.transparent,
                                           )
                                         : null,
                                     activeColor: Colors.transparent,
@@ -321,7 +321,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Text(
                                   '1',
                                   style: FlutterFlowTheme.of(context)
@@ -345,7 +345,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Theme(
                                   data: ThemeData(
                                     checkboxTheme: CheckboxThemeData(
@@ -382,7 +382,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                     side: (Colors.transparent != null)
                                         ? BorderSide(
                                             width: 2,
-                                            color: Colors.transparent!,
+                                            color: Colors.transparent,
                                           )
                                         : null,
                                     activeColor: Colors.transparent,
@@ -435,7 +435,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Text(
                                   '2',
                                   style: FlutterFlowTheme.of(context)
@@ -459,7 +459,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Theme(
                                   data: ThemeData(
                                     checkboxTheme: CheckboxThemeData(
@@ -496,7 +496,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                     side: (Colors.transparent != null)
                                         ? BorderSide(
                                             width: 2,
-                                            color: Colors.transparent!,
+                                            color: Colors.transparent,
                                           )
                                         : null,
                                     activeColor: Colors.transparent,
@@ -549,7 +549,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Text(
                                   '3',
                                   style: FlutterFlowTheme.of(context)
@@ -573,7 +573,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Theme(
                                   data: ThemeData(
                                     checkboxTheme: CheckboxThemeData(
@@ -610,7 +610,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                     side: (Colors.transparent != null)
                                         ? BorderSide(
                                             width: 2,
-                                            color: Colors.transparent!,
+                                            color: Colors.transparent,
                                           )
                                         : null,
                                     activeColor: Colors.transparent,
@@ -663,7 +663,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Text(
                                   '4',
                                   style: FlutterFlowTheme.of(context)
@@ -687,7 +687,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Theme(
                                   data: ThemeData(
                                     checkboxTheme: CheckboxThemeData(
@@ -724,7 +724,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                     side: (Colors.transparent != null)
                                         ? BorderSide(
                                             width: 2,
-                                            color: Colors.transparent!,
+                                            color: Colors.transparent,
                                           )
                                         : null,
                                     activeColor: Colors.transparent,
@@ -777,7 +777,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Text(
                                   '5',
                                   style: FlutterFlowTheme.of(context)
@@ -801,7 +801,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Theme(
                                   data: ThemeData(
                                     checkboxTheme: CheckboxThemeData(
@@ -838,7 +838,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                     side: (Colors.transparent != null)
                                         ? BorderSide(
                                             width: 2,
-                                            color: Colors.transparent!,
+                                            color: Colors.transparent,
                                           )
                                         : null,
                                     activeColor: Colors.transparent,
@@ -891,7 +891,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Text(
                                   '6',
                                   style: FlutterFlowTheme.of(context)
@@ -915,7 +915,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Theme(
                                   data: ThemeData(
                                     checkboxTheme: CheckboxThemeData(
@@ -952,7 +952,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                     side: (Colors.transparent != null)
                                         ? BorderSide(
                                             width: 2,
-                                            color: Colors.transparent!,
+                                            color: Colors.transparent,
                                           )
                                         : null,
                                     activeColor: Colors.transparent,
@@ -1005,7 +1005,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Text(
                                   '7',
                                   style: FlutterFlowTheme.of(context)
@@ -1029,7 +1029,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Theme(
                                   data: ThemeData(
                                     checkboxTheme: CheckboxThemeData(
@@ -1066,7 +1066,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                     side: (Colors.transparent != null)
                                         ? BorderSide(
                                             width: 2,
-                                            color: Colors.transparent!,
+                                            color: Colors.transparent,
                                           )
                                         : null,
                                     activeColor: Colors.transparent,
@@ -1119,7 +1119,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Text(
                                   '8',
                                   style: FlutterFlowTheme.of(context)
@@ -1143,7 +1143,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Theme(
                                   data: ThemeData(
                                     checkboxTheme: CheckboxThemeData(
@@ -1180,7 +1180,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                     side: (Colors.transparent != null)
                                         ? BorderSide(
                                             width: 2,
-                                            color: Colors.transparent!,
+                                            color: Colors.transparent,
                                           )
                                         : null,
                                     activeColor: Colors.transparent,
@@ -1233,7 +1233,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Text(
                                   '9',
                                   style: FlutterFlowTheme.of(context)
@@ -1257,7 +1257,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Theme(
                                   data: ThemeData(
                                     checkboxTheme: CheckboxThemeData(
@@ -1294,7 +1294,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                     side: (Colors.transparent != null)
                                         ? BorderSide(
                                             width: 2,
-                                            color: Colors.transparent!,
+                                            color: Colors.transparent,
                                           )
                                         : null,
                                     activeColor: Colors.transparent,
@@ -1347,7 +1347,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Text(
                                   '10',
                                   style: FlutterFlowTheme.of(context)
@@ -1371,7 +1371,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Theme(
                                   data: ThemeData(
                                     checkboxTheme: CheckboxThemeData(
@@ -1408,7 +1408,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                     side: (Colors.transparent != null)
                                         ? BorderSide(
                                             width: 2,
-                                            color: Colors.transparent!,
+                                            color: Colors.transparent,
                                           )
                                         : null,
                                     activeColor: Colors.transparent,
@@ -1423,7 +1423,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                 },
               ),
             ),
-          ].divide(SizedBox(height: 12.0)),
+          ].divide(const SizedBox(height: 12.0)),
         ),
       ),
     );

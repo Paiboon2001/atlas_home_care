@@ -45,9 +45,9 @@ class _AllgoWidgetState extends State<AllgoWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 0.0),
+      alignment: const AlignmentDirectional(0.0, 0.0),
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Container(
           width: () {
             if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
@@ -70,7 +70,7 @@ class _AllgoWidgetState extends State<AllgoWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -95,8 +95,8 @@ class _AllgoWidgetState extends State<AllgoWidget> {
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(80.0, 0.0, 80.0, 0.0),
-                      child: Container(
+                          const EdgeInsetsDirectional.fromSTEB(80.0, 0.0, 80.0, 0.0),
+                      child: SizedBox(
                         width: 200.0,
                         child: TextFormField(
                           controller: _model.textController,
@@ -126,7 +126,7 @@ class _AllgoWidgetState extends State<AllgoWidget> {
                                       .labelSmallIsCustom,
                                 ),
                             enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFFBBBBBB),
                                 width: 1.0,
                               ),
@@ -193,7 +193,7 @@ class _AllgoWidgetState extends State<AllgoWidget> {
                 }())),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
                 child: FFButtonWidget(
                   onPressed: () async {
                     Navigator.pop(context);
@@ -217,10 +217,10 @@ class _AllgoWidgetState extends State<AllgoWidget> {
                       }
                     }(),
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     iconAlignment: IconAlignment.start,
                     iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).customColor5,
                     textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily:
@@ -232,7 +232,7 @@ class _AllgoWidgetState extends State<AllgoWidget> {
                               !FlutterFlowTheme.of(context).bodyMediumIsCustom,
                         ),
                     elevation: 0.0,
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       color: Colors.transparent,
                       width: 0.0,
                     ),

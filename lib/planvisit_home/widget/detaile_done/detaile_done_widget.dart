@@ -100,7 +100,7 @@ class _DetaileDoneWidgetState extends State<DetaileDoneWidget> {
             builder: (context) {
               return Padding(
                 padding: MediaQuery.viewInsetsOf(context),
-                child: Option1Widget(),
+                child: const Option1Widget(),
               );
             },
           ).then((value) => safeSetState(() {}));
@@ -116,7 +116,7 @@ class _DetaileDoneWidgetState extends State<DetaileDoneWidget> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Stack(
-                    alignment: AlignmentDirectional(1.0, 1.0),
+                    alignment: const AlignmentDirectional(1.0, 1.0),
                     children: [
                       Container(
                         width: () {
@@ -151,10 +151,10 @@ class _DetaileDoneWidgetState extends State<DetaileDoneWidget> {
                           image: DecorationImage(
                             fit: BoxFit.cover,
                             image: Image.network(
-                              widget!.picture!,
+                              widget.picture!,
                             ).image,
                           ),
-                          gradient: LinearGradient(
+                          gradient: const LinearGradient(
                             colors: [Color(0xFF9ACEF6), Color(0xFF44B0FF)],
                             stops: [0.0, 1.0],
                             begin: AlignmentDirectional(0.0, -1.0),
@@ -167,7 +167,7 @@ class _DetaileDoneWidgetState extends State<DetaileDoneWidget> {
                         width: 20.0,
                         height: 20.0,
                         decoration: BoxDecoration(
-                          color: widget!.colore,
+                          color: widget.colore,
                           shape: BoxShape.circle,
                           border: Border.all(
                             color: FlutterFlowTheme.of(context)
@@ -176,8 +176,8 @@ class _DetaileDoneWidgetState extends State<DetaileDoneWidget> {
                           ),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
-                          child: widget!.iconse!,
+                          alignment: const AlignmentDirectional(0.0, 0.0),
+                          child: widget.iconse!,
                         ),
                       ),
                     ],
@@ -189,7 +189,7 @@ class _DetaileDoneWidgetState extends State<DetaileDoneWidget> {
                       children: [
                         Text(
                           valueOrDefault<String>(
-                            widget!.textre,
+                            widget.textre,
                             'na',
                           ),
                           style: FlutterFlowTheme.of(context)
@@ -327,7 +327,7 @@ class _DetaileDoneWidgetState extends State<DetaileDoneWidget> {
                             ),
                           ],
                         ),
-                      ].divide(SizedBox(height: 6.0)),
+                      ].divide(const SizedBox(height: 6.0)),
                     ),
                   ),
                 ].divide(SizedBox(width: () {
@@ -358,7 +358,7 @@ class _DetaileDoneWidgetState extends State<DetaileDoneWidget> {
                   builder: (context) {
                     return Padding(
                       padding: MediaQuery.viewInsetsOf(context),
-                      child: Option1Widget(),
+                      child: const Option1Widget(),
                     );
                   },
                 ).then((value) => safeSetState(() {}));
@@ -395,7 +395,7 @@ class _DetaileDoneWidgetState extends State<DetaileDoneWidget> {
                   shape: BoxShape.circle,
                 ),
                 child: Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
+                  alignment: const AlignmentDirectional(0.0, 0.0),
                   child: FaIcon(
                     FontAwesomeIcons.ellipsisH,
                     color: FlutterFlowTheme.of(context).secondaryText,

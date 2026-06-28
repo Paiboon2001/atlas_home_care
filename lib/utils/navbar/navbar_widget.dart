@@ -14,7 +14,7 @@ class NavbarWidget extends StatefulWidget {
     super.key,
     required this.navbar,
     bool? hide,
-  }) : this.hide = hide ?? false;
+  }) : hide = hide ?? false;
 
   final int? navbar;
   final bool hide;
@@ -52,7 +52,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
     return Container(
       width: double.infinity,
       height: 96.0,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Color(0xFF164874),
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(32.0),
@@ -77,7 +77,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                     context.pushNamed(
                       HomepageNewWidget.routeName,
                       extra: <String, dynamic>{
-                        '__transition_info__': TransitionInfo(
+                        '__transition_info__': const TransitionInfo(
                           hasTransition: true,
                           transitionType: PageTransitionType.fade,
                           duration: Duration(milliseconds: 0),
@@ -89,18 +89,18 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                     width: 40.0,
                     height: 40.0,
                     decoration: BoxDecoration(
-                      color: widget!.navbar == 1
+                      color: widget.navbar == 1
                           ? FlutterFlowTheme.of(context).secondaryBackground
-                          : Color(0x00FFFFFF),
+                          : const Color(0x00FFFFFF),
                       shape: BoxShape.circle,
                     ),
                     child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Icon(
                         Icons.home_rounded,
-                        color: widget!.navbar == 1
-                            ? Color(0xFF164874)
-                            : Color(0xFF5F9ED6),
+                        color: widget.navbar == 1
+                            ? const Color(0xFF164874)
+                            : const Color(0xFF5F9ED6),
                         size: 24.0,
                       ),
                     ),
@@ -111,9 +111,9 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                   style: FlutterFlowTheme.of(context).bodySmall.override(
                         fontFamily:
                             FlutterFlowTheme.of(context).bodySmallFamily,
-                        color: widget!.navbar == 1
+                        color: widget.navbar == 1
                             ? FlutterFlowTheme.of(context).secondaryBackground
-                            : Color(0xFF5F9ED6),
+                            : const Color(0xFF5F9ED6),
                         fontSize: () {
                           if (MediaQuery.sizeOf(context).width <
                               kBreakpointSmall) {
@@ -133,7 +133,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                             !FlutterFlowTheme.of(context).bodySmallIsCustom,
                       ),
                 ),
-              ].divide(SizedBox(height: 4.0)).addToStart(SizedBox(height: 8.0)),
+              ].divide(const SizedBox(height: 4.0)).addToStart(const SizedBox(height: 8.0)),
             ),
           ),
           Expanded(
@@ -149,7 +149,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                     context.pushNamed(
                       HomeVisitWidget.routeName,
                       extra: <String, dynamic>{
-                        '__transition_info__': TransitionInfo(
+                        '__transition_info__': const TransitionInfo(
                           hasTransition: true,
                           transitionType: PageTransitionType.fade,
                           duration: Duration(milliseconds: 0),
@@ -161,18 +161,18 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                     width: 40.0,
                     height: 40.0,
                     decoration: BoxDecoration(
-                      color: widget!.navbar == 3
+                      color: widget.navbar == 3
                           ? FlutterFlowTheme.of(context).secondaryBackground
-                          : Color(0x00FFFFFF),
+                          : const Color(0x00FFFFFF),
                       shape: BoxShape.circle,
                     ),
                     child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Icon(
                         Icons.home_work_rounded,
-                        color: widget!.navbar == 3
-                            ? Color(0xFF164874)
-                            : Color(0xFF5F9ED6),
+                        color: widget.navbar == 3
+                            ? const Color(0xFF164874)
+                            : const Color(0xFF5F9ED6),
                         size: 24.0,
                       ),
                     ),
@@ -183,9 +183,9 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                   style: FlutterFlowTheme.of(context).bodySmall.override(
                         fontFamily:
                             FlutterFlowTheme.of(context).bodySmallFamily,
-                        color: widget!.navbar == 3
+                        color: widget.navbar == 3
                             ? FlutterFlowTheme.of(context).secondaryBackground
-                            : Color(0xFF5F9ED6),
+                            : const Color(0xFF5F9ED6),
                         fontSize: () {
                           if (MediaQuery.sizeOf(context).width <
                               kBreakpointSmall) {
@@ -205,7 +205,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                             !FlutterFlowTheme.of(context).bodySmallIsCustom,
                       ),
                 ),
-              ].divide(SizedBox(height: 4.0)).addToStart(SizedBox(height: 8.0)),
+              ].divide(const SizedBox(height: 4.0)).addToStart(const SizedBox(height: 8.0)),
             ),
           ),
           Expanded(
@@ -224,18 +224,18 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                     width: 40.0,
                     height: 40.0,
                     decoration: BoxDecoration(
-                      color: widget!.navbar == 5
+                      color: widget.navbar == 5
                           ? FlutterFlowTheme.of(context).secondaryBackground
-                          : Color(0x00FFFFFF),
+                          : const Color(0x00FFFFFF),
                       shape: BoxShape.circle,
                     ),
                     child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Icon(
                         Icons.groups_rounded,
-                        color: widget!.navbar == 5
-                            ? Color(0xFF164874)
-                            : Color(0xFF5F9ED6),
+                        color: widget.navbar == 5
+                            ? const Color(0xFF164874)
+                            : const Color(0xFF5F9ED6),
                         size: 24.0,
                       ),
                     ),
@@ -246,9 +246,9 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                   style: FlutterFlowTheme.of(context).bodySmall.override(
                         fontFamily:
                             FlutterFlowTheme.of(context).bodySmallFamily,
-                        color: widget!.navbar == 5
+                        color: widget.navbar == 5
                             ? FlutterFlowTheme.of(context).secondaryBackground
-                            : Color(0xFF5F9ED6),
+                            : const Color(0xFF5F9ED6),
                         fontSize: () {
                           if (MediaQuery.sizeOf(context).width <
                               kBreakpointSmall) {
@@ -268,7 +268,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                             !FlutterFlowTheme.of(context).bodySmallIsCustom,
                       ),
                 ),
-              ].divide(SizedBox(height: 4.0)).addToStart(SizedBox(height: 8.0)),
+              ].divide(const SizedBox(height: 4.0)).addToStart(const SizedBox(height: 8.0)),
             ),
           ),
           Expanded(
@@ -284,7 +284,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                     context.pushNamed(
                       SettingWidget.routeName,
                       extra: <String, dynamic>{
-                        '__transition_info__': TransitionInfo(
+                        '__transition_info__': const TransitionInfo(
                           hasTransition: true,
                           transitionType: PageTransitionType.fade,
                           duration: Duration(milliseconds: 0),
@@ -296,18 +296,18 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                     width: 40.0,
                     height: 40.0,
                     decoration: BoxDecoration(
-                      color: widget!.navbar == 4
+                      color: widget.navbar == 4
                           ? FlutterFlowTheme.of(context).secondaryBackground
-                          : Color(0x00FFFFFF),
+                          : const Color(0x00FFFFFF),
                       shape: BoxShape.circle,
                     ),
                     child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Icon(
                         Icons.settings_sharp,
-                        color: widget!.navbar == 4
-                            ? Color(0xFF164874)
-                            : Color(0xFF5F9ED6),
+                        color: widget.navbar == 4
+                            ? const Color(0xFF164874)
+                            : const Color(0xFF5F9ED6),
                         size: 24.0,
                       ),
                     ),
@@ -318,9 +318,9 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                   style: FlutterFlowTheme.of(context).bodySmall.override(
                         fontFamily:
                             FlutterFlowTheme.of(context).bodySmallFamily,
-                        color: widget!.navbar == 4
+                        color: widget.navbar == 4
                             ? FlutterFlowTheme.of(context).secondaryBackground
-                            : Color(0xFF5F9ED6),
+                            : const Color(0xFF5F9ED6),
                         fontSize: () {
                           if (MediaQuery.sizeOf(context).width <
                               kBreakpointSmall) {
@@ -340,7 +340,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                             !FlutterFlowTheme.of(context).bodySmallIsCustom,
                       ),
                 ),
-              ].divide(SizedBox(height: 4.0)).addToStart(SizedBox(height: 8.0)),
+              ].divide(const SizedBox(height: 4.0)).addToStart(const SizedBox(height: 8.0)),
             ),
           ),
         ],

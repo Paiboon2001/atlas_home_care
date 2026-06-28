@@ -68,13 +68,13 @@ class _MapWidgetState extends State<MapWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 4.0,
@@ -124,7 +124,7 @@ class _MapWidgetState extends State<MapWidget> {
                             },
                             child: Padding(
                               padding: MediaQuery.viewInsetsOf(context),
-                              child: SelecclinicWidget(),
+                              child: const SelecclinicWidget(),
                             ),
                           );
                         },
@@ -148,7 +148,7 @@ class _MapWidgetState extends State<MapWidget> {
                       height: 48.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 4.0,
                             color: Color(0x33000000),
@@ -161,13 +161,13 @@ class _MapWidgetState extends State<MapWidget> {
                         borderRadius: BorderRadius.circular(100.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Icon(
                                 Icons.filter_list,
                                 color:
@@ -190,7 +190,7 @@ class _MapWidgetState extends State<MapWidget> {
                                             .titleSmallIsCustom,
                                   ),
                             ),
-                          ].divide(SizedBox(width: 12.0)),
+                          ].divide(const SizedBox(width: 12.0)),
                         ),
                       ),
                     ),
@@ -199,11 +199,11 @@ class _MapWidgetState extends State<MapWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.15, -0.41),
+              alignment: const AlignmentDirectional(0.15, -0.41),
               child: wrapWithModel(
                 model: _model.pinModel1,
                 updateCallback: () => safeSetState(() {}),
-                child: PinWidget(
+                child: const PinWidget(
                   num: '2',
                   color2: Color(0xFFFFBD00),
                   color1: Color(0xFFFFE7A2),
@@ -211,42 +211,42 @@ class _MapWidgetState extends State<MapWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(1.0, 1.0),
+              alignment: const AlignmentDirectional(1.0, 1.0),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 24.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 24.0),
                 child: wrapWithModel(
                   model: _model.navigatebuttonModel,
                   updateCallback: () => safeSetState(() {}),
-                  child: NavigatebuttonWidget(),
+                  child: const NavigatebuttonWidget(),
                 ),
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.64, -0.28),
+              alignment: const AlignmentDirectional(0.64, -0.28),
               child: wrapWithModel(
                 model: _model.pinModel2,
                 updateCallback: () => safeSetState(() {}),
                 child: PinWidget(
                   num: '1',
-                  color2: Color(0xFF0761B8),
+                  color2: const Color(0xFF0761B8),
                   color1: FlutterFlowTheme.of(context).accent1,
                 ),
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(-0.39, 0.25),
+              alignment: const AlignmentDirectional(-0.39, 0.25),
               child: wrapWithModel(
                 model: _model.pinModel3,
                 updateCallback: () => safeSetState(() {}),
                 child: PinWidget(
                   num: '1',
-                  color2: Color(0xFF1D8B6B),
+                  color2: const Color(0xFF1D8B6B),
                   color1: FlutterFlowTheme.of(context).success,
                 ),
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(-0.79, -0.59),
+              alignment: const AlignmentDirectional(-0.79, -0.59),
               child: wrapWithModel(
                 model: _model.pinModel4,
                 updateCallback: () => safeSetState(() {}),
@@ -258,7 +258,7 @@ class _MapWidgetState extends State<MapWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(-0.49, -0.23),
+              alignment: const AlignmentDirectional(-0.49, -0.23),
               child: InkWell(
                 splashColor: Colors.transparent,
                 focusColor: Colors.transparent,
@@ -268,7 +268,7 @@ class _MapWidgetState extends State<MapWidget> {
                   context.pushNamed(
                     MapHomeWidget.routeName,
                     extra: <String, dynamic>{
-                      '__transition_info__': TransitionInfo(
+                      '__transition_info__': const TransitionInfo(
                         hasTransition: true,
                         transitionType: PageTransitionType.fade,
                       ),
@@ -278,7 +278,7 @@ class _MapWidgetState extends State<MapWidget> {
                 child: wrapWithModel(
                   model: _model.pinModel5,
                   updateCallback: () => safeSetState(() {}),
-                  child: PinWidget(
+                  child: const PinWidget(
                     num: '1',
                     color2: Color(0xFFFFBD00),
                     color1: Color(0xFFFFE7A2),
@@ -287,11 +287,11 @@ class _MapWidgetState extends State<MapWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.34, -0.11),
+              alignment: const AlignmentDirectional(0.34, -0.11),
               child: wrapWithModel(
                 model: _model.pinModel6,
                 updateCallback: () => safeSetState(() {}),
-                child: PinWidget(
+                child: const PinWidget(
                   num: '1',
                   color2: Color(0xFFFFBD00),
                   color1: Color(0xFFFFE7A2),
@@ -299,23 +299,23 @@ class _MapWidgetState extends State<MapWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.11, 0.27),
+              alignment: const AlignmentDirectional(0.11, 0.27),
               child: wrapWithModel(
                 model: _model.pinModel7,
                 updateCallback: () => safeSetState(() {}),
                 child: PinWidget(
                   num: '1',
-                  color2: Color(0xFF1D8B6B),
+                  color2: const Color(0xFF1D8B6B),
                   color1: FlutterFlowTheme.of(context).success,
                 ),
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.73, -0.03),
+              alignment: const AlignmentDirectional(0.73, -0.03),
               child: wrapWithModel(
                 model: _model.pinModel8,
                 updateCallback: () => safeSetState(() {}),
-                child: PinWidget(
+                child: const PinWidget(
                   num: '1',
                   color2: Color(0xFFFFBD00),
                   color1: Color(0xFFFFE7A2),

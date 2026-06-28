@@ -48,7 +48,7 @@ class _ItemDiabetesWidgetState extends State<ItemDiabetesWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
       child: InkWell(
         splashColor: Colors.transparent,
         focusColor: Colors.transparent,
@@ -69,7 +69,7 @@ class _ItemDiabetesWidgetState extends State<ItemDiabetesWidget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 12.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 12.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -95,7 +95,7 @@ class _ItemDiabetesWidgetState extends State<ItemDiabetesWidget> {
                           ? BorderSide(
                               width: 2,
                               color:
-                                  FlutterFlowTheme.of(context).secondaryText!,
+                                  FlutterFlowTheme.of(context).secondaryText,
                             )
                           : null,
                       activeColor: FlutterFlowTheme.of(context).primary,
@@ -105,7 +105,7 @@ class _ItemDiabetesWidgetState extends State<ItemDiabetesWidget> {
                   ),
                   Text(
                     valueOrDefault<String>(
-                      widget!.namelab,
+                      widget.namelab,
                       'name_lab',
                     ),
                     textAlign: TextAlign.start,
@@ -120,7 +120,7 @@ class _ItemDiabetesWidgetState extends State<ItemDiabetesWidget> {
                               !FlutterFlowTheme.of(context).bodyMediumIsCustom,
                         ),
                   ),
-                ].divide(SizedBox(width: 8.0)),
+                ].divide(const SizedBox(width: 8.0)),
               ),
             ),
             Divider(

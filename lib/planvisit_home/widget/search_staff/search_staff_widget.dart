@@ -47,13 +47,13 @@ class _SearchStaffWidgetState extends State<SearchStaffWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: MediaQuery.sizeOf(context).height * 0.95,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -62,7 +62,7 @@ class _SearchStaffWidgetState extends State<SearchStaffWidget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -113,14 +113,14 @@ class _SearchStaffWidgetState extends State<SearchStaffWidget> {
                   wrapWithModel(
                     model: _model.closeModel,
                     updateCallback: () => safeSetState(() {}),
-                    child: CloseWidget(),
+                    child: const CloseWidget(),
                   ),
                 ],
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-              child: Container(
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+              child: SizedBox(
                 width: double.infinity,
                 child: TextFormField(
                   controller: _model.textController,
@@ -140,7 +140,7 @@ class _SearchStaffWidgetState extends State<SearchStaffWidget> {
                               !FlutterFlowTheme.of(context).labelMediumIsCustom,
                         ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0x00000000),
                         width: 1.0,
                       ),
@@ -169,7 +169,7 @@ class _SearchStaffWidgetState extends State<SearchStaffWidget> {
                     ),
                     filled: true,
                     fillColor: FlutterFlowTheme.of(context).alternate,
-                    prefixIcon: Icon(
+                    prefixIcon: const Icon(
                       Icons.search_rounded,
                       size: 20.0,
                     ),
@@ -189,9 +189,9 @@ class _SearchStaffWidgetState extends State<SearchStaffWidget> {
             ),
             Expanded(
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
                 child: ListView(
-                  padding: EdgeInsets.fromLTRB(
+                  padding: const EdgeInsets.fromLTRB(
                     0,
                     0,
                     0,
@@ -211,7 +211,7 @@ class _SearchStaffWidgetState extends State<SearchStaffWidget> {
                       child: wrapWithModel(
                         model: _model.itemSelecid10Model1,
                         updateCallback: () => safeSetState(() {}),
-                        child: ItemSelecid10Widget(
+                        child: const ItemSelecid10Widget(
                           cid10code: 'นางจำเนียน ศรีอุดมสุข',
                           decription: 'เจ้าหน้าที่ชำนาญการพยาบาล รพ.สต.บางเกด',
                         ),
@@ -228,7 +228,7 @@ class _SearchStaffWidgetState extends State<SearchStaffWidget> {
                       child: wrapWithModel(
                         model: _model.itemSelecid10Model2,
                         updateCallback: () => safeSetState(() {}),
-                        child: ItemSelecid10Widget(
+                        child: const ItemSelecid10Widget(
                           cid10code: 'นายทองสุข โพธิ์สุวรรณ',
                           decription: 'เจ้าหน้าที่ชำนาญการพยาบาล รพ.สต.บางเกด',
                         ),
@@ -245,7 +245,7 @@ class _SearchStaffWidgetState extends State<SearchStaffWidget> {
                       child: wrapWithModel(
                         model: _model.itemSelecid10Model3,
                         updateCallback: () => safeSetState(() {}),
-                        child: ItemSelecid10Widget(
+                        child: const ItemSelecid10Widget(
                           cid10code: 'นางทองอ่อนนุ่ม แก้วรัตนาภรณ์',
                           decription: 'เจ้าหน้าที่ชำนาญการพยาบาล รพ.สต.บางเกด',
                         ),

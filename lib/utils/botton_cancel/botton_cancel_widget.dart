@@ -58,9 +58,9 @@ class _BottonCancelWidgetState extends State<BottonCancelWidget> {
             return 56.0;
           }
         }(),
-        padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
         iconAlignment: IconAlignment.start,
-        iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+        iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
         color: FlutterFlowTheme.of(context).secondaryBackground,
         textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
               fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,

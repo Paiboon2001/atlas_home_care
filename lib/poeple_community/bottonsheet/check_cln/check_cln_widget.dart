@@ -46,13 +46,13 @@ class _CheckClnWidgetState extends State<CheckClnWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: MediaQuery.sizeOf(context).height * 0.95,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -61,7 +61,7 @@ class _CheckClnWidgetState extends State<CheckClnWidget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -76,7 +76,7 @@ class _CheckClnWidgetState extends State<CheckClnWidget> {
                     },
                     child: Container(
                       width: 50.0,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
@@ -119,7 +119,7 @@ class _CheckClnWidgetState extends State<CheckClnWidget> {
                   ),
                   Container(
                     width: 50.0,
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -148,8 +148,8 @@ class _CheckClnWidgetState extends State<CheckClnWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-              child: Container(
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+              child: SizedBox(
                 width: double.infinity,
                 child: TextFormField(
                   controller: _model.textController,
@@ -167,14 +167,14 @@ class _CheckClnWidgetState extends State<CheckClnWidget> {
                               !FlutterFlowTheme.of(context).bodyMediumIsCustom,
                         ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0x00000000),
                         width: 1.0,
                       ),
                       borderRadius: BorderRadius.circular(100.0),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0x00000000),
                         width: 1.0,
                       ),
@@ -196,7 +196,7 @@ class _CheckClnWidgetState extends State<CheckClnWidget> {
                     ),
                     filled: true,
                     fillColor: FlutterFlowTheme.of(context).alternate,
-                    prefixIcon: Icon(
+                    prefixIcon: const Icon(
                       Icons.search_rounded,
                       size: 20.0,
                     ),
@@ -216,9 +216,9 @@ class _CheckClnWidgetState extends State<CheckClnWidget> {
             ),
             Expanded(
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
                 child: ListView(
-                  padding: EdgeInsets.fromLTRB(
+                  padding: const EdgeInsets.fromLTRB(
                     0,
                     0,
                     0,
@@ -230,42 +230,42 @@ class _CheckClnWidgetState extends State<CheckClnWidget> {
                     wrapWithModel(
                       model: _model.clnModel1,
                       updateCallback: () => safeSetState(() {}),
-                      child: ClnWidget(
+                      child: const ClnWidget(
                         namelab: 'โรคเบาหวาน',
                       ),
                     ),
                     wrapWithModel(
                       model: _model.clnModel2,
                       updateCallback: () => safeSetState(() {}),
-                      child: ClnWidget(
+                      child: const ClnWidget(
                         namelab: 'ความดันโลหิตสูง',
                       ),
                     ),
                     wrapWithModel(
                       model: _model.clnModel3,
                       updateCallback: () => safeSetState(() {}),
-                      child: ClnWidget(
+                      child: const ClnWidget(
                         namelab: 'โรคเบาหวาน',
                       ),
                     ),
                     wrapWithModel(
                       model: _model.clnModel4,
                       updateCallback: () => safeSetState(() {}),
-                      child: ClnWidget(
+                      child: const ClnWidget(
                         namelab: 'หัวใจและหลอดเลือด',
                       ),
                     ),
                     wrapWithModel(
                       model: _model.clnModel5,
                       updateCallback: () => safeSetState(() {}),
-                      child: ClnWidget(
+                      child: const ClnWidget(
                         namelab: 'โรคตับ',
                       ),
                     ),
                     wrapWithModel(
                       model: _model.clnModel6,
                       updateCallback: () => safeSetState(() {}),
-                      child: ClnWidget(
+                      child: const ClnWidget(
                         namelab: 'โรคไต',
                       ),
                     ),
