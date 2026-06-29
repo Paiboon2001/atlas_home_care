@@ -1,15 +1,11 @@
+import '/components/main_button_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/utils/close/close_widget.dart';
-import 'dart:math';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'conectdivice_accep_model.dart';
 export 'conectdivice_accep_model.dart';
 
@@ -299,48 +295,11 @@ class _ConectdiviceAccepWidgetState extends State<ConectdiviceAccepWidget>
               ),
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
-                child: FFButtonWidget(
+                child: MainButton(
+                  text: 'เชื่อมต่อ',
                   onPressed: () async {
                     Navigator.pop(context);
                   },
-                  text: 'เชื่อมต่อ',
-                  options: FFButtonOptions(
-                    width: double.infinity,
-                    height: () {
-                      if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
-                        return 48.0;
-                      } else if (MediaQuery.sizeOf(context).width <
-                          kBreakpointMedium) {
-                        return 48.0;
-                      } else if (MediaQuery.sizeOf(context).width <
-                          kBreakpointLarge) {
-                        return 56.0;
-                      } else {
-                        return 56.0;
-                      }
-                    }(),
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                    iconAlignment: IconAlignment.start,
-                    iconPadding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    color: FlutterFlowTheme.of(context).customColor5,
-                    textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).bodyMediumFamily,
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
-                          letterSpacing: 0.0,
-                          useGoogleFonts:
-                              !FlutterFlowTheme.of(context).bodyMediumIsCustom,
-                        ),
-                    elevation: 0.0,
-                    borderSide: const BorderSide(
-                      color: Colors.transparent,
-                      width: 0.0,
-                    ),
-                    borderRadius: BorderRadius.circular(100.0),
-                  ),
                 ),
               ),
             ],

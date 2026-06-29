@@ -1,3 +1,4 @@
+import '/components/main_button_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -60,8 +61,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -79,8 +80,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -98,8 +99,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -117,8 +118,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -136,8 +137,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -155,8 +156,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -174,8 +175,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -193,8 +194,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -206,8 +207,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -219,8 +220,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -232,8 +233,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -245,8 +246,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -258,8 +259,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -271,8 +272,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -284,8 +285,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -297,8 +298,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -310,8 +311,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -323,8 +324,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -336,8 +337,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -349,8 +350,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -362,8 +363,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -375,8 +376,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -388,8 +389,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -401,8 +402,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -414,8 +415,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -427,8 +428,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -440,8 +441,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -453,8 +454,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -466,8 +467,8 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -796,7 +797,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
             ),
           ],
         ),
-        actions: [],
+        actions: const [],
         centerTitle: false,
         elevation: 0.0,
       ),
@@ -806,13 +807,13 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
           borderRadius: BorderRadius.circular(0.0),
         ),
@@ -845,7 +846,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -855,7 +856,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -865,7 +866,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -875,7 +876,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -885,7 +886,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -895,7 +896,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -904,7 +905,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -977,7 +978,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -1033,7 +1034,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().nineone = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1044,7 +1045,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.nineoneModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '0',
                                                 text:
                                                     'รับประทานอาหารน้อยลงอย่างมาก',
@@ -1072,7 +1073,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().nineone = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1083,7 +1084,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.nineoneModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '1',
                                                 text:
                                                     'รับประทานอาหารน้อยลงปานกลาง',
@@ -1111,7 +1112,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().nineone = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1122,7 +1123,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.nineoneModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '2',
                                                 text:
                                                     'การรับประทานอาหารไม่เปลี่ยนแปลง',
@@ -1136,7 +1137,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -1176,7 +1177,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1186,7 +1187,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1196,7 +1197,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1206,7 +1207,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1216,7 +1217,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1225,7 +1226,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -1298,7 +1299,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -1354,7 +1355,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().ninetwo = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1365,7 +1366,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.ninetwoModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '0',
                                                 text:
                                                     'น้ำหนักลดลงมากกว่า 3 กิโลกรัม',
@@ -1393,7 +1394,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().ninetwo = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1404,7 +1405,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.ninetwoModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '1',
                                                 text: 'ไม่ทราบ',
                                                 nineq: '2',
@@ -1431,7 +1432,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().ninetwo = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1442,7 +1443,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.ninetwoModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '2',
                                                 text:
                                                     'น้ำหนักลดลงระหว่าง -3 กิโลกรัม ',
@@ -1470,7 +1471,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().ninetwo = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1481,7 +1482,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.ninetwoModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '3',
                                                 text: 'น้ำหนักไม่ลดลง',
                                                 nineq: '4',
@@ -1494,7 +1495,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -1545,7 +1546,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1555,7 +1556,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1565,7 +1566,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1575,7 +1576,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1584,7 +1585,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -1657,7 +1658,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -1713,7 +1714,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().ninethree = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1724,7 +1725,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.ninethreeModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '0',
                                                 text:
                                                     'นอนบนเตียงหรือต้องอาศัยรถเข็นตลอดเวลา',
@@ -1752,7 +1753,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().ninethree = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1763,7 +1764,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.ninethreeModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '1',
                                                 text:
                                                     'ลุกจากเตียงหรือรถเข็นได้บ้างแต่ไม่สามารถไปข้างนอกได้เอง',
@@ -1791,7 +1792,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().ninethree = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1802,7 +1803,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.ninethreeModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '2',
                                                 text:
                                                     'เดินและเคลื่อนไหวได้ตามปกติ',
@@ -1816,7 +1817,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -1878,7 +1879,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1888,7 +1889,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1898,7 +1899,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1907,7 +1908,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -1980,7 +1981,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -2036,7 +2037,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().ninefore = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2047,7 +2048,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.nineforeModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '0',
                                                 text: 'มี',
                                                 nineq: '1',
@@ -2074,7 +2075,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().ninefore = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2085,7 +2086,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.nineforeModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '2',
                                                 text: 'ไม่มี',
                                                 nineq: '2',
@@ -2098,7 +2099,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -2171,7 +2172,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2181,7 +2182,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2190,7 +2191,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -2263,7 +2264,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -2319,7 +2320,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().ninefive = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2330,7 +2331,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.ninefiveModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinefiveWidget(
+                                              child: const NinefiveWidget(
                                                 num: '0',
                                                 text:
                                                     'ความจำเสื่อมหรือซึมเศร้าอย่างรุนแรง',
@@ -2358,7 +2359,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().ninefive = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2369,7 +2370,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.ninefiveModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinefiveWidget(
+                                              child: const NinefiveWidget(
                                                 num: '1',
                                                 text: 'ความจำเสื่อมเล็กน้อย',
                                                 nineq: '2',
@@ -2396,7 +2397,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().ninefive = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2407,7 +2408,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.ninefiveModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinefiveWidget(
+                                              child: const NinefiveWidget(
                                                 num: '2',
                                                 text: 'ไม่มีปัญหาทางประสาท',
                                                 nineq: '3',
@@ -2420,7 +2421,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -2504,7 +2505,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2513,7 +2514,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -2586,7 +2587,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -2642,7 +2643,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().ninesix = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2653,7 +2654,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.ninesixModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesixWidget(
+                                              child: const NinesixWidget(
                                                 num: '0',
                                                 text: 'BMI น้อยกว่า 9',
                                                 nineq: '1',
@@ -2680,7 +2681,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().ninesix = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2691,7 +2692,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.ninesixModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesixWidget(
+                                              child: const NinesixWidget(
                                                 num: '1',
                                                 text:
                                                     'BMI ตั้งแต่ 9 แต่น้อยกว่า 21',
@@ -2719,7 +2720,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().ninesix = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2730,7 +2731,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.ninesixModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesixWidget(
+                                              child: const NinesixWidget(
                                                 num: '2',
                                                 text:
                                                     'BMI ตั้งแต่ 21 แต่น้อยกว่า 23',
@@ -2758,7 +2759,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().ninesix = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2769,7 +2770,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.ninesixModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesixWidget(
+                                              child: const NinesixWidget(
                                                 num: '3',
                                                 text: 'BMI ตั้งแต่ 23 ขึ้นไป',
                                                 nineq: '4',
@@ -2782,7 +2783,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -2876,7 +2877,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -2949,7 +2950,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -3005,7 +3006,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().nineseven = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3014,7 +3015,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.ninesevenModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesevenWidget(
+                                              child: const NinesevenWidget(
                                                 num: '0',
                                                 text: 'CC น้อยกว่า 31',
                                                 nineq: '1',
@@ -3041,7 +3042,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               FFAppState().nineseven = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3050,7 +3051,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                               model: _model.ninesevenModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesevenWidget(
+                                              child: const NinesevenWidget(
                                                 num: '3',
                                                 text: 'CC ตั้งแต่ 31 ขึ้นไป',
                                                 nineq: '2',
@@ -3063,54 +3064,26 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 16.0, 16.0, 24.0),
-                          child: FFButtonWidget(
+                          child: MainButton(
+                            text: 'บันทึก',
                             onPressed: () async {
                               _model.nineq = 8;
                               safeSetState(() {});
                             },
-                            text: 'บันทึก',
-                            options: FFButtonOptions(
-                              width: double.infinity,
-                              height: 48.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 0.0, 16.0, 0.0),
-                              iconAlignment: IconAlignment.start,
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              color: FlutterFlowTheme.of(context).customColor5,
-                              textStyle: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily,
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts:
-                                        !FlutterFlowTheme.of(context)
-                                            .bodyMediumIsCustom,
-                                  ),
-                              elevation: 0.0,
-                              borderSide: BorderSide(
-                                color: Colors.transparent,
-                                width: 0.0,
-                              ),
-                              borderRadius: BorderRadius.circular(100.0),
-                            ),
                           ),
                         ),
                       ],
                     );
                   } else if (_model.nineq == 8) {
                     return ListView(
-                      padding: EdgeInsets.fromLTRB(
+                      padding: const EdgeInsets.fromLTRB(
                         0,
                         8.0,
                         0,
@@ -3120,7 +3093,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                       scrollDirection: Axis.vertical,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, -1.0),
+                          alignment: const AlignmentDirectional(0.0, -1.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
                             child: Image.network(
@@ -3159,7 +3132,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                         ),
                         if (FFAppState().gay == true)
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: Container(
                               width: double.infinity,
@@ -3169,7 +3142,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 borderRadius: BorderRadius.circular(24.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -3201,7 +3174,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                                 ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     Text(
                                       'คุณได้ 12 คะแนน',
@@ -3242,7 +3215,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                             BorderRadius.circular(16.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(12.0),
+                                        padding: const EdgeInsets.all(12.0),
                                         child: Text(
                                           'เป็นผู้มีความเสี่ยงโรคซึมเศร้า เพราะมีเหตุให้เกิดการกระทบกระทั้งจิตใจทำให้มีอาการวิตกกังวล และมีความคิดด้านลบหรือสิ้นหวังกับชีวิต',
                                           textAlign: TextAlign.start,
@@ -3263,7 +3236,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 16.0, 0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
@@ -3276,11 +3249,11 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                           width: double.infinity,
                                           height: 48.0,
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           iconAlignment: IconAlignment.start,
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: FlutterFlowTheme.of(context)
                                               .customColor5,
@@ -3306,14 +3279,14 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 16.0)),
+                                  ].divide(const SizedBox(height: 16.0)),
                                 ),
                               ),
                             ),
                           ),
                         if (FFAppState().gay == false)
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: Container(
                               width: double.infinity,
@@ -3323,7 +3296,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                 borderRadius: BorderRadius.circular(24.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -3352,7 +3325,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                                         .labelSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     Text(
                                       'คุณได้ 7 คะแนน',
@@ -3387,12 +3360,12 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                     Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFFFEDED),
+                                        color: const Color(0xFFFFEDED),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(12.0),
+                                        padding: const EdgeInsets.all(12.0),
                                         child: Text(
                                           'เป็นผู้มีความเสี่ยงโรคซึมเศร้า เพราะมีเหตุให้เกิดการกระทบกระทั้งจิตใจทำให้มีอาการวิตกกังวล และมีความคิดด้านลบหรือสิ้นหวังกับชีวิต\n\nให้ประเมินต่อด้วยแบบประเมิน Mini Nutritional Assessment : MNA (Full form)',
                                           textAlign: TextAlign.start,
@@ -3413,7 +3386,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 16.0, 0.0, 0.0),
                                       child: MasonryGridView.builder(
                                         physics:
@@ -3476,7 +3449,9 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                         shrinkWrap: true,
                                         itemBuilder: (context, index) {
                                           return [
-                                            () => FFButtonWidget(
+                                            () => MainButton(
+                                                  text:
+                                                      'ทำแบบประเมิน MNA (Full form)',
                                                   onPressed: () async {
                                                     context.pushNamed(
                                                         MNAFullWidget
@@ -3491,48 +3466,6 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                                     FFAppState().nineseven = '';
                                                     safeSetState(() {});
                                                   },
-                                                  text:
-                                                      'ทำแบบประเมิน MNA (Full form)',
-                                                  options: FFButtonOptions(
-                                                    width: double.infinity,
-                                                    height: 48.0,
-                                                    padding:
-                                                        EdgeInsetsDirectional
-                                                            .fromSTEB(16.0, 0.0,
-                                                                16.0, 0.0),
-                                                    iconAlignment:
-                                                        IconAlignment.start,
-                                                    iconPadding:
-                                                        EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 0.0,
-                                                                0.0, 0.0),
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .customColor5,
-                                                    textStyle:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMedium
-                                                            .override(
-                                                              fontFamily:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumFamily,
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .secondaryBackground,
-                                                              letterSpacing:
-                                                                  0.0,
-                                                              useGoogleFonts:
-                                                                  !FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumIsCustom,
-                                                            ),
-                                                    elevation: 0.0,
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            100.0),
-                                                  ),
                                                 ),
                                             () => FFButtonWidget(
                                                   onPressed: () async {
@@ -3554,16 +3487,16 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                                     width: double.infinity,
                                                     height: 48.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 16.0, 0.0),
                                                     iconAlignment:
                                                         IconAlignment.start,
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
-                                                    color: Color(0x00164874),
+                                                    color: const Color(0x00164874),
                                                     textStyle:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -3599,7 +3532,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                                         },
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 16.0)),
+                                  ].divide(const SizedBox(height: 16.0)),
                                 ),
                               ),
                             ),

@@ -59,7 +59,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
           borderRadius: 30.0,
           borderWidth: 1.0,
           buttonSize: 44.0,
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_new_rounded,
             color: Colors.white,
             size: 18.0,
@@ -78,7 +78,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                     !FlutterFlowTheme.of(context).titleMediumIsCustom,
               ),
         ),
-        actions: [],
+        actions: const [],
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -87,7 +87,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
         height: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).primaryBackground,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               blurRadius: 4.0,
               color: Color(0x33000000),
@@ -97,15 +97,15 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
               ),
             )
           ],
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
         ),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(0.0, 2.0, 0.0, 0.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 2.0, 0.0, 0.0),
           child: ListView(
-            padding: EdgeInsets.fromLTRB(
+            padding: const EdgeInsets.fromLTRB(
               0,
               16.0,
               0,
@@ -115,7 +115,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
             scrollDirection: Axis.vertical,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -153,7 +153,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                                             .bodySmallIsCustom,
                                   ),
                             ),
-                          ].divide(SizedBox(width: 4.0)),
+                          ].divide(const SizedBox(width: 4.0)),
                         ),
                       ],
                     ),
@@ -167,12 +167,12 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                       child: Stack(
                         children: [
                           Align(
-                            alignment: AlignmentDirectional(1.0, 0.0),
+                            alignment: const AlignmentDirectional(1.0, 0.0),
                             child: Container(
                               width: 110.0,
                               height: 110.0,
                               clipBehavior: Clip.antiAlias,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 shape: BoxShape.circle,
                               ),
                               child: Image.asset(
@@ -182,7 +182,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -207,7 +207,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                                                     .bodyMediumIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 16.0)),
+                                  ].divide(const SizedBox(width: 16.0)),
                                 ),
                                 Text(
                                   'IP : 00019243',
@@ -232,17 +232,17 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                                         print('Button pressed ...');
                                       },
                                       text: 'เชื่อมต่ออยู่',
-                                      icon: Icon(
+                                      icon: const Icon(
                                         Icons.circle,
                                         size: 15.0,
                                       ),
                                       options: FFButtonOptions(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8.0, 0.0, 16.0, 0.0),
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: Color(0x7FFFFFFF),
+                                        color: const Color(0x7FFFFFFF),
                                         textStyle: FlutterFlowTheme.of(context)
                                             .bodySmall
                                             .override(
@@ -258,7 +258,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                                                       .bodySmallIsCustom,
                                             ),
                                         elevation: 0.0,
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x771CB834),
                                           width: 1.0,
                                         ),
@@ -286,24 +286,24 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                           Opacity(
                             opacity: 0.5,
                             child: Align(
-                              alignment: AlignmentDirectional(1.0, 0.0),
+                              alignment: const AlignmentDirectional(1.0, 0.0),
                               child: Container(
                                 width: 110.0,
                                 height: 110.0,
                                 clipBehavior: Clip.antiAlias,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   shape: BoxShape.circle,
                                 ),
                                 child: Image.asset(
                                   'assets/images/spo2.png',
                                   fit: BoxFit.cover,
-                                  alignment: Alignment(0.0, 0.0),
+                                  alignment: const Alignment(0.0, 0.0),
                                 ),
                               ),
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -328,7 +328,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                                                     .bodyMediumIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 16.0)),
+                                  ].divide(const SizedBox(width: 16.0)),
                                 ),
                                 Text(
                                   'IP : 00019243',
@@ -348,16 +348,16 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                                     print('Button pressed ...');
                                   },
                                   text: 'ไม่ได้เชื่อมต่ออยู่',
-                                  icon: Icon(
+                                  icon: const Icon(
                                     Icons.circle,
                                     size: 15.0,
                                   ),
                                   options: FFButtonOptions(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         8.0, 0.0, 16.0, 0.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    color: Color(0x7FFFFFFF),
+                                    color: const Color(0x7FFFFFFF),
                                     textStyle: FlutterFlowTheme.of(context)
                                         .bodySmall
                                         .override(
@@ -372,7 +372,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                                                   .bodySmallIsCustom,
                                         ),
                                     elevation: 0.0,
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x7A737373),
                                       width: 1.0,
                                     ),
@@ -385,17 +385,17 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                         ],
                       ),
                     ),
-                  ].divide(SizedBox(height: 12.0)),
+                  ].divide(const SizedBox(height: 12.0)),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -416,15 +416,15 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                                               .labelMediumIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 12.0)),
+                            ].divide(const SizedBox(width: 12.0)),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 1.0, 0.0, 0.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
-                                color: Color(0xE6FFFFFF),
-                                boxShadow: [
+                                color: const Color(0xE6FFFFFF),
+                                boxShadow: const [
                                   BoxShadow(
                                     blurRadius: 4.0,
                                     color: Color(0x4D2196F3),
@@ -478,7 +478,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                                       }
                                     }(),
                                     decoration: BoxDecoration(
-                                      boxShadow: [
+                                      boxShadow: const [
                                         BoxShadow(
                                           blurRadius: 4.0,
                                           color: Color(0x4D2196F3),
@@ -490,20 +490,20 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                                       ],
                                       gradient: LinearGradient(
                                         colors: [
-                                          Color(0xFF7EC3FC),
+                                          const Color(0xFF7EC3FC),
                                           FlutterFlowTheme.of(context).info
                                         ],
-                                        stops: [0.0, 1.0],
-                                        begin: AlignmentDirectional(0.56, -1.0),
-                                        end: AlignmentDirectional(-0.56, 1.0),
+                                        stops: const [0.0, 1.0],
+                                        begin: const AlignmentDirectional(0.56, -1.0),
+                                        end: const AlignmentDirectional(-0.56, 1.0),
                                       ),
                                       shape: BoxShape.circle,
                                       border: Border.all(
-                                        color: Color(0x9AFFFFFF),
+                                        color: const Color(0x9AFFFFFF),
                                       ),
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: ToggleIcon(
                                         onPressed: () async {
                                           safeSetState(() =>
@@ -572,11 +572,11 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                                             fit: BoxFit.contain,
                                             animate: true,
                                           ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                 ]
-                                    .divide(SizedBox(width: 8.0))
-                                    .addToEnd(SizedBox(width: 12.0)),
+                                    .divide(const SizedBox(width: 8.0))
+                                    .addToEnd(const SizedBox(width: 12.0)),
                               ),
                             ),
                           ),
@@ -585,7 +585,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
@@ -602,7 +602,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                             builder: (context) {
                               return Padding(
                                 padding: MediaQuery.viewInsetsOf(context),
-                                child: ConectdiviceAccepWidget(),
+                                child: const ConectdiviceAccepWidget(),
                               );
                             },
                           ).then((value) => safeSetState(() {}));
@@ -618,23 +618,23 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(1.0, 0.0),
+                                alignment: const AlignmentDirectional(1.0, 0.0),
                                 child: Container(
                                   width: 110.0,
                                   height: 110.0,
                                   clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
                                     'assets/images/cf.png',
                                     fit: BoxFit.cover,
-                                    alignment: Alignment(0.0, 0.0),
+                                    alignment: const Alignment(0.0, 0.0),
                                   ),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.all(16.0),
+                                padding: const EdgeInsets.all(16.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment:
@@ -662,7 +662,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                                                         .bodyMediumIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 17.0)),
+                                      ].divide(const SizedBox(width: 17.0)),
                                     ),
                                     Text(
                                       'IP : 00019243',
@@ -683,17 +683,17 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                                         print('Button pressed ...');
                                       },
                                       text: 'เชื่อมต่อ',
-                                      icon: Icon(
+                                      icon: const Icon(
                                         Icons.circle,
                                         size: 15.0,
                                       ),
                                       options: FFButtonOptions(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8.0, 0.0, 16.0, 0.0),
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: Color(0x7FFFFFFF),
+                                        color: const Color(0x7FFFFFFF),
                                         textStyle: FlutterFlowTheme.of(context)
                                             .bodySmall
                                             .override(
@@ -709,7 +709,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                                                       .bodySmallIsCustom,
                                             ),
                                         elevation: 0.0,
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x784A99F5),
                                           width: 1.0,
                                         ),
@@ -727,7 +727,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
                       child: Container(
                         width: double.infinity,
                         height: 110.0,
@@ -739,12 +739,12 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                         child: Stack(
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(1.0, 0.0),
+                              alignment: const AlignmentDirectional(1.0, 0.0),
                               child: Container(
                                 width: 110.0,
                                 height: 110.0,
                                 clipBehavior: Clip.antiAlias,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   shape: BoxShape.circle,
                                 ),
                                 child: Image.asset(
@@ -754,7 +754,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.all(16.0),
+                              padding: const EdgeInsets.all(16.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment:
@@ -780,7 +780,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                                                       .bodyMediumIsCustom,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                   Text(
                                     'IP : 00019243',
@@ -801,17 +801,17 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                                       print('Button pressed ...');
                                     },
                                     text: 'เชื่อมต่อ',
-                                    icon: Icon(
+                                    icon: const Icon(
                                       Icons.circle,
                                       size: 15.0,
                                     ),
                                     options: FFButtonOptions(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           8.0, 0.0, 16.0, 0.0),
                                       iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
-                                      color: Color(0x7FFFFFFF),
+                                      color: const Color(0x7FFFFFFF),
                                       textStyle: FlutterFlowTheme.of(context)
                                           .bodySmall
                                           .override(
@@ -826,7 +826,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                                                     .bodySmallIsCustom,
                                           ),
                                       elevation: 0.0,
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Color(0x784A99F5),
                                         width: 1.0,
                                       ),
@@ -841,10 +841,10 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                         ),
                       ),
                     ),
-                  ].divide(SizedBox(height: 12.0)),
+                  ].divide(const SizedBox(height: 12.0)),
                 ),
               ),
-            ].divide(SizedBox(height: 16.0)),
+            ].divide(const SizedBox(height: 16.0)),
           ),
         ),
       ),

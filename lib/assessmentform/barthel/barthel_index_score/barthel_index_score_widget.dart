@@ -72,8 +72,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -91,8 +91,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -110,8 +110,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -129,8 +129,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -148,8 +148,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -167,8 +167,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -186,8 +186,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -205,8 +205,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -224,8 +224,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -243,8 +243,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -262,8 +262,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -275,8 +275,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -288,8 +288,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -301,8 +301,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -314,8 +314,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -327,8 +327,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -340,8 +340,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -353,8 +353,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -366,8 +366,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -379,8 +379,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -392,8 +392,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -405,8 +405,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -418,8 +418,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -431,8 +431,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -444,8 +444,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -457,8 +457,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.0, 1.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.0, 1.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -470,8 +470,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.0, 1.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.0, 1.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -483,8 +483,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.0, 1.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.0, 1.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -496,8 +496,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.0, 1.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.0, 1.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -509,8 +509,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -522,8 +522,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -535,8 +535,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -548,8 +548,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -561,8 +561,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -574,8 +574,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -587,8 +587,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -600,8 +600,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -613,8 +613,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -626,8 +626,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -639,8 +639,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -652,8 +652,8 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -732,13 +732,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                   );
                 } else if (_model.pagebarthel == 2) {
                   return Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: FlutterFlowIconButton(
                       borderColor: Colors.transparent,
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -751,13 +751,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                   );
                 } else if (_model.pagebarthel == 3) {
                   return Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: FlutterFlowIconButton(
                       borderColor: Colors.transparent,
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -770,13 +770,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                   );
                 } else if (_model.pagebarthel == 4) {
                   return Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: FlutterFlowIconButton(
                       borderColor: Colors.transparent,
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -789,13 +789,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                   );
                 } else if (_model.pagebarthel == 5) {
                   return Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: FlutterFlowIconButton(
                       borderColor: Colors.transparent,
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -808,13 +808,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                   );
                 } else if (_model.pagebarthel == 6) {
                   return Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: FlutterFlowIconButton(
                       borderColor: Colors.transparent,
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -827,13 +827,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                   );
                 } else if (_model.pagebarthel == 7) {
                   return Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: FlutterFlowIconButton(
                       borderColor: Colors.transparent,
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -846,13 +846,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                   );
                 } else if (_model.pagebarthel == 8) {
                   return Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: FlutterFlowIconButton(
                       borderColor: Colors.transparent,
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -865,13 +865,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                   );
                 } else if (_model.pagebarthel == 9) {
                   return Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: FlutterFlowIconButton(
                       borderColor: Colors.transparent,
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -884,13 +884,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                   );
                 } else if (_model.pagebarthel == 10) {
                   return Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: FlutterFlowIconButton(
                       borderColor: Colors.transparent,
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -903,13 +903,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                   );
                 } else if (_model.pagebarthel == 11) {
                   return Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: FlutterFlowIconButton(
                       borderColor: Colors.transparent,
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -924,7 +924,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                   return Container(
                     width: 10.0,
                     height: 10.0,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                   );
@@ -1103,7 +1103,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                     return Container(
                       width: 10.0,
                       height: 10.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                       ),
                     );
@@ -1152,7 +1152,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
             ),
           ],
         ),
-        actions: [],
+        actions: const [],
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -1162,13 +1162,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
         ),
         child: Column(
@@ -1200,7 +1200,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1210,7 +1210,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1220,7 +1220,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1230,7 +1230,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1240,7 +1240,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1250,7 +1250,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1260,7 +1260,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1270,7 +1270,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1280,7 +1280,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1289,7 +1289,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                         ),
                         Expanded(
                           child: ListView(
-                            padding: EdgeInsets.fromLTRB(
+                            padding: const EdgeInsets.fromLTRB(
                               0,
                               8.0,
                               0,
@@ -1299,7 +1299,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                             scrollDirection: Axis.vertical,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, -1.0),
+                                alignment: const AlignmentDirectional(0.0, -1.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.network(
@@ -1341,13 +1341,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Text(
                                         'การรับประทานอาหาร\n(เมื่อเตรียมไว้ให้เรียบร้อยต่อหน้า)',
                                         textAlign: TextAlign.center,
@@ -1366,11 +1366,11 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                             ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
@@ -1411,7 +1411,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                     }
                                   }(),
                                   itemCount: 3,
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     0,
                                     0,
@@ -1437,7 +1437,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest1 = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1448,7 +1448,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index1Model1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index1Widget(
+                                              child: const Index1Widget(
                                                 num: '0',
                                                 text: 'ต้องมีคนป้อนให้',
                                                 barthel: '1',
@@ -1475,7 +1475,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest1 = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1486,7 +1486,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index1Model2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index1Widget(
+                                              child: const Index1Widget(
                                                 num: '1',
                                                 text: 'มีคนช่วยบางส่วน',
                                                 barthel: '2',
@@ -1513,7 +1513,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest1 = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1524,7 +1524,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index1Model3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index1Widget(
+                                              child: const Index1Widget(
                                                 num: '2',
                                                 text: 'ช่วยตัวเองได้ปกติ',
                                                 barthel: '3',
@@ -1538,7 +1538,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                   },
                                 ),
                               ),
-                            ].divide(SizedBox(height: 24.0)),
+                            ].divide(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ],
@@ -1577,7 +1577,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1587,7 +1587,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1597,7 +1597,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1607,7 +1607,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1617,7 +1617,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1627,7 +1627,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1637,7 +1637,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1647,7 +1647,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1656,7 +1656,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                         ),
                         Expanded(
                           child: ListView(
-                            padding: EdgeInsets.fromLTRB(
+                            padding: const EdgeInsets.fromLTRB(
                               0,
                               8.0,
                               0,
@@ -1666,7 +1666,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                             scrollDirection: Axis.vertical,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, -1.0),
+                                alignment: const AlignmentDirectional(0.0, -1.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.network(
@@ -1708,13 +1708,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Text(
                                         'ลุกจากที่นอนหรือจากเตียงไปยังเก้าอี้',
                                         textAlign: TextAlign.center,
@@ -1733,11 +1733,11 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                             ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
@@ -1778,7 +1778,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                     }
                                   }(),
                                   itemCount: 4,
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     0,
                                     0,
@@ -1804,7 +1804,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest2 = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1815,7 +1815,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index2Model1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index2Widget(
+                                              child: const Index2Widget(
                                                 num: '0',
                                                 text: 'ไม่สามารถนั่งได้',
                                                 barthel: '1',
@@ -1842,7 +1842,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest2 = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1853,7 +1853,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index2Model2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index2Widget(
+                                              child: const Index2Widget(
                                                 num: '1',
                                                 text:
                                                     'ต้องการความช่วยเหลืออย่างมาก',
@@ -1881,7 +1881,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest2 = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1892,7 +1892,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index2Model3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index2Widget(
+                                              child: const Index2Widget(
                                                 num: '2',
                                                 text:
                                                     'ต้องการความช่วยเหลือบ้าง',
@@ -1920,7 +1920,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest2 = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1931,7 +1931,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index2Model4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index2Widget(
+                                              child: const Index2Widget(
                                                 num: '3',
                                                 text: 'ทำได้เอง',
                                                 barthel: '4',
@@ -1945,7 +1945,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                   },
                                 ),
                               ),
-                            ].divide(SizedBox(height: 24.0)),
+                            ].divide(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ],
@@ -1995,7 +1995,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2005,7 +2005,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2015,7 +2015,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2025,7 +2025,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2035,7 +2035,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2045,7 +2045,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2055,7 +2055,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2064,7 +2064,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                         ),
                         Expanded(
                           child: ListView(
-                            padding: EdgeInsets.fromLTRB(
+                            padding: const EdgeInsets.fromLTRB(
                               0,
                               8.0,
                               0,
@@ -2074,7 +2074,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                             scrollDirection: Axis.vertical,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, -1.0),
+                                alignment: const AlignmentDirectional(0.0, -1.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.network(
@@ -2116,13 +2116,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Text(
                                         'การล้างหน้า หวีผม แปรงฟัน โกนหนวด',
                                         textAlign: TextAlign.center,
@@ -2141,11 +2141,11 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                             ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
@@ -2186,7 +2186,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                     }
                                   }(),
                                   itemCount: 2,
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     0,
                                     0,
@@ -2212,7 +2212,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest3 = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2223,7 +2223,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index3Model1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index3Widget(
+                                              child: const Index3Widget(
                                                 num: '0',
                                                 text: 'ต้องการความช่วยเหลือ',
                                                 barthel: '1',
@@ -2250,7 +2250,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest3 = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2261,7 +2261,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index3Model2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index3Widget(
+                                              child: const Index3Widget(
                                                 num: '1',
                                                 text: 'ทำได้เอง',
                                                 barthel: '2',
@@ -2275,7 +2275,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                   },
                                 ),
                               ),
-                            ].divide(SizedBox(height: 24.0)),
+                            ].divide(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ],
@@ -2336,7 +2336,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2346,7 +2346,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2356,7 +2356,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2366,7 +2366,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2376,7 +2376,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2386,7 +2386,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2395,7 +2395,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                         ),
                         Expanded(
                           child: ListView(
-                            padding: EdgeInsets.fromLTRB(
+                            padding: const EdgeInsets.fromLTRB(
                               0,
                               8.0,
                               0,
@@ -2405,7 +2405,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                             scrollDirection: Axis.vertical,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, -1.0),
+                                alignment: const AlignmentDirectional(0.0, -1.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.network(
@@ -2447,13 +2447,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Text(
                                         'การเข้าห้องน้ำ',
                                         textAlign: TextAlign.center,
@@ -2472,11 +2472,11 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                             ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
@@ -2517,7 +2517,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                     }
                                   }(),
                                   itemCount: 3,
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     0,
                                     0,
@@ -2543,7 +2543,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest4 = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2554,7 +2554,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index4Model1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index4Widget(
+                                              child: const Index4Widget(
                                                 num: '0',
                                                 text: 'ช่วยตัวเองไม่เป็น',
                                                 barthel: '1',
@@ -2581,7 +2581,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest4 = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2592,7 +2592,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index4Model2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index4Widget(
+                                              child: const Index4Widget(
                                                 num: '1',
                                                 text: 'ทำเองได้บ้าง',
                                                 barthel: '2',
@@ -2619,7 +2619,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest4 = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2630,7 +2630,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index4Model3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index4Widget(
+                                              child: const Index4Widget(
                                                 num: '2',
                                                 text: 'ช่วยตัวเองได้ดี',
                                                 barthel: '3',
@@ -2644,7 +2644,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                   },
                                 ),
                               ),
-                            ].divide(SizedBox(height: 24.0)),
+                            ].divide(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ],
@@ -2716,7 +2716,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2726,7 +2726,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2736,7 +2736,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2746,7 +2746,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2756,7 +2756,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2765,7 +2765,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                         ),
                         Expanded(
                           child: ListView(
-                            padding: EdgeInsets.fromLTRB(
+                            padding: const EdgeInsets.fromLTRB(
                               0,
                               8.0,
                               0,
@@ -2775,7 +2775,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                             scrollDirection: Axis.vertical,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, -1.0),
+                                alignment: const AlignmentDirectional(0.0, -1.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.network(
@@ -2817,13 +2817,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Text(
                                         'การอาบน้ำ',
                                         textAlign: TextAlign.center,
@@ -2842,11 +2842,11 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                             ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
@@ -2887,7 +2887,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                     }
                                   }(),
                                   itemCount: 2,
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     0,
                                     0,
@@ -2913,7 +2913,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest5 = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2924,7 +2924,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index5Model1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index5Widget(
+                                              child: const Index5Widget(
                                                 num: '0',
                                                 text: 'ต้องมีคนช่วย',
                                                 barthel: '1',
@@ -2951,7 +2951,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest5 = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2962,7 +2962,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index5Model2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index5Widget(
+                                              child: const Index5Widget(
                                                 num: '1',
                                                 text: 'อาบน้ำได้เอง',
                                                 barthel: '2',
@@ -2976,7 +2976,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                   },
                                 ),
                               ),
-                            ].divide(SizedBox(height: 24.0)),
+                            ].divide(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ],
@@ -3059,7 +3059,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3069,7 +3069,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3079,7 +3079,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3089,7 +3089,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3098,7 +3098,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                         ),
                         Expanded(
                           child: ListView(
-                            padding: EdgeInsets.fromLTRB(
+                            padding: const EdgeInsets.fromLTRB(
                               0,
                               8.0,
                               0,
@@ -3108,7 +3108,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                             scrollDirection: Axis.vertical,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, -1.0),
+                                alignment: const AlignmentDirectional(0.0, -1.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.network(
@@ -3150,13 +3150,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Text(
                                         'การเคลื่อนที่ภายในห้องหรือบ้าน',
                                         textAlign: TextAlign.center,
@@ -3175,11 +3175,11 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                             ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
@@ -3220,7 +3220,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                     }
                                   }(),
                                   itemCount: 4,
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     0,
                                     0,
@@ -3246,7 +3246,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest6 = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3257,7 +3257,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index6Model1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index6Widget(
+                                              child: const Index6Widget(
                                                 num: '0',
                                                 text: 'เคลื่อนที่ไปไหนไม่ได้',
                                                 barthel: '1',
@@ -3284,7 +3284,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest6 = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3295,7 +3295,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index6Model2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index6Widget(
+                                              child: const Index6Widget(
                                                 num: '1',
                                                 text:
                                                     'ใช้รถเข็นช่วยตนเองให้เคลื่อนที่ได้เอง',
@@ -3323,7 +3323,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest6 = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3334,7 +3334,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index6Model3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index6Widget(
+                                              child: const Index6Widget(
                                                 num: '2',
                                                 text:
                                                     'เดินหรือเคลื่อนที่โดยมีคนช่วย',
@@ -3362,7 +3362,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest6 = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3373,7 +3373,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index6Model4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index6Widget(
+                                              child: const Index6Widget(
                                                 num: '3',
                                                 text:
                                                     'เดินหรือเคลื่อนที่ได้เอง',
@@ -3388,7 +3388,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                   },
                                 ),
                               ),
-                            ].divide(SizedBox(height: 24.0)),
+                            ].divide(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ],
@@ -3482,7 +3482,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3492,7 +3492,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3502,7 +3502,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3511,7 +3511,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                         ),
                         Expanded(
                           child: ListView(
-                            padding: EdgeInsets.fromLTRB(
+                            padding: const EdgeInsets.fromLTRB(
                               0,
                               8.0,
                               0,
@@ -3521,7 +3521,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                             scrollDirection: Axis.vertical,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, -1.0),
+                                alignment: const AlignmentDirectional(0.0, -1.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.network(
@@ -3563,13 +3563,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Text(
                                         'การขึ้นลงบันได 1 ชั้น',
                                         textAlign: TextAlign.center,
@@ -3588,11 +3588,11 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                             ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
@@ -3633,7 +3633,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                     }
                                   }(),
                                   itemCount: 3,
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     0,
                                     0,
@@ -3659,7 +3659,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest7 = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3670,7 +3670,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index7Model1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index7Widget(
+                                              child: const Index7Widget(
                                                 num: '0',
                                                 text: 'ไม่สามารถทำได้',
                                                 barthel: '1',
@@ -3697,7 +3697,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest7 = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3708,7 +3708,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index7Model2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index7Widget(
+                                              child: const Index7Widget(
                                                 num: '1',
                                                 text: 'ต้องการคนช่วยเหลือ',
                                                 barthel: '2',
@@ -3735,7 +3735,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest7 = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3746,7 +3746,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index7Model3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index7Widget(
+                                              child: const Index7Widget(
                                                 num: '2',
                                                 text: 'ขึ้นลงได้เอง',
                                                 barthel: '3',
@@ -3760,7 +3760,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                   },
                                 ),
                               ),
-                            ].divide(SizedBox(height: 24.0)),
+                            ].divide(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ],
@@ -3865,7 +3865,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3875,7 +3875,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3884,7 +3884,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                         ),
                         Expanded(
                           child: ListView(
-                            padding: EdgeInsets.fromLTRB(
+                            padding: const EdgeInsets.fromLTRB(
                               0,
                               8.0,
                               0,
@@ -3894,7 +3894,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                             scrollDirection: Axis.vertical,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, -1.0),
+                                alignment: const AlignmentDirectional(0.0, -1.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.network(
@@ -3936,13 +3936,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Text(
                                         'การสวมใส่เสื้อผ้า',
                                         textAlign: TextAlign.center,
@@ -3961,11 +3961,11 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                             ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
@@ -4006,7 +4006,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                     }
                                   }(),
                                   itemCount: 3,
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     0,
                                     0,
@@ -4032,7 +4032,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest8 = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4043,7 +4043,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index8Model1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index8Widget(
+                                              child: const Index8Widget(
                                                 num: '0',
                                                 text: 'ต้องมีคนสวมใส่ให้',
                                                 barthel: '1',
@@ -4070,7 +4070,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest8 = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4081,7 +4081,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index8Model2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index8Widget(
+                                              child: const Index8Widget(
                                                 num: '1',
                                                 text: 'ช่วยตนเองได้บางส่วน',
                                                 barthel: '2',
@@ -4108,7 +4108,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest8 = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4119,7 +4119,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index8Model3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index8Widget(
+                                              child: const Index8Widget(
                                                 num: '2',
                                                 text: 'ช่วยตนเองได้ดี',
                                                 barthel: '3',
@@ -4133,7 +4133,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                   },
                                 ),
                               ),
-                            ].divide(SizedBox(height: 24.0)),
+                            ].divide(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ],
@@ -4249,7 +4249,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4258,7 +4258,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                         ),
                         Expanded(
                           child: ListView(
-                            padding: EdgeInsets.fromLTRB(
+                            padding: const EdgeInsets.fromLTRB(
                               0,
                               8.0,
                               0,
@@ -4268,7 +4268,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                             scrollDirection: Axis.vertical,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, -1.0),
+                                alignment: const AlignmentDirectional(0.0, -1.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.network(
@@ -4310,13 +4310,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Text(
                                         'การกลั้นอุจจาระ',
                                         textAlign: TextAlign.center,
@@ -4335,11 +4335,11 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                             ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
@@ -4380,7 +4380,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                     }
                                   }(),
                                   itemCount: 3,
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     0,
                                     0,
@@ -4406,7 +4406,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest9 = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4417,7 +4417,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index9Model1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index9Widget(
+                                              child: const Index9Widget(
                                                 num: '0',
                                                 text:
                                                     'กลั้นไม่ได้ ต้องสวนอุจจาระเสมอ',
@@ -4445,7 +4445,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest9 = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4456,7 +4456,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index9Model2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index9Widget(
+                                              child: const Index9Widget(
                                                 num: '1',
                                                 text: 'กลั้นไม่ได้เป็นบางครั้ง',
                                                 barthel: '2',
@@ -4483,7 +4483,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               FFAppState().Bquest9 = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4494,7 +4494,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                               model: _model.index9Model3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: Index9Widget(
+                                              child: const Index9Widget(
                                                 num: '2',
                                                 text: 'กลั้นได้ปกติ',
                                                 barthel: '3',
@@ -4508,7 +4508,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                   },
                                 ),
                               ),
-                            ].divide(SizedBox(height: 24.0)),
+                            ].divide(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ],
@@ -4646,7 +4646,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                             ),
                             Expanded(
                               child: ListView(
-                                padding: EdgeInsets.fromLTRB(
+                                padding: const EdgeInsets.fromLTRB(
                                   0,
                                   8.0,
                                   0,
@@ -4656,7 +4656,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                 scrollDirection: Axis.vertical,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, -1.0),
+                                    alignment: const AlignmentDirectional(0.0, -1.0),
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(8.0),
                                       child: Image.network(
@@ -4698,14 +4698,14 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Text(
                                             'การกลั้นปัสสาวะ',
                                             textAlign: TextAlign.center,
@@ -4726,11 +4726,11 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                                 ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(height: 4.0)),
+                                      ].divide(const SizedBox(height: 4.0)),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: MasonryGridView.builder(
                                       physics:
@@ -4772,7 +4772,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                         }
                                       }(),
                                       itemCount: 3,
-                                      padding: EdgeInsets.fromLTRB(
+                                      padding: const EdgeInsets.fromLTRB(
                                         0,
                                         0,
                                         0,
@@ -4799,7 +4799,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                                   FFAppState().Bquest10 = '1';
                                                   safeSetState(() {});
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -4808,7 +4808,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                                   model: _model.index10Model1,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: Index10Widget(
+                                                  child: const Index10Widget(
                                                     num: '0',
                                                     text:
                                                         'กลั้นไม่ได้ ใส่สายสวนปัสสาวะ',
@@ -4837,7 +4837,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                                   FFAppState().Bquest10 = '2';
                                                   safeSetState(() {});
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -4846,7 +4846,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                                   model: _model.index10Model2,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: Index10Widget(
+                                                  child: const Index10Widget(
                                                     num: '1',
                                                     text:
                                                         'กลั้นไม่ได้เป็นบางครั้ง',
@@ -4875,7 +4875,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                                   FFAppState().Bquest10 = '3';
                                                   safeSetState(() {});
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -4884,7 +4884,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                                   model: _model.index10Model3,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: Index10Widget(
+                                                  child: const Index10Widget(
                                                     num: '2',
                                                     text: 'กลั้นได้ปกติ',
                                                     barthel: '3',
@@ -4898,13 +4898,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                       },
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 24.0)),
+                                ].divide(const SizedBox(height: 24.0)),
                               ),
                             ),
                           ],
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -4917,7 +4917,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                             child: wrapWithModel(
                               model: _model.startAsBottomModel,
                               updateCallback: () => safeSetState(() {}),
-                              child: StartAsBottomWidget(
+                              child: const StartAsBottomWidget(
                                 text: 'บันทึก',
                               ),
                             ),
@@ -4927,7 +4927,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                     );
                   } else if (_model.pagebarthel == 11) {
                     return ListView(
-                      padding: EdgeInsets.fromLTRB(
+                      padding: const EdgeInsets.fromLTRB(
                         0,
                         8.0,
                         0,
@@ -4937,7 +4937,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                       scrollDirection: Axis.vertical,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, -1.0),
+                          alignment: const AlignmentDirectional(0.0, -1.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
                             child: Image.network(
@@ -4975,7 +4975,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Container(
                             width: double.infinity,
@@ -4985,7 +4985,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                               borderRadius: BorderRadius.circular(24.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -5013,7 +5013,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                                       .labelSmallIsCustom,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                   Text(
                                     'คุณได้ 8 คะแนน',
@@ -5049,13 +5049,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                     width: double.infinity,
                                     height: 80.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFFFFEDED),
+                                      color: const Color(0xFFFFEDED),
                                       borderRadius: BorderRadius.circular(16.0),
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsets.all(12.0),
+                                        padding: const EdgeInsets.all(12.0),
                                         child: Text(
                                           'เข้าเกณฑ์การส่งเยี่ยม',
                                           textAlign: TextAlign.center,
@@ -5083,13 +5083,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                     width: double.infinity,
                                     height: 80.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFFFFF1DD),
+                                      color: const Color(0xFFFFF1DD),
                                       borderRadius: BorderRadius.circular(16.0),
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsets.all(12.0),
+                                        padding: const EdgeInsets.all(12.0),
                                         child: RichText(
                                           textScaler:
                                               MediaQuery.of(context).textScaler,
@@ -5105,7 +5105,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .titleMediumFamily,
-                                                      color: Color(0xFFD88100),
+                                                      color: const Color(0xFFD88100),
                                                       letterSpacing: 0.0,
                                                       lineHeight: 1.5,
                                                       useGoogleFonts:
@@ -5139,7 +5139,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                                       FlutterFlowTheme.of(
                                                               context)
                                                           .titleMediumFamily,
-                                                  color: Color(0xFFD88100),
+                                                  color: const Color(0xFFD88100),
                                                   letterSpacing: 0.0,
                                                   lineHeight: 1.8,
                                                   useGoogleFonts:
@@ -5157,13 +5157,13 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                     width: double.infinity,
                                     height: 80.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFFD9F9E3),
+                                      color: const Color(0xFFD9F9E3),
                                       borderRadius: BorderRadius.circular(16.0),
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsets.all(12.0),
+                                        padding: const EdgeInsets.all(12.0),
                                         child: Text(
                                           'อาการปกติดี',
                                           textAlign: TextAlign.center,
@@ -5173,7 +5173,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
                                                         .titleMediumFamily,
-                                                color: Color(0xFF229E27),
+                                                color: const Color(0xFF229E27),
                                                 letterSpacing: 0.0,
                                                 lineHeight: 1.5,
                                                 useGoogleFonts:
@@ -5186,7 +5186,7 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 16.0, 0.0, 0.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
@@ -5223,11 +5223,11 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                       options: FFButtonOptions(
                                         width: double.infinity,
                                         height: 48.0,
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         iconAlignment: IconAlignment.start,
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
                                         color: FlutterFlowTheme.of(context)
                                             .customColor5,
@@ -5251,18 +5251,18 @@ class _BarthelIndexScoreWidgetState extends State<BarthelIndexScoreWidget>
                                       ),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 16.0)),
+                                ].divide(const SizedBox(height: 16.0)),
                               ),
                             ),
                           ),
                         ),
-                      ].divide(SizedBox(height: 24.0)),
+                      ].divide(const SizedBox(height: 24.0)),
                     );
                   } else {
                     return Container(
                       width: 10.0,
                       height: 10.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                       ),
                     );

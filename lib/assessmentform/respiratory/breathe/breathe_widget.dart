@@ -55,8 +55,8 @@ class _BreatheWidgetState extends State<BreatheWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -74,8 +74,8 @@ class _BreatheWidgetState extends State<BreatheWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -87,8 +87,8 @@ class _BreatheWidgetState extends State<BreatheWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -100,8 +100,8 @@ class _BreatheWidgetState extends State<BreatheWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -113,8 +113,8 @@ class _BreatheWidgetState extends State<BreatheWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -126,8 +126,8 @@ class _BreatheWidgetState extends State<BreatheWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -139,8 +139,8 @@ class _BreatheWidgetState extends State<BreatheWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -265,7 +265,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
             ),
           ],
         ),
-        actions: [],
+        actions: const [],
         centerTitle: false,
         elevation: 0.0,
       ),
@@ -275,13 +275,13 @@ class _BreatheWidgetState extends State<BreatheWidget>
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
           borderRadius: BorderRadius.circular(0.0),
         ),
@@ -316,10 +316,10 @@ class _BreatheWidgetState extends State<BreatheWidget>
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 0.0),
                                 child: ListView(
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     16.0,
                                     0,
@@ -403,7 +403,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                                       physics:
                                           const NeverScrollableScrollPhysics(),
                                       gridDelegate:
-                                          SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                          const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                         crossAxisCount: 1,
                                       ),
                                       crossAxisSpacing: () {
@@ -460,7 +460,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                                                   FFAppState().ninefive = '1';
                                                   safeSetState(() {});
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -469,7 +469,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                                                   model: _model.ninefiveModel1,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: NinefiveWidget(
+                                                  child: const NinefiveWidget(
                                                     num: '1',
                                                     text:
                                                         'รู้สึกหายใจหอบ ขณะออกกำลังกายอย่างหนักเท่านั้น',
@@ -498,7 +498,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                                                   FFAppState().ninefive = '2';
                                                   safeSetState(() {});
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -507,7 +507,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                                                   model: _model.ninefiveModel2,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: NinefiveWidget(
+                                                  child: const NinefiveWidget(
                                                     num: '2',
                                                     text:
                                                         'หายใจหอบ เมื่อเดินอย่างเร่งรีบบนพื้นราบหรือเมื่อเดินขึ้นที่สูงชัน',
@@ -536,7 +536,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                                                   FFAppState().ninefive = '3';
                                                   safeSetState(() {});
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -545,7 +545,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                                                   model: _model.ninefiveModel3,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: NinefiveWidget(
+                                                  child: const NinefiveWidget(
                                                     num: '3',
                                                     text:
                                                         'เดินบนพื้นราบได้ช้ากว่าคนอื่นที่อยู่ในวัยเดียวกันเพราะหายใจหอบ หรือต้องหยุดเดินเพื่อหายใจ เมื่อเดินตามปกติบนพื้นราบ',
@@ -574,7 +574,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                                                   FFAppState().ninefive = '4';
                                                   safeSetState(() {});
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -583,7 +583,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                                                   model: _model.ninefiveModel4,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: NinefiveWidget(
+                                                  child: const NinefiveWidget(
                                                     num: '4',
                                                     text:
                                                         'ต้องหยุดเพื่อหายใจ หลังจากเดินได้ประมาณ 100 เมตร หรือหลังจากเดินได้สักพักบนพื้นราบ',
@@ -612,7 +612,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                                                   FFAppState().ninefive = '5';
                                                   safeSetState(() {});
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -621,7 +621,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                                                   model: _model.ninefiveModel5,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: NinefiveWidget(
+                                                  child: const NinefiveWidget(
                                                     num: '5',
                                                     text:
                                                         'หายใจหอบมากเกินกว่าที่จะออกจากบ้านหรือหอบมากขณะแต่งตัว หรือเปลี่ยนเครื่องแต่งตัว',
@@ -635,14 +635,14 @@ class _BreatheWidgetState extends State<BreatheWidget>
                                         ][index]();
                                       },
                                     ),
-                                  ].divide(SizedBox(height: 24.0)),
+                                  ].divide(const SizedBox(height: 24.0)),
                                 ),
                               ),
                             ),
                           ],
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -655,7 +655,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                             child: wrapWithModel(
                               model: _model.startAsBottomModel,
                               updateCallback: () => safeSetState(() {}),
-                              child: StartAsBottomWidget(
+                              child: const StartAsBottomWidget(
                                 text: 'บันทึก',
                               ),
                             ),
@@ -665,7 +665,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                     );
                   } else if (_model.nineq == 2) {
                     return ListView(
-                      padding: EdgeInsets.fromLTRB(
+                      padding: const EdgeInsets.fromLTRB(
                         0,
                         8.0,
                         0,
@@ -675,7 +675,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                       scrollDirection: Axis.vertical,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, -1.0),
+                          alignment: const AlignmentDirectional(0.0, -1.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
                             child: Image.network(
@@ -713,7 +713,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Container(
                             width: double.infinity,
@@ -723,7 +723,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                               borderRadius: BorderRadius.circular(24.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -751,7 +751,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                                                       .labelSmallIsCustom,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                   Text(
                                     'คุณได้ 6 คะแนน',
@@ -777,7 +777,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                                       borderRadius: BorderRadius.circular(16.0),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(12.0),
+                                      padding: const EdgeInsets.all(12.0),
                                       child: Text(
                                         'เป็นผู้มีความเสี่ยงโรคซึมเศร้า เพราะมีเหตุให้เกิดการกระทบกระทั้งจิตใจทำให้มีอาการวิตกกังวล และมีความคิดด้านลบหรือสิ้นหวังกับชีวิต',
                                         textAlign: TextAlign.start,
@@ -797,7 +797,7 @@ class _BreatheWidgetState extends State<BreatheWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 16.0, 0.0, 0.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
@@ -812,11 +812,11 @@ class _BreatheWidgetState extends State<BreatheWidget>
                                       options: FFButtonOptions(
                                         width: double.infinity,
                                         height: 48.0,
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         iconAlignment: IconAlignment.start,
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
                                         color: FlutterFlowTheme.of(context)
                                             .customColor5,
@@ -840,12 +840,12 @@ class _BreatheWidgetState extends State<BreatheWidget>
                                       ),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 16.0)),
+                                ].divide(const SizedBox(height: 16.0)),
                               ),
                             ),
                           ),
                         ),
-                      ].divide(SizedBox(height: 24.0)),
+                      ].divide(const SizedBox(height: 24.0)),
                     );
                   } else {
                     return Container(

@@ -4,6 +4,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
+import '/components/main_button_widget.dart';
 import '/homevisitlist/widget/pines/pines_widget.dart';
 import 'dart:ui';
 import '/index.dart';
@@ -83,7 +84,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
           borderRadius: 30.0,
           borderWidth: 1.0,
           buttonSize: 44.0,
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_new_rounded,
             color: Colors.white,
             size: 18.0,
@@ -102,7 +103,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                     !FlutterFlowTheme.of(context).titleMediumIsCustom,
               ),
         ),
-        actions: [],
+        actions: const [],
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -112,15 +113,15 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -130,7 +131,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
           children: [
             Expanded(
               child: ListView(
-                padding: EdgeInsets.fromLTRB(
+                padding: const EdgeInsets.fromLTRB(
                   0,
                   16.0,
                   0,
@@ -141,7 +142,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: Container(
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -151,7 +152,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -224,7 +225,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                           .dropDownValueController1 ??=
                                                       FormFieldController<
                                                           String>(null),
-                                                  options: [
+                                                  options: const [
                                                     'บ้าน',
                                                     'วัด/ศาสนสถาน',
                                                     'โรงเรียน',
@@ -269,7 +270,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: EdgeInsetsDirectional
+                                                  margin: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
@@ -278,7 +279,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                   isMultiSelect: false,
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 8.0)),
+                                            ].divide(const SizedBox(height: 8.0)),
                                           ),
                                       () => Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -321,7 +322,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                           .dropDownValueController2 ??=
                                                       FormFieldController<
                                                           String>(null),
-                                                  options: ['เทศบาล', 'อบต.'],
+                                                  options: const ['เทศบาล', 'อบต.'],
                                                   onChanged: (val) =>
                                                       safeSetState(() => _model
                                                               .dropDownValue2 =
@@ -358,7 +359,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: EdgeInsetsDirectional
+                                                  margin: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
@@ -367,7 +368,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                   isMultiSelect: false,
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 8.0)),
+                                            ].divide(const SizedBox(height: 8.0)),
                                           ),
                                     ][index]();
                                   },
@@ -395,7 +396,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                       controller:
                                           _model.dropDownValueController3 ??=
                                               FormFieldController<String>(null),
-                                      options: ['ทดสอบ', 'ทดสอบ'],
+                                      options: const ['ทดสอบ', 'ทดสอบ'],
                                       onChanged: (val) => safeSetState(
                                           () => _model.dropDownValue3 = val),
                                       width: double.infinity,
@@ -422,16 +423,16 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                       borderColor: Colors.transparent,
                                       borderWidth: 0.0,
                                       borderRadius: 8.0,
-                                      margin: EdgeInsetsDirectional.fromSTEB(
+                                      margin: const EdgeInsetsDirectional.fromSTEB(
                                           12.0, 0.0, 12.0, 0.0),
                                       hidesUnderline: true,
                                       isOverButton: false,
                                       isSearchable: false,
                                       isMultiSelect: false,
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
-                              ].divide(SizedBox(height: 16.0)),
+                              ].divide(const SizedBox(height: 16.0)),
                             ),
                           ),
                         ],
@@ -440,14 +441,14 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: Container(
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
                         borderRadius: BorderRadius.circular(24.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -455,7 +456,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                             MasonryGridView.builder(
                               physics: const NeverScrollableScrollPhysics(),
                               gridDelegate:
-                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                 crossAxisCount: 2,
                               ),
                               crossAxisSpacing: 12.0,
@@ -486,7 +487,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                           .labelSmallIsCustom,
                                                 ),
                                           ),
-                                          Container(
+                                          SizedBox(
                                             width: double.infinity,
                                             child: TextFormField(
                                               controller:
@@ -528,7 +529,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0x00000000),
                                                     width: 1.0,
                                                   ),
@@ -601,7 +602,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                   .asValidator(context),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                   () => Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -625,7 +626,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                           .labelSmallIsCustom,
                                                 ),
                                           ),
-                                          Container(
+                                          SizedBox(
                                             width: double.infinity,
                                             child: TextFormField(
                                               controller:
@@ -667,7 +668,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0x00000000),
                                                     width: 1.0,
                                                   ),
@@ -740,7 +741,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                   .asValidator(context),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                 ][index]();
                               },
@@ -792,7 +793,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                           .labelSmallIsCustom,
                                                 ),
                                           ),
-                                          Container(
+                                          SizedBox(
                                             width: double.infinity,
                                             child: TextFormField(
                                               controller:
@@ -834,7 +835,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0x00000000),
                                                     width: 1.0,
                                                   ),
@@ -907,7 +908,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                   .asValidator(context),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                   () => Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -931,7 +932,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                           .labelSmallIsCustom,
                                                 ),
                                           ),
-                                          Container(
+                                          SizedBox(
                                             width: double.infinity,
                                             child: TextFormField(
                                               controller:
@@ -973,7 +974,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0x00000000),
                                                     width: 1.0,
                                                   ),
@@ -1046,7 +1047,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                   .asValidator(context),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                   () => Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -1070,7 +1071,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                           .labelSmallIsCustom,
                                                 ),
                                           ),
-                                          Container(
+                                          SizedBox(
                                             width: double.infinity,
                                             child: TextFormField(
                                               controller:
@@ -1098,7 +1099,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0x00000000),
                                                     width: 1.0,
                                                   ),
@@ -1171,7 +1172,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                   .asValidator(context),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                   () => Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -1195,7 +1196,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                           .labelSmallIsCustom,
                                                 ),
                                           ),
-                                          Container(
+                                          SizedBox(
                                             width: double.infinity,
                                             child: TextFormField(
                                               controller:
@@ -1237,7 +1238,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0x00000000),
                                                     width: 1.0,
                                                   ),
@@ -1310,26 +1311,26 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                   .asValidator(context),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                 ][index]();
                               },
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: Container(
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
                         borderRadius: BorderRadius.circular(24.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -1381,7 +1382,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                           .labelSmallIsCustom,
                                                 ),
                                           ),
-                                          Container(
+                                          SizedBox(
                                             width: double.infinity,
                                             child: TextFormField(
                                               controller:
@@ -1423,7 +1424,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0x00000000),
                                                     width: 1.0,
                                                   ),
@@ -1496,7 +1497,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                   .asValidator(context),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                   () => Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -1520,7 +1521,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                           .labelSmallIsCustom,
                                                 ),
                                           ),
-                                          Container(
+                                          SizedBox(
                                             width: double.infinity,
                                             child: TextFormField(
                                               controller:
@@ -1562,7 +1563,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0x00000000),
                                                     width: 1.0,
                                                   ),
@@ -1635,7 +1636,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                                   .asValidator(context),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                 ][index]();
                               },
@@ -1655,14 +1656,14 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                             .labelSmallIsCustom,
                                   ),
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: Container(
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -1670,14 +1671,14 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                       ),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 'เลือกแผนที่บ้านผู้ป่วย',
@@ -1703,7 +1704,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                 context.pushNamed(MarkmapWidget.routeName);
                               },
                               child: AnimatedContainer(
-                                duration: Duration(milliseconds: 100),
+                                duration: const Duration(milliseconds: 100),
                                 curve: Curves.easeIn,
                                 width: double.infinity,
                                 height: () {
@@ -1738,7 +1739,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                   children: [
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-0.09, -0.11),
+                                          const AlignmentDirectional(-0.09, -0.11),
                                       child: FaIcon(
                                         FontAwesomeIcons.mapPin,
                                         color:
@@ -1747,7 +1748,7 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                       ),
                                     ),
                                     Align(
-                                      alignment: AlignmentDirectional(1.0, 1.0),
+                                      alignment: const AlignmentDirectional(1.0, 1.0),
                                       child: Padding(
                                         padding: EdgeInsets.all(
                                             valueOrDefault<double>(
@@ -1783,9 +1784,9 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                               model: _model.pinesModel,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: PinesWidget(),
+                                              child: const PinesWidget(),
                                             ),
-                                          ].divide(SizedBox(height: 8.0)),
+                                          ].divide(const SizedBox(height: 8.0)),
                                         ),
                                       ),
                                     ),
@@ -1793,21 +1794,21 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                                 ),
                               ),
                             ),
-                          ].divide(SizedBox(height: 8.0)),
+                          ].divide(const SizedBox(height: 8.0)),
                         ),
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 12.0)),
+                ].divide(const SizedBox(height: 12.0)),
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       blurRadius: 4.0,
                       color: Color(0x33000000),
@@ -1817,53 +1818,19 @@ class _AddHomeWidgetState extends State<AddHomeWidget> {
                       ),
                     )
                   ],
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(24.0),
                     topRight: Radius.circular(24.0),
                   ),
                 ),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
-                  child: FFButtonWidget(
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
+                  child: MainButton(
+                    text: 'บันทึก',
                     onPressed: () async {
                       context.safePop();
                     },
-                    text: 'บันทึก',
-                    options: FFButtonOptions(
-                      height: () {
-                        if (MediaQuery.sizeOf(context).width <
-                            kBreakpointSmall) {
-                          return 48.0;
-                        } else if (MediaQuery.sizeOf(context).width <
-                            kBreakpointMedium) {
-                          return 48.0;
-                        } else if (MediaQuery.sizeOf(context).width <
-                            kBreakpointLarge) {
-                          return 56.0;
-                        } else {
-                          return 56.0;
-                        }
-                      }(),
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                      iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: FlutterFlowTheme.of(context).customColor5,
-                      textStyle: FlutterFlowTheme.of(context)
-                          .labelMedium
-                          .override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).labelMediumFamily,
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            letterSpacing: 0.0,
-                            useGoogleFonts: !FlutterFlowTheme.of(context)
-                                .labelMediumIsCustom,
-                          ),
-                      elevation: 0.0,
-                      borderRadius: BorderRadius.circular(100.0),
-                    ),
                   ),
                 ),
               ),

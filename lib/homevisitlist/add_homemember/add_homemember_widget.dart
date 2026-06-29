@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/components/main_button_widget.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
@@ -75,7 +76,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
           borderRadius: 30.0,
           borderWidth: 1.0,
           buttonSize: 44.0,
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_new_rounded,
             color: Colors.white,
             size: 18.0,
@@ -94,7 +95,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                     !FlutterFlowTheme.of(context).titleMediumIsCustom,
               ),
         ),
-        actions: [],
+        actions: const [],
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -104,15 +105,15 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -122,7 +123,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
           children: [
             Expanded(
               child: ListView(
-                padding: EdgeInsets.fromLTRB(
+                padding: const EdgeInsets.fromLTRB(
                   0,
                   16.0,
                   0,
@@ -136,9 +137,9 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(1.0, 1.0),
+                        alignment: const AlignmentDirectional(1.0, 1.0),
                         child: Stack(
-                          alignment: AlignmentDirectional(1.0, 1.0),
+                          alignment: const AlignmentDirectional(1.0, 1.0),
                           children: [
                             Container(
                               width: 100.0,
@@ -156,11 +157,11 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(1.0, 1.0),
+                              alignment: const AlignmentDirectional(1.0, 1.0),
                               child: Container(
                                 width: 36.0,
                                 height: 36.0,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   gradient: LinearGradient(
                                     colors: [
                                       Color(0xFF6AB9F6),
@@ -174,7 +175,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                   shape: BoxShape.circle,
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsets.all(3.0),
+                                  padding: const EdgeInsets.all(3.0),
                                   child: Container(
                                     width: 100.0,
                                     height: 100.0,
@@ -200,7 +201,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: Container(
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -210,13 +211,13 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 16.0),
                                   child: MasonryGridView.builder(
                                     physics:
@@ -288,7 +289,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                             .dropDownValueController1 ??=
                                                         FormFieldController<
                                                             String>(null),
-                                                    options: [
+                                                    options: const [
                                                       'นาย',
                                                       'นาง',
                                                       'นางสาว',
@@ -337,7 +338,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                     borderWidth: 0.0,
                                                     borderRadius: 8.0,
                                                     margin:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(12.0, 0.0,
                                                                 12.0, 0.0),
                                                     hidesUnderline: true,
@@ -346,7 +347,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                     isMultiSelect: false,
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 8.0)),
+                                              ].divide(const SizedBox(height: 8.0)),
                                             ),
                                         () => Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -384,7 +385,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                         BorderRadius.circular(
                                                             8.0),
                                                   ),
-                                                  child: Container(
+                                                  child: SizedBox(
                                                     width: double.infinity,
                                                     child: TextFormField(
                                                       controller: _model
@@ -430,7 +431,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                         enabledBorder:
                                                             OutlineInputBorder(
                                                           borderSide:
-                                                              BorderSide(
+                                                              const BorderSide(
                                                             color: Color(
                                                                 0x00000000),
                                                             width: 1.0,
@@ -516,7 +517,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                     ),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 8.0)),
+                                              ].divide(const SizedBox(height: 8.0)),
                                             ),
                                         () => Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -554,7 +555,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                         BorderRadius.circular(
                                                             8.0),
                                                   ),
-                                                  child: Container(
+                                                  child: SizedBox(
                                                     width: double.infinity,
                                                     child: TextFormField(
                                                       controller: _model
@@ -600,7 +601,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                         enabledBorder:
                                                             OutlineInputBorder(
                                                           borderSide:
-                                                              BorderSide(
+                                                              const BorderSide(
                                                             color: Color(
                                                                 0x00000000),
                                                             width: 1.0,
@@ -686,14 +687,14 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                     ),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 8.0)),
+                                              ].divide(const SizedBox(height: 8.0)),
                                             ),
                                       ][index]();
                                     },
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 16.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -724,7 +725,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                           borderRadius:
                                               BorderRadius.circular(8.0),
                                         ),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: double.infinity,
                                           child: TextFormField(
                                             controller: _model.textController3,
@@ -764,7 +765,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                                 .labelMediumIsCustom,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0x00000000),
                                                   width: 1.0,
                                                 ),
@@ -836,17 +837,17 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                           ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 8.0)),
+                                    ].divide(const SizedBox(height: 8.0)),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 16.0),
                                   child: MasonryGridView.builder(
                                     physics:
                                         const NeverScrollableScrollPhysics(),
                                     gridDelegate:
-                                        SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                        const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                       crossAxisCount: 2,
                                     ),
                                     crossAxisSpacing: 12.0,
@@ -885,7 +886,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                           .dropDownValueController2 ??=
                                                       FormFieldController<
                                                           String>(null),
-                                                  options: ['ชาย', 'หญิง'],
+                                                  options: const ['ชาย', 'หญิง'],
                                                   onChanged: (val) =>
                                                       safeSetState(() => _model
                                                               .dropDownValue2 =
@@ -923,7 +924,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: EdgeInsetsDirectional
+                                                  margin: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
@@ -931,7 +932,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                   isSearchable: false,
                                                   isMultiSelect: false,
                                                 ),
-                                              ].divide(SizedBox(height: 8.0)),
+                                              ].divide(const SizedBox(height: 8.0)),
                                             ),
                                         () => Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -987,7 +988,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                                     .unknown
                                                               },
                                                             ),
-                                                            child: Container(
+                                                            child: SizedBox(
                                                               height: MediaQuery.of(
                                                                           context)
                                                                       .size
@@ -1037,7 +1038,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                     ),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   12.0,
                                                                   0.0,
@@ -1083,7 +1084,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                     ),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 8.0)),
+                                              ].divide(const SizedBox(height: 8.0)),
                                             ),
                                         () => Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1115,7 +1116,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                           .dropDownValueController3 ??=
                                                       FormFieldController<
                                                           String>(null),
-                                                  options: ['ทดสอบ', 'ทดสอบ'],
+                                                  options: const ['ทดสอบ', 'ทดสอบ'],
                                                   onChanged: (val) =>
                                                       safeSetState(() => _model
                                                               .dropDownValue3 =
@@ -1153,7 +1154,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: EdgeInsetsDirectional
+                                                  margin: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
@@ -1161,7 +1162,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                   isSearchable: false,
                                                   isMultiSelect: false,
                                                 ),
-                                              ].divide(SizedBox(height: 8.0)),
+                                              ].divide(const SizedBox(height: 8.0)),
                                             ),
                                         () => Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1193,7 +1194,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                           .dropDownValueController4 ??=
                                                       FormFieldController<
                                                           String>(null),
-                                                  options: ['ทดสอบ', 'ทดสอบ'],
+                                                  options: const ['ทดสอบ', 'ทดสอบ'],
                                                   onChanged: (val) =>
                                                       safeSetState(() => _model
                                                               .dropDownValue4 =
@@ -1231,7 +1232,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: EdgeInsetsDirectional
+                                                  margin: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
@@ -1239,7 +1240,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                   isSearchable: false,
                                                   isMultiSelect: false,
                                                 ),
-                                              ].divide(SizedBox(height: 8.0)),
+                                              ].divide(const SizedBox(height: 8.0)),
                                             ),
                                         () => Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1271,7 +1272,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                           .dropDownValueController5 ??=
                                                       FormFieldController<
                                                           String>(null),
-                                                  options: ['ทดสอบ', 'ทดสอบ'],
+                                                  options: const ['ทดสอบ', 'ทดสอบ'],
                                                   onChanged: (val) =>
                                                       safeSetState(() => _model
                                                               .dropDownValue5 =
@@ -1309,7 +1310,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: EdgeInsetsDirectional
+                                                  margin: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
@@ -1317,7 +1318,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                   isSearchable: false,
                                                   isMultiSelect: false,
                                                 ),
-                                              ].divide(SizedBox(height: 8.0)),
+                                              ].divide(const SizedBox(height: 8.0)),
                                             ),
                                         () => Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1349,7 +1350,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                           .dropDownValueController6 ??=
                                                       FormFieldController<
                                                           String>(null),
-                                                  options: ['ทดสอบ', 'ทดสอบ'],
+                                                  options: const ['ทดสอบ', 'ทดสอบ'],
                                                   onChanged: (val) =>
                                                       safeSetState(() => _model
                                                               .dropDownValue6 =
@@ -1387,7 +1388,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: EdgeInsetsDirectional
+                                                  margin: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
@@ -1395,7 +1396,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                   isSearchable: false,
                                                   isMultiSelect: false,
                                                 ),
-                                              ].divide(SizedBox(height: 8.0)),
+                                              ].divide(const SizedBox(height: 8.0)),
                                             ),
                                         () => Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1427,7 +1428,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                           .dropDownValueController7 ??=
                                                       FormFieldController<
                                                           String>(null),
-                                                  options: ['ทดสอบ', 'ทดสอบ'],
+                                                  options: const ['ทดสอบ', 'ทดสอบ'],
                                                   onChanged: (val) =>
                                                       safeSetState(() => _model
                                                               .dropDownValue7 =
@@ -1465,7 +1466,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: EdgeInsetsDirectional
+                                                  margin: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
@@ -1473,7 +1474,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                   isSearchable: false,
                                                   isMultiSelect: false,
                                                 ),
-                                              ].divide(SizedBox(height: 8.0)),
+                                              ].divide(const SizedBox(height: 8.0)),
                                             ),
                                         () => Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1505,7 +1506,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                           .dropDownValueController8 ??=
                                                       FormFieldController<
                                                           String>(null),
-                                                  options: ['ทดสอบ', 'ทดสอบ'],
+                                                  options: const ['ทดสอบ', 'ทดสอบ'],
                                                   onChanged: (val) =>
                                                       safeSetState(() => _model
                                                               .dropDownValue8 =
@@ -1543,7 +1544,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: EdgeInsetsDirectional
+                                                  margin: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
@@ -1551,7 +1552,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                   isSearchable: false,
                                                   isMultiSelect: false,
                                                 ),
-                                              ].divide(SizedBox(height: 8.0)),
+                                              ].divide(const SizedBox(height: 8.0)),
                                             ),
                                       ][index]();
                                     },
@@ -1562,13 +1563,13 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                   phone: false,
                                 ))
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 16.0),
                                     child: MasonryGridView.builder(
                                       physics:
                                           const NeverScrollableScrollPhysics(),
                                       gridDelegate:
-                                          SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                          const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                         crossAxisCount: 2,
                                       ),
                                       crossAxisSpacing: 12.0,
@@ -1606,7 +1607,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                             .dropDownValueController9 ??=
                                                         FormFieldController<
                                                             String>(null),
-                                                    options: ['ทดสอบ', 'ทดสอบ'],
+                                                    options: const ['ทดสอบ', 'ทดสอบ'],
                                                     onChanged: (val) =>
                                                         safeSetState(() => _model
                                                                 .dropDownValue9 =
@@ -1647,7 +1648,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                     borderWidth: 0.0,
                                                     borderRadius: 8.0,
                                                     margin:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(12.0, 0.0,
                                                                 12.0, 0.0),
                                                     hidesUnderline: true,
@@ -1655,7 +1656,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                     isSearchable: false,
                                                     isMultiSelect: false,
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                           () => Column(
                                                 mainAxisSize: MainAxisSize.max,
@@ -1692,7 +1693,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                           BorderRadius.circular(
                                                               8.0),
                                                     ),
-                                                    child: Container(
+                                                    child: SizedBox(
                                                       width: double.infinity,
                                                       child: TextFormField(
                                                         controller: _model
@@ -1736,7 +1737,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                           enabledBorder:
                                                               OutlineInputBorder(
                                                             borderSide:
-                                                                BorderSide(
+                                                                const BorderSide(
                                                               color: Color(
                                                                   0x00000000),
                                                               width: 1.0,
@@ -1831,7 +1832,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                       ),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                         ][index]();
                                       },
@@ -1844,7 +1845,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                   desktop: false,
                                 ))
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 16.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -1871,7 +1872,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                           controller: _model
                                                   .dropDownValueController10 ??=
                                               FormFieldController<String>(null),
-                                          options: ['ทดสอบ', 'ทดสอบ'],
+                                          options: const ['ทดสอบ', 'ทดสอบ'],
                                           onChanged: (val) => safeSetState(() =>
                                               _model.dropDownValue10 = val),
                                           width: double.infinity,
@@ -1902,14 +1903,14 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                           borderWidth: 0.0,
                                           borderRadius: 8.0,
                                           margin:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   12.0, 0.0, 12.0, 0.0),
                                           hidesUnderline: true,
                                           isOverButton: false,
                                           isSearchable: false,
                                           isMultiSelect: false,
                                         ),
-                                      ].divide(SizedBox(height: 8.0)),
+                                      ].divide(const SizedBox(height: 8.0)),
                                     ),
                                   ),
                                 if (responsiveVisibility(
@@ -1947,7 +1948,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                           borderRadius:
                                               BorderRadius.circular(8.0),
                                         ),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: double.infinity,
                                           child: TextFormField(
                                             controller: _model.textController5,
@@ -1987,7 +1988,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                                 .labelMediumIsCustom,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0x00000000),
                                                   width: 1.0,
                                                 ),
@@ -2062,7 +2063,7 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                           ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 8.0)),
+                                    ].divide(const SizedBox(height: 8.0)),
                                   ),
                               ],
                             ),
@@ -2071,16 +2072,16 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 16.0)),
+                ].divide(const SizedBox(height: 16.0)),
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       blurRadius: 4.0,
                       color: Color(0x33000000),
@@ -2090,53 +2091,19 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                       ),
                     )
                   ],
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(24.0),
                     topRight: Radius.circular(24.0),
                   ),
                 ),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
-                  child: FFButtonWidget(
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
+                  child: MainButton(
+                    text: 'บันทึก',
                     onPressed: () async {
                       context.safePop();
                     },
-                    text: 'บันทึก',
-                    options: FFButtonOptions(
-                      height: () {
-                        if (MediaQuery.sizeOf(context).width <
-                            kBreakpointSmall) {
-                          return 48.0;
-                        } else if (MediaQuery.sizeOf(context).width <
-                            kBreakpointMedium) {
-                          return 48.0;
-                        } else if (MediaQuery.sizeOf(context).width <
-                            kBreakpointLarge) {
-                          return 56.0;
-                        } else {
-                          return 56.0;
-                        }
-                      }(),
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                      iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: FlutterFlowTheme.of(context).customColor5,
-                      textStyle: FlutterFlowTheme.of(context)
-                          .labelMedium
-                          .override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).labelMediumFamily,
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            letterSpacing: 0.0,
-                            useGoogleFonts: !FlutterFlowTheme.of(context)
-                                .labelMediumIsCustom,
-                          ),
-                      elevation: 0.0,
-                      borderRadius: BorderRadius.circular(100.0),
-                    ),
                   ),
                 ),
               ),

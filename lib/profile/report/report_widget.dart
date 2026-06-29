@@ -1,3 +1,4 @@
+import '/components/main_button_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -57,7 +58,7 @@ class _ReportWidgetState extends State<ReportWidget> {
           borderRadius: 30.0,
           borderWidth: 1.0,
           buttonSize: 44.0,
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_new_rounded,
             color: Colors.white,
             size: 18.0,
@@ -76,12 +77,12 @@ class _ReportWidgetState extends State<ReportWidget> {
                     !FlutterFlowTheme.of(context).titleMediumIsCustom,
               ),
         ),
-        actions: [],
+        actions: const [],
         centerTitle: true,
         elevation: 0.0,
       ),
       body: ClipRRect(
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(24.0),
           topRight: Radius.circular(24.0),
         ),
@@ -90,7 +91,7 @@ class _ReportWidgetState extends State<ReportWidget> {
           height: double.infinity,
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).primaryBackground,
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(24.0),
               topRight: Radius.circular(24.0),
             ),
@@ -100,9 +101,9 @@ class _ReportWidgetState extends State<ReportWidget> {
             children: [
               Expanded(
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: ListView(
-                    padding: EdgeInsets.fromLTRB(
+                    padding: const EdgeInsets.fromLTRB(
                       0,
                       16.0,
                       0,
@@ -117,8 +118,8 @@ class _ReportWidgetState extends State<ReportWidget> {
                           borderRadius: BorderRadius.circular(24.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(16.0),
-                          child: Container(
+                          padding: const EdgeInsets.all(16.0),
+                          child: SizedBox(
                             width: 200.0,
                             child: TextFormField(
                               controller: _model.textController,
@@ -150,7 +151,7 @@ class _ReportWidgetState extends State<ReportWidget> {
                                               .labelSmallIsCustom,
                                     ),
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0x00000000),
                                     width: 1.0,
                                   ),
@@ -209,28 +210,28 @@ class _ReportWidgetState extends State<ReportWidget> {
                           borderRadius: BorderRadius.circular(24.0),
                         ),
                         child: Container(
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: wrapWithModel(
                               model: _model.processUpPicModel,
                               updateCallback: () => safeSetState(() {}),
-                              child: ProcessUpPicWidget(),
+                              child: const ProcessUpPicWidget(),
                             ),
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(height: 16.0)),
+                    ].divide(const SizedBox(height: 16.0)),
                   ),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 1.0),
+                alignment: const AlignmentDirectional(0.0, 1.0),
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 4.0,
                         color: Color(0x33000000),
@@ -240,52 +241,19 @@ class _ReportWidgetState extends State<ReportWidget> {
                         ),
                       )
                     ],
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(24.0),
                       topRight: Radius.circular(24.0),
                     ),
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
-                    child: FFButtonWidget(
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
+                    child: MainButton(
+                      text: 'บันทึก',
                       onPressed: () async {
                         context.safePop();
                       },
-                      text: 'บันทึก',
-                      options: FFButtonOptions(
-                        height: () {
-                          if (MediaQuery.sizeOf(context).width <
-                              kBreakpointSmall) {
-                            return 48.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointMedium) {
-                            return 48.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointLarge) {
-                            return 56.0;
-                          } else {
-                            return 56.0;
-                          }
-                        }(),
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            16.0, 0.0, 16.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).customColor5,
-                        textStyle:
-                            FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryBackground,
-                                  letterSpacing: 0.0,
-                                  useGoogleFonts: !FlutterFlowTheme.of(context)
-                                      .labelMediumIsCustom,
-                                ),
-                        elevation: 0.0,
-                        borderRadius: BorderRadius.circular(100.0),
-                      ),
                     ),
                   ),
                 ),

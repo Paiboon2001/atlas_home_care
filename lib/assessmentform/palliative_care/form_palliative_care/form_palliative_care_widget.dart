@@ -57,8 +57,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -76,8 +76,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -95,8 +95,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -114,8 +114,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -133,8 +133,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -152,8 +152,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -171,8 +171,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -184,8 +184,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -197,8 +197,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -210,8 +210,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -223,8 +223,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -236,8 +236,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -249,8 +249,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -262,8 +262,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -275,8 +275,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -288,8 +288,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -301,8 +301,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -314,8 +314,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -327,8 +327,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -340,8 +340,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -353,8 +353,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -366,8 +366,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -379,8 +379,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -392,8 +392,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -405,8 +405,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -418,8 +418,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -431,8 +431,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -444,8 +444,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -457,8 +457,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -470,8 +470,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -483,8 +483,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -496,8 +496,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -509,8 +509,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -522,8 +522,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -535,8 +535,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -548,8 +548,8 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -584,7 +584,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
           mainAxisSize: MainAxisSize.max,
           children: [
             Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: Builder(
                 builder: (context) {
                   if (_model.pagepalliative == 1) {
@@ -695,13 +695,13 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           colors: [
-                            Color(0xFF339FF3),
+                            const Color(0xFF339FF3),
                             FlutterFlowTheme.of(context).primaryBackground,
                             FlutterFlowTheme.of(context).primaryBackground
                           ],
-                          stops: [0.0, 0.3, 1.0],
-                          begin: AlignmentDirectional(0.0, -1.0),
-                          end: AlignmentDirectional(0, 1.0),
+                          stops: const [0.0, 0.3, 1.0],
+                          begin: const AlignmentDirectional(0.0, -1.0),
+                          end: const AlignmentDirectional(0, 1.0),
                         ),
                         borderRadius: BorderRadius.circular(0.0),
                       ),
@@ -825,13 +825,13 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           colors: [
-                            Color(0xFF339FF3),
+                            const Color(0xFF339FF3),
                             FlutterFlowTheme.of(context).primaryBackground,
                             FlutterFlowTheme.of(context).primaryBackground
                           ],
-                          stops: [0.0, 0.3, 1.0],
-                          begin: AlignmentDirectional(0.0, -1.0),
-                          end: AlignmentDirectional(0, 1.0),
+                          stops: const [0.0, 0.3, 1.0],
+                          begin: const AlignmentDirectional(0.0, -1.0),
+                          end: const AlignmentDirectional(0, 1.0),
                         ),
                         borderRadius: BorderRadius.circular(0.0),
                       ),
@@ -861,7 +861,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
             ),
           ],
         ),
-        actions: [],
+        actions: const [],
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -871,13 +871,13 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
           borderRadius: BorderRadius.circular(0.0),
         ),
@@ -906,7 +906,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -916,7 +916,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -926,7 +926,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -936,7 +936,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -946,7 +946,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -956,9 +956,9 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
                       child: ListView(
-                        padding: EdgeInsets.fromLTRB(
+                        padding: const EdgeInsets.fromLTRB(
                           0,
                           16.0,
                           0,
@@ -972,7 +972,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, -1.0),
+                                alignment: const AlignmentDirectional(0.0, -1.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.asset(
@@ -1115,7 +1115,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -1128,7 +1128,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel1,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'ปกติ',
                                           exer: '1',
                                         ),
@@ -1152,7 +1152,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -1165,7 +1165,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel2,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'ความสามารถลดลง',
                                           exer: '2',
                                         ),
@@ -1189,7 +1189,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -1202,7 +1202,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel3,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'นั่ง/นอน เป็นส่วนใหญ่',
                                           exer: '3',
                                         ),
@@ -1226,7 +1226,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -1239,7 +1239,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel4,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'นอนอยู่บนเตียงเป็นส่วนใหญ่',
                                           exer: '4',
                                         ),
@@ -1263,7 +1263,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -1276,7 +1276,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel5,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'นอนอยู่บนเตียงตลอดเวลา',
                                           exer: '5',
                                         ),
@@ -1300,7 +1300,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -1313,7 +1313,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel6,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'เสียชีวิต',
                                           exer: '6',
                                         ),
@@ -1325,7 +1325,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                               ][index]();
                             },
                           ),
-                        ].divide(SizedBox(height: 24.0)),
+                        ].divide(const SizedBox(height: 24.0)),
                       ),
                     ),
                   ),
@@ -1365,7 +1365,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -1375,7 +1375,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -1385,7 +1385,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -1395,7 +1395,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -1405,9 +1405,9 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
                       child: ListView(
-                        padding: EdgeInsets.fromLTRB(
+                        padding: const EdgeInsets.fromLTRB(
                           0,
                           16.0,
                           0,
@@ -1421,7 +1421,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, -1.0),
+                                alignment: const AlignmentDirectional(0.0, -1.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.asset(
@@ -1564,7 +1564,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -1577,7 +1577,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel7,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'ทำกิจกรรมและทำงานได้ปกติ',
                                           exer: '1',
                                         ),
@@ -1601,7 +1601,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -1614,7 +1614,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel8,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text:
                                               'ต้องออกแรงอย่างมากในการทำกิจกรรมตามปกติ',
                                           exer: '2',
@@ -1639,7 +1639,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -1652,7 +1652,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel9,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'ไม่สามารถทำงานได้ตามปกติ',
                                           exer: '3',
                                         ),
@@ -1676,7 +1676,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -1689,7 +1689,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel10,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text:
                                               'ไม่สามารถทำงานอดิเรกหรืองานบ้านได้',
                                           exer: '4',
@@ -1714,7 +1714,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -1727,7 +1727,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel11,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'ไม่สามารถทำงานได้เลย',
                                           exer: '5',
                                         ),
@@ -1751,7 +1751,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -1764,7 +1764,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel12,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'ทำกิจกรรมได้น้อยมาก',
                                           exer: '6',
                                         ),
@@ -1788,7 +1788,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -1801,7 +1801,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel13,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'ไม่สามารถทำกิจกรรมใดๆ',
                                           exer: '7',
                                         ),
@@ -1813,7 +1813,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                               ][index]();
                             },
                           ),
-                        ].divide(SizedBox(height: 24.0)),
+                        ].divide(const SizedBox(height: 24.0)),
                       ),
                     ),
                   ),
@@ -1864,7 +1864,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -1874,7 +1874,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -1884,7 +1884,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -1894,9 +1894,9 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
                       child: ListView(
-                        padding: EdgeInsets.fromLTRB(
+                        padding: const EdgeInsets.fromLTRB(
                           0,
                           16.0,
                           0,
@@ -1910,7 +1910,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, -1.0),
+                                alignment: const AlignmentDirectional(0.0, -1.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.asset(
@@ -2053,7 +2053,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -2066,7 +2066,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel14,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'ไม่มีอาการของโรค',
                                           exer: '1',
                                         ),
@@ -2090,7 +2090,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -2103,7 +2103,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel15,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'มีอาการของโรค บางประการ',
                                           exer: '2',
                                         ),
@@ -2127,7 +2127,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -2140,7 +2140,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel16,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'นั่ง/นอน เป็นส่วนใหญ่',
                                           exer: '3',
                                         ),
@@ -2164,7 +2164,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -2177,7 +2177,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel17,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'มีการลุกลามของโรค',
                                           exer: '4',
                                         ),
@@ -2189,7 +2189,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                               ][index]();
                             },
                           ),
-                        ].divide(SizedBox(height: 24.0)),
+                        ].divide(const SizedBox(height: 24.0)),
                       ),
                     ),
                   ),
@@ -2251,7 +2251,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -2261,7 +2261,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -2271,9 +2271,9 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
                       child: ListView(
-                        padding: EdgeInsets.fromLTRB(
+                        padding: const EdgeInsets.fromLTRB(
                           0,
                           16.0,
                           0,
@@ -2287,7 +2287,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, -1.0),
+                                alignment: const AlignmentDirectional(0.0, -1.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.asset(
@@ -2431,7 +2431,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -2444,7 +2444,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel18,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'ทำได้เอง',
                                           exer: '1',
                                         ),
@@ -2468,7 +2468,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -2481,7 +2481,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel19,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'เป็นบางครั้ง/บางเรื่อง',
                                           exer: '2',
                                         ),
@@ -2505,7 +2505,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -2518,7 +2518,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel20,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'มากขึ้น',
                                           exer: '3',
                                         ),
@@ -2542,7 +2542,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -2555,7 +2555,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel21,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'มีการลุกลามของโรค',
                                           exer: '4',
                                         ),
@@ -2567,7 +2567,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                               ][index]();
                             },
                           ),
-                        ].divide(SizedBox(height: 24.0)),
+                        ].divide(const SizedBox(height: 24.0)),
                       ),
                     ),
                   ),
@@ -2640,7 +2640,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -2650,9 +2650,9 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
                       child: ListView(
-                        padding: EdgeInsets.fromLTRB(
+                        padding: const EdgeInsets.fromLTRB(
                           0,
                           16.0,
                           0,
@@ -2666,7 +2666,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, -1.0),
+                                alignment: const AlignmentDirectional(0.0, -1.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.asset(
@@ -2809,7 +2809,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -2822,7 +2822,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel22,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'ปกติ',
                                           exer: '1',
                                         ),
@@ -2846,7 +2846,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -2859,7 +2859,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel23,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'ปกติ / ลดลง',
                                           exer: '2',
                                         ),
@@ -2883,7 +2883,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -2896,7 +2896,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel24,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'จิ๊บน้ำได้เล็กน้อย',
                                           exer: '3',
                                         ),
@@ -2920,7 +2920,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                               .forward(from: 0.0);
                                         }
                                         await Future.delayed(
-                                          Duration(
+                                          const Duration(
                                             milliseconds: 100,
                                           ),
                                         );
@@ -2933,7 +2933,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         model: _model.bloodpageModel25,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: BloodpageWidget(
+                                        child: const BloodpageWidget(
                                           text: 'รับประทานทางปากไม่ได้',
                                           exer: '4',
                                         ),
@@ -2945,7 +2945,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                               ][index]();
                             },
                           ),
-                        ].divide(SizedBox(height: 24.0)),
+                        ].divide(const SizedBox(height: 24.0)),
                       ),
                     ),
                   ),
@@ -3030,10 +3030,10 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                       ),
                       Expanded(
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 8.0, 16.0, 0.0),
                           child: ListView(
-                            padding: EdgeInsets.fromLTRB(
+                            padding: const EdgeInsets.fromLTRB(
                               0,
                               16.0,
                               0,
@@ -3047,7 +3047,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, -1.0),
+                                    alignment: const AlignmentDirectional(0.0, -1.0),
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(8.0),
                                       child: Image.asset(
@@ -3193,7 +3193,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                                   .forward(from: 0.0);
                                             }
                                             await Future.delayed(
-                                              Duration(
+                                              const Duration(
                                                 milliseconds: 100,
                                               ),
                                             );
@@ -3204,7 +3204,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                             model: _model.bloodpageModel26,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: BloodpageWidget(
+                                            child: const BloodpageWidget(
                                               text: 'รู้สึกตัวดี',
                                               exer: '1',
                                             ),
@@ -3228,7 +3228,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                                   .forward(from: 0.0);
                                             }
                                             await Future.delayed(
-                                              Duration(
+                                              const Duration(
                                                 milliseconds: 100,
                                               ),
                                             );
@@ -3239,7 +3239,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                             model: _model.bloodpageModel27,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: BloodpageWidget(
+                                            child: const BloodpageWidget(
                                               text: 'รู้สึกตัวดี หรือสับสน',
                                               exer: '2',
                                             ),
@@ -3263,7 +3263,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                                   .forward(from: 0.0);
                                             }
                                             await Future.delayed(
-                                              Duration(
+                                              const Duration(
                                                 milliseconds: 100,
                                               ),
                                             );
@@ -3274,7 +3274,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                             model: _model.bloodpageModel28,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: BloodpageWidget(
+                                            child: const BloodpageWidget(
                                               text:
                                                   'รู้สึกตัวดี หรือง่วงซึม มีหรือไม่มีอาการสับสน',
                                               exer: '3',
@@ -3299,7 +3299,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                                   .forward(from: 0.0);
                                             }
                                             await Future.delayed(
-                                              Duration(
+                                              const Duration(
                                                 milliseconds: 100,
                                               ),
                                             );
@@ -3310,7 +3310,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                             model: _model.bloodpageModel29,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: BloodpageWidget(
+                                            child: const BloodpageWidget(
                                               text:
                                                   'ง่วงซึมหรือไม่รู้สึกตัว มีหรือไม่มีอาการสับสน',
                                               exer: '4',
@@ -3323,14 +3323,14 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                   ][index]();
                                 },
                               ),
-                            ].divide(SizedBox(height: 24.0)),
+                            ].divide(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ),
                     ],
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.0, 1.0),
+                    alignment: const AlignmentDirectional(0.0, 1.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -3343,7 +3343,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                       child: wrapWithModel(
                         model: _model.startAsBottomModel1,
                         updateCallback: () => safeSetState(() {}),
-                        child: StartAsBottomWidget(
+                        child: const StartAsBottomWidget(
                           text: 'บันทึก',
                         ),
                       ),
@@ -3356,9 +3356,9 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
                     child: ListView(
-                      padding: EdgeInsets.fromLTRB(
+                      padding: const EdgeInsets.fromLTRB(
                         0,
                         16.0,
                         0,
@@ -3372,7 +3372,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(0.0, -1.0),
+                              alignment: const AlignmentDirectional(0.0, -1.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(8.0),
                                 child: Image.network(
@@ -3426,7 +3426,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                 borderRadius: BorderRadius.circular(24.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -3438,7 +3438,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 0.0),
                                           child: FaIcon(
                                             FontAwesomeIcons.solidFile,
@@ -3462,7 +3462,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                                         .titleSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     Container(
                                       width: double.infinity,
@@ -3473,7 +3473,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                             BorderRadius.circular(16.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(12.0),
+                                        padding: const EdgeInsets.all(12.0),
                                         child: Text(
                                           'ผู้ป่วยอยู่ในระยะที่มีข้อจำกัดในการเคลื่อนไหวและการทำกิจวัตรประจำวันสูง มีภาวะโภชนาการที่น่าเป็นห่วง และต้องพึ่งพาผู้อื่นอย่างต่อเนื่อง แม้ว่ายังรับรู้และสื่อสารได้ แต่คุณภาพชีวิตโดยรวมลดลงอย่างชัดเจน ',
                                           textAlign: TextAlign.start,
@@ -3493,7 +3493,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 12.0)),
+                                  ].divide(const SizedBox(height: 12.0)),
                                 ),
                               ),
                             ),
@@ -3533,7 +3533,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 0.0),
                                           child: FaIcon(
                                             FontAwesomeIcons.solidFile,
@@ -3557,7 +3557,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                                         .titleSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     ClipRRect(
                                       borderRadius: BorderRadius.circular(16.0),
@@ -3628,9 +3628,9 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                                   ),
                                                 ),
                                               ]
-                                                  .divide(SizedBox(width: 16.0))
+                                                  .divide(const SizedBox(width: 16.0))
                                                   .around(
-                                                      SizedBox(width: 16.0)),
+                                                      const SizedBox(width: 16.0)),
                                             ),
                                             Divider(
                                               height: 1.0,
@@ -3693,9 +3693,9 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                                   ),
                                                 ),
                                               ]
-                                                  .divide(SizedBox(width: 16.0))
+                                                  .divide(const SizedBox(width: 16.0))
                                                   .around(
-                                                      SizedBox(width: 16.0)),
+                                                      const SizedBox(width: 16.0)),
                                             ),
                                             Divider(
                                               height: 1.0,
@@ -3758,9 +3758,9 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                                   ),
                                                 ),
                                               ]
-                                                  .divide(SizedBox(width: 16.0))
+                                                  .divide(const SizedBox(width: 16.0))
                                                   .around(
-                                                      SizedBox(width: 16.0)),
+                                                      const SizedBox(width: 16.0)),
                                             ),
                                             Divider(
                                               height: 1.0,
@@ -3823,9 +3823,9 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                                   ),
                                                 ),
                                               ]
-                                                  .divide(SizedBox(width: 16.0))
+                                                  .divide(const SizedBox(width: 16.0))
                                                   .around(
-                                                      SizedBox(width: 16.0)),
+                                                      const SizedBox(width: 16.0)),
                                             ),
                                             Divider(
                                               height: 1.0,
@@ -3888,9 +3888,9 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                                   ),
                                                 ),
                                               ]
-                                                  .divide(SizedBox(width: 16.0))
+                                                  .divide(const SizedBox(width: 16.0))
                                                   .around(
-                                                      SizedBox(width: 16.0)),
+                                                      const SizedBox(width: 16.0)),
                                             ),
                                             Divider(
                                               height: 1.0,
@@ -3953,25 +3953,25 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                                                   ),
                                                 ),
                                               ]
-                                                  .divide(SizedBox(width: 16.0))
+                                                  .divide(const SizedBox(width: 16.0))
                                                   .around(
-                                                      SizedBox(width: 16.0)),
+                                                      const SizedBox(width: 16.0)),
                                             ),
                                           ],
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 12.0)),
+                                  ].divide(const SizedBox(height: 12.0)),
                                 ),
                               ),
                             ),
-                          ].divide(SizedBox(height: 12.0)),
+                          ].divide(const SizedBox(height: 12.0)),
                         ),
-                      ].divide(SizedBox(height: 24.0)),
+                      ].divide(const SizedBox(height: 24.0)),
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.0, 1.0),
+                    alignment: const AlignmentDirectional(0.0, 1.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -3989,7 +3989,7 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                       child: wrapWithModel(
                         model: _model.startAsBottomModel2,
                         updateCallback: () => safeSetState(() {}),
-                        child: StartAsBottomWidget(
+                        child: const StartAsBottomWidget(
                           text: 'กลับสู่หน้าหลัก',
                         ),
                       ),
@@ -4004,13 +4004,13 @@ class _FormPalliativeCareWidgetState extends State<FormPalliativeCareWidget>
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      Color(0xFF339FF3),
+                      const Color(0xFF339FF3),
                       FlutterFlowTheme.of(context).primaryBackground,
                       FlutterFlowTheme.of(context).primaryBackground
                     ],
-                    stops: [0.0, 0.3, 1.0],
-                    begin: AlignmentDirectional(0.0, -1.0),
-                    end: AlignmentDirectional(0, 1.0),
+                    stops: const [0.0, 0.3, 1.0],
+                    begin: const AlignmentDirectional(0.0, -1.0),
+                    end: const AlignmentDirectional(0, 1.0),
                   ),
                   borderRadius: BorderRadius.circular(0.0),
                 ),

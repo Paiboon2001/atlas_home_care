@@ -1,12 +1,10 @@
+import '/components/main_button_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/utils/botton_cancel/botton_cancel_widget.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'reson_cancel_model.dart';
 export 'reson_cancel_model.dart';
 
@@ -225,45 +223,11 @@ class _ResonCancelWidgetState extends State<ResonCancelWidget> {
                       ),
                     ),
                     Expanded(
-                      child: FFButtonWidget(
+                      child: MainButton(
+                        text: 'บันทึก',
                         onPressed: () async {
                           context.pushNamed(HomepageNewWidget.routeName);
                         },
-                        text: 'บันทึก',
-                        options: FFButtonOptions(
-                          height: () {
-                            if (MediaQuery.sizeOf(context).width <
-                                kBreakpointSmall) {
-                              return 48.0;
-                            } else if (MediaQuery.sizeOf(context).width <
-                                kBreakpointMedium) {
-                              return 48.0;
-                            } else if (MediaQuery.sizeOf(context).width <
-                                kBreakpointLarge) {
-                              return 56.0;
-                            } else {
-                              return 56.0;
-                            }
-                          }(),
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              16.0, 0.0, 16.0, 0.0),
-                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 0.0),
-                          color: FlutterFlowTheme.of(context).customColor5,
-                          textStyle: FlutterFlowTheme.of(context)
-                              .labelMedium
-                              .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .labelMediumFamily,
-                                color: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
-                                letterSpacing: 0.0,
-                                useGoogleFonts: !FlutterFlowTheme.of(context)
-                                    .labelMediumIsCustom,
-                              ),
-                          elevation: 0.0,
-                          borderRadius: BorderRadius.circular(100.0),
-                        ),
                       ),
                     ),
                   ]

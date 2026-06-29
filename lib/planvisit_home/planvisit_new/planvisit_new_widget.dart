@@ -4,6 +4,7 @@ import '/assessmentform/thirtytree/widget/checkone/checkone_widget.dart';
 import '/assessmentform/thirtytree/widget/checkseven/checkseven_widget.dart';
 import '/assessmentform/thirtytree/widget/checkthree/checkthree_widget.dart';
 import '/assessmentform/thirtytree/widget/checktwo/checktwo_widget.dart';
+import '/components/main_button_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
@@ -95,8 +96,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -114,8 +115,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -133,8 +134,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -152,8 +153,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -171,8 +172,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -190,8 +191,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -203,8 +204,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -216,8 +217,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -229,8 +230,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -242,8 +243,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -255,8 +256,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -268,8 +269,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -281,8 +282,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -294,8 +295,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -307,8 +308,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -320,8 +321,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -333,8 +334,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -346,8 +347,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -359,8 +360,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -372,8 +373,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -385,8 +386,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -398,8 +399,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -411,8 +412,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -424,8 +425,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -437,8 +438,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -450,8 +451,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -463,8 +464,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -476,8 +477,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -489,8 +490,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -502,8 +503,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -515,8 +516,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -528,8 +529,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -541,8 +542,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -554,8 +555,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -567,8 +568,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -580,8 +581,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -593,8 +594,8 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -631,7 +632,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
           mainAxisSize: MainAxisSize.max,
           children: [
             Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: Builder(
                 builder: (context) {
                   if (_model.pagevisit == 1) {
@@ -640,7 +641,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -660,7 +661,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -676,7 +677,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -692,7 +693,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -708,7 +709,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -724,7 +725,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -741,13 +742,13 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           colors: [
-                            Color(0xFF339FF3),
+                            const Color(0xFF339FF3),
                             FlutterFlowTheme.of(context).primaryBackground,
                             FlutterFlowTheme.of(context).primaryBackground
                           ],
-                          stops: [0.0, 0.3, 1.0],
-                          begin: AlignmentDirectional(0.0, -1.0),
-                          end: AlignmentDirectional(0, 1.0),
+                          stops: const [0.0, 0.3, 1.0],
+                          begin: const AlignmentDirectional(0.0, -1.0),
+                          end: const AlignmentDirectional(0, 1.0),
                         ),
                         borderRadius: BorderRadius.circular(0.0),
                       ),
@@ -856,13 +857,13 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           colors: [
-                            Color(0xFF339FF3),
+                            const Color(0xFF339FF3),
                             FlutterFlowTheme.of(context).primaryBackground,
                             FlutterFlowTheme.of(context).primaryBackground
                           ],
-                          stops: [0.0, 0.3, 1.0],
-                          begin: AlignmentDirectional(0.0, -1.0),
-                          end: AlignmentDirectional(0, 1.0),
+                          stops: const [0.0, 0.3, 1.0],
+                          begin: const AlignmentDirectional(0.0, -1.0),
+                          end: const AlignmentDirectional(0, 1.0),
                         ),
                         borderRadius: BorderRadius.circular(0.0),
                       ),
@@ -872,7 +873,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: Builder(
                 builder: (context) {
                   if (_model.pagevisit == 1) {
@@ -881,7 +882,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.close_rounded,
                         color: Colors.white,
                         size: 24.0,
@@ -895,7 +896,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                           builder: (context) {
                             return Padding(
                               padding: MediaQuery.viewInsetsOf(context),
-                              child: CloseOutWidget(),
+                              child: const CloseOutWidget(),
                             );
                           },
                         ).then((value) => safeSetState(() {}));
@@ -907,7 +908,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.close_rounded,
                         color: Colors.white,
                         size: 24.0,
@@ -921,7 +922,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                           builder: (context) {
                             return Padding(
                               padding: MediaQuery.viewInsetsOf(context),
-                              child: CloseOutWidget(),
+                              child: const CloseOutWidget(),
                             );
                           },
                         ).then((value) => safeSetState(() {}));
@@ -933,7 +934,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -949,7 +950,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -965,7 +966,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_rounded,
                         color: Colors.white,
                         size: 18.0,
@@ -981,7 +982,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                       borderRadius: 30.0,
                       borderWidth: 1.0,
                       buttonSize: 40.0,
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.close_rounded,
                         color: Colors.white,
                         size: 24.0,
@@ -1002,13 +1003,13 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           colors: [
-                            Color(0xFF339FF3),
+                            const Color(0xFF339FF3),
                             FlutterFlowTheme.of(context).primaryBackground,
                             FlutterFlowTheme.of(context).primaryBackground
                           ],
-                          stops: [0.0, 0.3, 1.0],
-                          begin: AlignmentDirectional(0.0, -1.0),
-                          end: AlignmentDirectional(0, 1.0),
+                          stops: const [0.0, 0.3, 1.0],
+                          begin: const AlignmentDirectional(0.0, -1.0),
+                          end: const AlignmentDirectional(0, 1.0),
                         ),
                         borderRadius: BorderRadius.circular(0.0),
                       ),
@@ -1019,7 +1020,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
             ),
           ],
         ),
-        actions: [],
+        actions: const [],
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -1029,13 +1030,13 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
           borderRadius: BorderRadius.circular(0.0),
         ),
@@ -1064,7 +1065,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -1074,7 +1075,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -1084,7 +1085,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -1094,7 +1095,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -1104,9 +1105,9 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                       child: ListView(
-                        padding: EdgeInsets.fromLTRB(
+                        padding: const EdgeInsets.fromLTRB(
                           0,
                           8.0,
                           0,
@@ -1116,7 +1117,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                         scrollDirection: Axis.vertical,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -1142,7 +1143,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                             'assets/images/bgappbar.png',
                                           ).image,
                                         ),
-                                        boxShadow: [
+                                        boxShadow: const [
                                           BoxShadow(
                                             blurRadius: 8.0,
                                             color: Color(0x1A000000),
@@ -1155,13 +1156,13 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                         ],
                                         gradient: LinearGradient(
                                           colors: [
-                                            Color(0xFF2370BC),
+                                            const Color(0xFF2370BC),
                                             FlutterFlowTheme.of(context).primary
                                           ],
-                                          stops: [0.0, 1.0],
+                                          stops: const [0.0, 1.0],
                                           begin:
-                                              AlignmentDirectional(0.0, -1.0),
-                                          end: AlignmentDirectional(0, 1.0),
+                                              const AlignmentDirectional(0.0, -1.0),
+                                          end: const AlignmentDirectional(0, 1.0),
                                         ),
                                         borderRadius:
                                             BorderRadius.circular(24.0),
@@ -1201,14 +1202,14 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                               decoration: BoxDecoration(
                                                 gradient: LinearGradient(
                                                   colors: [
-                                                    Color(0xFFA0D6FF),
+                                                    const Color(0xFFA0D6FF),
                                                     FlutterFlowTheme.of(context)
                                                         .primary
                                                   ],
-                                                  stops: [0.0, 1.0],
-                                                  begin: AlignmentDirectional(
+                                                  stops: const [0.0, 1.0],
+                                                  begin: const AlignmentDirectional(
                                                       0.0, -1.0),
-                                                  end: AlignmentDirectional(
+                                                  end: const AlignmentDirectional(
                                                       0, 1.0),
                                                 ),
                                                 shape: BoxShape.circle,
@@ -1222,7 +1223,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                 width: double.infinity,
                                                 height: double.infinity,
                                                 clipBehavior: Clip.antiAlias,
-                                                decoration: BoxDecoration(
+                                                decoration: const BoxDecoration(
                                                   shape: BoxShape.circle,
                                                 ),
                                                 child: Image.asset(
@@ -1278,7 +1279,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       context)
                                                                   .bodyMediumFamily,
                                                           color:
-                                                              Color(0xFFF9E7C9),
+                                                              const Color(0xFFF9E7C9),
                                                           letterSpacing: 0.0,
                                                           useGoogleFonts:
                                                               !FlutterFlowTheme
@@ -1286,24 +1287,24 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                   .bodyMediumIsCustom,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 12.0)),
+                                          ].divide(const SizedBox(width: 12.0)),
                                         ),
                                       ),
                                     ),
                                   ),
                                   Container(
                                     width: double.infinity,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(24.0),
                                         bottomRight: Radius.circular(24.0),
                                       ),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(16.0),
+                                      padding: const EdgeInsets.all(16.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         crossAxisAlignment:
@@ -1313,7 +1314,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                             physics:
                                                 const NeverScrollableScrollPhysics(),
                                             gridDelegate:
-                                                SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                               crossAxisCount: 2,
                                             ),
                                             crossAxisSpacing: 12.0,
@@ -1382,19 +1383,19 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                     FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary,
-                                                                    Color(
+                                                                    const Color(
                                                                         0xFF216DAA)
                                                                   ],
-                                                                  stops: [
+                                                                  stops: const [
                                                                     0.0,
                                                                     1.0
                                                                   ],
                                                                   begin:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.56,
                                                                           -1.0),
                                                                   end:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           -0.56,
                                                                           1.0),
                                                                 ),
@@ -1403,7 +1404,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                               ),
                                                               child: Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Icon(
@@ -1437,7 +1438,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         Container(
@@ -1456,11 +1457,11 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           0.0,
@@ -1485,7 +1486,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                             ),
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                                 () => Column(
@@ -1548,19 +1549,19 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                     FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary,
-                                                                    Color(
+                                                                    const Color(
                                                                         0xFF216DAA)
                                                                   ],
-                                                                  stops: [
+                                                                  stops: const [
                                                                     0.0,
                                                                     1.0
                                                                   ],
                                                                   begin:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.56,
                                                                           -1.0),
                                                                   end:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           -0.56,
                                                                           1.0),
                                                                 ),
@@ -1569,7 +1570,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                               ),
                                                               child: Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Icon(
@@ -1603,7 +1604,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         Container(
@@ -1622,11 +1623,11 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           0.0,
@@ -1651,7 +1652,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                             ),
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                                 () => Column(
@@ -1714,19 +1715,19 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                     FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary,
-                                                                    Color(
+                                                                    const Color(
                                                                         0xFF216DAA)
                                                                   ],
-                                                                  stops: [
+                                                                  stops: const [
                                                                     0.0,
                                                                     1.0
                                                                   ],
                                                                   begin:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.56,
                                                                           -1.0),
                                                                   end:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           -0.56,
                                                                           1.0),
                                                                 ),
@@ -1735,7 +1736,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                               ),
                                                               child: Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: FaIcon(
@@ -1769,7 +1770,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         Container(
@@ -1788,11 +1789,11 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           0.0,
@@ -1817,7 +1818,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                             ),
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                                 () => Column(
@@ -1880,19 +1881,19 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                     FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary,
-                                                                    Color(
+                                                                    const Color(
                                                                         0xFF216DAA)
                                                                   ],
-                                                                  stops: [
+                                                                  stops: const [
                                                                     0.0,
                                                                     1.0
                                                                   ],
                                                                   begin:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.56,
                                                                           -1.0),
                                                                   end:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           -0.56,
                                                                           1.0),
                                                                 ),
@@ -1901,7 +1902,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                               ),
                                                               child: Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Icon(
@@ -1935,7 +1936,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         Container(
@@ -1954,11 +1955,11 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           0.0,
@@ -1983,7 +1984,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                             ),
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                                 () => Column(
@@ -2046,19 +2047,19 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                     FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary,
-                                                                    Color(
+                                                                    const Color(
                                                                         0xFF216DAA)
                                                                   ],
-                                                                  stops: [
+                                                                  stops: const [
                                                                     0.0,
                                                                     1.0
                                                                   ],
                                                                   begin:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.56,
                                                                           -1.0),
                                                                   end:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           -0.56,
                                                                           1.0),
                                                                 ),
@@ -2067,7 +2068,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                               ),
                                                               child: Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Icon(
@@ -2101,7 +2102,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         Container(
@@ -2120,11 +2121,11 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           0.0,
@@ -2149,7 +2150,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                             ),
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                                 () => Column(
@@ -2212,19 +2213,19 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                     FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary,
-                                                                    Color(
+                                                                    const Color(
                                                                         0xFF216DAA)
                                                                   ],
-                                                                  stops: [
+                                                                  stops: const [
                                                                     0.0,
                                                                     1.0
                                                                   ],
                                                                   begin:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.56,
                                                                           -1.0),
                                                                   end:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           -0.56,
                                                                           1.0),
                                                                 ),
@@ -2233,7 +2234,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                               ),
                                                               child: Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Icon(
@@ -2266,7 +2267,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         Container(
@@ -2285,11 +2286,11 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           0.0,
@@ -2314,13 +2315,13 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                             ),
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                               ][index]();
                                             },
                                           ),
-                                        ].divide(SizedBox(height: 16.0)),
+                                        ].divide(const SizedBox(height: 16.0)),
                                       ),
                                     ),
                                   ),
@@ -2329,7 +2330,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -2338,7 +2339,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                 borderRadius: BorderRadius.circular(24.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(16.0),
+                                padding: const EdgeInsets.all(16.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -2390,19 +2391,19 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                               colors: [
                                                 FlutterFlowTheme.of(context)
                                                     .primary,
-                                                Color(0xFF216DAA)
+                                                const Color(0xFF216DAA)
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: FaIcon(
                                               FontAwesomeIcons.mapMarkerAlt,
                                               color:
@@ -2451,7 +2452,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                               ),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       12.0, 8.0, 12.0, 8.0),
                                               child: Row(
@@ -2483,12 +2484,12 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                   .labelSmallIsCustom,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 8.0)),
+                                                ].divide(const SizedBox(width: 8.0)),
                                               ),
                                             ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     Container(
                                       width: double.infinity,
@@ -2500,9 +2501,9 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(-1.0, 0.0),
+                                            const AlignmentDirectional(-1.0, 0.0),
                                         child: Padding(
-                                          padding: EdgeInsets.all(12.0),
+                                          padding: const EdgeInsets.all(12.0),
                                           child: Text(
                                             'บ้านเลขที่ 1 หมู่ 6 บ้านกฤษดานคร แขวงราษฎร์บูรณะ เขตราษฎร์บูรณะ กรุงเทพมหานคร 10140',
                                             style: FlutterFlowTheme.of(context)
@@ -2524,64 +2525,24 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                               ),
                             ),
                           ),
-                        ].divide(SizedBox(height: 8.0)),
+                        ].divide(const SizedBox(height: 8.0)),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 24.0),
-                    child: FFButtonWidget(
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 24.0),
+                    child: MainButton(
+                      text: 'ถัดไป',
                       onPressed: () async {
                         _model.pagevisit = 2;
                         safeSetState(() {});
                       },
-                      text: 'ถัดไป',
-                      options: FFButtonOptions(
-                        width: double.infinity,
-                        height: () {
-                          if (MediaQuery.sizeOf(context).width <
-                              kBreakpointSmall) {
-                            return 48.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointMedium) {
-                            return 48.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointLarge) {
-                            return 56.0;
-                          } else {
-                            return 56.0;
-                          }
-                        }(),
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            16.0, 0.0, 16.0, 0.0),
-                        iconAlignment: IconAlignment.start,
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).customColor5,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              color: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: !FlutterFlowTheme.of(context)
-                                  .bodyMediumIsCustom,
-                            ),
-                        elevation: 0.0,
-                        borderSide: BorderSide(
-                          color: Colors.transparent,
-                          width: 0.0,
-                        ),
-                        borderRadius: BorderRadius.circular(100.0),
-                      ),
                     ),
                   ),
                 ],
@@ -2620,7 +2581,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -2630,7 +2591,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -2640,7 +2601,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -2650,9 +2611,9 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                       child: ListView(
-                        padding: EdgeInsets.fromLTRB(
+                        padding: const EdgeInsets.fromLTRB(
                           0,
                           8.0,
                           0,
@@ -2662,7 +2623,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                         scrollDirection: Axis.vertical,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -2741,21 +2702,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF78C7FF),
+                                                const Color(0xFF78C7FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.personal_injury,
                                               color:
@@ -2767,7 +2728,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, 0.0),
+                                              const AlignmentDirectional(-1.0, 0.0),
                                           child: Text(
                                             'ข้อมูลทางการแพทย์',
                                             style: FlutterFlowTheme.of(context)
@@ -2788,7 +2749,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                 ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                   ),
                                   Padding(
@@ -2916,7 +2877,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -2995,21 +2956,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF78C7FF),
+                                                const Color(0xFF78C7FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.info,
                                               color:
@@ -3021,7 +2982,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, 0.0),
+                                              const AlignmentDirectional(-1.0, 0.0),
                                           child: Text(
                                             'สาเหตุการส่งเยี่ยมบ้าน',
                                             style: FlutterFlowTheme.of(context)
@@ -3042,7 +3003,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                 ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                   ),
                                   Padding(
@@ -3170,7 +3131,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -3181,7 +3142,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -3260,21 +3221,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF78C7FF),
+                                                const Color(0xFF78C7FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.bookmark_add,
                                               color:
@@ -3286,7 +3247,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, 0.0),
+                                              const AlignmentDirectional(-1.0, 0.0),
                                           child: Text(
                                             'ข้อมูลการลงทะเบียน',
                                             style: FlutterFlowTheme.of(context)
@@ -3307,7 +3268,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                 ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                   ),
                                   Divider(
@@ -3318,7 +3279,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                   ),
                                   Container(
                                     width: double.infinity,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(24.0),
                                         bottomRight: Radius.circular(24.0),
@@ -3354,7 +3315,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                             physics:
                                                 const NeverScrollableScrollPhysics(),
                                             gridDelegate:
-                                                SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                               crossAxisCount: 2,
                                             ),
                                             crossAxisSpacing: 12.0,
@@ -3406,11 +3367,11 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           0.0,
@@ -3435,7 +3396,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                             ),
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                                 () => Column(
@@ -3481,11 +3442,11 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           0.0,
@@ -3510,7 +3471,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                             ),
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                               ][index]();
@@ -3553,11 +3514,11 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, 0.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(12.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -3580,9 +3541,9 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 8.0)),
+                                            ].divide(const SizedBox(height: 8.0)),
                                           ),
-                                        ].divide(SizedBox(height: 12.0)),
+                                        ].divide(const SizedBox(height: 12.0)),
                                       ),
                                     ),
                                   ),
@@ -3590,59 +3551,19 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                               ),
                             ),
                           ),
-                        ].divide(SizedBox(height: 8.0)),
+                        ].divide(const SizedBox(height: 8.0)),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 24.0),
-                    child: FFButtonWidget(
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 24.0),
+                    child: MainButton(
+                      text: 'ถัดไป',
                       onPressed: () async {
                         _model.pagevisit = 3;
                         safeSetState(() {});
                       },
-                      text: 'ถัดไป',
-                      options: FFButtonOptions(
-                        width: double.infinity,
-                        height: () {
-                          if (MediaQuery.sizeOf(context).width <
-                              kBreakpointSmall) {
-                            return 48.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointMedium) {
-                            return 48.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointLarge) {
-                            return 56.0;
-                          } else {
-                            return 56.0;
-                          }
-                        }(),
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            16.0, 0.0, 16.0, 0.0),
-                        iconAlignment: IconAlignment.start,
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).customColor5,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              color: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: !FlutterFlowTheme.of(context)
-                                  .bodyMediumIsCustom,
-                            ),
-                        elevation: 0.0,
-                        borderSide: BorderSide(
-                          color: Colors.transparent,
-                          width: 0.0,
-                        ),
-                        borderRadius: BorderRadius.circular(100.0),
-                      ),
                     ),
                   ),
                 ],
@@ -3692,7 +3613,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -3702,7 +3623,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -3712,9 +3633,9 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                       child: ListView(
-                        padding: EdgeInsets.fromLTRB(
+                        padding: const EdgeInsets.fromLTRB(
                           0,
                           8.0,
                           0,
@@ -3724,7 +3645,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                         scrollDirection: Axis.vertical,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -3803,21 +3724,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF78C7FF),
+                                                const Color(0xFF78C7FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.add_location_alt_rounded,
                                               color:
@@ -3829,7 +3750,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, 0.0),
+                                              const AlignmentDirectional(-1.0, 0.0),
                                           child: Text(
                                             'แผนการเยี่ยม',
                                             style: FlutterFlowTheme.of(context)
@@ -3850,7 +3771,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                 ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                   ),
                                   Divider(
@@ -3861,7 +3782,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                   ),
                                   Container(
                                     width: double.infinity,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(24.0),
                                         bottomRight: Radius.circular(24.0),
@@ -3897,7 +3818,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                             physics:
                                                 const NeverScrollableScrollPhysics(),
                                             gridDelegate:
-                                                SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                               crossAxisCount: 2,
                                             ),
                                             crossAxisSpacing: 12.0,
@@ -3959,12 +3880,12 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                 children: [
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             -1.0,
                                                                             0.0),
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           12.0,
                                                                           0.0,
                                                                           0.0,
@@ -3985,7 +3906,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                     ),
                                                                   ),
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -4032,7 +3953,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                             },
                                                                           ),
                                                                           child:
-                                                                              Container(
+                                                                              SizedBox(
                                                                             height:
                                                                                 MediaQuery.of(context).size.height / 3,
                                                                             width:
@@ -4058,13 +3979,13 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       .infinity,
                                                                   height: 100.0,
                                                                   decoration:
-                                                                      BoxDecoration(),
+                                                                      const BoxDecoration(),
                                                                 ),
                                                               ),
                                                             ],
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                                 () => Column(
@@ -4120,12 +4041,12 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                 children: [
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             -1.0,
                                                                             0.0),
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           12.0,
                                                                           0.0,
                                                                           0.0,
@@ -4146,7 +4067,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                     ),
                                                                   ),
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -4193,7 +4114,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                             },
                                                                           ),
                                                                           child:
-                                                                              Container(
+                                                                              SizedBox(
                                                                             height:
                                                                                 MediaQuery.of(context).size.height / 3,
                                                                             width:
@@ -4219,13 +4140,13 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       .infinity,
                                                                   height: 100.0,
                                                                   decoration:
-                                                                      BoxDecoration(),
+                                                                      const BoxDecoration(),
                                                                 ),
                                                               ),
                                                             ],
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                               ][index]();
@@ -4311,7 +4232,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                 FormFieldController<
                                                                         String>(
                                                                     null),
-                                                            options: [
+                                                            options: const [
                                                               'เยี่ยมต่อเนื่อง',
                                                               'เยี่ยมครั้งเดียว'
                                                             ],
@@ -4351,7 +4272,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                             borderWidth: 0.0,
                                                             borderRadius: 8.0,
                                                             margin:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12.0,
                                                                         0.0,
@@ -4365,7 +4286,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                 false,
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                                 () => Column(
@@ -4411,11 +4332,11 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           0.0,
@@ -4440,7 +4361,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                             ),
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                                 () => Column(
@@ -4495,12 +4416,12 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                     child:
                                                                         Align(
                                                                       alignment:
-                                                                          AlignmentDirectional(
+                                                                          const AlignmentDirectional(
                                                                               -1.0,
                                                                               0.0),
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             12.0,
                                                                             0.0,
                                                                             0.0,
@@ -4520,7 +4441,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                     ),
                                                                   ),
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -4567,7 +4488,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                         padding:
                                                                             MediaQuery.viewInsetsOf(context),
                                                                         child:
-                                                                            SearchStaffWidget(),
+                                                                            const SearchStaffWidget(),
                                                                       );
                                                                     },
                                                                   ).then((value) =>
@@ -4580,13 +4501,13 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       .infinity,
                                                                   height: 100.0,
                                                                   decoration:
-                                                                      BoxDecoration(),
+                                                                      const BoxDecoration(),
                                                                 ),
                                                               ),
                                                             ],
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                               ][index]();
@@ -4605,14 +4526,14 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                             ),
                                             child: Container(
                                               width: double.infinity,
-                                              color: Color(0x00000000),
+                                              color: const Color(0x00000000),
                                               child: ExpandableNotifier(
                                                 controller: _model
                                                     .expandableExpandableController1,
                                                 child: ExpandablePanel(
                                                   header: Padding(
                                                     padding:
-                                                        EdgeInsets.all(16.0),
+                                                        const EdgeInsets.all(16.0),
                                                     child: Text(
                                                       'วัตถุประสงค์การเยี่ยม',
                                                       style: FlutterFlowTheme
@@ -4635,7 +4556,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   expanded: Container(
                                                     width: double.infinity,
                                                     decoration: BoxDecoration(
-                                                      color: Color(0xFFF3F9FF),
+                                                      color: const Color(0xFFF3F9FF),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               24.0),
@@ -4717,7 +4638,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                             () => wrapWithModel(
                                                                   model: _model
@@ -4726,7 +4647,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                             () => wrapWithModel(
                                                                   model: _model
@@ -4735,7 +4656,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                             () => wrapWithModel(
                                                                   model: _model
@@ -4744,7 +4665,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                             () => wrapWithModel(
                                                                   model: _model
@@ -4753,7 +4674,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                             () => wrapWithModel(
                                                                   model: _model
@@ -4762,14 +4683,14 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                           ][index]();
                                                         },
                                                       ),
                                                     ),
                                                   ),
-                                                  theme: ExpandableThemeData(
+                                                  theme: const ExpandableThemeData(
                                                     tapHeaderToExpand: true,
                                                     tapBodyToExpand: false,
                                                     tapBodyToCollapse: false,
@@ -4782,7 +4703,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                               ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 12.0)),
+                                        ].divide(const SizedBox(height: 12.0)),
                                       ),
                                     ),
                                   ),
@@ -4791,7 +4712,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -4870,21 +4791,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFFFFA7A7),
+                                                const Color(0xFFFFA7A7),
                                                 FlutterFlowTheme.of(context)
                                                     .error
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.assignment_late_rounded,
                                               color:
@@ -4896,7 +4817,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, 0.0),
+                                              const AlignmentDirectional(-1.0, 0.0),
                                           child: Text(
                                             'ปัญหาสุขภาพ',
                                             style: FlutterFlowTheme.of(context)
@@ -4917,7 +4838,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                 ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                   ),
                                   Divider(
@@ -4928,7 +4849,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                   ),
                                   Container(
                                     width: double.infinity,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(24.0),
                                         bottomRight: Radius.circular(24.0),
@@ -4973,14 +4894,14 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                             ),
                                             child: Container(
                                               width: double.infinity,
-                                              color: Color(0x00000000),
+                                              color: const Color(0x00000000),
                                               child: ExpandableNotifier(
                                                 controller: _model
                                                     .expandableExpandableController2,
                                                 child: ExpandablePanel(
                                                   header: Padding(
                                                     padding:
-                                                        EdgeInsets.all(16.0),
+                                                        const EdgeInsets.all(16.0),
                                                     child: Text(
                                                       '1.ความดันโลหิตสูง',
                                                       style: FlutterFlowTheme
@@ -5003,7 +4924,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   expanded: Container(
                                                     width: double.infinity,
                                                     decoration: BoxDecoration(
-                                                      color: Color(0xFFF3F9FF),
+                                                      color: const Color(0xFFF3F9FF),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               24.0),
@@ -5085,7 +5006,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                             () => wrapWithModel(
                                                                   model: _model
@@ -5094,7 +5015,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                             () => wrapWithModel(
                                                                   model: _model
@@ -5103,7 +5024,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                             () => wrapWithModel(
                                                                   model: _model
@@ -5112,7 +5033,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                             () => wrapWithModel(
                                                                   model: _model
@@ -5121,7 +5042,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                             () => wrapWithModel(
                                                                   model: _model
@@ -5130,14 +5051,14 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                           ][index]();
                                                         },
                                                       ),
                                                     ),
                                                   ),
-                                                  theme: ExpandableThemeData(
+                                                  theme: const ExpandableThemeData(
                                                     tapHeaderToExpand: true,
                                                     tapBodyToExpand: false,
                                                     tapBodyToCollapse: false,
@@ -5163,14 +5084,14 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                             ),
                                             child: Container(
                                               width: double.infinity,
-                                              color: Color(0x00000000),
+                                              color: const Color(0x00000000),
                                               child: ExpandableNotifier(
                                                 controller: _model
                                                     .expandableExpandableController3,
                                                 child: ExpandablePanel(
                                                   header: Padding(
                                                     padding:
-                                                        EdgeInsets.all(16.0),
+                                                        const EdgeInsets.all(16.0),
                                                     child: Text(
                                                       '2.โรคหัวใจ',
                                                       style: FlutterFlowTheme
@@ -5193,7 +5114,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   expanded: Container(
                                                     width: double.infinity,
                                                     decoration: BoxDecoration(
-                                                      color: Color(0xFFF3F9FF),
+                                                      color: const Color(0xFFF3F9FF),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               24.0),
@@ -5275,7 +5196,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                             () => wrapWithModel(
                                                                   model: _model
@@ -5284,7 +5205,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                             () => wrapWithModel(
                                                                   model: _model
@@ -5293,7 +5214,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                             () => wrapWithModel(
                                                                   model: _model
@@ -5302,7 +5223,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                             () => wrapWithModel(
                                                                   model: _model
@@ -5311,7 +5232,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                             () => wrapWithModel(
                                                                   model: _model
@@ -5320,7 +5241,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                             () => wrapWithModel(
                                                                   model: _model
@@ -5329,7 +5250,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                             () => wrapWithModel(
                                                                   model: _model
@@ -5338,14 +5259,14 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ContractVisitWidget(),
+                                                                      const ContractVisitWidget(),
                                                                 ),
                                                           ][index]();
                                                         },
                                                       ),
                                                     ),
                                                   ),
-                                                  theme: ExpandableThemeData(
+                                                  theme: const ExpandableThemeData(
                                                     tapHeaderToExpand: true,
                                                     tapBodyToExpand: false,
                                                     tapBodyToCollapse: false,
@@ -5358,7 +5279,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                               ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 12.0)),
+                                        ].divide(const SizedBox(height: 12.0)),
                                       ),
                                     ),
                                   ),
@@ -5367,7 +5288,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -5446,21 +5367,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF90F598),
+                                                const Color(0xFF90F598),
                                                 FlutterFlowTheme.of(context)
                                                     .success
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.ballot,
                                               color:
@@ -5472,7 +5393,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, 0.0),
+                                              const AlignmentDirectional(-1.0, 0.0),
                                           child: Text(
                                             'ปัญหาสุขภาพเพิ่มเติม',
                                             style: FlutterFlowTheme.of(context)
@@ -5493,7 +5414,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                 ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                   ),
                                   Padding(
@@ -5573,7 +5494,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                       ),
-                                      child: Container(
+                                      child: SizedBox(
                                         width: 200.0,
                                         child: TextFormField(
                                           controller: _model.textController1,
@@ -5612,7 +5533,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                               .labelSmallIsCustom,
                                                     ),
                                             enabledBorder: OutlineInputBorder(
-                                              borderSide: BorderSide(
+                                              borderSide: const BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 1.0,
                                               ),
@@ -5682,59 +5603,17 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 16.0, 16.0, 24.0),
-                            child: FFButtonWidget(
+                            child: MainButton(
+                              text: 'ถัดไป',
                               onPressed: () async {
                                 _model.pagevisit = 4;
                                 safeSetState(() {});
                               },
-                              text: 'ถัดไป',
-                              options: FFButtonOptions(
-                                width: double.infinity,
-                                height: () {
-                                  if (MediaQuery.sizeOf(context).width <
-                                      kBreakpointSmall) {
-                                    return 48.0;
-                                  } else if (MediaQuery.sizeOf(context).width <
-                                      kBreakpointMedium) {
-                                    return 48.0;
-                                  } else if (MediaQuery.sizeOf(context).width <
-                                      kBreakpointLarge) {
-                                    return 56.0;
-                                  } else {
-                                    return 56.0;
-                                  }
-                                }(),
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    16.0, 0.0, 16.0, 0.0),
-                                iconAlignment: IconAlignment.start,
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 0.0),
-                                color:
-                                    FlutterFlowTheme.of(context).customColor5,
-                                textStyle: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily,
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
-                                      letterSpacing: 0.0,
-                                      useGoogleFonts:
-                                          !FlutterFlowTheme.of(context)
-                                              .bodyMediumIsCustom,
-                                    ),
-                                elevation: 0.0,
-                                borderSide: BorderSide(
-                                  color: Colors.transparent,
-                                  width: 0.0,
-                                ),
-                                borderRadius: BorderRadius.circular(100.0),
-                              ),
                             ),
                           ),
-                        ].divide(SizedBox(height: 8.0)),
+                        ].divide(const SizedBox(height: 8.0)),
                       ),
                     ),
                   ),
@@ -5796,7 +5675,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                           width: double.infinity,
                           height: 2.0,
                           decoration: BoxDecoration(
-                            color: Color(0x1AFFFFFF),
+                            color: const Color(0x1AFFFFFF),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),
@@ -5806,9 +5685,9 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                       child: ListView(
-                        padding: EdgeInsets.fromLTRB(
+                        padding: const EdgeInsets.fromLTRB(
                           0,
                           8.0,
                           0,
@@ -5818,7 +5697,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                         scrollDirection: Axis.vertical,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -5895,21 +5774,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF78C7FF),
+                                                const Color(0xFF78C7FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.face_4,
                                               color:
@@ -5921,7 +5800,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   8.0, 0.0, 0.0, 0.0),
                                           child: Text(
                                             'ผู้ดูแลหลัก',
@@ -6006,7 +5885,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -6015,7 +5894,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checkoneModel1,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: CheckoneWidget(
+                                                  child: const CheckoneWidget(
                                                     names: 'มี',
                                                     checkone: '1',
                                                   ),
@@ -6042,7 +5921,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -6051,7 +5930,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checkoneModel2,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: CheckoneWidget(
+                                                  child: const CheckoneWidget(
                                                     names: 'ไม่มี',
                                                     checkone: '2',
                                                   ),
@@ -6084,7 +5963,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -6161,21 +6040,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF78C7FF),
+                                                const Color(0xFF78C7FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.fastfood_rounded,
                                               color:
@@ -6203,7 +6082,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .titleSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     MasonryGridView.builder(
                                       physics:
@@ -6266,7 +6145,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -6275,7 +6154,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checktwoModel1,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: ChecktwoWidget(
+                                                  child: const ChecktwoWidget(
                                                     names: 'ทางปาก',
                                                     checktwo: '1',
                                                   ),
@@ -6302,7 +6181,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -6311,7 +6190,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checktwoModel2,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: ChecktwoWidget(
+                                                  child: const ChecktwoWidget(
                                                     names: 'ทางสายอาหาร',
                                                     checktwo: '2',
                                                   ),
@@ -6344,7 +6223,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -6421,21 +6300,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF78C7FF),
+                                                const Color(0xFF78C7FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.people_alt,
                                               color:
@@ -6463,7 +6342,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .titleSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     MasonryGridView.builder(
                                       physics:
@@ -6526,7 +6405,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -6536,7 +6415,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                       _model.checkthreeModel1,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: CheckthreeWidget(
+                                                  child: const CheckthreeWidget(
                                                     names: 'พร้อมดูแล',
                                                     checkthree: '1',
                                                   ),
@@ -6563,7 +6442,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -6573,7 +6452,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                       _model.checkthreeModel2,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: CheckthreeWidget(
+                                                  child: const CheckthreeWidget(
                                                     names:
                                                         'ต้องการความช่วยเหลือเพิ่มเติม',
                                                     checkthree: '2',
@@ -6607,7 +6486,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -6684,21 +6563,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF78C7FF),
+                                                const Color(0xFF78C7FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: FaIcon(
                                               FontAwesomeIcons.poo,
                                               color:
@@ -6726,7 +6605,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .titleSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     MasonryGridView.builder(
                                       physics:
@@ -6789,7 +6668,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -6798,7 +6677,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checkforeModel1,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: CheckforeWidget(
+                                                  child: const CheckforeWidget(
                                                     names: 'ปกติ',
                                                     checkfore: '1',
                                                   ),
@@ -6825,7 +6704,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -6834,7 +6713,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checkforeModel2,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: CheckforeWidget(
+                                                  child: const CheckforeWidget(
                                                     names: 'มีสายสวน',
                                                     checkfore: '2',
                                                   ),
@@ -6861,7 +6740,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -6870,7 +6749,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checkforeModel3,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: CheckforeWidget(
+                                                  child: const CheckforeWidget(
                                                     names: 'ต้องช่วยเหลือ',
                                                     checkfore: '3',
                                                   ),
@@ -6903,7 +6782,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -6980,21 +6859,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF78C7FF),
+                                                const Color(0xFF78C7FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: FaIcon(
                                               FontAwesomeIcons.wheelchair,
                                               color:
@@ -7022,7 +6901,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .titleSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     MasonryGridView.builder(
                                       physics:
@@ -7085,7 +6964,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -7094,7 +6973,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checkfiveModel1,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: CheckfiveWidget(
+                                                  child: const CheckfiveWidget(
                                                     names: 'ช่วยเหลือตนเองได้',
                                                     checkfive: '1',
                                                   ),
@@ -7121,7 +7000,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -7130,7 +7009,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checkfiveModel2,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: CheckfiveWidget(
+                                                  child: const CheckfiveWidget(
                                                     names:
                                                         'ต้องมีผู้ช่วยบางส่วน',
                                                     checkfive: '2',
@@ -7158,7 +7037,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -7167,7 +7046,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checkfiveModel3,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: CheckfiveWidget(
+                                                  child: const CheckfiveWidget(
                                                     names:
                                                         'พึ่งพาผู้อื่นทั้งหมด',
                                                     checkfive: '3',
@@ -7201,7 +7080,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -7280,21 +7159,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF78C7FF),
+                                                const Color(0xFF78C7FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.health_and_safety_sharp,
                                               color:
@@ -7346,9 +7225,9 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                 .labelSmallIsCustom,
                                                       ),
                                             ),
-                                          ].divide(SizedBox(height: 6.0)),
+                                          ].divide(const SizedBox(height: 6.0)),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     MasonryGridView.builder(
                                       physics:
@@ -7424,7 +7303,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -7433,7 +7312,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checkitModel1,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: CheckitWidget(
+                                                  child: const CheckitWidget(
                                                     text: 'สายสวนปัสสาวะ',
                                                   ),
                                                 ),
@@ -7457,7 +7336,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -7466,7 +7345,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checkitModel2,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: CheckitWidget(
+                                                  child: const CheckitWidget(
                                                     text: 'NG tube',
                                                   ),
                                                 ),
@@ -7490,7 +7369,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -7499,7 +7378,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checkitModel3,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: CheckitWidget(
+                                                  child: const CheckitWidget(
                                                     text: 'ออกซิเจน',
                                                   ),
                                                 ),
@@ -7529,7 +7408,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                             .forward(from: 0.0);
                                                       }
                                                       await Future.delayed(
-                                                        Duration(
+                                                        const Duration(
                                                           milliseconds: 100,
                                                         ),
                                                       );
@@ -7546,7 +7425,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                 .viewInsetsOf(
                                                                     context),
                                                             child:
-                                                                MedicalWidget(),
+                                                                const MedicalWidget(),
                                                           );
                                                         },
                                                       ).then((value) =>
@@ -7557,7 +7436,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                           _model.checkitModel4,
                                                       updateCallback: () =>
                                                           safeSetState(() {}),
-                                                      child: CheckitWidget(
+                                                      child: const CheckitWidget(
                                                         text: 'อื่นๆ',
                                                       ),
                                                     ),
@@ -7568,7 +7447,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   if (FFAppState().medi == true)
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,
@@ -7586,13 +7465,13 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                   .circular(
                                                                       16.0),
                                                           border: Border.all(
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFFCED4E6),
                                                           ),
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       12.0,
@@ -7630,7 +7509,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                               .labelLargeIsCustom,
                                                                     ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 height: 8.0)),
                                                           ),
                                                         ),
@@ -7662,7 +7541,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -7739,21 +7618,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF78C7FF),
+                                                const Color(0xFF78C7FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: FaIcon(
                                               FontAwesomeIcons.child,
                                               color:
@@ -7781,7 +7660,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .titleSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     MasonryGridView.builder(
                                       physics:
@@ -7845,7 +7724,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -7855,7 +7734,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                       _model.checksevenModel1,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: ChecksevenWidget(
+                                                  child: const ChecksevenWidget(
                                                     names: 'ไม่มีแผล',
                                                     checkseven: '1',
                                                   ),
@@ -7889,7 +7768,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                             .forward(from: 0.0);
                                                       }
                                                       await Future.delayed(
-                                                        Duration(
+                                                        const Duration(
                                                           milliseconds: 100,
                                                         ),
                                                       );
@@ -7906,7 +7785,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                 .viewInsetsOf(
                                                                     context),
                                                             child:
-                                                                BooolWidget(),
+                                                                const BooolWidget(),
                                                           );
                                                         },
                                                       ).then((value) =>
@@ -7917,7 +7796,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                           .checksevenModel2,
                                                       updateCallback: () =>
                                                           safeSetState(() {}),
-                                                      child: ChecksevenWidget(
+                                                      child: const ChecksevenWidget(
                                                         names: 'มีแผล',
                                                         checkseven: '2',
                                                       ),
@@ -7930,7 +7809,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                       true)
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,
@@ -7948,13 +7827,13 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                   .circular(
                                                                       16.0),
                                                           border: Border.all(
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFFCED4E6),
                                                           ),
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       12.0,
@@ -7992,7 +7871,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                               .labelLargeIsCustom,
                                                                     ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 height: 8.0)),
                                                           ),
                                                         ),
@@ -8024,7 +7903,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -8128,20 +8007,20 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                             decoration: BoxDecoration(
                                               gradient: LinearGradient(
                                                 colors: [
-                                                  Color(0xFF78C7FF),
+                                                  const Color(0xFF78C7FF),
                                                   FlutterFlowTheme.of(context)
                                                       .primary
                                                 ],
-                                                stops: [0.0, 1.0],
-                                                begin: AlignmentDirectional(
+                                                stops: const [0.0, 1.0],
+                                                begin: const AlignmentDirectional(
                                                     0.56, -1.0),
-                                                end: AlignmentDirectional(
+                                                end: const AlignmentDirectional(
                                                     -0.56, 1.0),
                                               ),
                                               shape: BoxShape.circle,
                                             ),
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 Icons.sim_card_alert_rounded,
@@ -8171,7 +8050,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                           .titleSmallIsCustom,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ),
                                     Container(
@@ -8182,7 +8061,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                       ),
-                                      child: Container(
+                                      child: SizedBox(
                                         width: 200.0,
                                         child: TextFormField(
                                           controller: _model.textController2,
@@ -8221,7 +8100,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                               .labelSmallIsCustom,
                                                     ),
                                             enabledBorder: OutlineInputBorder(
-                                              borderSide: BorderSide(
+                                              borderSide: const BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 1.0,
                                               ),
@@ -8291,59 +8170,17 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 16.0, 16.0, 24.0),
-                            child: FFButtonWidget(
+                            child: MainButton(
+                              text: 'ถัดไป',
                               onPressed: () async {
                                 _model.pagevisit = 5;
                                 safeSetState(() {});
                               },
-                              text: 'ถัดไป',
-                              options: FFButtonOptions(
-                                width: double.infinity,
-                                height: () {
-                                  if (MediaQuery.sizeOf(context).width <
-                                      kBreakpointSmall) {
-                                    return 48.0;
-                                  } else if (MediaQuery.sizeOf(context).width <
-                                      kBreakpointMedium) {
-                                    return 48.0;
-                                  } else if (MediaQuery.sizeOf(context).width <
-                                      kBreakpointLarge) {
-                                    return 56.0;
-                                  } else {
-                                    return 56.0;
-                                  }
-                                }(),
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    16.0, 0.0, 16.0, 0.0),
-                                iconAlignment: IconAlignment.start,
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 0.0),
-                                color:
-                                    FlutterFlowTheme.of(context).customColor5,
-                                textStyle: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily,
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
-                                      letterSpacing: 0.0,
-                                      useGoogleFonts:
-                                          !FlutterFlowTheme.of(context)
-                                              .bodyMediumIsCustom,
-                                    ),
-                                elevation: 0.0,
-                                borderSide: BorderSide(
-                                  color: Colors.transparent,
-                                  width: 0.0,
-                                ),
-                                borderRadius: BorderRadius.circular(100.0),
-                              ),
                             ),
                           ),
-                        ].divide(SizedBox(height: 8.0)),
+                        ].divide(const SizedBox(height: 8.0)),
                       ),
                     ),
                   ),
@@ -8416,9 +8253,9 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                       child: ListView(
-                        padding: EdgeInsets.fromLTRB(
+                        padding: const EdgeInsets.fromLTRB(
                           0,
                           8.0,
                           0,
@@ -8428,7 +8265,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                         scrollDirection: Axis.vertical,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -8507,21 +8344,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF78C7FF),
+                                                const Color(0xFF78C7FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.family_restroom,
                                               color:
@@ -8533,7 +8370,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, 0.0),
+                                              const AlignmentDirectional(-1.0, 0.0),
                                           child: Text(
                                             'จำนวนสมาชิกในบ้าน',
                                             style: FlutterFlowTheme.of(context)
@@ -8554,7 +8391,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                 ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                   ),
                                   Padding(
@@ -8636,12 +8473,12 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(1.0, 0.0),
+                                            const AlignmentDirectional(1.0, 0.0),
                                         child: Stack(
                                           alignment:
-                                              AlignmentDirectional(1.0, 0.0),
+                                              const AlignmentDirectional(1.0, 0.0),
                                           children: [
-                                            Container(
+                                            SizedBox(
                                               width: double.infinity,
                                               child: TextFormField(
                                                 controller:
@@ -8687,7 +8524,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                           ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: BorderSide(
+                                                    borderSide: const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -8763,10 +8600,10 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                               ),
                                             ),
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   1.0, 0.0),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 12.0, 0.0),
                                                 child: Text(
@@ -8799,7 +8636,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -8878,21 +8715,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF78C7FF),
+                                                const Color(0xFF78C7FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.call_split_rounded,
                                               color:
@@ -8904,7 +8741,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, 0.0),
+                                              const AlignmentDirectional(-1.0, 0.0),
                                           child: Text(
                                             'ความสัมพันธ์ของสมาชิก',
                                             style: FlutterFlowTheme.of(context)
@@ -8925,7 +8762,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                 ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                   ),
                                   Padding(
@@ -9005,7 +8842,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
-                                      child: Container(
+                                      child: SizedBox(
                                         width: double.infinity,
                                         child: TextFormField(
                                           controller: _model.textController4,
@@ -9044,7 +8881,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                               .labelSmallIsCustom,
                                                     ),
                                             enabledBorder: OutlineInputBorder(
-                                              borderSide: BorderSide(
+                                              borderSide: const BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 1.0,
                                               ),
@@ -9114,7 +8951,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -9191,21 +9028,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF78C7FF),
+                                                const Color(0xFF78C7FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.monetization_on_rounded,
                                               color:
@@ -9233,7 +9070,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .titleSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     MasonryGridView.builder(
                                       physics:
@@ -9296,7 +9133,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -9305,7 +9142,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checktwoModel3,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: ChecktwoWidget(
+                                                  child: const ChecktwoWidget(
                                                     names: 'เพียงพอ',
                                                     checktwo: '1',
                                                   ),
@@ -9332,7 +9169,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -9341,7 +9178,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checktwoModel4,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: ChecktwoWidget(
+                                                  child: const ChecktwoWidget(
                                                     names: 'ไม่เพียงพอ',
                                                     checktwo: '2',
                                                   ),
@@ -9374,7 +9211,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -9451,21 +9288,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF78C7FF),
+                                                const Color(0xFF78C7FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.add_card,
                                               color:
@@ -9493,7 +9330,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .titleSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     MasonryGridView.builder(
                                       physics:
@@ -9557,7 +9394,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -9566,7 +9403,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checktwoModel5,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: ChecktwoWidget(
+                                                  child: const ChecktwoWidget(
                                                     names: 'บัตรทอง',
                                                     checktwo: '1',
                                                   ),
@@ -9594,7 +9431,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -9603,7 +9440,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checktwoModel6,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: ChecktwoWidget(
+                                                  child: const ChecktwoWidget(
                                                     names: 'ประกันสังคม',
                                                     checktwo: '2',
                                                   ),
@@ -9631,7 +9468,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -9640,7 +9477,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checktwoModel7,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: ChecktwoWidget(
+                                                  child: const ChecktwoWidget(
                                                     names: 'ข้าราชการ',
                                                     checktwo: '3',
                                                   ),
@@ -9674,7 +9511,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                             .forward(from: 0.0);
                                                       }
                                                       await Future.delayed(
-                                                        Duration(
+                                                        const Duration(
                                                           milliseconds: 100,
                                                         ),
                                                       );
@@ -9690,7 +9527,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                             padding: MediaQuery
                                                                 .viewInsetsOf(
                                                                     context),
-                                                            child: AdiWidget(),
+                                                            child: const AdiWidget(),
                                                           );
                                                         },
                                                       ).then((value) =>
@@ -9701,7 +9538,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                           _model.checktwoModel8,
                                                       updateCallback: () =>
                                                           safeSetState(() {}),
-                                                      child: ChecktwoWidget(
+                                                      child: const ChecktwoWidget(
                                                         names: 'อื่นๆ',
                                                         checktwo: '4',
                                                       ),
@@ -9713,7 +9550,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   if (FFAppState().adi == true)
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,
@@ -9731,13 +9568,13 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                   .circular(
                                                                       16.0),
                                                           border: Border.all(
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFFCED4E6),
                                                           ),
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       12.0,
@@ -9775,7 +9612,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                               .labelLargeIsCustom,
                                                                     ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 height: 8.0)),
                                                           ),
                                                         ),
@@ -9807,7 +9644,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -9886,21 +9723,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF78C7FF),
+                                                const Color(0xFF78C7FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.eco,
                                               color:
@@ -9952,9 +9789,9 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                 .labelSmallIsCustom,
                                                       ),
                                             ),
-                                          ].divide(SizedBox(height: 6.0)),
+                                          ].divide(const SizedBox(height: 6.0)),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     MasonryGridView.builder(
                                       physics:
@@ -10015,7 +9852,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -10024,7 +9861,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checkitModel5,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: CheckitWidget(
+                                                  child: const CheckitWidget(
                                                     text: 'มีไฟฟ้า',
                                                   ),
                                                 ),
@@ -10048,7 +9885,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -10057,7 +9894,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checkitModel6,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: CheckitWidget(
+                                                  child: const CheckitWidget(
                                                     text: 'น้ำประปา',
                                                   ),
                                                 ),
@@ -10081,7 +9918,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -10090,7 +9927,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checkitModel7,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: CheckitWidget(
+                                                  child: const CheckitWidget(
                                                     text: 'ห้องน้ำสะอาด',
                                                   ),
                                                 ),
@@ -10114,7 +9951,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -10123,7 +9960,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checkitModel8,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: CheckitWidget(
+                                                  child: const CheckitWidget(
                                                     text: 'อยู่ในสภาพปลอดภัย',
                                                   ),
                                                 ),
@@ -10153,7 +9990,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                             .forward(from: 0.0);
                                                       }
                                                       await Future.delayed(
-                                                        Duration(
+                                                        const Duration(
                                                           milliseconds: 100,
                                                         ),
                                                       );
@@ -10170,7 +10007,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                 .viewInsetsOf(
                                                                     context),
                                                             child:
-                                                                MongoWidget(),
+                                                                const MongoWidget(),
                                                           );
                                                         },
                                                       ).then((value) =>
@@ -10181,7 +10018,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                           _model.checkitModel9,
                                                       updateCallback: () =>
                                                           safeSetState(() {}),
-                                                      child: CheckitWidget(
+                                                      child: const CheckitWidget(
                                                         text: 'อื่นๆ',
                                                       ),
                                                     ),
@@ -10193,7 +10030,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                       true)
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,
@@ -10211,13 +10048,13 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                   .circular(
                                                                       16.0),
                                                           border: Border.all(
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFFCED4E6),
                                                           ),
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       12.0,
@@ -10255,7 +10092,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                               .labelLargeIsCustom,
                                                                     ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 height: 8.0)),
                                                           ),
                                                         ),
@@ -10287,7 +10124,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               decoration: BoxDecoration(
@@ -10364,21 +10201,21 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF78C7FF),
+                                                const Color(0xFF78C7FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.56, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -0.56, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.info_rounded,
                                               color:
@@ -10406,7 +10243,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .titleSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     MasonryGridView.builder(
                                       physics:
@@ -10470,7 +10307,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -10479,7 +10316,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   model: _model.checktwoModel9,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: ChecktwoWidget(
+                                                  child: const ChecktwoWidget(
                                                     names: 'ไม่มี',
                                                     checktwo: '1',
                                                   ),
@@ -10513,7 +10350,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                             .forward(from: 0.0);
                                                       }
                                                       await Future.delayed(
-                                                        Duration(
+                                                        const Duration(
                                                           milliseconds: 100,
                                                         ),
                                                       );
@@ -10530,7 +10367,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                 .viewInsetsOf(
                                                                     context),
                                                             child:
-                                                                PostmenWidget(),
+                                                                const PostmenWidget(),
                                                           );
                                                         },
                                                       ).then((value) =>
@@ -10541,7 +10378,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                           .checktwoModel10,
                                                       updateCallback: () =>
                                                           safeSetState(() {}),
-                                                      child: ChecktwoWidget(
+                                                      child: const ChecktwoWidget(
                                                         names: 'มี',
                                                         checktwo: '2',
                                                       ),
@@ -10554,7 +10391,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                       true)
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,
@@ -10572,13 +10409,13 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                   .circular(
                                                                       16.0),
                                                           border: Border.all(
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFFCED4E6),
                                                           ),
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       12.0,
@@ -10616,7 +10453,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                               .labelLargeIsCustom,
                                                                     ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 height: 8.0)),
                                                           ),
                                                         ),
@@ -10648,59 +10485,17 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 16.0, 16.0, 24.0),
-                            child: FFButtonWidget(
+                            child: MainButton(
+                              text: 'บันทึก',
                               onPressed: () async {
                                 _model.pagevisit = 6;
                                 safeSetState(() {});
                               },
-                              text: 'บันทึก',
-                              options: FFButtonOptions(
-                                width: double.infinity,
-                                height: () {
-                                  if (MediaQuery.sizeOf(context).width <
-                                      kBreakpointSmall) {
-                                    return 48.0;
-                                  } else if (MediaQuery.sizeOf(context).width <
-                                      kBreakpointMedium) {
-                                    return 48.0;
-                                  } else if (MediaQuery.sizeOf(context).width <
-                                      kBreakpointLarge) {
-                                    return 56.0;
-                                  } else {
-                                    return 56.0;
-                                  }
-                                }(),
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    16.0, 0.0, 16.0, 0.0),
-                                iconAlignment: IconAlignment.start,
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 0.0),
-                                color:
-                                    FlutterFlowTheme.of(context).customColor5,
-                                textStyle: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily,
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
-                                      letterSpacing: 0.0,
-                                      useGoogleFonts:
-                                          !FlutterFlowTheme.of(context)
-                                              .bodyMediumIsCustom,
-                                    ),
-                                elevation: 0.0,
-                                borderSide: BorderSide(
-                                  color: Colors.transparent,
-                                  width: 0.0,
-                                ),
-                                borderRadius: BorderRadius.circular(100.0),
-                              ),
                             ),
                           ),
-                        ].divide(SizedBox(height: 8.0)),
+                        ].divide(const SizedBox(height: 8.0)),
                       ),
                     ),
                   ),
@@ -10713,9 +10508,9 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
                       child: ListView(
-                        padding: EdgeInsets.fromLTRB(
+                        padding: const EdgeInsets.fromLTRB(
                           0,
                           16.0,
                           0,
@@ -10725,7 +10520,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                         scrollDirection: Axis.vertical,
                         children: [
                           Align(
-                            alignment: AlignmentDirectional(0.0, -1.0),
+                            alignment: const AlignmentDirectional(0.0, -1.0),
                             child: Container(
                               width: () {
                                 if (MediaQuery.sizeOf(context).width <
@@ -10776,7 +10571,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                   borderRadius: BorderRadius.circular(24.0),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsets.all(12.0),
+                                  padding: const EdgeInsets.all(12.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     crossAxisAlignment:
@@ -10789,7 +10584,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 0.0),
                                             child: Icon(
                                               Icons.auto_awesome_sharp,
@@ -10818,7 +10613,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                           .titleSmallIsCustom,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                       Container(
                                         width: double.infinity,
@@ -10829,7 +10624,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                               BorderRadius.circular(16.0),
                                         ),
                                         child: Padding(
-                                          padding: EdgeInsets.all(12.0),
+                                          padding: const EdgeInsets.all(12.0),
                                           child: Text(
                                             '1. fact that a reader will be distracted you can go around here curse you\'r so fucking good for me.\n2. fact that a reader will be distracted\n3. fact that a reader will be distracted\n4. fact that a reader will be distracted\n5. fact that a reader will be distracted\n6. fact that a reader will be distracted\n7. fact that a reader will be distracted\n8. fact that a reader will be distracted\n9. fact that a reader will be distracted\n10. fact that a reader will be distracted\n11. fact that a reader will be distracted\n12. fact that a reader will be distracted',
                                             textAlign: TextAlign.start,
@@ -10850,64 +10645,24 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                           ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 12.0)),
+                                    ].divide(const SizedBox(height: 12.0)),
                                   ),
                                 ),
                               ),
-                            ].divide(SizedBox(height: 12.0)),
+                            ].divide(const SizedBox(height: 12.0)),
                           ),
-                        ].divide(SizedBox(height: 24.0)),
+                        ].divide(const SizedBox(height: 24.0)),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
-                    child: FFButtonWidget(
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
+                    child: MainButton(
+                      text: 'กลับสู่หน้าหลัก',
                       onPressed: () async {
                         context.pushNamed(PlanForVisitWidget.routeName);
                       },
-                      text: 'กลับสู่หน้าหลัก',
-                      options: FFButtonOptions(
-                        width: double.infinity,
-                        height: () {
-                          if (MediaQuery.sizeOf(context).width <
-                              kBreakpointSmall) {
-                            return 48.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointMedium) {
-                            return 48.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointLarge) {
-                            return 56.0;
-                          } else {
-                            return 56.0;
-                          }
-                        }(),
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            16.0, 0.0, 16.0, 0.0),
-                        iconAlignment: IconAlignment.start,
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).customColor5,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .bodyMedium
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
-                              color: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: !FlutterFlowTheme.of(context)
-                                  .bodyMediumIsCustom,
-                            ),
-                        elevation: 0.0,
-                        borderSide: BorderSide(
-                          color: Colors.transparent,
-                          width: 0.0,
-                        ),
-                        borderRadius: BorderRadius.circular(100.0),
-                      ),
                     ),
                   ),
                 ],
@@ -10919,13 +10674,13 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      Color(0xFF339FF3),
+                      const Color(0xFF339FF3),
                       FlutterFlowTheme.of(context).primaryBackground,
                       FlutterFlowTheme.of(context).primaryBackground
                     ],
-                    stops: [0.0, 0.3, 1.0],
-                    begin: AlignmentDirectional(0.0, -1.0),
-                    end: AlignmentDirectional(0, 1.0),
+                    stops: const [0.0, 0.3, 1.0],
+                    begin: const AlignmentDirectional(0.0, -1.0),
+                    end: const AlignmentDirectional(0, 1.0),
                   ),
                   borderRadius: BorderRadius.circular(0.0),
                 ),

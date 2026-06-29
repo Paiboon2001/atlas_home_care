@@ -86,13 +86,13 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
             Container(
               width: 20.0,
               height: 20.0,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.transparent,
               ),
             ),
           ],
         ),
-        actions: [],
+        actions: const [],
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -103,7 +103,7 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
             height: double.infinity,
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).primaryBackground,
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(
                   blurRadius: 4.0,
                   color: Color(0x33000000),
@@ -113,7 +113,7 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
                   ),
                 )
               ],
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(24.0),
                 topRight: Radius.circular(24.0),
               ),
@@ -124,7 +124,7 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
               children: [
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 8.0, 16.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 8.0, 16.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -143,7 +143,7 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
                                   PointerDeviceKind.unknown
                                 },
                               ),
-                              child: Container(
+                              child: SizedBox(
                                 height: MediaQuery.of(context).size.height / 3,
                                 width: MediaQuery.of(context).size.width,
                                 child: CupertinoDatePicker(
@@ -165,7 +165,7 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Text(
                             valueOrDefault<String>(
                               dateTimeFormat("yyy", _model.datePicked),
@@ -196,9 +196,9 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
                 Expanded(
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: ListView(
-                      padding: EdgeInsets.fromLTRB(
+                      padding: const EdgeInsets.fromLTRB(
                         0,
                         0,
                         0,
@@ -239,20 +239,20 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
                                     fit: BoxFit.contain,
-                                    alignment: AlignmentDirectional(1.0, 1.0),
+                                    alignment: const AlignmentDirectional(1.0, 1.0),
                                     image: Image.network(
                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/siqke0letrhb/INHOMESSS_as.png',
                                     ).image,
                                   ),
                                   gradient: LinearGradient(
                                     colors: [
-                                      Color(0xFF92CCFF),
+                                      const Color(0xFF92CCFF),
                                       FlutterFlowTheme.of(context)
                                           .secondaryBackground
                                     ],
-                                    stops: [0.0, 0.5],
-                                    begin: AlignmentDirectional(1.0, 0.34),
-                                    end: AlignmentDirectional(-1.0, -0.34),
+                                    stops: const [0.0, 0.5],
+                                    begin: const AlignmentDirectional(1.0, 0.34),
+                                    end: const AlignmentDirectional(-1.0, -0.34),
                                   ),
                                   borderRadius: BorderRadius.circular(24.0),
                                 ),
@@ -265,11 +265,11 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 12.0, 0.0, 0.0),
                                           child: Container(
                                             decoration: BoxDecoration(
-                                              boxShadow: [
+                                              boxShadow: const [
                                                 BoxShadow(
                                                   blurRadius: 4.0,
                                                   color: Color(0x19000000),
@@ -281,17 +281,17 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
                                               ],
                                               gradient: LinearGradient(
                                                 colors: [
-                                                  Color(0xFF59C0EF),
+                                                  const Color(0xFF59C0EF),
                                                   FlutterFlowTheme.of(context)
                                                       .info
                                                 ],
-                                                stops: [0.0, 1.0],
-                                                begin: AlignmentDirectional(
+                                                stops: const [0.0, 1.0],
+                                                begin: const AlignmentDirectional(
                                                     1.0, -1.0),
-                                                end: AlignmentDirectional(
+                                                end: const AlignmentDirectional(
                                                     -1.0, 1.0),
                                               ),
-                                              borderRadius: BorderRadius.only(
+                                              borderRadius: const BorderRadius.only(
                                                 topRight:
                                                     Radius.circular(100.0),
                                                 bottomRight:
@@ -299,7 +299,7 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
                                               ),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       12.0, 6.0, 12.0, 6.0),
                                               child: Row(
@@ -307,7 +307,7 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
                                                 children: [
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Icon(
                                                       Icons.info_rounded,
@@ -332,7 +332,7 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
                                                               .secondaryBackground,
                                                           letterSpacing: 0.1,
                                                           shadows: [
-                                                            Shadow(
+                                                            const Shadow(
                                                               color: Color(
                                                                   0x34737373),
                                                               offset: Offset(
@@ -346,14 +346,14 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
                                                                   .bodyMediumIsCustom,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 8.0)),
+                                                ].divide(const SizedBox(width: 8.0)),
                                               ),
                                             ),
                                           ),
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 0.0, 16.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -376,7 +376,7 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
                                                                       context)
                                                                   .bodyMediumFamily,
                                                           color:
-                                                              Color(0xFF0779D3),
+                                                              const Color(0xFF0779D3),
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w500,
@@ -386,7 +386,7 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
                                                                   .bodyMediumIsCustom,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 8.0)),
+                                                ].divide(const SizedBox(width: 8.0)),
                                               ),
                                               Text(
                                                 'ผู้ประเมิน : นางวิมล สกล',
@@ -411,18 +411,18 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
                                                               .bodyMediumIsCustom,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(height: 8.0)),
+                                            ].divide(const SizedBox(height: 8.0)),
                                           ),
                                         ),
-                                      ].divide(SizedBox(height: 12.0)),
+                                      ].divide(const SizedBox(height: 12.0)),
                                     ),
                                   ],
                                 ),
                               ),
                             ),
-                          ].divide(SizedBox(height: 8.0)),
+                          ].divide(const SizedBox(height: 8.0)),
                         ),
-                      ].divide(SizedBox(height: 16.0)),
+                      ].divide(const SizedBox(height: 16.0)),
                     ),
                   ),
                 ),
@@ -430,7 +430,7 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
             ),
           ),
           Align(
-            alignment: AlignmentDirectional(0.0, 1.0),
+            alignment: const AlignmentDirectional(0.0, 1.0),
             child: InkWell(
               splashColor: Colors.transparent,
               focusColor: Colors.transparent,
@@ -442,7 +442,7 @@ class _InhomesssSummaryWidgetState extends State<InhomesssSummaryWidget> {
               child: wrapWithModel(
                 model: _model.startAsBottomModel,
                 updateCallback: () => safeSetState(() {}),
-                child: StartAsBottomWidget(
+                child: const StartAsBottomWidget(
                   text: 'เริ่มทำแบบประเมิน',
                 ),
               ),

@@ -1,3 +1,4 @@
+import '/components/main_button_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -62,8 +63,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -81,8 +82,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -94,8 +95,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -107,8 +108,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -120,8 +121,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -133,8 +134,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -146,8 +147,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -159,8 +160,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -172,8 +173,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -185,8 +186,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -198,8 +199,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -211,8 +212,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -224,8 +225,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -237,8 +238,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -250,8 +251,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -263,8 +264,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -276,8 +277,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -289,8 +290,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -302,8 +303,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -315,8 +316,8 @@ class _EightQWidgetState extends State<EightQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -454,7 +455,7 @@ class _EightQWidgetState extends State<EightQWidget>
             ),
           ],
         ),
-        actions: [],
+        actions: const [],
         centerTitle: false,
         elevation: 0.0,
       ),
@@ -464,13 +465,13 @@ class _EightQWidgetState extends State<EightQWidget>
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
           borderRadius: BorderRadius.circular(0.0),
         ),
@@ -502,10 +503,10 @@ class _EightQWidgetState extends State<EightQWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 8.0, 16.0, 0.0),
                             child: ListView(
-                              padding: EdgeInsets.fromLTRB(
+                              padding: const EdgeInsets.fromLTRB(
                                 0,
                                 16.0,
                                 0,
@@ -565,10 +566,10 @@ class _EightQWidgetState extends State<EightQWidget>
                                                   : FlutterFlowTheme.of(context)
                                                       .secondaryBackground
                                             ],
-                                            stops: [0.0, 1.0],
+                                            stops: const [0.0, 1.0],
                                             begin:
-                                                AlignmentDirectional(1.0, 0.34),
-                                            end: AlignmentDirectional(
+                                                const AlignmentDirectional(1.0, 0.34),
+                                            end: const AlignmentDirectional(
                                                 -1.0, -0.34),
                                           ),
                                           borderRadius:
@@ -578,7 +579,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                             color: _model.other01Value1 == true
                                                 ? FlutterFlowTheme.of(context)
                                                     .secondaryBackground
-                                                : Color(0xFFCED4E6),
+                                                : const Color(0xFFCED4E6),
                                             width: 1.0,
                                           ),
                                         ),
@@ -669,7 +670,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                               Theme(
                                                 data: ThemeData(
                                                   checkboxTheme:
-                                                      CheckboxThemeData(
+                                                      const CheckboxThemeData(
                                                     visualDensity:
                                                         VisualDensity.compact,
                                                     materialTapTargetSize:
@@ -678,7 +679,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                     shape: CircleBorder(),
                                                   ),
                                                   unselectedWidgetColor:
-                                                      Color(0xFFCED4E6),
+                                                      const Color(0xFFCED4E6),
                                                 ),
                                                 child: Checkbox(
                                                   value: _model
@@ -688,12 +689,12 @@ class _EightQWidgetState extends State<EightQWidget>
                                                         _model.other01Value1 =
                                                             newValue!);
                                                   },
-                                                  side: (Color(0xFFCED4E6) !=
+                                                  side: (const Color(0xFFCED4E6) !=
                                                           null)
                                                       ? BorderSide(
                                                           width: 2,
-                                                          color: Color(
-                                                              0xFFCED4E6)!,
+                                                          color: const Color(
+                                                              0xFFCED4E6),
                                                         )
                                                       : null,
                                                   activeColor:
@@ -732,7 +733,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               .labelSmallIsCustom,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(width: 4.0)),
+                                            ].divide(const SizedBox(width: 4.0)),
                                           ),
                                         ),
                                       ),
@@ -784,10 +785,10 @@ class _EightQWidgetState extends State<EightQWidget>
                                                   : FlutterFlowTheme.of(context)
                                                       .secondaryBackground
                                             ],
-                                            stops: [0.0, 1.0],
+                                            stops: const [0.0, 1.0],
                                             begin:
-                                                AlignmentDirectional(1.0, 0.34),
-                                            end: AlignmentDirectional(
+                                                const AlignmentDirectional(1.0, 0.34),
+                                            end: const AlignmentDirectional(
                                                 -1.0, -0.34),
                                           ),
                                           borderRadius:
@@ -797,7 +798,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                             color: _model.other01Value2 == true
                                                 ? FlutterFlowTheme.of(context)
                                                     .secondaryBackground
-                                                : Color(0xFFCED4E6),
+                                                : const Color(0xFFCED4E6),
                                             width: 1.0,
                                           ),
                                         ),
@@ -888,7 +889,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                               Theme(
                                                 data: ThemeData(
                                                   checkboxTheme:
-                                                      CheckboxThemeData(
+                                                      const CheckboxThemeData(
                                                     visualDensity:
                                                         VisualDensity.compact,
                                                     materialTapTargetSize:
@@ -897,7 +898,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                     shape: CircleBorder(),
                                                   ),
                                                   unselectedWidgetColor:
-                                                      Color(0xFFCED4E6),
+                                                      const Color(0xFFCED4E6),
                                                 ),
                                                 child: Checkbox(
                                                   value: _model
@@ -907,12 +908,12 @@ class _EightQWidgetState extends State<EightQWidget>
                                                         _model.other01Value2 =
                                                             newValue!);
                                                   },
-                                                  side: (Color(0xFFCED4E6) !=
+                                                  side: (const Color(0xFFCED4E6) !=
                                                           null)
                                                       ? BorderSide(
                                                           width: 2,
-                                                          color: Color(
-                                                              0xFFCED4E6)!,
+                                                          color: const Color(
+                                                              0xFFCED4E6),
                                                         )
                                                       : null,
                                                   activeColor:
@@ -951,19 +952,19 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               .labelSmallIsCustom,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(width: 4.0)),
+                                            ].divide(const SizedBox(width: 4.0)),
                                           ),
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(width: 8.0)),
+                                  ].divide(const SizedBox(width: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -1011,7 +1012,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .labelMediumFamily,
-                                                    color: Color(0xFF077DD7),
+                                                    color: const Color(0xFF077DD7),
                                                     letterSpacing: 0.0,
                                                     lineHeight: 1.6,
                                                     useGoogleFonts:
@@ -1024,7 +1025,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -1074,7 +1075,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               '1';
                                                           safeSetState(() {});
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -1085,7 +1086,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: NineoneWidget(
+                                                          child: const NineoneWidget(
                                                             num: '0',
                                                             text: 'ไม่มี',
                                                             nineq: '1',
@@ -1118,7 +1119,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               '2';
                                                           safeSetState(() {});
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -1129,7 +1130,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: NineoneWidget(
+                                                          child: const NineoneWidget(
                                                             num: '1',
                                                             text: 'มี',
                                                             nineq: '2',
@@ -1166,7 +1167,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -1214,7 +1215,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .labelMediumFamily,
-                                                    color: Color(0xFF077DD7),
+                                                    color: const Color(0xFF077DD7),
                                                     letterSpacing: 0.0,
                                                     lineHeight: 1.6,
                                                     useGoogleFonts:
@@ -1227,7 +1228,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -1277,7 +1278,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               '1';
                                                           safeSetState(() {});
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -1288,7 +1289,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: NinetwoWidget(
+                                                          child: const NinetwoWidget(
                                                             num: '0',
                                                             text: 'ไม่มี',
                                                             nineq: '1',
@@ -1321,7 +1322,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               '2';
                                                           safeSetState(() {});
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -1332,7 +1333,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: NinetwoWidget(
+                                                          child: const NinetwoWidget(
                                                             num: '2',
                                                             text: 'มี',
                                                             nineq: '2',
@@ -1369,7 +1370,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -1421,7 +1422,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                                     context)
                                                                 .labelMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         lineHeight: 1.6,
                                                         useGoogleFonts:
@@ -1434,7 +1435,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                     crossAxisCount: 2,
                                                   ),
                                                   crossAxisSpacing: () {
@@ -1493,7 +1494,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                                   () {});
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -1507,7 +1508,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  NinethreeWidget(
+                                                                  const NinethreeWidget(
                                                                 num: '0',
                                                                 text: 'ไม่มี',
                                                                 nineq: '1',
@@ -1549,7 +1550,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                                   () {});
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -1563,7 +1564,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  NinethreeWidget(
+                                                                  const NinethreeWidget(
                                                                 num: '6',
                                                                 text: 'มี',
                                                                 nineq: '2',
@@ -1638,7 +1639,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                                       context)
                                                                   .labelMediumFamily,
                                                           color:
-                                                              Color(0xFF077DD7),
+                                                              const Color(0xFF077DD7),
                                                           letterSpacing: 0.0,
                                                           lineHeight: 1.6,
                                                           useGoogleFonts:
@@ -1651,7 +1652,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                     physics:
                                                         const NeverScrollableScrollPhysics(),
                                                     gridDelegate:
-                                                        SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                        const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                       crossAxisCount: 2,
                                                     ),
                                                     crossAxisSpacing: () {
@@ -1710,7 +1711,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                                     () {});
                                                                 await Future
                                                                     .delayed(
-                                                                  Duration(
+                                                                  const Duration(
                                                                     milliseconds:
                                                                         100,
                                                                   ),
@@ -1724,7 +1725,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                                     safeSetState(
                                                                         () {}),
                                                                 child:
-                                                                    NineforeWidget(
+                                                                    const NineforeWidget(
                                                                   num: '0',
                                                                   text: 'ได้',
                                                                   nineq: '1',
@@ -1762,7 +1763,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                                     () {});
                                                                 await Future
                                                                     .delayed(
-                                                                  Duration(
+                                                                  const Duration(
                                                                     milliseconds:
                                                                         100,
                                                                   ),
@@ -1776,7 +1777,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                                     safeSetState(
                                                                         () {}),
                                                                 child:
-                                                                    NineforeWidget(
+                                                                    const NineforeWidget(
                                                                   num: '8',
                                                                   text:
                                                                       'ไม่ได้',
@@ -1816,7 +1817,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -1864,7 +1865,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .labelMediumFamily,
-                                                    color: Color(0xFF077DD7),
+                                                    color: const Color(0xFF077DD7),
                                                     letterSpacing: 0.0,
                                                     lineHeight: 1.6,
                                                     useGoogleFonts:
@@ -1877,7 +1878,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -1927,7 +1928,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               .nineseven = '1';
                                                           safeSetState(() {});
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -1939,7 +1940,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               safeSetState(
                                                                   () {}),
                                                           child:
-                                                              NinesevenWidget(
+                                                              const NinesevenWidget(
                                                             num: '0',
                                                             text: 'ไม่มี',
                                                             nineq: '1',
@@ -1972,7 +1973,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               .nineseven = '2';
                                                           safeSetState(() {});
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -1984,7 +1985,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               safeSetState(
                                                                   () {}),
                                                           child:
-                                                              NinesevenWidget(
+                                                              const NinesevenWidget(
                                                             num: '8',
                                                             text: 'มี',
                                                             nineq: '2',
@@ -2021,7 +2022,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -2069,7 +2070,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .labelMediumFamily,
-                                                    color: Color(0xFF077DD7),
+                                                    color: const Color(0xFF077DD7),
                                                     letterSpacing: 0.0,
                                                     lineHeight: 1.6,
                                                     useGoogleFonts:
@@ -2082,7 +2083,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -2132,7 +2133,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               .ninefive = '1';
                                                           safeSetState(() {});
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -2143,7 +2144,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: NinefiveWidget(
+                                                          child: const NinefiveWidget(
                                                             num: '0',
                                                             text: 'ไม่มี',
                                                             nineq: '1',
@@ -2176,7 +2177,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               .ninefive = '2';
                                                           safeSetState(() {});
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -2187,7 +2188,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: NinefiveWidget(
+                                                          child: const NinefiveWidget(
                                                             num: '9',
                                                             text: 'มี',
                                                             nineq: '2',
@@ -2224,7 +2225,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -2272,7 +2273,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .labelMediumFamily,
-                                                    color: Color(0xFF077DD7),
+                                                    color: const Color(0xFF077DD7),
                                                     letterSpacing: 0.0,
                                                     lineHeight: 1.6,
                                                     useGoogleFonts:
@@ -2285,7 +2286,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -2335,7 +2336,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               '1';
                                                           safeSetState(() {});
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -2346,7 +2347,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: NinesixWidget(
+                                                          child: const NinesixWidget(
                                                             num: '0',
                                                             text: 'ไม่มี',
                                                             nineq: '1',
@@ -2379,7 +2380,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               '2';
                                                           safeSetState(() {});
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -2390,7 +2391,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: NinesixWidget(
+                                                          child: const NinesixWidget(
                                                             num: '4',
                                                             text: 'มี',
                                                             nineq: '2',
@@ -2427,7 +2428,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -2475,7 +2476,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .labelMediumFamily,
-                                                    color: Color(0xFF077DD7),
+                                                    color: const Color(0xFF077DD7),
                                                     letterSpacing: 0.0,
                                                     lineHeight: 1.6,
                                                     useGoogleFonts:
@@ -2488,7 +2489,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -2538,7 +2539,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               .nineeight = '1';
                                                           safeSetState(() {});
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -2550,7 +2551,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               safeSetState(
                                                                   () {}),
                                                           child:
-                                                              NineeightWidget(
+                                                              const NineeightWidget(
                                                             num: '0',
                                                             text: 'ไม่มี',
                                                             nineq: '1',
@@ -2583,7 +2584,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               .nineeight = '2';
                                                           safeSetState(() {});
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -2595,7 +2596,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               safeSetState(
                                                                   () {}),
                                                           child:
-                                                              NineeightWidget(
+                                                              const NineeightWidget(
                                                             num: '10',
                                                             text: 'มี',
                                                             nineq: '2',
@@ -2632,7 +2633,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -2680,7 +2681,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .labelMediumFamily,
-                                                    color: Color(0xFF077DD7),
+                                                    color: const Color(0xFF077DD7),
                                                     letterSpacing: 0.0,
                                                     lineHeight: 1.6,
                                                     useGoogleFonts:
@@ -2693,7 +2694,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -2743,7 +2744,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               .ninenine = '1';
                                                           safeSetState(() {});
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -2754,7 +2755,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: NinenineWidget(
+                                                          child: const NinenineWidget(
                                                             num: '0',
                                                             text: 'ไม่มี',
                                                             nineq: '1',
@@ -2787,7 +2788,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                               .ninenine = '2';
                                                           safeSetState(() {});
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -2798,7 +2799,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: NinenineWidget(
+                                                          child: const NinenineWidget(
                                                             num: '4',
                                                             text: 'มี',
                                                             nineq: '2',
@@ -2833,49 +2834,16 @@ class _EightQWidgetState extends State<EightQWidget>
                                         ),
                                       ),
                                     ),
-                                    FFButtonWidget(
+                                    MainButton(
+                                      text: 'บันทึก',
                                       onPressed: () async {
                                         _model.nineq = 2;
                                         safeSetState(() {});
                                       },
-                                      text: 'บันทึก',
-                                      options: FFButtonOptions(
-                                        width: double.infinity,
-                                        height: 48.0,
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            16.0, 0.0, 16.0, 0.0),
-                                        iconAlignment: IconAlignment.start,
-                                        iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
-                                                0.0, 0.0, 0.0, 0.0),
-                                        color: FlutterFlowTheme.of(context)
-                                            .customColor5,
-                                        textStyle: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
-                                              letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  !FlutterFlowTheme.of(context)
-                                                      .bodyMediumIsCustom,
-                                            ),
-                                        elevation: 0.0,
-                                        borderSide: BorderSide(
-                                          color: Colors.transparent,
-                                          width: 0.0,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(100.0),
-                                      ),
                                     ),
-                                  ].divide(SizedBox(height: 12.0)),
+                                  ].divide(const SizedBox(height: 12.0)),
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -2883,7 +2851,7 @@ class _EightQWidgetState extends State<EightQWidget>
                     );
                   } else if (_model.nineq == 2) {
                     return ListView(
-                      padding: EdgeInsets.fromLTRB(
+                      padding: const EdgeInsets.fromLTRB(
                         0,
                         8.0,
                         0,
@@ -2893,7 +2861,7 @@ class _EightQWidgetState extends State<EightQWidget>
                       scrollDirection: Axis.vertical,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, -1.0),
+                          alignment: const AlignmentDirectional(0.0, -1.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
                             child: Image.network(
@@ -2932,7 +2900,7 @@ class _EightQWidgetState extends State<EightQWidget>
                         ),
                         if (FFAppState().gay == true)
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               width: double.infinity,
@@ -2942,7 +2910,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                 borderRadius: BorderRadius.circular(24.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -2971,7 +2939,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                         .labelSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     Text(
                                       'คุณได้ 1 คะแนน',
@@ -3012,7 +2980,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                             BorderRadius.circular(16.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(12.0),
+                                        padding: const EdgeInsets.all(12.0),
                                         child: Text(
                                           'ไม่เป็นโรคซึมเศร้า เพราะอารมณ์ยังคงอยู่ในเกณฑ์ปกติ ยังสามารถรู้สึกสนุก เพลิดเพลิน หรือมีกำลังใจในการทำสิ่งต่าง ๆไม่มีความคิดด้านลบหรือสิ้นหวังกับชีวิต',
                                           textAlign: TextAlign.start,
@@ -3033,7 +3001,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 16.0, 0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
@@ -3057,11 +3025,11 @@ class _EightQWidgetState extends State<EightQWidget>
                                           width: double.infinity,
                                           height: 48.0,
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           iconAlignment: IconAlignment.start,
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: FlutterFlowTheme.of(context)
                                               .customColor5,
@@ -3087,14 +3055,14 @@ class _EightQWidgetState extends State<EightQWidget>
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 16.0)),
+                                  ].divide(const SizedBox(height: 16.0)),
                                 ),
                               ),
                             ),
                           ),
                         if (FFAppState().gay == false)
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               width: double.infinity,
@@ -3104,7 +3072,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                 borderRadius: BorderRadius.circular(24.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -3133,7 +3101,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                                         .labelSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     Text(
                                       'คุณได้ 17 คะแนน',
@@ -3168,12 +3136,12 @@ class _EightQWidgetState extends State<EightQWidget>
                                     Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFFFEDED),
+                                        color: const Color(0xFFFFEDED),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(12.0),
+                                        padding: const EdgeInsets.all(12.0),
                                         child: Text(
                                           'เป็นผู้มีความเสี่ยงโรคซึมเศร้า เพราะมีเหตุให้เกิดการกระทบกระทั้งจิตใจทำให้มีอาการวิตกกังวล และมีความคิดด้านลบหรือสิ้นหวังกับชีวิต',
                                           textAlign: TextAlign.start,
@@ -3194,7 +3162,7 @@ class _EightQWidgetState extends State<EightQWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 16.0, 0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
@@ -3218,11 +3186,11 @@ class _EightQWidgetState extends State<EightQWidget>
                                           width: double.infinity,
                                           height: 48.0,
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           iconAlignment: IconAlignment.start,
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: FlutterFlowTheme.of(context)
                                               .customColor5,
@@ -3248,12 +3216,12 @@ class _EightQWidgetState extends State<EightQWidget>
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 16.0)),
+                                  ].divide(const SizedBox(height: 16.0)),
                                 ),
                               ),
                             ),
                           ),
-                      ].divide(SizedBox(height: 24.0)),
+                      ].divide(const SizedBox(height: 24.0)),
                     );
                   } else {
                     return Container(

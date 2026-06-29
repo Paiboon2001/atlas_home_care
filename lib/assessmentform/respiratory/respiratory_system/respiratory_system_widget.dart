@@ -60,8 +60,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -79,8 +79,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -98,8 +98,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -117,8 +117,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -136,8 +136,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -155,8 +155,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -168,8 +168,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -181,8 +181,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -194,8 +194,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -207,8 +207,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -220,8 +220,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -233,8 +233,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -246,8 +246,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -259,8 +259,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -272,8 +272,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -285,8 +285,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -298,8 +298,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -311,8 +311,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -324,8 +324,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -337,8 +337,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -350,8 +350,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -363,8 +363,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -376,8 +376,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -389,8 +389,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -402,8 +402,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -415,8 +415,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -428,8 +428,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -441,8 +441,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -454,8 +454,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -467,8 +467,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -480,8 +480,8 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -734,7 +734,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
             ),
           ],
         ),
-        actions: [],
+        actions: const [],
         centerTitle: false,
         elevation: 0.0,
       ),
@@ -744,13 +744,13 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
           borderRadius: BorderRadius.circular(0.0),
         ),
@@ -783,7 +783,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -793,7 +793,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -803,7 +803,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -813,7 +813,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -822,7 +822,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -895,7 +895,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -951,7 +951,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().nineone = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -962,7 +962,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.nineoneModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '1',
                                                 text: 'ตลอดเวลา',
                                                 nineq: '1',
@@ -989,7 +989,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().nineone = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1000,7 +1000,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.nineoneModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '2',
                                                 text: 'บ่อยมาก',
                                                 nineq: '2',
@@ -1027,7 +1027,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().nineone = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1038,7 +1038,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.nineoneModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '3',
                                                 text: 'บางครั้ง',
                                                 nineq: '3',
@@ -1065,7 +1065,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().nineone = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1076,7 +1076,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.nineoneModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '4',
                                                 text: 'น้อยมาก',
                                                 nineq: '4',
@@ -1103,7 +1103,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().nineone = '5';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1114,7 +1114,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.nineoneModel5,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '5',
                                                 text: 'ไม่เคยเลย',
                                                 nineq: '5',
@@ -1127,7 +1127,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -1167,7 +1167,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1177,7 +1177,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1187,7 +1187,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1196,7 +1196,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -1269,7 +1269,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -1325,7 +1325,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().ninetwo = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1336,7 +1336,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.ninetwoModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '1',
                                                 text: 'มากกว่า 1 ครั้งต่อวัน',
                                                 nineq: '1',
@@ -1363,7 +1363,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().ninetwo = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1374,7 +1374,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.ninetwoModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '2',
                                                 text: 'วันละครั้ง',
                                                 nineq: '2',
@@ -1401,7 +1401,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().ninetwo = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1412,7 +1412,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.ninetwoModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '3',
                                                 text: '3-6 ครั้งต่อสัปดาห์',
                                                 nineq: '3',
@@ -1439,7 +1439,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().ninetwo = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1450,7 +1450,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.ninetwoModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '4',
                                                 text: '1-2 สัปดาห์ต่อครั้ง',
                                                 nineq: '4',
@@ -1477,7 +1477,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().ninetwo = '5';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1488,7 +1488,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.ninetwoModel5,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '5',
                                                 text: 'ไม่เคยเลย',
                                                 nineq: '5',
@@ -1501,7 +1501,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -1552,7 +1552,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1562,7 +1562,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1571,7 +1571,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -1644,7 +1644,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -1700,7 +1700,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().ninethree = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1711,7 +1711,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.ninethreeModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '1',
                                                 text:
                                                     '4 คืนหรือมากกว่าต่อสัปดาห์',
@@ -1739,7 +1739,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().ninethree = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1750,7 +1750,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.ninethreeModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '2',
                                                 text: '2-3 คืนต่อสัปดาห์',
                                                 nineq: '2',
@@ -1777,7 +1777,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().ninethree = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1788,7 +1788,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.ninethreeModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '3',
                                                 text: '1 คืนต่อสัปดาห์',
                                                 nineq: '3',
@@ -1815,7 +1815,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().ninethree = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1826,7 +1826,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.ninethreeModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '4',
                                                 text: '1-2 คืน',
                                                 nineq: '4',
@@ -1853,7 +1853,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().ninethree = '5';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1864,7 +1864,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.ninethreeModel5,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '5',
                                                 text: 'ไม่เคยเลย',
                                                 nineq: '5',
@@ -1877,7 +1877,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -1939,7 +1939,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1948,7 +1948,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -2021,7 +2021,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -2077,7 +2077,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().ninefore = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2088,7 +2088,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.nineforeModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '1',
                                                 text:
                                                     '3 ครั้งหรือมากกว่าต่อวัน',
@@ -2116,7 +2116,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().ninefore = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2127,7 +2127,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.nineforeModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '2',
                                                 text: '1-2 ครั้งต่อวัน',
                                                 nineq: '2',
@@ -2154,7 +2154,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().ninefore = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2165,7 +2165,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.nineforeModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '3',
                                                 text: '2-3 ครั้งต่อสัปดาห์',
                                                 nineq: '3',
@@ -2192,7 +2192,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().ninefore = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2203,7 +2203,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.nineforeModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '4',
                                                 text:
                                                     '1 ครั้งต่อสัปดาห์หรือน้อยกว่า',
@@ -2231,7 +2231,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               FFAppState().ninefore = '5';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2242,7 +2242,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                               model: _model.nineforeModel5,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '5',
                                                 text: 'ไม่เคยเลย',
                                                 nineq: '5',
@@ -2255,7 +2255,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -2334,7 +2334,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 24.0, 16.0, 0.0),
                                 child: ListView(
                                   padding: EdgeInsets.zero,
@@ -2416,7 +2416,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                       physics:
                                           const NeverScrollableScrollPhysics(),
                                       gridDelegate:
-                                          SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                          const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                         crossAxisCount: 1,
                                       ),
                                       crossAxisSpacing: () {
@@ -2473,7 +2473,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                                   FFAppState().ninefive = '1';
                                                   safeSetState(() {});
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -2482,7 +2482,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                                   model: _model.ninefiveModel1,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: NinefiveWidget(
+                                                  child: const NinefiveWidget(
                                                     num: '1',
                                                     text: 'ควบคุมไม่ได้',
                                                     nineq: '1',
@@ -2510,7 +2510,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                                   FFAppState().ninefive = '2';
                                                   safeSetState(() {});
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -2519,7 +2519,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                                   model: _model.ninefiveModel2,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: NinefiveWidget(
+                                                  child: const NinefiveWidget(
                                                     num: '2',
                                                     text: 'ควบคุมได้ไม่ค่อยดี',
                                                     nineq: '2',
@@ -2547,7 +2547,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                                   FFAppState().ninefive = '3';
                                                   safeSetState(() {});
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -2556,7 +2556,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                                   model: _model.ninefiveModel3,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: NinefiveWidget(
+                                                  child: const NinefiveWidget(
                                                     num: '3',
                                                     text: 'ควบคุมได้บ้าง',
                                                     nineq: '3',
@@ -2584,7 +2584,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                                   FFAppState().ninefive = '4';
                                                   safeSetState(() {});
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -2593,7 +2593,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                                   model: _model.ninefiveModel4,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: NinefiveWidget(
+                                                  child: const NinefiveWidget(
                                                     num: '4',
                                                     text: 'ควบคุมได้ดี',
                                                     nineq: '4',
@@ -2621,7 +2621,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                                   FFAppState().ninefive = '5';
                                                   safeSetState(() {});
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -2630,7 +2630,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                                   model: _model.ninefiveModel5,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: NinefiveWidget(
+                                                  child: const NinefiveWidget(
                                                     num: '5',
                                                     text: 'ควบคุมได้สมบูรณ์',
                                                     nineq: '5',
@@ -2643,14 +2643,14 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                         ][index]();
                                       },
                                     ),
-                                  ].divide(SizedBox(height: 24.0)),
+                                  ].divide(const SizedBox(height: 24.0)),
                                 ),
                               ),
                             ),
                           ],
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -2663,7 +2663,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                             child: wrapWithModel(
                               model: _model.startAsBottomModel,
                               updateCallback: () => safeSetState(() {}),
-                              child: StartAsBottomWidget(
+                              child: const StartAsBottomWidget(
                                 text: 'บันทึก',
                               ),
                             ),
@@ -2673,7 +2673,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                     );
                   } else if (_model.nineq == 6) {
                     return ListView(
-                      padding: EdgeInsets.fromLTRB(
+                      padding: const EdgeInsets.fromLTRB(
                         0,
                         8.0,
                         0,
@@ -2683,7 +2683,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                       scrollDirection: Axis.vertical,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, -1.0),
+                          alignment: const AlignmentDirectional(0.0, -1.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
                             child: Image.network(
@@ -2721,7 +2721,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Container(
                             width: double.infinity,
@@ -2731,7 +2731,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                               borderRadius: BorderRadius.circular(24.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -2759,7 +2759,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                                       .labelSmallIsCustom,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                   Text(
                                     'คุณได้ 6 คะแนน',
@@ -2785,7 +2785,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                       borderRadius: BorderRadius.circular(16.0),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(12.0),
+                                      padding: const EdgeInsets.all(12.0),
                                       child: Text(
                                         'เป็นผู้มีความเสี่ยงโรคซึมเศร้า เพราะมีเหตุให้เกิดการกระทบกระทั้งจิตใจทำให้มีอาการวิตกกังวล และมีความคิดด้านลบหรือสิ้นหวังกับชีวิต',
                                         textAlign: TextAlign.start,
@@ -2805,7 +2805,7 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 16.0, 0.0, 0.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
@@ -2824,11 +2824,11 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                       options: FFButtonOptions(
                                         width: double.infinity,
                                         height: 48.0,
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         iconAlignment: IconAlignment.start,
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
                                         color: FlutterFlowTheme.of(context)
                                             .customColor5,
@@ -2852,12 +2852,12 @@ class _RespiratorySystemWidgetState extends State<RespiratorySystemWidget>
                                       ),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 16.0)),
+                                ].divide(const SizedBox(height: 16.0)),
                               ),
                             ),
                           ),
                         ),
-                      ].divide(SizedBox(height: 24.0)),
+                      ].divide(const SizedBox(height: 24.0)),
                     );
                   } else {
                     return Container(
