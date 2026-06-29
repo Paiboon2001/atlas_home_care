@@ -122,20 +122,9 @@ class _ForgetPinWidgetState extends State<ForgetPinWidget>
               return 400.0;
             }
           }(),
-          height: () {
-            if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
-              return 400.0;
-            } else if (MediaQuery.sizeOf(context).width < kBreakpointMedium) {
-              return 400.0;
-            } else if (MediaQuery.sizeOf(context).width < kBreakpointLarge) {
-              return 400.0;
-            } else {
-              return 400.0;
-            }
-          }(),
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).secondaryBackground,
-            borderRadius: BorderRadius.circular(32.0),
+            borderRadius: BorderRadius.circular(40.0),
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -213,26 +202,26 @@ class _ForgetPinWidgetState extends State<ForgetPinWidget>
                   ),
                 ),
               ),
-              Expanded(
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'หากลืมรหัส PIN กรุณาออกจากระบบ\nเพื่อเข้าสู่ระบบใหม่อีกครั้ง',
-                      textAlign: TextAlign.center,
-                      style: FlutterFlowTheme.of(context).titleSmall.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).titleSmallFamily,
-                            letterSpacing: 0.0,
-                            lineHeight: 1.8,
-                            useGoogleFonts: !FlutterFlowTheme.of(context)
-                                .titleSmallIsCustom,
-                          ),
-                    ),
-                  ],
-                ),
+              const SizedBox(height: 32.0),
+              Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'หากลืมรหัส PIN กรุณาออกจากระบบ\nเพื่อเข้าสู่ระบบใหม่อีกครั้ง',
+                    textAlign: TextAlign.center,
+                    style: FlutterFlowTheme.of(context).titleSmall.override(
+                          fontFamily:
+                              FlutterFlowTheme.of(context).titleSmallFamily,
+                          letterSpacing: 0.0,
+                          lineHeight: 1.8,
+                          useGoogleFonts: !FlutterFlowTheme.of(context)
+                              .titleSmallIsCustom,
+                        ),
+                  ),
+                ],
               ),
+              const SizedBox(height: 32.0),
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
                 child: Row(
@@ -257,7 +246,7 @@ class _ForgetPinWidgetState extends State<ForgetPinWidget>
                     ),
                     Expanded(
                       child: MainButton(
-                        text: 'ยืนยัน',
+                        text: 'ออกจากระบบ',
                         onPressed: () async {
                           context.pushNamed(LoginWidget.routeName);
                         },
