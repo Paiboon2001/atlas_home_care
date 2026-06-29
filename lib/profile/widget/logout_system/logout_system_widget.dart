@@ -1,16 +1,12 @@
+import '/components/main_button_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/utils/botton_cancel/botton_cancel_widget.dart';
-import 'dart:math';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'logout_system_model.dart';
 export 'logout_system_model.dart';
 
@@ -249,45 +245,11 @@ class _LogoutSystemWidgetState extends State<LogoutSystemWidget>
                       ),
                     ),
                     Expanded(
-                      child: FFButtonWidget(
+                      child: MainButton(
+                        text: 'ยืนยัน',
                         onPressed: () async {
                           context.pushNamed(LoginWidget.routeName);
                         },
-                        text: 'ยืนยัน',
-                        options: FFButtonOptions(
-                          height: () {
-                            if (MediaQuery.sizeOf(context).width <
-                                kBreakpointSmall) {
-                              return 48.0;
-                            } else if (MediaQuery.sizeOf(context).width <
-                                kBreakpointMedium) {
-                              return 48.0;
-                            } else if (MediaQuery.sizeOf(context).width <
-                                kBreakpointLarge) {
-                              return 56.0;
-                            } else {
-                              return 56.0;
-                            }
-                          }(),
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              16.0, 0.0, 16.0, 0.0),
-                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 0.0),
-                          color: FlutterFlowTheme.of(context).customColor5,
-                          textStyle: FlutterFlowTheme.of(context)
-                              .labelMedium
-                              .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .labelMediumFamily,
-                                color: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
-                                letterSpacing: 0.0,
-                                useGoogleFonts: !FlutterFlowTheme.of(context)
-                                    .labelMediumIsCustom,
-                              ),
-                          elevation: 0.0,
-                          borderRadius: BorderRadius.circular(100.0),
-                        ),
                       ),
                     ),
                   ].divide(const SizedBox(width: 12.0)),

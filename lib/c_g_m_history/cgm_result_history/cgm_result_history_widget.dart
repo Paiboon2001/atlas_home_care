@@ -1,13 +1,9 @@
 import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import '/custom_code/widgets/index.dart' as custom_widgets;
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 import 'cgm_result_history_model.dart';
 export 'cgm_result_history_model.dart';
@@ -525,10 +521,10 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                       ),
-                                      child: SizedBox(
+                                      child: const SizedBox(
                                         width: double.infinity,
                                         height: double.infinity,
-                                        child: const custom_widgets.CGMChart(
+                                        child: custom_widgets.CGMChart(
                                           width: double.infinity,
                                           height: double.infinity,
                                         ),
@@ -547,10 +543,10 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                       ),
-                                      child: SizedBox(
+                                      child: const SizedBox(
                                         width: double.infinity,
                                         height: double.infinity,
-                                        child: const custom_widgets.CGMChart(
+                                        child: custom_widgets.CGMChart(
                                           width: double.infinity,
                                           height: double.infinity,
                                         ),
@@ -569,10 +565,10 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                       ),
-                                      child: SizedBox(
+                                      child: const SizedBox(
                                         width: double.infinity,
                                         height: double.infinity,
-                                        child: const custom_widgets.CGMChart(
+                                        child: custom_widgets.CGMChart(
                                           width: double.infinity,
                                           height: double.infinity,
                                         ),
@@ -591,10 +587,10 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                       ),
-                                      child: SizedBox(
+                                      child: const SizedBox(
                                         width: double.infinity,
                                         height: double.infinity,
-                                        child: const custom_widgets.CGMChart(
+                                        child: custom_widgets.CGMChart(
                                           width: double.infinity,
                                           height: double.infinity,
                                         ),

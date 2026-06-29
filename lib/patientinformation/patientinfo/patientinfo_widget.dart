@@ -49,9 +49,9 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
             backgroundColor: Colors.transparent,
             alignment: const AlignmentDirectional(0.0, 1.0)
                 .resolve(Directionality.of(context)),
-            child: SizedBox(
+            child: const SizedBox(
               width: 180.0,
-              child: const SucessWidget(),
+              child: SucessWidget(),
             ),
           );
         },

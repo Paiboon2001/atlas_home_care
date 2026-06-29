@@ -1,3 +1,4 @@
+import '/components/main_button_widget.dart';
 import '/assessmentform/highbloodpressure/widget/bloodpage/bloodpage_widget.dart';
 import '/assessmentform/highbloodpressure/widget/drink/drink_widget.dart';
 import '/assessmentform/highbloodpressure/widget/many_al/many_al_widget.dart';
@@ -70,8 +71,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -89,8 +90,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -108,8 +109,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -127,8 +128,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -146,8 +147,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -165,8 +166,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -184,8 +185,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -197,8 +198,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -210,8 +211,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -223,8 +224,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -236,8 +237,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -249,8 +250,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -262,8 +263,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -275,8 +276,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -288,8 +289,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -301,8 +302,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -314,8 +315,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -327,8 +328,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -340,8 +341,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -353,8 +354,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -366,8 +367,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -379,8 +380,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -392,8 +393,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -405,8 +406,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -418,8 +419,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -431,8 +432,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -444,8 +445,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -457,8 +458,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -470,8 +471,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -483,8 +484,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -496,8 +497,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -509,8 +510,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -522,8 +523,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -535,8 +536,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -548,8 +549,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -561,8 +562,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -574,8 +575,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -587,8 +588,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -600,8 +601,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -613,8 +614,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -626,8 +627,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -639,8 +640,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -652,8 +653,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -665,8 +666,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -678,8 +679,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -691,8 +692,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -704,8 +705,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -717,8 +718,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -730,8 +731,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -743,8 +744,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -756,8 +757,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -769,8 +770,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -782,8 +783,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -795,8 +796,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -808,8 +809,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -821,8 +822,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -834,8 +835,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -847,8 +848,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -860,8 +861,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -873,8 +874,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -886,8 +887,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -899,8 +900,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -912,8 +913,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -925,8 +926,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -938,8 +939,8 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -1203,13 +1204,13 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: FlutterFlowIconButton(
                 borderColor: Colors.transparent,
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 40.0,
-                icon: Icon(
+                icon: const Icon(
                   Icons.close_rounded,
                   color: Colors.white,
                   size: 24.0,
@@ -1221,7 +1222,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
             ),
           ],
         ),
-        actions: [],
+        actions: const [],
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -1231,13 +1232,13 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
           borderRadius: BorderRadius.circular(0.0),
         ),
@@ -1273,7 +1274,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -1284,7 +1285,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -1295,7 +1296,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -1306,7 +1307,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -1317,7 +1318,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -1327,10 +1328,10 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 8.0, 0.0, 0.0),
                                 child: ListView(
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     16.0,
                                     0,
@@ -1340,7 +1341,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                   scrollDirection: Axis.vertical,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -1419,7 +1420,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                             physics:
                                                 const NeverScrollableScrollPhysics(),
                                             gridDelegate:
-                                                SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                               crossAxisCount: 2,
                                             ),
                                             crossAxisSpacing: () {
@@ -1483,7 +1484,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .cbClickModel1,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'เบาหวาน',
                                                         ),
                                                       ),
@@ -1507,7 +1508,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .cbClickModel2,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text:
                                                               'ความดันโลหิตสูง',
                                                         ),
@@ -1532,7 +1533,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .cbClickModel3,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'โรคเก๊าท์',
                                                         ),
                                                       ),
@@ -1556,7 +1557,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .cbClickModel4,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'ไตวายเรื้อรัง',
                                                         ),
                                                       ),
@@ -1580,7 +1581,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .cbClickModel5,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text:
                                                               'กล้ามเนื้อหัวใจตาย',
                                                         ),
@@ -1605,7 +1606,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .cbClickModel6,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'เส้นเลือดสมอง',
                                                         ),
                                                       ),
@@ -1629,7 +1630,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .cbClickModel7,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'ถุงลมโป่งพอง',
                                                         ),
                                                       ),
@@ -1653,7 +1654,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .cbClickModel8,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'ไม่ทราบ',
                                                         ),
                                                       ),
@@ -1697,7 +1698,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             }
                                                             await Future
                                                                 .delayed(
-                                                              Duration(
+                                                              const Duration(
                                                                 milliseconds:
                                                                     100,
                                                               ),
@@ -1717,7 +1718,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                       .viewInsetsOf(
                                                                           context),
                                                                   child:
-                                                                      ChooseCancerWidget(),
+                                                                      const ChooseCancerWidget(),
                                                                 );
                                                               },
                                                             ).then((value) =>
@@ -1747,16 +1748,16 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                               context)
                                                                           .secondaryBackground
                                                                 ],
-                                                                stops: [
+                                                                stops: const [
                                                                   0.0,
                                                                   1.0
                                                                 ],
                                                                 begin:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         1.0,
                                                                         0.34),
                                                                 end:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         -1.0,
                                                                         -0.34),
                                                               ),
@@ -1769,16 +1770,16 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                 color: _model
                                                                             .other01Value1 ==
                                                                         true
-                                                                    ? Color(
+                                                                    ? const Color(
                                                                         0x00FFFFFF)
-                                                                    : Color(
+                                                                    : const Color(
                                                                         0xFFCED4E6),
                                                               ),
                                                             ),
                                                             child: Stack(
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           20.0,
@@ -1806,7 +1807,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                               useGoogleFonts: !FlutterFlowTheme.of(context).labelLargeIsCustom,
                                                                             ),
                                                                       ),
-                                                                    ].divide(SizedBox(
+                                                                    ].divide(const SizedBox(
                                                                         width:
                                                                             4.0)),
                                                                   ),
@@ -1829,7 +1830,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                       ),
                                                                     ),
                                                                     unselectedWidgetColor:
-                                                                        Color(
+                                                                        const Color(
                                                                             0x00EAEFFB),
                                                                   ),
                                                                   child:
@@ -1843,20 +1844,20 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                           _model.other01Value1 =
                                                                               newValue!);
                                                                     },
-                                                                    side: (Color(0x00EAEFFB) !=
+                                                                    side: (const Color(0x00EAEFFB) !=
                                                                             null)
                                                                         ? BorderSide(
                                                                             width:
                                                                                 2,
                                                                             color:
-                                                                                Color(0x00EAEFFB)!,
+                                                                                const Color(0x00EAEFFB),
                                                                           )
                                                                         : null,
                                                                     activeColor:
-                                                                        Color(
+                                                                        const Color(
                                                                             0x00339FF3),
                                                                     checkColor:
-                                                                        Color(
+                                                                        const Color(
                                                                             0x00FFFFFF),
                                                                   ),
                                                                 ),
@@ -1871,7 +1872,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             true)
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         4.0,
@@ -1889,12 +1890,12 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                             24.0),
                                                                 border:
                                                                     Border.all(
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFFCED4E6),
                                                                 ),
                                                               ),
                                                               child: Padding(
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12.0,
                                                                         20.0,
@@ -1927,7 +1928,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                                 !FlutterFlowTheme.of(context).labelLargeIsCustom,
                                                                           ),
                                                                     ),
-                                                                  ].divide(SizedBox(
+                                                                  ].divide(const SizedBox(
                                                                       width:
                                                                           4.0)),
                                                                 ),
@@ -1939,11 +1940,11 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               ][index]();
                                             },
                                           ),
-                                        ].divide(SizedBox(height: 24.0)),
+                                        ].divide(const SizedBox(height: 24.0)),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -2024,7 +2025,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                             physics:
                                                 const NeverScrollableScrollPhysics(),
                                             gridDelegate:
-                                                SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                               crossAxisCount: 2,
                                             ),
                                             crossAxisSpacing: () {
@@ -2088,7 +2089,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .cbClickModel9,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'เบาหวาน',
                                                         ),
                                                       ),
@@ -2112,7 +2113,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .cbClickModel10,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text:
                                                               'ความดันโลหิตสูง',
                                                         ),
@@ -2137,7 +2138,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .cbClickModel11,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'โรคเก๊าท์',
                                                         ),
                                                       ),
@@ -2161,7 +2162,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .cbClickModel12,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'ไตวายเรื้อรัง',
                                                         ),
                                                       ),
@@ -2185,7 +2186,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .cbClickModel13,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text:
                                                               'กล้ามเนื้อหัวใจตาย',
                                                         ),
@@ -2210,7 +2211,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .cbClickModel14,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'เส้นเลือดสมอง',
                                                         ),
                                                       ),
@@ -2234,7 +2235,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .cbClickModel15,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'ถุงลมโป่งพอง',
                                                         ),
                                                       ),
@@ -2258,7 +2259,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .cbClickModel16,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'ไม่ทราบ',
                                                         ),
                                                       ),
@@ -2302,7 +2303,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             }
                                                             await Future
                                                                 .delayed(
-                                                              Duration(
+                                                              const Duration(
                                                                 milliseconds:
                                                                     100,
                                                               ),
@@ -2322,7 +2323,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                       .viewInsetsOf(
                                                                           context),
                                                                   child:
-                                                                      ChooseCancerWidget(),
+                                                                      const ChooseCancerWidget(),
                                                                 );
                                                               },
                                                             ).then((value) =>
@@ -2352,16 +2353,16 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                               context)
                                                                           .secondaryBackground
                                                                 ],
-                                                                stops: [
+                                                                stops: const [
                                                                   0.0,
                                                                   1.0
                                                                 ],
                                                                 begin:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         1.0,
                                                                         0.34),
                                                                 end:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         -1.0,
                                                                         -0.34),
                                                               ),
@@ -2374,16 +2375,16 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                 color: _model
                                                                             .other01Value2 ==
                                                                         true
-                                                                    ? Color(
+                                                                    ? const Color(
                                                                         0x00FFFFFF)
-                                                                    : Color(
+                                                                    : const Color(
                                                                         0xFFCED4E6),
                                                               ),
                                                             ),
                                                             child: Stack(
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           20.0,
@@ -2411,7 +2412,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                               useGoogleFonts: !FlutterFlowTheme.of(context).labelLargeIsCustom,
                                                                             ),
                                                                       ),
-                                                                    ].divide(SizedBox(
+                                                                    ].divide(const SizedBox(
                                                                         width:
                                                                             4.0)),
                                                                   ),
@@ -2434,7 +2435,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                       ),
                                                                     ),
                                                                     unselectedWidgetColor:
-                                                                        Color(
+                                                                        const Color(
                                                                             0x00EAEFFB),
                                                                   ),
                                                                   child:
@@ -2448,20 +2449,20 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                           _model.other01Value2 =
                                                                               newValue!);
                                                                     },
-                                                                    side: (Color(0x00EAEFFB) !=
+                                                                    side: (const Color(0x00EAEFFB) !=
                                                                             null)
                                                                         ? BorderSide(
                                                                             width:
                                                                                 2,
                                                                             color:
-                                                                                Color(0x00EAEFFB)!,
+                                                                                const Color(0x00EAEFFB),
                                                                           )
                                                                         : null,
                                                                     activeColor:
-                                                                        Color(
+                                                                        const Color(
                                                                             0x00339FF3),
                                                                     checkColor:
-                                                                        Color(
+                                                                        const Color(
                                                                             0x00FFFFFF),
                                                                   ),
                                                                 ),
@@ -2476,7 +2477,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             true)
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         4.0,
@@ -2494,12 +2495,12 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                             24.0),
                                                                 border:
                                                                     Border.all(
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFFCED4E6),
                                                                 ),
                                                               ),
                                                               child: Padding(
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12.0,
                                                                         20.0,
@@ -2532,7 +2533,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                                 !FlutterFlowTheme.of(context).labelLargeIsCustom,
                                                                           ),
                                                                     ),
-                                                                  ].divide(SizedBox(
+                                                                  ].divide(const SizedBox(
                                                                       width:
                                                                           4.0)),
                                                                 ),
@@ -2544,17 +2545,17 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               ][index]();
                                             },
                                           ),
-                                        ].divide(SizedBox(height: 24.0)),
+                                        ].divide(const SizedBox(height: 24.0)),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 32.0)),
+                                  ].divide(const SizedBox(height: 32.0)),
                                 ),
                               ),
                             ),
                           ],
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -2567,7 +2568,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                             child: wrapWithModel(
                               model: _model.startAsBottomModel1,
                               updateCallback: () => safeSetState(() {}),
-                              child: StartAsBottomWidget(
+                              child: const StartAsBottomWidget(
                                 text: 'ถัดไป',
                               ),
                             ),
@@ -2609,7 +2610,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2619,7 +2620,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2629,7 +2630,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2639,7 +2640,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2648,10 +2649,10 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 8.0, 16.0, 0.0),
                             child: ListView(
-                              padding: EdgeInsets.fromLTRB(
+                              padding: const EdgeInsets.fromLTRB(
                                 0,
                                 16.0,
                                 0,
@@ -2715,7 +2716,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                         ))
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 8.0),
                                             child: RichText(
                                               textScaler: MediaQuery.of(context)
@@ -2865,12 +2866,12 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                           context)
                                                                       .secondaryBackground
                                                             ],
-                                                            stops: [0.0, 1.0],
+                                                            stops: const [0.0, 1.0],
                                                             begin:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1.0, 0.34),
                                                             end:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0,
                                                                     -0.34),
                                                           ),
@@ -2887,7 +2888,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                 ? FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground
-                                                                : Color(
+                                                                : const Color(
                                                                     0xFFCED4E6),
                                                             width: 1.0,
                                                           ),
@@ -2970,7 +2971,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                               Theme(
                                                                 data: ThemeData(
                                                                   checkboxTheme:
-                                                                      CheckboxThemeData(
+                                                                      const CheckboxThemeData(
                                                                     visualDensity:
                                                                         VisualDensity
                                                                             .compact,
@@ -2981,7 +2982,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                         CircleBorder(),
                                                                   ),
                                                                   unselectedWidgetColor:
-                                                                      Color(
+                                                                      const Color(
                                                                           0xFFCED4E6),
                                                                 ),
                                                                 child: Checkbox(
@@ -2994,14 +2995,14 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                         _model.other01Value3 =
                                                                             newValue!);
                                                                   },
-                                                                  side: (Color(
+                                                                  side: (const Color(
                                                                               0xFFCED4E6) !=
                                                                           null)
                                                                       ? BorderSide(
                                                                           width:
                                                                               2,
                                                                           color:
-                                                                              Color(0xFFCED4E6)!,
+                                                                              const Color(0xFFCED4E6),
                                                                         )
                                                                       : null,
                                                                   activeColor:
@@ -3104,12 +3105,12 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                           context)
                                                                       .secondaryBackground
                                                             ],
-                                                            stops: [0.0, 1.0],
+                                                            stops: const [0.0, 1.0],
                                                             begin:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1.0, 0.34),
                                                             end:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0,
                                                                     -0.34),
                                                           ),
@@ -3126,7 +3127,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                 ? FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground
-                                                                : Color(
+                                                                : const Color(
                                                                     0xFFCED4E6),
                                                             width: 1.0,
                                                           ),
@@ -3209,7 +3210,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                               Theme(
                                                                 data: ThemeData(
                                                                   checkboxTheme:
-                                                                      CheckboxThemeData(
+                                                                      const CheckboxThemeData(
                                                                     visualDensity:
                                                                         VisualDensity
                                                                             .compact,
@@ -3220,7 +3221,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                         CircleBorder(),
                                                                   ),
                                                                   unselectedWidgetColor:
-                                                                      Color(
+                                                                      const Color(
                                                                           0xFFCED4E6),
                                                                 ),
                                                                 child: Checkbox(
@@ -3233,14 +3234,14 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                         _model.other01Value4 =
                                                                             newValue!);
                                                                   },
-                                                                  side: (Color(
+                                                                  side: (const Color(
                                                                               0xFFCED4E6) !=
                                                                           null)
                                                                       ? BorderSide(
                                                                           width:
                                                                               2,
                                                                           color:
-                                                                              Color(0xFFCED4E6)!,
+                                                                              const Color(0xFFCED4E6),
                                                                         )
                                                                       : null,
                                                                   activeColor:
@@ -3343,12 +3344,12 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                           context)
                                                                       .secondaryBackground
                                                             ],
-                                                            stops: [0.0, 1.0],
+                                                            stops: const [0.0, 1.0],
                                                             begin:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1.0, 0.34),
                                                             end:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0,
                                                                     -0.34),
                                                           ),
@@ -3365,7 +3366,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                 ? FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground
-                                                                : Color(
+                                                                : const Color(
                                                                     0xFFCED4E6),
                                                             width: 1.0,
                                                           ),
@@ -3448,7 +3449,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                               Theme(
                                                                 data: ThemeData(
                                                                   checkboxTheme:
-                                                                      CheckboxThemeData(
+                                                                      const CheckboxThemeData(
                                                                     visualDensity:
                                                                         VisualDensity
                                                                             .compact,
@@ -3459,7 +3460,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                         CircleBorder(),
                                                                   ),
                                                                   unselectedWidgetColor:
-                                                                      Color(
+                                                                      const Color(
                                                                           0xFFCED4E6),
                                                                 ),
                                                                 child: Checkbox(
@@ -3472,14 +3473,14 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                         _model.other01Value5 =
                                                                             newValue!);
                                                                   },
-                                                                  side: (Color(
+                                                                  side: (const Color(
                                                                               0xFFCED4E6) !=
                                                                           null)
                                                                       ? BorderSide(
                                                                           width:
                                                                               2,
                                                                           color:
-                                                                              Color(0xFFCED4E6)!,
+                                                                              const Color(0xFFCED4E6),
                                                                         )
                                                                       : null,
                                                                   activeColor:
@@ -3563,7 +3564,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -3616,7 +3617,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     context)
                                                                 .bodyMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -3630,7 +3631,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 3,
                                               ),
                                               crossAxisSpacing: () {
@@ -3680,7 +3681,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -3691,7 +3692,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerOneWidget(
+                                                          child: const PerOneWidget(
                                                             names: 'มี',
                                                             perone: '1',
                                                           ),
@@ -3723,7 +3724,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -3734,7 +3735,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerOneWidget(
+                                                          child: const PerOneWidget(
                                                             names: 'ไม่มี',
                                                             perone: '2',
                                                           ),
@@ -3766,7 +3767,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -3777,7 +3778,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerOneWidget(
+                                                          child: const PerOneWidget(
                                                             names: 'ไม่เคยตรวจ',
                                                             perone: '3',
                                                           ),
@@ -3813,7 +3814,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -3866,7 +3867,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     context)
                                                                 .bodyMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -3880,7 +3881,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 3,
                                               ),
                                               crossAxisSpacing: () {
@@ -3930,7 +3931,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -3941,7 +3942,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerTwoWidget(
+                                                          child: const PerTwoWidget(
                                                             names: 'มี',
                                                             pertwo: '1',
                                                           ),
@@ -3973,7 +3974,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -3984,7 +3985,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerTwoWidget(
+                                                          child: const PerTwoWidget(
                                                             names: 'ไม่มี',
                                                             pertwo: '2',
                                                           ),
@@ -4016,7 +4017,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -4027,7 +4028,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerTwoWidget(
+                                                          child: const PerTwoWidget(
                                                             names: 'ไม่เคยตรวจ',
                                                             pertwo: '3',
                                                           ),
@@ -4063,7 +4064,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -4116,7 +4117,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     context)
                                                                 .bodyMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -4130,7 +4131,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 3,
                                               ),
                                               crossAxisSpacing: () {
@@ -4180,7 +4181,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -4191,7 +4192,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerThreeWidget(
+                                                          child: const PerThreeWidget(
                                                             names: 'มี',
                                                             perthree: '1',
                                                           ),
@@ -4223,7 +4224,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -4234,7 +4235,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerThreeWidget(
+                                                          child: const PerThreeWidget(
                                                             names: 'ไม่มี',
                                                             perthree: '2',
                                                           ),
@@ -4266,7 +4267,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -4277,7 +4278,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerThreeWidget(
+                                                          child: const PerThreeWidget(
                                                             names: 'ไม่เคยตรวจ',
                                                             perthree: '3',
                                                           ),
@@ -4313,7 +4314,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -4366,7 +4367,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     context)
                                                                 .bodyMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -4380,7 +4381,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 3,
                                               ),
                                               crossAxisSpacing: () {
@@ -4430,7 +4431,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -4441,7 +4442,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerForeWidget(
+                                                          child: const PerForeWidget(
                                                             names: 'มี',
                                                             perfore: '1',
                                                           ),
@@ -4473,7 +4474,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -4484,7 +4485,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerForeWidget(
+                                                          child: const PerForeWidget(
                                                             names: 'ไม่มี',
                                                             perfore: '2',
                                                           ),
@@ -4516,7 +4517,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -4527,7 +4528,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerForeWidget(
+                                                          child: const PerForeWidget(
                                                             names: 'ไม่เคยตรวจ',
                                                             perfore: '3',
                                                           ),
@@ -4563,7 +4564,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -4616,7 +4617,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     context)
                                                                 .bodyMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -4630,7 +4631,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 3,
                                               ),
                                               crossAxisSpacing: () {
@@ -4680,7 +4681,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -4691,7 +4692,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerFiveWidget(
+                                                          child: const PerFiveWidget(
                                                             names: 'มี',
                                                             perfive: '1',
                                                           ),
@@ -4723,7 +4724,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -4734,7 +4735,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerFiveWidget(
+                                                          child: const PerFiveWidget(
                                                             names: 'ไม่มี',
                                                             perfive: '2',
                                                           ),
@@ -4766,7 +4767,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -4777,7 +4778,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerFiveWidget(
+                                                          child: const PerFiveWidget(
                                                             names: 'ไม่เคยตรวจ',
                                                             perfive: '3',
                                                           ),
@@ -4813,7 +4814,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -4866,7 +4867,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     context)
                                                                 .bodyMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -4880,7 +4881,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 3,
                                               ),
                                               crossAxisSpacing: () {
@@ -4930,7 +4931,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -4941,7 +4942,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerSixWidget(
+                                                          child: const PerSixWidget(
                                                             names: 'มี',
                                                             persix: '1',
                                                           ),
@@ -4973,7 +4974,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -4984,7 +4985,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerSixWidget(
+                                                          child: const PerSixWidget(
                                                             names: 'ไม่มี',
                                                             persix: '2',
                                                           ),
@@ -5016,7 +5017,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -5027,7 +5028,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerSixWidget(
+                                                          child: const PerSixWidget(
                                                             names: 'ไม่เคยตรวจ',
                                                             persix: '3',
                                                           ),
@@ -5061,7 +5062,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 12.0)),
+                                  ].divide(const SizedBox(height: 12.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -5079,7 +5080,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                         ))
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 8.0),
                                             child: RichText(
                                               textScaler: MediaQuery.of(context)
@@ -5232,12 +5233,12 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                           context)
                                                                       .secondaryBackground
                                                             ],
-                                                            stops: [0.0, 1.0],
+                                                            stops: const [0.0, 1.0],
                                                             begin:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1.0, 0.34),
                                                             end:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0,
                                                                     -0.34),
                                                           ),
@@ -5254,7 +5255,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                 ? FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground
-                                                                : Color(
+                                                                : const Color(
                                                                     0xFFCED4E6),
                                                             width: 1.0,
                                                           ),
@@ -5337,7 +5338,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                               Theme(
                                                                 data: ThemeData(
                                                                   checkboxTheme:
-                                                                      CheckboxThemeData(
+                                                                      const CheckboxThemeData(
                                                                     visualDensity:
                                                                         VisualDensity
                                                                             .compact,
@@ -5348,7 +5349,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                         CircleBorder(),
                                                                   ),
                                                                   unselectedWidgetColor:
-                                                                      Color(
+                                                                      const Color(
                                                                           0xFFCED4E6),
                                                                 ),
                                                                 child: Checkbox(
@@ -5361,14 +5362,14 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                         _model.other01Value6 =
                                                                             newValue!);
                                                                   },
-                                                                  side: (Color(
+                                                                  side: (const Color(
                                                                               0xFFCED4E6) !=
                                                                           null)
                                                                       ? BorderSide(
                                                                           width:
                                                                               2,
                                                                           color:
-                                                                              Color(0xFFCED4E6)!,
+                                                                              const Color(0xFFCED4E6),
                                                                         )
                                                                       : null,
                                                                   activeColor:
@@ -5418,7 +5419,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                               .labelSmallIsCustom,
                                                                     ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 width: 4.0)),
                                                           ),
                                                         ),
@@ -5472,12 +5473,12 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                           context)
                                                                       .secondaryBackground
                                                             ],
-                                                            stops: [0.0, 1.0],
+                                                            stops: const [0.0, 1.0],
                                                             begin:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1.0, 0.34),
                                                             end:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0,
                                                                     -0.34),
                                                           ),
@@ -5494,7 +5495,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                 ? FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground
-                                                                : Color(
+                                                                : const Color(
                                                                     0xFFCED4E6),
                                                             width: 1.0,
                                                           ),
@@ -5577,7 +5578,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                               Theme(
                                                                 data: ThemeData(
                                                                   checkboxTheme:
-                                                                      CheckboxThemeData(
+                                                                      const CheckboxThemeData(
                                                                     visualDensity:
                                                                         VisualDensity
                                                                             .compact,
@@ -5588,7 +5589,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                         CircleBorder(),
                                                                   ),
                                                                   unselectedWidgetColor:
-                                                                      Color(
+                                                                      const Color(
                                                                           0xFFCED4E6),
                                                                 ),
                                                                 child: Checkbox(
@@ -5601,14 +5602,14 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                         _model.other01Value7 =
                                                                             newValue!);
                                                                   },
-                                                                  side: (Color(
+                                                                  side: (const Color(
                                                                               0xFFCED4E6) !=
                                                                           null)
                                                                       ? BorderSide(
                                                                           width:
                                                                               2,
                                                                           color:
-                                                                              Color(0xFFCED4E6)!,
+                                                                              const Color(0xFFCED4E6),
                                                                         )
                                                                       : null,
                                                                   activeColor:
@@ -5658,7 +5659,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                               .labelSmallIsCustom,
                                                                     ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 width: 4.0)),
                                                           ),
                                                         ),
@@ -5692,7 +5693,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -5745,7 +5746,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     context)
                                                                 .bodyMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -5759,7 +5760,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -5809,7 +5810,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -5820,7 +5821,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerOneWidget(
+                                                          child: const PerOneWidget(
                                                             names: 'มี',
                                                             perone: '1',
                                                           ),
@@ -5852,7 +5853,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -5863,7 +5864,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerOneWidget(
+                                                          child: const PerOneWidget(
                                                             names: 'ไม่มี',
                                                             perone: '2',
                                                           ),
@@ -5899,7 +5900,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -5953,7 +5954,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                       context)
                                                                   .bodyMediumFamily,
                                                           color:
-                                                              Color(0xFF077DD7),
+                                                              const Color(0xFF077DD7),
                                                           letterSpacing: 0.0,
                                                           useGoogleFonts:
                                                               !FlutterFlowTheme
@@ -5968,7 +5969,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -6018,7 +6019,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -6029,7 +6030,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerTwoWidget(
+                                                          child: const PerTwoWidget(
                                                             names: 'มี',
                                                             pertwo: '1',
                                                           ),
@@ -6061,7 +6062,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -6072,7 +6073,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerTwoWidget(
+                                                          child: const PerTwoWidget(
                                                             names: 'ไม่มี',
                                                             pertwo: '2',
                                                           ),
@@ -6108,7 +6109,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -6161,7 +6162,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     context)
                                                                 .bodyMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -6175,7 +6176,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -6225,7 +6226,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -6236,7 +6237,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerThreeWidget(
+                                                          child: const PerThreeWidget(
                                                             names: 'มี',
                                                             perthree: '1',
                                                           ),
@@ -6268,7 +6269,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -6279,7 +6280,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerThreeWidget(
+                                                          child: const PerThreeWidget(
                                                             names: 'ไม่มี',
                                                             perthree: '2',
                                                           ),
@@ -6315,7 +6316,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -6368,7 +6369,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     context)
                                                                 .bodyMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -6382,7 +6383,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -6432,7 +6433,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -6443,7 +6444,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerForeWidget(
+                                                          child: const PerForeWidget(
                                                             names: 'มี',
                                                             perfore: '1',
                                                           ),
@@ -6475,7 +6476,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -6486,7 +6487,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerForeWidget(
+                                                          child: const PerForeWidget(
                                                             names: 'ไม่มี',
                                                             perfore: '2',
                                                           ),
@@ -6522,7 +6523,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -6575,7 +6576,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     context)
                                                                 .bodyMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -6589,7 +6590,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -6639,7 +6640,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -6650,7 +6651,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerFiveWidget(
+                                                          child: const PerFiveWidget(
                                                             names: 'มี',
                                                             perfive: '1',
                                                           ),
@@ -6682,7 +6683,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -6693,7 +6694,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerFiveWidget(
+                                                          child: const PerFiveWidget(
                                                             names: 'ไม่มี',
                                                             perfive: '2',
                                                           ),
@@ -6729,7 +6730,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -6782,7 +6783,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     context)
                                                                 .bodyMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -6796,7 +6797,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -6846,7 +6847,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -6857,7 +6858,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerOneWidget(
+                                                          child: const PerOneWidget(
                                                             names: 'มี',
                                                             perone: '1',
                                                           ),
@@ -6889,7 +6890,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -6900,7 +6901,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerOneWidget(
+                                                          child: const PerOneWidget(
                                                             names: 'ไม่มี',
                                                             perone: '2',
                                                           ),
@@ -6936,7 +6937,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -6990,7 +6991,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                       context)
                                                                   .bodyMediumFamily,
                                                           color:
-                                                              Color(0xFF077DD7),
+                                                              const Color(0xFF077DD7),
                                                           letterSpacing: 0.0,
                                                           useGoogleFonts:
                                                               !FlutterFlowTheme
@@ -7005,7 +7006,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -7055,7 +7056,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -7066,7 +7067,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerTwoWidget(
+                                                          child: const PerTwoWidget(
                                                             names: 'มี',
                                                             pertwo: '1',
                                                           ),
@@ -7098,7 +7099,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -7109,7 +7110,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerTwoWidget(
+                                                          child: const PerTwoWidget(
                                                             names: 'ไม่มี',
                                                             pertwo: '2',
                                                           ),
@@ -7145,7 +7146,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -7198,7 +7199,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     context)
                                                                 .bodyMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -7212,7 +7213,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -7262,7 +7263,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -7273,7 +7274,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerThreeWidget(
+                                                          child: const PerThreeWidget(
                                                             names: 'มี',
                                                             perthree: '1',
                                                           ),
@@ -7305,7 +7306,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -7316,7 +7317,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerThreeWidget(
+                                                          child: const PerThreeWidget(
                                                             names: 'ไม่มี',
                                                             perthree: '2',
                                                           ),
@@ -7352,7 +7353,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -7405,7 +7406,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     context)
                                                                 .bodyMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -7419,7 +7420,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -7469,7 +7470,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -7480,7 +7481,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerForeWidget(
+                                                          child: const PerForeWidget(
                                                             names: 'มี',
                                                             perfore: '1',
                                                           ),
@@ -7512,7 +7513,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -7523,7 +7524,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerForeWidget(
+                                                          child: const PerForeWidget(
                                                             names: 'ไม่มี',
                                                             perfore: '2',
                                                           ),
@@ -7559,7 +7560,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -7612,7 +7613,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     context)
                                                                 .bodyMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -7626,7 +7627,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -7676,7 +7677,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -7687,7 +7688,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerFiveWidget(
+                                                          child: const PerFiveWidget(
                                                             names: 'มี',
                                                             perfive: '1',
                                                           ),
@@ -7719,7 +7720,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -7730,7 +7731,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerFiveWidget(
+                                                          child: const PerFiveWidget(
                                                             names: 'ไม่มี',
                                                             perfive: '2',
                                                           ),
@@ -7766,7 +7767,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -7820,7 +7821,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                       context)
                                                                   .bodyMediumFamily,
                                                           color:
-                                                              Color(0xFF077DD7),
+                                                              const Color(0xFF077DD7),
                                                           letterSpacing: 0.0,
                                                           useGoogleFonts:
                                                               !FlutterFlowTheme
@@ -7835,7 +7836,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -7885,7 +7886,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -7896,7 +7897,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerTwoWidget(
+                                                          child: const PerTwoWidget(
                                                             names: 'มี',
                                                             pertwo: '1',
                                                           ),
@@ -7928,7 +7929,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -7939,7 +7940,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerTwoWidget(
+                                                          child: const PerTwoWidget(
                                                             names: 'ไม่มี',
                                                             pertwo: '2',
                                                           ),
@@ -7975,7 +7976,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -8028,7 +8029,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     context)
                                                                 .bodyMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -8042,7 +8043,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                               physics:
                                                   const NeverScrollableScrollPhysics(),
                                               gridDelegate:
-                                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                 crossAxisCount: 2,
                                               ),
                                               crossAxisSpacing: () {
@@ -8092,7 +8093,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -8103,7 +8104,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerThreeWidget(
+                                                          child: const PerThreeWidget(
                                                             names: 'มี',
                                                             perthree: '1',
                                                           ),
@@ -8135,7 +8136,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -8146,7 +8147,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerThreeWidget(
+                                                          child: const PerThreeWidget(
                                                             names: 'ไม่มี',
                                                             perthree: '2',
                                                           ),
@@ -8180,14 +8181,14 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 12.0)),
+                                  ].divide(const SizedBox(height: 12.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 8.0),
                                       child: RichText(
                                         textScaler:
@@ -8231,7 +8232,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFE9F0F9),
+                                        color: const Color(0xFFE9F0F9),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                         border: Border.all(
@@ -8284,7 +8285,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     context)
                                                                 .bodyMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -8366,7 +8367,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -8377,7 +8378,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerOneWidget(
+                                                          child: const PerOneWidget(
                                                             names:
                                                                 'รับการรักษาอยู่/ปฏิบัติตามที่แพทย์แนะนำ',
                                                             perone: '1',
@@ -8410,7 +8411,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -8421,7 +8422,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerOneWidget(
+                                                          child: const PerOneWidget(
                                                             names:
                                                                 'รับการรักษาแต่ไม่สม่ำเสมอ',
                                                             perone: '2',
@@ -8454,7 +8455,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -8465,7 +8466,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PerOneWidget(
+                                                          child: const PerOneWidget(
                                                             names:
                                                                 'เคยรักษา ขณะนี้ไม่รักษา/หายาทานเอง',
                                                             perone: '3',
@@ -8502,59 +8503,14 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     ),
                                   ],
                                 ),
-                                FFButtonWidget(
+                                MainButton(
+                                  text: 'ถัดไป',
                                   onPressed: () async {
                                     _model.pagefamily = 3;
                                     safeSetState(() {});
                                   },
-                                  text: 'ถัดไป',
-                                  options: FFButtonOptions(
-                                    width: double.infinity,
-                                    height: () {
-                                      if (MediaQuery.sizeOf(context).width <
-                                          kBreakpointSmall) {
-                                        return 48.0;
-                                      } else if (MediaQuery.sizeOf(context)
-                                              .width <
-                                          kBreakpointMedium) {
-                                        return 48.0;
-                                      } else if (MediaQuery.sizeOf(context)
-                                              .width <
-                                          kBreakpointLarge) {
-                                        return 56.0;
-                                      } else {
-                                        return 56.0;
-                                      }
-                                    }(),
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        16.0, 0.0, 16.0, 0.0),
-                                    iconAlignment: IconAlignment.start,
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 0.0),
-                                    color: FlutterFlowTheme.of(context)
-                                        .customColor5,
-                                    textStyle: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryBackground,
-                                          letterSpacing: 0.0,
-                                          useGoogleFonts:
-                                              !FlutterFlowTheme.of(context)
-                                                  .bodyMediumIsCustom,
-                                        ),
-                                    elevation: 0.0,
-                                    borderSide: BorderSide(
-                                      color: Colors.transparent,
-                                      width: 0.0,
-                                    ),
-                                    borderRadius: BorderRadius.circular(100.0),
-                                  ),
                                 ),
-                              ].divide(SizedBox(height: 32.0)),
+                              ].divide(const SizedBox(height: 32.0)),
                             ),
                           ),
                         ),
@@ -8610,7 +8566,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -8621,7 +8577,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -8632,7 +8588,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -8642,10 +8598,10 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 0.0),
                                 child: ListView(
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     16.0,
                                     0,
@@ -8661,7 +8617,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, -1.0),
+                                              const AlignmentDirectional(0.0, -1.0),
                                           child: ClipRRect(
                                             borderRadius:
                                                 BorderRadius.circular(8.0),
@@ -8831,7 +8787,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .forward(from: 0.0);
                                                       }
                                                       await Future.delayed(
-                                                        Duration(
+                                                        const Duration(
                                                           milliseconds: 100,
                                                         ),
                                                       );
@@ -8852,7 +8808,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                 .viewInsetsOf(
                                                                     context),
                                                             child:
-                                                                ManyskWidget(),
+                                                                const ManyskWidget(),
                                                           );
                                                         },
                                                       ).then((value) =>
@@ -8863,7 +8819,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           _model.smokesModel1,
                                                       updateCallback: () =>
                                                           safeSetState(() {}),
-                                                      child: SmokesWidget(
+                                                      child: const SmokesWidget(
                                                         text: 'สูบ',
                                                         smoke: '1',
                                                       ),
@@ -8876,7 +8832,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                       true)
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   8.0,
@@ -8894,13 +8850,13 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                   .circular(
                                                                       24.0),
                                                           border: Border.all(
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFFCED4E6),
                                                           ),
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       12.0,
                                                                       20.0,
@@ -8965,7 +8921,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                           ),
                                                                     ),
                                                                   ),
-                                                                ].divide(SizedBox(
+                                                                ].divide(const SizedBox(
                                                                     width:
                                                                         8.0)),
                                                               ),
@@ -9017,7 +8973,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                               .labelLargeIsCustom,
                                                                     ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 height: 8.0)),
                                                           ),
                                                         ),
@@ -9041,7 +8997,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -9055,7 +9011,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                   model: _model.smokesModel2,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: SmokesWidget(
+                                                  child: const SmokesWidget(
                                                     text: 'ไม่สูบ',
                                                     smoke: '2',
                                                   ),
@@ -9086,7 +9042,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .forward(from: 0.0);
                                                       }
                                                       await Future.delayed(
-                                                        Duration(
+                                                        const Duration(
                                                           milliseconds: 100,
                                                         ),
                                                       );
@@ -9106,7 +9062,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             padding: MediaQuery
                                                                 .viewInsetsOf(
                                                                     context),
-                                                            child: SkdeWidget(),
+                                                            child: const SkdeWidget(),
                                                           );
                                                         },
                                                       ).then((value) =>
@@ -9117,7 +9073,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                           _model.smokesModel3,
                                                       updateCallback: () =>
                                                           safeSetState(() {}),
-                                                      child: SmokesWidget(
+                                                      child: const SmokesWidget(
                                                         text:
                                                             'เคยสูบแต่เลิกแล้ว',
                                                         smoke: '3',
@@ -9131,7 +9087,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                       true)
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   8.0,
@@ -9149,13 +9105,13 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                   .circular(
                                                                       24.0),
                                                           border: Border.all(
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFFCED4E6),
                                                           ),
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       12.0,
                                                                       20.0,
@@ -9217,7 +9173,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                               .labelLargeIsCustom,
                                                                     ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 height: 8.0)),
                                                           ),
                                                         ),
@@ -9228,14 +9184,14 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                         ][index]();
                                       },
                                     ),
-                                  ].divide(SizedBox(height: 24.0)),
+                                  ].divide(const SizedBox(height: 24.0)),
                                 ),
                               ),
                             ),
                           ],
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -9248,7 +9204,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                             child: wrapWithModel(
                               model: _model.startAsBottomModel2,
                               updateCallback: () => safeSetState(() {}),
-                              child: StartAsBottomWidget(
+                              child: const StartAsBottomWidget(
                                 text: 'ถัดไป',
                               ),
                             ),
@@ -9318,7 +9274,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -9329,7 +9285,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -9339,10 +9295,10 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 0.0),
                                 child: ListView(
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     16.0,
                                     0,
@@ -9358,7 +9314,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, -1.0),
+                                              const AlignmentDirectional(0.0, -1.0),
                                           child: ClipRRect(
                                             borderRadius:
                                                 BorderRadius.circular(8.0),
@@ -9528,7 +9484,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                             .forward(from: 0.0);
                                                       }
                                                       await Future.delayed(
-                                                        Duration(
+                                                        const Duration(
                                                           milliseconds: 100,
                                                         ),
                                                       );
@@ -9548,7 +9504,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                 .viewInsetsOf(
                                                                     context),
                                                             child:
-                                                                ManyAlWidget(),
+                                                                const ManyAlWidget(),
                                                           );
                                                         },
                                                       ).then((value) =>
@@ -9558,7 +9514,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                       model: _model.drinkModel1,
                                                       updateCallback: () =>
                                                           safeSetState(() {}),
-                                                      child: DrinkWidget(
+                                                      child: const DrinkWidget(
                                                         text: 'ดื่ม',
                                                         alcohol: '1',
                                                       ),
@@ -9572,7 +9528,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                       true)
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   8.0,
@@ -9590,13 +9546,13 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                   .circular(
                                                                       24.0),
                                                           border: Border.all(
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFFCED4E6),
                                                           ),
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       12.0,
                                                                       20.0,
@@ -9647,7 +9603,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -9660,7 +9616,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                   model: _model.drinkModel2,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: DrinkWidget(
+                                                  child: const DrinkWidget(
                                                     text: 'ไม่ดื่ม',
                                                     alcohol: '2',
                                                   ),
@@ -9685,7 +9641,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -9698,7 +9654,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                   model: _model.drinkModel3,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: DrinkWidget(
+                                                  child: const DrinkWidget(
                                                     text: 'เคยดื่มแค่เลิกแล้ว',
                                                     alcohol: '3',
                                                   ),
@@ -9710,14 +9666,14 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                         ][index]();
                                       },
                                     ),
-                                  ].divide(SizedBox(height: 24.0)),
+                                  ].divide(const SizedBox(height: 24.0)),
                                 ),
                               ),
                             ),
                           ],
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -9730,7 +9686,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                             child: wrapWithModel(
                               model: _model.startAsBottomModel3,
                               updateCallback: () => safeSetState(() {}),
-                              child: StartAsBottomWidget(
+                              child: const StartAsBottomWidget(
                                 text: 'ถัดไป',
                               ),
                             ),
@@ -9812,7 +9768,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -9822,10 +9778,10 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 0.0),
                                 child: ListView(
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     16.0,
                                     0,
@@ -9841,7 +9797,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, -1.0),
+                                              const AlignmentDirectional(0.0, -1.0),
                                           child: ClipRRect(
                                             borderRadius:
                                                 BorderRadius.circular(8.0),
@@ -10006,7 +9962,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -10017,7 +9973,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                   model: _model.bloodpageModel1,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: BloodpageWidget(
+                                                  child: const BloodpageWidget(
                                                     text:
                                                         'ออกกำลังกายทุกวัน ครั้งละ 30  นาที',
                                                     exer: '1',
@@ -10043,7 +9999,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -10054,7 +10010,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                   model: _model.bloodpageModel2,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: BloodpageWidget(
+                                                  child: const BloodpageWidget(
                                                     text:
                                                         'ออกกำลังกาย 1 สัปดาห์มากกว่า 3 ครั้ง ครั้งละ 30  นาที สม่ำเสมอ',
                                                     exer: '2',
@@ -10080,7 +10036,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -10091,7 +10047,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                   model: _model.bloodpageModel3,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: BloodpageWidget(
+                                                  child: const BloodpageWidget(
                                                     text:
                                                         'ออกกำลังกายสัปดาห์ละ 3 ครั้ง ครั้งละ 30  นาที',
                                                     exer: '3',
@@ -10117,7 +10073,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -10128,7 +10084,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                   model: _model.bloodpageModel4,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: BloodpageWidget(
+                                                  child: const BloodpageWidget(
                                                     text:
                                                         'ออกกำลังกายน้อยกว่าสัปดาห์ละ 3 ครั้ง',
                                                     exer: '4',
@@ -10154,7 +10110,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -10165,7 +10121,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                   model: _model.bloodpageModel5,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: BloodpageWidget(
+                                                  child: const BloodpageWidget(
                                                     text: 'ไม่ออกกำลังกายเลย',
                                                     exer: '5',
                                                   ),
@@ -10177,14 +10133,14 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                         ][index]();
                                       },
                                     ),
-                                  ].divide(SizedBox(height: 24.0)),
+                                  ].divide(const SizedBox(height: 24.0)),
                                 ),
                               ),
                             ),
                           ],
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -10197,7 +10153,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                             child: wrapWithModel(
                               model: _model.startAsBottomModel4,
                               updateCallback: () => safeSetState(() {}),
-                              child: StartAsBottomWidget(
+                              child: const StartAsBottomWidget(
                                 text: 'ถัดไป',
                               ),
                             ),
@@ -10290,10 +10246,10 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 0.0),
                                 child: ListView(
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     16.0,
                                     0,
@@ -10309,7 +10265,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, -1.0),
+                                              const AlignmentDirectional(0.0, -1.0),
                                           child: ClipRRect(
                                             borderRadius:
                                                 BorderRadius.circular(8.0),
@@ -10481,7 +10437,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                 model: _model.cbClickModel17,
                                                 updateCallback: () =>
                                                     safeSetState(() {}),
-                                                child: CbClickWidget(
+                                                child: const CbClickWidget(
                                                   text: 'หวาน',
                                                 ),
                                               ),
@@ -10489,7 +10445,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                 model: _model.cbClickModel18,
                                                 updateCallback: () =>
                                                     safeSetState(() {}),
-                                                child: CbClickWidget(
+                                                child: const CbClickWidget(
                                                   text: 'เค็ม',
                                                 ),
                                               ),
@@ -10497,7 +10453,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                 model: _model.cbClickModel19,
                                                 updateCallback: () =>
                                                     safeSetState(() {}),
-                                                child: CbClickWidget(
+                                                child: const CbClickWidget(
                                                   text: 'มัน',
                                                 ),
                                               ),
@@ -10505,21 +10461,21 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                 model: _model.cbClickModel20,
                                                 updateCallback: () =>
                                                     safeSetState(() {}),
-                                                child: CbClickWidget(
+                                                child: const CbClickWidget(
                                                   text: 'ไม่ชอบทุกข้อ',
                                                 ),
                                               ),
                                         ][index]();
                                       },
                                     ),
-                                  ].divide(SizedBox(height: 24.0)),
+                                  ].divide(const SizedBox(height: 24.0)),
                                 ),
                               ),
                             ),
                           ],
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -10532,7 +10488,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                             child: wrapWithModel(
                               model: _model.startAsBottomModel5,
                               updateCallback: () => safeSetState(() {}),
-                              child: StartAsBottomWidget(
+                              child: const StartAsBottomWidget(
                                 text: 'บันทึก',
                               ),
                             ),
@@ -10544,7 +10500,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                     return Stack(
                       children: [
                         ListView(
-                          padding: EdgeInsets.fromLTRB(
+                          padding: const EdgeInsets.fromLTRB(
                             0,
                             8.0,
                             0,
@@ -10554,11 +10510,11 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                           scrollDirection: Axis.vertical,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(0.0, -1.0),
+                              alignment: const AlignmentDirectional(0.0, -1.0),
                               child: Container(
-                                decoration: BoxDecoration(),
+                                decoration: const BoxDecoration(),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, -1.0),
+                                  alignment: const AlignmentDirectional(0.0, -1.0),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(8.0),
                                     child: Image.network(
@@ -10602,18 +10558,18 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.sumModel,
                                 updateCallback: () => safeSetState(() {}),
-                                child: SumWidget(),
+                                child: const SumWidget(),
                               ),
                             ),
                           ],
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -10625,7 +10581,7 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                             child: wrapWithModel(
                               model: _model.startAsBottomModel6,
                               updateCallback: () => safeSetState(() {}),
-                              child: StartAsBottomWidget(
+                              child: const StartAsBottomWidget(
                                 text: 'กลับสู่หน้าหลัก',
                               ),
                             ),

@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/components/main_button_widget.dart';
 import '/home/widget/reson_cancel/reson_cancel_widget.dart';
 import '/homevisitlist/widget/visit_h_o_m_e_s/visit_h_o_m_e_s_widget.dart';
 import '/poeple_community/widget/haealth/haealth_widget.dart';
@@ -81,7 +82,7 @@ class _AddVisitinginformationWidgetState
           borderRadius: 30.0,
           borderWidth: 1.0,
           buttonSize: 44.0,
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_new_rounded,
             color: Colors.white,
             size: 18.0,
@@ -97,7 +98,7 @@ class _AddVisitinginformationWidgetState
               builder: (context) {
                 return Padding(
                   padding: MediaQuery.viewInsetsOf(context),
-                  child: SaveDraftWidget(),
+                  child: const SaveDraftWidget(),
                 );
               },
             ).then((value) => safeSetState(() {}));
@@ -113,12 +114,12 @@ class _AddVisitinginformationWidgetState
                     !FlutterFlowTheme.of(context).titleMediumIsCustom,
               ),
         ),
-        actions: [],
+        actions: const [],
         flexibleSpace: FlexibleSpaceBar(
           background: Opacity(
             opacity: 0.3,
             child: Align(
-              alignment: AlignmentDirectional(1.0, 1.0),
+              alignment: const AlignmentDirectional(1.0, 1.0),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(8.0),
                 child: Image.asset(
@@ -133,7 +134,7 @@ class _AddVisitinginformationWidgetState
         elevation: 0.0,
       ),
       body: ClipRRect(
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(24.0),
           topRight: Radius.circular(24.0),
         ),
@@ -142,7 +143,7 @@ class _AddVisitinginformationWidgetState
           height: double.infinity,
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).primaryBackground,
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(24.0),
               topRight: Radius.circular(24.0),
             ),
@@ -150,7 +151,7 @@ class _AddVisitinginformationWidgetState
           child: Stack(
             children: [
               ListView(
-                padding: EdgeInsets.fromLTRB(
+                padding: const EdgeInsets.fromLTRB(
                   0,
                   16.0,
                   0,
@@ -160,7 +161,7 @@ class _AddVisitinginformationWidgetState
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: Material(
                       color: Colors.transparent,
                       elevation: 2.0,
@@ -175,7 +176,7 @@ class _AddVisitinginformationWidgetState
                         ),
                         child: Container(
                           width: double.infinity,
-                          color: Color(0x00000000),
+                          color: const Color(0x00000000),
                           child: ExpandableNotifier(
                             controller: _model.expandableExpandableController,
                             child: ExpandablePanel(
@@ -189,17 +190,17 @@ class _AddVisitinginformationWidgetState
                                   ),
                                   gradient: LinearGradient(
                                     colors: [
-                                      Color(0xFF2370BC),
+                                      const Color(0xFF2370BC),
                                       FlutterFlowTheme.of(context).primary
                                     ],
-                                    stops: [0.0, 1.0],
-                                    begin: AlignmentDirectional(0.0, -1.0),
-                                    end: AlignmentDirectional(0, 1.0),
+                                    stops: const [0.0, 1.0],
+                                    begin: const AlignmentDirectional(0.0, -1.0),
+                                    end: const AlignmentDirectional(0, 1.0),
                                   ),
                                   borderRadius: BorderRadius.circular(24.0),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsets.all(16.0),
+                                  padding: const EdgeInsets.all(16.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     crossAxisAlignment:
@@ -211,14 +212,14 @@ class _AddVisitinginformationWidgetState
                                         decoration: BoxDecoration(
                                           gradient: LinearGradient(
                                             colors: [
-                                              Color(0xFFA0D6FF),
+                                              const Color(0xFFA0D6FF),
                                               FlutterFlowTheme.of(context)
                                                   .primary
                                             ],
-                                            stops: [0.0, 1.0],
+                                            stops: const [0.0, 1.0],
                                             begin:
-                                                AlignmentDirectional(0.0, -1.0),
-                                            end: AlignmentDirectional(0, 1.0),
+                                                const AlignmentDirectional(0.0, -1.0),
+                                            end: const AlignmentDirectional(0, 1.0),
                                           ),
                                           shape: BoxShape.circle,
                                           border: Border.all(
@@ -230,7 +231,7 @@ class _AddVisitinginformationWidgetState
                                           width: double.infinity,
                                           height: double.infinity,
                                           clipBehavior: Clip.antiAlias,
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             shape: BoxShape.circle,
                                           ),
                                           child: Image.asset(
@@ -278,7 +279,7 @@ class _AddVisitinginformationWidgetState
                                                 ))
                                                   Container(
                                                     decoration: BoxDecoration(
-                                                      gradient: LinearGradient(
+                                                      gradient: const LinearGradient(
                                                         colors: [
                                                           Color(0xFFFF7600),
                                                           Color(0xFFFFB85C)
@@ -297,7 +298,7 @@ class _AddVisitinginformationWidgetState
                                                     ),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   4.0,
                                                                   4.0,
@@ -309,7 +310,7 @@ class _AddVisitinginformationWidgetState
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Icon(
                                                               Icons.info,
@@ -321,7 +322,7 @@ class _AddVisitinginformationWidgetState
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
                                                               'เยี่ยมต่อเนื่อง',
@@ -340,7 +341,7 @@ class _AddVisitinginformationWidgetState
                                                                     letterSpacing:
                                                                         0.0,
                                                                     shadows: [
-                                                                      Shadow(
+                                                                      const Shadow(
                                                                         color: Color(
                                                                             0x0F6C6C6C),
                                                                         offset: Offset(
@@ -356,7 +357,7 @@ class _AddVisitinginformationWidgetState
                                                                   ),
                                                             ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 4.0)),
                                                       ),
                                                     ),
@@ -364,7 +365,7 @@ class _AddVisitinginformationWidgetState
                                               ],
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 8.0, 0.0, 0.0),
                                               child: RichText(
                                                 textScaler:
@@ -382,7 +383,7 @@ class _AddVisitinginformationWidgetState
                                                                 FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMediumFamily,
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFFF9E7C9),
                                                             letterSpacing: 0.0,
                                                             useGoogleFonts:
@@ -391,11 +392,11 @@ class _AddVisitinginformationWidgetState
                                                                     .bodyMediumIsCustom,
                                                           ),
                                                     ),
-                                                    TextSpan(
+                                                    const TextSpan(
                                                       text: '/ ',
                                                       style: TextStyle(),
                                                     ),
-                                                    TextSpan(
+                                                    const TextSpan(
                                                       text:
                                                           'อายุ 48 ปี 6 ด. 13 ว.',
                                                       style: TextStyle(),
@@ -410,7 +411,7 @@ class _AddVisitinginformationWidgetState
                                                                     context)
                                                                 .bodyMediumFamily,
                                                         color:
-                                                            Color(0xFFF9E7C9),
+                                                            const Color(0xFFF9E7C9),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -431,13 +432,13 @@ class _AddVisitinginformationWidgetState
                                                 ))
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 8.0,
                                                                 0.0, 0.0),
                                                     child: Container(
                                                       decoration: BoxDecoration(
                                                         gradient:
-                                                            LinearGradient(
+                                                            const LinearGradient(
                                                           colors: [
                                                             Color(0xFFFF7600),
                                                             Color(0xFFFFB85C)
@@ -457,7 +458,7 @@ class _AddVisitinginformationWidgetState
                                                       ),
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     4.0,
                                                                     4.0,
@@ -469,7 +470,7 @@ class _AddVisitinginformationWidgetState
                                                           children: [
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Icon(
                                                                 Icons.info,
@@ -481,7 +482,7 @@ class _AddVisitinginformationWidgetState
                                                             ),
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Text(
                                                                 'เยี่ยมต่อเนื่อง',
@@ -500,7 +501,7 @@ class _AddVisitinginformationWidgetState
                                                                       letterSpacing:
                                                                           0.0,
                                                                       shadows: [
-                                                                        Shadow(
+                                                                        const Shadow(
                                                                           color:
                                                                               Color(0x0F6C6C6C),
                                                                           offset: Offset(
@@ -516,7 +517,7 @@ class _AddVisitinginformationWidgetState
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                       ),
@@ -527,7 +528,7 @@ class _AddVisitinginformationWidgetState
                                           ],
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 12.0)),
+                                    ].divide(const SizedBox(width: 12.0)),
                                   ),
                                 ),
                               ),
@@ -536,7 +537,7 @@ class _AddVisitinginformationWidgetState
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsets.all(12.0),
+                                    padding: const EdgeInsets.all(12.0),
                                     child: Text(
                                       'อ่านทั้งหมด',
                                       style: FlutterFlowTheme.of(context)
@@ -564,7 +565,7 @@ class _AddVisitinginformationWidgetState
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 16.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -575,7 +576,7 @@ class _AddVisitinginformationWidgetState
                                           physics:
                                               const NeverScrollableScrollPhysics(),
                                           gridDelegate:
-                                              SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                              const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                             crossAxisCount: 2,
                                           ),
                                           crossAxisSpacing: 12.0,
@@ -648,19 +649,19 @@ class _AddVisitinginformationWidgetState
                                                                   FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
-                                                                  Color(
+                                                                  const Color(
                                                                       0xFF216DAA)
                                                                 ],
-                                                                stops: [
+                                                                stops: const [
                                                                   0.0,
                                                                   1.0
                                                                 ],
                                                                 begin:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         -1.0),
                                                                 end:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0, 1.0),
                                                               ),
                                                               shape: BoxShape
@@ -668,7 +669,7 @@ class _AddVisitinginformationWidgetState
                                                             ),
                                                             child: Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Icon(
                                                                 Icons
@@ -700,7 +701,7 @@ class _AddVisitinginformationWidgetState
                                                                           .labelSmallIsCustom,
                                                                 ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 8.0)),
                                                       ),
                                                       Container(
@@ -718,9 +719,9 @@ class _AddVisitinginformationWidgetState
                                                         ),
                                                         child: Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   -1.0, 0.0),
-                                                          child: Container(
+                                                          child: SizedBox(
                                                             width:
                                                                 double.infinity,
                                                             child:
@@ -762,7 +763,7 @@ class _AddVisitinginformationWidgetState
                                                                     InputBorder
                                                                         .none,
                                                                 contentPadding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16.0,
                                                                             0.0,
@@ -794,7 +795,7 @@ class _AddVisitinginformationWidgetState
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 8.0)),
+                                                        const SizedBox(height: 8.0)),
                                                   ),
                                               () => Column(
                                                     mainAxisSize:
@@ -857,22 +858,22 @@ class _AddVisitinginformationWidgetState
                                                               gradient:
                                                                   LinearGradient(
                                                                 colors: [
-                                                                  Color(
+                                                                  const Color(
                                                                       0xFF78C7FF),
                                                                   FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary
                                                                 ],
-                                                                stops: [
+                                                                stops: const [
                                                                   0.0,
                                                                   1.0
                                                                 ],
                                                                 begin:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.56,
                                                                         -1.0),
                                                                 end:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         -0.56,
                                                                         1.0),
                                                               ),
@@ -881,7 +882,7 @@ class _AddVisitinginformationWidgetState
                                                             ),
                                                             child: Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Icon(
                                                                 Icons
@@ -913,7 +914,7 @@ class _AddVisitinginformationWidgetState
                                                                           .labelSmallIsCustom,
                                                                 ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 8.0)),
                                                       ),
                                                       Container(
@@ -931,9 +932,9 @@ class _AddVisitinginformationWidgetState
                                                         ),
                                                         child: Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   -1.0, 0.0),
-                                                          child: Container(
+                                                          child: SizedBox(
                                                             width:
                                                                 double.infinity,
                                                             child:
@@ -975,7 +976,7 @@ class _AddVisitinginformationWidgetState
                                                                     InputBorder
                                                                         .none,
                                                                 contentPadding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16.0,
                                                                             0.0,
@@ -1007,7 +1008,7 @@ class _AddVisitinginformationWidgetState
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 8.0)),
+                                                        const SizedBox(height: 8.0)),
                                                   ),
                                             ][index]();
                                           },
@@ -1016,7 +1017,7 @@ class _AddVisitinginformationWidgetState
                                           physics:
                                               const NeverScrollableScrollPhysics(),
                                           gridDelegate:
-                                              SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                              const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                             crossAxisCount: 1,
                                           ),
                                           crossAxisSpacing: 12.0,
@@ -1082,7 +1083,7 @@ class _AddVisitinginformationWidgetState
                                                               }
                                                             }(),
                                                             decoration:
-                                                                BoxDecoration(
+                                                                const BoxDecoration(
                                                               gradient:
                                                                   LinearGradient(
                                                                 colors: [
@@ -1108,7 +1109,7 @@ class _AddVisitinginformationWidgetState
                                                             ),
                                                             child: Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Icon(
                                                                 Icons.call,
@@ -1139,7 +1140,7 @@ class _AddVisitinginformationWidgetState
                                                                           .labelSmallIsCustom,
                                                                 ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 8.0)),
                                                       ),
                                                       Container(
@@ -1157,7 +1158,7 @@ class _AddVisitinginformationWidgetState
                                                         ),
                                                         child: Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   -1.0, 0.0),
                                                           child: TextFormField(
                                                             controller: _model
@@ -1168,7 +1169,7 @@ class _AddVisitinginformationWidgetState
                                                             readOnly: true,
                                                             obscureText: false,
                                                             decoration:
-                                                                InputDecoration(
+                                                                const InputDecoration(
                                                               isDense: true,
                                                               alignLabelWithHint:
                                                                   false,
@@ -1221,7 +1222,7 @@ class _AddVisitinginformationWidgetState
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 8.0)),
+                                                        const SizedBox(height: 8.0)),
                                                   ),
                                             ][index]();
                                           },
@@ -1281,20 +1282,20 @@ class _AddVisitinginformationWidgetState
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .primary,
-                                                        Color(0xFF216DAA)
+                                                        const Color(0xFF216DAA)
                                                       ],
-                                                      stops: [0.0, 1.0],
+                                                      stops: const [0.0, 1.0],
                                                       begin:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.56, -1.0),
-                                                      end: AlignmentDirectional(
+                                                      end: const AlignmentDirectional(
                                                           -0.56, 1.0),
                                                     ),
                                                     shape: BoxShape.circle,
                                                   ),
                                                   child: Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: FaIcon(
                                                       FontAwesomeIcons
@@ -1355,7 +1356,7 @@ class _AddVisitinginformationWidgetState
                                                     ),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   12.0,
                                                                   8.0,
@@ -1392,13 +1393,13 @@ class _AddVisitinginformationWidgetState
                                                                           .labelSmallIsCustom,
                                                                 ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 8.0)),
                                                       ),
                                                     ),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(width: 8.0)),
+                                              ].divide(const SizedBox(width: 8.0)),
                                             ),
                                             Container(
                                               width: double.infinity,
@@ -1410,10 +1411,10 @@ class _AddVisitinginformationWidgetState
                                                     BorderRadius.circular(8.0),
                                               ),
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Padding(
-                                                  padding: EdgeInsets.all(12.0),
+                                                  padding: const EdgeInsets.all(12.0),
                                                   child: Text(
                                                     'บ้านเลขที่ 1 หมู่ 6 บ้านกฤษดานคร แขวงราษฎร์บูรณะ เขตราษฎร์บูรณะ กรุงเทพมหานคร 10140',
                                                     style: FlutterFlowTheme.of(
@@ -1437,9 +1438,9 @@ class _AddVisitinginformationWidgetState
                                                 ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(height: 8.0)),
+                                          ].divide(const SizedBox(height: 8.0)),
                                         ),
-                                      ].divide(SizedBox(height: 16.0)),
+                                      ].divide(const SizedBox(height: 16.0)),
                                     ),
                                   ),
                                   Divider(
@@ -1459,7 +1460,7 @@ class _AddVisitinginformationWidgetState
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsets.all(12.0),
+                                        padding: const EdgeInsets.all(12.0),
                                         child: Text(
                                           'อ่านน้อยลง',
                                           style: FlutterFlowTheme.of(context)
@@ -1484,9 +1485,9 @@ class _AddVisitinginformationWidgetState
                                       ),
                                     ],
                                   ),
-                                ].addToStart(SizedBox(height: 16.0)),
+                                ].addToStart(const SizedBox(height: 16.0)),
                               ),
-                              theme: ExpandableThemeData(
+                              theme: const ExpandableThemeData(
                                 tapHeaderToExpand: false,
                                 tapBodyToExpand: true,
                                 tapBodyToCollapse: true,
@@ -1511,12 +1512,12 @@ class _AddVisitinginformationWidgetState
                                 FlutterFlowTheme.of(context).primaryBackground,
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 12.0, 16.0, 12.0),
                             child: MasonryGridView.builder(
                               physics: const NeverScrollableScrollPhysics(),
                               gridDelegate:
-                                  SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                 crossAxisCount: 5,
                               ),
                               crossAxisSpacing: 12.0,
@@ -1534,12 +1535,12 @@ class _AddVisitinginformationWidgetState
                                           safeSetState(() {});
                                         },
                                         child: Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Container(
                                                   width: () {
@@ -1615,7 +1616,7 @@ class _AddVisitinginformationWidgetState
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsets.all(8.0),
+                                                            const EdgeInsets.all(8.0),
                                                         child: ClipRRect(
                                                           borderRadius:
                                                               BorderRadius
@@ -1710,7 +1711,7 @@ class _AddVisitinginformationWidgetState
                                                               .bodySmallIsCustom,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(height: 8.0)),
+                                            ].divide(const SizedBox(height: 8.0)),
                                           ),
                                         ),
                                       ),
@@ -1724,12 +1725,12 @@ class _AddVisitinginformationWidgetState
                                           safeSetState(() {});
                                         },
                                         child: Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Container(
                                                   width: () {
@@ -1805,7 +1806,7 @@ class _AddVisitinginformationWidgetState
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsets.all(8.0),
+                                                            const EdgeInsets.all(8.0),
                                                         child: ClipRRect(
                                                           borderRadius:
                                                               BorderRadius
@@ -1900,7 +1901,7 @@ class _AddVisitinginformationWidgetState
                                                               .bodySmallIsCustom,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(height: 8.0)),
+                                            ].divide(const SizedBox(height: 8.0)),
                                           ),
                                         ),
                                       ),
@@ -1914,12 +1915,12 @@ class _AddVisitinginformationWidgetState
                                           safeSetState(() {});
                                         },
                                         child: Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Container(
                                                   width: () {
@@ -1995,7 +1996,7 @@ class _AddVisitinginformationWidgetState
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsets.all(8.0),
+                                                            const EdgeInsets.all(8.0),
                                                         child: ClipRRect(
                                                           borderRadius:
                                                               BorderRadius
@@ -2090,7 +2091,7 @@ class _AddVisitinginformationWidgetState
                                                               .bodySmallIsCustom,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(height: 8.0)),
+                                            ].divide(const SizedBox(height: 8.0)),
                                           ),
                                         ),
                                       ),
@@ -2104,12 +2105,12 @@ class _AddVisitinginformationWidgetState
                                           safeSetState(() {});
                                         },
                                         child: Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Container(
                                                   width: () {
@@ -2185,7 +2186,7 @@ class _AddVisitinginformationWidgetState
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsets.all(8.0),
+                                                            const EdgeInsets.all(8.0),
                                                         child: ClipRRect(
                                                           borderRadius:
                                                               BorderRadius
@@ -2280,7 +2281,7 @@ class _AddVisitinginformationWidgetState
                                                               .bodySmallIsCustom,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(height: 8.0)),
+                                            ].divide(const SizedBox(height: 8.0)),
                                           ),
                                         ),
                                       ),
@@ -2294,12 +2295,12 @@ class _AddVisitinginformationWidgetState
                                           safeSetState(() {});
                                         },
                                         child: Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Container(
                                                   width: () {
@@ -2375,7 +2376,7 @@ class _AddVisitinginformationWidgetState
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsets.all(8.0),
+                                                            const EdgeInsets.all(8.0),
                                                         child: ClipRRect(
                                                           borderRadius:
                                                               BorderRadius
@@ -2470,7 +2471,7 @@ class _AddVisitinginformationWidgetState
                                                               .bodySmallIsCustom,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(height: 8.0)),
+                                            ].divide(const SizedBox(height: 8.0)),
                                           ),
                                         ),
                                       ),
@@ -2479,7 +2480,7 @@ class _AddVisitinginformationWidgetState
                             ),
                           ),
                         ),
-                        Divider(
+                        const Divider(
                           height: 1.0,
                           thickness: 1.0,
                           color: Color(0xFFD7D8D9),
@@ -2496,7 +2497,7 @@ class _AddVisitinginformationWidgetState
                               wrapWithModel(
                                 model: _model.haealthModel,
                                 updateCallback: () => safeSetState(() {}),
-                                child: HaealthWidget(),
+                                child: const HaealthWidget(),
                               ),
                             ],
                           ),
@@ -2507,7 +2508,7 @@ class _AddVisitinginformationWidgetState
                               wrapWithModel(
                                 model: _model.vitalSignModel,
                                 updateCallback: () => safeSetState(() {}),
-                                child: VitalSignWidget(),
+                                child: const VitalSignWidget(),
                               ),
                             ],
                           ),
@@ -2515,20 +2516,20 @@ class _AddVisitinginformationWidgetState
                           wrapWithModel(
                             model: _model.visitHOMESModel,
                             updateCallback: () => safeSetState(() {}),
-                            child: VisitHOMESWidget(),
+                            child: const VisitHOMESWidget(),
                           ),
                       ],
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 1.0),
+                alignment: const AlignmentDirectional(0.0, 1.0),
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 4.0,
                         color: Color(0x33000000),
@@ -2538,18 +2539,18 @@ class _AddVisitinginformationWidgetState
                         ),
                       )
                     ],
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(24.0),
                       topRight: Radius.circular(24.0),
                     ),
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 24.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 24.0),
                     child: MasonryGridView.builder(
                       physics: const NeverScrollableScrollPhysics(),
                       gridDelegate:
-                          SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                          const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 1,
                       ),
                       crossAxisSpacing: 24.0,
@@ -2581,18 +2582,18 @@ class _AddVisitinginformationWidgetState
                                     value: _model.switchValue!,
                                     onChanged: (newValue) async {
                                       safeSetState(
-                                          () => _model.switchValue = newValue!);
+                                          () => _model.switchValue = newValue);
                                     },
                                     activeColor: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
                                     activeTrackColor:
                                         FlutterFlowTheme.of(context).primary,
-                                    inactiveTrackColor: Color(0xFFE2E2E2),
+                                    inactiveTrackColor: const Color(0xFFE2E2E2),
                                     inactiveThumbColor:
                                         FlutterFlowTheme.of(context)
                                             .secondaryBackground,
                                   ),
-                                ].divide(SizedBox(width: 24.0)),
+                                ].divide(const SizedBox(width: 24.0)),
                               ),
                           () => Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -2613,7 +2614,7 @@ class _AddVisitinginformationWidgetState
                                             return Padding(
                                               padding: MediaQuery.viewInsetsOf(
                                                   context),
-                                              child: ResonCancelWidget(),
+                                              child: const ResonCancelWidget(),
                                             );
                                           },
                                         ).then((value) => safeSetState(() {}));
@@ -2642,13 +2643,13 @@ class _AddVisitinginformationWidgetState
                                           borderRadius:
                                               BorderRadius.circular(100.0),
                                           border: Border.all(
-                                            color: Color(0xFFBDBDBD),
+                                            color: const Color(0xFFBDBDBD),
                                             width: 1.0,
                                           ),
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Text(
                                             'ยกเลิกงาน',
                                             style: FlutterFlowTheme.of(context)
@@ -2673,57 +2674,15 @@ class _AddVisitinginformationWidgetState
                                     ),
                                   ),
                                   Expanded(
-                                    child: FFButtonWidget(
+                                    child: MainButton(
+                                      text: 'บันทึก',
                                       onPressed: () async {
                                         context.pushNamed(
                                             PatientinfoWidget.routeName);
                                       },
-                                      text: 'บันทึก',
-                                      options: FFButtonOptions(
-                                        height: () {
-                                          if (MediaQuery.sizeOf(context).width <
-                                              kBreakpointSmall) {
-                                            return 48.0;
-                                          } else if (MediaQuery.sizeOf(context)
-                                                  .width <
-                                              kBreakpointMedium) {
-                                            return 48.0;
-                                          } else if (MediaQuery.sizeOf(context)
-                                                  .width <
-                                              kBreakpointLarge) {
-                                            return 56.0;
-                                          } else {
-                                            return 56.0;
-                                          }
-                                        }(),
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            16.0, 0.0, 16.0, 0.0),
-                                        iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
-                                                0.0, 0.0, 0.0, 0.0),
-                                        color: FlutterFlowTheme.of(context)
-                                            .customColor5,
-                                        textStyle: FlutterFlowTheme.of(context)
-                                            .labelMedium
-                                            .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMediumFamily,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
-                                              letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  !FlutterFlowTheme.of(context)
-                                                      .labelMediumIsCustom,
-                                            ),
-                                        elevation: 0.0,
-                                        borderRadius:
-                                            BorderRadius.circular(100.0),
-                                      ),
                                     ),
                                   ),
-                                ].divide(SizedBox(width: 8.0)),
+                                ].divide(const SizedBox(width: 8.0)),
                               ),
                         ][index]();
                       },

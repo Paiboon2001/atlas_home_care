@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/components/main_button_widget.dart';
 import '/homevisitlist/widget/delete/delete_widget.dart';
 import 'dart:ui';
 import '/index.dart';
@@ -48,7 +49,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
       key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).primary,
       floatingActionButton: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 88.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 88.0),
         child: FloatingActionButton(
           onPressed: () async {
             context.pushNamed(AddressWidget.routeName);
@@ -61,12 +62,12 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Color(0xFF9FD5FF),
+                  const Color(0xFF9FD5FF),
                   FlutterFlowTheme.of(context).primary
                 ],
-                stops: [0.0, 1.0],
-                begin: AlignmentDirectional(0.0, -1.0),
-                end: AlignmentDirectional(0, 1.0),
+                stops: const [0.0, 1.0],
+                begin: const AlignmentDirectional(0.0, -1.0),
+                end: const AlignmentDirectional(0, 1.0),
               ),
               borderRadius: BorderRadius.circular(100.0),
             ),
@@ -87,7 +88,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
           borderRadius: 30.0,
           borderWidth: 1.0,
           buttonSize: 44.0,
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_new_rounded,
             color: Colors.white,
             size: 18.0,
@@ -107,12 +108,12 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                     !FlutterFlowTheme.of(context).titleMediumIsCustom,
               ),
         ),
-        actions: [],
+        actions: const [],
         flexibleSpace: FlexibleSpaceBar(
           background: Opacity(
             opacity: 0.3,
             child: Align(
-              alignment: AlignmentDirectional(1.0, 1.0),
+              alignment: const AlignmentDirectional(1.0, 1.0),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(8.0),
                 child: Image.asset(
@@ -131,7 +132,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
         height: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).primaryBackground,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               blurRadius: 4.0,
               color: Color(0x33000000),
@@ -141,7 +142,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
               ),
             )
           ],
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -149,7 +150,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
         child: Stack(
           children: [
             ListView(
-              padding: EdgeInsets.fromLTRB(
+              padding: const EdgeInsets.fromLTRB(
                 0,
                 16.0,
                 0,
@@ -159,7 +160,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
               scrollDirection: Axis.vertical,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: Container(
                     width: double.infinity,
                     decoration: BoxDecoration(
@@ -183,7 +184,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 8.0, 12.0, 12.0, 12.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -193,14 +194,14 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                 Container(
                                   width: 32.0,
                                   height: 32.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Stack(
                                     children: [
                                       Theme(
                                         data: ThemeData(
-                                          checkboxTheme: CheckboxThemeData(
+                                          checkboxTheme: const CheckboxThemeData(
                                             visualDensity:
                                                 VisualDensity.compact,
                                             materialTapTargetSize:
@@ -226,7 +227,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                                   width: 2,
                                                   color: FlutterFlowTheme.of(
                                                           context)
-                                                      .secondaryText!,
+                                                      .secondaryText,
                                                 )
                                               : null,
                                           activeColor:
@@ -239,7 +240,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Container(
                                           width: 14.0,
                                           height: 14.0,
@@ -252,7 +253,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Container(
                                           width: 8.0,
                                           height: 8.0,
@@ -292,7 +293,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                         ),
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                           ),
                           Divider(
@@ -301,7 +302,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                             color: FlutterFlowTheme.of(context).alternate,
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 12.0, 0.0, 12.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -324,21 +325,21 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF9FD5FF),
+                                                const Color(0xFF9FD5FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.0, -1.0),
-                                              end: AlignmentDirectional(0, 1.0),
+                                              end: const AlignmentDirectional(0, 1.0),
                                             ),
                                             borderRadius:
                                                 BorderRadius.circular(8.0),
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     6.0, 4.0, 8.0, 4.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -388,7 +389,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                                                     .labelSmallIsCustom,
                                                           ),
                                                 ),
-                                              ].divide(SizedBox(width: 4.0)),
+                                              ].divide(const SizedBox(width: 4.0)),
                                             ),
                                           ),
                                         ),
@@ -415,7 +416,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                       ),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           6.0, 4.0, 8.0, 4.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -445,13 +446,13 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                                           .labelSmallIsCustom,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 6.0)),
+                                        ].divide(const SizedBox(width: 6.0)),
                                       ),
                                     ),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 0.0, 0.0, 0.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
@@ -468,7 +469,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                           return Padding(
                                             padding: MediaQuery.viewInsetsOf(
                                                 context),
-                                            child: DeleteWidget(),
+                                            child: const DeleteWidget(),
                                           );
                                         },
                                       ).then((value) => safeSetState(() {}));
@@ -484,7 +485,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             6.0, 4.0, 8.0, 4.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -519,15 +520,15 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                                             .labelSmallIsCustom,
                                                   ),
                                             ),
-                                          ].divide(SizedBox(width: 6.0)),
+                                          ].divide(const SizedBox(width: 6.0)),
                                         ),
                                       ),
                                     ),
                                   ),
                                 ),
                               ]
-                                  .addToStart(SizedBox(width: 48.0))
-                                  .addToEnd(SizedBox(width: 12.0)),
+                                  .addToStart(const SizedBox(width: 48.0))
+                                  .addToEnd(const SizedBox(width: 12.0)),
                             ),
                           ),
                         ],
@@ -536,7 +537,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: Container(
                     width: double.infinity,
                     decoration: BoxDecoration(
@@ -560,7 +561,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 8.0, 12.0, 12.0, 12.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -570,14 +571,14 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                 Container(
                                   width: 32.0,
                                   height: 32.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Stack(
                                     children: [
                                       Theme(
                                         data: ThemeData(
-                                          checkboxTheme: CheckboxThemeData(
+                                          checkboxTheme: const CheckboxThemeData(
                                             visualDensity:
                                                 VisualDensity.compact,
                                             materialTapTargetSize:
@@ -603,7 +604,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                                   width: 2,
                                                   color: FlutterFlowTheme.of(
                                                           context)
-                                                      .secondaryText!,
+                                                      .secondaryText,
                                                 )
                                               : null,
                                           activeColor:
@@ -616,7 +617,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Container(
                                           width: 14.0,
                                           height: 14.0,
@@ -629,7 +630,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Container(
                                           width: 8.0,
                                           height: 8.0,
@@ -669,7 +670,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                         ),
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                           ),
                           Divider(
@@ -678,7 +679,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                             color: FlutterFlowTheme.of(context).alternate,
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 12.0, 0.0, 12.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -703,7 +704,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                       ),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           6.0, 4.0, 8.0, 4.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -733,13 +734,13 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                                           .labelSmallIsCustom,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 6.0)),
+                                        ].divide(const SizedBox(width: 6.0)),
                                       ),
                                     ),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 0.0, 0.0, 0.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
@@ -756,7 +757,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                           return Padding(
                                             padding: MediaQuery.viewInsetsOf(
                                                 context),
-                                            child: DeleteWidget(),
+                                            child: const DeleteWidget(),
                                           );
                                         },
                                       ).then((value) => safeSetState(() {}));
@@ -772,7 +773,7 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             6.0, 4.0, 8.0, 4.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -807,15 +808,15 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                                                             .labelSmallIsCustom,
                                                   ),
                                             ),
-                                          ].divide(SizedBox(width: 6.0)),
+                                          ].divide(const SizedBox(width: 6.0)),
                                         ),
                                       ),
                                     ),
                                   ),
                                 ),
                               ]
-                                  .addToStart(SizedBox(width: 48.0))
-                                  .addToEnd(SizedBox(width: 12.0)),
+                                  .addToStart(const SizedBox(width: 48.0))
+                                  .addToEnd(const SizedBox(width: 12.0)),
                             ),
                           ),
                         ],
@@ -823,15 +824,15 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                     ),
                   ),
                 ),
-              ].divide(SizedBox(height: 12.0)),
+              ].divide(const SizedBox(height: 12.0)),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       blurRadius: 4.0,
                       color: Color(0x33000000),
@@ -841,53 +842,19 @@ class _SelectLocationWidgetState extends State<SelectLocationWidget> {
                       ),
                     )
                   ],
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(24.0),
                     topRight: Radius.circular(24.0),
                   ),
                 ),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
-                  child: FFButtonWidget(
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
+                  child: MainButton(
+                    text: 'ยืนยัน',
                     onPressed: () async {
                       context.safePop();
                     },
-                    text: 'ยืนยัน',
-                    options: FFButtonOptions(
-                      height: () {
-                        if (MediaQuery.sizeOf(context).width <
-                            kBreakpointSmall) {
-                          return 48.0;
-                        } else if (MediaQuery.sizeOf(context).width <
-                            kBreakpointMedium) {
-                          return 48.0;
-                        } else if (MediaQuery.sizeOf(context).width <
-                            kBreakpointLarge) {
-                          return 56.0;
-                        } else {
-                          return 56.0;
-                        }
-                      }(),
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                      iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: FlutterFlowTheme.of(context).customColor5,
-                      textStyle: FlutterFlowTheme.of(context)
-                          .labelMedium
-                          .override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).labelMediumFamily,
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            letterSpacing: 0.0,
-                            useGoogleFonts: !FlutterFlowTheme.of(context)
-                                .labelMediumIsCustom,
-                          ),
-                      elevation: 0.0,
-                      borderRadius: BorderRadius.circular(100.0),
-                    ),
                   ),
                 ),
               ),

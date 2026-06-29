@@ -1,3 +1,4 @@
+import '/components/main_button_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -62,8 +63,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -81,8 +82,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -100,8 +101,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -119,8 +120,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -138,8 +139,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -157,8 +158,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -176,8 +177,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -195,8 +196,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -214,8 +215,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -233,8 +234,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -246,8 +247,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -259,8 +260,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -272,8 +273,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -285,8 +286,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -298,8 +299,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -311,8 +312,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -324,8 +325,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -337,8 +338,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -350,8 +351,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -363,8 +364,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -376,8 +377,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -389,8 +390,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -402,8 +403,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -415,8 +416,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -428,8 +429,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -441,8 +442,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -454,8 +455,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -467,8 +468,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -480,8 +481,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -493,8 +494,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -506,8 +507,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -519,8 +520,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -532,8 +533,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -545,8 +546,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -558,8 +559,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -571,8 +572,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -584,8 +585,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -597,8 +598,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -610,8 +611,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -623,8 +624,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -636,8 +637,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -649,8 +650,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -662,8 +663,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -675,8 +676,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -688,8 +689,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -701,8 +702,8 @@ class _NineQWidgetState extends State<NineQWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -1097,7 +1098,7 @@ class _NineQWidgetState extends State<NineQWidget>
             ),
           ],
         ),
-        actions: [],
+        actions: const [],
         centerTitle: false,
         elevation: 0.0,
       ),
@@ -1107,13 +1108,13 @@ class _NineQWidgetState extends State<NineQWidget>
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
           borderRadius: BorderRadius.circular(0.0),
         ),
@@ -1146,7 +1147,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1156,7 +1157,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1166,7 +1167,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1176,7 +1177,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1186,7 +1187,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1196,7 +1197,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1206,7 +1207,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1216,7 +1217,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1225,7 +1226,7 @@ class _NineQWidgetState extends State<NineQWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -1298,7 +1299,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -1354,7 +1355,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().nineone = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1365,7 +1366,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.nineoneModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '1',
@@ -1392,7 +1393,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().nineone = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1403,7 +1404,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.nineoneModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '1',
                                                 text: 'เป็นบางวัน 1-7 วัน',
                                                 nineq: '2',
@@ -1430,7 +1431,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().nineone = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1441,7 +1442,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.nineoneModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '2',
                                                 text: 'เป็นบ่อยมากกว่า 7 วัน',
                                                 nineq: '3',
@@ -1468,7 +1469,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().nineone = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1479,7 +1480,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.nineoneModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '3',
                                                 text: 'เป็นทุกวัน',
                                                 nineq: '4',
@@ -1492,7 +1493,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -1532,7 +1533,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1542,7 +1543,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1552,7 +1553,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1562,7 +1563,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1572,7 +1573,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1582,7 +1583,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1592,7 +1593,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1601,7 +1602,7 @@ class _NineQWidgetState extends State<NineQWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -1674,7 +1675,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -1730,7 +1731,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninetwo = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1741,7 +1742,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninetwoModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '1',
@@ -1768,7 +1769,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninetwo = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1779,7 +1780,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninetwoModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '1',
                                                 text: 'เป็นบางวัน 1-7 วัน',
                                                 nineq: '2',
@@ -1806,7 +1807,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninetwo = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1817,7 +1818,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninetwoModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '2',
                                                 text: 'เป็นบ่อยมากกว่า 7 วัน',
                                                 nineq: '3',
@@ -1844,7 +1845,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninetwo = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1855,7 +1856,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninetwoModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '3',
                                                 text: 'เป็นทุกวัน',
                                                 nineq: '4',
@@ -1868,7 +1869,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -1919,7 +1920,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1929,7 +1930,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1939,7 +1940,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1949,7 +1950,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1959,7 +1960,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1969,7 +1970,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1978,7 +1979,7 @@ class _NineQWidgetState extends State<NineQWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -2051,7 +2052,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -2107,7 +2108,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninethree = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2118,7 +2119,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninethreeModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '1',
@@ -2145,7 +2146,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninethree = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2156,7 +2157,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninethreeModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '1',
                                                 text: 'เป็นบางวัน 1-7 วัน',
                                                 nineq: '2',
@@ -2183,7 +2184,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninethree = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2194,7 +2195,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninethreeModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '2',
                                                 text: 'เป็นบ่อยมากกว่า 7 วัน',
                                                 nineq: '3',
@@ -2221,7 +2222,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninethree = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2232,7 +2233,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninethreeModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '3',
                                                 text: 'เป็นทุกวัน',
                                                 nineq: '4',
@@ -2245,7 +2246,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -2307,7 +2308,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2317,7 +2318,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2327,7 +2328,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2337,7 +2338,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2347,7 +2348,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2356,7 +2357,7 @@ class _NineQWidgetState extends State<NineQWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -2429,7 +2430,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -2485,7 +2486,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninefore = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2496,7 +2497,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.nineforeModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '1',
@@ -2523,7 +2524,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninefore = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2534,7 +2535,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.nineforeModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '1',
                                                 text: 'เป็นบางวัน 1-7 วัน',
                                                 nineq: '2',
@@ -2561,7 +2562,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninefore = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2572,7 +2573,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.nineforeModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '2',
                                                 text: 'เป็นบ่อยมากกว่า 7 วัน',
                                                 nineq: '3',
@@ -2599,7 +2600,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninefore = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2610,7 +2611,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.nineforeModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '3',
                                                 text: 'เป็นทุกวัน',
                                                 nineq: '4',
@@ -2623,7 +2624,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -2696,7 +2697,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2706,7 +2707,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2716,7 +2717,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2726,7 +2727,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2735,7 +2736,7 @@ class _NineQWidgetState extends State<NineQWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -2808,7 +2809,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -2864,7 +2865,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninefive = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2875,7 +2876,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninefiveModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinefiveWidget(
+                                              child: const NinefiveWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '1',
@@ -2902,7 +2903,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninefive = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2913,7 +2914,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninefiveModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinefiveWidget(
+                                              child: const NinefiveWidget(
                                                 num: '1',
                                                 text: 'เป็นบางวัน 1-7 วัน',
                                                 nineq: '2',
@@ -2940,7 +2941,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninefive = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2951,7 +2952,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninefiveModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinefiveWidget(
+                                              child: const NinefiveWidget(
                                                 num: '2',
                                                 text: 'เป็นบ่อยมากกว่า 7 วัน',
                                                 nineq: '3',
@@ -2978,7 +2979,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninefive = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2989,7 +2990,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninefiveModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinefiveWidget(
+                                              child: const NinefiveWidget(
                                                 num: '3',
                                                 text: 'เป็นทุกวัน',
                                                 nineq: '4',
@@ -3002,7 +3003,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -3086,7 +3087,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3096,7 +3097,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3106,7 +3107,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3115,7 +3116,7 @@ class _NineQWidgetState extends State<NineQWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -3188,7 +3189,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -3244,7 +3245,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninesix = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3255,7 +3256,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninesixModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesixWidget(
+                                              child: const NinesixWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '1',
@@ -3282,7 +3283,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninesix = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3293,7 +3294,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninesixModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesixWidget(
+                                              child: const NinesixWidget(
                                                 num: '1',
                                                 text: 'เป็นบางวัน 1-7 วัน',
                                                 nineq: '2',
@@ -3320,7 +3321,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninesix = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3331,7 +3332,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninesixModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesixWidget(
+                                              child: const NinesixWidget(
                                                 num: '2',
                                                 text: 'เป็นบ่อยมากกว่า 7 วัน',
                                                 nineq: '3',
@@ -3358,7 +3359,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninesix = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3369,7 +3370,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninesixModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesixWidget(
+                                              child: const NinesixWidget(
                                                 num: '3',
                                                 text: 'เป็นทุกวัน',
                                                 nineq: '4',
@@ -3382,7 +3383,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -3477,7 +3478,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3487,7 +3488,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3496,7 +3497,7 @@ class _NineQWidgetState extends State<NineQWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -3544,7 +3545,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                         image: DecorationImage(
                                           fit: BoxFit.cover,
                                           alignment:
-                                              AlignmentDirectional(0.0, 1.0),
+                                              const AlignmentDirectional(0.0, 1.0),
                                           image: Image.network(
                                             'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/z7zkkcns1kgo/AHC_33.png',
                                           ).image,
@@ -3571,7 +3572,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -3627,7 +3628,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().nineseven = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3638,7 +3639,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninesevenModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesevenWidget(
+                                              child: const NinesevenWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '1',
@@ -3665,7 +3666,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().nineseven = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3676,7 +3677,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninesevenModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesevenWidget(
+                                              child: const NinesevenWidget(
                                                 num: '1',
                                                 text: 'เป็นบางวัน 1-7 วัน',
                                                 nineq: '2',
@@ -3703,7 +3704,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().nineseven = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3714,7 +3715,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninesevenModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesevenWidget(
+                                              child: const NinesevenWidget(
                                                 num: '2',
                                                 text: 'เป็นบ่อยมากกว่า 7 วัน',
                                                 nineq: '3',
@@ -3741,7 +3742,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().nineseven = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3752,7 +3753,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninesevenModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesevenWidget(
+                                              child: const NinesevenWidget(
                                                 num: '3',
                                                 text: 'เป็นทุกวัน',
                                                 nineq: '4',
@@ -3765,7 +3766,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -3871,7 +3872,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3880,7 +3881,7 @@ class _NineQWidgetState extends State<NineQWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -3953,7 +3954,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -4009,7 +4010,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().nineeight = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4020,7 +4021,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.nineeightModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineeightWidget(
+                                              child: const NineeightWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '1',
@@ -4047,7 +4048,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().nineeight = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4058,7 +4059,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.nineeightModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineeightWidget(
+                                              child: const NineeightWidget(
                                                 num: '1',
                                                 text: 'เป็นบางวัน 1-7 วัน',
                                                 nineq: '2',
@@ -4085,7 +4086,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().nineeight = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4096,7 +4097,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.nineeightModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineeightWidget(
+                                              child: const NineeightWidget(
                                                 num: '2',
                                                 text: 'เป็นบ่อยมากกว่า 7 วัน',
                                                 nineq: '3',
@@ -4123,7 +4124,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().nineeight = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4134,7 +4135,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.nineeightModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineeightWidget(
+                                              child: const NineeightWidget(
                                                 num: '3',
                                                 text: 'เป็นทุกวัน',
                                                 nineq: '4',
@@ -4147,7 +4148,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -4263,7 +4264,7 @@ class _NineQWidgetState extends State<NineQWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -4336,7 +4337,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -4392,7 +4393,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninenine = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4401,7 +4402,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninenineModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinenineWidget(
+                                              child: const NinenineWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '1',
@@ -4428,7 +4429,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninenine = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4437,7 +4438,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninenineModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinenineWidget(
+                                              child: const NinenineWidget(
                                                 num: '1',
                                                 text: 'เป็นบางวัน 1-7 วัน',
                                                 nineq: '2',
@@ -4464,7 +4465,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninenine = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4473,7 +4474,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninenineModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinenineWidget(
+                                              child: const NinenineWidget(
                                                 num: '2',
                                                 text: 'เป็นบ่อยมากกว่า 7 วัน',
                                                 nineq: '3',
@@ -4500,7 +4501,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               FFAppState().ninenine = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4509,7 +4510,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                               model: _model.ninenineModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinenineWidget(
+                                              child: const NinenineWidget(
                                                 num: '3',
                                                 text: 'เป็นทุกวัน',
                                                 nineq: '4',
@@ -4522,54 +4523,26 @@ class _NineQWidgetState extends State<NineQWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 16.0, 16.0, 24.0),
-                          child: FFButtonWidget(
+                          child: MainButton(
+                            text: 'บันทึก',
                             onPressed: () async {
                               _model.nineq = 10;
                               safeSetState(() {});
                             },
-                            text: 'บันทึก',
-                            options: FFButtonOptions(
-                              width: double.infinity,
-                              height: 48.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 0.0, 16.0, 0.0),
-                              iconAlignment: IconAlignment.start,
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              color: FlutterFlowTheme.of(context).customColor5,
-                              textStyle: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily,
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts:
-                                        !FlutterFlowTheme.of(context)
-                                            .bodyMediumIsCustom,
-                                  ),
-                              elevation: 0.0,
-                              borderSide: BorderSide(
-                                color: Colors.transparent,
-                                width: 0.0,
-                              ),
-                              borderRadius: BorderRadius.circular(100.0),
-                            ),
                           ),
                         ),
                       ],
                     );
                   } else if (_model.nineq == 10) {
                     return ListView(
-                      padding: EdgeInsets.fromLTRB(
+                      padding: const EdgeInsets.fromLTRB(
                         0,
                         8.0,
                         0,
@@ -4579,7 +4552,7 @@ class _NineQWidgetState extends State<NineQWidget>
                       scrollDirection: Axis.vertical,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, -1.0),
+                          alignment: const AlignmentDirectional(0.0, -1.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
                             child: Image.network(
@@ -4618,7 +4591,7 @@ class _NineQWidgetState extends State<NineQWidget>
                         ),
                         if (FFAppState().gay == true)
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               width: double.infinity,
@@ -4628,7 +4601,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 borderRadius: BorderRadius.circular(24.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -4657,7 +4630,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                                         .labelSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     Text(
                                       'คุณได้ 6 คะแนน',
@@ -4698,7 +4671,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                             BorderRadius.circular(16.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(12.0),
+                                        padding: const EdgeInsets.all(12.0),
                                         child: Text(
                                           'เป็นผู้มีความเสี่ยงโรคซึมเศร้า เพราะมีเหตุให้เกิดการกระทบกระทั้งจิตใจทำให้มีอาการวิตกกังวล และมีความคิดด้านลบหรือสิ้นหวังกับชีวิต',
                                           textAlign: TextAlign.start,
@@ -4719,7 +4692,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 16.0, 0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
@@ -4743,11 +4716,11 @@ class _NineQWidgetState extends State<NineQWidget>
                                           width: double.infinity,
                                           height: 48.0,
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           iconAlignment: IconAlignment.start,
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: FlutterFlowTheme.of(context)
                                               .customColor5,
@@ -4773,14 +4746,14 @@ class _NineQWidgetState extends State<NineQWidget>
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 16.0)),
+                                  ].divide(const SizedBox(height: 16.0)),
                                 ),
                               ),
                             ),
                           ),
                         if (FFAppState().gay == false)
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               width: double.infinity,
@@ -4790,7 +4763,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                 borderRadius: BorderRadius.circular(24.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -4819,7 +4792,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                                         .labelSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     Text(
                                       'คุณได้ 15 คะแนน',
@@ -4854,12 +4827,12 @@ class _NineQWidgetState extends State<NineQWidget>
                                     Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFFFEDED),
+                                        color: const Color(0xFFFFEDED),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(12.0),
+                                        padding: const EdgeInsets.all(12.0),
                                         child: Text(
                                           'เป็นผู้มีความเสี่ยงโรคซึมเศร้า เพราะมีเหตุให้เกิดการกระทบกระทั้งจิตใจทำให้มีอาการวิตกกังวล และมีความคิดด้านลบหรือสิ้นหวังกับชีวิต\n\nให้ประเมินต่อด้วยแบบประเมิน โรคซึมเศร้า 8Q',
                                           textAlign: TextAlign.start,
@@ -4880,7 +4853,7 @@ class _NineQWidgetState extends State<NineQWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 16.0, 0.0, 0.0),
                                       child: MasonryGridView.builder(
                                         physics:
@@ -4943,7 +4916,9 @@ class _NineQWidgetState extends State<NineQWidget>
                                         shrinkWrap: true,
                                         itemBuilder: (context, index) {
                                           return [
-                                            () => FFButtonWidget(
+                                            () => MainButton(
+                                                  text:
+                                                      'ทำแบบประเมินโรคซึมเศร้า (8Q)',
                                                   onPressed: () async {
                                                     context.pushNamed(
                                                         EightQWidget.routeName);
@@ -4959,48 +4934,6 @@ class _NineQWidgetState extends State<NineQWidget>
                                                     FFAppState().ninenine = '';
                                                     safeSetState(() {});
                                                   },
-                                                  text:
-                                                      'ทำแบบประเมินโรคซึมเศร้า (8Q)',
-                                                  options: FFButtonOptions(
-                                                    width: double.infinity,
-                                                    height: 48.0,
-                                                    padding:
-                                                        EdgeInsetsDirectional
-                                                            .fromSTEB(16.0, 0.0,
-                                                                16.0, 0.0),
-                                                    iconAlignment:
-                                                        IconAlignment.start,
-                                                    iconPadding:
-                                                        EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 0.0,
-                                                                0.0, 0.0),
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .customColor5,
-                                                    textStyle:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMedium
-                                                            .override(
-                                                              fontFamily:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumFamily,
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .secondaryBackground,
-                                                              letterSpacing:
-                                                                  0.0,
-                                                              useGoogleFonts:
-                                                                  !FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumIsCustom,
-                                                            ),
-                                                    elevation: 0.0,
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            100.0),
-                                                  ),
                                                 ),
                                             () => FFButtonWidget(
                                                   onPressed: () async {
@@ -5024,16 +4957,16 @@ class _NineQWidgetState extends State<NineQWidget>
                                                     width: double.infinity,
                                                     height: 48.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 16.0, 0.0),
                                                     iconAlignment:
                                                         IconAlignment.start,
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
-                                                    color: Color(0x00164874),
+                                                    color: const Color(0x00164874),
                                                     textStyle:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -5069,12 +5002,12 @@ class _NineQWidgetState extends State<NineQWidget>
                                         },
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 16.0)),
+                                  ].divide(const SizedBox(height: 16.0)),
                                 ),
                               ),
                             ),
                           ),
-                      ].divide(SizedBox(height: 24.0)),
+                      ].divide(const SizedBox(height: 24.0)),
                     );
                   } else {
                     return Container(

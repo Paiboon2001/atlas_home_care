@@ -52,7 +52,7 @@ class _SummaryPressureWidgetState extends State<SummaryPressureWidget> {
         leading: Container(
           width: 54.0,
           height: 54.0,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             shape: BoxShape.circle,
           ),
           child: FlutterFlowIconButton(
@@ -60,7 +60,7 @@ class _SummaryPressureWidgetState extends State<SummaryPressureWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 44.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back_ios_new_rounded,
               color: Colors.white,
               size: 18.0,
@@ -88,18 +88,18 @@ class _SummaryPressureWidgetState extends State<SummaryPressureWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(-0.63, 0.0),
+              alignment: const AlignmentDirectional(-0.63, 0.0),
               child: Container(
                 width: 54.0,
                 height: 54.0,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                 ),
               ),
             ),
           ],
         ),
-        actions: [],
+        actions: const [],
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -109,32 +109,32 @@ class _SummaryPressureWidgetState extends State<SummaryPressureWidget> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
         ),
         child: Stack(
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
               child: wrapWithModel(
                 model: _model.sumModel,
                 updateCallback: () => safeSetState(() {}),
-                child: SumWidget(),
+                child: const SumWidget(),
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).customColor5,
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       blurRadius: 4.0,
                       color: Color(0x33000000),
@@ -144,14 +144,14 @@ class _SummaryPressureWidgetState extends State<SummaryPressureWidget> {
                       ),
                     )
                   ],
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(24.0),
                     topRight: Radius.circular(24.0),
                   ),
                 ),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 24.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 24.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -183,14 +183,14 @@ class _SummaryPressureWidgetState extends State<SummaryPressureWidget> {
                                   .override(
                                     fontFamily: FlutterFlowTheme.of(context)
                                         .labelSmallFamily,
-                                    color: Color(0xFFBEC5CF),
+                                    color: const Color(0xFFBEC5CF),
                                     letterSpacing: 0.0,
                                     useGoogleFonts:
                                         !FlutterFlowTheme.of(context)
                                             .labelSmallIsCustom,
                                   ),
                             ),
-                          ].divide(SizedBox(height: 8.0)),
+                          ].divide(const SizedBox(height: 8.0)),
                         ),
                       ),
                       Expanded(
@@ -220,17 +220,17 @@ class _SummaryPressureWidgetState extends State<SummaryPressureWidget> {
                                   .override(
                                     fontFamily: FlutterFlowTheme.of(context)
                                         .labelSmallFamily,
-                                    color: Color(0xFFBEC5CF),
+                                    color: const Color(0xFFBEC5CF),
                                     letterSpacing: 0.0,
                                     useGoogleFonts:
                                         !FlutterFlowTheme.of(context)
                                             .labelSmallIsCustom,
                                   ),
                             ),
-                          ].divide(SizedBox(height: 8.0)),
+                          ].divide(const SizedBox(height: 8.0)),
                         ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                 ),
               ),

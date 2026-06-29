@@ -1,5 +1,6 @@
 import '/assessmentform/highbloodpressure/widget/bloodpage/bloodpage_widget.dart';
 import '/assessmentform/thirtytree/widget/start_as_bottom/start_as_bottom_widget.dart';
+import '/components/main_button_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -71,8 +72,8 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -90,8 +91,8 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -109,8 +110,8 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -128,8 +129,8 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -141,8 +142,8 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -154,8 +155,8 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -167,8 +168,8 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -357,7 +358,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
             ),
           ],
         ),
-        actions: [],
+        actions: const [],
         centerTitle: false,
         elevation: 0.0,
       ),
@@ -367,13 +368,13 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
           borderRadius: BorderRadius.circular(0.0),
         ),
@@ -406,7 +407,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -416,7 +417,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -425,10 +426,10 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 8.0, 16.0, 0.0),
                             child: ListView(
-                              padding: EdgeInsets.fromLTRB(
+                              padding: const EdgeInsets.fromLTRB(
                                 0,
                                 16.0,
                                 0,
@@ -445,7 +446,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                     borderRadius: BorderRadius.circular(24.0),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(16.0),
+                                    padding: const EdgeInsets.all(16.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -539,7 +540,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                               }
                                                             }(),
                                                             decoration:
-                                                                BoxDecoration(
+                                                                const BoxDecoration(
                                                               gradient:
                                                                   LinearGradient(
                                                                 colors: [
@@ -565,7 +566,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                             ),
                                                             child: Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Icon(
                                                                 Icons
@@ -597,7 +598,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                           .labelSmallIsCustom,
                                                                 ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 8.0)),
                                                       ),
                                                       Container(
@@ -614,7 +615,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                         ),
                                                         child: Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   -1.0, 0.0),
                                                           child: TextFormField(
                                                             controller: _model
@@ -625,7 +626,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                             readOnly: true,
                                                             obscureText: false,
                                                             decoration:
-                                                                InputDecoration(
+                                                                const InputDecoration(
                                                               isDense: true,
                                                               alignLabelWithHint:
                                                                   false,
@@ -678,13 +679,13 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 8.0)),
+                                                        const SizedBox(height: 8.0)),
                                                   ),
                                               () => MasonryGridView.builder(
                                                     physics:
                                                         const NeverScrollableScrollPhysics(),
                                                     gridDelegate:
-                                                        SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                        const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                       crossAxisCount: 2,
                                                     ),
                                                     crossAxisSpacing: 12.0,
@@ -744,16 +745,16 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                             LinearGradient(
                                                                           colors: [
                                                                             FlutterFlowTheme.of(context).primary,
-                                                                            Color(0xFF216DAA)
+                                                                            const Color(0xFF216DAA)
                                                                           ],
-                                                                          stops: [
+                                                                          stops: const [
                                                                             0.0,
                                                                             1.0
                                                                           ],
-                                                                          begin: AlignmentDirectional(
+                                                                          begin: const AlignmentDirectional(
                                                                               0.0,
                                                                               -1.0),
-                                                                          end: AlignmentDirectional(
+                                                                          end: const AlignmentDirectional(
                                                                               0,
                                                                               1.0),
                                                                         ),
@@ -762,7 +763,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                       ),
                                                                       child:
                                                                           Align(
-                                                                        alignment: AlignmentDirectional(
+                                                                        alignment: const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                         child:
@@ -792,7 +793,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                                 !FlutterFlowTheme.of(context).labelSmallIsCustom,
                                                                           ),
                                                                     ),
-                                                                  ].divide(SizedBox(
+                                                                  ].divide(const SizedBox(
                                                                       width:
                                                                           8.0)),
                                                                 ),
@@ -811,7 +812,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                   ),
                                                                   child: Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             -1.0,
                                                                             0.0),
                                                                     child:
@@ -829,7 +830,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                       obscureText:
                                                                           false,
                                                                       decoration:
-                                                                          InputDecoration(
+                                                                          const InputDecoration(
                                                                         isDense:
                                                                             true,
                                                                         alignLabelWithHint:
@@ -871,7 +872,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                     ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   height: 8.0)),
                                                             ),
                                                         () => Column(
@@ -923,17 +924,17 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                         gradient:
                                                                             LinearGradient(
                                                                           colors: [
-                                                                            Color(0xFF78C7FF),
+                                                                            const Color(0xFF78C7FF),
                                                                             FlutterFlowTheme.of(context).primary
                                                                           ],
-                                                                          stops: [
+                                                                          stops: const [
                                                                             0.0,
                                                                             1.0
                                                                           ],
-                                                                          begin: AlignmentDirectional(
+                                                                          begin: const AlignmentDirectional(
                                                                               0.56,
                                                                               -1.0),
-                                                                          end: AlignmentDirectional(
+                                                                          end: const AlignmentDirectional(
                                                                               -0.56,
                                                                               1.0),
                                                                         ),
@@ -942,7 +943,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                       ),
                                                                       child:
                                                                           Align(
-                                                                        alignment: AlignmentDirectional(
+                                                                        alignment: const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                         child:
@@ -972,7 +973,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                                 !FlutterFlowTheme.of(context).labelSmallIsCustom,
                                                                           ),
                                                                     ),
-                                                                  ].divide(SizedBox(
+                                                                  ].divide(const SizedBox(
                                                                       width:
                                                                           8.0)),
                                                                 ),
@@ -991,7 +992,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                   ),
                                                                   child: Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             -1.0,
                                                                             0.0),
                                                                     child:
@@ -1009,7 +1010,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                       obscureText:
                                                                           false,
                                                                       decoration:
-                                                                          InputDecoration(
+                                                                          const InputDecoration(
                                                                         isDense:
                                                                             true,
                                                                         alignLabelWithHint:
@@ -1051,7 +1052,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                     ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   height: 8.0)),
                                                             ),
                                                       ][index]();
@@ -1060,7 +1061,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                             ][index]();
                                           },
                                         ),
-                                      ].divide(SizedBox(height: 16.0)),
+                                      ].divide(const SizedBox(height: 16.0)),
                                     ),
                                   ),
                                 ),
@@ -1156,7 +1157,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -1168,7 +1169,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                   model: _model.bloodpageModel1,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: BloodpageWidget(
+                                                  child: const BloodpageWidget(
                                                     text: 'ผู้ป่วย',
                                                     exer: '2',
                                                   ),
@@ -1193,7 +1194,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -1205,7 +1206,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                   model: _model.bloodpageModel2,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: BloodpageWidget(
+                                                  child: const BloodpageWidget(
                                                     text: 'ผู้ดูแล',
                                                     exer: '3',
                                                   ),
@@ -1238,7 +1239,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                   from: 0.0);
                                                         }
                                                         await Future.delayed(
-                                                          Duration(
+                                                          const Duration(
                                                             milliseconds: 100,
                                                           ),
                                                         );
@@ -1260,7 +1261,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                   .viewInsetsOf(
                                                                       context),
                                                               child:
-                                                                  FamiWidget(),
+                                                                  const FamiWidget(),
                                                             );
                                                           },
                                                         ).then((value) =>
@@ -1272,7 +1273,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                             .bloodpageModel3,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: BloodpageWidget(
+                                                        child: const BloodpageWidget(
                                                           text: 'อื่นๆ',
                                                           exer: '1',
                                                         ),
@@ -1286,7 +1287,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                     Expanded(
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     8.0,
                                                                     0.0,
@@ -1305,13 +1306,13 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                     .circular(
                                                                         24.0),
                                                             border: Border.all(
-                                                              color: Color(
+                                                              color: const Color(
                                                                   0xFFCED4E6),
                                                             ),
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12.0,
                                                                         20.0,
@@ -1346,7 +1347,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                             !FlutterFlowTheme.of(context).labelLargeIsCustom,
                                                                       ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   height: 8.0)),
                                                             ),
                                                           ),
@@ -1358,49 +1359,21 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                         ][index]();
                                       },
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 24.0),
-                          child: FFButtonWidget(
+                          child: MainButton(
+                            text: 'ถัดไป',
                             onPressed: () async {
                               _model.esas = 2;
                               safeSetState(() {});
                             },
-                            text: 'ถัดไป',
-                            options: FFButtonOptions(
-                              width: double.infinity,
-                              height: 48.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 0.0, 16.0, 0.0),
-                              iconAlignment: IconAlignment.start,
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              color: FlutterFlowTheme.of(context).customColor5,
-                              textStyle: FlutterFlowTheme.of(context)
-                                  .labelMedium
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .labelMediumFamily,
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts:
-                                        !FlutterFlowTheme.of(context)
-                                            .labelMediumIsCustom,
-                                  ),
-                              elevation: 0.0,
-                              borderSide: BorderSide(
-                                color: Colors.transparent,
-                                width: 0.0,
-                              ),
-                              borderRadius: BorderRadius.circular(100.0),
-                            ),
                           ),
                         ),
                       ],
@@ -1443,7 +1416,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -1453,10 +1426,10 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 0.0),
                                 child: ListView(
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     8.0,
                                     0,
@@ -1524,7 +1497,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                     wrapWithModel(
                                       model: _model.ratepiontModel1,
                                       updateCallback: () => safeSetState(() {}),
-                                      child: RatepiontWidget(
+                                      child: const RatepiontWidget(
                                         text: 'ไม่มีอาการปวด',
                                         rate: 'มีอาการปวดรุนแรงที่สุด',
                                       ),
@@ -1532,7 +1505,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                     wrapWithModel(
                                       model: _model.ratepiontModel2,
                                       updateCallback: () => safeSetState(() {}),
-                                      child: RatepiontWidget(
+                                      child: const RatepiontWidget(
                                         text: 'ไม่มีอาการเหนื่อย/อ่อนเพลีย',
                                         rate:
                                             'ไม่มีอาการเหนื่อย/อ่อนเพลียมากที่สุด',
@@ -1541,7 +1514,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                     wrapWithModel(
                                       model: _model.ratepiontModel3,
                                       updateCallback: () => safeSetState(() {}),
-                                      child: RatepiontWidget(
+                                      child: const RatepiontWidget(
                                         text: 'ไม่มีอาการคลื่นไส้',
                                         rate: 'มีอาการคลื่นไส้รุนแรงที่สุด',
                                       ),
@@ -1549,7 +1522,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                     wrapWithModel(
                                       model: _model.ratepiontModel4,
                                       updateCallback: () => safeSetState(() {}),
-                                      child: RatepiontWidget(
+                                      child: const RatepiontWidget(
                                         text: 'ไม่มีอาการซึมเศร้า',
                                         rate: 'มีอาการซึมเศร้ามากที่สุด',
                                       ),
@@ -1557,7 +1530,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                     wrapWithModel(
                                       model: _model.ratepiontModel5,
                                       updateCallback: () => safeSetState(() {}),
-                                      child: RatepiontWidget(
+                                      child: const RatepiontWidget(
                                         text: 'ไม่วิตกกังวล',
                                         rate: 'วิตกกังวลมากที่สุด',
                                       ),
@@ -1565,7 +1538,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                     wrapWithModel(
                                       model: _model.ratepiontModel6,
                                       updateCallback: () => safeSetState(() {}),
-                                      child: RatepiontWidget(
+                                      child: const RatepiontWidget(
                                         text: 'ไม่มีอาการง่วงซึม/สะลึมสะลื้อ',
                                         rate:
                                             'มีอาการง่วงซึม/สะลึมสะลื้อมากที่สุด',
@@ -1574,7 +1547,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                     wrapWithModel(
                                       model: _model.ratepiontModel7,
                                       updateCallback: () => safeSetState(() {}),
-                                      child: RatepiontWidget(
+                                      child: const RatepiontWidget(
                                         text: 'ไม่เบื่ออาหาร',
                                         rate: 'เบื่ออาหารมากที่สุด',
                                       ),
@@ -1582,7 +1555,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                     wrapWithModel(
                                       model: _model.ratepiontModel8,
                                       updateCallback: () => safeSetState(() {}),
-                                      child: RatepiontWidget(
+                                      child: const RatepiontWidget(
                                         text: 'สบายดีทั้งกายและใจ',
                                         rate: 'ไม่สบายกายและใจเลย',
                                       ),
@@ -1590,7 +1563,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                     wrapWithModel(
                                       model: _model.ratepiontModel9,
                                       updateCallback: () => safeSetState(() {}),
-                                      child: RatepiontWidget(
+                                      child: const RatepiontWidget(
                                         text: 'ไม่มีอาการเหนื่อยหอบ',
                                         rate: 'มีอาการเหนื่อยหอบมากที่สุด',
                                       ),
@@ -1598,20 +1571,20 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                     wrapWithModel(
                                       model: _model.ratepiontModel10,
                                       updateCallback: () => safeSetState(() {}),
-                                      child: RatepiontWidget(
+                                      child: const RatepiontWidget(
                                         text: 'ปัญหาอื่นๆได้แก่',
                                         rate:
                                             '(ถ้าปัญหาดังกล่าวรุนแรงมาก = 10 คะแนน)',
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 24.0)),
+                                  ].divide(const SizedBox(height: 24.0)),
                                 ),
                               ),
                             ),
                           ],
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -1624,7 +1597,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                             child: wrapWithModel(
                               model: _model.startAsBottomModel1,
                               updateCallback: () => safeSetState(() {}),
-                              child: StartAsBottomWidget(
+                              child: const StartAsBottomWidget(
                                 text: 'ถัดไป',
                               ),
                             ),
@@ -1676,10 +1649,10 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 8.0, 16.0, 0.0),
                             child: ListView(
-                              padding: EdgeInsets.fromLTRB(
+                              padding: const EdgeInsets.fromLTRB(
                                 0,
                                 16.0,
                                 0,
@@ -1725,7 +1698,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                   crossAxisSpacing: 12.0,
                                   mainAxisSpacing: 16.0,
                                   itemCount: 2,
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     0,
                                     0,
@@ -1773,7 +1746,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Padding(
                                                     padding: EdgeInsets.all(
@@ -1823,11 +1796,11 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 1.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsets.all(16.0),
+                                                        const EdgeInsets.all(16.0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -1948,7 +1921,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                       'IconButton pressed ...');
                                                                 },
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 width: 12.0)),
                                                           ),
                                                         ),
@@ -2013,7 +1986,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                 'IconButton pressed ...');
                                                           },
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           width: 12.0)),
                                                     ),
                                                   ),
@@ -2038,10 +2011,10 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                   BorderRadius.circular(24.0),
                                             ),
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 1.0),
                                               child: Stack(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 1.0),
                                                 children: [
                                                   ClipRect(
@@ -2065,7 +2038,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.0, -1.0),
                                                     child: Padding(
                                                       padding: EdgeInsets.all(
@@ -2117,11 +2090,11 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 1.0),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsets.all(16.0),
+                                                          const EdgeInsets.all(16.0),
                                                       child: Row(
                                                         mainAxisSize:
                                                             MainAxisSize.max,
@@ -2240,7 +2213,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                         'IconButton pressed ...');
                                                                   },
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 12.0)),
                                                             ),
                                                           ),
@@ -2303,7 +2276,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                   'IconButton pressed ...');
                                                             },
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 12.0)),
                                                       ),
                                                     ),
@@ -2315,47 +2288,19 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 24.0),
-                          child: FFButtonWidget(
+                          child: MainButton(
+                            text: 'บันทึก',
                             onPressed: () async {
                               _model.esas = 4;
                               safeSetState(() {});
                             },
-                            text: 'บันทึก',
-                            options: FFButtonOptions(
-                              width: double.infinity,
-                              height: 48.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 0.0, 16.0, 0.0),
-                              iconAlignment: IconAlignment.start,
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              color: FlutterFlowTheme.of(context).customColor5,
-                              textStyle: FlutterFlowTheme.of(context)
-                                  .labelMedium
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .labelMediumFamily,
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts:
-                                        !FlutterFlowTheme.of(context)
-                                            .labelMediumIsCustom,
-                                  ),
-                              elevation: 0.0,
-                              borderSide: BorderSide(
-                                color: Colors.transparent,
-                                width: 0.0,
-                              ),
-                              borderRadius: BorderRadius.circular(100.0),
-                            ),
                           ),
                         ),
                       ],
@@ -2364,7 +2309,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                     return Stack(
                       children: [
                         ListView(
-                          padding: EdgeInsets.fromLTRB(
+                          padding: const EdgeInsets.fromLTRB(
                             0,
                             8.0,
                             0,
@@ -2374,7 +2319,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                           scrollDirection: Axis.vertical,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(0.0, -1.0),
+                              alignment: const AlignmentDirectional(0.0, -1.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(8.0),
                                 child: Image.network(
@@ -2416,7 +2361,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 24.0, 16.0, 0.0),
                               child: Container(
                                 width: double.infinity,
@@ -2426,7 +2371,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                   borderRadius: BorderRadius.circular(24.0),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsets.all(16.0),
+                                  padding: const EdgeInsets.all(16.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     crossAxisAlignment:
@@ -2519,7 +2464,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                             }
                                                           }(),
                                                           decoration:
-                                                              BoxDecoration(
+                                                              const BoxDecoration(
                                                             gradient:
                                                                 LinearGradient(
                                                               colors: [
@@ -2542,7 +2487,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Icon(
                                                               Icons
@@ -2575,7 +2520,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                               ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
                                                     Container(
                                                       height: 46.0,
@@ -2589,7 +2534,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                       ),
                                                       child: Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 -1.0, 0.0),
                                                         child: TextFormField(
                                                           controller: _model
@@ -2600,7 +2545,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                           readOnly: true,
                                                           obscureText: false,
                                                           decoration:
-                                                              InputDecoration(
+                                                              const InputDecoration(
                                                             isDense: true,
                                                             alignLabelWithHint:
                                                                 false,
@@ -2653,13 +2598,13 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                             () => MasonryGridView.builder(
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                     crossAxisCount: 2,
                                                   ),
                                                   crossAxisSpacing: 12.0,
@@ -2724,17 +2669,17 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                         colors: [
                                                                           FlutterFlowTheme.of(context)
                                                                               .primary,
-                                                                          Color(
+                                                                          const Color(
                                                                               0xFF216DAA)
                                                                         ],
-                                                                        stops: [
+                                                                        stops: const [
                                                                           0.0,
                                                                           1.0
                                                                         ],
-                                                                        begin: AlignmentDirectional(
+                                                                        begin: const AlignmentDirectional(
                                                                             0.0,
                                                                             -1.0),
-                                                                        end: AlignmentDirectional(
+                                                                        end: const AlignmentDirectional(
                                                                             0,
                                                                             1.0),
                                                                       ),
@@ -2744,7 +2689,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                     child:
                                                                         Align(
                                                                       alignment:
-                                                                          AlignmentDirectional(
+                                                                          const AlignmentDirectional(
                                                                               0.0,
                                                                               0.0),
                                                                       child:
@@ -2774,7 +2719,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                               !FlutterFlowTheme.of(context).labelSmallIsCustom,
                                                                         ),
                                                                   ),
-                                                                ].divide(SizedBox(
+                                                                ].divide(const SizedBox(
                                                                     width:
                                                                         8.0)),
                                                               ),
@@ -2794,12 +2739,12 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                 ),
                                                                 child: Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           -1.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16.0,
                                                                             0.0,
@@ -2822,7 +2767,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                   ),
                                                                 ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 height: 8.0)),
                                                           ),
                                                       () => Column(
@@ -2878,19 +2823,19 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                       gradient:
                                                                           LinearGradient(
                                                                         colors: [
-                                                                          Color(
+                                                                          const Color(
                                                                               0xFF78C7FF),
                                                                           FlutterFlowTheme.of(context)
                                                                               .primary
                                                                         ],
-                                                                        stops: [
+                                                                        stops: const [
                                                                           0.0,
                                                                           1.0
                                                                         ],
-                                                                        begin: AlignmentDirectional(
+                                                                        begin: const AlignmentDirectional(
                                                                             0.56,
                                                                             -1.0),
-                                                                        end: AlignmentDirectional(
+                                                                        end: const AlignmentDirectional(
                                                                             -0.56,
                                                                             1.0),
                                                                       ),
@@ -2900,7 +2845,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                     child:
                                                                         Align(
                                                                       alignment:
-                                                                          AlignmentDirectional(
+                                                                          const AlignmentDirectional(
                                                                               0.0,
                                                                               0.0),
                                                                       child:
@@ -2930,7 +2875,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                               !FlutterFlowTheme.of(context).labelSmallIsCustom,
                                                                         ),
                                                                   ),
-                                                                ].divide(SizedBox(
+                                                                ].divide(const SizedBox(
                                                                     width:
                                                                         8.0)),
                                                               ),
@@ -2950,12 +2895,12 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                 ),
                                                                 child: Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           -1.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16.0,
                                                                             0.0,
@@ -2978,7 +2923,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                                   ),
                                                                 ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 height: 8.0)),
                                                           ),
                                                     ][index]();
@@ -2987,13 +2932,13 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                           ][index]();
                                         },
                                       ),
-                                    ].divide(SizedBox(height: 16.0)),
+                                    ].divide(const SizedBox(height: 16.0)),
                                   ),
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 12.0, 16.0, 0.0),
                               child: Container(
                                 width: double.infinity,
@@ -3033,7 +2978,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 0.0),
                                             child: FaIcon(
                                               FontAwesomeIcons.solidFile,
@@ -3059,7 +3004,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                           .titleSmallIsCustom,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                       ClipRRect(
                                         borderRadius:
@@ -3137,9 +3082,9 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                   ),
                                                 ]
                                                     .divide(
-                                                        SizedBox(width: 16.0))
+                                                        const SizedBox(width: 16.0))
                                                     .around(
-                                                        SizedBox(width: 16.0)),
+                                                        const SizedBox(width: 16.0)),
                                               ),
                                               Divider(
                                                 height: 1.0,
@@ -3207,9 +3152,9 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                   ),
                                                 ]
                                                     .divide(
-                                                        SizedBox(width: 16.0))
+                                                        const SizedBox(width: 16.0))
                                                     .around(
-                                                        SizedBox(width: 16.0)),
+                                                        const SizedBox(width: 16.0)),
                                               ),
                                               Divider(
                                                 height: 1.0,
@@ -3277,9 +3222,9 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                   ),
                                                 ]
                                                     .divide(
-                                                        SizedBox(width: 16.0))
+                                                        const SizedBox(width: 16.0))
                                                     .around(
-                                                        SizedBox(width: 16.0)),
+                                                        const SizedBox(width: 16.0)),
                                               ),
                                               Divider(
                                                 height: 1.0,
@@ -3347,9 +3292,9 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                   ),
                                                 ]
                                                     .divide(
-                                                        SizedBox(width: 16.0))
+                                                        const SizedBox(width: 16.0))
                                                     .around(
-                                                        SizedBox(width: 16.0)),
+                                                        const SizedBox(width: 16.0)),
                                               ),
                                               Divider(
                                                 height: 1.0,
@@ -3417,9 +3362,9 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                   ),
                                                 ]
                                                     .divide(
-                                                        SizedBox(width: 16.0))
+                                                        const SizedBox(width: 16.0))
                                                     .around(
-                                                        SizedBox(width: 16.0)),
+                                                        const SizedBox(width: 16.0)),
                                               ),
                                               Divider(
                                                 height: 1.0,
@@ -3487,9 +3432,9 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                   ),
                                                 ]
                                                     .divide(
-                                                        SizedBox(width: 16.0))
+                                                        const SizedBox(width: 16.0))
                                                     .around(
-                                                        SizedBox(width: 16.0)),
+                                                        const SizedBox(width: 16.0)),
                                               ),
                                               Divider(
                                                 height: 1.0,
@@ -3557,9 +3502,9 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                   ),
                                                 ]
                                                     .divide(
-                                                        SizedBox(width: 16.0))
+                                                        const SizedBox(width: 16.0))
                                                     .around(
-                                                        SizedBox(width: 16.0)),
+                                                        const SizedBox(width: 16.0)),
                                               ),
                                               Divider(
                                                 height: 1.0,
@@ -3627,9 +3572,9 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                   ),
                                                 ]
                                                     .divide(
-                                                        SizedBox(width: 16.0))
+                                                        const SizedBox(width: 16.0))
                                                     .around(
-                                                        SizedBox(width: 16.0)),
+                                                        const SizedBox(width: 16.0)),
                                               ),
                                               Divider(
                                                 height: 1.0,
@@ -3697,21 +3642,21 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                   ),
                                                 ]
                                                     .divide(
-                                                        SizedBox(width: 16.0))
+                                                        const SizedBox(width: 16.0))
                                                     .around(
-                                                        SizedBox(width: 16.0)),
+                                                        const SizedBox(width: 16.0)),
                                               ),
                                             ],
                                           ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 12.0)),
+                                    ].divide(const SizedBox(height: 12.0)),
                                   ),
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 12.0, 16.0, 0.0),
                               child: MasonryGridView.builder(
                                 gridDelegate:
@@ -3736,7 +3681,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                 crossAxisSpacing: 12.0,
                                 mainAxisSpacing: 16.0,
                                 itemCount: 2,
-                                padding: EdgeInsets.fromLTRB(
+                                padding: const EdgeInsets.fromLTRB(
                                   0,
                                   0,
                                   0,
@@ -3761,7 +3706,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                 BorderRadius.circular(24.0),
                                           ),
                                           child: Align(
-                                            alignment: AlignmentDirectional(
+                                            alignment: const AlignmentDirectional(
                                                 -1.0, -1.0),
                                             child: Padding(
                                               padding: EdgeInsets.all(
@@ -3823,7 +3768,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                                                 BorderRadius.circular(24.0),
                                           ),
                                           child: Align(
-                                            alignment: AlignmentDirectional(
+                                            alignment: const AlignmentDirectional(
                                                 -1.0, -1.0),
                                             child: Padding(
                                               padding: EdgeInsets.all(
@@ -3876,7 +3821,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                           ],
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -3892,7 +3837,7 @@ class _EsasWidgetState extends State<EsasWidget> with TickerProviderStateMixin {
                             child: wrapWithModel(
                               model: _model.startAsBottomModel2,
                               updateCallback: () => safeSetState(() {}),
-                              child: StartAsBottomWidget(
+                              child: const StartAsBottomWidget(
                                 text: 'กลับสู่หน้าหลัก',
                               ),
                             ),

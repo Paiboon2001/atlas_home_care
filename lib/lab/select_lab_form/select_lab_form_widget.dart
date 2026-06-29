@@ -1,3 +1,4 @@
+import '/components/main_button_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -62,7 +63,7 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
           borderRadius: 30.0,
           borderWidth: 1.0,
           buttonSize: 44.0,
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_new_rounded,
             color: Colors.white,
             size: 18.0,
@@ -81,11 +82,11 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
                     !FlutterFlowTheme.of(context).titleMediumIsCustom,
               ),
         ),
-        actions: [],
+        actions: const [],
         centerTitle: true,
         elevation: 0.0,
       ),
-      body: Container(
+      body: SizedBox(
         width: double.infinity,
         height: double.infinity,
         child: Stack(
@@ -95,7 +96,7 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
               height: double.infinity,
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(24.0),
                   topRight: Radius.circular(24.0),
                 ),
@@ -104,8 +105,8 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Padding(
-                    padding: EdgeInsets.all(16.0),
-                    child: Container(
+                    padding: const EdgeInsets.all(16.0),
+                    child: SizedBox(
                       width: double.infinity,
                       child: TextFormField(
                         controller: _model.textController,
@@ -125,7 +126,7 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
                                     .bodyMediumIsCustom,
                               ),
                           enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0x00000000),
                               width: 1.0,
                             ),
@@ -154,7 +155,7 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
                           ),
                           filled: true,
                           fillColor: FlutterFlowTheme.of(context).alternate,
-                          prefixIcon: Icon(
+                          prefixIcon: const Icon(
                             Icons.search_rounded,
                             size: 20.0,
                           ),
@@ -180,9 +181,9 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: ListView(
-                        padding: EdgeInsets.fromLTRB(
+                        padding: const EdgeInsets.fromLTRB(
                           0,
                           16.0,
                           0,
@@ -214,13 +215,13 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
                             ),
                             child: Container(
                               width: double.infinity,
-                              color: Color(0x00000000),
+                              color: const Color(0x00000000),
                               child: ExpandableNotifier(
                                 controller:
                                     _model.expandableExpandableController,
                                 child: ExpandablePanel(
                                   header: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 16.0, 0.0, 16.0),
                                     child: Text(
                                       'BloodBank',
@@ -240,7 +241,7 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
                                   collapsed: Container(),
                                   expanded: Container(
                                     decoration: BoxDecoration(
-                                      color: Color(0xFFF3F9FF),
+                                      color: const Color(0xFFF3F9FF),
                                       borderRadius: BorderRadius.circular(24.0),
                                       border: Border.all(
                                         color: FlutterFlowTheme.of(context)
@@ -249,7 +250,7 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
                                       ),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           12.0, 0.0, 12.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -303,7 +304,7 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
                                                               width: 2,
                                                               color: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .secondaryText!,
+                                                                  .secondaryText,
                                                             )
                                                           : null,
                                                       activeColor:
@@ -341,7 +342,7 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
                                                 model: _model.chooseLabModel1,
                                                 updateCallback: () =>
                                                     safeSetState(() {}),
-                                                child: ChooseLabWidget(
+                                                child: const ChooseLabWidget(
                                                   namelab: 'Creatinine + eGFR',
                                                 ),
                                               ),
@@ -349,11 +350,11 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
                                                 model: _model.chooseLabModel2,
                                                 updateCallback: () =>
                                                     safeSetState(() {}),
-                                                child: ChooseLabWidget(
+                                                child: const ChooseLabWidget(
                                                   namelab: 'Lipid Profile',
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 8.0)),
+                                            ].divide(const SizedBox(height: 8.0)),
                                           ),
                                           Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -402,7 +403,7 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
                                                               width: 2,
                                                               color: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .secondaryText!,
+                                                                  .secondaryText,
                                                             )
                                                           : null,
                                                       activeColor:
@@ -440,7 +441,7 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
                                                 model: _model.chooseLabModel3,
                                                 updateCallback: () =>
                                                     safeSetState(() {}),
-                                                child: ChooseLabWidget(
+                                                child: const ChooseLabWidget(
                                                   namelab:
                                                       'Fasting Blood Sugar (FBS)',
                                                 ),
@@ -449,7 +450,7 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
                                                 model: _model.chooseLabModel4,
                                                 updateCallback: () =>
                                                     safeSetState(() {}),
-                                                child: ChooseLabWidget(
+                                                child: const ChooseLabWidget(
                                                   namelab: 'HbA1c',
                                                 ),
                                               ),
@@ -457,20 +458,20 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
                                                 model: _model.chooseLabModel5,
                                                 updateCallback: () =>
                                                     safeSetState(() {}),
-                                                child: ChooseLabWidget(
+                                                child: const ChooseLabWidget(
                                                   namelab: 'SGOT (AST)',
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 8.0)),
+                                            ].divide(const SizedBox(height: 8.0)),
                                           ),
                                         ]
-                                            .divide(SizedBox(height: 24.0))
-                                            .addToStart(SizedBox(height: 16.0))
-                                            .addToEnd(SizedBox(height: 16.0)),
+                                            .divide(const SizedBox(height: 24.0))
+                                            .addToStart(const SizedBox(height: 16.0))
+                                            .addToEnd(const SizedBox(height: 16.0)),
                                       ),
                                     ),
                                   ),
-                                  theme: ExpandableThemeData(
+                                  theme: const ExpandableThemeData(
                                     tapHeaderToExpand: true,
                                     tapBodyToExpand: false,
                                     tapBodyToCollapse: false,
@@ -482,7 +483,7 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
                               ),
                             ),
                           ),
-                        ].divide(SizedBox(height: 8.0)),
+                        ].divide(const SizedBox(height: 8.0)),
                       ),
                     ),
                   ),
@@ -490,12 +491,12 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       blurRadius: 4.0,
                       color: Color(0x33000000),
@@ -505,46 +506,20 @@ class _SelectLabFormWidgetState extends State<SelectLabFormWidget> {
                       ),
                     )
                   ],
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(24.0),
                     topRight: Radius.circular(24.0),
                   ),
                 ),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
-                  child: FFButtonWidget(
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
+                  child: MainButton(
+                    text: 'ดำเนินการสั่ง LAB',
                     onPressed: () async {
                       context
                           .pushNamed(InformationCommunityOneWidget.routeName);
                     },
-                    text: 'ดำเนินการสั่ง LAB',
-                    options: FFButtonOptions(
-                      height: 48.0,
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                      iconAlignment: IconAlignment.start,
-                      iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: FlutterFlowTheme.of(context).customColor5,
-                      textStyle: FlutterFlowTheme.of(context)
-                          .bodyMedium
-                          .override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodyMediumFamily,
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            letterSpacing: 0.0,
-                            useGoogleFonts: !FlutterFlowTheme.of(context)
-                                .bodyMediumIsCustom,
-                          ),
-                      elevation: 0.0,
-                      borderSide: BorderSide(
-                        color: Colors.transparent,
-                        width: 0.0,
-                      ),
-                      borderRadius: BorderRadius.circular(100.0),
-                    ),
                   ),
                 ),
               ),

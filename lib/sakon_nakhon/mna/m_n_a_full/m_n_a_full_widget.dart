@@ -1,3 +1,4 @@
+import '/components/main_button_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -65,8 +66,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -84,8 +85,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -103,8 +104,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -122,8 +123,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -141,8 +142,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -160,8 +161,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -179,8 +180,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -198,8 +199,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -217,8 +218,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -236,8 +237,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -255,8 +256,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -274,8 +275,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -293,8 +294,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -306,8 +307,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -319,8 +320,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -332,8 +333,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -345,8 +346,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -358,8 +359,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -371,8 +372,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -384,8 +385,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -397,8 +398,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -410,8 +411,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -423,8 +424,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -436,8 +437,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -449,8 +450,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -462,8 +463,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -475,8 +476,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -488,8 +489,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -501,8 +502,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -514,8 +515,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -527,8 +528,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -540,8 +541,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -553,8 +554,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -566,8 +567,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -579,8 +580,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -592,8 +593,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -605,8 +606,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -618,8 +619,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -631,8 +632,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -644,8 +645,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -657,8 +658,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -670,8 +671,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -683,8 +684,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -696,8 +697,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -709,8 +710,8 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -1199,7 +1200,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
             ),
           ],
         ),
-        actions: [],
+        actions: const [],
         centerTitle: false,
         elevation: 0.0,
       ),
@@ -1209,13 +1210,13 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
           borderRadius: BorderRadius.circular(0.0),
         ),
@@ -1248,7 +1249,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1258,7 +1259,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1268,7 +1269,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1278,7 +1279,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1288,7 +1289,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1298,7 +1299,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1308,7 +1309,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1318,7 +1319,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1328,7 +1329,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1338,7 +1339,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1348,7 +1349,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1357,7 +1358,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -1430,7 +1431,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -1486,7 +1487,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().nineone = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1497,7 +1498,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.nineoneModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '0',
                                                 text: 'ไม่ใช่',
                                                 nineq: '1',
@@ -1524,7 +1525,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().nineone = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1535,7 +1536,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.nineoneModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '1',
                                                 text: 'ใช่',
                                                 nineq: '2',
@@ -1548,7 +1549,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -1588,7 +1589,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1598,7 +1599,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1608,7 +1609,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1618,7 +1619,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1628,7 +1629,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1638,7 +1639,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1648,7 +1649,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1658,7 +1659,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1668,7 +1669,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1678,7 +1679,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1687,7 +1688,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -1760,7 +1761,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -1816,7 +1817,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ninetwo = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1827,7 +1828,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.ninetwoModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '0',
                                                 text: 'ใช่',
                                                 nineq: '1',
@@ -1854,7 +1855,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ninetwo = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -1865,7 +1866,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.ninetwoModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '1',
                                                 text: 'ไม่ใช่',
                                                 nineq: '2',
@@ -1878,7 +1879,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -1929,7 +1930,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1939,7 +1940,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1949,7 +1950,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1959,7 +1960,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1969,7 +1970,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1979,7 +1980,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1989,7 +1990,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1999,7 +2000,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2009,7 +2010,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2018,7 +2019,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -2091,7 +2092,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -2147,7 +2148,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ninethree = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2158,7 +2159,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.ninethreeModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '0',
                                                 text: 'ใช่',
                                                 nineq: '1',
@@ -2185,7 +2186,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ninethree = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2196,7 +2197,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.ninethreeModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '1',
                                                 text: 'ไม่ใช่',
                                                 nineq: '2',
@@ -2209,7 +2210,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -2271,7 +2272,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2281,7 +2282,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2291,7 +2292,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2301,7 +2302,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2311,7 +2312,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2321,7 +2322,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2331,7 +2332,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2341,7 +2342,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2350,7 +2351,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -2423,7 +2424,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -2479,7 +2480,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ninefore = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2490,7 +2491,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.nineforeModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '0',
                                                 text: '1 มื้อ',
                                                 nineq: '1',
@@ -2517,7 +2518,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ninefore = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2528,7 +2529,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.nineforeModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '1',
                                                 text: '2 มื้อ',
                                                 nineq: '2',
@@ -2555,7 +2556,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ninefore = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -2566,7 +2567,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.nineforeModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '2',
                                                 text: '3 มื้อ',
                                                 nineq: '3',
@@ -2579,7 +2580,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -2652,7 +2653,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2662,7 +2663,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2672,7 +2673,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2682,7 +2683,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2692,7 +2693,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2702,7 +2703,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2712,7 +2713,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -2721,7 +2722,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -2842,7 +2843,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 4.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -2850,7 +2851,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                 Theme(
                                                   data: ThemeData(
                                                     checkboxTheme:
-                                                        CheckboxThemeData(
+                                                        const CheckboxThemeData(
                                                       visualDensity:
                                                           VisualDensity.compact,
                                                       materialTapTargetSize:
@@ -2859,7 +2860,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                       shape: CircleBorder(),
                                                     ),
                                                     unselectedWidgetColor:
-                                                        Color(0xFFC1C5D0),
+                                                        const Color(0xFFC1C5D0),
                                                   ),
                                                   child: Checkbox(
                                                     value: _model
@@ -2877,12 +2878,12 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                         });
                                                       }
                                                     },
-                                                    side: (Color(0xFFC1C5D0) !=
+                                                    side: (const Color(0xFFC1C5D0) !=
                                                             null)
                                                         ? BorderSide(
                                                             width: 2,
-                                                            color: Color(
-                                                                0xFFC1C5D0)!,
+                                                            color: const Color(
+                                                                0xFFC1C5D0),
                                                           )
                                                         : null,
                                                     activeColor:
@@ -2912,7 +2913,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                                     .bodySmallIsCustom,
                                                           ),
                                                 ),
-                                              ].divide(SizedBox(width: 4.0)),
+                                              ].divide(const SizedBox(width: 4.0)),
                                             ),
                                           ),
                                           SizedBox(
@@ -2931,7 +2932,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               Theme(
                                                 data: ThemeData(
                                                   checkboxTheme:
-                                                      CheckboxThemeData(
+                                                      const CheckboxThemeData(
                                                     visualDensity:
                                                         VisualDensity.compact,
                                                     materialTapTargetSize:
@@ -2940,7 +2941,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                     shape: CircleBorder(),
                                                   ),
                                                   unselectedWidgetColor:
-                                                      Color(0xFFC1C5D0),
+                                                      const Color(0xFFC1C5D0),
                                                 ),
                                                 child: Checkbox(
                                                   value: _model
@@ -2956,12 +2957,12 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                       });
                                                     }
                                                   },
-                                                  side: (Color(0xFFC1C5D0) !=
+                                                  side: (const Color(0xFFC1C5D0) !=
                                                           null)
                                                       ? BorderSide(
                                                           width: 2,
-                                                          color: Color(
-                                                              0xFFC1C5D0)!,
+                                                          color: const Color(
+                                                              0xFFC1C5D0),
                                                         )
                                                       : null,
                                                   activeColor:
@@ -2991,12 +2992,12 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                                   .bodySmallIsCustom,
                                                         ),
                                               ),
-                                            ].divide(SizedBox(width: 4.0)),
+                                            ].divide(const SizedBox(width: 4.0)),
                                           ),
                                         ]
-                                            .divide(SizedBox(width: 8.0))
-                                            .addToStart(SizedBox(width: 12.0))
-                                            .addToEnd(SizedBox(width: 12.0)),
+                                            .divide(const SizedBox(width: 8.0))
+                                            .addToStart(const SizedBox(width: 12.0))
+                                            .addToEnd(const SizedBox(width: 12.0)),
                                       ),
                                       Divider(
                                         height: 1.0,
@@ -3039,7 +3040,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 4.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -3047,7 +3048,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                 Theme(
                                                   data: ThemeData(
                                                     checkboxTheme:
-                                                        CheckboxThemeData(
+                                                        const CheckboxThemeData(
                                                       visualDensity:
                                                           VisualDensity.compact,
                                                       materialTapTargetSize:
@@ -3056,7 +3057,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                       shape: CircleBorder(),
                                                     ),
                                                     unselectedWidgetColor:
-                                                        Color(0xFFC1C5D0),
+                                                        const Color(0xFFC1C5D0),
                                                   ),
                                                   child: Checkbox(
                                                     value: _model
@@ -3074,12 +3075,12 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                         });
                                                       }
                                                     },
-                                                    side: (Color(0xFFC1C5D0) !=
+                                                    side: (const Color(0xFFC1C5D0) !=
                                                             null)
                                                         ? BorderSide(
                                                             width: 2,
-                                                            color: Color(
-                                                                0xFFC1C5D0)!,
+                                                            color: const Color(
+                                                                0xFFC1C5D0),
                                                           )
                                                         : null,
                                                     activeColor:
@@ -3109,7 +3110,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                                     .bodySmallIsCustom,
                                                           ),
                                                 ),
-                                              ].divide(SizedBox(width: 4.0)),
+                                              ].divide(const SizedBox(width: 4.0)),
                                             ),
                                           ),
                                           SizedBox(
@@ -3128,7 +3129,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               Theme(
                                                 data: ThemeData(
                                                   checkboxTheme:
-                                                      CheckboxThemeData(
+                                                      const CheckboxThemeData(
                                                     visualDensity:
                                                         VisualDensity.compact,
                                                     materialTapTargetSize:
@@ -3137,7 +3138,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                     shape: CircleBorder(),
                                                   ),
                                                   unselectedWidgetColor:
-                                                      Color(0xFFC1C5D0),
+                                                      const Color(0xFFC1C5D0),
                                                 ),
                                                 child: Checkbox(
                                                   value: _model
@@ -3153,12 +3154,12 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                       });
                                                     }
                                                   },
-                                                  side: (Color(0xFFC1C5D0) !=
+                                                  side: (const Color(0xFFC1C5D0) !=
                                                           null)
                                                       ? BorderSide(
                                                           width: 2,
-                                                          color: Color(
-                                                              0xFFC1C5D0)!,
+                                                          color: const Color(
+                                                              0xFFC1C5D0),
                                                         )
                                                       : null,
                                                   activeColor:
@@ -3188,12 +3189,12 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                                   .bodySmallIsCustom,
                                                         ),
                                               ),
-                                            ].divide(SizedBox(width: 4.0)),
+                                            ].divide(const SizedBox(width: 4.0)),
                                           ),
                                         ]
-                                            .divide(SizedBox(width: 8.0))
-                                            .addToStart(SizedBox(width: 12.0))
-                                            .addToEnd(SizedBox(width: 12.0)),
+                                            .divide(const SizedBox(width: 8.0))
+                                            .addToStart(const SizedBox(width: 12.0))
+                                            .addToEnd(const SizedBox(width: 12.0)),
                                       ),
                                       Divider(
                                         height: 1.0,
@@ -3236,7 +3237,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 4.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -3244,7 +3245,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                 Theme(
                                                   data: ThemeData(
                                                     checkboxTheme:
-                                                        CheckboxThemeData(
+                                                        const CheckboxThemeData(
                                                       visualDensity:
                                                           VisualDensity.compact,
                                                       materialTapTargetSize:
@@ -3253,7 +3254,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                       shape: CircleBorder(),
                                                     ),
                                                     unselectedWidgetColor:
-                                                        Color(0xFFC1C5D0),
+                                                        const Color(0xFFC1C5D0),
                                                   ),
                                                   child: Checkbox(
                                                     value: _model
@@ -3271,12 +3272,12 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                         });
                                                       }
                                                     },
-                                                    side: (Color(0xFFC1C5D0) !=
+                                                    side: (const Color(0xFFC1C5D0) !=
                                                             null)
                                                         ? BorderSide(
                                                             width: 2,
-                                                            color: Color(
-                                                                0xFFC1C5D0)!,
+                                                            color: const Color(
+                                                                0xFFC1C5D0),
                                                           )
                                                         : null,
                                                     activeColor:
@@ -3306,7 +3307,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                                     .bodySmallIsCustom,
                                                           ),
                                                 ),
-                                              ].divide(SizedBox(width: 4.0)),
+                                              ].divide(const SizedBox(width: 4.0)),
                                             ),
                                           ),
                                           SizedBox(
@@ -3325,7 +3326,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               Theme(
                                                 data: ThemeData(
                                                   checkboxTheme:
-                                                      CheckboxThemeData(
+                                                      const CheckboxThemeData(
                                                     visualDensity:
                                                         VisualDensity.compact,
                                                     materialTapTargetSize:
@@ -3334,7 +3335,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                     shape: CircleBorder(),
                                                   ),
                                                   unselectedWidgetColor:
-                                                      Color(0xFFC1C5D0),
+                                                      const Color(0xFFC1C5D0),
                                                 ),
                                                 child: Checkbox(
                                                   value: _model
@@ -3350,12 +3351,12 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                       });
                                                     }
                                                   },
-                                                  side: (Color(0xFFC1C5D0) !=
+                                                  side: (const Color(0xFFC1C5D0) !=
                                                           null)
                                                       ? BorderSide(
                                                           width: 2,
-                                                          color: Color(
-                                                              0xFFC1C5D0)!,
+                                                          color: const Color(
+                                                              0xFFC1C5D0),
                                                         )
                                                       : null,
                                                   activeColor:
@@ -3385,12 +3386,12 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                                   .bodySmallIsCustom,
                                                         ),
                                               ),
-                                            ].divide(SizedBox(width: 4.0)),
+                                            ].divide(const SizedBox(width: 4.0)),
                                           ),
                                         ]
-                                            .divide(SizedBox(width: 8.0))
-                                            .addToStart(SizedBox(width: 12.0))
-                                            .addToEnd(SizedBox(width: 12.0)),
+                                            .divide(const SizedBox(width: 8.0))
+                                            .addToStart(const SizedBox(width: 12.0))
+                                            .addToEnd(const SizedBox(width: 12.0)),
                                       ),
                                     ],
                                   ),
@@ -3398,7 +3399,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -3454,7 +3455,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ninefive = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3465,7 +3466,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.ninefiveModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinefiveWidget(
+                                              child: const NinefiveWidget(
                                                 num: '0',
                                                 text:
                                                     'ถ้าตอบไม่ใช่ทุกข้อหรือใช่เพียง 1 ข้อ',
@@ -3493,7 +3494,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ninefive = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3504,7 +3505,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.ninefiveModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinefiveWidget(
+                                              child: const NinefiveWidget(
                                                 num: '0.5',
                                                 text: 'ถ้าตอบใช่ 2 ข้อ',
                                                 nineq: '2',
@@ -3531,7 +3532,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ninefive = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3542,7 +3543,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.ninefiveModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinefiveWidget(
+                                              child: const NinefiveWidget(
                                                 num: '1',
                                                 text: 'ถ้าตอบใช่ 3 ข้อ',
                                                 nineq: '3',
@@ -3555,7 +3556,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -3639,7 +3640,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3649,7 +3650,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3659,7 +3660,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3669,7 +3670,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3679,7 +3680,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3689,7 +3690,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3698,7 +3699,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -3771,7 +3772,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -3827,7 +3828,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ninesix = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3838,7 +3839,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.ninesixModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesixWidget(
+                                              child: const NinesixWidget(
                                                 num: '0',
                                                 text: 'ไม่ใช่',
                                                 nineq: '1',
@@ -3865,7 +3866,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ninesix = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3876,7 +3877,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.ninesixModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesixWidget(
+                                              child: const NinesixWidget(
                                                 num: '1',
                                                 text: 'ใช่',
                                                 nineq: '2',
@@ -3889,7 +3890,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -3984,7 +3985,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3994,7 +3995,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4004,7 +4005,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4014,7 +4015,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4024,7 +4025,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4033,7 +4034,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -4106,7 +4107,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -4162,7 +4163,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().nineseven = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4173,7 +4174,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.ninesevenModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesevenWidget(
+                                              child: const NinesevenWidget(
                                                 num: '0',
                                                 text: 'น้อยกว่า 3 ถ้วย ',
                                                 nineq: '1',
@@ -4200,7 +4201,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().nineseven = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4211,7 +4212,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.ninesevenModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesevenWidget(
+                                              child: const NinesevenWidget(
                                                 num: '0.5',
                                                 text: '3-5 ถ้วย',
                                                 nineq: '2',
@@ -4238,7 +4239,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().nineseven = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4249,7 +4250,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.ninesevenModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesevenWidget(
+                                              child: const NinesevenWidget(
                                                 num: '1',
                                                 text: 'มากกว่า 5 ถ้วย',
                                                 nineq: '3',
@@ -4262,7 +4263,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -4368,7 +4369,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4378,7 +4379,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4388,7 +4389,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4398,7 +4399,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4407,7 +4408,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -4480,7 +4481,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -4536,7 +4537,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().nineeight = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4547,7 +4548,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.nineeightModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineeightWidget(
+                                              child: const NineeightWidget(
                                                 num: '0',
                                                 text:
                                                     'ไม่สามารถรับประทานอาหารได้เอง ',
@@ -4575,7 +4576,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().nineeight = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4586,7 +4587,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.nineeightModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineeightWidget(
+                                              child: const NineeightWidget(
                                                 num: '1',
                                                 text:
                                                     'รับประทานอาหารได้เองแต่ค่อนข้างล่าบาก',
@@ -4614,7 +4615,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().nineeight = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4625,7 +4626,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.nineeightModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineeightWidget(
+                                              child: const NineeightWidget(
                                                 num: '2',
                                                 text:
                                                     'รับประทานอาหารได้เอง/ ไม่มีปัญหา',
@@ -4639,7 +4640,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -4756,7 +4757,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4766,7 +4767,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4776,7 +4777,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4785,7 +4786,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -4858,7 +4859,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -4914,7 +4915,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ninenine = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4925,7 +4926,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.ninenineModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinenineWidget(
+                                              child: const NinenineWidget(
                                                 num: '0',
                                                 text: 'ขาดสารอาหาร',
                                                 nineq: '1',
@@ -4952,7 +4953,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ninenine = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4963,7 +4964,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.ninenineModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinenineWidget(
+                                              child: const NinenineWidget(
                                                 num: '1',
                                                 text:
                                                     'ไม่แน่ใจว่ามีภาวะโภชนาการอย่างไร ',
@@ -4991,7 +4992,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ninenine = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5002,7 +5003,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.ninenineModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinenineWidget(
+                                              child: const NinenineWidget(
                                                 num: '2',
                                                 text: 'ไม่ขาดสารอาหาร',
                                                 nineq: '3',
@@ -5015,7 +5016,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -5143,7 +5144,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -5153,7 +5154,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -5162,7 +5163,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -5235,7 +5236,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -5291,7 +5292,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ten = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5302,7 +5303,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.tenModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: TenWidget(
+                                              child: const TenWidget(
                                                 num: '0',
                                                 text: 'ด้อยกว่า',
                                                 nineq: '1',
@@ -5329,7 +5330,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ten = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5340,7 +5341,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.tenModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: TenWidget(
+                                              child: const TenWidget(
                                                 num: '0.5',
                                                 text: 'ไม่ทราบ',
                                                 nineq: '2',
@@ -5367,7 +5368,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ten = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5378,7 +5379,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.tenModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: TenWidget(
+                                              child: const TenWidget(
                                                 num: '1',
                                                 text: 'พอกัน',
                                                 nineq: '3',
@@ -5405,7 +5406,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().ten = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5416,7 +5417,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.tenModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: TenWidget(
+                                              child: const TenWidget(
                                                 num: '2',
                                                 text: 'ดีกว่า',
                                                 nineq: '4',
@@ -5429,7 +5430,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -5568,7 +5569,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -5577,7 +5578,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -5650,7 +5651,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -5706,7 +5707,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().eleven = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5717,7 +5718,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.elevenModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: ElevenWidget(
+                                              child: const ElevenWidget(
                                                 num: '0',
                                                 text: 'MAC น้อยกว่า 21',
                                                 nineq: '1',
@@ -5744,7 +5745,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().eleven = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5755,7 +5756,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.elevenModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: ElevenWidget(
+                                              child: const ElevenWidget(
                                                 num: '0.5',
                                                 text: 'MAC 2 -22',
                                                 nineq: '2',
@@ -5782,7 +5783,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().eleven = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5793,7 +5794,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.elevenModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: ElevenWidget(
+                                              child: const ElevenWidget(
                                                 num: '1',
                                                 text: 'MAC ตั้งแต่ 22 ขึ้นไป',
                                                 nineq: '3',
@@ -5806,7 +5807,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -5955,7 +5956,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -6028,7 +6029,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -6084,7 +6085,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().twelve = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -6093,7 +6094,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.twelveModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: TwelveWidget(
+                                              child: const TwelveWidget(
                                                 num: '0',
                                                 text: 'CC น้อยกว่า 31',
                                                 nineq: '1',
@@ -6120,7 +6121,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               FFAppState().twelve = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -6129,7 +6130,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                               model: _model.twelveModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: TwelveWidget(
+                                              child: const TwelveWidget(
                                                 num: '1',
                                                 text: 'CC ตั้งแต่ 31 ขึ้นไป',
                                                 nineq: '2',
@@ -6142,54 +6143,26 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 16.0, 16.0, 24.0),
-                          child: FFButtonWidget(
+                          child: MainButton(
+                            text: 'บันทึก',
                             onPressed: () async {
                               _model.nineq = 13;
                               safeSetState(() {});
                             },
-                            text: 'บันทึก',
-                            options: FFButtonOptions(
-                              width: double.infinity,
-                              height: 48.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 0.0, 16.0, 0.0),
-                              iconAlignment: IconAlignment.start,
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              color: FlutterFlowTheme.of(context).customColor5,
-                              textStyle: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily,
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts:
-                                        !FlutterFlowTheme.of(context)
-                                            .bodyMediumIsCustom,
-                                  ),
-                              elevation: 0.0,
-                              borderSide: BorderSide(
-                                color: Colors.transparent,
-                                width: 0.0,
-                              ),
-                              borderRadius: BorderRadius.circular(100.0),
-                            ),
                           ),
                         ),
                       ],
                     );
                   } else if (_model.nineq == 13) {
                     return ListView(
-                      padding: EdgeInsets.fromLTRB(
+                      padding: const EdgeInsets.fromLTRB(
                         0,
                         8.0,
                         0,
@@ -6199,7 +6172,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                       scrollDirection: Axis.vertical,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, -1.0),
+                          alignment: const AlignmentDirectional(0.0, -1.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
                             child: Image.network(
@@ -6238,7 +6211,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                         ),
                         if (FFAppState().gay == true)
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               width: double.infinity,
@@ -6248,7 +6221,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 borderRadius: BorderRadius.circular(24.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -6277,7 +6250,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                         .labelSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     Text(
                                       'คุณได้ 25 คะแนน',
@@ -6318,7 +6291,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                             BorderRadius.circular(16.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(12.0),
+                                        padding: const EdgeInsets.all(12.0),
                                         child: Text(
                                           'เป็นผู้มีความเสี่ยงโรคซึมเศร้า เพราะมีเหตุให้เกิดการกระทบกระทั้งจิตใจทำให้มีอาการวิตกกังวล และมีความคิดด้านลบหรือสิ้นหวังกับชีวิต',
                                           textAlign: TextAlign.start,
@@ -6339,7 +6312,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 16.0, 0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
@@ -6352,13 +6325,13 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                           width: double.infinity,
                                           height: 48.0,
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           iconAlignment: IconAlignment.start,
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00164874),
+                                          color: const Color(0x00164874),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .bodyMedium
@@ -6385,14 +6358,14 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 16.0)),
+                                  ].divide(const SizedBox(height: 16.0)),
                                 ),
                               ),
                             ),
                           ),
                         if (FFAppState().gay == false)
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               width: double.infinity,
@@ -6402,7 +6375,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                 borderRadius: BorderRadius.circular(24.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -6431,7 +6404,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                         .labelSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     Text(
                                       'คุณได้ 13 คะแนน',
@@ -6466,12 +6439,12 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                     Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFFFEDED),
+                                        color: const Color(0xFFFFEDED),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(12.0),
+                                        padding: const EdgeInsets.all(12.0),
                                         child: Text(
                                           'เป็นผู้มีความเสี่ยงโรคซึมเศร้า เพราะมีเหตุให้เกิดการกระทบกระทั้งจิตใจทำให้มีอาการวิตกกังวล และมีความคิดด้านลบหรือสิ้นหวังกับชีวิต',
                                           textAlign: TextAlign.start,
@@ -6492,7 +6465,7 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 16.0, 0.0, 0.0),
                                       child: MasonryGridView.builder(
                                         physics:
@@ -6580,13 +6553,13 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                     width: double.infinity,
                                                     height: 48.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 16.0, 0.0),
                                                     iconAlignment:
                                                         IconAlignment.start,
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
                                                     color: FlutterFlowTheme.of(
@@ -6621,12 +6594,12 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                         },
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 16.0)),
+                                  ].divide(const SizedBox(height: 16.0)),
                                 ),
                               ),
                             ),
                           ),
-                      ].divide(SizedBox(height: 24.0)),
+                      ].divide(const SizedBox(height: 24.0)),
                     );
                   } else {
                     return Container(

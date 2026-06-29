@@ -356,9 +356,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                       side:
                                                           (const Color(0xFFA3A3A3) !=
                                                                   null)
-                                                              ? BorderSide(
+                                                              ? const BorderSide(
                                                                   width: 2,
-                                                                  color: const Color(
+                                                                  color: Color(
                                                                       0xFFA3A3A3),
                                                                 )
                                                               : null,
@@ -448,9 +448,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                       side:
                                                           (const Color(0xFFA3A3A3) !=
                                                                   null)
-                                                              ? BorderSide(
+                                                              ? const BorderSide(
                                                                   width: 2,
-                                                                  color: const Color(
+                                                                  color: Color(
                                                                       0xFFA3A3A3),
                                                                 )
                                                               : null,
@@ -540,9 +540,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                       side:
                                                           (const Color(0xFFA3A3A3) !=
                                                                   null)
-                                                              ? BorderSide(
+                                                              ? const BorderSide(
                                                                   width: 2,
-                                                                  color: const Color(
+                                                                  color: Color(
                                                                       0xFFA3A3A3),
                                                                 )
                                                               : null,
@@ -632,9 +632,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                       side:
                                                           (const Color(0xFFA3A3A3) !=
                                                                   null)
-                                                              ? BorderSide(
+                                                              ? const BorderSide(
                                                                   width: 2,
-                                                                  color: const Color(
+                                                                  color: Color(
                                                                       0xFFA3A3A3),
                                                                 )
                                                               : null,
@@ -724,9 +724,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                       side:
                                                           (const Color(0xFFA3A3A3) !=
                                                                   null)
-                                                              ? BorderSide(
+                                                              ? const BorderSide(
                                                                   width: 2,
-                                                                  color: const Color(
+                                                                  color: Color(
                                                                       0xFFA3A3A3),
                                                                 )
                                                               : null,
@@ -816,9 +816,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                       side:
                                                           (const Color(0xFFA3A3A3) !=
                                                                   null)
-                                                              ? BorderSide(
+                                                              ? const BorderSide(
                                                                   width: 2,
-                                                                  color: const Color(
+                                                                  color: Color(
                                                                       0xFFA3A3A3),
                                                                 )
                                                               : null,
@@ -1549,9 +1549,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         side:
                                                             (const Color(0xFFA3A3A3) !=
                                                                     null)
-                                                                ? BorderSide(
+                                                                ? const BorderSide(
                                                                     width: 2,
-                                                                    color: const Color(
+                                                                    color: Color(
                                                                         0xFFA3A3A3),
                                                                   )
                                                                 : null,
@@ -1645,9 +1645,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         side:
                                                             (const Color(0xFFA3A3A3) !=
                                                                     null)
-                                                                ? BorderSide(
+                                                                ? const BorderSide(
                                                                     width: 2,
-                                                                    color: const Color(
+                                                                    color: Color(
                                                                         0xFFA3A3A3),
                                                                   )
                                                                 : null,
@@ -1741,9 +1741,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         side:
                                                             (const Color(0xFFA3A3A3) !=
                                                                     null)
-                                                                ? BorderSide(
+                                                                ? const BorderSide(
                                                                     width: 2,
-                                                                    color: const Color(
+                                                                    color: Color(
                                                                         0xFFA3A3A3),
                                                                   )
                                                                 : null,
@@ -1837,9 +1837,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         side:
                                                             (const Color(0xFFA3A3A3) !=
                                                                     null)
-                                                                ? BorderSide(
+                                                                ? const BorderSide(
                                                                     width: 2,
-                                                                    color: const Color(
+                                                                    color: Color(
                                                                         0xFFA3A3A3),
                                                                   )
                                                                 : null,
@@ -1933,9 +1933,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         side:
                                                             (const Color(0xFFA3A3A3) !=
                                                                     null)
-                                                                ? BorderSide(
+                                                                ? const BorderSide(
                                                                     width: 2,
-                                                                    color: const Color(
+                                                                    color: Color(
                                                                         0xFFA3A3A3),
                                                                   )
                                                                 : null,
@@ -2029,9 +2029,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         side:
                                                             (const Color(0xFFA3A3A3) !=
                                                                     null)
-                                                                ? BorderSide(
+                                                                ? const BorderSide(
                                                                     width: 2,
-                                                                    color: const Color(
+                                                                    color: Color(
                                                                         0xFFA3A3A3),
                                                                   )
                                                                 : null,

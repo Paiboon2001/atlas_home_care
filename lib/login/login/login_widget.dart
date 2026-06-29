@@ -53,8 +53,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 800.0.ms,
-            begin: Offset(0.0, 26.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 26.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -72,8 +72,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 800.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -91,8 +91,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 800.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -110,8 +110,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 800.0.ms,
-            begin: Offset(0.0, -26.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, -26.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -129,8 +129,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 850.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -148,8 +148,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 900.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -167,8 +167,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 600.0.ms,
             duration: 1300.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -186,8 +186,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 900.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -205,8 +205,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -224,8 +224,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 600.0.ms,
             duration: 1300.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -243,8 +243,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 900.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -262,8 +262,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -281,8 +281,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 600.0.ms,
             duration: 1300.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -300,8 +300,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 900.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -319,8 +319,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -338,8 +338,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 800.0.ms,
-            begin: Offset(0.0, 26.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 26.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -357,8 +357,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 800.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -376,8 +376,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 800.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -395,8 +395,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 800.0.ms,
-            begin: Offset(0.0, -26.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, -26.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -414,8 +414,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 850.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -433,8 +433,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 900.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -452,8 +452,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 600.0.ms,
             duration: 1300.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -471,8 +471,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 900.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -490,8 +490,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -509,8 +509,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 600.0.ms,
             duration: 1300.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -528,8 +528,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 900.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -547,8 +547,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -566,8 +566,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 600.0.ms,
             duration: 1300.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -585,8 +585,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 900.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -604,8 +604,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -617,7 +617,7 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 290.0.ms,
             duration: 2000.0.ms,
-            color: Color(0x80FFFFFF),
+            color: const Color(0x80FFFFFF),
             angle: 0.524,
           ),
         ],
@@ -655,7 +655,7 @@ class _LoginWidgetState extends State<LoginWidget>
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                   letterSpacing: 0.0,
                   shadows: [
-                    Shadow(
+                    const Shadow(
                       color: Color(0x336C6C6C),
                       offset: Offset(2.0, 2.0),
                       blurRadius: 2.0,
@@ -665,7 +665,7 @@ class _LoginWidgetState extends State<LoginWidget>
                       !FlutterFlowTheme.of(context).headlineMediumIsCustom,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -676,12 +676,12 @@ class _LoginWidgetState extends State<LoginWidget>
             gradient: LinearGradient(
               colors: [
                 FlutterFlowTheme.of(context).primary,
-                Color(0x98F5F7FA),
+                const Color(0x98F5F7FA),
                 FlutterFlowTheme.of(context).primaryBackground
               ],
-              stops: [0.0, 0.8, 1.0],
-              begin: AlignmentDirectional(0.0, -1.0),
-              end: AlignmentDirectional(0, 1.0),
+              stops: const [0.0, 0.8, 1.0],
+              begin: const AlignmentDirectional(0.0, -1.0),
+              end: const AlignmentDirectional(0, 1.0),
             ),
           ),
           child: Stack(
@@ -692,7 +692,7 @@ class _LoginWidgetState extends State<LoginWidget>
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: Text(
                       'เครื่องมือดูแลสุขภาพสำหรับคุณและคนที่คุณห่วงใย ด้วยฟีเจอร์เยี่ยมบ้าน ติดตามอาการ และบันทึกข้อมูลสุขภาพได้ทุกที่ ทุกเวลา',
                       textAlign: TextAlign.center,
@@ -730,7 +730,7 @@ class _LoginWidgetState extends State<LoginWidget>
                               return 600.0;
                             }
                           }(),
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Stack(
                             children: [
                               if (responsiveVisibility(
@@ -739,13 +739,13 @@ class _LoginWidgetState extends State<LoginWidget>
                                 tabletLandscape: false,
                                 desktop: false,
                               ))
-                                Container(
+                                SizedBox(
                                   width: double.infinity,
                                   height: double.infinity,
                                   child: CarouselSlider(
                                     items: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -756,16 +756,16 @@ class _LoginWidgetState extends State<LoginWidget>
                                                 children: [
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             1.0, 0.0),
-                                                    child: Container(
+                                                    child: SizedBox(
                                                       width: 180.0,
                                                       height: 290.0,
                                                       child: Stack(
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, 0.0),
                                                             child: Container(
                                                               width: 180.0,
@@ -778,18 +778,18 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                             100.0),
                                                                 border:
                                                                     Border.all(
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0x65FFFFFF),
                                                                 ),
                                                               ),
                                                               child: Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8.0),
                                                                   child:
@@ -803,19 +803,19 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                       gradient:
                                                                           LinearGradient(
                                                                         colors: [
-                                                                          Color(
+                                                                          const Color(
                                                                               0xFFA0D6FF),
                                                                           FlutterFlowTheme.of(context)
                                                                               .primary
                                                                         ],
-                                                                        stops: [
+                                                                        stops: const [
                                                                           0.0,
                                                                           1.0
                                                                         ],
-                                                                        begin: AlignmentDirectional(
+                                                                        begin: const AlignmentDirectional(
                                                                             0.0,
                                                                             -1.0),
-                                                                        end: AlignmentDirectional(
+                                                                        end: const AlignmentDirectional(
                                                                             0,
                                                                             1.0),
                                                                       ),
@@ -830,11 +830,11 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1.0, 1.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           0.0,
@@ -853,7 +853,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                   fit: BoxFit
                                                                       .cover,
                                                                   alignment:
-                                                                      Alignment(
+                                                                      const Alignment(
                                                                           1.0,
                                                                           1.0),
                                                                 ),
@@ -862,11 +862,11 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1.0, -1.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           16.0,
@@ -880,7 +880,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  boxShadow: [
+                                                                  boxShadow: const [
                                                                     BoxShadow(
                                                                       blurRadius:
                                                                           6.0,
@@ -905,13 +905,13 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 ),
                                                                 child: Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
                                                                     padding:
-                                                                        EdgeInsets.all(
+                                                                        const EdgeInsets.all(
                                                                             6.0),
                                                                     child:
                                                                         ClipRRect(
@@ -938,11 +938,11 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           16.0,
@@ -956,7 +956,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  boxShadow: [
+                                                                  boxShadow: const [
                                                                     BoxShadow(
                                                                       blurRadius:
                                                                           6.0,
@@ -981,13 +981,13 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 ),
                                                                 child: Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
                                                                     padding:
-                                                                        EdgeInsets.all(
+                                                                        const EdgeInsets.all(
                                                                             6.0),
                                                                     child:
                                                                         ClipRRect(
@@ -1029,16 +1029,16 @@ class _LoginWidgetState extends State<LoginWidget>
                                                 children: [
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.0, 0.0),
-                                                    child: Container(
+                                                    child: SizedBox(
                                                       width: 180.0,
                                                       height: 290.0,
                                                       child: Stack(
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1.0, 0.0),
                                                             child: Container(
                                                               width: 180.0,
@@ -1051,18 +1051,18 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                             100.0),
                                                                 border:
                                                                     Border.all(
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0x65FFFFFF),
                                                                 ),
                                                               ),
                                                               child: Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8.0),
                                                                   child:
@@ -1074,7 +1074,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                     decoration:
                                                                         BoxDecoration(
                                                                       gradient:
-                                                                          LinearGradient(
+                                                                          const LinearGradient(
                                                                         colors: [
                                                                           Color(
                                                                               0xFFB9C0FF),
@@ -1103,11 +1103,11 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
@@ -1126,7 +1126,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                   fit: BoxFit
                                                                       .cover,
                                                                   alignment:
-                                                                      Alignment(
+                                                                      const Alignment(
                                                                           -1.0,
                                                                           1.0),
                                                                 ),
@@ -1135,11 +1135,11 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1.0, 1.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           16.0,
@@ -1153,7 +1153,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  boxShadow: [
+                                                                  boxShadow: const [
                                                                     BoxShadow(
                                                                       blurRadius:
                                                                           6.0,
@@ -1178,13 +1178,13 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 ),
                                                                 child: Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
                                                                     padding:
-                                                                        EdgeInsets.all(
+                                                                        const EdgeInsets.all(
                                                                             6.0),
                                                                     child:
                                                                         ClipRRect(
@@ -1211,11 +1211,11 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, -1.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           12.0,
@@ -1229,7 +1229,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  boxShadow: [
+                                                                  boxShadow: const [
                                                                     BoxShadow(
                                                                       blurRadius:
                                                                           6.0,
@@ -1254,13 +1254,13 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 ),
                                                                 child: Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
                                                                     padding:
-                                                                        EdgeInsets.all(
+                                                                        const EdgeInsets.all(
                                                                             6.0),
                                                                     child:
                                                                         ClipRRect(
@@ -1294,21 +1294,21 @@ class _LoginWidgetState extends State<LoginWidget>
                                                 ],
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 24.0)),
+                                          ].divide(const SizedBox(width: 24.0)),
                                         ),
                                       ),
                                       Stack(
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 350.0,
                                               height: 350.0,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  color: Color(0x99D8EDFF),
+                                                  color: const Color(0x99D8EDFF),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -1316,14 +1316,14 @@ class _LoginWidgetState extends State<LoginWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 300.0,
                                               height: 300.0,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  color: Color(0x99D8EDFF),
+                                                  color: const Color(0x99D8EDFF),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -1331,14 +1331,14 @@ class _LoginWidgetState extends State<LoginWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 250.0,
                                               height: 250.0,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  color: Color(0x99D8EDFF),
+                                                  color: const Color(0x99D8EDFF),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -1346,27 +1346,27 @@ class _LoginWidgetState extends State<LoginWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 200.0,
                                               height: 200.0,
                                               decoration: BoxDecoration(
                                                 gradient: LinearGradient(
                                                   colors: [
-                                                    Color(0xFFA0D6FF),
+                                                    const Color(0xFFA0D6FF),
                                                     FlutterFlowTheme.of(context)
                                                         .primary
                                                   ],
-                                                  stops: [0.0, 1.0],
-                                                  begin: AlignmentDirectional(
+                                                  stops: const [0.0, 1.0],
+                                                  begin: const AlignmentDirectional(
                                                       0.0, -1.0),
-                                                  end: AlignmentDirectional(
+                                                  end: const AlignmentDirectional(
                                                       0, 1.0),
                                                 ),
                                                 shape: BoxShape.circle,
                                               ),
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: ClipRRect(
                                                   borderRadius:
@@ -1388,14 +1388,14 @@ class _LoginWidgetState extends State<LoginWidget>
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 350.0,
                                               height: 350.0,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  color: Color(0x9BE6E8FF),
+                                                  color: const Color(0x9BE6E8FF),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -1403,14 +1403,14 @@ class _LoginWidgetState extends State<LoginWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 300.0,
                                               height: 300.0,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  color: Color(0x9BE6E8FF),
+                                                  color: const Color(0x9BE6E8FF),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -1418,14 +1418,14 @@ class _LoginWidgetState extends State<LoginWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 250.0,
                                               height: 250.0,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  color: Color(0x9BE6E8FF),
+                                                  color: const Color(0x9BE6E8FF),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -1433,11 +1433,11 @@ class _LoginWidgetState extends State<LoginWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 200.0,
                                               height: 200.0,
-                                              decoration: BoxDecoration(
+                                              decoration: const BoxDecoration(
                                                 gradient: LinearGradient(
                                                   colors: [
                                                     Color(0xFFB9C0FF),
@@ -1452,7 +1452,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                 shape: BoxShape.circle,
                                               ),
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: ClipRRect(
                                                   borderRadius:
@@ -1474,14 +1474,14 @@ class _LoginWidgetState extends State<LoginWidget>
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 350.0,
                                               height: 350.0,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  color: Color(0x98FBF3FF),
+                                                  color: const Color(0x98FBF3FF),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -1489,14 +1489,14 @@ class _LoginWidgetState extends State<LoginWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 300.0,
                                               height: 300.0,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  color: Color(0x98FBF3FF),
+                                                  color: const Color(0x98FBF3FF),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -1504,14 +1504,14 @@ class _LoginWidgetState extends State<LoginWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 250.0,
                                               height: 250.0,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  color: Color(0x98FBF3FF),
+                                                  color: const Color(0x98FBF3FF),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -1519,11 +1519,11 @@ class _LoginWidgetState extends State<LoginWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 200.0,
                                               height: 200.0,
-                                              decoration: BoxDecoration(
+                                              decoration: const BoxDecoration(
                                                 gradient: LinearGradient(
                                                   colors: [
                                                     Color(0xFFF6D9FF),
@@ -1538,7 +1538,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                 shape: BoxShape.circle,
                                               ),
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: ClipRRect(
                                                   borderRadius:
@@ -1570,9 +1570,9 @@ class _LoginWidgetState extends State<LoginWidget>
                                       scrollDirection: Axis.horizontal,
                                       autoPlay: true,
                                       autoPlayAnimationDuration:
-                                          Duration(milliseconds: 800),
+                                          const Duration(milliseconds: 800),
                                       autoPlayInterval:
-                                          Duration(milliseconds: (800 + 2000)),
+                                          const Duration(milliseconds: (800 + 2000)),
                                       autoPlayCurve: Curves.linear,
                                       pauseAutoPlayInFiniteScroll: true,
                                       onPageChanged: (index, _) =>
@@ -1584,13 +1584,13 @@ class _LoginWidgetState extends State<LoginWidget>
                                 context: context,
                                 phone: false,
                               ))
-                                Container(
+                                SizedBox(
                                   width: double.infinity,
                                   height: double.infinity,
                                   child: CarouselSlider(
                                     items: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 24.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -1601,16 +1601,16 @@ class _LoginWidgetState extends State<LoginWidget>
                                                 children: [
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             1.0, 0.0),
-                                                    child: Container(
+                                                    child: SizedBox(
                                                       width: 280.0,
                                                       height: 490.0,
                                                       child: Stack(
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, 0.0),
                                                             child: Container(
                                                               width: 280.0,
@@ -1623,18 +1623,18 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                             1000.0),
                                                                 border:
                                                                     Border.all(
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0x65FFFFFF),
                                                                 ),
                                                               ),
                                                               child: Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8.0),
                                                                   child:
@@ -1648,19 +1648,19 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                       gradient:
                                                                           LinearGradient(
                                                                         colors: [
-                                                                          Color(
+                                                                          const Color(
                                                                               0xFFA0D6FF),
                                                                           FlutterFlowTheme.of(context)
                                                                               .primary
                                                                         ],
-                                                                        stops: [
+                                                                        stops: const [
                                                                           0.0,
                                                                           1.0
                                                                         ],
-                                                                        begin: AlignmentDirectional(
+                                                                        begin: const AlignmentDirectional(
                                                                             0.0,
                                                                             -1.0),
-                                                                        end: AlignmentDirectional(
+                                                                        end: const AlignmentDirectional(
                                                                             0,
                                                                             1.0),
                                                                       ),
@@ -1675,11 +1675,11 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1.0, 1.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           26.0,
                                                                           0.0,
@@ -1698,7 +1698,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                   fit: BoxFit
                                                                       .cover,
                                                                   alignment:
-                                                                      Alignment(
+                                                                      const Alignment(
                                                                           1.0,
                                                                           1.0),
                                                                 ),
@@ -1707,11 +1707,11 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1.0, -1.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           16.0,
@@ -1725,7 +1725,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  boxShadow: [
+                                                                  boxShadow: const [
                                                                     BoxShadow(
                                                                       blurRadius:
                                                                           6.0,
@@ -1750,13 +1750,13 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 ),
                                                                 child: Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
                                                                     padding:
-                                                                        EdgeInsets.all(
+                                                                        const EdgeInsets.all(
                                                                             6.0),
                                                                     child:
                                                                         ClipRRect(
@@ -1783,11 +1783,11 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           16.0,
@@ -1801,7 +1801,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  boxShadow: [
+                                                                  boxShadow: const [
                                                                     BoxShadow(
                                                                       blurRadius:
                                                                           6.0,
@@ -1826,13 +1826,13 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 ),
                                                                 child: Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
                                                                     padding:
-                                                                        EdgeInsets.all(
+                                                                        const EdgeInsets.all(
                                                                             6.0),
                                                                     child:
                                                                         ClipRRect(
@@ -1874,16 +1874,16 @@ class _LoginWidgetState extends State<LoginWidget>
                                                 children: [
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.0, 0.0),
-                                                    child: Container(
+                                                    child: SizedBox(
                                                       width: 280.0,
                                                       height: 490.0,
                                                       child: Stack(
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1.0, 0.0),
                                                             child: Container(
                                                               width: 280.0,
@@ -1896,18 +1896,18 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                             1000.0),
                                                                 border:
                                                                     Border.all(
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0x65FFFFFF),
                                                                 ),
                                                               ),
                                                               child: Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8.0),
                                                                   child:
@@ -1919,7 +1919,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                     decoration:
                                                                         BoxDecoration(
                                                                       gradient:
-                                                                          LinearGradient(
+                                                                          const LinearGradient(
                                                                         colors: [
                                                                           Color(
                                                                               0xFFB9C0FF),
@@ -1948,11 +1948,11 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
@@ -1971,7 +1971,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                   fit: BoxFit
                                                                       .cover,
                                                                   alignment:
-                                                                      Alignment(
+                                                                      const Alignment(
                                                                           -1.0,
                                                                           1.0),
                                                                 ),
@@ -1980,11 +1980,11 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1.0, 1.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           16.0,
@@ -1998,7 +1998,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  boxShadow: [
+                                                                  boxShadow: const [
                                                                     BoxShadow(
                                                                       blurRadius:
                                                                           6.0,
@@ -2023,13 +2023,13 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 ),
                                                                 child: Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
                                                                     padding:
-                                                                        EdgeInsets.all(
+                                                                        const EdgeInsets.all(
                                                                             6.0),
                                                                     child:
                                                                         ClipRRect(
@@ -2056,11 +2056,11 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, -1.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           12.0,
@@ -2074,7 +2074,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  boxShadow: [
+                                                                  boxShadow: const [
                                                                     BoxShadow(
                                                                       blurRadius:
                                                                           6.0,
@@ -2099,13 +2099,13 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 ),
                                                                 child: Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
                                                                     padding:
-                                                                        EdgeInsets.all(
+                                                                        const EdgeInsets.all(
                                                                             6.0),
                                                                     child:
                                                                         ClipRRect(
@@ -2139,21 +2139,21 @@ class _LoginWidgetState extends State<LoginWidget>
                                                 ],
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 40.0)),
+                                          ].divide(const SizedBox(width: 40.0)),
                                         ),
                                       ),
                                       Stack(
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 450.0,
                                               height: 450.0,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  color: Color(0x99D8EDFF),
+                                                  color: const Color(0x99D8EDFF),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -2161,14 +2161,14 @@ class _LoginWidgetState extends State<LoginWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 400.0,
                                               height: 400.0,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  color: Color(0x99D8EDFF),
+                                                  color: const Color(0x99D8EDFF),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -2176,14 +2176,14 @@ class _LoginWidgetState extends State<LoginWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 350.0,
                                               height: 350.0,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  color: Color(0x99D8EDFF),
+                                                  color: const Color(0x99D8EDFF),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -2191,27 +2191,27 @@ class _LoginWidgetState extends State<LoginWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 300.0,
                                               height: 300.0,
                                               decoration: BoxDecoration(
                                                 gradient: LinearGradient(
                                                   colors: [
-                                                    Color(0xFFA0D6FF),
+                                                    const Color(0xFFA0D6FF),
                                                     FlutterFlowTheme.of(context)
                                                         .primary
                                                   ],
-                                                  stops: [0.0, 1.0],
-                                                  begin: AlignmentDirectional(
+                                                  stops: const [0.0, 1.0],
+                                                  begin: const AlignmentDirectional(
                                                       0.0, -1.0),
-                                                  end: AlignmentDirectional(
+                                                  end: const AlignmentDirectional(
                                                       0, 1.0),
                                                 ),
                                                 shape: BoxShape.circle,
                                               ),
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: ClipRRect(
                                                   borderRadius:
@@ -2233,14 +2233,14 @@ class _LoginWidgetState extends State<LoginWidget>
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 450.0,
                                               height: 450.0,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  color: Color(0x9BE6E8FF),
+                                                  color: const Color(0x9BE6E8FF),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -2248,14 +2248,14 @@ class _LoginWidgetState extends State<LoginWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 400.0,
                                               height: 400.0,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  color: Color(0x9BE6E8FF),
+                                                  color: const Color(0x9BE6E8FF),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -2263,14 +2263,14 @@ class _LoginWidgetState extends State<LoginWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 350.0,
                                               height: 350.0,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  color: Color(0x9BE6E8FF),
+                                                  color: const Color(0x9BE6E8FF),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -2278,11 +2278,11 @@ class _LoginWidgetState extends State<LoginWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 300.0,
                                               height: 300.0,
-                                              decoration: BoxDecoration(
+                                              decoration: const BoxDecoration(
                                                 gradient: LinearGradient(
                                                   colors: [
                                                     Color(0xFFB9C0FF),
@@ -2297,7 +2297,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                 shape: BoxShape.circle,
                                               ),
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: ClipRRect(
                                                   borderRadius:
@@ -2319,14 +2319,14 @@ class _LoginWidgetState extends State<LoginWidget>
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 450.0,
                                               height: 450.0,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  color: Color(0x98FBF3FF),
+                                                  color: const Color(0x98FBF3FF),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -2334,14 +2334,14 @@ class _LoginWidgetState extends State<LoginWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 400.0,
                                               height: 400.0,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  color: Color(0x98FBF3FF),
+                                                  color: const Color(0x98FBF3FF),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -2349,14 +2349,14 @@ class _LoginWidgetState extends State<LoginWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 350.0,
                                               height: 350.0,
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  color: Color(0x98FBF3FF),
+                                                  color: const Color(0x98FBF3FF),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
@@ -2364,11 +2364,11 @@ class _LoginWidgetState extends State<LoginWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 300.0,
                                               height: 300.0,
-                                              decoration: BoxDecoration(
+                                              decoration: const BoxDecoration(
                                                 gradient: LinearGradient(
                                                   colors: [
                                                     Color(0xFFF6D9FF),
@@ -2383,7 +2383,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                 shape: BoxShape.circle,
                                               ),
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: ClipRRect(
                                                   borderRadius:
@@ -2415,9 +2415,9 @@ class _LoginWidgetState extends State<LoginWidget>
                                       scrollDirection: Axis.horizontal,
                                       autoPlay: true,
                                       autoPlayAnimationDuration:
-                                          Duration(milliseconds: 800),
+                                          const Duration(milliseconds: 800),
                                       autoPlayInterval:
-                                          Duration(milliseconds: (800 + 2000)),
+                                          const Duration(milliseconds: (800 + 2000)),
                                       autoPlayCurve: Curves.linear,
                                       pauseAutoPlayInFiniteScroll: true,
                                       onPageChanged: (index, _) =>
@@ -2446,12 +2446,12 @@ class _LoginWidgetState extends State<LoginWidget>
                         return 450.0;
                       }
                     }(),
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                   ),
                 ],
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 1.0),
+                alignment: const AlignmentDirectional(0.0, 1.0),
                 child: Container(
                   width: double.infinity,
                   height: () {
@@ -2469,7 +2469,7 @@ class _LoginWidgetState extends State<LoginWidget>
                   }(),
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 4.0,
                         color: Color(0x1A000000),
@@ -2479,14 +2479,14 @@ class _LoginWidgetState extends State<LoginWidget>
                         ),
                       )
                     ],
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(24.0),
                       topRight: Radius.circular(24.0),
                     ),
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -2562,12 +2562,12 @@ class _LoginWidgetState extends State<LoginWidget>
                                   ),
                               colors: [
                                 FlutterFlowTheme.of(context).primary,
-                                Color(0xFF6A78FA)
+                                const Color(0xFF6A78FA)
                               ],
                               gradientDirection: GradientDirection.ltr,
                               gradientType: GradientType.linear,
                             ),
-                          ].divide(SizedBox(width: 8.0)),
+                          ].divide(const SizedBox(width: 8.0)),
                         ),
                         Column(
                           mainAxisSize: MainAxisSize.max,
@@ -2613,7 +2613,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                   }
                                 }(),
                                 decoration: BoxDecoration(
-                                  boxShadow: [
+                                  boxShadow: const [
                                     BoxShadow(
                                       blurRadius: 8.0,
                                       color: Color(0x414CAF50),
@@ -2625,7 +2625,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                   ],
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
-                                child: Container(
+                                child: SizedBox(
                                   width: double.infinity,
                                   height: double.infinity,
                                   child: Stack(
@@ -2634,7 +2634,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                         width: double.infinity,
                                         height: double.infinity,
                                         decoration: BoxDecoration(
-                                          gradient: LinearGradient(
+                                          gradient: const LinearGradient(
                                             colors: [
                                               Color(0xFFE7CA43),
                                               Color(0xFF12861B)
@@ -2652,19 +2652,19 @@ class _LoginWidgetState extends State<LoginWidget>
                                           'containerOnPageLoadAnimation27']!),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Padding(
-                                          padding: EdgeInsets.all(2.0),
+                                          padding: const EdgeInsets.all(2.0),
                                           child: Container(
                                             width: double.infinity,
                                             height: double.infinity,
                                             decoration: BoxDecoration(
-                                              color: Color(0xE4FFFFFF),
+                                              color: const Color(0xE4FFFFFF),
                                               borderRadius:
                                                   BorderRadius.circular(100.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 2.0, 0.0, 2.0),
                                               child: ClipRRect(
                                                 borderRadius:
@@ -2685,7 +2685,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                 ),
                               ),
                             ),
-                          ].divide(SizedBox(height: 12.0)),
+                          ].divide(const SizedBox(height: 12.0)),
                         ),
                         Text(
                           'version 2.0.0',
@@ -2700,7 +2700,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                     .labelMediumIsCustom,
                               ),
                         ),
-                      ].divide(SizedBox(height: 16.0)),
+                      ].divide(const SizedBox(height: 16.0)),
                     ),
                   ),
                 ),

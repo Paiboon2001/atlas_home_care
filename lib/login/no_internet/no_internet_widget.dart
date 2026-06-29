@@ -3,10 +3,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/login/widget/info_help/info_help_widget.dart';
 import '/utils/loading/loading_widget.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'no_internet_model.dart';
 export 'no_internet_model.dart';
 

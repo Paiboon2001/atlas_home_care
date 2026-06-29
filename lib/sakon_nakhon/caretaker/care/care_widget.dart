@@ -1,4 +1,5 @@
 import '/assessmentform/highbloodpressure/widget/bloodpage/bloodpage_widget.dart';
+import '/components/main_button_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -75,8 +76,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -94,8 +95,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -113,8 +114,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -132,8 +133,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -151,8 +152,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -170,8 +171,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -189,8 +190,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -208,8 +209,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -227,8 +228,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -246,8 +247,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -265,8 +266,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -284,8 +285,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -303,8 +304,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -322,8 +323,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -335,8 +336,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -348,8 +349,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -361,8 +362,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -374,8 +375,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -387,8 +388,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -400,8 +401,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -413,8 +414,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -426,8 +427,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -439,8 +440,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -452,8 +453,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -465,8 +466,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -478,8 +479,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -491,8 +492,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -504,8 +505,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -517,8 +518,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -530,8 +531,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -543,8 +544,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -556,8 +557,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -569,8 +570,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -582,8 +583,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -595,8 +596,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -608,8 +609,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -621,8 +622,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -634,8 +635,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -647,8 +648,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -660,8 +661,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -673,8 +674,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -686,8 +687,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -699,8 +700,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -712,8 +713,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -725,8 +726,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -738,8 +739,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -751,8 +752,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -764,8 +765,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -777,8 +778,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -790,8 +791,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -803,8 +804,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -816,8 +817,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -829,8 +830,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -842,8 +843,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -855,8 +856,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -868,8 +869,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -881,8 +882,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -894,8 +895,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -907,8 +908,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -920,8 +921,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -933,8 +934,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -946,8 +947,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -959,8 +960,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -972,8 +973,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -985,8 +986,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -998,8 +999,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -1011,8 +1012,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -1024,8 +1025,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -1037,8 +1038,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -1050,8 +1051,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -1063,8 +1064,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -1076,8 +1077,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -1089,8 +1090,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -1102,8 +1103,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -1115,8 +1116,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -1128,8 +1129,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -1141,8 +1142,8 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -1665,7 +1666,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
             ),
           ],
         ),
-        actions: [],
+        actions: const [],
         centerTitle: false,
         elevation: 0.0,
       ),
@@ -1675,13 +1676,13 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
           borderRadius: BorderRadius.circular(0.0),
         ),
@@ -1714,7 +1715,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1724,7 +1725,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1734,7 +1735,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1744,7 +1745,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1754,7 +1755,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1764,7 +1765,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1774,7 +1775,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1784,7 +1785,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1794,7 +1795,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1804,7 +1805,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1814,7 +1815,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1824,7 +1825,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -1833,10 +1834,10 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 8.0, 0.0, 0.0),
                             child: ListView(
-                              padding: EdgeInsets.fromLTRB(
+                              padding: const EdgeInsets.fromLTRB(
                                 0,
                                 16.0,
                                 0,
@@ -1846,7 +1847,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                               scrollDirection: Axis.vertical,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -1871,7 +1872,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                         physics:
                                             const NeverScrollableScrollPhysics(),
                                         gridDelegate:
-                                            SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                            const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                           crossAxisCount: 1,
                                         ),
                                         crossAxisSpacing: 16.0,
@@ -1920,7 +1921,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -1943,7 +1944,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                     .viewInsetsOf(
                                                                         context),
                                                                 child:
-                                                                    FamiWidget(),
+                                                                    const FamiWidget(),
                                                               );
                                                             },
                                                           ).then((value) =>
@@ -1957,7 +1958,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                               safeSetState(
                                                                   () {}),
                                                           child:
-                                                              BloodpageWidget(
+                                                              const BloodpageWidget(
                                                             text: 'ญาติ',
                                                             exer: '1',
                                                           ),
@@ -1972,7 +1973,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                       Expanded(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       8.0,
                                                                       0.0,
@@ -1992,13 +1993,13 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                           24.0),
                                                               border:
                                                                   Border.all(
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFFCED4E6),
                                                               ),
                                                             ),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           20.0,
@@ -2033,7 +2034,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                               !FlutterFlowTheme.of(context).labelLargeIsCustom,
                                                                         ),
                                                                   ),
-                                                                ].divide(SizedBox(
+                                                                ].divide(const SizedBox(
                                                                     height:
                                                                         8.0)),
                                                               ),
@@ -2062,7 +2063,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                           .forward(from: 0.0);
                                                     }
                                                     await Future.delayed(
-                                                      Duration(
+                                                      const Duration(
                                                         milliseconds: 100,
                                                       ),
                                                     );
@@ -2075,7 +2076,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                         _model.bloodpageModel2,
                                                     updateCallback: () =>
                                                         safeSetState(() {}),
-                                                    child: BloodpageWidget(
+                                                    child: const BloodpageWidget(
                                                       text:
                                                           'ผู้ดูแล (มีค่าตอบแทน)',
                                                       exer: '2',
@@ -2097,7 +2098,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               BorderRadius.circular(24.0),
                                         ),
                                         child: Padding(
-                                          padding: EdgeInsets.all(16.0),
+                                          padding: const EdgeInsets.all(16.0),
                                           child: MasonryGridView.builder(
                                             physics:
                                                 const NeverScrollableScrollPhysics(),
@@ -2169,16 +2170,16 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1.0, 0.0),
                                                             child: Stack(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       1.0, 0.0),
                                                               children: [
                                                                 Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           -1.0,
                                                                           0.0),
                                                                   child:
@@ -2197,7 +2198,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                     obscureText:
                                                                         false,
                                                                     decoration:
-                                                                        InputDecoration(
+                                                                        const InputDecoration(
                                                                       isDense:
                                                                           false,
                                                                       alignLabelWithHint:
@@ -2244,12 +2245,12 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                 ),
                                                                 Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           1.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -2277,7 +2278,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                             ),
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                                 () => Column(
@@ -2326,7 +2327,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                 FormFieldController<
                                                                         String>(
                                                                     null),
-                                                            options: [
+                                                            options: const [
                                                               'ชาย',
                                                               'หญิง'
                                                             ],
@@ -2363,7 +2364,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                             borderWidth: 0.0,
                                                             borderRadius: 8.0,
                                                             margin:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12.0,
                                                                         0.0,
@@ -2377,7 +2378,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                 false,
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                                 () => Column(
@@ -2426,7 +2427,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                 FormFieldController<
                                                                         String>(
                                                                     null),
-                                                            options: [
+                                                            options: const [
                                                               'โสด',
                                                               'สมรส',
                                                               'หย่า',
@@ -2465,7 +2466,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                             borderWidth: 0.0,
                                                             borderRadius: 8.0,
                                                             margin:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12.0,
                                                                         0.0,
@@ -2479,7 +2480,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                 false,
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                                 () => Column(
@@ -2528,7 +2529,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                 FormFieldController<
                                                                         String>(
                                                                     null),
-                                                            options: [
+                                                            options: const [
                                                               'มี',
                                                               'ไม่มี'
                                                             ],
@@ -2565,7 +2566,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                             borderWidth: 0.0,
                                                             borderRadius: 8.0,
                                                             margin:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12.0,
                                                                         0.0,
@@ -2579,7 +2580,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                 false,
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                               ][index]();
@@ -2606,7 +2607,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -2631,7 +2632,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                         physics:
                                             const NeverScrollableScrollPhysics(),
                                         gridDelegate:
-                                            SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                            const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                           crossAxisCount: 1,
                                         ),
                                         crossAxisSpacing: () {
@@ -2695,7 +2696,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                     from: 0.0);
                                                           }
                                                           await Future.delayed(
-                                                            Duration(
+                                                            const Duration(
                                                               milliseconds: 100,
                                                             ),
                                                           );
@@ -2718,7 +2719,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                     .viewInsetsOf(
                                                                         context),
                                                                 child:
-                                                                    TekeyWidget(),
+                                                                    const TekeyWidget(),
                                                               );
                                                             },
                                                           ).then((value) =>
@@ -2731,7 +2732,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                           updateCallback: () =>
                                                               safeSetState(
                                                                   () {}),
-                                                          child: PppWidget(
+                                                          child: const PppWidget(
                                                             texts: 'มี',
                                                             healthone: '1',
                                                           ),
@@ -2746,7 +2747,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                       Expanded(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       8.0,
                                                                       0.0,
@@ -2766,13 +2767,13 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                           24.0),
                                                               border:
                                                                   Border.all(
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFFCED4E6),
                                                               ),
                                                             ),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           20.0,
@@ -2807,7 +2808,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                               !FlutterFlowTheme.of(context).labelLargeIsCustom,
                                                                         ),
                                                                   ),
-                                                                ].divide(SizedBox(
+                                                                ].divide(const SizedBox(
                                                                     height:
                                                                         8.0)),
                                                               ),
@@ -2836,7 +2837,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                           .forward(from: 0.0);
                                                     }
                                                     await Future.delayed(
-                                                      Duration(
+                                                      const Duration(
                                                         milliseconds: 100,
                                                       ),
                                                     );
@@ -2848,7 +2849,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                     model: _model.pppModel2,
                                                     updateCallback: () =>
                                                         safeSetState(() {}),
-                                                    child: PppWidget(
+                                                    child: const PppWidget(
                                                       texts: 'ไม่มี',
                                                       healthone: '2',
                                                     ),
@@ -2860,11 +2861,11 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                           ][index]();
                                         },
                                       ),
-                                    ].divide(SizedBox(height: 8.0)),
+                                    ].divide(const SizedBox(height: 8.0)),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -2897,7 +2898,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsets.all(16.0),
+                                              padding: const EdgeInsets.all(16.0),
                                               child: MasonryGridView.builder(
                                                 physics:
                                                     const NeverScrollableScrollPhysics(),
@@ -2977,7 +2978,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                     FormFieldController<
                                                                             String>(
                                                                         null),
-                                                                options: [
+                                                                options: const [
                                                                   'ประถมศึกษา',
                                                                   'มัธยมศึกษา',
                                                                   'ปริญญาตรี',
@@ -3016,7 +3017,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                     0.0,
                                                                 borderRadius:
                                                                     8.0,
-                                                                margin: EdgeInsetsDirectional
+                                                                margin: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12.0,
                                                                         0.0,
@@ -3032,7 +3033,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                     false,
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               height: 8.0)),
                                                         ),
                                                     () => Column(
@@ -3080,7 +3081,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                     FormFieldController<
                                                                             String>(
                                                                         null),
-                                                                options: [
+                                                                options: const [
                                                                   'มี',
                                                                   'ไม่มี'
                                                                 ],
@@ -3118,7 +3119,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                     0.0,
                                                                 borderRadius:
                                                                     8.0,
-                                                                margin: EdgeInsetsDirectional
+                                                                margin: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12.0,
                                                                         0.0,
@@ -3134,7 +3135,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                     false,
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               height: 8.0)),
                                                         ),
                                                     () => Column(
@@ -3182,7 +3183,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                     FormFieldController<
                                                                             String>(
                                                                         null),
-                                                                options: [
+                                                                options: const [
                                                                   'ไม่กังวลเรื่องค่าใช้จ่าย',
                                                                   'กังวลเรื่องค่าใช้จ่ายเล็กน้อย',
                                                                   'มีความกังวลเรื่องค่าใช้จ่าย'
@@ -3221,7 +3222,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                     0.0,
                                                                 borderRadius:
                                                                     8.0,
-                                                                margin: EdgeInsetsDirectional
+                                                                margin: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12.0,
                                                                         0.0,
@@ -3237,7 +3238,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                     false,
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               height: 8.0)),
                                                         ),
                                                     () => Column(
@@ -3285,7 +3286,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                     FormFieldController<
                                                                             String>(
                                                                         null),
-                                                                options: [
+                                                                options: const [
                                                                   'ดีขึ้น/ทุเลา',
                                                                   'คงที่',
                                                                   'แย่ลง'
@@ -3324,7 +3325,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                     0.0,
                                                                 borderRadius:
                                                                     8.0,
-                                                                margin: EdgeInsetsDirectional
+                                                                margin: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12.0,
                                                                         0.0,
@@ -3340,7 +3341,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                     false,
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               height: 8.0)),
                                                         ),
                                                   ][index]();
@@ -3350,50 +3351,22 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                           ],
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 8.0)),
+                                    ].divide(const SizedBox(height: 8.0)),
                                   ),
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 24.0),
-                          child: FFButtonWidget(
+                          child: MainButton(
+                            text: 'ทำแบบประเมิน ส่วนที่ 2',
                             onPressed: () async {
                               _model.care = 2;
                               safeSetState(() {});
                             },
-                            text: 'ทำแบบประเมิน ส่วนที่ 2',
-                            options: FFButtonOptions(
-                              width: double.infinity,
-                              height: 48.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 0.0, 16.0, 0.0),
-                              iconAlignment: IconAlignment.start,
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              color: FlutterFlowTheme.of(context).customColor5,
-                              textStyle: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily,
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts:
-                                        !FlutterFlowTheme.of(context)
-                                            .bodyMediumIsCustom,
-                                  ),
-                              elevation: 0.0,
-                              borderSide: BorderSide(
-                                color: Colors.transparent,
-                                width: 0.0,
-                              ),
-                              borderRadius: BorderRadius.circular(100.0),
-                            ),
                           ),
                         ),
                       ],
@@ -3432,7 +3405,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3442,7 +3415,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3452,7 +3425,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3462,7 +3435,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3472,7 +3445,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3482,7 +3455,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3492,7 +3465,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3502,7 +3475,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3512,7 +3485,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3522,7 +3495,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3532,7 +3505,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3541,7 +3514,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -3614,7 +3587,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -3670,7 +3643,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().nineone = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3681,7 +3654,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.nineoneModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '4',
                                                 text: 'แทบทุกครั้ง',
                                                 nineq: '1',
@@ -3708,7 +3681,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().nineone = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3719,7 +3692,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.nineoneModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '3',
                                                 text: 'ค่อนข้างบ่อย',
                                                 nineq: '2',
@@ -3746,7 +3719,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().nineone = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3757,7 +3730,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.nineoneModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '2',
                                                 text: 'บางครั้ง',
                                                 nineq: '3',
@@ -3784,7 +3757,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().nineone = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3795,7 +3768,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.nineoneModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '1',
                                                 text: 'นานครั้ง',
                                                 nineq: '4',
@@ -3822,7 +3795,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().nineone = '5';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -3833,7 +3806,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.nineoneModel5,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineoneWidget(
+                                              child: const NineoneWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '5',
@@ -3846,7 +3819,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -3897,7 +3870,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3907,7 +3880,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3917,7 +3890,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3927,7 +3900,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3937,7 +3910,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3947,7 +3920,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3957,7 +3930,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3967,7 +3940,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3977,7 +3950,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3987,7 +3960,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -3996,7 +3969,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -4069,7 +4042,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -4125,7 +4098,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninetwo = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4136,7 +4109,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninetwoModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '4',
                                                 text: 'แทบทุกครั้ง',
                                                 nineq: '1',
@@ -4163,7 +4136,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninetwo = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4174,7 +4147,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninetwoModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '3',
                                                 text: 'ค่อนข้างบ่อย',
                                                 nineq: '2',
@@ -4201,7 +4174,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninetwo = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4212,7 +4185,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninetwoModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '2',
                                                 text: 'บางครั้ง',
                                                 nineq: '3',
@@ -4239,7 +4212,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninetwo = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4250,7 +4223,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninetwoModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '1',
                                                 text: 'นานๆครั้ง',
                                                 nineq: '4',
@@ -4277,7 +4250,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninetwo = '5';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4288,7 +4261,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninetwoModel5,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinetwoWidget(
+                                              child: const NinetwoWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '5',
@@ -4301,7 +4274,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -4363,7 +4336,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4373,7 +4346,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4383,7 +4356,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4393,7 +4366,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4403,7 +4376,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4413,7 +4386,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4423,7 +4396,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4433,7 +4406,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4443,7 +4416,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4452,7 +4425,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -4525,7 +4498,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -4581,7 +4554,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninethree = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4592,7 +4565,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninethreeModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '4',
                                                 text: 'แทบทุกครั้ง',
                                                 nineq: '1',
@@ -4619,7 +4592,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninethree = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4630,7 +4603,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninethreeModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '3',
                                                 text: 'ค่อนข้างบ่อย',
                                                 nineq: '2',
@@ -4657,7 +4630,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninethree = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4668,7 +4641,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninethreeModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '2',
                                                 text: 'บางครั้ง',
                                                 nineq: '3',
@@ -4695,7 +4668,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninethree = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4706,7 +4679,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninethreeModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '1',
                                                 text: 'นานๆครั้ง',
                                                 nineq: '4',
@@ -4733,7 +4706,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninethree = '5';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -4744,7 +4717,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninethreeModel5,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinethreeWidget(
+                                              child: const NinethreeWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '5',
@@ -4757,7 +4730,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -4830,7 +4803,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4840,7 +4813,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4850,7 +4823,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4860,7 +4833,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4870,7 +4843,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4880,7 +4853,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4890,7 +4863,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4900,7 +4873,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -4909,7 +4882,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -4982,7 +4955,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -5038,7 +5011,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninefore = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5049,7 +5022,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.nineforeModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '4',
                                                 text: 'แทบทุกครั้ง',
                                                 nineq: '1',
@@ -5076,7 +5049,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninefore = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5087,7 +5060,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.nineforeModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '3',
                                                 text: 'ค่อยข้างบ่อย',
                                                 nineq: '2',
@@ -5114,7 +5087,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninefore = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5125,7 +5098,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.nineforeModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '2',
                                                 text: 'บางครั้ง',
                                                 nineq: '3',
@@ -5152,7 +5125,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninefore = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5163,7 +5136,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.nineforeModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '1',
                                                 text: 'นานๆครั้ง',
                                                 nineq: '4',
@@ -5190,7 +5163,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninefore = '5';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5201,7 +5174,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.nineforeModel5,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineforeWidget(
+                                              child: const NineforeWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '5',
@@ -5214,7 +5187,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -5298,7 +5271,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -5308,7 +5281,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -5318,7 +5291,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -5328,7 +5301,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -5338,7 +5311,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -5348,7 +5321,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -5358,7 +5331,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -5367,7 +5340,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -5440,7 +5413,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -5496,7 +5469,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninefive = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5507,7 +5480,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninefiveModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinefiveWidget(
+                                              child: const NinefiveWidget(
                                                 num: '4',
                                                 text: 'แทบทุกครั้ง',
                                                 nineq: '1',
@@ -5534,7 +5507,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninefive = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5545,7 +5518,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninefiveModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinefiveWidget(
+                                              child: const NinefiveWidget(
                                                 num: '3',
                                                 text: 'ค่อนข้างบ่อย',
                                                 nineq: '2',
@@ -5572,7 +5545,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninefive = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5583,7 +5556,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninefiveModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinefiveWidget(
+                                              child: const NinefiveWidget(
                                                 num: '2',
                                                 text: 'บางครั้ง',
                                                 nineq: '3',
@@ -5610,7 +5583,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninefive = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5621,7 +5594,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninefiveModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinefiveWidget(
+                                              child: const NinefiveWidget(
                                                 num: '1',
                                                 text: 'นานๆครั้ง',
                                                 nineq: '4',
@@ -5648,7 +5621,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninefive = '5';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5659,7 +5632,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninefiveModel5,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinefiveWidget(
+                                              child: const NinefiveWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '5',
@@ -5672,7 +5645,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -5767,7 +5740,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -5777,7 +5750,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -5787,7 +5760,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -5797,7 +5770,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -5807,7 +5780,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -5817,7 +5790,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -5826,7 +5799,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -5899,7 +5872,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -5955,7 +5928,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninesix = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -5966,7 +5939,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninesixModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesixWidget(
+                                              child: const NinesixWidget(
                                                 num: '4',
                                                 text: 'แทบทุกครั้ง',
                                                 nineq: '1',
@@ -5993,7 +5966,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninesix = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -6004,7 +5977,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninesixModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesixWidget(
+                                              child: const NinesixWidget(
                                                 num: '3',
                                                 text: 'ค่อนข้างบ่อย',
                                                 nineq: '2',
@@ -6031,7 +6004,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninesix = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -6042,7 +6015,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninesixModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesixWidget(
+                                              child: const NinesixWidget(
                                                 num: '2',
                                                 text: 'บางครั้ง',
                                                 nineq: '3',
@@ -6069,7 +6042,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninesix = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -6080,7 +6053,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninesixModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesixWidget(
+                                              child: const NinesixWidget(
                                                 num: '1',
                                                 text: 'นานๆครั้ง',
                                                 nineq: '4',
@@ -6107,7 +6080,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninesix = '5';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -6118,7 +6091,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninesixModel5,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesixWidget(
+                                              child: const NinesixWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '5',
@@ -6131,7 +6104,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -6237,7 +6210,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -6247,7 +6220,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -6257,7 +6230,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -6267,7 +6240,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -6277,7 +6250,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -6286,7 +6259,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -6359,7 +6332,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -6415,7 +6388,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().nineseven = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -6426,7 +6399,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninesevenModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesevenWidget(
+                                              child: const NinesevenWidget(
                                                 num: '4',
                                                 text: 'แทบทุกครั้ง',
                                                 nineq: '1',
@@ -6453,7 +6426,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().nineseven = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -6464,7 +6437,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninesevenModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesevenWidget(
+                                              child: const NinesevenWidget(
                                                 num: '3',
                                                 text: 'ค่อนข้างบ่อย',
                                                 nineq: '2',
@@ -6491,7 +6464,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().nineseven = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -6502,7 +6475,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninesevenModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesevenWidget(
+                                              child: const NinesevenWidget(
                                                 num: '2',
                                                 text: 'บางครั้ง',
                                                 nineq: '3',
@@ -6529,7 +6502,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().nineseven = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -6540,7 +6513,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninesevenModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesevenWidget(
+                                              child: const NinesevenWidget(
                                                 num: '1',
                                                 text: 'นานๆครั้ง',
                                                 nineq: '4',
@@ -6567,7 +6540,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().nineseven = '5';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -6578,7 +6551,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninesevenModel5,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinesevenWidget(
+                                              child: const NinesevenWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '5',
@@ -6591,7 +6564,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -6708,7 +6681,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -6718,7 +6691,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -6728,7 +6701,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -6738,7 +6711,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -6747,7 +6720,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -6820,7 +6793,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -6876,7 +6849,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().nineeight = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -6887,7 +6860,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.nineeightModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineeightWidget(
+                                              child: const NineeightWidget(
                                                 num: '4',
                                                 text: 'แทบทุกครั้ง',
                                                 nineq: '1',
@@ -6914,7 +6887,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().nineeight = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -6925,7 +6898,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.nineeightModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineeightWidget(
+                                              child: const NineeightWidget(
                                                 num: '3',
                                                 text: 'ค่อนข้างบ่อย',
                                                 nineq: '2',
@@ -6952,7 +6925,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().nineeight = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -6963,7 +6936,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.nineeightModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineeightWidget(
+                                              child: const NineeightWidget(
                                                 num: '2',
                                                 text: 'บางครั้ง',
                                                 nineq: '3',
@@ -6990,7 +6963,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().nineeight = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -7001,7 +6974,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.nineeightModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineeightWidget(
+                                              child: const NineeightWidget(
                                                 num: '1',
                                                 text: 'นานๆครั้ง',
                                                 nineq: '4',
@@ -7028,7 +7001,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().nineeight = '5';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -7039,7 +7012,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.nineeightModel5,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NineeightWidget(
+                                              child: const NineeightWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '5',
@@ -7052,7 +7025,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -7180,7 +7153,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -7190,7 +7163,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -7200,7 +7173,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -7209,7 +7182,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -7282,7 +7255,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -7338,7 +7311,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninenine = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -7349,7 +7322,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninenineModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinenineWidget(
+                                              child: const NinenineWidget(
                                                 num: '4',
                                                 text: 'แทบทุกครั้ง',
                                                 nineq: '1',
@@ -7376,7 +7349,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninenine = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -7387,7 +7360,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninenineModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinenineWidget(
+                                              child: const NinenineWidget(
                                                 num: '3',
                                                 text: 'ค่อนข้างบ่อย',
                                                 nineq: '2',
@@ -7414,7 +7387,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninenine = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -7425,7 +7398,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninenineModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinenineWidget(
+                                              child: const NinenineWidget(
                                                 num: '2',
                                                 text: 'บางครั้ง',
                                                 nineq: '3',
@@ -7452,7 +7425,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninenine = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -7463,7 +7436,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninenineModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinenineWidget(
+                                              child: const NinenineWidget(
                                                 num: '1',
                                                 text: 'นานๆครั้ง',
                                                 nineq: '4',
@@ -7490,7 +7463,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ninenine = '5';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -7501,7 +7474,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.ninenineModel5,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: NinenineWidget(
+                                              child: const NinenineWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '5',
@@ -7514,7 +7487,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -7653,7 +7626,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -7663,7 +7636,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -7672,7 +7645,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -7745,7 +7718,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -7801,7 +7774,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ten = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -7812,7 +7785,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.tenModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: TenWidget(
+                                              child: const TenWidget(
                                                 num: '4',
                                                 text: 'แทบทุกครั้ง',
                                                 nineq: '1',
@@ -7839,7 +7812,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ten = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -7850,7 +7823,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.tenModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: TenWidget(
+                                              child: const TenWidget(
                                                 num: '3',
                                                 text: 'ค่อนข้างบ่อย',
                                                 nineq: '2',
@@ -7877,7 +7850,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ten = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -7888,7 +7861,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.tenModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: TenWidget(
+                                              child: const TenWidget(
                                                 num: '2',
                                                 text: 'บางครั้ง',
                                                 nineq: '3',
@@ -7915,7 +7888,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ten = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -7926,7 +7899,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.tenModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: TenWidget(
+                                              child: const TenWidget(
                                                 num: '1',
                                                 text: 'นานๆครั้ง',
                                                 nineq: '4',
@@ -7953,7 +7926,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().ten = '5';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -7964,7 +7937,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.tenModel5,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: TenWidget(
+                                              child: const TenWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '5',
@@ -7977,7 +7950,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -8127,7 +8100,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 width: double.infinity,
                                 height: 2.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1AFFFFFF),
+                                  color: const Color(0x1AFFFFFF),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                               ),
@@ -8136,7 +8109,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -8209,7 +8182,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 1,
                                   ),
                                   crossAxisSpacing: () {
@@ -8265,7 +8238,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().eleven = '1';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -8276,7 +8249,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.elevenModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: ElevenWidget(
+                                              child: const ElevenWidget(
                                                 num: '4',
                                                 text: 'แทบทุกครั้ง',
                                                 nineq: '1',
@@ -8303,7 +8276,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().eleven = '2';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -8314,7 +8287,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.elevenModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: ElevenWidget(
+                                              child: const ElevenWidget(
                                                 num: '3',
                                                 text: 'ค่อนข้างบ่อย',
                                                 nineq: '2',
@@ -8341,7 +8314,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().eleven = '3';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -8352,7 +8325,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.elevenModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: ElevenWidget(
+                                              child: const ElevenWidget(
                                                 num: '2',
                                                 text: 'บางครั้ง',
                                                 nineq: '3',
@@ -8379,7 +8352,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().eleven = '4';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -8390,7 +8363,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.elevenModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: ElevenWidget(
+                                              child: const ElevenWidget(
                                                 num: '1',
                                                 text: 'นานๆครั้ง',
                                                 nineq: '4',
@@ -8417,7 +8390,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               FFAppState().eleven = '5';
                                               safeSetState(() {});
                                               await Future.delayed(
-                                                Duration(
+                                                const Duration(
                                                   milliseconds: 100,
                                                 ),
                                               );
@@ -8428,7 +8401,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                               model: _model.elevenModel5,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: ElevenWidget(
+                                              child: const ElevenWidget(
                                                 num: '0',
                                                 text: 'ไม่มีเลย',
                                                 nineq: '5',
@@ -8441,7 +8414,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                     ][index]();
                                   },
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -8601,7 +8574,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 24.0, 16.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
@@ -8616,7 +8589,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                     borderRadius: BorderRadius.circular(24.0),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(12.0),
+                                    padding: const EdgeInsets.all(12.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -8649,7 +8622,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                 .labelSmallIsCustom,
                                                       ),
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                         Text(
                                           'คุณได้ 6 คะแนน',
@@ -8693,7 +8666,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                 BorderRadius.circular(16.0),
                                           ),
                                           child: Padding(
-                                            padding: EdgeInsets.all(12.0),
+                                            padding: const EdgeInsets.all(12.0),
                                             child: Text(
                                               'เป็นผู้มีความเสี่ยงโรคซึมเศร้า เพราะมีเหตุให้เกิดการกระทบกระทั้งจิตใจ',
                                               textAlign: TextAlign.start,
@@ -8715,7 +8688,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                             ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(height: 16.0)),
+                                      ].divide(const SizedBox(height: 16.0)),
                                     ),
                                   ),
                                 ),
@@ -8811,7 +8784,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -8823,7 +8796,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                   model: _model.gggModel1,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: GggWidget(
+                                                  child: const GggWidget(
                                                     texts: 'Advancer Cencer',
                                                     healthone: '1',
                                                   ),
@@ -8848,7 +8821,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -8860,7 +8833,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                   model: _model.gggModel2,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: GggWidget(
+                                                  child: const GggWidget(
                                                     texts: 'End Stage CKD',
                                                     healthone: '2',
                                                   ),
@@ -8885,7 +8858,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                         .forward(from: 0.0);
                                                   }
                                                   await Future.delayed(
-                                                    Duration(
+                                                    const Duration(
                                                       milliseconds: 100,
                                                     ),
                                                   );
@@ -8897,7 +8870,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                   model: _model.gggModel3,
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
-                                                  child: GggWidget(
+                                                  child: const GggWidget(
                                                     texts: 'Dementia',
                                                     healthone: '3',
                                                   ),
@@ -8930,7 +8903,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                   from: 0.0);
                                                         }
                                                         await Future.delayed(
-                                                          Duration(
+                                                          const Duration(
                                                             milliseconds: 100,
                                                           ),
                                                         );
@@ -8950,7 +8923,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                   .viewInsetsOf(
                                                                       context),
                                                               child:
-                                                                  ResonWidget(),
+                                                                  const ResonWidget(),
                                                             );
                                                           },
                                                         ).then((value) =>
@@ -8961,7 +8934,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                         model: _model.gggModel4,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: GggWidget(
+                                                        child: const GggWidget(
                                                           texts: 'อื่นๆ',
                                                           healthone: '4',
                                                         ),
@@ -8975,7 +8948,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                     Expanded(
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     8.0,
@@ -8994,13 +8967,13 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                     .circular(
                                                                         24.0),
                                                             border: Border.all(
-                                                              color: Color(
+                                                              color: const Color(
                                                                   0xFFCED4E6),
                                                             ),
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12.0,
                                                                         20.0,
@@ -9035,7 +9008,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                             !FlutterFlowTheme.of(context).labelLargeIsCustom,
                                                                       ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   height: 8.0)),
                                                             ),
                                                           ),
@@ -9047,56 +9020,28 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                         ][index]();
                                       },
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
-                              ].divide(SizedBox(height: 24.0)),
+                              ].divide(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 16.0, 16.0, 24.0),
-                          child: FFButtonWidget(
+                          child: MainButton(
+                            text: 'บันทึก',
                             onPressed: () async {
                               _model.care = 14;
                               safeSetState(() {});
                             },
-                            text: 'บันทึก',
-                            options: FFButtonOptions(
-                              width: double.infinity,
-                              height: 48.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 0.0, 16.0, 0.0),
-                              iconAlignment: IconAlignment.start,
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              color: FlutterFlowTheme.of(context).customColor5,
-                              textStyle: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily,
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts:
-                                        !FlutterFlowTheme.of(context)
-                                            .bodyMediumIsCustom,
-                                  ),
-                              elevation: 0.0,
-                              borderSide: BorderSide(
-                                color: Colors.transparent,
-                                width: 0.0,
-                              ),
-                              borderRadius: BorderRadius.circular(100.0),
-                            ),
                           ),
                         ),
                       ],
                     );
                   } else if (_model.care == 14) {
                     return ListView(
-                      padding: EdgeInsets.fromLTRB(
+                      padding: const EdgeInsets.fromLTRB(
                         0,
                         8.0,
                         0,
@@ -9106,7 +9051,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                       scrollDirection: Axis.vertical,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, -1.0),
+                          alignment: const AlignmentDirectional(0.0, -1.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
                             child: Image.network(
@@ -9145,7 +9090,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                         ),
                         if (FFAppState().gay == true)
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               width: double.infinity,
@@ -9155,7 +9100,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 borderRadius: BorderRadius.circular(24.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -9187,7 +9132,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                 ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     Text(
                                       'คุณได้ 6 คะแนน',
@@ -9234,7 +9179,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 12.0, 12.0, 0.0),
                                             child: Text(
                                               'การวินิจฉัยโรค',
@@ -9257,7 +9202,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                             ),
                                           ),
                                           Padding(
-                                            padding: EdgeInsets.all(12.0),
+                                            padding: const EdgeInsets.all(12.0),
                                             child: RichText(
                                               textScaler: MediaQuery.of(context)
                                                   .textScaler,
@@ -9284,7 +9229,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                   .titleSmallIsCustom,
                                                         ),
                                                   ),
-                                                  TextSpan(
+                                                  const TextSpan(
                                                     text:
                                                         'เป็นผู้มีความเสี่ยงโรคซึมเศร้า เพราะมีเหตุให้เกิดการกระทบกระทั้งจิตใจทำให้มีอาการวิตกกังวล และมีความคิดด้านลบหรือสิ้นหวังกับชีวิต',
                                                     style: TextStyle(),
@@ -9313,7 +9258,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 16.0, 0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
@@ -9343,11 +9288,11 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                           width: double.infinity,
                                           height: 48.0,
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           iconAlignment: IconAlignment.start,
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: FlutterFlowTheme.of(context)
                                               .customColor5,
@@ -9373,14 +9318,14 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 16.0)),
+                                  ].divide(const SizedBox(height: 16.0)),
                                 ),
                               ),
                             ),
                           ),
                         if (FFAppState().gay == false)
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Container(
                               width: double.infinity,
@@ -9390,7 +9335,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                 borderRadius: BorderRadius.circular(24.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -9419,7 +9364,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                         .labelSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     Text(
                                       'คุณได้ 15 คะแนน',
@@ -9454,7 +9399,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                     Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFFFEDED),
+                                        color: const Color(0xFFFFEDED),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
                                       ),
@@ -9465,7 +9410,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 12.0, 12.0, 0.0),
                                             child: Text(
                                               'การวินิจฉัยโรค',
@@ -9488,7 +9433,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                             ),
                                           ),
                                           Padding(
-                                            padding: EdgeInsets.all(12.0),
+                                            padding: const EdgeInsets.all(12.0),
                                             child: RichText(
                                               textScaler: MediaQuery.of(context)
                                                   .textScaler,
@@ -9515,7 +9460,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                                                   .titleSmallIsCustom,
                                                         ),
                                                   ),
-                                                  TextSpan(
+                                                  const TextSpan(
                                                     text:
                                                         'เป็นผู้มีความเสี่ยงโรคซึมเศร้า เพราะมีเหตุให้เกิดการกระทบกระทั้งจิตใจทำให้มีอาการวิตกกังวล และมีความคิดด้านลบหรือสิ้นหวังกับชีวิต',
                                                     style: TextStyle(),
@@ -9544,7 +9489,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 16.0, 0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
@@ -9574,11 +9519,11 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                           width: double.infinity,
                                           height: 48.0,
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           iconAlignment: IconAlignment.start,
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: FlutterFlowTheme.of(context)
                                               .customColor5,
@@ -9604,12 +9549,12 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 16.0)),
+                                  ].divide(const SizedBox(height: 16.0)),
                                 ),
                               ),
                             ),
                           ),
-                      ].divide(SizedBox(height: 24.0)),
+                      ].divide(const SizedBox(height: 24.0)),
                     );
                   } else {
                     return Container(

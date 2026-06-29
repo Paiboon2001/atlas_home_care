@@ -69,7 +69,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 44.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back_ios_new_rounded,
               color: Colors.white,
               size: 18.0,
@@ -89,12 +89,12 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                       !FlutterFlowTheme.of(context).titleMediumIsCustom,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
         body: ClipRRect(
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -103,7 +103,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
             height: double.infinity,
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).secondaryBackground,
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(24.0),
                 topRight: Radius.circular(24.0),
               ),
@@ -111,7 +111,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
             child: Stack(
               children: [
                 ListView(
-                  padding: EdgeInsets.fromLTRB(
+                  padding: const EdgeInsets.fromLTRB(
                     0,
                     0,
                     0,
@@ -120,12 +120,12 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                   shrinkWrap: true,
                   scrollDirection: Axis.vertical,
                   children: [
-                    Container(
+                    SizedBox(
                       height: 85.0,
                       child: Stack(
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 30.0, 0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -193,7 +193,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -244,7 +244,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                                           .labelSmallIsCustom,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
                                     Expanded(
@@ -296,7 +296,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                                           .labelSmallIsCustom,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
                                     Expanded(
@@ -345,7 +345,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                                           .labelSmallIsCustom,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
                                     Expanded(
@@ -394,10 +394,10 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                                           .labelSmallIsCustom,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
-                                  ].divide(SizedBox(width: 16.0)),
+                                  ].divide(const SizedBox(width: 16.0)),
                                 ),
                               ),
                               Divider(
@@ -406,8 +406,8 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                 color: FlutterFlowTheme.of(context).alternate,
                               ),
                             ]
-                                .divide(SizedBox(height: 12.0))
-                                .addToStart(SizedBox(height: 16.0)),
+                                .divide(const SizedBox(height: 12.0))
+                                .addToStart(const SizedBox(height: 16.0)),
                           ),
                         ],
                       ),
@@ -416,7 +416,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -427,7 +427,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                   width: 48.0,
                                   height: 48.0,
                                   decoration: BoxDecoration(
-                                    color: Color(0xFFE0F9FF),
+                                    color: const Color(0xFFE0F9FF),
                                     image: DecorationImage(
                                       fit: BoxFit.cover,
                                       image: Image.network(
@@ -487,7 +487,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                                                 .labelSmallIsCustom,
                                                       ),
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                         SizedBox(
                                           height: 16.0,
@@ -525,18 +525,18 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                                                 .labelSmallIsCustom,
                                                       ),
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
-                                      ].divide(SizedBox(width: 16.0)),
+                                      ].divide(const SizedBox(width: 16.0)),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                               ),
-                            ].divide(SizedBox(width: 12.0)),
+                            ].divide(const SizedBox(width: 12.0)),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Container(
                             decoration: BoxDecoration(
@@ -545,7 +545,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(8.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
@@ -586,9 +586,9 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                                       .bodySmallIsCustom,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                             ),
                           ),
@@ -599,14 +599,14 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                           color: FlutterFlowTheme.of(context).alternate,
                         ),
                       ]
-                          .divide(SizedBox(height: 12.0))
-                          .addToStart(SizedBox(height: 16.0)),
+                          .divide(const SizedBox(height: 12.0))
+                          .addToStart(const SizedBox(height: 16.0)),
                     ),
                     Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -665,7 +665,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                           .secondaryText,
                                       size: 24.0,
                                     ),
-                                  ].divide(SizedBox(width: 4.0)),
+                                  ].divide(const SizedBox(width: 4.0)),
                                 ),
                               ),
                             ],
@@ -677,14 +677,14 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                           color: FlutterFlowTheme.of(context).alternate,
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Icon(
                                   Icons.location_on_rounded,
                                   color:
@@ -732,23 +732,23 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                                         .labelSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(height: 4.0)),
+                                      ].divide(const SizedBox(height: 4.0)),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Icon(
                                   Icons.location_on_rounded,
                                   color: FlutterFlowTheme.of(context).error,
@@ -795,12 +795,12 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                                         .labelSmallIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(height: 4.0)),
+                                      ].divide(const SizedBox(height: 4.0)),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                         ),
                         Divider(
@@ -809,14 +809,14 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                           color: FlutterFlowTheme.of(context).alternate,
                         ),
                       ]
-                          .divide(SizedBox(height: 16.0))
-                          .addToStart(SizedBox(height: 16.0)),
+                          .divide(const SizedBox(height: 16.0))
+                          .addToStart(const SizedBox(height: 16.0)),
                     ),
                     Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -851,7 +851,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                               .labelMediumIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 12.0)),
+                            ].divide(const SizedBox(width: 12.0)),
                           ),
                         ),
                         Divider(
@@ -860,7 +860,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                           color: FlutterFlowTheme.of(context).alternate,
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -872,7 +872,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                   width: 48.0,
                                   height: 48.0,
                                   decoration: BoxDecoration(
-                                    color: Color(0xFFE0F9FF),
+                                    color: const Color(0xFFE0F9FF),
                                     image: DecorationImage(
                                       fit: BoxFit.cover,
                                       image: Image.network(
@@ -917,7 +917,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                                     .labelSmallIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                               ),
                               Text(
@@ -933,11 +933,11 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                               .labelSmallIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 12.0)),
+                            ].divide(const SizedBox(width: 12.0)),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -949,7 +949,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                   width: 48.0,
                                   height: 48.0,
                                   decoration: BoxDecoration(
-                                    color: Color(0xFFE0F9FF),
+                                    color: const Color(0xFFE0F9FF),
                                     image: DecorationImage(
                                       fit: BoxFit.cover,
                                       image: Image.network(
@@ -994,7 +994,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                                     .labelSmallIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                               ),
                               Text(
@@ -1010,11 +1010,11 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                               .labelSmallIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 12.0)),
+                            ].divide(const SizedBox(width: 12.0)),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -1026,7 +1026,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                   width: 48.0,
                                   height: 48.0,
                                   decoration: BoxDecoration(
-                                    color: Color(0xFFE0F9FF),
+                                    color: const Color(0xFFE0F9FF),
                                     image: DecorationImage(
                                       fit: BoxFit.cover,
                                       image: Image.network(
@@ -1071,7 +1071,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                                     .labelSmallIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                               ),
                               Text(
@@ -1087,11 +1087,11 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                               .labelSmallIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 12.0)),
+                            ].divide(const SizedBox(width: 12.0)),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -1103,7 +1103,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                   width: 48.0,
                                   height: 48.0,
                                   decoration: BoxDecoration(
-                                    color: Color(0xFFE0F9FF),
+                                    color: const Color(0xFFE0F9FF),
                                     image: DecorationImage(
                                       fit: BoxFit.cover,
                                       image: Image.network(
@@ -1148,7 +1148,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                                     .labelSmallIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                               ),
                               Text(
@@ -1164,11 +1164,11 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                               .labelSmallIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 12.0)),
+                            ].divide(const SizedBox(width: 12.0)),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -1180,7 +1180,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                   width: 48.0,
                                   height: 48.0,
                                   decoration: BoxDecoration(
-                                    color: Color(0xFFE0F9FF),
+                                    color: const Color(0xFFE0F9FF),
                                     image: DecorationImage(
                                       fit: BoxFit.cover,
                                       image: Image.network(
@@ -1225,7 +1225,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                                     .labelSmallIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                               ),
                               Text(
@@ -1241,7 +1241,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                               .labelSmallIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 12.0)),
+                            ].divide(const SizedBox(width: 12.0)),
                           ),
                         ),
                         Divider(
@@ -1250,14 +1250,14 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                           color: FlutterFlowTheme.of(context).alternate,
                         ),
                       ]
-                          .divide(SizedBox(height: 16.0))
-                          .addToStart(SizedBox(height: 16.0)),
+                          .divide(const SizedBox(height: 16.0))
+                          .addToStart(const SizedBox(height: 16.0)),
                     ),
                     Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -1296,7 +1296,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                                     .labelSmallIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                               ),
                               Icon(
@@ -1304,11 +1304,11 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                 color: FlutterFlowTheme.of(context).primary,
                                 size: 24.0,
                               ),
-                            ].divide(SizedBox(width: 12.0)),
+                            ].divide(const SizedBox(width: 12.0)),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -1347,7 +1347,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                                     .labelSmallIsCustom,
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                               ),
                               Icon(
@@ -1355,22 +1355,22 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                 color: FlutterFlowTheme.of(context).primary,
                                 size: 24.0,
                               ),
-                            ].divide(SizedBox(width: 12.0)),
+                            ].divide(const SizedBox(width: 12.0)),
                           ),
                         ),
                       ]
-                          .divide(SizedBox(height: 16.0))
-                          .addToStart(SizedBox(height: 16.0)),
+                          .divide(const SizedBox(height: 16.0))
+                          .addToStart(const SizedBox(height: 16.0)),
                     ),
                   ],
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 1.0),
+                  alignment: const AlignmentDirectional(0.0, 1.0),
                   child: Container(
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           blurRadius: 4.0,
                           color: Color(0x33000000),
@@ -1380,18 +1380,18 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                           ),
                         )
                       ],
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         topLeft: Radius.circular(24.0),
                         topRight: Radius.circular(24.0),
                       ),
                     ),
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           16.0, 16.0, 16.0, 24.0),
                       child: MasonryGridView.builder(
                         physics: const NeverScrollableScrollPhysics(),
                         gridDelegate:
-                            SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                            const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
                         ),
                         crossAxisSpacing: 8.0,
@@ -1423,12 +1423,12 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                         .secondaryBackground,
                                     borderRadius: BorderRadius.circular(100.0),
                                     border: Border.all(
-                                      color: Color(0xFFBDBDBD),
+                                      color: const Color(0xFFBDBDBD),
                                       width: 1.0,
                                     ),
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       'ปฏิเสธงาน',
                                       style: FlutterFlowTheme.of(context)
@@ -1471,7 +1471,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                     borderRadius: BorderRadius.circular(100.0),
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       'รับงาน',
                                       style: FlutterFlowTheme.of(context)

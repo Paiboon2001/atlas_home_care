@@ -2,14 +2,10 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
+import '/components/main_button_widget.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'summarry_a_d_l_model.dart';
 export 'summarry_a_d_l_model.dart';
 
@@ -305,36 +301,11 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
               ),
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 13.0),
-                child: FFButtonWidget(
+                child: MainButton(
+                  text: 'บันทึก',
                   onPressed: () async {
                     context.pushNamed(AddVisitinginformationWidget.routeName);
                   },
-                  text: 'บันทึก',
-                  options: FFButtonOptions(
-                    width: double.infinity,
-                    height: 48.0,
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                    iconAlignment: IconAlignment.start,
-                    iconPadding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    color: FlutterFlowTheme.of(context).customColor5,
-                    textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).bodyMediumFamily,
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
-                          letterSpacing: 0.0,
-                          useGoogleFonts:
-                              !FlutterFlowTheme.of(context).bodyMediumIsCustom,
-                        ),
-                    elevation: 0.0,
-                    borderSide: const BorderSide(
-                      color: Colors.transparent,
-                      width: 0.0,
-                    ),
-                    borderRadius: BorderRadius.circular(100.0),
-                  ),
                 ),
               ),
             ],
