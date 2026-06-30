@@ -82,8 +82,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -101,8 +101,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -120,8 +120,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -139,8 +139,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -158,8 +158,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -177,8 +177,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(24.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(24.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -190,8 +190,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -203,8 +203,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -216,8 +216,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -229,8 +229,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -242,8 +242,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -255,8 +255,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -268,8 +268,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -281,8 +281,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -294,8 +294,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -307,8 +307,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -320,8 +320,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -333,8 +333,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -346,8 +346,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -359,8 +359,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -372,8 +372,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -385,8 +385,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -398,8 +398,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -411,8 +411,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -424,8 +424,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -437,8 +437,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -450,8 +450,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -463,8 +463,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -476,8 +476,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -489,8 +489,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -502,8 +502,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -515,8 +515,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -528,8 +528,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -541,8 +541,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -554,8 +554,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -567,8 +567,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -580,8 +580,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -593,8 +593,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -606,8 +606,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -619,8 +619,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -632,8 +632,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -645,8 +645,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -658,8 +658,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -671,8 +671,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -684,8 +684,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -697,8 +697,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -710,8 +710,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -723,8 +723,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -736,8 +736,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -749,8 +749,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -762,8 +762,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -775,8 +775,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -788,8 +788,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -801,8 +801,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -814,8 +814,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -827,8 +827,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -840,8 +840,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -853,8 +853,8 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             curve: Curves.bounceOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.02, 1.02),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.02, 1.02),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -1100,7 +1100,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                   builder: (context) {
                     return Padding(
                       padding: MediaQuery.viewInsetsOf(context),
-                      child: WarmingFamilyWidget(),
+                      child: const WarmingFamilyWidget(),
                     );
                   },
                 ).then((value) => safeSetState(() {}));
@@ -1113,7 +1113,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
             ),
           ],
         ),
-        actions: [],
+        actions: const [],
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -1123,13 +1123,13 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
           borderRadius: BorderRadius.circular(0.0),
         ),
@@ -1165,7 +1165,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -1176,7 +1176,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -1187,7 +1187,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -1198,7 +1198,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -1208,10 +1208,10 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 8.0, 0.0, 0.0),
                                 child: ListView(
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     16.0,
                                     0,
@@ -1221,7 +1221,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                   scrollDirection: Axis.vertical,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -1302,7 +1302,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                             physics:
                                                 const NeverScrollableScrollPhysics(),
                                             gridDelegate:
-                                                SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                               crossAxisCount: 2,
                                             ),
                                             crossAxisSpacing: () {
@@ -1366,7 +1366,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             .cbClickModel1,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'เบาหวาน',
                                                         ),
                                                       ),
@@ -1390,7 +1390,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             .cbClickModel2,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text:
                                                               'ความดันโลหิตสูง',
                                                         ),
@@ -1415,7 +1415,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             .cbClickModel3,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'โรคเก๊าท์',
                                                         ),
                                                       ),
@@ -1439,7 +1439,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             .cbClickModel4,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'ไตวายเรื้อรัง',
                                                         ),
                                                       ),
@@ -1463,7 +1463,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             .cbClickModel5,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text:
                                                               'กล้ามเนื้อหัวใจตาย',
                                                         ),
@@ -1488,7 +1488,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             .cbClickModel6,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'เส้นเลือดสมอง',
                                                         ),
                                                       ),
@@ -1512,7 +1512,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             .cbClickModel7,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'ถุงลมโป่งพอง',
                                                         ),
                                                       ),
@@ -1536,7 +1536,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             .cbClickModel8,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'ไม่ทราบ',
                                                         ),
                                                       ),
@@ -1580,7 +1580,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             }
                                                             await Future
                                                                 .delayed(
-                                                              Duration(
+                                                              const Duration(
                                                                 milliseconds:
                                                                     100,
                                                               ),
@@ -1600,7 +1600,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                       .viewInsetsOf(
                                                                           context),
                                                                   child:
-                                                                      ChooseCancerWidget(),
+                                                                      const ChooseCancerWidget(),
                                                                 );
                                                               },
                                                             ).then((value) =>
@@ -1630,16 +1630,16 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                               context)
                                                                           .secondaryBackground
                                                                 ],
-                                                                stops: [
+                                                                stops: const [
                                                                   0.0,
                                                                   1.0
                                                                 ],
                                                                 begin:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         1.0,
                                                                         0.34),
                                                                 end:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         -1.0,
                                                                         -0.34),
                                                               ),
@@ -1652,16 +1652,16 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                 color: _model
                                                                             .other01Value1 ==
                                                                         true
-                                                                    ? Color(
+                                                                    ? const Color(
                                                                         0x00FFFFFF)
-                                                                    : Color(
+                                                                    : const Color(
                                                                         0xFFCED4E6),
                                                               ),
                                                             ),
                                                             child: Stack(
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           20.0,
@@ -1689,7 +1689,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                               useGoogleFonts: !FlutterFlowTheme.of(context).labelLargeIsCustom,
                                                                             ),
                                                                       ),
-                                                                    ].divide(SizedBox(
+                                                                    ].divide(const SizedBox(
                                                                         width:
                                                                             4.0)),
                                                                   ),
@@ -1712,7 +1712,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                       ),
                                                                     ),
                                                                     unselectedWidgetColor:
-                                                                        Color(
+                                                                        const Color(
                                                                             0x00EAEFFB),
                                                                   ),
                                                                   child:
@@ -1726,20 +1726,20 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                           _model.other01Value1 =
                                                                               newValue!);
                                                                     },
-                                                                    side: (Color(0x00EAEFFB) !=
+                                                                    side: (const Color(0x00EAEFFB) !=
                                                                             null)
-                                                                        ? BorderSide(
+                                                                        ? const BorderSide(
                                                                             width:
                                                                                 2,
                                                                             color:
-                                                                                Color(0x00EAEFFB)!,
+                                                                                Color(0x00EAEFFB),
                                                                           )
                                                                         : null,
                                                                     activeColor:
-                                                                        Color(
+                                                                        const Color(
                                                                             0x00339FF3),
                                                                     checkColor:
-                                                                        Color(
+                                                                        const Color(
                                                                             0x00FFFFFF),
                                                                   ),
                                                                 ),
@@ -1754,7 +1754,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             true)
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         4.0,
@@ -1772,12 +1772,12 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                             24.0),
                                                                 border:
                                                                     Border.all(
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFFCED4E6),
                                                                 ),
                                                               ),
                                                               child: Padding(
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12.0,
                                                                         20.0,
@@ -1810,7 +1810,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                                 !FlutterFlowTheme.of(context).labelLargeIsCustom,
                                                                           ),
                                                                     ),
-                                                                  ].divide(SizedBox(
+                                                                  ].divide(const SizedBox(
                                                                       width:
                                                                           4.0)),
                                                                 ),
@@ -1822,11 +1822,11 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                               ][index]();
                                             },
                                           ),
-                                        ].divide(SizedBox(height: 24.0)),
+                                        ].divide(const SizedBox(height: 24.0)),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -1907,7 +1907,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                             physics:
                                                 const NeverScrollableScrollPhysics(),
                                             gridDelegate:
-                                                SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                               crossAxisCount: 2,
                                             ),
                                             crossAxisSpacing: () {
@@ -1971,7 +1971,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             .cbClickModel9,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'เบาหวาน',
                                                         ),
                                                       ),
@@ -1995,7 +1995,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             .cbClickModel10,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text:
                                                               'ความดันโลหิตสูง',
                                                         ),
@@ -2020,7 +2020,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             .cbClickModel11,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'โรคเก๊าท์',
                                                         ),
                                                       ),
@@ -2044,7 +2044,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             .cbClickModel12,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'ไตวายเรื้อรัง',
                                                         ),
                                                       ),
@@ -2068,7 +2068,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             .cbClickModel13,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text:
                                                               'กล้ามเนื้อหัวใจตาย',
                                                         ),
@@ -2093,7 +2093,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             .cbClickModel14,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'เส้นเลือดสมอง',
                                                         ),
                                                       ),
@@ -2117,7 +2117,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             .cbClickModel15,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'ถุงลมโป่งพอง',
                                                         ),
                                                       ),
@@ -2141,7 +2141,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             .cbClickModel16,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: CbClickWidget(
+                                                        child: const CbClickWidget(
                                                           text: 'ไม่ทราบ',
                                                         ),
                                                       ),
@@ -2185,7 +2185,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             }
                                                             await Future
                                                                 .delayed(
-                                                              Duration(
+                                                              const Duration(
                                                                 milliseconds:
                                                                     100,
                                                               ),
@@ -2205,7 +2205,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                       .viewInsetsOf(
                                                                           context),
                                                                   child:
-                                                                      ChooseCancerWidget(),
+                                                                      const ChooseCancerWidget(),
                                                                 );
                                                               },
                                                             ).then((value) =>
@@ -2235,16 +2235,16 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                               context)
                                                                           .secondaryBackground
                                                                 ],
-                                                                stops: [
+                                                                stops: const [
                                                                   0.0,
                                                                   1.0
                                                                 ],
                                                                 begin:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         1.0,
                                                                         0.34),
                                                                 end:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         -1.0,
                                                                         -0.34),
                                                               ),
@@ -2257,16 +2257,16 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                 color: _model
                                                                             .other01Value2 ==
                                                                         true
-                                                                    ? Color(
+                                                                    ? const Color(
                                                                         0x00FFFFFF)
-                                                                    : Color(
+                                                                    : const Color(
                                                                         0xFFCED4E6),
                                                               ),
                                                             ),
                                                             child: Stack(
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           20.0,
@@ -2294,7 +2294,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                               useGoogleFonts: !FlutterFlowTheme.of(context).labelLargeIsCustom,
                                                                             ),
                                                                       ),
-                                                                    ].divide(SizedBox(
+                                                                    ].divide(const SizedBox(
                                                                         width:
                                                                             4.0)),
                                                                   ),
@@ -2317,7 +2317,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                       ),
                                                                     ),
                                                                     unselectedWidgetColor:
-                                                                        Color(
+                                                                        const Color(
                                                                             0x00EAEFFB),
                                                                   ),
                                                                   child:
@@ -2331,20 +2331,20 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                           _model.other01Value2 =
                                                                               newValue!);
                                                                     },
-                                                                    side: (Color(0x00EAEFFB) !=
+                                                                    side: (const Color(0x00EAEFFB) !=
                                                                             null)
-                                                                        ? BorderSide(
+                                                                        ? const BorderSide(
                                                                             width:
                                                                                 2,
                                                                             color:
-                                                                                Color(0x00EAEFFB)!,
+                                                                                Color(0x00EAEFFB),
                                                                           )
                                                                         : null,
                                                                     activeColor:
-                                                                        Color(
+                                                                        const Color(
                                                                             0x00339FF3),
                                                                     checkColor:
-                                                                        Color(
+                                                                        const Color(
                                                                             0x00FFFFFF),
                                                                   ),
                                                                 ),
@@ -2359,7 +2359,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             true)
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         4.0,
@@ -2377,12 +2377,12 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                             24.0),
                                                                 border:
                                                                     Border.all(
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFFCED4E6),
                                                                 ),
                                                               ),
                                                               child: Padding(
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12.0,
                                                                         20.0,
@@ -2415,7 +2415,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                                 !FlutterFlowTheme.of(context).labelLargeIsCustom,
                                                                           ),
                                                                     ),
-                                                                  ].divide(SizedBox(
+                                                                  ].divide(const SizedBox(
                                                                       width:
                                                                           4.0)),
                                                                 ),
@@ -2427,17 +2427,17 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                               ][index]();
                                             },
                                           ),
-                                        ].divide(SizedBox(height: 24.0)),
+                                        ].divide(const SizedBox(height: 24.0)),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 32.0)),
+                                  ].divide(const SizedBox(height: 32.0)),
                                 ),
                               ),
                             ),
                           ],
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -2450,7 +2450,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                             child: wrapWithModel(
                               model: _model.startAsBottomModel1,
                               updateCallback: () => safeSetState(() {}),
-                              child: StartAsBottomWidget(
+                              child: const StartAsBottomWidget(
                                 text: 'ถัดไป',
                               ),
                             ),
@@ -2496,7 +2496,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -2507,7 +2507,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -2518,7 +2518,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -2528,10 +2528,10 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 8.0, 0.0, 0.0),
                                 child: ListView(
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     16.0,
                                     0,
@@ -2541,7 +2541,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                   scrollDirection: Axis.vertical,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -2680,7 +2680,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                         FFAppState().eatb = '1';
                                                         safeSetState(() {});
                                                         await Future.delayed(
-                                                          Duration(
+                                                          const Duration(
                                                             milliseconds: 100,
                                                           ),
                                                         );
@@ -2690,7 +2690,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             _model.eatbModel1,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: EatbWidget(
+                                                        child: const EatbWidget(
                                                           texts: 'กิน',
                                                           persona: '1',
                                                         ),
@@ -2721,7 +2721,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                         FFAppState().eatb = '2';
                                                         safeSetState(() {});
                                                         await Future.delayed(
-                                                          Duration(
+                                                          const Duration(
                                                             milliseconds: 100,
                                                           ),
                                                         );
@@ -2733,7 +2733,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             _model.eatbModel2,
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
-                                                        child: EatbWidget(
+                                                        child: const EatbWidget(
                                                           texts: 'ไม่กิน',
                                                           persona: '2',
                                                         ),
@@ -2745,11 +2745,11 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                               ][index]();
                                             },
                                           ),
-                                        ].divide(SizedBox(height: 24.0)),
+                                        ].divide(const SizedBox(height: 24.0)),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -2864,11 +2864,11 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     .of(context)
                                                                 .secondaryBackground
                                                       ],
-                                                      stops: [0.0, 1.0],
+                                                      stops: const [0.0, 1.0],
                                                       begin:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               1.0, 0.34),
-                                                      end: AlignmentDirectional(
+                                                      end: const AlignmentDirectional(
                                                           -1.0, -0.34),
                                                     ),
                                                     borderRadius:
@@ -2882,7 +2882,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                           ? FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryBackground
-                                                          : Color(0xFFCED4E6),
+                                                          : const Color(0xFFCED4E6),
                                                       width: 1.0,
                                                     ),
                                                   ),
@@ -2964,7 +2964,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                         Theme(
                                                           data: ThemeData(
                                                             checkboxTheme:
-                                                                CheckboxThemeData(
+                                                                const CheckboxThemeData(
                                                               visualDensity:
                                                                   VisualDensity
                                                                       .compact,
@@ -2975,7 +2975,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   CircleBorder(),
                                                             ),
                                                             unselectedWidgetColor:
-                                                                Color(
+                                                                const Color(
                                                                     0xFFCED4E6),
                                                           ),
                                                           child: Checkbox(
@@ -2989,13 +2989,13 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                       newValue!);
                                                             },
                                                             side:
-                                                                (Color(0xFFCED4E6) !=
+                                                                (const Color(0xFFCED4E6) !=
                                                                         null)
-                                                                    ? BorderSide(
+                                                                    ? const BorderSide(
                                                                         width:
                                                                             2,
                                                                         color: Color(
-                                                                            0xFFCED4E6)!,
+                                                                            0xFFCED4E6),
                                                                       )
                                                                     : null,
                                                             activeColor:
@@ -3035,7 +3035,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 4.0)),
+                                                          const SizedBox(width: 4.0)),
                                                     ),
                                                   ),
                                                 ),
@@ -3100,11 +3100,11 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     .of(context)
                                                                 .secondaryBackground
                                                       ],
-                                                      stops: [0.0, 1.0],
+                                                      stops: const [0.0, 1.0],
                                                       begin:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               1.0, 0.34),
-                                                      end: AlignmentDirectional(
+                                                      end: const AlignmentDirectional(
                                                           -1.0, -0.34),
                                                     ),
                                                     borderRadius:
@@ -3118,7 +3118,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                           ? FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryBackground
-                                                          : Color(0xFFCED4E6),
+                                                          : const Color(0xFFCED4E6),
                                                       width: 1.0,
                                                     ),
                                                   ),
@@ -3200,7 +3200,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                         Theme(
                                                           data: ThemeData(
                                                             checkboxTheme:
-                                                                CheckboxThemeData(
+                                                                const CheckboxThemeData(
                                                               visualDensity:
                                                                   VisualDensity
                                                                       .compact,
@@ -3211,7 +3211,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   CircleBorder(),
                                                             ),
                                                             unselectedWidgetColor:
-                                                                Color(
+                                                                const Color(
                                                                     0xFFCED4E6),
                                                           ),
                                                           child: Checkbox(
@@ -3225,13 +3225,13 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                       newValue!);
                                                             },
                                                             side:
-                                                                (Color(0xFFCED4E6) !=
+                                                                (const Color(0xFFCED4E6) !=
                                                                         null)
-                                                                    ? BorderSide(
+                                                                    ? const BorderSide(
                                                                         width:
                                                                             2,
                                                                         color: Color(
-                                                                            0xFFCED4E6)!,
+                                                                            0xFFCED4E6),
                                                                       )
                                                                     : null,
                                                             activeColor:
@@ -3271,19 +3271,19 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 4.0)),
+                                                          const SizedBox(width: 4.0)),
                                                     ),
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 8.0)),
+                                            ].divide(const SizedBox(width: 8.0)),
                                           ),
                                           Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Container(
                                                 decoration: BoxDecoration(
-                                                  color: Color(0xFFE9F0F9),
+                                                  color: const Color(0xFFE9F0F9),
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           16.0),
@@ -3341,7 +3341,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   fontFamily: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMediumFamily,
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFF077DD7),
                                                                   letterSpacing:
                                                                       0.0,
@@ -3363,7 +3363,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     fontFamily:
                                                                         FlutterFlowTheme.of(context)
                                                                             .bodyMediumFamily,
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0xFF077DD7),
                                                                     letterSpacing:
                                                                         0.0,
@@ -3378,7 +3378,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                         physics:
                                                             const NeverScrollableScrollPhysics(),
                                                         gridDelegate:
-                                                            SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                            const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                           crossAxisCount: 3,
                                                         ),
                                                         crossAxisSpacing: () {
@@ -3443,7 +3443,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                           padding:
                                                                               MediaQuery.viewInsetsOf(context),
                                                                           child:
-                                                                              AmountWidget(),
+                                                                              const AmountWidget(),
                                                                         );
                                                                       },
                                                                     ).then((value) =>
@@ -3461,7 +3461,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     }
                                                                     await Future
                                                                         .delayed(
-                                                                      Duration(
+                                                                      const Duration(
                                                                         milliseconds:
                                                                             100,
                                                                       ),
@@ -3475,7 +3475,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                         safeSetState(
                                                                             () {}),
                                                                     child:
-                                                                        PerOneWidget(
+                                                                        const PerOneWidget(
                                                                       names:
                                                                           'มี',
                                                                       perone:
@@ -3515,7 +3515,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     }
                                                                     await Future
                                                                         .delayed(
-                                                                      Duration(
+                                                                      const Duration(
                                                                         milliseconds:
                                                                             100,
                                                                       ),
@@ -3529,7 +3529,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                         safeSetState(
                                                                             () {}),
                                                                     child:
-                                                                        PerOneWidget(
+                                                                        const PerOneWidget(
                                                                       names:
                                                                           'ไม่มี',
                                                                       perone:
@@ -3569,7 +3569,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     }
                                                                     await Future
                                                                         .delayed(
-                                                                      Duration(
+                                                                      const Duration(
                                                                         milliseconds:
                                                                             100,
                                                                       ),
@@ -3583,7 +3583,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                         safeSetState(
                                                                             () {}),
                                                                     child:
-                                                                        PerOneWidget(
+                                                                        const PerOneWidget(
                                                                       names:
                                                                           'ไม่เคยตรวจ',
                                                                       perone:
@@ -3625,7 +3625,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                               ),
                                               Container(
                                                 decoration: BoxDecoration(
-                                                  color: Color(0xFFE9F0F9),
+                                                  color: const Color(0xFFE9F0F9),
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           16.0),
@@ -3683,7 +3683,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   fontFamily: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMediumFamily,
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFF077DD7),
                                                                   letterSpacing:
                                                                       0.0,
@@ -3705,7 +3705,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     fontFamily:
                                                                         FlutterFlowTheme.of(context)
                                                                             .bodyMediumFamily,
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0xFF077DD7),
                                                                     letterSpacing:
                                                                         0.0,
@@ -3720,7 +3720,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                         physics:
                                                             const NeverScrollableScrollPhysics(),
                                                         gridDelegate:
-                                                            SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                            const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                           crossAxisCount: 3,
                                                         ),
                                                         crossAxisSpacing: () {
@@ -3785,7 +3785,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                           padding:
                                                                               MediaQuery.viewInsetsOf(context),
                                                                           child:
-                                                                              Amount1Widget(),
+                                                                              const Amount1Widget(),
                                                                         );
                                                                       },
                                                                     ).then((value) =>
@@ -3803,7 +3803,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     }
                                                                     await Future
                                                                         .delayed(
-                                                                      Duration(
+                                                                      const Duration(
                                                                         milliseconds:
                                                                             100,
                                                                       ),
@@ -3817,7 +3817,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                         safeSetState(
                                                                             () {}),
                                                                     child:
-                                                                        PerTwoWidget(
+                                                                        const PerTwoWidget(
                                                                       names:
                                                                           'มี',
                                                                       pertwo:
@@ -3857,7 +3857,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     }
                                                                     await Future
                                                                         .delayed(
-                                                                      Duration(
+                                                                      const Duration(
                                                                         milliseconds:
                                                                             100,
                                                                       ),
@@ -3871,7 +3871,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                         safeSetState(
                                                                             () {}),
                                                                     child:
-                                                                        PerTwoWidget(
+                                                                        const PerTwoWidget(
                                                                       names:
                                                                           'ไม่มี',
                                                                       pertwo:
@@ -3911,7 +3911,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     }
                                                                     await Future
                                                                         .delayed(
-                                                                      Duration(
+                                                                      const Duration(
                                                                         milliseconds:
                                                                             100,
                                                                       ),
@@ -3925,7 +3925,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                         safeSetState(
                                                                             () {}),
                                                                     child:
-                                                                        PerTwoWidget(
+                                                                        const PerTwoWidget(
                                                                       names:
                                                                           'ไม่เคยตรวจ',
                                                                       pertwo:
@@ -3967,7 +3967,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                               ),
                                               Container(
                                                 decoration: BoxDecoration(
-                                                  color: Color(0xFFE9F0F9),
+                                                  color: const Color(0xFFE9F0F9),
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           16.0),
@@ -4022,7 +4022,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   fontFamily: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMediumFamily,
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFF077DD7),
                                                                   letterSpacing:
                                                                       0.0,
@@ -4044,7 +4044,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     fontFamily:
                                                                         FlutterFlowTheme.of(context)
                                                                             .bodyMediumFamily,
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0xFF077DD7),
                                                                     letterSpacing:
                                                                         0.0,
@@ -4059,7 +4059,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                         physics:
                                                             const NeverScrollableScrollPhysics(),
                                                         gridDelegate:
-                                                            SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                            const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                           crossAxisCount: 3,
                                                         ),
                                                         crossAxisSpacing: () {
@@ -4124,7 +4124,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                           padding:
                                                                               MediaQuery.viewInsetsOf(context),
                                                                           child:
-                                                                              ChooseCancerWidget(),
+                                                                              const ChooseCancerWidget(),
                                                                         );
                                                                       },
                                                                     ).then((value) =>
@@ -4142,7 +4142,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     }
                                                                     await Future
                                                                         .delayed(
-                                                                      Duration(
+                                                                      const Duration(
                                                                         milliseconds:
                                                                             100,
                                                                       ),
@@ -4156,7 +4156,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                         safeSetState(
                                                                             () {}),
                                                                     child:
-                                                                        PerThreeWidget(
+                                                                        const PerThreeWidget(
                                                                       names:
                                                                           'มี',
                                                                       perthree:
@@ -4196,7 +4196,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     }
                                                                     await Future
                                                                         .delayed(
-                                                                      Duration(
+                                                                      const Duration(
                                                                         milliseconds:
                                                                             100,
                                                                       ),
@@ -4210,7 +4210,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                         safeSetState(
                                                                             () {}),
                                                                     child:
-                                                                        PerThreeWidget(
+                                                                        const PerThreeWidget(
                                                                       names:
                                                                           'ไม่มี',
                                                                       perthree:
@@ -4250,7 +4250,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     }
                                                                     await Future
                                                                         .delayed(
-                                                                      Duration(
+                                                                      const Duration(
                                                                         milliseconds:
                                                                             100,
                                                                       ),
@@ -4264,7 +4264,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                         safeSetState(
                                                                             () {}),
                                                                     child:
-                                                                        PerThreeWidget(
+                                                                        const PerThreeWidget(
                                                                       names:
                                                                           'ไม่เคยตรวจ',
                                                                       perthree:
@@ -4306,7 +4306,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                               ),
                                               Container(
                                                 decoration: BoxDecoration(
-                                                  color: Color(0xFFE9F0F9),
+                                                  color: const Color(0xFFE9F0F9),
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           16.0),
@@ -4361,7 +4361,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   fontFamily: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMediumFamily,
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFF077DD7),
                                                                   letterSpacing:
                                                                       0.0,
@@ -4377,7 +4377,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                         physics:
                                                             const NeverScrollableScrollPhysics(),
                                                         gridDelegate:
-                                                            SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                            const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                           crossAxisCount: 3,
                                                         ),
                                                         crossAxisSpacing: () {
@@ -4437,7 +4437,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     }
                                                                     await Future
                                                                         .delayed(
-                                                                      Duration(
+                                                                      const Duration(
                                                                         milliseconds:
                                                                             100,
                                                                       ),
@@ -4451,7 +4451,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                         safeSetState(
                                                                             () {}),
                                                                     child:
-                                                                        PerForeWidget(
+                                                                        const PerForeWidget(
                                                                       names:
                                                                           'มี',
                                                                       perfore:
@@ -4491,7 +4491,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     }
                                                                     await Future
                                                                         .delayed(
-                                                                      Duration(
+                                                                      const Duration(
                                                                         milliseconds:
                                                                             100,
                                                                       ),
@@ -4505,7 +4505,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                         safeSetState(
                                                                             () {}),
                                                                     child:
-                                                                        PerForeWidget(
+                                                                        const PerForeWidget(
                                                                       names:
                                                                           'ไม่มี',
                                                                       perfore:
@@ -4545,7 +4545,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     }
                                                                     await Future
                                                                         .delayed(
-                                                                      Duration(
+                                                                      const Duration(
                                                                         milliseconds:
                                                                             100,
                                                                       ),
@@ -4559,7 +4559,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                         safeSetState(
                                                                             () {}),
                                                                     child:
-                                                                        PerForeWidget(
+                                                                        const PerForeWidget(
                                                                       names:
                                                                           'ไม่เคยตรวจ',
                                                                       perfore:
@@ -4601,7 +4601,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                               ),
                                               Container(
                                                 decoration: BoxDecoration(
-                                                  color: Color(0xFFE9F0F9),
+                                                  color: const Color(0xFFE9F0F9),
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           16.0),
@@ -4656,7 +4656,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   fontFamily: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMediumFamily,
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFF077DD7),
                                                                   letterSpacing:
                                                                       0.0,
@@ -4672,7 +4672,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                         physics:
                                                             const NeverScrollableScrollPhysics(),
                                                         gridDelegate:
-                                                            SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                            const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                           crossAxisCount: 3,
                                                         ),
                                                         crossAxisSpacing: () {
@@ -4732,7 +4732,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     }
                                                                     await Future
                                                                         .delayed(
-                                                                      Duration(
+                                                                      const Duration(
                                                                         milliseconds:
                                                                             100,
                                                                       ),
@@ -4746,7 +4746,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                         safeSetState(
                                                                             () {}),
                                                                     child:
-                                                                        PerFiveWidget(
+                                                                        const PerFiveWidget(
                                                                       names:
                                                                           'มี',
                                                                       perfive:
@@ -4786,7 +4786,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     }
                                                                     await Future
                                                                         .delayed(
-                                                                      Duration(
+                                                                      const Duration(
                                                                         milliseconds:
                                                                             100,
                                                                       ),
@@ -4800,7 +4800,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                         safeSetState(
                                                                             () {}),
                                                                     child:
-                                                                        PerFiveWidget(
+                                                                        const PerFiveWidget(
                                                                       names:
                                                                           'ไม่มี',
                                                                       perfive:
@@ -4840,7 +4840,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     }
                                                                     await Future
                                                                         .delayed(
-                                                                      Duration(
+                                                                      const Duration(
                                                                         milliseconds:
                                                                             100,
                                                                       ),
@@ -4854,7 +4854,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                         safeSetState(
                                                                             () {}),
                                                                     child:
-                                                                        PerFiveWidget(
+                                                                        const PerFiveWidget(
                                                                       names:
                                                                           'ไม่เคยตรวจ',
                                                                       perfive:
@@ -4894,19 +4894,19 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 12.0)),
+                                            ].divide(const SizedBox(height: 12.0)),
                                           ),
-                                        ].divide(SizedBox(height: 24.0)),
+                                        ].divide(const SizedBox(height: 24.0)),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 32.0)),
+                                  ].divide(const SizedBox(height: 32.0)),
                                 ),
                               ),
                             ),
                           ],
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -4919,7 +4919,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                             child: wrapWithModel(
                               model: _model.startAsBottomModel2,
                               updateCallback: () => safeSetState(() {}),
-                              child: StartAsBottomWidget(
+                              child: const StartAsBottomWidget(
                                 text: 'ถัดไป',
                               ),
                             ),
@@ -4977,7 +4977,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -4988,7 +4988,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -4998,10 +4998,10 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 0.0),
                                 child: ListView(
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     16.0,
                                     0,
@@ -5143,7 +5143,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                           '1';
                                                       safeSetState(() {});
                                                       await Future.delayed(
-                                                        Duration(
+                                                        const Duration(
                                                           milliseconds: 100,
                                                         ),
                                                       );
@@ -5153,7 +5153,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                           .healthoneModel1,
                                                       updateCallback: () =>
                                                           safeSetState(() {}),
-                                                      child: HealthoneWidget(
+                                                      child: const HealthoneWidget(
                                                         texts: 'มี',
                                                         healthone: '1',
                                                       ),
@@ -5184,7 +5184,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                           '2';
                                                       safeSetState(() {});
                                                       await Future.delayed(
-                                                        Duration(
+                                                        const Duration(
                                                           milliseconds: 100,
                                                         ),
                                                       );
@@ -5194,7 +5194,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                           .healthoneModel2,
                                                       updateCallback: () =>
                                                           safeSetState(() {}),
-                                                      child: HealthoneWidget(
+                                                      child: const HealthoneWidget(
                                                         texts: 'ไม่มี',
                                                         healthone: '2',
                                                       ),
@@ -5225,7 +5225,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                           '3';
                                                       safeSetState(() {});
                                                       await Future.delayed(
-                                                        Duration(
+                                                        const Duration(
                                                           milliseconds: 100,
                                                         ),
                                                       );
@@ -5235,7 +5235,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                           .healthoneModel3,
                                                       updateCallback: () =>
                                                           safeSetState(() {}),
-                                                      child: HealthoneWidget(
+                                                      child: const HealthoneWidget(
                                                         texts: 'ไม่เคยตรวจ',
                                                         healthone: '3',
                                                       ),
@@ -5247,7 +5247,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                             ][index]();
                                           },
                                         ),
-                                      ].divide(SizedBox(height: 24.0)),
+                                      ].divide(const SizedBox(height: 24.0)),
                                     ),
                                     Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -5382,7 +5382,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                           '1';
                                                       safeSetState(() {});
                                                       await Future.delayed(
-                                                        Duration(
+                                                        const Duration(
                                                           milliseconds: 100,
                                                         ),
                                                       );
@@ -5392,7 +5392,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                           .healthtwoModel1,
                                                       updateCallback: () =>
                                                           safeSetState(() {}),
-                                                      child: HealthtwoWidget(
+                                                      child: const HealthtwoWidget(
                                                         texts: 'มี',
                                                         healthtwo: '1',
                                                       ),
@@ -5423,7 +5423,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                           '2';
                                                       safeSetState(() {});
                                                       await Future.delayed(
-                                                        Duration(
+                                                        const Duration(
                                                           milliseconds: 100,
                                                         ),
                                                       );
@@ -5433,7 +5433,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                           .healthtwoModel2,
                                                       updateCallback: () =>
                                                           safeSetState(() {}),
-                                                      child: HealthtwoWidget(
+                                                      child: const HealthtwoWidget(
                                                         texts: 'ไม่มี',
                                                         healthtwo: '2',
                                                       ),
@@ -5445,16 +5445,16 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                             ][index]();
                                           },
                                         ),
-                                      ].divide(SizedBox(height: 24.0)),
+                                      ].divide(const SizedBox(height: 24.0)),
                                     ),
-                                  ].divide(SizedBox(height: 32.0)),
+                                  ].divide(const SizedBox(height: 32.0)),
                                 ),
                               ),
                             ),
                           ],
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -5467,7 +5467,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                             child: wrapWithModel(
                               model: _model.startAsBottomModel3,
                               updateCallback: () => safeSetState(() {}),
-                              child: StartAsBottomWidget(
+                              child: const StartAsBottomWidget(
                                 text: 'ถัดไป',
                               ),
                             ),
@@ -5537,7 +5537,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                     width: double.infinity,
                                     height: 2.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1AFFFFFF),
+                                      color: const Color(0x1AFFFFFF),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -5547,10 +5547,10 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 0.0),
                                 child: ListView(
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     16.0,
                                     0,
@@ -5618,10 +5618,10 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               context)
                                                           .secondaryBackground
                                                 ],
-                                                stops: [0.0, 1.0],
-                                                begin: AlignmentDirectional(
+                                                stops: const [0.0, 1.0],
+                                                begin: const AlignmentDirectional(
                                                     1.0, 0.34),
-                                                end: AlignmentDirectional(
+                                                end: const AlignmentDirectional(
                                                     -1.0, -0.34),
                                               ),
                                               borderRadius:
@@ -5633,7 +5633,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                         ? FlutterFlowTheme.of(
                                                                 context)
                                                             .secondaryBackground
-                                                        : Color(0xFFCED4E6),
+                                                        : const Color(0xFFCED4E6),
                                                 width: 1.0,
                                               ),
                                             ),
@@ -5724,7 +5724,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                   Theme(
                                                     data: ThemeData(
                                                       checkboxTheme:
-                                                          CheckboxThemeData(
+                                                          const CheckboxThemeData(
                                                         visualDensity:
                                                             VisualDensity
                                                                 .compact,
@@ -5734,7 +5734,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                         shape: CircleBorder(),
                                                       ),
                                                       unselectedWidgetColor:
-                                                          Color(0xFFCED4E6),
+                                                          const Color(0xFFCED4E6),
                                                     ),
                                                     child: Checkbox(
                                                       value: _model
@@ -5747,12 +5747,12 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             newValue!);
                                                       },
                                                       side:
-                                                          (Color(0xFFCED4E6) !=
+                                                          (const Color(0xFFCED4E6) !=
                                                                   null)
-                                                              ? BorderSide(
+                                                              ? const BorderSide(
                                                                   width: 2,
                                                                   color: Color(
-                                                                      0xFFCED4E6)!,
+                                                                      0xFFCED4E6),
                                                                 )
                                                               : null,
                                                       activeColor:
@@ -5793,7 +5793,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                       .labelSmallIsCustom,
                                                             ),
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
                                             ),
                                           ),
@@ -5852,10 +5852,10 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               context)
                                                           .secondaryBackground
                                                 ],
-                                                stops: [0.0, 1.0],
-                                                begin: AlignmentDirectional(
+                                                stops: const [0.0, 1.0],
+                                                begin: const AlignmentDirectional(
                                                     1.0, 0.34),
-                                                end: AlignmentDirectional(
+                                                end: const AlignmentDirectional(
                                                     -1.0, -0.34),
                                               ),
                                               borderRadius:
@@ -5867,7 +5867,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                         ? FlutterFlowTheme.of(
                                                                 context)
                                                             .secondaryBackground
-                                                        : Color(0xFFCED4E6),
+                                                        : const Color(0xFFCED4E6),
                                                 width: 1.0,
                                               ),
                                             ),
@@ -5958,7 +5958,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                   Theme(
                                                     data: ThemeData(
                                                       checkboxTheme:
-                                                          CheckboxThemeData(
+                                                          const CheckboxThemeData(
                                                         visualDensity:
                                                             VisualDensity
                                                                 .compact,
@@ -5968,7 +5968,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                         shape: CircleBorder(),
                                                       ),
                                                       unselectedWidgetColor:
-                                                          Color(0xFFCED4E6),
+                                                          const Color(0xFFCED4E6),
                                                     ),
                                                     child: Checkbox(
                                                       value: _model
@@ -5981,12 +5981,12 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                             newValue!);
                                                       },
                                                       side:
-                                                          (Color(0xFFCED4E6) !=
+                                                          (const Color(0xFFCED4E6) !=
                                                                   null)
-                                                              ? BorderSide(
+                                                              ? const BorderSide(
                                                                   width: 2,
                                                                   color: Color(
-                                                                      0xFFCED4E6)!,
+                                                                      0xFFCED4E6),
                                                                 )
                                                               : null,
                                                       activeColor:
@@ -6027,19 +6027,19 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                       .labelSmallIsCustom,
                                                             ),
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
                                             ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Container(
                                           decoration: BoxDecoration(
-                                            color: Color(0xFFE9F0F9),
+                                            color: const Color(0xFFE9F0F9),
                                             borderRadius:
                                                 BorderRadius.circular(16.0),
                                             border: Border.all(
@@ -6089,7 +6089,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     context)
                                                                 .labelMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -6101,7 +6101,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                     crossAxisCount: 2,
                                                   ),
                                                   crossAxisSpacing: () {
@@ -6158,7 +6158,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -6172,7 +6172,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  CheckoneWidget(
+                                                                  const CheckoneWidget(
                                                                 names: 'มี',
                                                                 checkone: '1',
                                                               ),
@@ -6209,7 +6209,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -6223,7 +6223,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  CheckoneWidget(
+                                                                  const CheckoneWidget(
                                                                 names: 'ไม่มี',
                                                                 checkone: '2',
                                                               ),
@@ -6259,7 +6259,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                         ),
                                         Container(
                                           decoration: BoxDecoration(
-                                            color: Color(0xFFE9F0F9),
+                                            color: const Color(0xFFE9F0F9),
                                             borderRadius:
                                                 BorderRadius.circular(16.0),
                                             border: Border.all(
@@ -6309,7 +6309,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     context)
                                                                 .labelMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -6321,7 +6321,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                     crossAxisCount: 2,
                                                   ),
                                                   crossAxisSpacing: () {
@@ -6378,7 +6378,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -6392,7 +6392,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  ChecktwoWidget(
+                                                                  const ChecktwoWidget(
                                                                 names: 'มี',
                                                                 checktwo: '1',
                                                               ),
@@ -6429,7 +6429,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -6443,7 +6443,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  ChecktwoWidget(
+                                                                  const ChecktwoWidget(
                                                                 names: 'ไม่มี',
                                                                 checktwo: '2',
                                                               ),
@@ -6479,7 +6479,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                         ),
                                         Container(
                                           decoration: BoxDecoration(
-                                            color: Color(0xFFE9F0F9),
+                                            color: const Color(0xFFE9F0F9),
                                             borderRadius:
                                                 BorderRadius.circular(16.0),
                                             border: Border.all(
@@ -6529,7 +6529,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     context)
                                                                 .labelMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -6541,7 +6541,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                     crossAxisCount: 2,
                                                   ),
                                                   crossAxisSpacing: () {
@@ -6598,7 +6598,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -6612,7 +6612,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  CheckthreeWidget(
+                                                                  const CheckthreeWidget(
                                                                 names: 'มี',
                                                                 checkthree: '1',
                                                               ),
@@ -6649,7 +6649,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -6663,7 +6663,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  CheckthreeWidget(
+                                                                  const CheckthreeWidget(
                                                                 names: 'ไม่มี',
                                                                 checkthree: '2',
                                                               ),
@@ -6699,7 +6699,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                         ),
                                         Container(
                                           decoration: BoxDecoration(
-                                            color: Color(0xFFE9F0F9),
+                                            color: const Color(0xFFE9F0F9),
                                             borderRadius:
                                                 BorderRadius.circular(16.0),
                                             border: Border.all(
@@ -6749,7 +6749,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     context)
                                                                 .labelMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -6761,7 +6761,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                     crossAxisCount: 2,
                                                   ),
                                                   crossAxisSpacing: () {
@@ -6818,7 +6818,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -6832,7 +6832,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  CheckforeWidget(
+                                                                  const CheckforeWidget(
                                                                 names: 'มี',
                                                                 checkfore: '1',
                                                               ),
@@ -6869,7 +6869,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -6883,7 +6883,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  CheckforeWidget(
+                                                                  const CheckforeWidget(
                                                                 names: 'ไม่มี',
                                                                 checkfore: '2',
                                                               ),
@@ -6919,7 +6919,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                         ),
                                         Container(
                                           decoration: BoxDecoration(
-                                            color: Color(0xFFE9F0F9),
+                                            color: const Color(0xFFE9F0F9),
                                             borderRadius:
                                                 BorderRadius.circular(16.0),
                                             border: Border.all(
@@ -6969,7 +6969,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     context)
                                                                 .labelMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -6981,7 +6981,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                     crossAxisCount: 2,
                                                   ),
                                                   crossAxisSpacing: () {
@@ -7038,7 +7038,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -7052,7 +7052,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  CheckfiveWidget(
+                                                                  const CheckfiveWidget(
                                                                 names: 'มี',
                                                                 checkfive: '1',
                                                               ),
@@ -7089,7 +7089,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -7103,7 +7103,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  CheckfiveWidget(
+                                                                  const CheckfiveWidget(
                                                                 names: 'ไม่มี',
                                                                 checkfive: '2',
                                                               ),
@@ -7139,7 +7139,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                         ),
                                         Container(
                                           decoration: BoxDecoration(
-                                            color: Color(0xFFE9F0F9),
+                                            color: const Color(0xFFE9F0F9),
                                             borderRadius:
                                                 BorderRadius.circular(16.0),
                                             border: Border.all(
@@ -7189,7 +7189,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     context)
                                                                 .labelMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -7201,7 +7201,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                     crossAxisCount: 2,
                                                   ),
                                                   crossAxisSpacing: () {
@@ -7258,7 +7258,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -7272,7 +7272,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  ChecksixWidget(
+                                                                  const ChecksixWidget(
                                                                 names: 'มี',
                                                                 checksix: '1',
                                                               ),
@@ -7309,7 +7309,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -7323,7 +7323,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  ChecksixWidget(
+                                                                  const ChecksixWidget(
                                                                 names: 'ไม่มี',
                                                                 checksix: '2',
                                                               ),
@@ -7359,7 +7359,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                         ),
                                         Container(
                                           decoration: BoxDecoration(
-                                            color: Color(0xFFE9F0F9),
+                                            color: const Color(0xFFE9F0F9),
                                             borderRadius:
                                                 BorderRadius.circular(16.0),
                                             border: Border.all(
@@ -7409,7 +7409,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     context)
                                                                 .labelMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -7421,7 +7421,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                     crossAxisCount: 2,
                                                   ),
                                                   crossAxisSpacing: () {
@@ -7478,7 +7478,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -7492,7 +7492,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  ChecksevenWidget(
+                                                                  const ChecksevenWidget(
                                                                 names: 'มี',
                                                                 checkseven: '1',
                                                               ),
@@ -7529,7 +7529,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -7543,7 +7543,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  ChecksevenWidget(
+                                                                  const ChecksevenWidget(
                                                                 names: 'ไม่มี',
                                                                 checkseven: '2',
                                                               ),
@@ -7579,7 +7579,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                         ),
                                         Container(
                                           decoration: BoxDecoration(
-                                            color: Color(0xFFE9F0F9),
+                                            color: const Color(0xFFE9F0F9),
                                             borderRadius:
                                                 BorderRadius.circular(16.0),
                                             border: Border.all(
@@ -7629,7 +7629,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     context)
                                                                 .labelMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -7641,7 +7641,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                     crossAxisCount: 2,
                                                   ),
                                                   crossAxisSpacing: () {
@@ -7698,7 +7698,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -7712,7 +7712,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  CheckeightWidget(
+                                                                  const CheckeightWidget(
                                                                 names: 'มี',
                                                                 checkeight: '1',
                                                               ),
@@ -7749,7 +7749,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -7763,7 +7763,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  CheckeightWidget(
+                                                                  const CheckeightWidget(
                                                                 names: 'ไม่มี',
                                                                 checkeight: '2',
                                                               ),
@@ -7799,7 +7799,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                         ),
                                         Container(
                                           decoration: BoxDecoration(
-                                            color: Color(0xFFE9F0F9),
+                                            color: const Color(0xFFE9F0F9),
                                             borderRadius:
                                                 BorderRadius.circular(16.0),
                                             border: Border.all(
@@ -7849,7 +7849,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     context)
                                                                 .labelMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -7861,7 +7861,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                     crossAxisCount: 2,
                                                   ),
                                                   crossAxisSpacing: () {
@@ -7918,7 +7918,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -7932,7 +7932,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  ChecknineWidget(
+                                                                  const ChecknineWidget(
                                                                 names: 'มี',
                                                                 checknine: '1',
                                                               ),
@@ -7969,7 +7969,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -7983,7 +7983,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  ChecknineWidget(
+                                                                  const ChecknineWidget(
                                                                 names: 'ไม่มี',
                                                                 checknine: '2',
                                                               ),
@@ -8017,16 +8017,16 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                             ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(height: 12.0)),
+                                      ].divide(const SizedBox(height: 12.0)),
                                     ),
-                                  ].divide(SizedBox(height: 24.0)),
+                                  ].divide(const SizedBox(height: 24.0)),
                                 ),
                               ),
                             ),
                           ],
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -8039,7 +8039,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                             child: wrapWithModel(
                               model: _model.startAsBottomModel4,
                               updateCallback: () => safeSetState(() {}),
-                              child: StartAsBottomWidget(
+                              child: const StartAsBottomWidget(
                                 text: 'ถัดไป',
                               ),
                             ),
@@ -8120,10 +8120,10 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 0.0),
                                 child: ListView(
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     16.0,
                                     0,
@@ -8133,7 +8133,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                   scrollDirection: Axis.vertical,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 1.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -8194,10 +8194,10 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                 context)
                                                             .secondaryBackground
                                                   ],
-                                                  stops: [0.0, 1.0],
-                                                  begin: AlignmentDirectional(
+                                                  stops: const [0.0, 1.0],
+                                                  begin: const AlignmentDirectional(
                                                       1.0, 0.34),
-                                                  end: AlignmentDirectional(
+                                                  end: const AlignmentDirectional(
                                                       -1.0, -0.34),
                                                 ),
                                                 borderRadius:
@@ -8210,7 +8210,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                       ? FlutterFlowTheme.of(
                                                               context)
                                                           .secondaryBackground
-                                                      : Color(0xFFCED4E6),
+                                                      : const Color(0xFFCED4E6),
                                                   width: 1.0,
                                                 ),
                                               ),
@@ -8300,7 +8300,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                     Theme(
                                                       data: ThemeData(
                                                         checkboxTheme:
-                                                            CheckboxThemeData(
+                                                            const CheckboxThemeData(
                                                           visualDensity:
                                                               VisualDensity
                                                                   .compact,
@@ -8310,7 +8310,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                           shape: CircleBorder(),
                                                         ),
                                                         unselectedWidgetColor:
-                                                            Color(0xFFCED4E6),
+                                                            const Color(0xFFCED4E6),
                                                       ),
                                                       child: Checkbox(
                                                         value: _model
@@ -8323,12 +8323,12 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   newValue!);
                                                         },
                                                         side:
-                                                            (Color(0xFFCED4E6) !=
+                                                            (const Color(0xFFCED4E6) !=
                                                                     null)
-                                                                ? BorderSide(
+                                                                ? const BorderSide(
                                                                     width: 2,
                                                                     color: Color(
-                                                                        0xFFCED4E6)!,
+                                                                        0xFFCED4E6),
                                                                   )
                                                                 : null,
                                                         activeColor:
@@ -8368,7 +8368,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 4.0)),
+                                                      const SizedBox(width: 4.0)),
                                                 ),
                                               ),
                                             ),
@@ -8427,10 +8427,10 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                 context)
                                                             .secondaryBackground
                                                   ],
-                                                  stops: [0.0, 1.0],
-                                                  begin: AlignmentDirectional(
+                                                  stops: const [0.0, 1.0],
+                                                  begin: const AlignmentDirectional(
                                                       1.0, 0.34),
-                                                  end: AlignmentDirectional(
+                                                  end: const AlignmentDirectional(
                                                       -1.0, -0.34),
                                                 ),
                                                 borderRadius:
@@ -8443,7 +8443,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                       ? FlutterFlowTheme.of(
                                                               context)
                                                           .secondaryBackground
-                                                      : Color(0xFFCED4E6),
+                                                      : const Color(0xFFCED4E6),
                                                   width: 1.0,
                                                 ),
                                               ),
@@ -8533,7 +8533,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                     Theme(
                                                       data: ThemeData(
                                                         checkboxTheme:
-                                                            CheckboxThemeData(
+                                                            const CheckboxThemeData(
                                                           visualDensity:
                                                               VisualDensity
                                                                   .compact,
@@ -8543,7 +8543,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                           shape: CircleBorder(),
                                                         ),
                                                         unselectedWidgetColor:
-                                                            Color(0xFFCED4E6),
+                                                            const Color(0xFFCED4E6),
                                                       ),
                                                       child: Checkbox(
                                                         value: _model
@@ -8556,12 +8556,12 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   newValue!);
                                                         },
                                                         side:
-                                                            (Color(0xFFCED4E6) !=
+                                                            (const Color(0xFFCED4E6) !=
                                                                     null)
-                                                                ? BorderSide(
+                                                                ? const BorderSide(
                                                                     width: 2,
                                                                     color: Color(
-                                                                        0xFFCED4E6)!,
+                                                                        0xFFCED4E6),
                                                                   )
                                                                 : null,
                                                         activeColor:
@@ -8601,12 +8601,12 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 4.0)),
+                                                      const SizedBox(width: 4.0)),
                                                 ),
                                               ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ),
                                     Column(
@@ -8614,7 +8614,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                       children: [
                                         Container(
                                           decoration: BoxDecoration(
-                                            color: Color(0xFFE9F0F9),
+                                            color: const Color(0xFFE9F0F9),
                                             borderRadius:
                                                 BorderRadius.circular(16.0),
                                             border: Border.all(
@@ -8664,7 +8664,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     context)
                                                                 .labelMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -8676,7 +8676,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                     crossAxisCount: 2,
                                                   ),
                                                   crossAxisSpacing: () {
@@ -8733,7 +8733,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -8747,7 +8747,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  RiskoneWidget(
+                                                                  const RiskoneWidget(
                                                                 names: 'มี',
                                                                 riskone: '1',
                                                               ),
@@ -8784,7 +8784,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -8798,7 +8798,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  RiskoneWidget(
+                                                                  const RiskoneWidget(
                                                                 names: 'ไม่มี',
                                                                 riskone: '2',
                                                               ),
@@ -8834,7 +8834,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                         ),
                                         Container(
                                           decoration: BoxDecoration(
-                                            color: Color(0xFFE9F0F9),
+                                            color: const Color(0xFFE9F0F9),
                                             borderRadius:
                                                 BorderRadius.circular(16.0),
                                             border: Border.all(
@@ -8884,7 +8884,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     context)
                                                                 .labelMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -8896,7 +8896,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                     crossAxisCount: 2,
                                                   ),
                                                   crossAxisSpacing: () {
@@ -8953,7 +8953,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -8967,7 +8967,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  RisktwoWidget(
+                                                                  const RisktwoWidget(
                                                                 names: 'มี',
                                                                 risktwo: '1',
                                                               ),
@@ -9004,7 +9004,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -9018,7 +9018,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  RisktwoWidget(
+                                                                  const RisktwoWidget(
                                                                 names: 'ไม่มี',
                                                                 risktwo: '2',
                                                               ),
@@ -9054,7 +9054,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                         ),
                                         Container(
                                           decoration: BoxDecoration(
-                                            color: Color(0xFFE9F0F9),
+                                            color: const Color(0xFFE9F0F9),
                                             borderRadius:
                                                 BorderRadius.circular(16.0),
                                             border: Border.all(
@@ -9104,7 +9104,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     context)
                                                                 .labelMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -9116,7 +9116,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                     crossAxisCount: 2,
                                                   ),
                                                   crossAxisSpacing: () {
@@ -9173,7 +9173,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -9187,7 +9187,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  RiskthreeWidget(
+                                                                  const RiskthreeWidget(
                                                                 names: 'มี',
                                                                 riskthree: '1',
                                                               ),
@@ -9224,7 +9224,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -9238,7 +9238,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  RiskthreeWidget(
+                                                                  const RiskthreeWidget(
                                                                 names: 'ไม่มี',
                                                                 riskthree: '2',
                                                               ),
@@ -9274,7 +9274,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                         ),
                                         Container(
                                           decoration: BoxDecoration(
-                                            color: Color(0xFFE9F0F9),
+                                            color: const Color(0xFFE9F0F9),
                                             borderRadius:
                                                 BorderRadius.circular(16.0),
                                             border: Border.all(
@@ -9324,7 +9324,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     context)
                                                                 .labelMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -9336,7 +9336,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                     crossAxisCount: 2,
                                                   ),
                                                   crossAxisSpacing: () {
@@ -9393,7 +9393,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -9407,7 +9407,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  RiskforeWidget(
+                                                                  const RiskforeWidget(
                                                                 names: 'มี',
                                                                 riskfore: '1',
                                                               ),
@@ -9444,7 +9444,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -9458,7 +9458,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  RiskforeWidget(
+                                                                  const RiskforeWidget(
                                                                 names: 'ไม่มี',
                                                                 riskfore: '2',
                                                               ),
@@ -9494,7 +9494,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                         ),
                                         Container(
                                           decoration: BoxDecoration(
-                                            color: Color(0xFFE9F0F9),
+                                            color: const Color(0xFFE9F0F9),
                                             borderRadius:
                                                 BorderRadius.circular(16.0),
                                             border: Border.all(
@@ -9544,7 +9544,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                     context)
                                                                 .labelMediumFamily,
                                                         color:
-                                                            Color(0xFF077DD7),
+                                                            const Color(0xFF077DD7),
                                                         letterSpacing: 0.0,
                                                         useGoogleFonts:
                                                             !FlutterFlowTheme
@@ -9556,7 +9556,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                     crossAxisCount: 2,
                                                   ),
                                                   crossAxisSpacing: () {
@@ -9613,7 +9613,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -9627,7 +9627,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  RiskfiveWidget(
+                                                                  const RiskfiveWidget(
                                                                 names: 'มี',
                                                                 riskfive: '1',
                                                               ),
@@ -9664,7 +9664,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                               }
                                                               await Future
                                                                   .delayed(
-                                                                Duration(
+                                                                const Duration(
                                                                   milliseconds:
                                                                       100,
                                                                 ),
@@ -9678,7 +9678,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  RiskfiveWidget(
+                                                                  const RiskfiveWidget(
                                                                 names: 'ไม่มี',
                                                                 riskfive: '2',
                                                               ),
@@ -9712,16 +9712,16 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                                             ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(height: 12.0)),
+                                      ].divide(const SizedBox(height: 12.0)),
                                     ),
-                                  ].divide(SizedBox(height: 24.0)),
+                                  ].divide(const SizedBox(height: 24.0)),
                                 ),
                               ),
                             ),
                           ],
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -9734,7 +9734,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                             child: wrapWithModel(
                               model: _model.startAsBottomModel5,
                               updateCallback: () => safeSetState(() {}),
-                              child: StartAsBottomWidget(
+                              child: const StartAsBottomWidget(
                                 text: 'บันทึก',
                               ),
                             ),
@@ -9746,7 +9746,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                     return Stack(
                       children: [
                         ListView(
-                          padding: EdgeInsets.fromLTRB(
+                          padding: const EdgeInsets.fromLTRB(
                             0,
                             8.0,
                             0,
@@ -9756,7 +9756,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                           scrollDirection: Axis.vertical,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(0.0, -1.0),
+                              alignment: const AlignmentDirectional(0.0, -1.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(8.0),
                                 child: Image.network(
@@ -9799,19 +9799,19 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                             ),
                             Container(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 8.0, 0.0, 0.0),
                                 child: wrapWithModel(
                                   model: _model.summaryServayModel,
                                   updateCallback: () => safeSetState(() {}),
-                                  child: SummaryServayWidget(),
+                                  child: const SummaryServayWidget(),
                                 ),
                               ),
                             ),
                           ],
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -9823,7 +9823,7 @@ class _MainAssigntWidgetState extends State<MainAssigntWidget>
                             child: wrapWithModel(
                               model: _model.startAsBottomModel6,
                               updateCallback: () => safeSetState(() {}),
-                              child: StartAsBottomWidget(
+                              child: const StartAsBottomWidget(
                                 text: 'กลับสู่หน้าหลัก',
                               ),
                             ),

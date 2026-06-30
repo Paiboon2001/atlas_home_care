@@ -72,7 +72,7 @@ class _DetailesPatientNewtaskWidgetState
           borderRadius: 30.0,
           borderWidth: 1.0,
           buttonSize: 44.0,
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_new_rounded,
             color: Colors.white,
             size: 18.0,
@@ -91,16 +91,16 @@ class _DetailesPatientNewtaskWidgetState
                     !FlutterFlowTheme.of(context).titleMediumIsCustom,
               ),
         ),
-        actions: [],
+        actions: const [],
         bottom: PreferredSize(
-          preferredSize: Size.fromHeight(8.0),
+          preferredSize: const Size.fromHeight(8.0),
           child: Container(),
         ),
         centerTitle: true,
         elevation: 0.0,
       ),
       body: ClipRRect(
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(24.0),
           topRight: Radius.circular(24.0),
         ),
@@ -109,7 +109,7 @@ class _DetailesPatientNewtaskWidgetState
           height: double.infinity,
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).primaryBackground,
-            boxShadow: [
+            boxShadow: const [
               BoxShadow(
                 blurRadius: 8.0,
                 color: Color(0x33000000),
@@ -119,7 +119,7 @@ class _DetailesPatientNewtaskWidgetState
                 ),
               )
             ],
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(24.0),
               topRight: Radius.circular(24.0),
             ),
@@ -129,7 +129,7 @@ class _DetailesPatientNewtaskWidgetState
             children: [
               Expanded(
                 child: ListView(
-                  padding: EdgeInsets.fromLTRB(
+                  padding: const EdgeInsets.fromLTRB(
                     0,
                     16.0,
                     0,
@@ -140,7 +140,7 @@ class _DetailesPatientNewtaskWidgetState
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Material(
                         color: Colors.transparent,
                         elevation: 2.0,
@@ -155,7 +155,7 @@ class _DetailesPatientNewtaskWidgetState
                           ),
                           child: Container(
                             width: double.infinity,
-                            color: Color(0x00000000),
+                            color: const Color(0x00000000),
                             child: ExpandableNotifier(
                               controller: _model.expandableExpandableController,
                               child: ExpandablePanel(
@@ -169,17 +169,17 @@ class _DetailesPatientNewtaskWidgetState
                                     ),
                                     gradient: LinearGradient(
                                       colors: [
-                                        Color(0xFF2370BC),
+                                        const Color(0xFF2370BC),
                                         FlutterFlowTheme.of(context).primary
                                       ],
-                                      stops: [0.0, 1.0],
-                                      begin: AlignmentDirectional(0.0, -1.0),
-                                      end: AlignmentDirectional(0, 1.0),
+                                      stops: const [0.0, 1.0],
+                                      begin: const AlignmentDirectional(0.0, -1.0),
+                                      end: const AlignmentDirectional(0, 1.0),
                                     ),
                                     borderRadius: BorderRadius.circular(24.0),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(16.0),
+                                    padding: const EdgeInsets.all(16.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -191,14 +191,14 @@ class _DetailesPatientNewtaskWidgetState
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFFA0D6FF),
+                                                const Color(0xFFA0D6FF),
                                                 FlutterFlowTheme.of(context)
                                                     .primary
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   0.0, -1.0),
-                                              end: AlignmentDirectional(0, 1.0),
+                                              end: const AlignmentDirectional(0, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                             border: Border.all(
@@ -211,7 +211,7 @@ class _DetailesPatientNewtaskWidgetState
                                             width: double.infinity,
                                             height: double.infinity,
                                             clipBehavior: Clip.antiAlias,
-                                            decoration: BoxDecoration(
+                                            decoration: const BoxDecoration(
                                               shape: BoxShape.circle,
                                             ),
                                             child: Image.asset(
@@ -261,7 +261,7 @@ class _DetailesPatientNewtaskWidgetState
                                                     Container(
                                                       decoration: BoxDecoration(
                                                         gradient:
-                                                            LinearGradient(
+                                                            const LinearGradient(
                                                           colors: [
                                                             Color(0xFFFF7600),
                                                             Color(0xFFFFB85C)
@@ -281,7 +281,7 @@ class _DetailesPatientNewtaskWidgetState
                                                       ),
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     4.0,
                                                                     4.0,
@@ -293,7 +293,7 @@ class _DetailesPatientNewtaskWidgetState
                                                           children: [
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Icon(
                                                                 Icons.info,
@@ -305,7 +305,7 @@ class _DetailesPatientNewtaskWidgetState
                                                             ),
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Text(
                                                                 'เยี่ยมต่อเนื่อง',
@@ -324,7 +324,7 @@ class _DetailesPatientNewtaskWidgetState
                                                                       letterSpacing:
                                                                           0.0,
                                                                       shadows: [
-                                                                        Shadow(
+                                                                        const Shadow(
                                                                           color:
                                                                               Color(0x0F6C6C6C),
                                                                           offset: Offset(
@@ -340,7 +340,7 @@ class _DetailesPatientNewtaskWidgetState
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                       ),
@@ -348,7 +348,7 @@ class _DetailesPatientNewtaskWidgetState
                                                 ],
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 8.0, 0.0, 0.0),
                                                 child: RichText(
@@ -367,7 +367,7 @@ class _DetailesPatientNewtaskWidgetState
                                                                   fontFamily: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMediumFamily,
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFFF9E7C9),
                                                                   letterSpacing:
                                                                       0.0,
@@ -377,11 +377,11 @@ class _DetailesPatientNewtaskWidgetState
                                                                           .bodyMediumIsCustom,
                                                                 ),
                                                       ),
-                                                      TextSpan(
+                                                      const TextSpan(
                                                         text: '/ ',
                                                         style: TextStyle(),
                                                       ),
-                                                      TextSpan(
+                                                      const TextSpan(
                                                         text:
                                                             'อายุ 48 ปี 6 ด. 13 ว.',
                                                         style: TextStyle(),
@@ -396,7 +396,7 @@ class _DetailesPatientNewtaskWidgetState
                                                                       context)
                                                                   .bodyMediumFamily,
                                                           color:
-                                                              Color(0xFFF9E7C9),
+                                                              const Color(0xFFF9E7C9),
                                                           letterSpacing: 0.0,
                                                           useGoogleFonts:
                                                               !FlutterFlowTheme
@@ -417,7 +417,7 @@ class _DetailesPatientNewtaskWidgetState
                                                   ))
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   8.0,
@@ -427,7 +427,7 @@ class _DetailesPatientNewtaskWidgetState
                                                         decoration:
                                                             BoxDecoration(
                                                           gradient:
-                                                              LinearGradient(
+                                                              const LinearGradient(
                                                             colors: [
                                                               Color(0xFFFF7600),
                                                               Color(0xFFFFB85C)
@@ -448,7 +448,7 @@ class _DetailesPatientNewtaskWidgetState
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       4.0,
                                                                       4.0,
@@ -461,7 +461,7 @@ class _DetailesPatientNewtaskWidgetState
                                                             children: [
                                                               Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Icon(
@@ -474,7 +474,7 @@ class _DetailesPatientNewtaskWidgetState
                                                               ),
                                                               Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Text(
@@ -492,7 +492,7 @@ class _DetailesPatientNewtaskWidgetState
                                                                         letterSpacing:
                                                                             0.0,
                                                                         shadows: [
-                                                                          Shadow(
+                                                                          const Shadow(
                                                                             color:
                                                                                 Color(0x0F6C6C6C),
                                                                             offset:
@@ -506,7 +506,7 @@ class _DetailesPatientNewtaskWidgetState
                                                                       ),
                                                                 ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 width: 4.0)),
                                                           ),
                                                         ),
@@ -517,7 +517,7 @@ class _DetailesPatientNewtaskWidgetState
                                             ],
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 12.0)),
+                                      ].divide(const SizedBox(width: 12.0)),
                                     ),
                                   ),
                                 ),
@@ -526,7 +526,7 @@ class _DetailesPatientNewtaskWidgetState
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsets.all(12.0),
+                                      padding: const EdgeInsets.all(12.0),
                                       child: Text(
                                         'อ่านทั้งหมด',
                                         style: FlutterFlowTheme.of(context)
@@ -554,7 +554,7 @@ class _DetailesPatientNewtaskWidgetState
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 16.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -603,7 +603,7 @@ class _DetailesPatientNewtaskWidgetState
                                                             .viewInsetsOf(
                                                                 context),
                                                         child:
-                                                            ChangeDatetimeWidget(),
+                                                            const ChangeDatetimeWidget(),
                                                       );
                                                     },
                                                   ).then((value) =>
@@ -623,7 +623,7 @@ class _DetailesPatientNewtaskWidgetState
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(6.0, 6.0,
                                                                 12.0, 6.0),
                                                     child: Row(
@@ -632,7 +632,7 @@ class _DetailesPatientNewtaskWidgetState
                                                       children: [
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Icon(
                                                             Icons.change_circle,
@@ -644,7 +644,7 @@ class _DetailesPatientNewtaskWidgetState
                                                         ),
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Text(
                                                             'เลื่อนการนัดหมาย',
@@ -661,7 +661,7 @@ class _DetailesPatientNewtaskWidgetState
                                                                   letterSpacing:
                                                                       0.0,
                                                                   shadows: [
-                                                                    Shadow(
+                                                                    const Shadow(
                                                                       color: Color(
                                                                           0x0F6C6C6C),
                                                                       offset: Offset(
@@ -679,7 +679,7 @@ class _DetailesPatientNewtaskWidgetState
                                                           ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 4.0)),
+                                                          const SizedBox(width: 4.0)),
                                                     ),
                                                   ),
                                                 ),
@@ -690,7 +690,7 @@ class _DetailesPatientNewtaskWidgetState
                                             physics:
                                                 const NeverScrollableScrollPhysics(),
                                             gridDelegate:
-                                                SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                               crossAxisCount: 2,
                                             ),
                                             crossAxisSpacing: 12.0,
@@ -759,19 +759,19 @@ class _DetailesPatientNewtaskWidgetState
                                                                     FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary,
-                                                                    Color(
+                                                                    const Color(
                                                                         0xFF216DAA)
                                                                   ],
-                                                                  stops: [
+                                                                  stops: const [
                                                                     0.0,
                                                                     1.0
                                                                   ],
                                                                   begin:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           -1.0),
                                                                   end:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0,
                                                                           1.0),
                                                                 ),
@@ -780,7 +780,7 @@ class _DetailesPatientNewtaskWidgetState
                                                               ),
                                                               child: Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Icon(
@@ -812,7 +812,7 @@ class _DetailesPatientNewtaskWidgetState
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         Container(
@@ -833,11 +833,11 @@ class _DetailesPatientNewtaskWidgetState
                                                             children: [
                                                               Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         -1.0,
                                                                         0.0),
                                                                 child:
-                                                                    Container(
+                                                                    SizedBox(
                                                                   width: double
                                                                       .infinity,
                                                                   child:
@@ -881,7 +881,7 @@ class _DetailesPatientNewtaskWidgetState
                                                                       focusedErrorBorder:
                                                                           InputBorder
                                                                               .none,
-                                                                      contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                      contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                           16.0,
                                                                           0.0,
                                                                           16.0,
@@ -910,7 +910,7 @@ class _DetailesPatientNewtaskWidgetState
                                                             ],
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                                 () => Column(
@@ -970,22 +970,22 @@ class _DetailesPatientNewtaskWidgetState
                                                                 gradient:
                                                                     LinearGradient(
                                                                   colors: [
-                                                                    Color(
+                                                                    const Color(
                                                                         0xFF78C7FF),
                                                                     FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary
                                                                   ],
-                                                                  stops: [
+                                                                  stops: const [
                                                                     0.0,
                                                                     1.0
                                                                   ],
                                                                   begin:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.56,
                                                                           -1.0),
                                                                   end:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           -0.56,
                                                                           1.0),
                                                                 ),
@@ -994,7 +994,7 @@ class _DetailesPatientNewtaskWidgetState
                                                               ),
                                                               child: Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Icon(
@@ -1026,7 +1026,7 @@ class _DetailesPatientNewtaskWidgetState
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         Container(
@@ -1047,11 +1047,11 @@ class _DetailesPatientNewtaskWidgetState
                                                             children: [
                                                               Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         -1.0,
                                                                         0.0),
                                                                 child:
-                                                                    Container(
+                                                                    SizedBox(
                                                                   width: double
                                                                       .infinity,
                                                                   child:
@@ -1095,7 +1095,7 @@ class _DetailesPatientNewtaskWidgetState
                                                                       focusedErrorBorder:
                                                                           InputBorder
                                                                               .none,
-                                                                      contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                      contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                           16.0,
                                                                           0.0,
                                                                           16.0,
@@ -1124,7 +1124,7 @@ class _DetailesPatientNewtaskWidgetState
                                                             ],
                                                           ),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 8.0)),
                                                     ),
                                               ][index]();
@@ -1189,21 +1189,21 @@ class _DetailesPatientNewtaskWidgetState
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .primary,
-                                                          Color(0xFF216DAA)
+                                                          const Color(0xFF216DAA)
                                                         ],
-                                                        stops: [0.0, 1.0],
+                                                        stops: const [0.0, 1.0],
                                                         begin:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.56, -1.0),
                                                         end:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 -0.56, 1.0),
                                                       ),
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: FaIcon(
                                                         FontAwesomeIcons
@@ -1234,7 +1234,7 @@ class _DetailesPatientNewtaskWidgetState
                                                                   .labelSmallIsCustom,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 8.0)),
+                                                ].divide(const SizedBox(width: 8.0)),
                                               ),
                                               Container(
                                                 decoration: BoxDecoration(
@@ -1247,11 +1247,11 @@ class _DetailesPatientNewtaskWidgetState
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, 0.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsets.all(12.0),
+                                                        const EdgeInsets.all(12.0),
                                                     child: Text(
                                                       'บ้านเลขที่ 1 หมู่ 6 บ้านกฤษดานคร แขวงราษฎร์บูรณะ เขตราษฎร์บูรณะ กรุงเทพมหานคร 10140',
                                                       style: FlutterFlowTheme
@@ -1275,9 +1275,9 @@ class _DetailesPatientNewtaskWidgetState
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 8.0)),
+                                            ].divide(const SizedBox(height: 8.0)),
                                           ),
-                                        ].divide(SizedBox(height: 16.0)),
+                                        ].divide(const SizedBox(height: 16.0)),
                                       ),
                                     ),
                                     Divider(
@@ -1287,7 +1287,7 @@ class _DetailesPatientNewtaskWidgetState
                                           .alternate,
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 12.0, 0.0, 12.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.min,
@@ -1295,11 +1295,11 @@ class _DetailesPatientNewtaskWidgetState
                                             CrossAxisAlignment.center,
                                         children: [
                                           Container(
-                                            decoration: BoxDecoration(),
+                                            decoration: const BoxDecoration(),
                                           ),
                                           Theme(
                                             data: ThemeData(
-                                              checkboxTheme: CheckboxThemeData(
+                                              checkboxTheme: const CheckboxThemeData(
                                                 visualDensity:
                                                     VisualDensity.compact,
                                                 materialTapTargetSize:
@@ -1308,7 +1308,7 @@ class _DetailesPatientNewtaskWidgetState
                                                 shape: CircleBorder(),
                                               ),
                                               unselectedWidgetColor:
-                                                  Color(0xFF9C9C9C),
+                                                  const Color(0xFF9C9C9C),
                                             ),
                                             child: Checkbox(
                                               value: _model.checkboxValue ??=
@@ -1317,10 +1317,10 @@ class _DetailesPatientNewtaskWidgetState
                                                 safeSetState(() => _model
                                                     .checkboxValue = newValue!);
                                               },
-                                              side: (Color(0xFF9C9C9C) != null)
-                                                  ? BorderSide(
+                                              side: (const Color(0xFF9C9C9C) != null)
+                                                  ? const BorderSide(
                                                       width: 2,
-                                                      color: Color(0xFF9C9C9C)!,
+                                                      color: Color(0xFF9C9C9C),
                                                     )
                                                   : null,
                                               activeColor:
@@ -1345,7 +1345,7 @@ class _DetailesPatientNewtaskWidgetState
                                                   children: [
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               -1.0, 0.0),
                                                       child: Text(
                                                         'โทรยืนยันนัดผู้ป่วยล่วงหน้า  :',
@@ -1372,11 +1372,11 @@ class _DetailesPatientNewtaskWidgetState
                                                     ))
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 -1.0, 0.0),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       8.0,
                                                                       0.0,
@@ -1424,11 +1424,11 @@ class _DetailesPatientNewtaskWidgetState
                                                 ))
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.0, 0.0),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,
@@ -1511,8 +1511,8 @@ class _DetailesPatientNewtaskWidgetState
                                             size: 24.0,
                                           ),
                                         ]
-                                            .divide(SizedBox(width: 12.0))
-                                            .addToEnd(SizedBox(width: 16.0)),
+                                            .divide(const SizedBox(width: 12.0))
+                                            .addToEnd(const SizedBox(width: 16.0)),
                                       ),
                                     ),
                                     Divider(
@@ -1527,7 +1527,7 @@ class _DetailesPatientNewtaskWidgetState
                                           MainAxisAlignment.center,
                                       children: [
                                         Padding(
-                                          padding: EdgeInsets.all(12.0),
+                                          padding: const EdgeInsets.all(12.0),
                                           child: Text(
                                             'อ่านน้อยลง',
                                             style: FlutterFlowTheme.of(context)
@@ -1553,9 +1553,9 @@ class _DetailesPatientNewtaskWidgetState
                                         ),
                                       ],
                                     ),
-                                  ].addToStart(SizedBox(height: 16.0)),
+                                  ].addToStart(const SizedBox(height: 16.0)),
                                 ),
-                                theme: ExpandableThemeData(
+                                theme: const ExpandableThemeData(
                                   tapHeaderToExpand: false,
                                   tapBodyToExpand: true,
                                   tapBodyToCollapse: true,
@@ -1573,7 +1573,7 @@ class _DetailesPatientNewtaskWidgetState
                       child: wrapWithModel(
                         model: _model.haealthModel,
                         updateCallback: () => safeSetState(() {}),
-                        child: HaealthWidget(),
+                        child: const HaealthWidget(),
                       ),
                     ),
                   ],
@@ -1583,7 +1583,7 @@ class _DetailesPatientNewtaskWidgetState
                 width: double.infinity,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       blurRadius: 4.0,
                       color: Color(0x33000000),
@@ -1593,18 +1593,18 @@ class _DetailesPatientNewtaskWidgetState
                       ),
                     )
                   ],
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(24.0),
                     topRight: Radius.circular(24.0),
                   ),
                 ),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
                   child: MasonryGridView.builder(
                     physics: const NeverScrollableScrollPhysics(),
                     gridDelegate:
-                        SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                        const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                     ),
                     crossAxisSpacing: 8.0,
@@ -1627,7 +1627,7 @@ class _DetailesPatientNewtaskWidgetState
                                   builder: (context) {
                                     return Padding(
                                       padding: MediaQuery.viewInsetsOf(context),
-                                      child: ResonCancelWidget(),
+                                      child: const ResonCancelWidget(),
                                     );
                                   },
                                 ).then((value) => safeSetState(() {}));
@@ -1653,12 +1653,12 @@ class _DetailesPatientNewtaskWidgetState
                                       .secondaryBackground,
                                   borderRadius: BorderRadius.circular(100.0),
                                   border: Border.all(
-                                    color: Color(0xFFBDBDBD),
+                                    color: const Color(0xFFBDBDBD),
                                     width: 1.0,
                                   ),
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Text(
                                     'ปฏิเสธ',
                                     style: FlutterFlowTheme.of(context)
@@ -1706,16 +1706,16 @@ class _DetailesPatientNewtaskWidgetState
                                   gradient: LinearGradient(
                                     colors: [
                                       FlutterFlowTheme.of(context).success,
-                                      Color(0xFF1D8B6B)
+                                      const Color(0xFF1D8B6B)
                                     ],
-                                    stops: [0.0, 1.0],
-                                    begin: AlignmentDirectional(0.0, -1.0),
-                                    end: AlignmentDirectional(0, 1.0),
+                                    stops: const [0.0, 1.0],
+                                    begin: const AlignmentDirectional(0.0, -1.0),
+                                    end: const AlignmentDirectional(0, 1.0),
                                   ),
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Text(
                                     'รับงาน',
                                     style: FlutterFlowTheme.of(context)

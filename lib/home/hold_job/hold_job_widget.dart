@@ -1,14 +1,10 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/home/widget/respon_job/respon_job_widget.dart';
-import 'dart:ui';
 import '/index.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'hold_job_model.dart';
 export 'hold_job_model.dart';
@@ -59,7 +55,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
           borderRadius: 30.0,
           borderWidth: 1.0,
           buttonSize: 44.0,
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_new_rounded,
             color: Colors.white,
             size: 18.0,
@@ -80,20 +76,20 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
         ),
         actions: [
           Container(
-            decoration: BoxDecoration(),
+            decoration: const BoxDecoration(),
             child: Align(
-              alignment: AlignmentDirectional(-0.63, 0.0),
+              alignment: const AlignmentDirectional(-0.63, 0.0),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
                 child: Container(
                   width: 40.0,
                   height: 40.0,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Color(0x93164874),
                     shape: BoxShape.circle,
                   ),
                   child: Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Text(
                       '5',
                       style: FlutterFlowTheme.of(context).titleSmall.override(
@@ -113,7 +109,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
           ),
         ],
         bottom: PreferredSize(
-          preferredSize: Size.fromHeight(8.0),
+          preferredSize: const Size.fromHeight(8.0),
           child: Container(),
         ),
         centerTitle: true,
@@ -124,7 +120,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
         height: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).primaryBackground,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               blurRadius: 8.0,
               color: Color(0x33000000),
@@ -134,13 +130,13 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
               ),
             )
           ],
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
         ),
         child: ListView(
-          padding: EdgeInsets.fromLTRB(
+          padding: const EdgeInsets.fromLTRB(
             0,
             16.0,
             0,
@@ -149,7 +145,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
           scrollDirection: Axis.vertical,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
               child: MasonryGridView.builder(
                 physics: const NeverScrollableScrollPhysics(),
                 gridDelegate: SliverSimpleGridDelegateWithFixedCrossAxisCount(
@@ -187,7 +183,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 4.0,
                                   color: Color(0x17000000),
@@ -203,7 +199,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsets.all(12.0),
+                                  padding: const EdgeInsets.all(12.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment:
@@ -216,9 +212,9 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(1.0, 1.0),
+                                                const AlignmentDirectional(1.0, 1.0),
                                             child: Stack(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   1.0, 1.0),
                                               children: [
                                                 Container(
@@ -269,7 +265,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                                                         'assets/images/man1.png',
                                                       ).image,
                                                     ),
-                                                    gradient: LinearGradient(
+                                                    gradient: const LinearGradient(
                                                       colors: [
                                                         Color(0xFFFFE7A2),
                                                         Color(0xFFFFBD00)
@@ -287,14 +283,14 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                                                 if (FFAppState().draft == true)
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             1.0, 1.0),
                                                     child: Container(
                                                       width: 20.0,
                                                       height: 20.0,
                                                       decoration: BoxDecoration(
                                                         color:
-                                                            Color(0xFFC9CFD6),
+                                                            const Color(0xFFC9CFD6),
                                                         shape: BoxShape.circle,
                                                         border: Border.all(
                                                           color: FlutterFlowTheme
@@ -331,7 +327,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .titleSmallFamily,
-                                                      color: Color(0xFF944D04),
+                                                      color: const Color(0xFF944D04),
                                                       letterSpacing: 0.0,
                                                       useGoogleFonts:
                                                           !FlutterFlowTheme.of(
@@ -385,7 +381,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                                                                     .bodySmallIsCustom,
                                                           ),
                                                     ),
-                                                    TextSpan(
+                                                    const TextSpan(
                                                       text: ' ปี ',
                                                       style: TextStyle(),
                                                     ),
@@ -408,7 +404,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                                                                     .bodySmallIsCustom,
                                                           ),
                                                     ),
-                                                    TextSpan(
+                                                    const TextSpan(
                                                       text: ' เดือน ',
                                                       style: TextStyle(),
                                                     ),
@@ -431,7 +427,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                                                                     .bodySmallIsCustom,
                                                           ),
                                                     ),
-                                                    TextSpan(
+                                                    const TextSpan(
                                                       text: ' วัน',
                                                       style: TextStyle(),
                                                     )
@@ -531,7 +527,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                                               .primaryBackground,
                                           shape: BoxShape.circle,
                                         ),
-                                        child: Icon(
+                                        child: const Icon(
                                           Icons.keyboard_arrow_right_rounded,
                                           color: Color(0xFF9DA7A7),
                                           size: 20.0,
@@ -543,7 +539,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                                 Container(
                                   width: double.infinity,
                                   decoration: BoxDecoration(
-                                    gradient: LinearGradient(
+                                    gradient: const LinearGradient(
                                       colors: [
                                         Color(0xFFFFFBE6),
                                         Color(0xFFFFF5C9)
@@ -560,7 +556,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(12.0),
+                                    padding: const EdgeInsets.all(12.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
@@ -580,7 +576,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .labelSmallFamily,
-                                                      color: Color(0xFF944D04),
+                                                      color: const Color(0xFF944D04),
                                                       letterSpacing: 0.0,
                                                       useGoogleFonts:
                                                           !FlutterFlowTheme.of(
@@ -605,10 +601,10 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                                                                   .bodyMediumIsCustom,
                                                         ),
                                               ),
-                                            ].divide(SizedBox(height: 6.0)),
+                                            ].divide(const SizedBox(height: 6.0)),
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 40.0,
                                           child: VerticalDivider(
                                             width: 1.0,
@@ -632,7 +628,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .labelSmallFamily,
-                                                      color: Color(0xFF944D04),
+                                                      color: const Color(0xFF944D04),
                                                       letterSpacing: 0.0,
                                                       useGoogleFonts:
                                                           !FlutterFlowTheme.of(
@@ -657,10 +653,10 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                                                                   .bodyMediumIsCustom,
                                                         ),
                                               ),
-                                            ].divide(SizedBox(height: 6.0)),
+                                            ].divide(const SizedBox(height: 6.0)),
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 12.0)),
+                                      ].divide(const SizedBox(width: 12.0)),
                                     ),
                                   ),
                                 ),
@@ -671,7 +667,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                     () => wrapWithModel(
                           model: _model.responJobModel1,
                           updateCallback: () => safeSetState(() {}),
-                          child: ResponJobWidget(
+                          child: const ResponJobWidget(
                             img:
                                 'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/4mq6lu0xx1l8/oldman1.png',
                             mainname: 'นายมังการ มุสยานา',
@@ -680,7 +676,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                     () => wrapWithModel(
                           model: _model.responJobModel2,
                           updateCallback: () => safeSetState(() {}),
-                          child: ResponJobWidget(
+                          child: const ResponJobWidget(
                             img:
                                 'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/16ztnqju67da/student_girl.png',
                             mainname: 'เด็กหญิงกัญญา มหานคร',
@@ -689,7 +685,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                     () => wrapWithModel(
                           model: _model.responJobModel3,
                           updateCallback: () => safeSetState(() {}),
-                          child: ResponJobWidget(
+                          child: const ResponJobWidget(
                             img:
                                 'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/m7xdpmwhlgki/girl1.png',
                             mainname: 'นางวิมล สกุลลุนช่อง',
@@ -698,7 +694,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                     () => wrapWithModel(
                           model: _model.responJobModel4,
                           updateCallback: () => safeSetState(() {}),
-                          child: ResponJobWidget(
+                          child: const ResponJobWidget(
                             img:
                                 'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/9e97rkkhahtb/oldgirl1.png',
                             mainname: 'นางธรณี พันปีหลวง',
@@ -708,7 +704,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                 },
               ),
             ),
-          ].divide(SizedBox(height: 16.0)),
+          ].divide(const SizedBox(height: 16.0)),
         ),
       ),
     );

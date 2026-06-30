@@ -1,7 +1,6 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/home/widget/buttonsheetpatient/buttonsheetpatient_widget.dart';
 import '/home/widget/late/late_widget.dart';
 import '/home/widget/new_job/new_job_widget.dart';
@@ -11,10 +10,8 @@ import '/home/widget/tablecalenda/tablecalenda_widget.dart';
 import '/map/widget/navigatebutton/navigatebutton_widget.dart';
 import '/map/widget/pin/pin_widget.dart';
 import '/utils/navbar/navbar_widget.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:badges/badges.dart' as badges;
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:google_fonts/google_fonts.dart';

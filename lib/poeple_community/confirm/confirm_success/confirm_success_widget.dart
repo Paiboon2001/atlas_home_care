@@ -5,13 +5,8 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/utils/sucess/sucess_widget.dart';
 import '/components/main_button_widget.dart';
 import 'dart:async';
-import 'dart:math';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'confirm_success_model.dart';
 export 'confirm_success_model.dart';
 

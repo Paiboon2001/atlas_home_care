@@ -1,14 +1,10 @@
 import '/assessmentform/thirtytree/widget/start_as_bottom/start_as_bottom_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'blood_summary_model.dart';
 export 'blood_summary_model.dart';
 
@@ -87,13 +83,13 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
             Container(
               width: 20.0,
               height: 20.0,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.transparent,
               ),
             ),
           ],
         ),
-        actions: [],
+        actions: const [],
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -104,7 +100,7 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
             height: double.infinity,
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).primaryBackground,
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(
                   blurRadius: 4.0,
                   color: Color(0x33000000),
@@ -114,7 +110,7 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                   ),
                 )
               ],
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(24.0),
                 topRight: Radius.circular(24.0),
               ),
@@ -125,7 +121,7 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
               children: [
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 8.0, 16.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 8.0, 16.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -144,7 +140,7 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                   PointerDeviceKind.unknown
                                 },
                               ),
-                              child: Container(
+                              child: SizedBox(
                                 height: MediaQuery.of(context).size.height / 3,
                                 width: MediaQuery.of(context).size.width,
                                 child: CupertinoDatePicker(
@@ -166,7 +162,7 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Text(
                             valueOrDefault<String>(
                               dateTimeFormat("yyy", _model.datePicked),
@@ -197,9 +193,9 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                 Expanded(
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: ListView(
-                      padding: EdgeInsets.fromLTRB(
+                      padding: const EdgeInsets.fromLTRB(
                         0,
                         0,
                         0,
@@ -240,20 +236,20 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
                                     fit: BoxFit.contain,
-                                    alignment: AlignmentDirectional(1.0, 1.0),
+                                    alignment: const AlignmentDirectional(1.0, 1.0),
                                     image: Image.network(
                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/z7bzui8rxxa2/blood_as.png',
                                     ).image,
                                   ),
                                   gradient: LinearGradient(
                                     colors: [
-                                      Color(0xFF92CCFF),
+                                      const Color(0xFF92CCFF),
                                       FlutterFlowTheme.of(context)
                                           .secondaryBackground
                                     ],
-                                    stops: [0.0, 0.5],
-                                    begin: AlignmentDirectional(1.0, 0.34),
-                                    end: AlignmentDirectional(-1.0, -0.34),
+                                    stops: const [0.0, 0.5],
+                                    begin: const AlignmentDirectional(1.0, 0.34),
+                                    end: const AlignmentDirectional(-1.0, -0.34),
                                   ),
                                   borderRadius: BorderRadius.circular(24.0),
                                 ),
@@ -266,11 +262,11 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 12.0, 0.0, 0.0),
                                           child: Container(
                                             decoration: BoxDecoration(
-                                              boxShadow: [
+                                              boxShadow: const [
                                                 BoxShadow(
                                                   blurRadius: 4.0,
                                                   color: Color(0x19000000),
@@ -282,17 +278,17 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                               ],
                                               gradient: LinearGradient(
                                                 colors: [
-                                                  Color(0xFF59C0EF),
+                                                  const Color(0xFF59C0EF),
                                                   FlutterFlowTheme.of(context)
                                                       .info
                                                 ],
-                                                stops: [0.0, 1.0],
-                                                begin: AlignmentDirectional(
+                                                stops: const [0.0, 1.0],
+                                                begin: const AlignmentDirectional(
                                                     1.0, -1.0),
-                                                end: AlignmentDirectional(
+                                                end: const AlignmentDirectional(
                                                     -1.0, 1.0),
                                               ),
-                                              borderRadius: BorderRadius.only(
+                                              borderRadius: const BorderRadius.only(
                                                 topRight:
                                                     Radius.circular(100.0),
                                                 bottomRight:
@@ -300,7 +296,7 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                               ),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       12.0, 6.0, 12.0, 6.0),
                                               child: Row(
@@ -308,7 +304,7 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                                 children: [
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Icon(
                                                       Icons.info_rounded,
@@ -333,7 +329,7 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                                               .secondaryBackground,
                                                           letterSpacing: 0.1,
                                                           shadows: [
-                                                            Shadow(
+                                                            const Shadow(
                                                               color: Color(
                                                                   0x34737373),
                                                               offset: Offset(
@@ -347,14 +343,14 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                                                   .bodyMediumIsCustom,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 8.0)),
+                                                ].divide(const SizedBox(width: 8.0)),
                                               ),
                                             ),
                                           ),
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 0.0, 16.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -377,7 +373,7 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                                                       context)
                                                                   .bodyMediumFamily,
                                                           color:
-                                                              Color(0xFF0779D3),
+                                                              const Color(0xFF0779D3),
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w500,
@@ -387,7 +383,7 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                                                   .bodyMediumIsCustom,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 8.0)),
+                                                ].divide(const SizedBox(width: 8.0)),
                                               ),
                                               Text(
                                                 'ผู้ประเมิน : นางวิมล สกล',
@@ -412,16 +408,16 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                                               .bodyMediumIsCustom,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(height: 8.0)),
+                                            ].divide(const SizedBox(height: 8.0)),
                                           ),
                                         ),
-                                      ].divide(SizedBox(height: 12.0)),
+                                      ].divide(const SizedBox(height: 12.0)),
                                     ),
                                   ],
                                 ),
                               ),
                             ),
-                          ].divide(SizedBox(height: 8.0)),
+                          ].divide(const SizedBox(height: 8.0)),
                         ),
                         Column(
                           mainAxisSize: MainAxisSize.max,
@@ -446,20 +442,20 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                   fit: BoxFit.contain,
-                                  alignment: AlignmentDirectional(1.0, 1.0),
+                                  alignment: const AlignmentDirectional(1.0, 1.0),
                                   image: Image.network(
                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/z7bzui8rxxa2/blood_as.png',
                                   ).image,
                                 ),
                                 gradient: LinearGradient(
                                   colors: [
-                                    Color(0xFF92CCFF),
+                                    const Color(0xFF92CCFF),
                                     FlutterFlowTheme.of(context)
                                         .secondaryBackground
                                   ],
-                                  stops: [0.0, 0.5],
-                                  begin: AlignmentDirectional(1.0, 0.34),
-                                  end: AlignmentDirectional(-1.0, -0.34),
+                                  stops: const [0.0, 0.5],
+                                  begin: const AlignmentDirectional(1.0, 0.34),
+                                  end: const AlignmentDirectional(-1.0, -0.34),
                                 ),
                                 borderRadius: BorderRadius.circular(24.0),
                               ),
@@ -471,11 +467,11 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 12.0, 0.0, 0.0),
                                         child: Container(
                                           decoration: BoxDecoration(
-                                            boxShadow: [
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 4.0,
                                                 color: Color(0x19000000),
@@ -487,17 +483,17 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                             ],
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0xFF59C0EF),
+                                                const Color(0xFF59C0EF),
                                                 FlutterFlowTheme.of(context)
                                                     .info
                                               ],
-                                              stops: [0.0, 1.0],
-                                              begin: AlignmentDirectional(
+                                              stops: const [0.0, 1.0],
+                                              begin: const AlignmentDirectional(
                                                   1.0, -1.0),
-                                              end: AlignmentDirectional(
+                                              end: const AlignmentDirectional(
                                                   -1.0, 1.0),
                                             ),
-                                            borderRadius: BorderRadius.only(
+                                            borderRadius: const BorderRadius.only(
                                               topRight: Radius.circular(100.0),
                                               bottomRight:
                                                   Radius.circular(100.0),
@@ -505,14 +501,14 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 6.0, 12.0, 6.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.min,
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Icon(
                                                     Icons.info_rounded,
@@ -538,7 +534,7 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                                                 .secondaryBackground,
                                                             letterSpacing: 0.1,
                                                             shadows: [
-                                                              Shadow(
+                                                              const Shadow(
                                                                 color: Color(
                                                                     0x34737373),
                                                                 offset: Offset(
@@ -552,13 +548,13 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                                                     .bodyMediumIsCustom,
                                                           ),
                                                 ),
-                                              ].divide(SizedBox(width: 8.0)),
+                                              ].divide(const SizedBox(width: 8.0)),
                                             ),
                                           ),
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 0.0, 16.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -581,7 +577,7 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                                                     context)
                                                                 .bodyMediumFamily,
                                                         color:
-                                                            Color(0xFF0779D3),
+                                                            const Color(0xFF0779D3),
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -591,7 +587,7 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                                                 .bodyMediumIsCustom,
                                                       ),
                                                 ),
-                                              ].divide(SizedBox(width: 8.0)),
+                                              ].divide(const SizedBox(width: 8.0)),
                                             ),
                                             Text(
                                               'ผู้ประเมิน : นางวิเศษ เจริญพิพัฒน์',
@@ -614,17 +610,17 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
                                                             .bodyMediumIsCustom,
                                                   ),
                                             ),
-                                          ].divide(SizedBox(height: 8.0)),
+                                          ].divide(const SizedBox(height: 8.0)),
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 12.0)),
+                                    ].divide(const SizedBox(height: 12.0)),
                                   ),
                                 ],
                               ),
                             ),
-                          ].divide(SizedBox(height: 8.0)),
+                          ].divide(const SizedBox(height: 8.0)),
                         ),
-                      ].divide(SizedBox(height: 16.0)),
+                      ].divide(const SizedBox(height: 16.0)),
                     ),
                   ),
                 ),
@@ -632,7 +628,7 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
             ),
           ),
           Align(
-            alignment: AlignmentDirectional(0.0, 1.0),
+            alignment: const AlignmentDirectional(0.0, 1.0),
             child: InkWell(
               splashColor: Colors.transparent,
               focusColor: Colors.transparent,
@@ -644,7 +640,7 @@ class _BloodSummaryWidgetState extends State<BloodSummaryWidget> {
               child: wrapWithModel(
                 model: _model.startAsBottomModel,
                 updateCallback: () => safeSetState(() {}),
-                child: StartAsBottomWidget(
+                child: const StartAsBottomWidget(
                   text: 'เริ่มทำแบบประเมิน',
                 ),
               ),

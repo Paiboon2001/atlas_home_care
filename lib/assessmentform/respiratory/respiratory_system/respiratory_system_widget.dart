@@ -8,16 +8,11 @@ import '/sakon_nakhon/crisisvictims/widget/ninefore/ninefore_widget.dart';
 import '/sakon_nakhon/crisisvictims/widget/nineone/nineone_widget.dart';
 import '/sakon_nakhon/crisisvictims/widget/ninethree/ninethree_widget.dart';
 import '/sakon_nakhon/crisisvictims/widget/ninetwo/ninetwo_widget.dart';
-import 'dart:math';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'respiratory_system_model.dart';
 export 'respiratory_system_model.dart';
 

@@ -1,13 +1,9 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'appointment_history_model.dart';
 export 'appointment_history_model.dart';
 
@@ -56,7 +52,7 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
           borderRadius: 30.0,
           borderWidth: 1.0,
           buttonSize: 44.0,
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_new_rounded,
             color: Colors.white,
             size: 18.0,
@@ -75,7 +71,7 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                     !FlutterFlowTheme.of(context).titleMediumIsCustom,
               ),
         ),
-        actions: [],
+        actions: const [],
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -84,7 +80,7 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
         height: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).primaryBackground,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               blurRadius: 4.0,
               color: Color(0x33000000),
@@ -94,7 +90,7 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
               ),
             )
           ],
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -104,7 +100,7 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 8.0, 16.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 8.0, 16.0),
               child: InkWell(
                 splashColor: Colors.transparent,
                 focusColor: Colors.transparent,
@@ -123,7 +119,7 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                               PointerDeviceKind.unknown
                             },
                           ),
-                          child: Container(
+                          child: SizedBox(
                             height: MediaQuery.of(context).size.height / 3,
                             width: MediaQuery.of(context).size.width,
                             child: CupertinoDatePicker(
@@ -145,7 +141,7 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(-1.0, 0.0),
+                      alignment: const AlignmentDirectional(-1.0, 0.0),
                       child: Text(
                         valueOrDefault<String>(
                           dateTimeFormat("yyy", _model.datePicked),
@@ -174,9 +170,9 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
             ),
             Expanded(
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: ListView(
-                  padding: EdgeInsets.fromLTRB(
+                  padding: const EdgeInsets.fromLTRB(
                     0,
                     0,
                     0,
@@ -212,11 +208,11 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(1.0, -1.0),
+                                alignment: const AlignmentDirectional(1.0, -1.0),
                                 child: Padding(
-                                  padding: EdgeInsets.all(8.0),
+                                  padding: const EdgeInsets.all(8.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.only(),
+                                    borderRadius: const BorderRadius.only(),
                                     child: Image.network(
                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/k7b8dc1pd59x/ChatGPT_Image_21_เม.ย._2568_15_14_32.png',
                                       width: 80.0,
@@ -231,11 +227,11 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 12.0, 0.0, 0.0),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        boxShadow: [
+                                        boxShadow: const [
                                           BoxShadow(
                                             blurRadius: 4.0,
                                             color: Color(0x19000000),
@@ -247,27 +243,27 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                                         ],
                                         gradient: LinearGradient(
                                           colors: [
-                                            Color(0xFF59C0EF),
+                                            const Color(0xFF59C0EF),
                                             FlutterFlowTheme.of(context).info
                                           ],
-                                          stops: [0.0, 1.0],
+                                          stops: const [0.0, 1.0],
                                           begin:
-                                              AlignmentDirectional(1.0, -1.0),
-                                          end: AlignmentDirectional(-1.0, 1.0),
+                                              const AlignmentDirectional(1.0, -1.0),
+                                          end: const AlignmentDirectional(-1.0, 1.0),
                                         ),
-                                        borderRadius: BorderRadius.only(
+                                        borderRadius: const BorderRadius.only(
                                           topRight: Radius.circular(100.0),
                                           bottomRight: Radius.circular(100.0),
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             12.0, 6.0, 12.0, 6.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.min,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 Icons.info_rounded,
@@ -292,7 +288,7 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                                                         .secondaryBackground,
                                                     letterSpacing: 0.1,
                                                     shadows: [
-                                                      Shadow(
+                                                      const Shadow(
                                                         color:
                                                             Color(0x34737373),
                                                         offset:
@@ -306,13 +302,13 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                                                             .bodyMediumIsCustom,
                                                   ),
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 0.0, 16.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -343,7 +339,7 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                                                             .bodyMediumIsCustom,
                                                   ),
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                         Text(
                                           'โรคเบาหวาน',
@@ -364,15 +360,15 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                                                         .bodyMediumIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(height: 8.0)),
+                                      ].divide(const SizedBox(height: 8.0)),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 12.0)),
+                                ].divide(const SizedBox(height: 12.0)),
                               ),
                             ],
                           ),
                         ),
-                      ].divide(SizedBox(height: 12.0)),
+                      ].divide(const SizedBox(height: 12.0)),
                     ),
                     Column(
                       mainAxisSize: MainAxisSize.max,
@@ -401,11 +397,11 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(1.0, -1.0),
+                                alignment: const AlignmentDirectional(1.0, -1.0),
                                 child: Padding(
-                                  padding: EdgeInsets.all(8.0),
+                                  padding: const EdgeInsets.all(8.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.only(),
+                                    borderRadius: const BorderRadius.only(),
                                     child: Image.network(
                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/k7b8dc1pd59x/ChatGPT_Image_21_เม.ย._2568_15_14_32.png',
                                       width: 80.0,
@@ -420,11 +416,11 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 12.0, 0.0, 0.0),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        boxShadow: [
+                                        boxShadow: const [
                                           BoxShadow(
                                             blurRadius: 4.0,
                                             color: Color(0x19000000),
@@ -436,27 +432,27 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                                         ],
                                         gradient: LinearGradient(
                                           colors: [
-                                            Color(0xFF59C0EF),
+                                            const Color(0xFF59C0EF),
                                             FlutterFlowTheme.of(context).info
                                           ],
-                                          stops: [0.0, 1.0],
+                                          stops: const [0.0, 1.0],
                                           begin:
-                                              AlignmentDirectional(1.0, -1.0),
-                                          end: AlignmentDirectional(-1.0, 1.0),
+                                              const AlignmentDirectional(1.0, -1.0),
+                                          end: const AlignmentDirectional(-1.0, 1.0),
                                         ),
-                                        borderRadius: BorderRadius.only(
+                                        borderRadius: const BorderRadius.only(
                                           topRight: Radius.circular(100.0),
                                           bottomRight: Radius.circular(100.0),
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             12.0, 6.0, 12.0, 6.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.min,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 Icons.info_rounded,
@@ -481,7 +477,7 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                                                         .secondaryBackground,
                                                     letterSpacing: 0.1,
                                                     shadows: [
-                                                      Shadow(
+                                                      const Shadow(
                                                         color:
                                                             Color(0x34737373),
                                                         offset:
@@ -495,13 +491,13 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                                                             .bodyMediumIsCustom,
                                                   ),
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 0.0, 16.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -532,7 +528,7 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                                                             .bodyMediumIsCustom,
                                                   ),
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                         Text(
                                           'โรคเบาหวาน',
@@ -553,10 +549,10 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                                                         .bodyMediumIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(height: 8.0)),
+                                      ].divide(const SizedBox(height: 8.0)),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 12.0)),
+                                ].divide(const SizedBox(height: 12.0)),
                               ),
                             ],
                           ),
@@ -571,11 +567,11 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(1.0, -1.0),
+                                alignment: const AlignmentDirectional(1.0, -1.0),
                                 child: Padding(
-                                  padding: EdgeInsets.all(8.0),
+                                  padding: const EdgeInsets.all(8.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.only(),
+                                    borderRadius: const BorderRadius.only(),
                                     child: Image.network(
                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/k7b8dc1pd59x/ChatGPT_Image_21_เม.ย._2568_15_14_32.png',
                                       width: 80.0,
@@ -590,11 +586,11 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 12.0, 0.0, 0.0),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        boxShadow: [
+                                        boxShadow: const [
                                           BoxShadow(
                                             blurRadius: 4.0,
                                             color: Color(0x19000000),
@@ -606,27 +602,27 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                                         ],
                                         gradient: LinearGradient(
                                           colors: [
-                                            Color(0xFF59C0EF),
+                                            const Color(0xFF59C0EF),
                                             FlutterFlowTheme.of(context).info
                                           ],
-                                          stops: [0.0, 1.0],
+                                          stops: const [0.0, 1.0],
                                           begin:
-                                              AlignmentDirectional(1.0, -1.0),
-                                          end: AlignmentDirectional(-1.0, 1.0),
+                                              const AlignmentDirectional(1.0, -1.0),
+                                          end: const AlignmentDirectional(-1.0, 1.0),
                                         ),
-                                        borderRadius: BorderRadius.only(
+                                        borderRadius: const BorderRadius.only(
                                           topRight: Radius.circular(100.0),
                                           bottomRight: Radius.circular(100.0),
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             12.0, 6.0, 12.0, 6.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.min,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 Icons.info_rounded,
@@ -651,7 +647,7 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                                                         .secondaryBackground,
                                                     letterSpacing: 0.1,
                                                     shadows: [
-                                                      Shadow(
+                                                      const Shadow(
                                                         color:
                                                             Color(0x34737373),
                                                         offset:
@@ -665,13 +661,13 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                                                             .bodyMediumIsCustom,
                                                   ),
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 0.0, 16.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -702,7 +698,7 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                                                             .bodyMediumIsCustom,
                                                   ),
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                         Text(
                                           'โรคเบาหวาน',
@@ -723,17 +719,17 @@ class _AppointmentHistoryWidgetState extends State<AppointmentHistoryWidget> {
                                                         .bodyMediumIsCustom,
                                               ),
                                         ),
-                                      ].divide(SizedBox(height: 8.0)),
+                                      ].divide(const SizedBox(height: 8.0)),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 12.0)),
+                                ].divide(const SizedBox(height: 12.0)),
                               ),
                             ],
                           ),
                         ),
-                      ].divide(SizedBox(height: 12.0)),
+                      ].divide(const SizedBox(height: 12.0)),
                     ),
-                  ].divide(SizedBox(height: 16.0)),
+                  ].divide(const SizedBox(height: 16.0)),
                 ),
               ),
             ),

@@ -3,14 +3,8 @@ import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'noti_blank_model.dart';
 export 'noti_blank_model.dart';
 
@@ -53,7 +47,7 @@ class _NotiBlankWidgetState extends State<NotiBlankWidget>
             delay: 0.0.ms,
             duration: 990.0.ms,
             hz: 7,
-            offset: Offset(0.0, 0.0),
+            offset: const Offset(0.0, 0.0),
             rotation: 0.087,
           ),
         ],
@@ -67,7 +61,7 @@ class _NotiBlankWidgetState extends State<NotiBlankWidget>
             delay: 0.0.ms,
             duration: 990.0.ms,
             hz: 7,
-            offset: Offset(0.0, 0.0),
+            offset: const Offset(0.0, 0.0),
             rotation: 0.087,
           ),
         ],
@@ -81,7 +75,7 @@ class _NotiBlankWidgetState extends State<NotiBlankWidget>
             delay: 0.0.ms,
             duration: 990.0.ms,
             hz: 7,
-            offset: Offset(0.0, 0.0),
+            offset: const Offset(0.0, 0.0),
             rotation: 0.087,
           ),
         ],
@@ -112,7 +106,7 @@ class _NotiBlankWidgetState extends State<NotiBlankWidget>
           borderRadius: 30.0,
           borderWidth: 1.0,
           buttonSize: 44.0,
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_new_rounded,
             color: Colors.white,
             size: 18.0,
@@ -131,25 +125,25 @@ class _NotiBlankWidgetState extends State<NotiBlankWidget>
                     !FlutterFlowTheme.of(context).titleMediumIsCustom,
               ),
         ),
-        actions: [],
+        actions: const [],
         flexibleSpace: FlexibleSpaceBar(
           background: Opacity(
             opacity: 0.3,
             child: Align(
-              alignment: AlignmentDirectional(1.0, 1.0),
+              alignment: const AlignmentDirectional(1.0, 1.0),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(8.0),
                 child: Image.network(
                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/5yfb9q5kks4p/noti.png',
                   fit: BoxFit.cover,
-                  alignment: Alignment(1.0, 1.0),
+                  alignment: const Alignment(1.0, 1.0),
                 ),
               ),
             ),
           ),
         ),
         bottom: PreferredSize(
-          preferredSize: Size.fromHeight(8.0),
+          preferredSize: const Size.fromHeight(8.0),
           child: Container(),
         ),
         centerTitle: true,
@@ -160,7 +154,7 @@ class _NotiBlankWidgetState extends State<NotiBlankWidget>
         height: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).primaryBackground,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               blurRadius: 8.0,
               color: Color(0x33000000),
@@ -170,7 +164,7 @@ class _NotiBlankWidgetState extends State<NotiBlankWidget>
               ),
             )
           ],
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -182,7 +176,7 @@ class _NotiBlankWidgetState extends State<NotiBlankWidget>
               child: Column(
                 children: [
                   Align(
-                    alignment: Alignment(0.0, 0),
+                    alignment: const Alignment(0.0, 0),
                     child: FlutterFlowButtonTabBar(
                       useToggleButtonStyle: true,
                       labelStyle: FlutterFlowTheme.of(context)
@@ -208,16 +202,16 @@ class _NotiBlankWidgetState extends State<NotiBlankWidget>
                       unselectedLabelColor:
                           FlutterFlowTheme.of(context).secondaryText,
                       backgroundColor: FlutterFlowTheme.of(context).primary,
-                      unselectedBackgroundColor: Color(0xFFE5EAF6),
+                      unselectedBackgroundColor: const Color(0xFFE5EAF6),
                       unselectedBorderColor:
                           FlutterFlowTheme.of(context).primaryBackground,
                       borderWidth: 2.0,
                       borderRadius: 26.0,
                       elevation: 0.0,
                       buttonMargin:
-                          EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
-                      padding: EdgeInsets.all(4.0),
-                      tabs: [
+                          const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+                      padding: const EdgeInsets.all(4.0),
+                      tabs: const [
                         Tab(
                           text: 'ทั้งหมด',
                         ),
@@ -296,7 +290,7 @@ class _NotiBlankWidgetState extends State<NotiBlankWidget>
                                             .titleMediumIsCustom,
                                   ),
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                         Column(
                           mainAxisSize: MainAxisSize.max,
@@ -356,7 +350,7 @@ class _NotiBlankWidgetState extends State<NotiBlankWidget>
                                             .titleMediumIsCustom,
                                   ),
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                         Column(
                           mainAxisSize: MainAxisSize.max,
@@ -416,7 +410,7 @@ class _NotiBlankWidgetState extends State<NotiBlankWidget>
                                             .titleMediumIsCustom,
                                   ),
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ],
                     ),

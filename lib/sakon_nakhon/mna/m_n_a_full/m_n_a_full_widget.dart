@@ -2880,9 +2880,9 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                     },
                                                     side: (const Color(0xFFC1C5D0) !=
                                                             null)
-                                                        ? BorderSide(
+                                                        ? const BorderSide(
                                                             width: 2,
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFFC1C5D0),
                                                           )
                                                         : null,
@@ -2959,9 +2959,9 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                   },
                                                   side: (const Color(0xFFC1C5D0) !=
                                                           null)
-                                                      ? BorderSide(
+                                                      ? const BorderSide(
                                                           width: 2,
-                                                          color: const Color(
+                                                          color: Color(
                                                               0xFFC1C5D0),
                                                         )
                                                       : null,
@@ -3077,9 +3077,9 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                     },
                                                     side: (const Color(0xFFC1C5D0) !=
                                                             null)
-                                                        ? BorderSide(
+                                                        ? const BorderSide(
                                                             width: 2,
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFFC1C5D0),
                                                           )
                                                         : null,
@@ -3156,9 +3156,9 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                   },
                                                   side: (const Color(0xFFC1C5D0) !=
                                                           null)
-                                                      ? BorderSide(
+                                                      ? const BorderSide(
                                                           width: 2,
-                                                          color: const Color(
+                                                          color: Color(
                                                               0xFFC1C5D0),
                                                         )
                                                       : null,
@@ -3274,9 +3274,9 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                     },
                                                     side: (const Color(0xFFC1C5D0) !=
                                                             null)
-                                                        ? BorderSide(
+                                                        ? const BorderSide(
                                                             width: 2,
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFFC1C5D0),
                                                           )
                                                         : null,
@@ -3353,9 +3353,9 @@ class _MNAFullWidgetState extends State<MNAFullWidget>
                                                   },
                                                   side: (const Color(0xFFC1C5D0) !=
                                                           null)
-                                                      ? BorderSide(
+                                                      ? const BorderSide(
                                                           width: 2,
-                                                          color: const Color(
+                                                          color: Color(
                                                               0xFFC1C5D0),
                                                         )
                                                       : null,

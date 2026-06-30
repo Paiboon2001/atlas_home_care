@@ -1,12 +1,8 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'photo_l_a_b_model.dart';
 export 'photo_l_a_b_model.dart';
 
@@ -54,7 +50,7 @@ class _PhotoLABWidgetState extends State<PhotoLABWidget> {
           borderRadius: 30.0,
           borderWidth: 1.0,
           buttonSize: 44.0,
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_new_rounded,
             color: Colors.white,
             size: 18.0,
@@ -73,7 +69,7 @@ class _PhotoLABWidgetState extends State<PhotoLABWidget> {
                     !FlutterFlowTheme.of(context).titleMediumIsCustom,
               ),
         ),
-        actions: [],
+        actions: const [],
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -83,24 +79,24 @@ class _PhotoLABWidgetState extends State<PhotoLABWidget> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF339FF3),
+              const Color(0xFF339FF3),
               FlutterFlowTheme.of(context).primaryBackground,
               FlutterFlowTheme.of(context).primaryBackground
             ],
-            stops: [0.0, 0.3, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.0, 0.3, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
           borderRadius: BorderRadius.circular(0.0),
         ),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
               Expanded(
                 child: MasonryGridView.builder(
-                  gridDelegate: SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                   ),
                   crossAxisSpacing: 10.0,
@@ -167,9 +163,9 @@ class _PhotoLABWidgetState extends State<PhotoLABWidget> {
                 ),
               ),
             ]
-                .divide(SizedBox(height: 16.0))
-                .addToStart(SizedBox(height: 16.0))
-                .addToEnd(SizedBox(height: 24.0)),
+                .divide(const SizedBox(height: 16.0))
+                .addToStart(const SizedBox(height: 16.0))
+                .addToEnd(const SizedBox(height: 24.0)),
           ),
         ),
       ),

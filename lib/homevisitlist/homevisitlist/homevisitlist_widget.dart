@@ -1,14 +1,10 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/homevisitlist/widget/buttonsheetfamily/buttonsheetfamily_widget.dart';
 import '/homevisitlist/widget/item_home/item_home_widget.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'homevisitlist_model.dart';
 export 'homevisitlist_model.dart';
 
@@ -56,7 +52,7 @@ class _HomevisitlistWidgetState extends State<HomevisitlistWidget> {
           borderRadius: 30.0,
           borderWidth: 1.0,
           buttonSize: 44.0,
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_new_rounded,
             color: Colors.white,
             size: 18.0,
@@ -83,7 +79,7 @@ class _HomevisitlistWidgetState extends State<HomevisitlistWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(-0.63, 0.0),
+              alignment: const AlignmentDirectional(-0.63, 0.0),
               child: InkWell(
                 splashColor: Colors.transparent,
                 focusColor: Colors.transparent,
@@ -95,12 +91,12 @@ class _HomevisitlistWidgetState extends State<HomevisitlistWidget> {
                 child: Container(
                   width: 40.0,
                   height: 40.0,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Color(0x93164874),
                     shape: BoxShape.circle,
                   ),
                   child: Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Icon(
                       Icons.add_home,
                       color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -112,7 +108,7 @@ class _HomevisitlistWidgetState extends State<HomevisitlistWidget> {
             ),
           ],
         ),
-        actions: [],
+        actions: const [],
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -121,7 +117,7 @@ class _HomevisitlistWidgetState extends State<HomevisitlistWidget> {
         height: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).primaryBackground,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               blurRadius: 4.0,
               color: Color(0x33000000),
@@ -131,7 +127,7 @@ class _HomevisitlistWidgetState extends State<HomevisitlistWidget> {
               ),
             )
           ],
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -141,7 +137,7 @@ class _HomevisitlistWidgetState extends State<HomevisitlistWidget> {
           children: [
             Expanded(
               child: ListView(
-                padding: EdgeInsets.fromLTRB(
+                padding: const EdgeInsets.fromLTRB(
                   0,
                   16.0,
                   0,
@@ -164,7 +160,7 @@ class _HomevisitlistWidgetState extends State<HomevisitlistWidget> {
                         builder: (context) {
                           return Padding(
                             padding: MediaQuery.viewInsetsOf(context),
-                            child: ButtonsheetfamilyWidget(),
+                            child: const ButtonsheetfamilyWidget(),
                           );
                         },
                       ).then((value) => safeSetState(() {}));
@@ -247,7 +243,7 @@ class _HomevisitlistWidgetState extends State<HomevisitlistWidget> {
                       colorarrow: FlutterFlowTheme.of(context).secondaryText,
                     ),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
             ),
           ],

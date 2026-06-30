@@ -1,12 +1,8 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/homevisitlist/other/item_selec_p_p_specialcodes/item_selec_p_p_specialcodes_widget.dart';
 import '/utils/close/close_widget.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'searchitem_p_p_specialcodes_model.dart';
 export 'searchitem_p_p_specialcodes_model.dart';
 

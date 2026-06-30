@@ -1846,11 +1846,11 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     },
                                                                     side: (const Color(0x00EAEFFB) !=
                                                                             null)
-                                                                        ? BorderSide(
+                                                                        ? const BorderSide(
                                                                             width:
                                                                                 2,
                                                                             color:
-                                                                                const Color(0x00EAEFFB),
+                                                                                Color(0x00EAEFFB),
                                                                           )
                                                                         : null,
                                                                     activeColor:
@@ -2451,11 +2451,11 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                     },
                                                                     side: (const Color(0x00EAEFFB) !=
                                                                             null)
-                                                                        ? BorderSide(
+                                                                        ? const BorderSide(
                                                                             width:
                                                                                 2,
                                                                             color:
-                                                                                const Color(0x00EAEFFB),
+                                                                                Color(0x00EAEFFB),
                                                                           )
                                                                         : null,
                                                                     activeColor:
@@ -2998,11 +2998,11 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                   side: (const Color(
                                                                               0xFFCED4E6) !=
                                                                           null)
-                                                                      ? BorderSide(
+                                                                      ? const BorderSide(
                                                                           width:
                                                                               2,
                                                                           color:
-                                                                              const Color(0xFFCED4E6),
+                                                                              Color(0xFFCED4E6),
                                                                         )
                                                                       : null,
                                                                   activeColor:
@@ -3237,11 +3237,11 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                   side: (const Color(
                                                                               0xFFCED4E6) !=
                                                                           null)
-                                                                      ? BorderSide(
+                                                                      ? const BorderSide(
                                                                           width:
                                                                               2,
                                                                           color:
-                                                                              const Color(0xFFCED4E6),
+                                                                              Color(0xFFCED4E6),
                                                                         )
                                                                       : null,
                                                                   activeColor:
@@ -3476,11 +3476,11 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                   side: (const Color(
                                                                               0xFFCED4E6) !=
                                                                           null)
-                                                                      ? BorderSide(
+                                                                      ? const BorderSide(
                                                                           width:
                                                                               2,
                                                                           color:
-                                                                              const Color(0xFFCED4E6),
+                                                                              Color(0xFFCED4E6),
                                                                         )
                                                                       : null,
                                                                   activeColor:
@@ -5365,11 +5365,11 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                   side: (const Color(
                                                                               0xFFCED4E6) !=
                                                                           null)
-                                                                      ? BorderSide(
+                                                                      ? const BorderSide(
                                                                           width:
                                                                               2,
                                                                           color:
-                                                                              const Color(0xFFCED4E6),
+                                                                              Color(0xFFCED4E6),
                                                                         )
                                                                       : null,
                                                                   activeColor:
@@ -5605,11 +5605,11 @@ class _MainBloodWidgetState extends State<MainBloodWidget>
                                                                   side: (const Color(
                                                                               0xFFCED4E6) !=
                                                                           null)
-                                                                      ? BorderSide(
+                                                                      ? const BorderSide(
                                                                           width:
                                                                               2,
                                                                           color:
-                                                                              const Color(0xFFCED4E6),
+                                                                              Color(0xFFCED4E6),
                                                                         )
                                                                       : null,
                                                                   activeColor:

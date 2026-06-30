@@ -1,12 +1,9 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/profile/widget/authens/authens_widget.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 import 'authen_code_model.dart';
@@ -63,7 +60,7 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 44.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back_ios_new_rounded,
               color: Colors.white,
               size: 18.0,
@@ -82,7 +79,7 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
                       !FlutterFlowTheme.of(context).titleMediumIsCustom,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -91,7 +88,7 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
           height: double.infinity,
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).primaryBackground,
-            boxShadow: [
+            boxShadow: const [
               BoxShadow(
                 blurRadius: 4.0,
                 color: Color(0x33000000),
@@ -101,7 +98,7 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
                 ),
               )
             ],
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(24.0),
               topRight: Radius.circular(24.0),
             ),
@@ -111,9 +108,9 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
             children: [
               Expanded(
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 2.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 2.0, 0.0, 0.0),
                   child: ListView(
-                    padding: EdgeInsets.fromLTRB(
+                    padding: const EdgeInsets.fromLTRB(
                       0,
                       16.0,
                       0,
@@ -123,7 +120,7 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
                     scrollDirection: Axis.vertical,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -160,7 +157,7 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        boxShadow: [
+                                        boxShadow: const [
                                           BoxShadow(
                                             blurRadius: 4.0,
                                             color: Color(0x33000000),
@@ -174,12 +171,12 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
                                           colors: [
                                             FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
-                                            Color(0xFFD8FFF3)
+                                            const Color(0xFFD8FFF3)
                                           ],
-                                          stops: [0.0, 1.0],
+                                          stops: const [0.0, 1.0],
                                           begin:
-                                              AlignmentDirectional(1.0, -0.93),
-                                          end: AlignmentDirectional(-1.0, 0.93),
+                                              const AlignmentDirectional(1.0, -0.93),
+                                          end: const AlignmentDirectional(-1.0, 0.93),
                                         ),
                                         borderRadius:
                                             BorderRadius.circular(16.0),
@@ -190,7 +187,7 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(16.0),
+                                        padding: const EdgeInsets.all(16.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -245,11 +242,11 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
                                           .alternate,
                                       borderRadius: BorderRadius.circular(16.0),
                                       border: Border.all(
-                                        color: Color(0xFFD5D9E2),
+                                        color: const Color(0xFFD5D9E2),
                                       ),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(16.0),
+                                      padding: const EdgeInsets.all(16.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -276,22 +273,22 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
                                                           .labelSmallIsCustom,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
                                   ),
                               ],
                             ),
-                          ].divide(SizedBox(height: 12.0)),
+                          ].divide(const SizedBox(height: 12.0)),
                         ),
                       ),
-                      Divider(
+                      const Divider(
                         height: 1.0,
                         thickness: 1.0,
                         color: Color(0xFFD7D8D9),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -346,7 +343,7 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
                                 child: wrapWithModel(
                                   model: _model.authensModel1,
                                   updateCallback: () => safeSetState(() {}),
-                                  child: AuthensWidget(
+                                  child: const AuthensWidget(
                                     names: 'โรงพยาบาลสกลนคร',
                                   ),
                                 ),
@@ -354,21 +351,21 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
                             wrapWithModel(
                               model: _model.authensModel2,
                               updateCallback: () => safeSetState(() {}),
-                              child: AuthensWidget(
+                              child: const AuthensWidget(
                                 names: 'โรงพยาบาลบัว',
                               ),
                             ),
                             wrapWithModel(
                               model: _model.authensModel3,
                               updateCallback: () => safeSetState(() {}),
-                              child: AuthensWidget(
+                              child: const AuthensWidget(
                                 names: 'โรงพยาบาลหนองจอก',
                               ),
                             ),
-                          ].divide(SizedBox(height: 12.0)),
+                          ].divide(const SizedBox(height: 12.0)),
                         ),
                       ),
-                    ].divide(SizedBox(height: 16.0)),
+                    ].divide(const SizedBox(height: 16.0)),
                   ),
                 ),
               ),

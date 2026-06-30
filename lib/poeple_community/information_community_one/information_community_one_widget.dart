@@ -1,7 +1,6 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/poeple_community/confirm/open_visit/open_visit_widget.dart';
 import '/poeple_community/widget/assignments/assignments_widget.dart';
 import '/poeple_community/widget/lab/lab_widget.dart';
@@ -10,13 +9,11 @@ import '/poeple_community/widget/save_menu/save_menu_widget.dart';
 import '/poeple_community/widget/smartcard_cerect/smartcard_cerect_widget.dart';
 import '/profile/widget/process_up_pic/process_up_pic_widget.dart';
 import '/utils/vital_sign/vital_sign_widget.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:sticky_headers/sticky_headers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:signature/signature.dart';
 import 'information_community_one_model.dart';
@@ -109,12 +106,12 @@ class _InformationCommunityOneWidgetState
                       ),
                 ),
               ),
-            ].divide(SizedBox(width: 8.0)),
+            ].divide(const SizedBox(width: 8.0)),
           ),
-          actions: [],
+          actions: const [],
           flexibleSpace: FlexibleSpaceBar(
             background: ClipRRect(
-              borderRadius: BorderRadius.only(),
+              borderRadius: const BorderRadius.only(),
               child: Image.asset(
                 'assets/images/bgappbar.png',
                 fit: BoxFit.cover,
@@ -125,7 +122,7 @@ class _InformationCommunityOneWidgetState
           elevation: 0.0,
         ),
         body: ClipRRect(
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -134,7 +131,7 @@ class _InformationCommunityOneWidgetState
             height: double.infinity,
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).primaryBackground,
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(24.0),
                 topRight: Radius.circular(24.0),
               ),
@@ -168,7 +165,7 @@ class _InformationCommunityOneWidgetState
                       children: [
                         if (FFAppState().smartcard == true)
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: InkWell(
                               splashColor: Colors.transparent,
@@ -182,13 +179,13 @@ class _InformationCommunityOneWidgetState
                               child: wrapWithModel(
                                 model: _model.smartcardCerectModel,
                                 updateCallback: () => safeSetState(() {}),
-                                child: SmartcardCerectWidget(),
+                                child: const SmartcardCerectWidget(),
                               ),
                             ),
                           ),
                         if (FFAppState().smartcard == false)
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: InkWell(
                               splashColor: Colors.transparent,
@@ -211,7 +208,7 @@ class _InformationCommunityOneWidgetState
                                       child: Padding(
                                         padding:
                                             MediaQuery.viewInsetsOf(context),
-                                        child: OpenVisitWidget(),
+                                        child: const OpenVisitWidget(),
                                       ),
                                     );
                                   },
@@ -220,7 +217,7 @@ class _InformationCommunityOneWidgetState
                               child: wrapWithModel(
                                 model: _model.nonSmartcardModel,
                                 updateCallback: () => safeSetState(() {}),
-                                child: NonSmartcardWidget(),
+                                child: const NonSmartcardWidget(),
                               ),
                             ),
                           ),
@@ -238,12 +235,12 @@ class _InformationCommunityOneWidgetState
                                     .primaryBackground,
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 12.0, 16.0, 12.0),
                                 child: MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 4,
                                   ),
                                   crossAxisSpacing: 12.0,
@@ -261,13 +258,13 @@ class _InformationCommunityOneWidgetState
                                               safeSetState(() {});
                                             },
                                             child: Container(
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Container(
                                                       width: () {
@@ -348,7 +345,7 @@ class _InformationCommunityOneWidgetState
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     8.0),
                                                             child: ClipRRect(
                                                               borderRadius:
@@ -442,7 +439,7 @@ class _InformationCommunityOneWidgetState
                                                                   .bodySmallIsCustom,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                           ),
@@ -456,13 +453,13 @@ class _InformationCommunityOneWidgetState
                                               safeSetState(() {});
                                             },
                                             child: Container(
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Container(
                                                       width: () {
@@ -543,7 +540,7 @@ class _InformationCommunityOneWidgetState
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     8.0),
                                                             child: ClipRRect(
                                                               borderRadius:
@@ -637,7 +634,7 @@ class _InformationCommunityOneWidgetState
                                                                   .bodySmallIsCustom,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                           ),
@@ -651,13 +648,13 @@ class _InformationCommunityOneWidgetState
                                               safeSetState(() {});
                                             },
                                             child: Container(
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Container(
                                                       width: () {
@@ -738,7 +735,7 @@ class _InformationCommunityOneWidgetState
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     8.0),
                                                             child: ClipRRect(
                                                               borderRadius:
@@ -832,7 +829,7 @@ class _InformationCommunityOneWidgetState
                                                                   .bodySmallIsCustom,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                           ),
@@ -846,13 +843,13 @@ class _InformationCommunityOneWidgetState
                                               safeSetState(() {});
                                             },
                                             child: Container(
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Container(
                                                       width: () {
@@ -933,7 +930,7 @@ class _InformationCommunityOneWidgetState
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     8.0),
                                                             child: ClipRRect(
                                                               borderRadius:
@@ -1027,7 +1024,7 @@ class _InformationCommunityOneWidgetState
                                                                   .bodySmallIsCustom,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                           ),
@@ -1036,7 +1033,7 @@ class _InformationCommunityOneWidgetState
                                 ),
                               ),
                             ),
-                            Divider(
+                            const Divider(
                               height: 1.0,
                               thickness: 1.0,
                               color: Color(0xFFD7D8D9),
@@ -1053,13 +1050,13 @@ class _InformationCommunityOneWidgetState
                                   wrapWithModel(
                                     model: _model.vitalSignModel,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: VitalSignWidget(),
+                                    child: const VitalSignWidget(),
                                   ),
                                 ],
                               ),
                             if (FFAppState().munity == 2)
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: MasonryGridView.builder(
                                   physics: const NeverScrollableScrollPhysics(),
@@ -1100,7 +1097,7 @@ class _InformationCommunityOneWidgetState
                                     }
                                   }(),
                                   itemCount: 12,
-                                  padding: EdgeInsets.fromLTRB(
+                                  padding: const EdgeInsets.fromLTRB(
                                     0,
                                     16.0,
                                     0,
@@ -1122,7 +1119,7 @@ class _InformationCommunityOneWidgetState
                                               model: _model.assignmentsModel1,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: AssignmentsWidget(
+                                              child: const AssignmentsWidget(
                                                 picture:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/t8fdff65nyv5/thertyfive.png',
                                                 text:
@@ -1144,7 +1141,7 @@ class _InformationCommunityOneWidgetState
                                               model: _model.assignmentsModel2,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: AssignmentsWidget(
+                                              child: const AssignmentsWidget(
                                                 picture:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/tpghcs7mmehc/hoop_d.png',
                                                 text: 'แบบประเมินผู้ป่วยหอบหืด',
@@ -1164,7 +1161,7 @@ class _InformationCommunityOneWidgetState
                                               model: _model.assignmentsModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: AssignmentsWidget(
+                                              child: const AssignmentsWidget(
                                                 picture:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/8h2opzrqhlj2/im_d.png',
                                                 text:
@@ -1186,7 +1183,7 @@ class _InformationCommunityOneWidgetState
                                               model: _model.assignmentsModel4,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: AssignmentsWidget(
+                                              child: const AssignmentsWidget(
                                                 picture:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/y79rrxly5iuy/Bartel.png',
                                                 text:
@@ -1214,7 +1211,7 @@ class _InformationCommunityOneWidgetState
                                               model: _model.assignmentsModel5,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: AssignmentsWidget(
+                                              child: const AssignmentsWidget(
                                                 picture:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/9erk471544hz/exersine.png',
                                                 text:
@@ -1235,7 +1232,7 @@ class _InformationCommunityOneWidgetState
                                               model: _model.assignmentsModel6,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: AssignmentsWidget(
+                                              child: const AssignmentsWidget(
                                                 picture:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/z7bzui8rxxa2/blood_as.png',
                                                 text:
@@ -1257,7 +1254,7 @@ class _InformationCommunityOneWidgetState
                                               model: _model.assignmentsModel7,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: AssignmentsWidget(
+                                              child: const AssignmentsWidget(
                                                 picture:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/o9av6hylg1nh/Palliative_care.png',
                                                 text:
@@ -1279,7 +1276,7 @@ class _InformationCommunityOneWidgetState
                                               model: _model.assignmentsModel8,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: AssignmentsWidget(
+                                              child: const AssignmentsWidget(
                                                 picture:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/siqke0letrhb/INHOMESSS_as.png',
                                                 text: 'แบบประเมิน INHOMESSS',
@@ -1299,7 +1296,7 @@ class _InformationCommunityOneWidgetState
                                               model: _model.assignmentsModel9,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: AssignmentsWidget(
+                                              child: const AssignmentsWidget(
                                                 picture:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/15xclya4b5du/admit_hos.png',
                                                 text:
@@ -1320,7 +1317,7 @@ class _InformationCommunityOneWidgetState
                                               model: _model.assignmentsModel10,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: AssignmentsWidget(
+                                              child: const AssignmentsWidget(
                                                 picture:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/qquemoujfv3l/ESAS.png',
                                                 text: 'แบบประเมิน ESAS',
@@ -1340,7 +1337,7 @@ class _InformationCommunityOneWidgetState
                                               model: _model.assignmentsModel11,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: AssignmentsWidget(
+                                              child: const AssignmentsWidget(
                                                 picture:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/4qijf9p1fjgl/tacker_care.png',
                                                 text:
@@ -1361,7 +1358,7 @@ class _InformationCommunityOneWidgetState
                                               model: _model.assignmentsModel12,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: AssignmentsWidget(
+                                              child: const AssignmentsWidget(
                                                 picture:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/l5z545vpi6uw/granmother.png',
                                                 text:
@@ -1378,17 +1375,17 @@ class _InformationCommunityOneWidgetState
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: wrapWithModel(
                                       model: _model.labModel,
                                       updateCallback: () => safeSetState(() {}),
-                                      child: LabWidget(),
+                                      child: const LabWidget(),
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(height: 12.0))
-                                    .addToStart(SizedBox(height: 16.0)),
+                                    .divide(const SizedBox(height: 12.0))
+                                    .addToStart(const SizedBox(height: 16.0)),
                               ),
                             if (FFAppState().munity == 4)
                               Column(
@@ -1400,7 +1397,7 @@ class _InformationCommunityOneWidgetState
                                         CrossAxisAlignment.start,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 16.0, 0.0, 0.0),
                                         child: Text(
                                           'ผลสรุปการประเมินภาวะสุขภาพ',
@@ -1456,7 +1453,7 @@ class _InformationCommunityOneWidgetState
                                                 ),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsets.all(16.0),
+                                                padding: const EdgeInsets.all(16.0),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -1517,19 +1514,19 @@ class _InformationCommunityOneWidgetState
                                                             gradient:
                                                                 LinearGradient(
                                                               colors: [
-                                                                Color(
+                                                                const Color(
                                                                     0xFFA5E8A7),
                                                                 FlutterFlowTheme.of(
                                                                         context)
                                                                     .success
                                                               ],
-                                                              stops: [0.0, 1.0],
+                                                              stops: const [0.0, 1.0],
                                                               begin:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.56,
                                                                       -1.0),
                                                               end:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       -0.56,
                                                                       1.0),
                                                             ),
@@ -1538,7 +1535,7 @@ class _InformationCommunityOneWidgetState
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: FaIcon(
                                                               FontAwesomeIcons
@@ -1568,9 +1565,9 @@ class _InformationCommunityOneWidgetState
                                                               ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
-                                                    Container(
+                                                    SizedBox(
                                                       width: double.infinity,
                                                       child: TextFormField(
                                                         controller: _model
@@ -1585,7 +1582,7 @@ class _InformationCommunityOneWidgetState
                                                           enabledBorder:
                                                               OutlineInputBorder(
                                                             borderSide:
-                                                                BorderSide(
+                                                                const BorderSide(
                                                               color: Color(
                                                                   0x00000000),
                                                               width: 1.0,
@@ -1673,7 +1670,7 @@ class _InformationCommunityOneWidgetState
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
@@ -1710,7 +1707,7 @@ class _InformationCommunityOneWidgetState
                                                 ),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsets.all(16.0),
+                                                padding: const EdgeInsets.all(16.0),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -1771,19 +1768,19 @@ class _InformationCommunityOneWidgetState
                                                             gradient:
                                                                 LinearGradient(
                                                               colors: [
-                                                                Color(
+                                                                const Color(
                                                                     0xFFA5E8A7),
                                                                 FlutterFlowTheme.of(
                                                                         context)
                                                                     .success
                                                               ],
-                                                              stops: [0.0, 1.0],
+                                                              stops: const [0.0, 1.0],
                                                               begin:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.56,
                                                                       -1.0),
                                                               end:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       -0.56,
                                                                       1.0),
                                                             ),
@@ -1792,7 +1789,7 @@ class _InformationCommunityOneWidgetState
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Icon(
                                                               Icons.account_box,
@@ -1821,9 +1818,9 @@ class _InformationCommunityOneWidgetState
                                                               ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
-                                                    Container(
+                                                    SizedBox(
                                                       width: double.infinity,
                                                       child: TextFormField(
                                                         controller: _model
@@ -1838,7 +1835,7 @@ class _InformationCommunityOneWidgetState
                                                           enabledBorder:
                                                               OutlineInputBorder(
                                                             borderSide:
-                                                                BorderSide(
+                                                                const BorderSide(
                                                               color: Color(
                                                                   0x00000000),
                                                               width: 1.0,
@@ -1926,7 +1923,7 @@ class _InformationCommunityOneWidgetState
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
@@ -1963,7 +1960,7 @@ class _InformationCommunityOneWidgetState
                                                 ),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsets.all(16.0),
+                                                padding: const EdgeInsets.all(16.0),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -2024,19 +2021,19 @@ class _InformationCommunityOneWidgetState
                                                             gradient:
                                                                 LinearGradient(
                                                               colors: [
-                                                                Color(
+                                                                const Color(
                                                                     0xFFA5E8A7),
                                                                 FlutterFlowTheme.of(
                                                                         context)
                                                                     .success
                                                               ],
-                                                              stops: [0.0, 1.0],
+                                                              stops: const [0.0, 1.0],
                                                               begin:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.56,
                                                                       -1.0),
                                                               end:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       -0.56,
                                                                       1.0),
                                                             ),
@@ -2045,7 +2042,7 @@ class _InformationCommunityOneWidgetState
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Icon(
                                                               Icons
@@ -2075,9 +2072,9 @@ class _InformationCommunityOneWidgetState
                                                               ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
-                                                    Container(
+                                                    SizedBox(
                                                       width: double.infinity,
                                                       child: TextFormField(
                                                         controller: _model
@@ -2092,7 +2089,7 @@ class _InformationCommunityOneWidgetState
                                                           enabledBorder:
                                                               OutlineInputBorder(
                                                             borderSide:
-                                                                BorderSide(
+                                                                const BorderSide(
                                                               color: Color(
                                                                   0x00000000),
                                                               width: 1.0,
@@ -2180,17 +2177,17 @@ class _InformationCommunityOneWidgetState
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
                                           ]
-                                              .divide(SizedBox(width: 12.0))
-                                              .addToStart(SizedBox(width: 16.0))
-                                              .addToEnd(SizedBox(width: 16.0)),
+                                              .divide(const SizedBox(width: 12.0))
+                                              .addToStart(const SizedBox(width: 16.0))
+                                              .addToEnd(const SizedBox(width: 16.0)),
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 8.0)),
+                                    ].divide(const SizedBox(height: 8.0)),
                                   ),
                                   Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -2198,7 +2195,7 @@ class _InformationCommunityOneWidgetState
                                         CrossAxisAlignment.start,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 12.0, 0.0, 0.0),
                                         child: Text(
                                           'ผลสรุปทั่วไป',
@@ -2254,7 +2251,7 @@ class _InformationCommunityOneWidgetState
                                                 ),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsets.all(16.0),
+                                                padding: const EdgeInsets.all(16.0),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -2318,16 +2315,16 @@ class _InformationCommunityOneWidgetState
                                                                 FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
-                                                                Color(
+                                                                const Color(
                                                                     0xFF6555C3)
                                                               ],
-                                                              stops: [0.0, 1.0],
+                                                              stops: const [0.0, 1.0],
                                                               begin:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.56,
                                                                       -1.0),
                                                               end:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       -0.56,
                                                                       1.0),
                                                             ),
@@ -2336,7 +2333,7 @@ class _InformationCommunityOneWidgetState
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Icon(
                                                               Icons
@@ -2366,9 +2363,9 @@ class _InformationCommunityOneWidgetState
                                                               ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
-                                                    Container(
+                                                    SizedBox(
                                                       width: double.infinity,
                                                       child: TextFormField(
                                                         controller: _model
@@ -2383,7 +2380,7 @@ class _InformationCommunityOneWidgetState
                                                           enabledBorder:
                                                               OutlineInputBorder(
                                                             borderSide:
-                                                                BorderSide(
+                                                                const BorderSide(
                                                               color: Color(
                                                                   0x00000000),
                                                               width: 1.0,
@@ -2471,7 +2468,7 @@ class _InformationCommunityOneWidgetState
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
@@ -2508,7 +2505,7 @@ class _InformationCommunityOneWidgetState
                                                 ),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsets.all(16.0),
+                                                padding: const EdgeInsets.all(16.0),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -2572,16 +2569,16 @@ class _InformationCommunityOneWidgetState
                                                                 FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
-                                                                Color(
+                                                                const Color(
                                                                     0xFF6555C3)
                                                               ],
-                                                              stops: [0.0, 1.0],
+                                                              stops: const [0.0, 1.0],
                                                               begin:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.56,
                                                                       -1.0),
                                                               end:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       -0.56,
                                                                       1.0),
                                                             ),
@@ -2590,7 +2587,7 @@ class _InformationCommunityOneWidgetState
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Icon(
                                                               Icons.lan_rounded,
@@ -2619,9 +2616,9 @@ class _InformationCommunityOneWidgetState
                                                               ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
-                                                    Container(
+                                                    SizedBox(
                                                       width: double.infinity,
                                                       child: TextFormField(
                                                         controller: _model
@@ -2636,7 +2633,7 @@ class _InformationCommunityOneWidgetState
                                                           enabledBorder:
                                                               OutlineInputBorder(
                                                             borderSide:
-                                                                BorderSide(
+                                                                const BorderSide(
                                                               color: Color(
                                                                   0x00000000),
                                                               width: 1.0,
@@ -2724,7 +2721,7 @@ class _InformationCommunityOneWidgetState
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
@@ -2761,7 +2758,7 @@ class _InformationCommunityOneWidgetState
                                                 ),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsets.all(16.0),
+                                                padding: const EdgeInsets.all(16.0),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -2825,16 +2822,16 @@ class _InformationCommunityOneWidgetState
                                                                 FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
-                                                                Color(
+                                                                const Color(
                                                                     0xFF6555C3)
                                                               ],
-                                                              stops: [0.0, 1.0],
+                                                              stops: const [0.0, 1.0],
                                                               begin:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.56,
                                                                       -1.0),
                                                               end:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       -0.56,
                                                                       1.0),
                                                             ),
@@ -2843,7 +2840,7 @@ class _InformationCommunityOneWidgetState
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Icon(
                                                               Icons
@@ -2873,9 +2870,9 @@ class _InformationCommunityOneWidgetState
                                                               ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
-                                                    Container(
+                                                    SizedBox(
                                                       width: double.infinity,
                                                       child: TextFormField(
                                                         controller: _model
@@ -2890,7 +2887,7 @@ class _InformationCommunityOneWidgetState
                                                           enabledBorder:
                                                               OutlineInputBorder(
                                                             borderSide:
-                                                                BorderSide(
+                                                                const BorderSide(
                                                               color: Color(
                                                                   0x00000000),
                                                               width: 1.0,
@@ -2978,17 +2975,17 @@ class _InformationCommunityOneWidgetState
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
                                           ]
-                                              .divide(SizedBox(width: 12.0))
-                                              .addToStart(SizedBox(width: 16.0))
-                                              .addToEnd(SizedBox(width: 16.0)),
+                                              .divide(const SizedBox(width: 12.0))
+                                              .addToStart(const SizedBox(width: 16.0))
+                                              .addToEnd(const SizedBox(width: 16.0)),
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 8.0)),
+                                    ].divide(const SizedBox(height: 8.0)),
                                   ),
                                   Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -2996,7 +2993,7 @@ class _InformationCommunityOneWidgetState
                                         CrossAxisAlignment.start,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 12.0, 0.0, 0.0),
                                         child: Text(
                                           'สรุปผลการเยี่ยม',
@@ -3015,7 +3012,7 @@ class _InformationCommunityOneWidgetState
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Container(
                                           width: double.infinity,
@@ -3031,7 +3028,7 @@ class _InformationCommunityOneWidgetState
                                             ),
                                           ),
                                           child: Padding(
-                                            padding: EdgeInsets.all(16.0),
+                                            padding: const EdgeInsets.all(16.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               crossAxisAlignment:
@@ -3090,24 +3087,24 @@ class _InformationCommunityOneWidgetState
                                                         gradient:
                                                             LinearGradient(
                                                           colors: [
-                                                            Color(0xFF8AC9FF),
+                                                            const Color(0xFF8AC9FF),
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .info
                                                           ],
-                                                          stops: [0.0, 1.0],
+                                                          stops: const [0.0, 1.0],
                                                           begin:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, -1.0),
                                                           end:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0, 1.0),
                                                         ),
                                                         shape: BoxShape.circle,
                                                       ),
                                                       child: Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.0, 0.0),
                                                         child: Icon(
                                                           Icons.summarize,
@@ -3136,9 +3133,9 @@ class _InformationCommunityOneWidgetState
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 8.0)),
+                                                      const SizedBox(width: 8.0)),
                                                 ),
-                                                Container(
+                                                SizedBox(
                                                   width: double.infinity,
                                                   child: TextFormField(
                                                     controller:
@@ -3151,7 +3148,7 @@ class _InformationCommunityOneWidgetState
                                                       isDense: true,
                                                       enabledBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color:
                                                               Color(0x00000000),
                                                           width: 1.0,
@@ -3229,13 +3226,13 @@ class _InformationCommunityOneWidgetState
                                                         .asValidator(context),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 8.0)),
+                                              ].divide(const SizedBox(height: 8.0)),
                                             ),
                                           ),
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Container(
                                           width: double.infinity,
@@ -3251,14 +3248,14 @@ class _InformationCommunityOneWidgetState
                                             ),
                                           ),
                                           child: Padding(
-                                            padding: EdgeInsets.all(16.0),
+                                            padding: const EdgeInsets.all(16.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               crossAxisAlignment:
                                                   CrossAxisAlignment.start,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 8.0),
                                                   child: Row(
@@ -3315,17 +3312,17 @@ class _InformationCommunityOneWidgetState
                                                           gradient:
                                                               LinearGradient(
                                                             colors: [
-                                                              Color(0xFF8AC9FF),
+                                                              const Color(0xFF8AC9FF),
                                                               FlutterFlowTheme.of(
                                                                       context)
                                                                   .info
                                                             ],
-                                                            stops: [0.0, 1.0],
+                                                            stops: const [0.0, 1.0],
                                                             begin:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, -1.0),
                                                             end:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0, 1.0),
                                                           ),
                                                           shape:
@@ -3333,7 +3330,7 @@ class _InformationCommunityOneWidgetState
                                                         ),
                                                         child: Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Icon(
                                                             Icons.photo,
@@ -3364,7 +3361,7 @@ class _InformationCommunityOneWidgetState
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
                                                 ),
                                                 Expanded(
@@ -3373,7 +3370,7 @@ class _InformationCommunityOneWidgetState
                                                         .processUpPicModel,
                                                     updateCallback: () =>
                                                         safeSetState(() {}),
-                                                    child: ProcessUpPicWidget(),
+                                                    child: const ProcessUpPicWidget(),
                                                   ),
                                                 ),
                                               ],
@@ -3381,7 +3378,7 @@ class _InformationCommunityOneWidgetState
                                           ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 8.0)),
+                                    ].divide(const SizedBox(height: 8.0)),
                                   ),
                                   Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -3389,7 +3386,7 @@ class _InformationCommunityOneWidgetState
                                         CrossAxisAlignment.start,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 12.0, 0.0, 0.0),
                                         child: Text(
                                           'ลายเซ็นผู้ป่วย',
@@ -3408,7 +3405,7 @@ class _InformationCommunityOneWidgetState
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: ClipRRect(
                                           borderRadius:
@@ -3428,7 +3425,7 @@ class _InformationCommunityOneWidgetState
                                               ),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsets.all(16.0),
+                                              padding: const EdgeInsets.all(16.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 crossAxisAlignment:
@@ -3473,7 +3470,7 @@ class _InformationCommunityOneWidgetState
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 1.0),
                                                     child: Row(
                                                       mainAxisSize:
@@ -3595,7 +3592,7 @@ class _InformationCommunityOneWidgetState
                                                                       'IconButton pressed ...');
                                                                 },
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 width: 12.0)),
                                                           ),
                                                         ),
@@ -3660,31 +3657,31 @@ class _InformationCommunityOneWidgetState
                                                                 'IconButton pressed ...');
                                                           },
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           width: 12.0)),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                           ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 8.0)),
+                                    ].divide(const SizedBox(height: 8.0)),
                                   ),
-                                ].divide(SizedBox(height: 12.0)),
+                                ].divide(const SizedBox(height: 12.0)),
                               ),
                           ],
                         ),
                       ),
-                  ].divide(SizedBox(height: 8.0)),
+                  ].divide(const SizedBox(height: 8.0)),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 1.0),
+                  alignment: const AlignmentDirectional(0.0, 1.0),
                   child: wrapWithModel(
                     model: _model.saveMenuModel,
                     updateCallback: () => safeSetState(() {}),
-                    child: SaveMenuWidget(),
+                    child: const SaveMenuWidget(),
                   ),
                 ),
               ],

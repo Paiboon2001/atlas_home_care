@@ -691,9 +691,9 @@ class _EightQWidgetState extends State<EightQWidget>
                                                   },
                                                   side: (const Color(0xFFCED4E6) !=
                                                           null)
-                                                      ? BorderSide(
+                                                      ? const BorderSide(
                                                           width: 2,
-                                                          color: const Color(
+                                                          color: Color(
                                                               0xFFCED4E6),
                                                         )
                                                       : null,
@@ -910,9 +910,9 @@ class _EightQWidgetState extends State<EightQWidget>
                                                   },
                                                   side: (const Color(0xFFCED4E6) !=
                                                           null)
-                                                      ? BorderSide(
+                                                      ? const BorderSide(
                                                           width: 2,
-                                                          color: const Color(
+                                                          color: Color(
                                                               0xFFCED4E6),
                                                         )
                                                       : null,

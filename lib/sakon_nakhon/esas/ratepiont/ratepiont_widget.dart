@@ -1,11 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'ratepiont_model.dart';
 export 'ratepiont_model.dart';
 
@@ -266,7 +262,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                       }
                                     },
                                     side: (Colors.transparent != null)
-                                        ? BorderSide(
+                                        ? const BorderSide(
                                             width: 2,
                                             color: Colors.transparent,
                                           )
@@ -380,7 +376,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                       }
                                     },
                                     side: (Colors.transparent != null)
-                                        ? BorderSide(
+                                        ? const BorderSide(
                                             width: 2,
                                             color: Colors.transparent,
                                           )
@@ -494,7 +490,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                       }
                                     },
                                     side: (Colors.transparent != null)
-                                        ? BorderSide(
+                                        ? const BorderSide(
                                             width: 2,
                                             color: Colors.transparent,
                                           )
@@ -608,7 +604,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                       }
                                     },
                                     side: (Colors.transparent != null)
-                                        ? BorderSide(
+                                        ? const BorderSide(
                                             width: 2,
                                             color: Colors.transparent,
                                           )
@@ -722,7 +718,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                       }
                                     },
                                     side: (Colors.transparent != null)
-                                        ? BorderSide(
+                                        ? const BorderSide(
                                             width: 2,
                                             color: Colors.transparent,
                                           )
@@ -836,7 +832,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                       }
                                     },
                                     side: (Colors.transparent != null)
-                                        ? BorderSide(
+                                        ? const BorderSide(
                                             width: 2,
                                             color: Colors.transparent,
                                           )
@@ -950,7 +946,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                       }
                                     },
                                     side: (Colors.transparent != null)
-                                        ? BorderSide(
+                                        ? const BorderSide(
                                             width: 2,
                                             color: Colors.transparent,
                                           )
@@ -1064,7 +1060,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                       }
                                     },
                                     side: (Colors.transparent != null)
-                                        ? BorderSide(
+                                        ? const BorderSide(
                                             width: 2,
                                             color: Colors.transparent,
                                           )
@@ -1178,7 +1174,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                       }
                                     },
                                     side: (Colors.transparent != null)
-                                        ? BorderSide(
+                                        ? const BorderSide(
                                             width: 2,
                                             color: Colors.transparent,
                                           )
@@ -1292,7 +1288,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                       }
                                     },
                                     side: (Colors.transparent != null)
-                                        ? BorderSide(
+                                        ? const BorderSide(
                                             width: 2,
                                             color: Colors.transparent,
                                           )
@@ -1406,7 +1402,7 @@ class _RatepiontWidgetState extends State<RatepiontWidget> {
                                       }
                                     },
                                     side: (Colors.transparent != null)
-                                        ? BorderSide(
+                                        ? const BorderSide(
                                             width: 2,
                                             color: Colors.transparent,
                                           )

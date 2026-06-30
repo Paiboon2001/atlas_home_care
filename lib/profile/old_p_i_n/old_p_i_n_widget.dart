@@ -3,18 +3,13 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/services.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'old_p_i_n_model.dart';
 export 'old_p_i_n_model.dart';
 
@@ -58,8 +53,8 @@ class _OldPINWidgetState extends State<OldPINWidget>
             curve: Curves.easeInOut,
             delay: 600.0.ms,
             duration: 1300.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -77,8 +72,8 @@ class _OldPINWidgetState extends State<OldPINWidget>
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 900.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -96,8 +91,8 @@ class _OldPINWidgetState extends State<OldPINWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -150,7 +145,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                       !FlutterFlowTheme.of(context).titleLargeIsCustom,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -160,7 +155,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
           decoration: BoxDecoration(
             image: DecorationImage(
               fit: BoxFit.cover,
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               image: Image.asset(
                 'assets/images/bg_pin.png',
               ).image,
@@ -169,9 +164,9 @@ class _OldPINWidgetState extends State<OldPINWidget>
           child: Stack(
             children: [
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -179,7 +174,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                       Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          Container(
+                          SizedBox(
                             width: () {
                               if (MediaQuery.sizeOf(context).width <
                                   kBreakpointSmall) {
@@ -211,7 +206,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                             child: Stack(
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Container(
                                     width: () {
                                       if (MediaQuery.sizeOf(context).width <
@@ -248,14 +243,14 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
                                       border: Border.all(
-                                        color: Color(0xFF62B8FC),
+                                        color: const Color(0xFF62B8FC),
                                       ),
                                     ),
                                   ).animateOnPageLoad(animationsMap[
                                       'containerOnPageLoadAnimation1']!),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Container(
                                     width: () {
                                       if (MediaQuery.sizeOf(context).width <
@@ -292,14 +287,14 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
                                       border: Border.all(
-                                        color: Color(0xFF81C3F8),
+                                        color: const Color(0xFF81C3F8),
                                       ),
                                     ),
                                   ).animateOnPageLoad(animationsMap[
                                       'containerOnPageLoadAnimation2']!),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Container(
                                     width: () {
                                       if (MediaQuery.sizeOf(context).width <
@@ -334,7 +329,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                       }
                                     }(),
                                     decoration: BoxDecoration(
-                                      gradient: LinearGradient(
+                                      gradient: const LinearGradient(
                                         colors: [
                                           Color(0xFFF8FCFF),
                                           Color(0xFFCFEBFF)
@@ -345,14 +340,14 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                       ),
                                       shape: BoxShape.circle,
                                       border: Border.all(
-                                        color: Color(0xFF96CEF9),
+                                        color: const Color(0xFF96CEF9),
                                       ),
                                     ),
                                   ).animateOnPageLoad(animationsMap[
                                       'containerOnPageLoadAnimation3']!),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Container(
                                     width: () {
                                       if (MediaQuery.sizeOf(context).width <
@@ -386,7 +381,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                         return 140.0;
                                       }
                                     }(),
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       boxShadow: [
                                         BoxShadow(
                                           blurRadius: 16.0,
@@ -400,7 +395,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                       shape: BoxShape.circle,
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: ClipRRect(
                                         borderRadius:
                                             BorderRadius.circular(8.0),
@@ -434,10 +429,10 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                       .bodyLargeIsCustom,
                                 ),
                           ),
-                        ].divide(SizedBox(height: 8.0)),
+                        ].divide(const SizedBox(height: 8.0)),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Container(
                           width: () {
                             if (MediaQuery.sizeOf(context).width <
@@ -453,7 +448,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                               return 400.0;
                             }
                           }(),
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: PinCodeTextField(
                             autoDisposeControllers: false,
                             appContext: context,
@@ -463,7 +458,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                 .override(
                                   fontFamily: FlutterFlowTheme.of(context)
                                       .bodySmallFamily,
-                                  color: Color(0x006C6C6C),
+                                  color: const Color(0x006C6C6C),
                                   letterSpacing: 0.0,
                                   useGoogleFonts: !FlutterFlowTheme.of(context)
                                       .bodySmallIsCustom,
@@ -485,7 +480,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                               fieldHeight: 16.0,
                               fieldWidth: 20.0,
                               borderWidth: 1.5,
-                              borderRadius: BorderRadius.only(
+                              borderRadius: const BorderRadius.only(
                                 bottomLeft: Radius.circular(100.0),
                                 bottomRight: Radius.circular(100.0),
                                 topLeft: Radius.circular(100.0),
@@ -500,7 +495,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                   FlutterFlowTheme.of(context).customColor5,
                               activeFillColor:
                                   FlutterFlowTheme.of(context).customColor5,
-                              inactiveFillColor: Color(0x00E2E2E8),
+                              inactiveFillColor: const Color(0x00E2E2E8),
                               selectedFillColor:
                                   FlutterFlowTheme.of(context).customColor5,
                             ),
@@ -555,11 +550,11 @@ class _OldPINWidgetState extends State<OldPINWidget>
                               return 500.0;
                             }
                           }(),
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: MasonryGridView.builder(
                             physics: const NeverScrollableScrollPhysics(),
                             gridDelegate:
-                                SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                               crossAxisCount: 3,
                             ),
                             crossAxisSpacing: 8.0,
@@ -582,7 +577,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                             itemBuilder: (context, index) {
                               return [
                                 () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
                                           context.pushNamed(
@@ -628,11 +623,11 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                               return 80.0;
                                             }
                                           }(),
-                                          padding: EdgeInsets.all(0.0),
+                                          padding: const EdgeInsets.all(0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
+                                          color: const Color(0x00FFFFFF),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .headlineSmall
@@ -663,7 +658,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                       ),
                                     ),
                                 () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
@@ -708,11 +703,11 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                               return 80.0;
                                             }
                                           }(),
-                                          padding: EdgeInsets.all(0.0),
+                                          padding: const EdgeInsets.all(0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
+                                          color: const Color(0x00FFFFFF),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .headlineSmall
@@ -743,7 +738,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                       ),
                                     ),
                                 () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
@@ -788,11 +783,11 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                               return 80.0;
                                             }
                                           }(),
-                                          padding: EdgeInsets.all(0.0),
+                                          padding: const EdgeInsets.all(0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
+                                          color: const Color(0x00FFFFFF),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .headlineSmall
@@ -823,7 +818,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                       ),
                                     ),
                                 () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
@@ -868,11 +863,11 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                               return 80.0;
                                             }
                                           }(),
-                                          padding: EdgeInsets.all(0.0),
+                                          padding: const EdgeInsets.all(0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
+                                          color: const Color(0x00FFFFFF),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .headlineSmall
@@ -903,7 +898,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                       ),
                                     ),
                                 () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
@@ -948,11 +943,11 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                               return 80.0;
                                             }
                                           }(),
-                                          padding: EdgeInsets.all(0.0),
+                                          padding: const EdgeInsets.all(0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
+                                          color: const Color(0x00FFFFFF),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .headlineSmall
@@ -983,7 +978,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                       ),
                                     ),
                                 () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
@@ -1028,11 +1023,11 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                               return 80.0;
                                             }
                                           }(),
-                                          padding: EdgeInsets.all(0.0),
+                                          padding: const EdgeInsets.all(0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
+                                          color: const Color(0x00FFFFFF),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .headlineSmall
@@ -1063,7 +1058,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                       ),
                                     ),
                                 () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
@@ -1108,11 +1103,11 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                               return 80.0;
                                             }
                                           }(),
-                                          padding: EdgeInsets.all(0.0),
+                                          padding: const EdgeInsets.all(0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
+                                          color: const Color(0x00FFFFFF),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .headlineSmall
@@ -1143,7 +1138,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                       ),
                                     ),
                                 () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
@@ -1188,11 +1183,11 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                               return 80.0;
                                             }
                                           }(),
-                                          padding: EdgeInsets.all(0.0),
+                                          padding: const EdgeInsets.all(0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
+                                          color: const Color(0x00FFFFFF),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .headlineSmall
@@ -1223,7 +1218,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                       ),
                                     ),
                                 () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
@@ -1268,11 +1263,11 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                               return 80.0;
                                             }
                                           }(),
-                                          padding: EdgeInsets.all(0.0),
+                                          padding: const EdgeInsets.all(0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
+                                          color: const Color(0x00FFFFFF),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .headlineSmall
@@ -1303,7 +1298,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                       ),
                                     ),
                                 () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
@@ -1330,12 +1325,12 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                             }
                                           }(),
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x005C6AC4),
+                                          color: const Color(0x005C6AC4),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .bodyMedium
@@ -1366,7 +1361,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                       ),
                                     ),
                                 () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
@@ -1412,12 +1407,12 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                             }
                                           }(),
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
+                                          color: const Color(0x00FFFFFF),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .headlineSmall
@@ -1448,13 +1443,13 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                       ),
                                     ),
                                 () => Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
                                         },
                                         text: '',
-                                        icon: FaIcon(
+                                        icon: const FaIcon(
                                           FontAwesomeIcons.backspace,
                                           size: 20.0,
                                         ),
@@ -1498,12 +1493,12 @@ class _OldPINWidgetState extends State<OldPINWidget>
                                             }
                                           }(),
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   6.0, 0.0, 0.0, 0.0),
-                                          color: Color(0x00FFFFFF),
+                                          color: const Color(0x00FFFFFF),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .titleMedium
@@ -1538,7 +1533,7 @@ class _OldPINWidgetState extends State<OldPINWidget>
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(height: 1.0)),
+                    ].divide(const SizedBox(height: 1.0)),
                   ),
                 ),
               ),

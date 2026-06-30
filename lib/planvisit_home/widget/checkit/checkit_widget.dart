@@ -1,9 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'checkit_model.dart';
 export 'checkit_model.dart';
 
@@ -127,7 +124,7 @@ class _CheckitWidgetState extends State<CheckitWidget> {
               safeSetState(() => _model.ffValue = newValue!);
             },
             side: (Colors.transparent != null)
-                ? BorderSide(
+                ? const BorderSide(
                     width: 2,
                     color: Colors.transparent,
                   )

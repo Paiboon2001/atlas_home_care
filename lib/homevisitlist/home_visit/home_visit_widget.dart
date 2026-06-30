@@ -1,14 +1,10 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/homevisitlist/widget/home_care/home_care_widget.dart';
 import '/homevisitlist/widget/search_village/search_village_widget.dart';
 import '/utils/navbar/navbar_widget.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'home_visit_model.dart';
 export 'home_visit_model.dart';
 
@@ -57,7 +53,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
             Container(
               width: 40.0,
               height: 40.0,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 shape: BoxShape.circle,
               ),
             ),
@@ -76,7 +72,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(-0.63, 0.0),
+              alignment: const AlignmentDirectional(-0.63, 0.0),
               child: InkWell(
                 splashColor: Colors.transparent,
                 focusColor: Colors.transparent,
@@ -91,7 +87,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                     builder: (context) {
                       return Padding(
                         padding: MediaQuery.viewInsetsOf(context),
-                        child: SearchVillageWidget(),
+                        child: const SearchVillageWidget(),
                       );
                     },
                   ).then((value) => safeSetState(() {}));
@@ -99,12 +95,12 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                 child: Container(
                   width: 40.0,
                   height: 40.0,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Color(0x93164874),
                     shape: BoxShape.circle,
                   ),
                   child: Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Icon(
                       Icons.search_rounded,
                       color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -114,12 +110,12 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                 ),
               ),
             ),
-          ].divide(SizedBox(width: 8.0)),
+          ].divide(const SizedBox(width: 8.0)),
         ),
-        actions: [],
+        actions: const [],
         flexibleSpace: FlexibleSpaceBar(
           background: ClipRRect(
-            borderRadius: BorderRadius.only(),
+            borderRadius: const BorderRadius.only(),
             child: Image.asset(
               'assets/images/bgappbar.png',
               fit: BoxFit.cover,
@@ -130,7 +126,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
         elevation: 0.0,
       ),
       body: ClipRRect(
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(24.0),
           topRight: Radius.circular(24.0),
         ),
@@ -139,7 +135,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
           height: double.infinity,
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).primaryBackground,
-            boxShadow: [
+            boxShadow: const [
               BoxShadow(
                 blurRadius: 4.0,
                 color: Color(0x33000000),
@@ -149,7 +145,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                 ),
               )
             ],
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(24.0),
               topRight: Radius.circular(24.0),
             ),
@@ -157,7 +153,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
           child: Stack(
             children: [
               ListView(
-                padding: EdgeInsets.fromLTRB(
+                padding: const EdgeInsets.fromLTRB(
                   0,
                   0,
                   0,
@@ -167,7 +163,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                 scrollDirection: Axis.vertical,
                 children: [
                   Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -212,7 +208,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                               () => wrapWithModel(
                                     model: _model.homeCareModel1,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: HomeCareWidget(
+                                    child: const HomeCareWidget(
                                       homename: 'บ้านกฤษดานคร',
                                       numhome: 'หมู่ที่ 6',
                                       manyhome: '450',
@@ -222,7 +218,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                               () => wrapWithModel(
                                     model: _model.homeCareModel2,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: HomeCareWidget(
+                                    child: const HomeCareWidget(
                                       homename: 'บ้านหทัยราช',
                                       numhome: 'หมู่ที่ 8',
                                       manyhome: '348',
@@ -232,7 +228,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                               () => wrapWithModel(
                                     model: _model.homeCareModel3,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: HomeCareWidget(
+                                    child: const HomeCareWidget(
                                       homename: 'บ้านเด่นชัย',
                                       numhome: 'หมู่ที่ 12',
                                       manyhome: '345',
@@ -242,7 +238,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                               () => wrapWithModel(
                                     model: _model.homeCareModel4,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: HomeCareWidget(
+                                    child: const HomeCareWidget(
                                       homename: 'บ้านกูรูณาหนองห่าน',
                                       numhome: 'หมู่ที่ 15',
                                       manyhome: '345',
@@ -252,11 +248,11 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                             ][index]();
                           },
                         ),
-                      ].divide(SizedBox(height: 8.0)),
+                      ].divide(const SizedBox(height: 8.0)),
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -301,7 +297,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                               () => wrapWithModel(
                                     model: _model.homeCareModel5,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: HomeCareWidget(
+                                    child: const HomeCareWidget(
                                       homename: 'บ้านนกยูง',
                                       numhome: 'หมู่ที่ 1',
                                       manyhome: '390',
@@ -311,7 +307,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                               () => wrapWithModel(
                                     model: _model.homeCareModel6,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: HomeCareWidget(
+                                    child: const HomeCareWidget(
                                       homename: 'บ้านกระจาน',
                                       numhome: 'หมู่ที่ 3',
                                       manyhome: '456',
@@ -321,7 +317,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                               () => wrapWithModel(
                                     model: _model.homeCareModel7,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: HomeCareWidget(
+                                    child: const HomeCareWidget(
                                       homename: 'บ้านกระโนน',
                                       numhome: 'หมู่ที่ 13',
                                       manyhome: '567',
@@ -331,7 +327,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                               () => wrapWithModel(
                                     model: _model.homeCareModel8,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: HomeCareWidget(
+                                    child: const HomeCareWidget(
                                       homename: 'บ้านณัฏยา',
                                       numhome: 'หมู่ที่ 13',
                                       manyhome: '367',
@@ -341,7 +337,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                               () => wrapWithModel(
                                     model: _model.homeCareModel9,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: HomeCareWidget(
+                                    child: const HomeCareWidget(
                                       homename: 'บ้านหนองกาดน้อย',
                                       numhome: 'หมู่ที่ 6',
                                       manyhome: '356',
@@ -351,7 +347,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                               () => wrapWithModel(
                                     model: _model.homeCareModel10,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: HomeCareWidget(
+                                    child: const HomeCareWidget(
                                       homename: 'บ้านแกร็บ',
                                       numhome: 'หมู่ที่ 9',
                                       manyhome: '467',
@@ -361,17 +357,17 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                             ][index]();
                           },
                         ),
-                      ].divide(SizedBox(height: 8.0)),
+                      ].divide(const SizedBox(height: 8.0)),
                     ),
                   ),
                 ],
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 1.0),
+                alignment: const AlignmentDirectional(0.0, 1.0),
                 child: wrapWithModel(
                   model: _model.navbarModel,
                   updateCallback: () => safeSetState(() {}),
-                  child: NavbarWidget(
+                  child: const NavbarWidget(
                     navbar: 3,
                     hide: false,
                   ),

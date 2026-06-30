@@ -1,11 +1,7 @@
 import '/assessmentform/inhomesss/widget/result_i_n_h_o_m_e_s_s_s/result_i_n_h_o_m_e_s_s_s_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'inhomess_result_model.dart';
 export 'inhomess_result_model.dart';
 

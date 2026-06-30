@@ -1,12 +1,8 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'healthhistory_model.dart';
 export 'healthhistory_model.dart';
 
@@ -54,7 +50,7 @@ class _HealthhistoryWidgetState extends State<HealthhistoryWidget> {
           borderRadius: 30.0,
           borderWidth: 1.0,
           buttonSize: 44.0,
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_new_rounded,
             color: Colors.white,
             size: 18.0,
@@ -73,9 +69,9 @@ class _HealthhistoryWidgetState extends State<HealthhistoryWidget> {
                     !FlutterFlowTheme.of(context).titleMediumIsCustom,
               ),
         ),
-        actions: [],
+        actions: const [],
         bottom: PreferredSize(
-          preferredSize: Size.fromHeight(8.0),
+          preferredSize: const Size.fromHeight(8.0),
           child: Container(),
         ),
         centerTitle: true,
@@ -86,7 +82,7 @@ class _HealthhistoryWidgetState extends State<HealthhistoryWidget> {
         height: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).primaryBackground,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               blurRadius: 8.0,
               color: Color(0x33000000),
@@ -96,13 +92,13 @@ class _HealthhistoryWidgetState extends State<HealthhistoryWidget> {
               ),
             )
           ],
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
         ),
         child: ListView(
-          padding: EdgeInsets.fromLTRB(
+          padding: const EdgeInsets.fromLTRB(
             0,
             16.0,
             0,
@@ -112,7 +108,7 @@ class _HealthhistoryWidgetState extends State<HealthhistoryWidget> {
           scrollDirection: Axis.vertical,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
               child: InkWell(
                 splashColor: Colors.transparent,
                 focusColor: Colors.transparent,
@@ -174,19 +170,19 @@ class _HealthhistoryWidgetState extends State<HealthhistoryWidget> {
                                 .secondaryBackground,
                             image: DecorationImage(
                               fit: BoxFit.fitWidth,
-                              alignment: AlignmentDirectional(0.0, 1.0),
+                              alignment: const AlignmentDirectional(0.0, 1.0),
                               image: Image.network(
                                 'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/gmgqj7bkiter/Background_CGM.png',
                               ).image,
                             ),
-                            borderRadius: BorderRadius.only(
+                            borderRadius: const BorderRadius.only(
                               topLeft: Radius.circular(16.0),
                               topRight: Radius.circular(16.0),
                             ),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.all(12.0),
+                          padding: const EdgeInsets.all(12.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -219,7 +215,7 @@ class _HealthhistoryWidgetState extends State<HealthhistoryWidget> {
                                               .labelSmallIsCustom,
                                     ),
                               ),
-                            ].divide(SizedBox(height: 8.0)),
+                            ].divide(const SizedBox(height: 8.0)),
                           ),
                         ),
                       ],
@@ -228,7 +224,7 @@ class _HealthhistoryWidgetState extends State<HealthhistoryWidget> {
                 ),
               ),
             ),
-          ].divide(SizedBox(height: 16.0)),
+          ].divide(const SizedBox(height: 16.0)),
         ),
       ),
     );

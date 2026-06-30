@@ -2,14 +2,10 @@ import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/home/widget/news/news_widget.dart';
 import '/home/widget/visit_done/visit_done_widget.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'noti_model.dart';
 export 'noti_model.dart';
 
@@ -63,7 +59,7 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
           borderRadius: 30.0,
           borderWidth: 1.0,
           buttonSize: 44.0,
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_new_rounded,
             color: Colors.white,
             size: 18.0,
@@ -82,25 +78,25 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                     !FlutterFlowTheme.of(context).titleMediumIsCustom,
               ),
         ),
-        actions: [],
+        actions: const [],
         flexibleSpace: FlexibleSpaceBar(
           background: Opacity(
             opacity: 0.3,
             child: Align(
-              alignment: AlignmentDirectional(1.0, 1.0),
+              alignment: const AlignmentDirectional(1.0, 1.0),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(8.0),
                 child: Image.network(
                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/5yfb9q5kks4p/noti.png',
                   fit: BoxFit.cover,
-                  alignment: Alignment(1.0, 1.0),
+                  alignment: const Alignment(1.0, 1.0),
                 ),
               ),
             ),
           ),
         ),
         bottom: PreferredSize(
-          preferredSize: Size.fromHeight(8.0),
+          preferredSize: const Size.fromHeight(8.0),
           child: Container(),
         ),
         centerTitle: true,
@@ -111,7 +107,7 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
         height: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).primaryBackground,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               blurRadius: 8.0,
               color: Color(0x33000000),
@@ -121,7 +117,7 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
               ),
             )
           ],
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -133,7 +129,7 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
               child: Column(
                 children: [
                   Align(
-                    alignment: Alignment(0.0, 0),
+                    alignment: const Alignment(0.0, 0),
                     child: FlutterFlowButtonTabBar(
                       useToggleButtonStyle: true,
                       labelStyle: FlutterFlowTheme.of(context)
@@ -159,16 +155,16 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                       unselectedLabelColor:
                           FlutterFlowTheme.of(context).secondaryText,
                       backgroundColor: FlutterFlowTheme.of(context).primary,
-                      unselectedBackgroundColor: Color(0xFFE5EAF6),
+                      unselectedBackgroundColor: const Color(0xFFE5EAF6),
                       unselectedBorderColor:
                           FlutterFlowTheme.of(context).primaryBackground,
                       borderWidth: 2.0,
                       borderRadius: 26.0,
                       elevation: 0.0,
                       buttonMargin:
-                          EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
-                      padding: EdgeInsets.all(4.0),
-                      tabs: [
+                          const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+                      padding: const EdgeInsets.all(4.0),
+                      tabs: const [
                         Tab(
                           text: 'ทั้งหมด',
                         ),
@@ -190,7 +186,7 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                       controller: _model.tabBarController,
                       children: [
                         ListView(
-                          padding: EdgeInsets.fromLTRB(
+                          padding: const EdgeInsets.fromLTRB(
                             0,
                             16.0,
                             0,
@@ -200,7 +196,7 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                           scrollDirection: Axis.vertical,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -225,7 +221,7 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      boxShadow: [
+                                      boxShadow: const [
                                         BoxShadow(
                                           blurRadius: 4.0,
                                           color: Color(0x33000000),
@@ -262,12 +258,12 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                                                         .secondaryBackground,
                                                 size: 10.0,
                                               ),
-                                              colore: Color(0xFFFF8600),
+                                              colore: const Color(0xFFFF8600),
                                               textre: 'นายสุขภาพดี จิตแจ่มใส',
                                               picture:
                                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/m7xdpmwhlgki/girl1.png',
-                                              gradientone: Color(0xFF44B0FF),
-                                              gradienttwo: Color(0xFF9ACEF6),
+                                              gradientone: const Color(0xFF44B0FF),
+                                              gradienttwo: const Color(0xFF9ACEF6),
                                               textcolor:
                                                   FlutterFlowTheme.of(context)
                                                       .primaryText,
@@ -314,12 +310,12 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                                                       .secondaryBackground,
                                               size: 10.0,
                                             ),
-                                            colore: Color(0xFFFF8600),
+                                            colore: const Color(0xFFFF8600),
                                             textre: 'นางรัตนา ศรีสุข',
                                             picture:
                                                 'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/16ztnqju67da/student_girl.png',
-                                            gradientone: Color(0xFF44B0FF),
-                                            gradienttwo: Color(0xFF9ACEF6),
+                                            gradientone: const Color(0xFF44B0FF),
+                                            gradienttwo: const Color(0xFF9ACEF6),
                                             textcolor:
                                                 FlutterFlowTheme.of(context)
                                                     .primaryText,
@@ -399,13 +395,13 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                                       ],
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                             ),
-                          ].divide(SizedBox(height: 32.0)),
+                          ].divide(const SizedBox(height: 32.0)),
                         ),
                         ListView(
-                          padding: EdgeInsets.fromLTRB(
+                          padding: const EdgeInsets.fromLTRB(
                             0,
                             16.0,
                             0,
@@ -415,7 +411,7 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                           scrollDirection: Axis.vertical,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -440,7 +436,7 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      boxShadow: [
+                                      boxShadow: const [
                                         BoxShadow(
                                           blurRadius: 4.0,
                                           color: Color(0x33000000),
@@ -477,12 +473,12 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                                                         .secondaryBackground,
                                                 size: 10.0,
                                               ),
-                                              colore: Color(0xFFFF8600),
+                                              colore: const Color(0xFFFF8600),
                                               textre: 'นายสุขภาพดี จิตแจ่มใส',
                                               picture:
                                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/m7xdpmwhlgki/girl1.png',
-                                              gradientone: Color(0xFF44B0FF),
-                                              gradienttwo: Color(0xFF9ACEF6),
+                                              gradientone: const Color(0xFF44B0FF),
+                                              gradienttwo: const Color(0xFF9ACEF6),
                                               textcolor:
                                                   FlutterFlowTheme.of(context)
                                                       .primaryText,
@@ -529,12 +525,12 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                                                       .secondaryBackground,
                                               size: 10.0,
                                             ),
-                                            colore: Color(0xFFFF8600),
+                                            colore: const Color(0xFFFF8600),
                                             textre: 'นางรัตนา ศรีสุข',
                                             picture:
                                                 'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/16ztnqju67da/student_girl.png',
-                                            gradientone: Color(0xFF44B0FF),
-                                            gradienttwo: Color(0xFF9ACEF6),
+                                            gradientone: const Color(0xFF44B0FF),
+                                            gradienttwo: const Color(0xFF9ACEF6),
                                             textcolor:
                                                 FlutterFlowTheme.of(context)
                                                     .primaryText,
@@ -546,13 +542,13 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                                       ],
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                             ),
-                          ].divide(SizedBox(height: 32.0)),
+                          ].divide(const SizedBox(height: 32.0)),
                         ),
                         ListView(
-                          padding: EdgeInsets.fromLTRB(
+                          padding: const EdgeInsets.fromLTRB(
                             0,
                             16.0,
                             0,
@@ -562,7 +558,7 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                           scrollDirection: Axis.vertical,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -587,7 +583,7 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      boxShadow: [
+                                      boxShadow: const [
                                         BoxShadow(
                                           blurRadius: 4.0,
                                           color: Color(0x33000000),
@@ -648,10 +644,10 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                                       ],
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                             ),
-                          ].divide(SizedBox(height: 32.0)),
+                          ].divide(const SizedBox(height: 32.0)),
                         ),
                       ],
                     ),

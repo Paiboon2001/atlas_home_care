@@ -1,13 +1,9 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/medical_supply/search_order/search_order_widget.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'medicaldelivery_model.dart';
 export 'medicaldelivery_model.dart';
 
@@ -76,7 +72,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 44.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back_ios_new_rounded,
               color: Colors.white,
               size: 18.0,
@@ -103,7 +99,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.63, 0.0),
+                alignment: const AlignmentDirectional(-0.63, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -123,7 +119,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                           },
                           child: Padding(
                             padding: MediaQuery.viewInsetsOf(context),
-                            child: SearchOrderWidget(),
+                            child: const SearchOrderWidget(),
                           ),
                         );
                       },
@@ -137,7 +133,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                       shape: BoxShape.circle,
                     ),
                     child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Icon(
                         Icons.search_rounded,
                         color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -149,12 +145,12 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
         body: ClipRRect(
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(24.0),
             topRight: Radius.circular(24.0),
           ),
@@ -163,7 +159,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
             height: double.infinity,
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).secondaryBackground,
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(24.0),
                 topRight: Radius.circular(24.0),
               ),
@@ -171,7 +167,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
             child: Column(
               children: [
                 Align(
-                  alignment: Alignment(-1.0, 0),
+                  alignment: const Alignment(-1.0, 0),
                   child: TabBar(
                     isScrollable: true,
                     labelColor: FlutterFlowTheme.of(context).primary,
@@ -197,8 +193,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                         ),
                     indicatorColor: FlutterFlowTheme.of(context).customColor5,
                     indicatorWeight: 2.0,
-                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
-                    tabs: [
+                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                    tabs: const [
                       Tab(
                         text: 'ทั้งหมด',
                       ),
@@ -251,7 +247,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                             ),
                             Expanded(
                               child: ListView(
-                                padding: EdgeInsets.fromLTRB(
+                                padding: const EdgeInsets.fromLTRB(
                                   0,
                                   0,
                                   0,
@@ -295,7 +291,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -363,9 +359,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                       size: 24.0,
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 4.0)),
+                                                      const SizedBox(width: 4.0)),
                                                 ),
-                                              ].divide(SizedBox(width: 12.0)),
+                                              ].divide(const SizedBox(width: 12.0)),
                                             ),
                                           ),
                                           Divider(
@@ -376,7 +372,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -388,7 +384,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                     width: 48.0,
                                                     height: 48.0,
                                                     decoration: BoxDecoration(
-                                                      color: Color(0xFFE0F9FF),
+                                                      color: const Color(0xFFE0F9FF),
                                                       image: DecorationImage(
                                                         fit: BoxFit.cover,
                                                         image: Image.network(
@@ -457,7 +453,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                               .labelSmallIsCustom,
                                                                     ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 width: 8.0)),
                                                           ),
                                                           SizedBox(
@@ -499,22 +495,22 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                               .labelSmallIsCustom,
                                                                     ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 width: 8.0)),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 16.0)),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 8.0)),
+                                                        const SizedBox(height: 8.0)),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(width: 12.0)),
+                                              ].divide(const SizedBox(width: 12.0)),
                                             ),
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Container(
                                               decoration: BoxDecoration(
@@ -525,7 +521,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                     BorderRadius.circular(8.0),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsets.all(8.0),
+                                                padding: const EdgeInsets.all(8.0),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -597,7 +593,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                               ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
                                                     Row(
                                                       mainAxisSize:
@@ -643,10 +639,10 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                               ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
@@ -658,8 +654,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                 .alternate,
                                           ),
                                         ]
-                                            .divide(SizedBox(height: 12.0))
-                                            .addToStart(SizedBox(height: 12.0)),
+                                            .divide(const SizedBox(height: 12.0))
+                                            .addToStart(const SizedBox(height: 12.0)),
                                       ),
                                     ),
                                   ),
@@ -674,7 +670,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -737,9 +733,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                         .secondaryText,
                                                     size: 24.0,
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Divider(
@@ -750,7 +746,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -762,7 +758,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   width: 48.0,
                                                   height: 48.0,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -828,7 +824,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         SizedBox(
@@ -869,22 +865,22 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           width: 16.0)),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Container(
                                             decoration: BoxDecoration(
@@ -895,7 +891,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   BorderRadius.circular(8.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(8.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -967,7 +963,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
                                                   Row(
                                                     mainAxisSize:
@@ -1014,9 +1010,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                           ),
@@ -1028,8 +1024,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                               .alternate,
                                         ),
                                       ]
-                                          .divide(SizedBox(height: 12.0))
-                                          .addToStart(SizedBox(height: 12.0)),
+                                          .divide(const SizedBox(height: 12.0))
+                                          .addToStart(const SizedBox(height: 12.0)),
                                     ),
                                   ),
                                   Container(
@@ -1043,7 +1039,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -1106,9 +1102,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                         .secondaryText,
                                                     size: 24.0,
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Divider(
@@ -1119,7 +1115,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -1131,7 +1127,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   width: 48.0,
                                                   height: 48.0,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -1197,7 +1193,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         SizedBox(
@@ -1238,22 +1234,22 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           width: 16.0)),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Container(
                                             decoration: BoxDecoration(
@@ -1264,7 +1260,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   BorderRadius.circular(8.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(8.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -1336,7 +1332,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
                                                   Row(
                                                     mainAxisSize:
@@ -1383,9 +1379,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                           ),
@@ -1397,8 +1393,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                               .alternate,
                                         ),
                                       ]
-                                          .divide(SizedBox(height: 12.0))
-                                          .addToStart(SizedBox(height: 12.0)),
+                                          .divide(const SizedBox(height: 12.0))
+                                          .addToStart(const SizedBox(height: 12.0)),
                                     ),
                                   ),
                                   Container(
@@ -1412,7 +1408,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -1475,9 +1471,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                         .secondaryText,
                                                     size: 24.0,
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Divider(
@@ -1488,7 +1484,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -1500,7 +1496,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   width: 48.0,
                                                   height: 48.0,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -1566,7 +1562,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         SizedBox(
@@ -1607,22 +1603,22 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           width: 16.0)),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Container(
                                             decoration: BoxDecoration(
@@ -1633,7 +1629,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   BorderRadius.circular(8.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(8.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -1705,7 +1701,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
                                                   Row(
                                                     mainAxisSize:
@@ -1770,9 +1766,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                           ),
@@ -1784,8 +1780,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                               .alternate,
                                         ),
                                       ]
-                                          .divide(SizedBox(height: 12.0))
-                                          .addToStart(SizedBox(height: 12.0)),
+                                          .divide(const SizedBox(height: 12.0))
+                                          .addToStart(const SizedBox(height: 12.0)),
                                     ),
                                   ),
                                   Container(
@@ -1799,7 +1795,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -1862,9 +1858,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                         .secondaryText,
                                                     size: 24.0,
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Divider(
@@ -1875,7 +1871,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -1887,7 +1883,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   width: 48.0,
                                                   height: 48.0,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -1953,7 +1949,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         SizedBox(
@@ -1994,22 +1990,22 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           width: 16.0)),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Container(
                                             decoration: BoxDecoration(
@@ -2020,7 +2016,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   BorderRadius.circular(8.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(8.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -2092,7 +2088,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
                                                   Row(
                                                     mainAxisSize:
@@ -2157,9 +2153,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                           ),
@@ -2171,8 +2167,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                               .alternate,
                                         ),
                                       ]
-                                          .divide(SizedBox(height: 12.0))
-                                          .addToStart(SizedBox(height: 12.0)),
+                                          .divide(const SizedBox(height: 12.0))
+                                          .addToStart(const SizedBox(height: 12.0)),
                                     ),
                                   ),
                                   Container(
@@ -2186,7 +2182,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -2249,9 +2245,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                         .secondaryText,
                                                     size: 24.0,
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Divider(
@@ -2262,7 +2258,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -2274,7 +2270,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   width: 48.0,
                                                   height: 48.0,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -2340,7 +2336,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         SizedBox(
@@ -2381,22 +2377,22 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           width: 16.0)),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Container(
                                             decoration: BoxDecoration(
@@ -2407,7 +2403,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   BorderRadius.circular(8.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(8.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -2479,7 +2475,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
                                                   Row(
                                                     mainAxisSize:
@@ -2544,9 +2540,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                           ),
@@ -2558,8 +2554,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                               .alternate,
                                         ),
                                       ]
-                                          .divide(SizedBox(height: 12.0))
-                                          .addToStart(SizedBox(height: 12.0)),
+                                          .divide(const SizedBox(height: 12.0))
+                                          .addToStart(const SizedBox(height: 12.0)),
                                     ),
                                   ),
                                 ],
@@ -2579,7 +2575,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                             ),
                             Expanded(
                               child: ListView(
-                                padding: EdgeInsets.fromLTRB(
+                                padding: const EdgeInsets.fromLTRB(
                                   0,
                                   0,
                                   0,
@@ -2599,7 +2595,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -2662,9 +2658,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                         .secondaryText,
                                                     size: 24.0,
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Divider(
@@ -2675,7 +2671,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -2687,7 +2683,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   width: 48.0,
                                                   height: 48.0,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -2753,7 +2749,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         SizedBox(
@@ -2794,22 +2790,22 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           width: 16.0)),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Container(
                                             decoration: BoxDecoration(
@@ -2820,7 +2816,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   BorderRadius.circular(8.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(8.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -2892,7 +2888,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
                                                   Row(
                                                     mainAxisSize:
@@ -2939,9 +2935,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                           ),
@@ -2953,8 +2949,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                               .alternate,
                                         ),
                                       ]
-                                          .divide(SizedBox(height: 12.0))
-                                          .addToStart(SizedBox(height: 12.0)),
+                                          .divide(const SizedBox(height: 12.0))
+                                          .addToStart(const SizedBox(height: 12.0)),
                                     ),
                                   ),
                                 ],
@@ -2974,7 +2970,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                             ),
                             Expanded(
                               child: ListView(
-                                padding: EdgeInsets.fromLTRB(
+                                padding: const EdgeInsets.fromLTRB(
                                   0,
                                   0,
                                   0,
@@ -2994,7 +2990,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -3057,9 +3053,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                         .secondaryText,
                                                     size: 24.0,
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Divider(
@@ -3070,7 +3066,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -3082,7 +3078,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   width: 48.0,
                                                   height: 48.0,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -3148,7 +3144,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         SizedBox(
@@ -3189,22 +3185,22 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           width: 16.0)),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Container(
                                             decoration: BoxDecoration(
@@ -3215,7 +3211,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   BorderRadius.circular(8.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(8.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -3287,7 +3283,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
                                                   Row(
                                                     mainAxisSize:
@@ -3334,9 +3330,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                           ),
@@ -3348,8 +3344,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                               .alternate,
                                         ),
                                       ]
-                                          .divide(SizedBox(height: 12.0))
-                                          .addToStart(SizedBox(height: 12.0)),
+                                          .divide(const SizedBox(height: 12.0))
+                                          .addToStart(const SizedBox(height: 12.0)),
                                     ),
                                   ),
                                 ],
@@ -3369,7 +3365,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                             ),
                             Expanded(
                               child: ListView(
-                                padding: EdgeInsets.fromLTRB(
+                                padding: const EdgeInsets.fromLTRB(
                                   0,
                                   0,
                                   0,
@@ -3389,7 +3385,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -3452,9 +3448,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                         .secondaryText,
                                                     size: 24.0,
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Divider(
@@ -3465,7 +3461,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -3477,7 +3473,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   width: 48.0,
                                                   height: 48.0,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -3543,7 +3539,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         SizedBox(
@@ -3584,22 +3580,22 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           width: 16.0)),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Container(
                                             decoration: BoxDecoration(
@@ -3610,7 +3606,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   BorderRadius.circular(8.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(8.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -3682,7 +3678,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
                                                   Row(
                                                     mainAxisSize:
@@ -3729,9 +3725,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                           ),
@@ -3743,8 +3739,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                               .alternate,
                                         ),
                                       ]
-                                          .divide(SizedBox(height: 12.0))
-                                          .addToStart(SizedBox(height: 12.0)),
+                                          .divide(const SizedBox(height: 12.0))
+                                          .addToStart(const SizedBox(height: 12.0)),
                                     ),
                                   ),
                                 ],
@@ -3764,7 +3760,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                             ),
                             Expanded(
                               child: ListView(
-                                padding: EdgeInsets.fromLTRB(
+                                padding: const EdgeInsets.fromLTRB(
                                   0,
                                   0,
                                   0,
@@ -3784,7 +3780,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -3847,9 +3843,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                         .secondaryText,
                                                     size: 24.0,
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Divider(
@@ -3860,7 +3856,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -3872,7 +3868,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   width: 48.0,
                                                   height: 48.0,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -3938,7 +3934,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         SizedBox(
@@ -3979,22 +3975,22 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           width: 16.0)),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Container(
                                             decoration: BoxDecoration(
@@ -4005,7 +4001,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   BorderRadius.circular(8.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(8.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -4077,7 +4073,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
                                                   Row(
                                                     mainAxisSize:
@@ -4142,9 +4138,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                           ),
@@ -4156,8 +4152,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                               .alternate,
                                         ),
                                       ]
-                                          .divide(SizedBox(height: 12.0))
-                                          .addToStart(SizedBox(height: 12.0)),
+                                          .divide(const SizedBox(height: 12.0))
+                                          .addToStart(const SizedBox(height: 12.0)),
                                     ),
                                   ),
                                 ],
@@ -4177,7 +4173,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                             ),
                             Expanded(
                               child: ListView(
-                                padding: EdgeInsets.fromLTRB(
+                                padding: const EdgeInsets.fromLTRB(
                                   0,
                                   0,
                                   0,
@@ -4197,7 +4193,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -4260,9 +4256,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                         .secondaryText,
                                                     size: 24.0,
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Divider(
@@ -4273,7 +4269,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -4285,7 +4281,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   width: 48.0,
                                                   height: 48.0,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -4351,7 +4347,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         SizedBox(
@@ -4392,22 +4388,22 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           width: 16.0)),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Container(
                                             decoration: BoxDecoration(
@@ -4418,7 +4414,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   BorderRadius.circular(8.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(8.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -4490,7 +4486,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
                                                   Row(
                                                     mainAxisSize:
@@ -4555,9 +4551,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                           ),
@@ -4569,8 +4565,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                               .alternate,
                                         ),
                                       ]
-                                          .divide(SizedBox(height: 12.0))
-                                          .addToStart(SizedBox(height: 12.0)),
+                                          .divide(const SizedBox(height: 12.0))
+                                          .addToStart(const SizedBox(height: 12.0)),
                                     ),
                                   ),
                                 ],
@@ -4590,7 +4586,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                             ),
                             Expanded(
                               child: ListView(
-                                padding: EdgeInsets.fromLTRB(
+                                padding: const EdgeInsets.fromLTRB(
                                   0,
                                   0,
                                   0,
@@ -4610,7 +4606,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -4673,9 +4669,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                         .secondaryText,
                                                     size: 24.0,
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Divider(
@@ -4686,7 +4682,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -4698,7 +4694,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   width: 48.0,
                                                   height: 48.0,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xFFE0F9FF),
+                                                    color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.network(
@@ -4764,7 +4760,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
                                                         SizedBox(
@@ -4805,22 +4801,22 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                             .labelSmallIsCustom,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           width: 16.0)),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Container(
                                             decoration: BoxDecoration(
@@ -4831,7 +4827,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                   BorderRadius.circular(8.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(8.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -4903,7 +4899,7 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
                                                   Row(
                                                     mainAxisSize:
@@ -4968,9 +4964,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                           ),
@@ -4982,8 +4978,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                               .alternate,
                                         ),
                                       ]
-                                          .divide(SizedBox(height: 12.0))
-                                          .addToStart(SizedBox(height: 12.0)),
+                                          .divide(const SizedBox(height: 12.0))
+                                          .addToStart(const SizedBox(height: 12.0)),
                                     ),
                                   ),
                                 ],

@@ -2,16 +2,13 @@ import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/planvisit_home/widget/detaile_done/detaile_done_widget.dart';
 import '/planvisit_home/widget/detaile_visit/detaile_visit_widget.dart';
 import '/planvisit_home/widget/search_patient/search_patient_widget.dart';
 import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'plan_for_visit_model.dart';
 export 'plan_for_visit_model.dart';
@@ -70,7 +67,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
             Container(
               width: 40.0,
               height: 40.0,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 shape: BoxShape.circle,
               ),
               child: FlutterFlowIconButton(
@@ -78,7 +75,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 44.0,
-                icon: Icon(
+                icon: const Icon(
                   Icons.arrow_back_ios_new_rounded,
                   color: Colors.white,
                   size: 18.0,
@@ -106,7 +103,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
               children: [
                 if (FFAppState().searchplanvisit == false)
                   Align(
-                    alignment: AlignmentDirectional(-0.63, 0.0),
+                    alignment: const AlignmentDirectional(-0.63, 0.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -121,7 +118,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                           builder: (context) {
                             return Padding(
                               padding: MediaQuery.viewInsetsOf(context),
-                              child: SearchPatientWidget(),
+                              child: const SearchPatientWidget(),
                             );
                           },
                         ).then((value) => safeSetState(() {}));
@@ -129,12 +126,12 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                       child: Container(
                         width: 40.0,
                         height: 40.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0x93164874),
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.search_rounded,
                             color: FlutterFlowTheme.of(context)
@@ -147,7 +144,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                   ),
                 if (FFAppState().searchplanvisit == true)
                   Align(
-                    alignment: AlignmentDirectional(-0.63, 0.0),
+                    alignment: const AlignmentDirectional(-0.63, 0.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -160,12 +157,12 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                       child: Container(
                         width: 40.0,
                         height: 40.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0x93164874),
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.close_rounded,
                             color: FlutterFlowTheme.of(context)
@@ -178,9 +175,9 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                   ),
               ],
             ),
-          ].divide(SizedBox(width: 8.0)),
+          ].divide(const SizedBox(width: 8.0)),
         ),
-        actions: [],
+        actions: const [],
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -194,9 +191,9 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
               FlutterFlowTheme.of(context).secondaryBackground,
               FlutterFlowTheme.of(context).secondaryBackground
             ],
-            stops: [0.5, 0.7, 1.0],
-            begin: AlignmentDirectional(0.0, -1.0),
-            end: AlignmentDirectional(0, 1.0),
+            stops: const [0.5, 0.7, 1.0],
+            begin: const AlignmentDirectional(0.0, -1.0),
+            end: const AlignmentDirectional(0, 1.0),
           ),
         ),
         child: Stack(
@@ -206,7 +203,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
               height: double.infinity,
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).primaryBackground,
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(24.0),
                   topRight: Radius.circular(24.0),
                 ),
@@ -218,7 +215,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                     child: Column(
                       children: [
                         Align(
-                          alignment: Alignment(0.0, 0),
+                          alignment: const Alignment(0.0, 0),
                           child: FlutterFlowButtonTabBar(
                             useToggleButtonStyle: true,
                             labelStyle: FlutterFlowTheme.of(context)
@@ -245,16 +242,16 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                 FlutterFlowTheme.of(context).secondaryText,
                             backgroundColor:
                                 FlutterFlowTheme.of(context).primary,
-                            unselectedBackgroundColor: Color(0xFFE5EAF6),
+                            unselectedBackgroundColor: const Color(0xFFE5EAF6),
                             unselectedBorderColor:
                                 FlutterFlowTheme.of(context).primaryBackground,
                             borderWidth: 2.0,
                             borderRadius: 26.0,
                             elevation: 0.0,
-                            buttonMargin: EdgeInsetsDirectional.fromSTEB(
+                            buttonMargin: const EdgeInsetsDirectional.fromSTEB(
                                 8.0, 0.0, 8.0, 0.0),
-                            padding: EdgeInsets.all(4.0),
-                            tabs: [
+                            padding: const EdgeInsets.all(4.0),
+                            tabs: const [
                               Tab(
                                 text: 'รายการทั้งหมด',
                               ),
@@ -281,7 +278,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                   if (FFAppState().searchplanvisit == false)
                                     Expanded(
                                       child: ListView(
-                                        padding: EdgeInsets.fromLTRB(
+                                        padding: const EdgeInsets.fromLTRB(
                                           0,
                                           0,
                                           0,
@@ -292,7 +289,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 16.0, 16.0, 24.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.min,
@@ -326,7 +323,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                     .unknown
                                                               },
                                                             ),
-                                                            child: Container(
+                                                            child: SizedBox(
                                                               height: MediaQuery.of(
                                                                           context)
                                                                       .size
@@ -369,7 +366,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                     children: [
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 -1.0, 0.0),
                                                         child: Text(
                                                           valueOrDefault<
@@ -409,7 +406,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                         size: 24.0,
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 4.0)),
+                                                        const SizedBox(width: 4.0)),
                                                   ),
                                                 ),
                                                 Expanded(
@@ -426,7 +423,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryBackground,
-                                                          boxShadow: [
+                                                          boxShadow: const [
                                                             BoxShadow(
                                                               blurRadius: 4.0,
                                                               color: Color(
@@ -444,7 +441,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       4.0,
                                                                       0.0,
@@ -468,7 +465,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                 ),
                                                                 child: Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   child: Text(
@@ -505,7 +502,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                               .bodySmallIsCustom,
                                                                     ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 width: 6.0)),
                                                           ),
                                                         ),
@@ -517,7 +514,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryBackground,
-                                                          boxShadow: [
+                                                          boxShadow: const [
                                                             BoxShadow(
                                                               blurRadius: 4.0,
                                                               color: Color(
@@ -535,7 +532,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       4.0,
                                                                       0.0,
@@ -559,7 +556,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                 ),
                                                                 child: Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   child: Text(
@@ -596,7 +593,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                               .bodySmallIsCustom,
                                                                     ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 width: 6.0)),
                                                           ),
                                                         ),
@@ -631,7 +628,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 32.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -662,7 +659,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
-                                                    boxShadow: [
+                                                    boxShadow: const [
                                                       BoxShadow(
                                                         blurRadius: 4.0,
                                                         color:
@@ -711,7 +708,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                   .secondaryText,
                                                               size: 10.0,
                                                             ),
-                                                            colore: Color(
+                                                            colore: const Color(
                                                                 0xFFC9CFD6),
                                                             textre:
                                                                 'นางสมศรี สุขภาพดี',
@@ -780,7 +777,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                   .secondaryText,
                                                               size: 10.0,
                                                             ),
-                                                            colore: Color(
+                                                            colore: const Color(
                                                                 0xFFC9CFD6),
                                                             textre:
                                                                 'นายวิเชียร วงค์สามัคคี',
@@ -849,7 +846,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                   .secondaryText,
                                                               size: 10.0,
                                                             ),
-                                                            colore: Color(
+                                                            colore: const Color(
                                                                 0xFFC9CFD6),
                                                             textre:
                                                                 'นางคธา เสนาบดี',
@@ -915,12 +912,12 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                     ],
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 8.0)),
+                                              ].divide(const SizedBox(height: 8.0)),
                                             ),
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 32.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -951,7 +948,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
-                                                    boxShadow: [
+                                                    boxShadow: const [
                                                       BoxShadow(
                                                         blurRadius: 4.0,
                                                         color:
@@ -1105,12 +1102,12 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                     ],
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 8.0)),
+                                              ].divide(const SizedBox(height: 8.0)),
                                             ),
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1141,7 +1138,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
-                                                    boxShadow: [
+                                                    boxShadow: const [
                                                       BoxShadow(
                                                         blurRadius: 4.0,
                                                         color:
@@ -1241,7 +1238,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                     ],
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 8.0)),
+                                              ].divide(const SizedBox(height: 8.0)),
                                             ),
                                           ),
                                         ],
@@ -1249,7 +1246,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                     ),
                                   if (FFAppState().searchplanvisit == true)
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -1258,7 +1255,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 16.0, 0.0, 24.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.min,
@@ -1292,7 +1289,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                     .unknown
                                                               },
                                                             ),
-                                                            child: Container(
+                                                            child: SizedBox(
                                                               height: MediaQuery.of(
                                                                           context)
                                                                       .size
@@ -1335,7 +1332,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                     children: [
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 -1.0, 0.0),
                                                         child: Text(
                                                           valueOrDefault<
@@ -1375,7 +1372,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                         size: 24.0,
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 4.0)),
+                                                        const SizedBox(width: 4.0)),
                                                   ),
                                                 ),
                                                 Expanded(
@@ -1392,7 +1389,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryBackground,
-                                                          boxShadow: [
+                                                          boxShadow: const [
                                                             BoxShadow(
                                                               blurRadius: 4.0,
                                                               color: Color(
@@ -1410,7 +1407,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       4.0,
                                                                       0.0,
@@ -1434,7 +1431,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                 ),
                                                                 child: Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   child: Text(
@@ -1471,7 +1468,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                               .bodySmallIsCustom,
                                                                     ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 width: 6.0)),
                                                           ),
                                                         ),
@@ -1483,7 +1480,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryBackground,
-                                                          boxShadow: [
+                                                          boxShadow: const [
                                                             BoxShadow(
                                                               blurRadius: 4.0,
                                                               color: Color(
@@ -1501,7 +1498,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       4.0,
                                                                       0.0,
@@ -1525,7 +1522,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                 ),
                                                                 child: Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   child: Text(
@@ -1562,7 +1559,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                               .bodySmallIsCustom,
                                                                     ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 width: 6.0)),
                                                           ),
                                                         ),
@@ -1597,7 +1594,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 8.0),
                                             child: Text(
                                               '09 ธันวาคม',
@@ -1623,7 +1620,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryBackground,
-                                              boxShadow: [
+                                              boxShadow: const [
                                                 BoxShadow(
                                                   blurRadius: 4.0,
                                                   color: Color(0x33000000),
@@ -1670,7 +1667,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                 ],
                               ),
                               ListView(
-                                padding: EdgeInsets.fromLTRB(
+                                padding: const EdgeInsets.fromLTRB(
                                   0,
                                   0,
                                   0,
@@ -1680,7 +1677,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                 scrollDirection: Axis.vertical,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 16.0, 16.0, 24.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.min,
@@ -1707,7 +1704,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                             .unknown
                                                       },
                                                     ),
-                                                    child: Container(
+                                                    child: SizedBox(
                                                       height:
                                                           MediaQuery.of(context)
                                                                   .size
@@ -1745,7 +1742,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Text(
                                                   valueOrDefault<String>(
@@ -1781,7 +1778,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                         .secondaryText,
                                                 size: 24.0,
                                               ),
-                                            ].divide(SizedBox(width: 4.0)),
+                                            ].divide(const SizedBox(width: 4.0)),
                                           ),
                                         ),
                                         Expanded(
@@ -1796,7 +1793,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
-                                                  boxShadow: [
+                                                  boxShadow: const [
                                                     BoxShadow(
                                                       blurRadius: 4.0,
                                                       color: Color(0x1B000000),
@@ -1811,7 +1808,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                           100.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           4.0, 0.0, 12.0, 0.0),
                                                   child: Row(
@@ -1831,7 +1828,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                         ),
                                                         child: Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Text(
                                                             '6',
@@ -1874,7 +1871,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 6.0)),
+                                                        const SizedBox(width: 6.0)),
                                                   ),
                                                 ),
                                               ),
@@ -1903,7 +1900,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 32.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -1930,7 +1927,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
-                                            boxShadow: [
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 4.0,
                                                 color: Color(0x33000000),
@@ -1969,11 +1966,11 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                             ],
                                           ),
                                         ),
-                                      ].divide(SizedBox(height: 8.0)),
+                                      ].divide(const SizedBox(height: 8.0)),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 32.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -2000,7 +1997,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
-                                            boxShadow: [
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 4.0,
                                                 color: Color(0x33000000),
@@ -2134,11 +2131,11 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                             ],
                                           ),
                                         ),
-                                      ].divide(SizedBox(height: 8.0)),
+                                      ].divide(const SizedBox(height: 8.0)),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -2165,7 +2162,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
-                                            boxShadow: [
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 4.0,
                                                 color: Color(0x33000000),
@@ -2252,13 +2249,13 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                             ],
                                           ),
                                         ),
-                                      ].divide(SizedBox(height: 8.0)),
+                                      ].divide(const SizedBox(height: 8.0)),
                                     ),
                                   ),
                                 ],
                               ),
                               ListView(
-                                padding: EdgeInsets.fromLTRB(
+                                padding: const EdgeInsets.fromLTRB(
                                   0,
                                   0,
                                   0,
@@ -2268,7 +2265,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                 scrollDirection: Axis.vertical,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 16.0, 16.0, 24.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.min,
@@ -2295,7 +2292,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                             .unknown
                                                       },
                                                     ),
-                                                    child: Container(
+                                                    child: SizedBox(
                                                       height:
                                                           MediaQuery.of(context)
                                                                   .size
@@ -2333,7 +2330,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Text(
                                                   valueOrDefault<String>(
@@ -2369,7 +2366,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                         .secondaryText,
                                                 size: 24.0,
                                               ),
-                                            ].divide(SizedBox(width: 4.0)),
+                                            ].divide(const SizedBox(width: 4.0)),
                                           ),
                                         ),
                                         Expanded(
@@ -2384,7 +2381,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
-                                                  boxShadow: [
+                                                  boxShadow: const [
                                                     BoxShadow(
                                                       blurRadius: 4.0,
                                                       color: Color(0x1B000000),
@@ -2399,7 +2396,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                           100.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           4.0, 0.0, 12.0, 0.0),
                                                   child: Row(
@@ -2419,7 +2416,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                         ),
                                                         child: Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Text(
                                                             '3',
@@ -2462,7 +2459,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 6.0)),
+                                                        const SizedBox(width: 6.0)),
                                                   ),
                                                 ),
                                               ),
@@ -2491,7 +2488,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -2518,7 +2515,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
-                                            boxShadow: [
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 4.0,
                                                 color: Color(0x33000000),
@@ -2559,7 +2556,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                               .secondaryText,
                                                       size: 10.0,
                                                     ),
-                                                    colore: Color(0xFFC9CFD6),
+                                                    colore: const Color(0xFFC9CFD6),
                                                     textre: 'นางสมศรี สุขภาพดี',
                                                     picture:
                                                         'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/m7xdpmwhlgki/girl1.png',
@@ -2617,7 +2614,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                               .secondaryText,
                                                       size: 10.0,
                                                     ),
-                                                    colore: Color(0xFFC9CFD6),
+                                                    colore: const Color(0xFFC9CFD6),
                                                     textre:
                                                         'นายวิเชียร วงค์สามัคคี',
                                                     picture:
@@ -2676,7 +2673,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                               .secondaryText,
                                                       size: 10.0,
                                                     ),
-                                                    colore: Color(0xFFC9CFD6),
+                                                    colore: const Color(0xFFC9CFD6),
                                                     textre: 'นางคธา เสนาบดี',
                                                     picture:
                                                         'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/9e97rkkhahtb/oldgirl1.png',
@@ -2686,7 +2683,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                             ],
                                           ),
                                         ),
-                                      ].divide(SizedBox(height: 8.0)),
+                                      ].divide(const SizedBox(height: 8.0)),
                                     ),
                                   ),
                                 ],

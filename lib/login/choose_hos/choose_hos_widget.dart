@@ -2,16 +2,10 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/login/widget/hospital_cs/hospital_cs_widget.dart';
-import 'dart:math';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'choose_hos_model.dart';
 export 'choose_hos_model.dart';
 
@@ -308,7 +302,7 @@ class _ChooseHosWidgetState extends State<ChooseHosWidget>
           width: double.infinity,
           height: double.infinity,
           decoration: const BoxDecoration(
-            color: Color(0xFFF2FAFF),
+            color: Colors.white,
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(32.0),
               topRight: Radius.circular(32.0),

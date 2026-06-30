@@ -1,14 +1,8 @@
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'cb_click_model.dart';
 export 'cb_click_model.dart';
 
@@ -171,9 +165,9 @@ class _CbClickWidgetState extends State<CbClickWidget>
                   safeSetState(() => _model.checkbox01Value = newValue!);
                 },
                 side: (const Color(0x00FFFFFF) != null)
-                    ? BorderSide(
+                    ? const BorderSide(
                         width: 2,
-                        color: const Color(0x00FFFFFF),
+                        color: Color(0x00FFFFFF),
                       )
                     : null,
                 activeColor: const Color(0x00FFFFFF),
