@@ -11,10 +11,10 @@ import '/map/widget/navigatebutton/navigatebutton_widget.dart';
 import '/map/widget/pin/pin_widget.dart';
 import '/utils/navbar/navbar_widget.dart';
 import '/index.dart';
-import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 import 'homepage_new_model.dart';
@@ -70,7 +70,8 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
               pinned: false,
               floating: true,
               snap: true,
-              backgroundColor: FlutterFlowTheme.of(context).primary,
+              backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+              systemOverlayStyle: SystemUiOverlayStyle.dark,
               automaticallyImplyLeading: false,
               title: Row(
                 mainAxisSize: MainAxisSize.max,
@@ -78,34 +79,8 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                   Align(
                     alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Container(
-                      width: () {
-                        if (MediaQuery.sizeOf(context).width <
-                            kBreakpointSmall) {
-                          return 50.0;
-                        } else if (MediaQuery.sizeOf(context).width <
-                            kBreakpointMedium) {
-                          return 50.0;
-                        } else if (MediaQuery.sizeOf(context).width <
-                            kBreakpointLarge) {
-                          return 56.0;
-                        } else {
-                          return 56.0;
-                        }
-                      }(),
-                      height: () {
-                        if (MediaQuery.sizeOf(context).width <
-                            kBreakpointSmall) {
-                          return 50.0;
-                        } else if (MediaQuery.sizeOf(context).width <
-                            kBreakpointMedium) {
-                          return 50.0;
-                        } else if (MediaQuery.sizeOf(context).width <
-                            kBreakpointLarge) {
-                          return 56.0;
-                        } else {
-                          return 56.0;
-                        }
-                      }(),
+                      width: 40.0,
+                      height: 40.0,
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           colors: [
@@ -141,7 +116,8 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                       ),
                     ),
                   ),
-                  Column(
+                  Flexible(
+                    child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -149,15 +125,17 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                         alignment: const AlignmentDirectional(-1.0, 0.0),
                         child: Text(
                           'รพ.บางกอก เมดิคอล เทคโนโลยี',
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
                           style: FlutterFlowTheme.of(context)
                               .bodySmall
                               .override(
                                 fontFamily: FlutterFlowTheme.of(context)
                                     .bodySmallFamily,
-                                color: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
+                                color: const Color(0xFF8A8F97),
+                                fontSize: 12.0,
                                 letterSpacing: 0.0,
-                                fontWeight: FontWeight.w300,
+                                fontWeight: FontWeight.w400,
                                 useGoogleFonts: !FlutterFlowTheme.of(context)
                                     .bodySmallIsCustom,
                               ),
@@ -176,39 +154,25 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                     .override(
                                       fontFamily: FlutterFlowTheme.of(context)
                                           .bodyLargeFamily,
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
+                                      color: const Color(0xFF004078),
+                                      fontSize: 16.0,
                                       letterSpacing: 0.0,
-                                      fontWeight: FontWeight.w500,
+                                      fontWeight: FontWeight.w600,
                                       useGoogleFonts:
                                           !FlutterFlowTheme.of(context)
                                               .bodyLargeIsCustom,
                                     ),
                               ),
-                              TextSpan(
-                                text: ' (อสม.)',
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily,
-                                      color: const Color(0xFFF9E7C9),
-                                      letterSpacing: 0.0,
-                                      useGoogleFonts:
-                                          !FlutterFlowTheme.of(context)
-                                              .bodyMediumIsCustom,
-                                    ),
-                              )
                             ],
                             style: FlutterFlowTheme.of(context)
                                 .bodyLarge
                                 .override(
                                   fontFamily: FlutterFlowTheme.of(context)
                                       .bodyLargeFamily,
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryBackground,
+                                  color: const Color(0xFF004078),
+                                  fontSize: 16.0,
                                   letterSpacing: 0.0,
-                                  fontWeight: FontWeight.w500,
+                                  fontWeight: FontWeight.w600,
                                   useGoogleFonts: !FlutterFlowTheme.of(context)
                                       .bodyLargeIsCustom,
                                 ),
@@ -217,98 +181,54 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                       ),
                     ].divide(const SizedBox(height: 4.0)),
                   ),
-                ].divide(const SizedBox(width: 12.0)),
+                  ),
+                ].divide(const SizedBox(width: 8.0)),
               ),
               actions: [
-                Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Align(
-                      alignment: const AlignmentDirectional(-0.63, 0.0),
-                      child: Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
-                        child: InkWell(
-                          splashColor: Colors.transparent,
-                          focusColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
-                          onTap: () async {
-                            context.pushNamed(HistoryWidget.routeName);
-                          },
-                          child: Container(
-                            width: 40.0,
-                            height: 40.0,
-                            decoration: const BoxDecoration(
-                              color: Color(0x93164874),
-                              shape: BoxShape.circle,
-                            ),
-                            child: Align(
-                              alignment: const AlignmentDirectional(0.0, 0.0),
-                              child: Icon(
-                                Icons.history_rounded,
-                                color: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
-                                size: 24.0,
-                              ),
-                            ),
+                Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(
+                      0.0, 0.0, 16.0, 0.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {
+                          context.pushNamed(HistoryWidget.routeName);
+                        },
+                        child: SvgPicture.asset(
+                          'assets/images/ic_history_clock.svg',
+                          width: 32.0,
+                          height: 32.0,
+                          colorFilter: const ColorFilter.mode(
+                            Color(0xFF041228),
+                            BlendMode.srcIn,
                           ),
                         ),
                       ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 16.0, 0.0),
-                      child: badges.Badge(
-                        badgeContent: Text(
-                          '5',
-                          style: GoogleFonts.sarabun(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            fontWeight: FontWeight.normal,
-                            fontSize: 12.0,
-                          ),
-                        ),
-                        showBadge: true,
-                        shape: badges.BadgeShape.circle,
-                        badgeColor: FlutterFlowTheme.of(context).error,
-                        elevation: 0.0,
-                        padding: const EdgeInsets.all(6.0),
-                        position: badges.BadgePosition.topEnd(),
-                        animationType: badges.BadgeAnimationType.scale,
-                        toAnimate: true,
-                        child: Align(
-                          alignment: const AlignmentDirectional(-0.63, 0.0),
-                          child: InkWell(
-                            splashColor: Colors.transparent,
-                            focusColor: Colors.transparent,
-                            hoverColor: Colors.transparent,
-                            highlightColor: Colors.transparent,
-                            onTap: () async {
-                              context.pushNamed(NotiWidget.routeName);
-                            },
-                            child: Container(
-                              width: 40.0,
-                              height: 40.0,
-                              decoration: const BoxDecoration(
-                                color: Color(0x93164874),
-                                shape: BoxShape.circle,
-                              ),
-                              child: Align(
-                                alignment: const AlignmentDirectional(0.0, 0.0),
-                                child: Icon(
-                                  Icons.notifications_outlined,
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryBackground,
-                                  size: 24.0,
-                                ),
-                              ),
-                            ),
+                      InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {
+                          context.pushNamed(NotiWidget.routeName);
+                        },
+                        child: SvgPicture.asset(
+                          'assets/images/ic_bell_notify.svg',
+                          width: 32.0,
+                          height: 32.0,
+                          colorFilter: const ColorFilter.mode(
+                            Color(0xFF041228),
+                            BlendMode.srcIn,
                           ),
                         ),
                       ),
-                    ),
-                  ].divide(const SizedBox(width: 12.0)),
+                    ].divide(const SizedBox(width: 24.0)),
+                  ),
                 ),
               ],
               centerTitle: false,

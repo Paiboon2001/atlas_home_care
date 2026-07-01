@@ -5,7 +5,7 @@ import '/profile/widget/logout_system/logout_system_widget.dart';
 import '/utils/navbar/navbar_widget.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'setting_model.dart';
 export 'setting_model.dart';
 
@@ -23,6 +23,9 @@ class _SettingWidgetState extends State<SettingWidget> {
   late SettingModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  static const Color _line = Color(0xFFEDEDED);
+  static const Color _gray01 = Color(0xFF8A8F97);
 
   @override
   void initState() {
@@ -42,6 +45,281 @@ class _SettingWidgetState extends State<SettingWidget> {
     super.dispose();
   }
 
+  // Gradient rounded icon box with a 16px white glyph (svg asset or material icon).
+  Widget _iconBox({
+    required List<Color> colors,
+    String? asset,
+    IconData? icon,
+    AlignmentGeometry begin = const AlignmentDirectional(0.0, -1.0),
+    AlignmentGeometry end = const AlignmentDirectional(0.0, 1.0),
+  }) {
+    return Container(
+      width: 24.0,
+      height: 24.0,
+      decoration: BoxDecoration(
+        gradient: LinearGradient(colors: colors, begin: begin, end: end),
+        borderRadius: BorderRadius.circular(8.0),
+      ),
+      child: Center(
+        child: asset != null
+            ? SvgPicture.asset(
+                asset,
+                width: 16.0,
+                height: 16.0,
+                fit: BoxFit.contain,
+                colorFilter:
+                    const ColorFilter.mode(Colors.white, BlendMode.srcIn),
+              )
+            : Icon(icon, size: 16.0, color: Colors.white),
+      ),
+    );
+  }
+
+  Widget _tile({
+    required Widget leading,
+    required String label,
+    required Widget trailing,
+    Future<dynamic> Function()? onTap,
+  }) {
+    final row = Row(
+      children: [
+        Expanded(
+          child: Row(
+            children: [
+              leading,
+              const SizedBox(width: 12.0),
+              Flexible(
+                child: Text(
+                  label,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: FlutterFlowTheme.of(context).bodyLarge.override(
+                        fontFamily:
+                            FlutterFlowTheme.of(context).bodyLargeFamily,
+                        color: Colors.black,
+                        fontSize: 16.0,
+                        letterSpacing: -0.3,
+                        useGoogleFonts:
+                            !FlutterFlowTheme.of(context).bodyLargeIsCustom,
+                      ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        trailing,
+      ],
+    );
+    if (onTap == null) return row;
+    return InkWell(
+      splashColor: Colors.transparent,
+      focusColor: Colors.transparent,
+      hoverColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+      onTap: onTap,
+      child: row,
+    );
+  }
+
+  Widget get _chevron => const Icon(
+        Icons.keyboard_arrow_right_rounded,
+        color: _gray01,
+        size: 24.0,
+      );
+
+  Widget _switch(bool value, ValueChanged<bool> onChanged) {
+    return Switch.adaptive(
+      value: value,
+      onChanged: onChanged,
+      activeThumbColor: Colors.white,
+      activeTrackColor: const Color(0xFF339FF3),
+      inactiveTrackColor: const Color(0xFFD0D8E0),
+      inactiveThumbColor: Colors.white,
+    );
+  }
+
+  Widget _trailingText(String text) => Text(
+        text,
+        style: FlutterFlowTheme.of(context).bodyMedium.override(
+              fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+              color: _gray01,
+              fontSize: 16.0,
+              letterSpacing: -0.3,
+              useGoogleFonts:
+                  !FlutterFlowTheme.of(context).bodyMediumIsCustom,
+            ),
+      );
+
+  Widget _card(List<Widget> tiles) {
+    final children = <Widget>[];
+    for (var i = 0; i < tiles.length; i++) {
+      children.add(tiles[i]);
+      if (i != tiles.length - 1) {
+        children.add(
+          const Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 12.0),
+            child: Divider(height: 1.0, thickness: 1.0, color: _line),
+          ),
+        );
+      }
+    }
+    return Container(
+      width: double.infinity,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16.0),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(12.0),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: children,
+        ),
+      ),
+    );
+  }
+
+  Widget _profileHeader() {
+    return SizedBox(
+      height: 200.0,
+      child: Stack(
+        children: [
+          // Blue banner with concentric ring pattern
+          Positioned(
+            top: 0.0,
+            left: 0.0,
+            right: 0.0,
+            child: ClipRect(
+              child: SizedBox(
+                height: 100.0,
+                child: Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    const Positioned.fill(
+                      child: ColoredBox(color: Color(0xFF339FF3)),
+                    ),
+                    Positioned(
+                      top: -48.0,
+                      left: 0.0,
+                      right: 0.0,
+                      child: Center(
+                        child: SvgPicture.asset(
+                          'assets/images/set_header_rings.svg',
+                          width: 387.0,
+                          height: 387.0,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          // Avatar (overlaps the banner)
+          Positioned(
+            top: 60.0,
+            left: 0.0,
+            right: 0.0,
+            child: Center(
+              child: Container(
+                width: 80.0,
+                height: 80.0,
+                decoration: BoxDecoration(
+                  color: const Color(0xFF85C5F8),
+                  shape: BoxShape.circle,
+                  border: Border.all(color: Colors.white, width: 2.0),
+                ),
+                child: ClipOval(
+                  child: Image.asset(
+                    'assets/images/doc1.png',
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          // Name + role row
+          Positioned(
+            top: 148.0,
+            left: 16.0,
+            right: 16.0,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  'คุณ สุขภาพดี จิตแจ่มใส',
+                  textAlign: TextAlign.center,
+                  style: FlutterFlowTheme.of(context).titleMedium.override(
+                        fontFamily:
+                            FlutterFlowTheme.of(context).titleMediumFamily,
+                        color: const Color(0xFF041228),
+                        fontSize: 18.0,
+                        letterSpacing: -0.3,
+                        fontWeight: FontWeight.w500,
+                        useGoogleFonts: !FlutterFlowTheme.of(context)
+                            .titleMediumIsCustom,
+                      ),
+                ),
+                const SizedBox(height: 8.0),
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    _roleChip('assets/images/set_ic_role_user.svg', 'อสม.'),
+                    Container(
+                      width: 1.0,
+                      height: 16.0,
+                      margin: const EdgeInsetsDirectional.fromSTEB(
+                          12.0, 0.0, 12.0, 0.0),
+                      color: const Color(0xFFD0D8E0),
+                    ),
+                    Flexible(
+                      child: _roleChip(
+                          'assets/images/set_ic_role_hospital.svg',
+                          'รพ.บางกอก เมดิคอล เทคโนโลยี'),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _roleChip(String asset, String text) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        SvgPicture.asset(
+          asset,
+          width: 16.0,
+          height: 16.0,
+          fit: BoxFit.contain,
+          colorFilter:
+              const ColorFilter.mode(Color(0xFF339FF3), BlendMode.srcIn),
+        ),
+        const SizedBox(width: 4.0),
+        Flexible(
+          child: Text(
+            text,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: FlutterFlowTheme.of(context).bodySmall.override(
+                  fontFamily: FlutterFlowTheme.of(context).bodySmallFamily,
+                  color: const Color(0xFF041228),
+                  fontSize: 12.0,
+                  letterSpacing: -0.3,
+                  useGoogleFonts:
+                      !FlutterFlowTheme.of(context).bodySmallIsCustom,
+                ),
+          ),
+        ),
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -51,1531 +329,237 @@ class _SettingWidgetState extends State<SettingWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primary,
-        body: Container(
-          width: double.infinity,
-          height: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                const Color(0xFF339FF3),
-                FlutterFlowTheme.of(context).primaryBackground,
-                FlutterFlowTheme.of(context).primaryBackground
-              ],
-              stops: const [0.0, 0.3, 1.0],
-              begin: const AlignmentDirectional(0.0, -1.0),
-              end: const AlignmentDirectional(0, 1.0),
-            ),
-          ),
-          child: Stack(
+        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+        body: SafeArea(
+          bottom: false,
+          child: Column(
             children: [
-              ListView(
-                padding: const EdgeInsets.fromLTRB(
-                  0,
-                  16.0,
-                  0,
-                  100.0,
-                ),
-                scrollDirection: Axis.vertical,
-                children: [
-                  Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                    child: Container(
-                      width: double.infinity,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          fit: BoxFit.cover,
-                          image: Image.asset(
-                            'assets/images/bgappbar.png',
-                          ).image,
-                        ),
-                        boxShadow: const [
-                          BoxShadow(
-                            blurRadius: 8.0,
-                            color: Color(0x1A000000),
-                            offset: Offset(
-                              0.0,
-                              0.0,
-                            ),
-                            spreadRadius: 0.0,
-                          )
-                        ],
-                        gradient: LinearGradient(
-                          colors: [
-                            const Color(0xFF2370BC),
-                            FlutterFlowTheme.of(context).primary
-                          ],
-                          stops: const [0.0, 1.0],
-                          begin: const AlignmentDirectional(0.0, -1.0),
-                          end: const AlignmentDirectional(0, 1.0),
-                        ),
-                        borderRadius: BorderRadius.circular(24.0),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(15.0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              width: () {
-                                if (MediaQuery.sizeOf(context).width <
-                                    kBreakpointSmall) {
-                                  return 64.0;
-                                } else if (MediaQuery.sizeOf(context).width <
-                                    kBreakpointMedium) {
-                                  return 64.0;
-                                } else if (MediaQuery.sizeOf(context).width <
-                                    kBreakpointLarge) {
-                                  return 80.0;
-                                } else {
-                                  return 80.0;
-                                }
-                              }(),
-                              height: () {
-                                if (MediaQuery.sizeOf(context).width <
-                                    kBreakpointSmall) {
-                                  return 64.0;
-                                } else if (MediaQuery.sizeOf(context).width <
-                                    kBreakpointMedium) {
-                                  return 64.0;
-                                } else if (MediaQuery.sizeOf(context).width <
-                                    kBreakpointLarge) {
-                                  return 80.0;
-                                } else {
-                                  return 80.0;
-                                }
-                              }(),
-                              decoration: BoxDecoration(
-                                gradient: LinearGradient(
-                                  colors: [
-                                    const Color(0xFFA0D6FF),
-                                    FlutterFlowTheme.of(context).primary
-                                  ],
-                                  stops: const [0.0, 1.0],
-                                  begin: const AlignmentDirectional(0.0, -1.0),
-                                  end: const AlignmentDirectional(0, 1.0),
-                                ),
-                                shape: BoxShape.circle,
-                                border: Border.all(
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryBackground,
-                                ),
-                              ),
-                              child: Container(
-                                width: double.infinity,
-                                height: double.infinity,
-                                clipBehavior: Clip.antiAlias,
-                                decoration: const BoxDecoration(
-                                  shape: BoxShape.circle,
-                                ),
-                                child: Image.asset(
-                                  'assets/images/doc1.png',
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Column(
-                                mainAxisSize: MainAxisSize.min,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text(
-                                        'คุณ สุขภาพดี จิตแจ่มใส',
-                                        style: FlutterFlowTheme.of(context)
-                                            .titleMedium
-                                            .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleMediumFamily,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
-                                              letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  !FlutterFlowTheme.of(context)
-                                                      .titleMediumIsCustom,
-                                            ),
-                                      ),
-                                    ],
-                                  ),
-                                  Text(
-                                    'รพ.บางกอก เมดิคอล เทคโนโลยี',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
-                                          color: const Color(0xFFF9E7C9),
-                                          letterSpacing: 0.0,
-                                          useGoogleFonts:
-                                              !FlutterFlowTheme.of(context)
-                                                  .bodyMediumIsCustom,
-                                        ),
-                                  ),
-                                  Text(
-                                    'อสม.',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
-                                          color: const Color(0xFFF9E7C9),
-                                          letterSpacing: 0.0,
-                                          useGoogleFonts:
-                                              !FlutterFlowTheme.of(context)
-                                                  .bodyMediumIsCustom,
-                                        ),
-                                  ),
-                                ].divide(const SizedBox(height: 8.0)),
-                              ),
-                            ),
-                          ].divide(const SizedBox(width: 12.0)),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'ตั้งค่า',
-                          style: FlutterFlowTheme.of(context)
-                              .bodyMedium
-                              .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyMediumFamily,
-                                letterSpacing: 0.2,
-                                fontWeight: FontWeight.w500,
-                                useGoogleFonts: !FlutterFlowTheme.of(context)
-                                    .bodyMediumIsCustom,
-                              ),
-                        ),
-                        Container(
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            borderRadius: BorderRadius.circular(24.0),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _profileHeader(),
+                      Container(
+                        width: double.infinity,
+                        decoration: const BoxDecoration(
+                          color: Color(0xFFEEF3F7),
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(24.0),
+                            topRight: Radius.circular(24.0),
                           ),
-                          child: Padding(
-                            padding: const EdgeInsets.all(16.0),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  width: double.infinity,
-                                  height: 48.0,
-                                  decoration: const BoxDecoration(
-                                    shape: BoxShape.rectangle,
-                                  ),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Row(
-                                        mainAxisSize: MainAxisSize.min,
-                                        children: [
-                                          Container(
-                                            width: () {
-                                              if (MediaQuery.sizeOf(context)
-                                                      .width <
-                                                  kBreakpointSmall) {
-                                                return 24.0;
-                                              } else if (MediaQuery.sizeOf(
-                                                          context)
-                                                      .width <
-                                                  kBreakpointMedium) {
-                                                return 24.0;
-                                              } else if (MediaQuery.sizeOf(
-                                                          context)
-                                                      .width <
-                                                  kBreakpointLarge) {
-                                                return 32.0;
-                                              } else {
-                                                return 32.0;
-                                              }
-                                            }(),
-                                            height: () {
-                                              if (MediaQuery.sizeOf(context)
-                                                      .width <
-                                                  kBreakpointSmall) {
-                                                return 24.0;
-                                              } else if (MediaQuery.sizeOf(
-                                                          context)
-                                                      .width <
-                                                  kBreakpointMedium) {
-                                                return 24.0;
-                                              } else if (MediaQuery.sizeOf(
-                                                          context)
-                                                      .width <
-                                                  kBreakpointLarge) {
-                                                return 32.0;
-                                              } else {
-                                                return 32.0;
-                                              }
-                                            }(),
-                                            decoration: BoxDecoration(
-                                              gradient: LinearGradient(
-                                                colors: [
-                                                  FlutterFlowTheme.of(context)
-                                                      .customColor2,
-                                                  FlutterFlowTheme.of(context)
-                                                      .customColor1
-                                                ],
-                                                stops: const [0.0, 1.0],
-                                                begin: const AlignmentDirectional(
-                                                    0.56, -1.0),
-                                                end: const AlignmentDirectional(
-                                                    -0.56, 1.0),
-                                              ),
-                                              shape: BoxShape.circle,
-                                            ),
-                                            child: Align(
-                                              alignment: const AlignmentDirectional(
-                                                  0.0, 0.0),
-                                              child: Icon(
-                                                Icons.notifications_sharp,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
-                                                size: 16.0,
-                                              ),
-                                            ),
-                                          ),
-                                          Text(
-                                            'การแจ้งเตือน',
-                                            style: FlutterFlowTheme.of(context)
-                                                .labelMedium
-                                                .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumFamily,
-                                                  letterSpacing: 0.0,
-                                                  useGoogleFonts:
-                                                      !FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumIsCustom,
-                                                ),
-                                          ),
-                                        ].divide(const SizedBox(width: 12.0)),
-                                      ),
-                                      Switch.adaptive(
-                                        value: _model.switchValue1!,
-                                        onChanged: (newValue) async {
-                                          safeSetState(() =>
-                                              _model.switchValue1 = newValue);
-                                        },
-                                        activeColor:
-                                            FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                        activeTrackColor:
-                                            FlutterFlowTheme.of(context)
-                                                .primary,
-                                        inactiveTrackColor:
-                                            FlutterFlowTheme.of(context)
-                                                .alternate,
-                                        inactiveThumbColor:
-                                            FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                      ),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'การตั้งค่าและความปลอดภัย',
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .override(
+                                      fontFamily: FlutterFlowTheme.of(context)
+                                          .bodyMediumFamily,
+                                      color: _gray01,
+                                      fontSize: 14.0,
+                                      letterSpacing: -0.3,
+                                      useGoogleFonts:
+                                          !FlutterFlowTheme.of(context)
+                                              .bodyMediumIsCustom,
+                                    ),
+                              ),
+                              const SizedBox(height: 16.0),
+                              // Card 1
+                              _card([
+                                _tile(
+                                  leading: _iconBox(
+                                    colors: const [
+                                      Color(0xFF29E5B4),
+                                      Color(0xFF008E6D)
                                     ],
+                                    asset: 'assets/images/set_ic_notify.svg',
+                                  ),
+                                  label: 'การแจ้งเตือน',
+                                  trailing: _switch(
+                                    _model.switchValue1!,
+                                    (v) => safeSetState(
+                                        () => _model.switchValue1 = v),
                                   ),
                                 ),
-                                Divider(
-                                  height: 1.0,
-                                  thickness: 1.0,
-                                  color: FlutterFlowTheme.of(context).alternate,
-                                ),
-                                Container(
-                                  width: double.infinity,
-                                  height: 48.0,
-                                  decoration: const BoxDecoration(
-                                    shape: BoxShape.rectangle,
-                                  ),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Row(
-                                        mainAxisSize: MainAxisSize.min,
-                                        children: [
-                                          Container(
-                                            width: () {
-                                              if (MediaQuery.sizeOf(context)
-                                                      .width <
-                                                  kBreakpointSmall) {
-                                                return 24.0;
-                                              } else if (MediaQuery.sizeOf(
-                                                          context)
-                                                      .width <
-                                                  kBreakpointMedium) {
-                                                return 24.0;
-                                              } else if (MediaQuery.sizeOf(
-                                                          context)
-                                                      .width <
-                                                  kBreakpointLarge) {
-                                                return 32.0;
-                                              } else {
-                                                return 32.0;
-                                              }
-                                            }(),
-                                            height: () {
-                                              if (MediaQuery.sizeOf(context)
-                                                      .width <
-                                                  kBreakpointSmall) {
-                                                return 24.0;
-                                              } else if (MediaQuery.sizeOf(
-                                                          context)
-                                                      .width <
-                                                  kBreakpointMedium) {
-                                                return 24.0;
-                                              } else if (MediaQuery.sizeOf(
-                                                          context)
-                                                      .width <
-                                                  kBreakpointLarge) {
-                                                return 32.0;
-                                              } else {
-                                                return 32.0;
-                                              }
-                                            }(),
-                                            decoration: BoxDecoration(
-                                              gradient: LinearGradient(
-                                                colors: [
-                                                  const Color(0xFF90F598),
-                                                  FlutterFlowTheme.of(context)
-                                                      .success
-                                                ],
-                                                stops: const [0.0, 1.0],
-                                                begin: const AlignmentDirectional(
-                                                    0.56, -1.0),
-                                                end: const AlignmentDirectional(
-                                                    -0.56, 1.0),
-                                              ),
-                                              shape: BoxShape.circle,
-                                            ),
-                                            child: Align(
-                                              alignment: const AlignmentDirectional(
-                                                  0.0, 0.0),
-                                              child: Icon(
-                                                Icons.call,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
-                                                size: 14.0,
-                                              ),
-                                            ),
-                                          ),
-                                          Text(
-                                            'Telemedicine Settings',
-                                            style: FlutterFlowTheme.of(context)
-                                                .labelMedium
-                                                .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumFamily,
-                                                  letterSpacing: 0.0,
-                                                  useGoogleFonts:
-                                                      !FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumIsCustom,
-                                                ),
-                                          ),
-                                        ].divide(const SizedBox(width: 12.0)),
-                                      ),
-                                      Switch.adaptive(
-                                        value: _model.switchValue2!,
-                                        onChanged: (newValue) async {
-                                          safeSetState(() =>
-                                              _model.switchValue2 = newValue);
-                                        },
-                                        activeColor:
-                                            FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                        activeTrackColor:
-                                            FlutterFlowTheme.of(context)
-                                                .primary,
-                                        inactiveTrackColor:
-                                            FlutterFlowTheme.of(context)
-                                                .alternate,
-                                        inactiveThumbColor:
-                                            FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                      ),
+                                _tile(
+                                  leading: _iconBox(
+                                    colors: const [
+                                      Color(0xFF8CF5A0),
+                                      Color(0xFF14B633)
                                     ],
+                                    asset: 'assets/images/set_ic_call.svg',
+                                  ),
+                                  label: 'Telemedicine Settings',
+                                  trailing: _switch(
+                                    _model.switchValue2!,
+                                    (v) => safeSetState(
+                                        () => _model.switchValue2 = v),
                                   ),
                                 ),
-                                Divider(
-                                  height: 1.0,
-                                  thickness: 1.0,
-                                  color: FlutterFlowTheme.of(context).alternate,
-                                ),
-                                Container(
-                                  width: double.infinity,
-                                  height: 48.0,
-                                  decoration: const BoxDecoration(
-                                    shape: BoxShape.rectangle,
-                                  ),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Row(
-                                        mainAxisSize: MainAxisSize.min,
-                                        children: [
-                                          Container(
-                                            width: () {
-                                              if (MediaQuery.sizeOf(context)
-                                                      .width <
-                                                  kBreakpointSmall) {
-                                                return 24.0;
-                                              } else if (MediaQuery.sizeOf(
-                                                          context)
-                                                      .width <
-                                                  kBreakpointMedium) {
-                                                return 24.0;
-                                              } else if (MediaQuery.sizeOf(
-                                                          context)
-                                                      .width <
-                                                  kBreakpointLarge) {
-                                                return 32.0;
-                                              } else {
-                                                return 32.0;
-                                              }
-                                            }(),
-                                            height: () {
-                                              if (MediaQuery.sizeOf(context)
-                                                      .width <
-                                                  kBreakpointSmall) {
-                                                return 24.0;
-                                              } else if (MediaQuery.sizeOf(
-                                                          context)
-                                                      .width <
-                                                  kBreakpointMedium) {
-                                                return 24.0;
-                                              } else if (MediaQuery.sizeOf(
-                                                          context)
-                                                      .width <
-                                                  kBreakpointLarge) {
-                                                return 32.0;
-                                              } else {
-                                                return 32.0;
-                                              }
-                                            }(),
-                                            decoration: BoxDecoration(
-                                              gradient: LinearGradient(
-                                                colors: [
-                                                  const Color(0xFFA0E1F7),
-                                                  FlutterFlowTheme.of(context)
-                                                      .accent1
-                                                ],
-                                                stops: const [0.0, 1.0],
-                                                begin: const AlignmentDirectional(
-                                                    0.56, -1.0),
-                                                end: const AlignmentDirectional(
-                                                    -0.56, 1.0),
-                                              ),
-                                              shape: BoxShape.circle,
-                                            ),
-                                            child: Align(
-                                              alignment: const AlignmentDirectional(
-                                                  0.0, 0.0),
-                                              child: Icon(
-                                                Icons.diversity_3,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
-                                                size: 14.0,
-                                              ),
-                                            ),
-                                          ),
-                                          Text(
-                                            'ส่งตรวจ',
-                                            style: FlutterFlowTheme.of(context)
-                                                .labelMedium
-                                                .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumFamily,
-                                                  letterSpacing: 0.0,
-                                                  useGoogleFonts:
-                                                      !FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumIsCustom,
-                                                ),
-                                          ),
-                                        ].divide(const SizedBox(width: 12.0)),
-                                      ),
-                                      Switch.adaptive(
-                                        value: _model.switchValue3!,
-                                        onChanged: (newValue) async {
-                                          safeSetState(() =>
-                                              _model.switchValue3 = newValue);
-                                        },
-                                        activeColor:
-                                            FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                        activeTrackColor:
-                                            FlutterFlowTheme.of(context)
-                                                .primary,
-                                        inactiveTrackColor:
-                                            FlutterFlowTheme.of(context)
-                                                .alternate,
-                                        inactiveThumbColor:
-                                            FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                      ),
+                                _tile(
+                                  leading: _iconBox(
+                                    colors: const [
+                                      Color(0xFF9DF4FF),
+                                      Color(0xFF00B2FF)
                                     ],
+                                    icon: Icons.mic,
+                                  ),
+                                  label: 'ส่งตรวจ',
+                                  trailing: _switch(
+                                    _model.switchValue3!,
+                                    (v) => safeSetState(
+                                        () => _model.switchValue3 = v),
                                   ),
                                 ),
-                                Divider(
-                                  height: 1.0,
-                                  thickness: 1.0,
-                                  color: FlutterFlowTheme.of(context).alternate,
-                                ),
-                                InkWell(
-                                  splashColor: Colors.transparent,
-                                  focusColor: Colors.transparent,
-                                  hoverColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
+                                _tile(
+                                  leading: _iconBox(
+                                    colors: const [
+                                      Color(0xFFFFBFE6),
+                                      Color(0xFFFF57D2)
+                                    ],
+                                    asset: 'assets/images/set_ic_code.svg',
+                                  ),
+                                  label: 'สิทธิใน Authen Code',
+                                  trailing: _chevron,
                                   onTap: () async {
                                     context
                                         .pushNamed(AuthenCodeWidget.routeName);
                                   },
-                                  child: Container(
-                                    width: double.infinity,
-                                    height: 48.0,
-                                    decoration: const BoxDecoration(
-                                      shape: BoxShape.rectangle,
-                                    ),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            Container(
-                                              width: () {
-                                                if (MediaQuery.sizeOf(context)
-                                                        .width <
-                                                    kBreakpointSmall) {
-                                                  return 24.0;
-                                                } else if (MediaQuery.sizeOf(
-                                                            context)
-                                                        .width <
-                                                    kBreakpointMedium) {
-                                                  return 24.0;
-                                                } else if (MediaQuery.sizeOf(
-                                                            context)
-                                                        .width <
-                                                    kBreakpointLarge) {
-                                                  return 32.0;
-                                                } else {
-                                                  return 32.0;
-                                                }
-                                              }(),
-                                              height: () {
-                                                if (MediaQuery.sizeOf(context)
-                                                        .width <
-                                                    kBreakpointSmall) {
-                                                  return 24.0;
-                                                } else if (MediaQuery.sizeOf(
-                                                            context)
-                                                        .width <
-                                                    kBreakpointMedium) {
-                                                  return 24.0;
-                                                } else if (MediaQuery.sizeOf(
-                                                            context)
-                                                        .width <
-                                                    kBreakpointLarge) {
-                                                  return 32.0;
-                                                } else {
-                                                  return 32.0;
-                                                }
-                                              }(),
-                                              decoration: const BoxDecoration(
-                                                gradient: LinearGradient(
-                                                  colors: [
-                                                    Color(0xFFF7C2E2),
-                                                    Color(0xFFFF55D9)
-                                                  ],
-                                                  stops: [0.0, 1.0],
-                                                  begin: AlignmentDirectional(
-                                                      0.56, -1.0),
-                                                  end: AlignmentDirectional(
-                                                      -0.56, 1.0),
-                                                ),
-                                                shape: BoxShape.circle,
-                                              ),
-                                              child: Align(
-                                                alignment: const AlignmentDirectional(
-                                                    0.0, 0.0),
-                                                child: FaIcon(
-                                                  FontAwesomeIcons.code,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .secondaryBackground,
-                                                  size: 12.0,
-                                                ),
-                                              ),
-                                            ),
-                                            Text(
-                                              'สิทธิใน Authen Code',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelMediumFamily,
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts:
-                                                            !FlutterFlowTheme
-                                                                    .of(context)
-                                                                .labelMediumIsCustom,
-                                                      ),
-                                            ),
-                                          ].divide(const SizedBox(width: 12.0)),
-                                        ),
-                                        Icon(
-                                          Icons.keyboard_arrow_right_rounded,
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryText,
-                                          size: 24.0,
-                                        ),
-                                      ],
-                                    ),
+                                ),
+                                _tile(
+                                  leading: _iconBox(
+                                    colors: const [
+                                      Color(0xFF4DA3FF),
+                                      Color(0xFF004078)
+                                    ],
+                                    asset: 'assets/images/set_ic_world.svg',
                                   ),
-                                ),
-                                Divider(
-                                  height: 1.0,
-                                  thickness: 1.0,
-                                  color: FlutterFlowTheme.of(context).alternate,
-                                ),
-                                Builder(
-                                  builder: (context) => InkWell(
-                                    splashColor: Colors.transparent,
-                                    focusColor: Colors.transparent,
-                                    hoverColor: Colors.transparent,
-                                    highlightColor: Colors.transparent,
-                                    onTap: () async {
-                                      showDialog(
-                                        barrierDismissible: false,
-                                        context: context,
-                                        builder: (dialogContext) {
-                                          return Dialog(
-                                            elevation: 0,
-                                            insetPadding: EdgeInsets.zero,
-                                            backgroundColor: Colors.transparent,
-                                            alignment: const AlignmentDirectional(
-                                                    0.0, 1.0)
-                                                .resolve(
-                                                    Directionality.of(context)),
-                                            child: GestureDetector(
-                                              onTap: () {
-                                                FocusScope.of(dialogContext)
-                                                    .unfocus();
-                                                FocusManager
-                                                    .instance.primaryFocus
-                                                    ?.unfocus();
-                                              },
-                                              child: const ChooseCompanyWidget(),
-                                            ),
-                                          );
-                                        },
-                                      );
-                                    },
-                                    child: Container(
-                                      width: double.infinity,
-                                      height: 48.0,
-                                      decoration: const BoxDecoration(
-                                        shape: BoxShape.rectangle,
-                                      ),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Row(
-                                            mainAxisSize: MainAxisSize.min,
-                                            children: [
-                                              Container(
-                                                width: () {
-                                                  if (MediaQuery.sizeOf(context)
-                                                          .width <
-                                                      kBreakpointSmall) {
-                                                    return 24.0;
-                                                  } else if (MediaQuery.sizeOf(
-                                                              context)
-                                                          .width <
-                                                      kBreakpointMedium) {
-                                                    return 24.0;
-                                                  } else if (MediaQuery.sizeOf(
-                                                              context)
-                                                          .width <
-                                                      kBreakpointLarge) {
-                                                    return 32.0;
-                                                  } else {
-                                                    return 32.0;
-                                                  }
-                                                }(),
-                                                height: () {
-                                                  if (MediaQuery.sizeOf(context)
-                                                          .width <
-                                                      kBreakpointSmall) {
-                                                    return 24.0;
-                                                  } else if (MediaQuery.sizeOf(
-                                                              context)
-                                                          .width <
-                                                      kBreakpointMedium) {
-                                                    return 24.0;
-                                                  } else if (MediaQuery.sizeOf(
-                                                              context)
-                                                          .width <
-                                                      kBreakpointLarge) {
-                                                    return 32.0;
-                                                  } else {
-                                                    return 32.0;
-                                                  }
-                                                }(),
-                                                decoration: const BoxDecoration(
-                                                  gradient: LinearGradient(
-                                                    colors: [
-                                                      Color(0xFF89B7FF),
-                                                      Color(0xFF00417D)
-                                                    ],
-                                                    stops: [0.0, 1.0],
-                                                    begin: AlignmentDirectional(
-                                                        0.56, -1.0),
-                                                    end: AlignmentDirectional(
-                                                        -0.56, 1.0),
-                                                  ),
-                                                  shape: BoxShape.circle,
-                                                ),
-                                                child: Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          0.0, 0.0),
-                                                  child: Icon(
-                                                    Icons
-                                                        .broadcast_on_home_rounded,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .secondaryBackground,
-                                                    size: 14.0,
-                                                  ),
-                                                ),
-                                              ),
-                                              Text(
-                                                'เชื่อมต่ออุปกรณ์วัด Vital Sign',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMediumFamily,
-                                                          letterSpacing: 0.0,
-                                                          useGoogleFonts:
-                                                              !FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .labelMediumIsCustom,
-                                                        ),
-                                              ),
-                                            ].divide(const SizedBox(width: 12.0)),
+                                  label: 'เชื่อมต่ออุปกรณ์วัด Vital Sign',
+                                  trailing: _chevron,
+                                  onTap: () async {
+                                    showDialog(
+                                      barrierDismissible: false,
+                                      context: context,
+                                      builder: (dialogContext) {
+                                        return Dialog(
+                                          elevation: 0,
+                                          insetPadding: EdgeInsets.zero,
+                                          backgroundColor: Colors.transparent,
+                                          alignment: const AlignmentDirectional(
+                                                  0.0, 1.0)
+                                              .resolve(
+                                                  Directionality.of(context)),
+                                          child: GestureDetector(
+                                            onTap: () {
+                                              FocusScope.of(dialogContext)
+                                                  .unfocus();
+                                              FocusManager
+                                                  .instance.primaryFocus
+                                                  ?.unfocus();
+                                            },
+                                            child: const ChooseCompanyWidget(),
                                           ),
-                                          Icon(
-                                            Icons.keyboard_arrow_right_rounded,
-                                            color: FlutterFlowTheme.of(context)
-                                                .secondaryText,
-                                            size: 24.0,
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
+                                        );
+                                      },
+                                    );
+                                  },
                                 ),
-                                Divider(
-                                  height: 1.0,
-                                  thickness: 1.0,
-                                  color: FlutterFlowTheme.of(context).alternate,
-                                ),
-                                Container(
-                                  width: double.infinity,
-                                  height: 48.0,
-                                  decoration: const BoxDecoration(
-                                    shape: BoxShape.rectangle,
+                                _tile(
+                                  leading: _iconBox(
+                                    colors: const [
+                                      Color(0xFFFFAE00),
+                                      Color(0xFFF6F0BD)
+                                    ],
+                                    begin: const AlignmentDirectional(0.0, 1.0),
+                                    end: const AlignmentDirectional(0.0, -1.0),
+                                    asset: 'assets/images/set_ic_key.svg',
                                   ),
-                                  child: InkWell(
-                                    splashColor: Colors.transparent,
-                                    focusColor: Colors.transparent,
-                                    hoverColor: Colors.transparent,
-                                    highlightColor: Colors.transparent,
-                                    onTap: () async {
-                                      context.pushNamed(OldPINWidget.routeName);
-                                    },
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            Container(
-                                              width: () {
-                                                if (MediaQuery.sizeOf(context)
-                                                        .width <
-                                                    kBreakpointSmall) {
-                                                  return 24.0;
-                                                } else if (MediaQuery.sizeOf(
-                                                            context)
-                                                        .width <
-                                                    kBreakpointMedium) {
-                                                  return 24.0;
-                                                } else if (MediaQuery.sizeOf(
-                                                            context)
-                                                        .width <
-                                                    kBreakpointLarge) {
-                                                  return 32.0;
-                                                } else {
-                                                  return 32.0;
-                                                }
-                                              }(),
-                                              height: () {
-                                                if (MediaQuery.sizeOf(context)
-                                                        .width <
-                                                    kBreakpointSmall) {
-                                                  return 24.0;
-                                                } else if (MediaQuery.sizeOf(
-                                                            context)
-                                                        .width <
-                                                    kBreakpointMedium) {
-                                                  return 24.0;
-                                                } else if (MediaQuery.sizeOf(
-                                                            context)
-                                                        .width <
-                                                    kBreakpointLarge) {
-                                                  return 32.0;
-                                                } else {
-                                                  return 32.0;
-                                                }
-                                              }(),
-                                              decoration: BoxDecoration(
-                                                gradient: LinearGradient(
-                                                  colors: [
-                                                    const Color(0xFFF8EDAB),
-                                                    FlutterFlowTheme.of(context)
-                                                        .warning
-                                                  ],
-                                                  stops: const [0.0, 1.0],
-                                                  begin: const AlignmentDirectional(
-                                                      0.56, -1.0),
-                                                  end: const AlignmentDirectional(
-                                                      -0.56, 1.0),
-                                                ),
-                                                shape: BoxShape.circle,
-                                              ),
-                                              child: Align(
-                                                alignment: const AlignmentDirectional(
-                                                    0.0, 0.0),
-                                                child: Icon(
-                                                  Icons.pin_rounded,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .secondaryBackground,
-                                                  size: 16.0,
-                                                ),
-                                              ),
-                                            ),
-                                            Text(
-                                              'เปลี่ยนรหัส PIN',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelMediumFamily,
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts:
-                                                            !FlutterFlowTheme
-                                                                    .of(context)
-                                                                .labelMediumIsCustom,
-                                                      ),
-                                            ),
-                                          ].divide(const SizedBox(width: 12.0)),
-                                        ),
-                                        Icon(
-                                          Icons.keyboard_arrow_right_rounded,
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryText,
-                                          size: 24.0,
-                                        ),
-                                      ],
-                                    ),
-                                  ),
+                                  label: 'เปลี่ยนรหัส PIN',
+                                  trailing: _chevron,
+                                  onTap: () async {
+                                    context.pushNamed(OldPINWidget.routeName);
+                                  },
                                 ),
-                                Divider(
-                                  height: 1.0,
-                                  thickness: 1.0,
-                                  color: FlutterFlowTheme.of(context).alternate,
-                                ),
-                                Container(
-                                  width: double.infinity,
-                                  height: 48.0,
-                                  decoration: const BoxDecoration(
-                                    shape: BoxShape.rectangle,
+                              ]),
+                              const SizedBox(height: 16.0),
+                              // Card 2
+                              _card([
+                                _tile(
+                                  leading: _iconBox(
+                                    colors: const [
+                                      Color(0xFF28E841),
+                                      Color(0xFF259029)
+                                    ],
+                                    icon: Icons.report_rounded,
                                   ),
-                                  child: InkWell(
-                                    splashColor: Colors.transparent,
-                                    focusColor: Colors.transparent,
-                                    hoverColor: Colors.transparent,
-                                    highlightColor: Colors.transparent,
-                                    onTap: () async {
-                                      context.pushNamed(ReportWidget.routeName);
-                                    },
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            Container(
-                                              width: () {
-                                                if (MediaQuery.sizeOf(context)
-                                                        .width <
-                                                    kBreakpointSmall) {
-                                                  return 24.0;
-                                                } else if (MediaQuery.sizeOf(
-                                                            context)
-                                                        .width <
-                                                    kBreakpointMedium) {
-                                                  return 24.0;
-                                                } else if (MediaQuery.sizeOf(
-                                                            context)
-                                                        .width <
-                                                    kBreakpointLarge) {
-                                                  return 32.0;
-                                                } else {
-                                                  return 32.0;
-                                                }
-                                              }(),
-                                              height: () {
-                                                if (MediaQuery.sizeOf(context)
-                                                        .width <
-                                                    kBreakpointSmall) {
-                                                  return 24.0;
-                                                } else if (MediaQuery.sizeOf(
-                                                            context)
-                                                        .width <
-                                                    kBreakpointMedium) {
-                                                  return 24.0;
-                                                } else if (MediaQuery.sizeOf(
-                                                            context)
-                                                        .width <
-                                                    kBreakpointLarge) {
-                                                  return 32.0;
-                                                } else {
-                                                  return 32.0;
-                                                }
-                                              }(),
-                                              decoration: const BoxDecoration(
-                                                gradient: LinearGradient(
-                                                  colors: [
-                                                    Color(0xFFFFC0A3),
-                                                    Color(0xFFFF6F00)
-                                                  ],
-                                                  stops: [0.0, 1.0],
-                                                  begin: AlignmentDirectional(
-                                                      0.56, -1.0),
-                                                  end: AlignmentDirectional(
-                                                      -0.56, 1.0),
-                                                ),
-                                                shape: BoxShape.circle,
-                                              ),
-                                              child: Align(
-                                                alignment: const AlignmentDirectional(
-                                                    0.0, 0.0),
-                                                child: Icon(
-                                                  Icons.report_problem_rounded,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .secondaryBackground,
-                                                  size: 16.0,
-                                                ),
-                                              ),
-                                            ),
-                                            Text(
-                                              'แจ้งปัญหาการใช้งาน',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelMediumFamily,
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts:
-                                                            !FlutterFlowTheme
-                                                                    .of(context)
-                                                                .labelMediumIsCustom,
-                                                      ),
-                                            ),
-                                          ].divide(const SizedBox(width: 12.0)),
-                                        ),
-                                        Icon(
-                                          Icons.keyboard_arrow_right_rounded,
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryText,
-                                          size: 24.0,
-                                        ),
-                                      ],
-                                    ),
-                                  ),
+                                  label: 'แจ้งปัญหาการใช้งาน',
+                                  trailing: _chevron,
+                                  onTap: () async {
+                                    context.pushNamed(ReportWidget.routeName);
+                                  },
                                 ),
-                              ].divide(const SizedBox(height: 8.0)),
-                            ),
-                          ),
-                        ),
-                        Container(
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            borderRadius: BorderRadius.circular(24.0),
-                          ),
-                          child: Padding(
-                            padding: const EdgeInsets.all(16.0),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                InkWell(
-                                  splashColor: Colors.transparent,
-                                  focusColor: Colors.transparent,
-                                  hoverColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
+                                _tile(
+                                  leading: _iconBox(
+                                    colors: const [
+                                      Color(0xFFFFDBCE),
+                                      Color(0xFFFF5D51)
+                                    ],
+                                    asset: 'assets/images/set_ic_book.svg',
+                                  ),
+                                  label: 'Terms of Use',
+                                  trailing: _chevron,
                                   onTap: () async {
                                     await launchURL(
                                         'https://atlasplatform.in.th/termsOfUse');
                                   },
-                                  child: Container(
-                                    width: double.infinity,
-                                    height: 48.0,
-                                    decoration: const BoxDecoration(
-                                      shape: BoxShape.rectangle,
-                                    ),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Align(
-                                          alignment:
-                                              const AlignmentDirectional(-1.0, 0.0),
-                                          child: Row(
-                                            mainAxisSize: MainAxisSize.min,
-                                            children: [
-                                              Container(
-                                                width: () {
-                                                  if (MediaQuery.sizeOf(context)
-                                                          .width <
-                                                      kBreakpointSmall) {
-                                                    return 24.0;
-                                                  } else if (MediaQuery.sizeOf(
-                                                              context)
-                                                          .width <
-                                                      kBreakpointMedium) {
-                                                    return 24.0;
-                                                  } else if (MediaQuery.sizeOf(
-                                                              context)
-                                                          .width <
-                                                      kBreakpointLarge) {
-                                                    return 32.0;
-                                                  } else {
-                                                    return 32.0;
-                                                  }
-                                                }(),
-                                                height: () {
-                                                  if (MediaQuery.sizeOf(context)
-                                                          .width <
-                                                      kBreakpointSmall) {
-                                                    return 24.0;
-                                                  } else if (MediaQuery.sizeOf(
-                                                              context)
-                                                          .width <
-                                                      kBreakpointMedium) {
-                                                    return 24.0;
-                                                  } else if (MediaQuery.sizeOf(
-                                                              context)
-                                                          .width <
-                                                      kBreakpointLarge) {
-                                                    return 32.0;
-                                                  } else {
-                                                    return 32.0;
-                                                  }
-                                                }(),
-                                                decoration: const BoxDecoration(
-                                                  gradient: LinearGradient(
-                                                    colors: [
-                                                      Color(0xFFF7D0CD),
-                                                      Color(0xFFF86E78)
-                                                    ],
-                                                    stops: [0.0, 1.0],
-                                                    begin: AlignmentDirectional(
-                                                        0.56, -1.0),
-                                                    end: AlignmentDirectional(
-                                                        -0.56, 1.0),
-                                                  ),
-                                                  shape: BoxShape.circle,
-                                                ),
-                                                child: Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          0.0, 0.0),
-                                                  child: Icon(
-                                                    Icons
-                                                        .admin_panel_settings_rounded,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .secondaryBackground,
-                                                    size: 16.0,
-                                                  ),
-                                                ),
-                                              ),
-                                              Text(
-                                                'Terms of Use',
-                                                textAlign: TextAlign.start,
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMediumFamily,
-                                                          letterSpacing: 0.0,
-                                                          useGoogleFonts:
-                                                              !FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .labelMediumIsCustom,
-                                                        ),
-                                              ),
-                                            ].divide(const SizedBox(width: 12.0)),
-                                          ),
-                                        ),
-                                        Icon(
-                                          Icons.keyboard_arrow_right_rounded,
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryText,
-                                          size: 24.0,
-                                        ),
-                                      ],
-                                    ),
-                                  ),
                                 ),
-                                Divider(
-                                  height: 1.0,
-                                  thickness: 1.0,
-                                  color: FlutterFlowTheme.of(context).alternate,
-                                ),
-                                Container(
-                                  width: double.infinity,
-                                  height: 48.0,
-                                  decoration: const BoxDecoration(
-                                    shape: BoxShape.rectangle,
-                                  ),
-                                  child: InkWell(
-                                    splashColor: Colors.transparent,
-                                    focusColor: Colors.transparent,
-                                    hoverColor: Colors.transparent,
-                                    highlightColor: Colors.transparent,
-                                    onTap: () async {
-                                      context.pushNamed(MePdpaWidget.routeName);
-                                    },
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Align(
-                                          alignment:
-                                              const AlignmentDirectional(-1.0, 0.0),
-                                          child: Row(
-                                            mainAxisSize: MainAxisSize.min,
-                                            children: [
-                                              Container(
-                                                width: () {
-                                                  if (MediaQuery.sizeOf(context)
-                                                          .width <
-                                                      kBreakpointSmall) {
-                                                    return 24.0;
-                                                  } else if (MediaQuery.sizeOf(
-                                                              context)
-                                                          .width <
-                                                      kBreakpointMedium) {
-                                                    return 24.0;
-                                                  } else if (MediaQuery.sizeOf(
-                                                              context)
-                                                          .width <
-                                                      kBreakpointLarge) {
-                                                    return 32.0;
-                                                  } else {
-                                                    return 32.0;
-                                                  }
-                                                }(),
-                                                height: () {
-                                                  if (MediaQuery.sizeOf(context)
-                                                          .width <
-                                                      kBreakpointSmall) {
-                                                    return 24.0;
-                                                  } else if (MediaQuery.sizeOf(
-                                                              context)
-                                                          .width <
-                                                      kBreakpointMedium) {
-                                                    return 24.0;
-                                                  } else if (MediaQuery.sizeOf(
-                                                              context)
-                                                          .width <
-                                                      kBreakpointLarge) {
-                                                    return 32.0;
-                                                  } else {
-                                                    return 32.0;
-                                                  }
-                                                }(),
-                                                decoration: const BoxDecoration(
-                                                  gradient: LinearGradient(
-                                                    colors: [
-                                                      Color(0xFFB8ADF9),
-                                                      Color(0xFF6F57F4)
-                                                    ],
-                                                    stops: [0.0, 1.0],
-                                                    begin: AlignmentDirectional(
-                                                        0.56, -1.0),
-                                                    end: AlignmentDirectional(
-                                                        -0.56, 1.0),
-                                                  ),
-                                                  shape: BoxShape.circle,
-                                                ),
-                                                child: Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          0.0, 0.0),
-                                                  child: Icon(
-                                                    Icons.verified_user_rounded,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .secondaryBackground,
-                                                    size: 16.0,
-                                                  ),
-                                                ),
-                                              ),
-                                              Text(
-                                                'นโยบายความเป็นส่วนตัว',
-                                                textAlign: TextAlign.start,
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMediumFamily,
-                                                          letterSpacing: 0.0,
-                                                          useGoogleFonts:
-                                                              !FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .labelMediumIsCustom,
-                                                        ),
-                                              ),
-                                            ].divide(const SizedBox(width: 12.0)),
-                                          ),
-                                        ),
-                                        Icon(
-                                          Icons.keyboard_arrow_right_rounded,
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryText,
-                                          size: 24.0,
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Divider(
-                                  height: 1.0,
-                                  thickness: 1.0,
-                                  color: FlutterFlowTheme.of(context).alternate,
-                                ),
-                                Container(
-                                  width: double.infinity,
-                                  height: 48.0,
-                                  decoration: const BoxDecoration(
-                                    shape: BoxShape.rectangle,
-                                  ),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Row(
-                                        mainAxisSize: MainAxisSize.min,
-                                        children: [
-                                          Container(
-                                            width: () {
-                                              if (MediaQuery.sizeOf(context)
-                                                      .width <
-                                                  kBreakpointSmall) {
-                                                return 24.0;
-                                              } else if (MediaQuery.sizeOf(
-                                                          context)
-                                                      .width <
-                                                  kBreakpointMedium) {
-                                                return 24.0;
-                                              } else if (MediaQuery.sizeOf(
-                                                          context)
-                                                      .width <
-                                                  kBreakpointLarge) {
-                                                return 32.0;
-                                              } else {
-                                                return 32.0;
-                                              }
-                                            }(),
-                                            height: () {
-                                              if (MediaQuery.sizeOf(context)
-                                                      .width <
-                                                  kBreakpointSmall) {
-                                                return 24.0;
-                                              } else if (MediaQuery.sizeOf(
-                                                          context)
-                                                      .width <
-                                                  kBreakpointMedium) {
-                                                return 24.0;
-                                              } else if (MediaQuery.sizeOf(
-                                                          context)
-                                                      .width <
-                                                  kBreakpointLarge) {
-                                                return 32.0;
-                                              } else {
-                                                return 32.0;
-                                              }
-                                            }(),
-                                            decoration: BoxDecoration(
-                                              gradient: LinearGradient(
-                                                colors: [
-                                                  const Color(0xFF90D4FA),
-                                                  FlutterFlowTheme.of(context)
-                                                      .info
-                                                ],
-                                                stops: const [0.0, 1.0],
-                                                begin: const AlignmentDirectional(
-                                                    0.56, -1.0),
-                                                end: const AlignmentDirectional(
-                                                    -0.56, 1.0),
-                                              ),
-                                              shape: BoxShape.circle,
-                                            ),
-                                            child: Align(
-                                              alignment: const AlignmentDirectional(
-                                                  0.0, 0.0),
-                                              child: Icon(
-                                                Icons.info,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
-                                                size: 16.0,
-                                              ),
-                                            ),
-                                          ),
-                                          Text(
-                                            'เกี่ยวกับแอปพลเคชั่น',
-                                            textAlign: TextAlign.start,
-                                            style: FlutterFlowTheme.of(context)
-                                                .labelMedium
-                                                .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumFamily,
-                                                  letterSpacing: 0.0,
-                                                  useGoogleFonts:
-                                                      !FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumIsCustom,
-                                                ),
-                                          ),
-                                        ].divide(const SizedBox(width: 12.0)),
-                                      ),
-                                      Text(
-                                        'เวอร์ชัน 2.0.0',
-                                        textAlign: TextAlign.start,
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryText,
-                                              letterSpacing: 0.0,
-                                              useGoogleFonts:
-                                                  !FlutterFlowTheme.of(context)
-                                                      .bodyMediumIsCustom,
-                                            ),
-                                      ),
+                                _tile(
+                                  leading: _iconBox(
+                                    colors: const [
+                                      Color(0xFFCDADFF),
+                                      Color(0xFF6D33F4)
                                     ],
+                                    asset: 'assets/images/set_ic_protect.svg',
                                   ),
+                                  label: 'นโยบายความเป็นส่วนตัว',
+                                  trailing: _chevron,
+                                  onTap: () async {
+                                    context.pushNamed(MePdpaWidget.routeName);
+                                  },
                                 ),
-                              ].divide(const SizedBox(height: 8.0)),
-                            ),
-                          ),
-                        ),
-                        Container(
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            borderRadius: BorderRadius.circular(24.0),
-                          ),
-                          child: Padding(
-                            padding: const EdgeInsets.all(16.0),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                InkWell(
-                                  splashColor: Colors.transparent,
-                                  focusColor: Colors.transparent,
-                                  hoverColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
+                                _tile(
+                                  leading: _iconBox(
+                                    colors: const [
+                                      Color(0xFF339FF3),
+                                      Color(0xFFA6CDFF)
+                                    ],
+                                    begin: const AlignmentDirectional(0.0, 1.0),
+                                    end: const AlignmentDirectional(0.0, -1.0),
+                                    asset: 'assets/images/set_ic_info.svg',
+                                  ),
+                                  label: 'เกี่ยวกับแอปพลเคชั่น',
+                                  trailing: _trailingText('เวอร์ชัน 2.0.0'),
+                                ),
+                              ]),
+                              const SizedBox(height: 16.0),
+                              // Card 3
+                              _card([
+                                _tile(
+                                  leading: _iconBox(
+                                    colors: const [
+                                      Color(0xFFFFA7A8),
+                                      Color(0xFFFF0000)
+                                    ],
+                                    asset: 'assets/images/set_ic_logout.svg',
+                                  ),
+                                  label: 'ออกจากระบบ',
+                                  trailing: _chevron,
                                   onTap: () async {
                                     await showModalBottomSheet(
                                       isScrollControlled: true,
@@ -1590,151 +574,26 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                 ?.unfocus();
                                           },
                                           child: Padding(
-                                            padding: MediaQuery.viewInsetsOf(
-                                                context),
+                                            padding:
+                                                MediaQuery.viewInsetsOf(context),
                                             child: const LogoutSystemWidget(),
                                           ),
                                         );
                                       },
                                     ).then((value) => safeSetState(() {}));
                                   },
-                                  child: Container(
-                                    width: double.infinity,
-                                    decoration: const BoxDecoration(
-                                      shape: BoxShape.rectangle,
-                                    ),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Align(
-                                          alignment:
-                                              const AlignmentDirectional(-1.0, 0.0),
-                                          child: Row(
-                                            mainAxisSize: MainAxisSize.min,
-                                            children: [
-                                              Container(
-                                                width: () {
-                                                  if (MediaQuery.sizeOf(context)
-                                                          .width <
-                                                      kBreakpointSmall) {
-                                                    return 24.0;
-                                                  } else if (MediaQuery.sizeOf(
-                                                              context)
-                                                          .width <
-                                                      kBreakpointMedium) {
-                                                    return 24.0;
-                                                  } else if (MediaQuery.sizeOf(
-                                                              context)
-                                                          .width <
-                                                      kBreakpointLarge) {
-                                                    return 32.0;
-                                                  } else {
-                                                    return 32.0;
-                                                  }
-                                                }(),
-                                                height: () {
-                                                  if (MediaQuery.sizeOf(context)
-                                                          .width <
-                                                      kBreakpointSmall) {
-                                                    return 24.0;
-                                                  } else if (MediaQuery.sizeOf(
-                                                              context)
-                                                          .width <
-                                                      kBreakpointMedium) {
-                                                    return 24.0;
-                                                  } else if (MediaQuery.sizeOf(
-                                                              context)
-                                                          .width <
-                                                      kBreakpointLarge) {
-                                                    return 32.0;
-                                                  } else {
-                                                    return 32.0;
-                                                  }
-                                                }(),
-                                                decoration: BoxDecoration(
-                                                  gradient: LinearGradient(
-                                                    colors: [
-                                                      const Color(0xFFFFA7A7),
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .error
-                                                    ],
-                                                    stops: const [0.0, 1.0],
-                                                    begin: const AlignmentDirectional(
-                                                        0.56, -1.0),
-                                                    end: const AlignmentDirectional(
-                                                        -0.56, 1.0),
-                                                  ),
-                                                  shape: BoxShape.circle,
-                                                ),
-                                                child: Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          0.0, 0.0),
-                                                  child: Icon(
-                                                    Icons.arrow_circle_right,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .secondaryBackground,
-                                                    size: 16.0,
-                                                  ),
-                                                ),
-                                              ),
-                                              Text(
-                                                'ออกจากระบบ',
-                                                textAlign: TextAlign.start,
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMediumFamily,
-                                                          letterSpacing: 0.0,
-                                                          useGoogleFonts:
-                                                              !FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .labelMediumIsCustom,
-                                                        ),
-                                              ),
-                                            ].divide(const SizedBox(width: 12.0)),
-                                          ),
-                                        ),
-                                        Icon(
-                                          Icons.keyboard_arrow_right_rounded,
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryText,
-                                          size: 24.0,
-                                        ),
-                                      ],
-                                    ),
-                                  ),
                                 ),
-                              ].divide(const SizedBox(height: 8.0)),
-                            ),
+                              ]),
+                              const SizedBox(height: 16.0),
+                            ],
                           ),
                         ),
-                      ]
-                          .divide(const SizedBox(height: 12.0))
-                          .addToEnd(const SizedBox(height: 24.0)),
-                    ),
-                  ),
-                ].divide(const SizedBox(height: 16.0)),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(0.0, 1.0),
-                child: wrapWithModel(
-                  model: _model.navbarModel,
-                  updateCallback: () => safeSetState(() {}),
-                  child: const NavbarWidget(
-                    navbar: 4,
-                    hide: false,
+                      ),
+                    ],
                   ),
                 ),
               ),
+              const NavbarWidget(navbar: 4),
             ],
           ),
         ),

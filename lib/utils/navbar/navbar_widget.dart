@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'navbar_model.dart';
 export 'navbar_model.dart';
 
@@ -43,303 +44,132 @@ class _NavbarWidgetState extends State<NavbarWidget> {
     super.dispose();
   }
 
+  Widget _navItem({
+    required bool selected,
+    required String outlineAsset,
+    required String boldAsset,
+    required String label,
+    required Future<dynamic> Function() onTap,
+  }) {
+    final color = selected ? Colors.white : const Color(0xFF5F9ED6);
+    return Expanded(
+      child: InkWell(
+        splashColor: Colors.transparent,
+        focusColor: Colors.transparent,
+        hoverColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        onTap: onTap,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            SvgPicture.asset(
+              selected ? boldAsset : outlineAsset,
+              width: 24.0,
+              height: 24.0,
+              fit: BoxFit.contain,
+              colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
+            ),
+            const SizedBox(height: 5.0),
+            Text(
+              label,
+              textAlign: TextAlign.center,
+              style: FlutterFlowTheme.of(context).bodySmall.override(
+                    fontFamily: FlutterFlowTheme.of(context).bodySmallFamily,
+                    color: color,
+                    fontSize: 12.0,
+                    letterSpacing: -0.3,
+                    useGoogleFonts:
+                        !FlutterFlowTheme.of(context).bodySmallIsCustom,
+                  ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 96.0,
       decoration: const BoxDecoration(
-        color: Color(0xFF164874),
+        color: Color(0xFF004078),
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(32.0),
           topRight: Radius.circular(32.0),
         ),
       ),
-      child: Row(
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Expanded(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  onTap: () async {
-                    context.pushNamed(
-                      HomepageNewWidget.routeName,
-                      extra: <String, dynamic>{
-                        '__transition_info__': const TransitionInfo(
-                          hasTransition: true,
-                          transitionType: PageTransitionType.fade,
-                          duration: Duration(milliseconds: 0),
-                        ),
-                      },
-                    );
+      child: Padding(
+        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 32.0),
+        child: Row(
+          mainAxisSize: MainAxisSize.max,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _navItem(
+              selected: widget.navbar == 1,
+              outlineAsset: 'assets/images/nav_home_outline.svg',
+              boldAsset: 'assets/images/nav_home_bold.svg',
+              label: 'หน้าหลัก',
+              onTap: () async {
+                context.pushNamed(
+                  HomepageNewWidget.routeName,
+                  extra: <String, dynamic>{
+                    '__transition_info__': const TransitionInfo(
+                      hasTransition: true,
+                      transitionType: PageTransitionType.fade,
+                      duration: Duration(milliseconds: 0),
+                    ),
                   },
-                  child: Container(
-                    width: 40.0,
-                    height: 40.0,
-                    decoration: BoxDecoration(
-                      color: widget.navbar == 1
-                          ? FlutterFlowTheme.of(context).secondaryBackground
-                          : const Color(0x00FFFFFF),
-                      shape: BoxShape.circle,
-                    ),
-                    child: Align(
-                      alignment: const AlignmentDirectional(0.0, 0.0),
-                      child: Icon(
-                        Icons.home_rounded,
-                        color: widget.navbar == 1
-                            ? const Color(0xFF164874)
-                            : const Color(0xFF5F9ED6),
-                        size: 24.0,
-                      ),
-                    ),
-                  ),
-                ),
-                Text(
-                  'หน้าหลัก',
-                  style: FlutterFlowTheme.of(context).bodySmall.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).bodySmallFamily,
-                        color: widget.navbar == 1
-                            ? FlutterFlowTheme.of(context).secondaryBackground
-                            : const Color(0xFF5F9ED6),
-                        fontSize: () {
-                          if (MediaQuery.sizeOf(context).width <
-                              kBreakpointSmall) {
-                            return 12.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointMedium) {
-                            return 12.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointLarge) {
-                            return 14.0;
-                          } else {
-                            return 14.0;
-                          }
-                        }(),
-                        letterSpacing: 0.0,
-                        useGoogleFonts:
-                            !FlutterFlowTheme.of(context).bodySmallIsCustom,
-                      ),
-                ),
-              ].divide(const SizedBox(height: 4.0)).addToStart(const SizedBox(height: 8.0)),
+                );
+              },
             ),
-          ),
-          Expanded(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  onTap: () async {
-                    context.pushNamed(
-                      HomeVisitWidget.routeName,
-                      extra: <String, dynamic>{
-                        '__transition_info__': const TransitionInfo(
-                          hasTransition: true,
-                          transitionType: PageTransitionType.fade,
-                          duration: Duration(milliseconds: 0),
-                        ),
-                      },
-                    );
+            _navItem(
+              selected: widget.navbar == 5,
+              outlineAsset: 'assets/images/nav_community_outline.svg',
+              boldAsset: 'assets/images/nav_community_bold.svg',
+              label: 'งานชุมชน',
+              onTap: () async {
+                context.pushNamed(InformationCommunityOneWidget.routeName);
+              },
+            ),
+            _navItem(
+              selected: widget.navbar == 3,
+              outlineAsset: 'assets/images/nav_villages_outline.svg',
+              boldAsset: 'assets/images/nav_villages_bold.svg',
+              label: 'หมู่บ้านที่ดูแล',
+              onTap: () async {
+                context.pushNamed(
+                  HomeVisitWidget.routeName,
+                  extra: <String, dynamic>{
+                    '__transition_info__': const TransitionInfo(
+                      hasTransition: true,
+                      transitionType: PageTransitionType.fade,
+                      duration: Duration(milliseconds: 0),
+                    ),
                   },
-                  child: Container(
-                    width: 40.0,
-                    height: 40.0,
-                    decoration: BoxDecoration(
-                      color: widget.navbar == 3
-                          ? FlutterFlowTheme.of(context).secondaryBackground
-                          : const Color(0x00FFFFFF),
-                      shape: BoxShape.circle,
-                    ),
-                    child: Align(
-                      alignment: const AlignmentDirectional(0.0, 0.0),
-                      child: Icon(
-                        Icons.home_work_rounded,
-                        color: widget.navbar == 3
-                            ? const Color(0xFF164874)
-                            : const Color(0xFF5F9ED6),
-                        size: 24.0,
-                      ),
-                    ),
-                  ),
-                ),
-                Text(
-                  'หมู่บ้านที่ดูแล',
-                  style: FlutterFlowTheme.of(context).bodySmall.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).bodySmallFamily,
-                        color: widget.navbar == 3
-                            ? FlutterFlowTheme.of(context).secondaryBackground
-                            : const Color(0xFF5F9ED6),
-                        fontSize: () {
-                          if (MediaQuery.sizeOf(context).width <
-                              kBreakpointSmall) {
-                            return 12.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointMedium) {
-                            return 12.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointLarge) {
-                            return 14.0;
-                          } else {
-                            return 14.0;
-                          }
-                        }(),
-                        letterSpacing: 0.0,
-                        useGoogleFonts:
-                            !FlutterFlowTheme.of(context).bodySmallIsCustom,
-                      ),
-                ),
-              ].divide(const SizedBox(height: 4.0)).addToStart(const SizedBox(height: 8.0)),
+                );
+              },
             ),
-          ),
-          Expanded(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  onTap: () async {
-                    context.pushNamed(InformationCommunityOneWidget.routeName);
+            _navItem(
+              selected: widget.navbar == 4,
+              outlineAsset: 'assets/images/nav_settings_outline.svg',
+              boldAsset: 'assets/images/nav_settings_bold.svg',
+              label: 'การตั้งค่า',
+              onTap: () async {
+                context.pushNamed(
+                  SettingWidget.routeName,
+                  extra: <String, dynamic>{
+                    '__transition_info__': const TransitionInfo(
+                      hasTransition: true,
+                      transitionType: PageTransitionType.fade,
+                      duration: Duration(milliseconds: 0),
+                    ),
                   },
-                  child: Container(
-                    width: 40.0,
-                    height: 40.0,
-                    decoration: BoxDecoration(
-                      color: widget.navbar == 5
-                          ? FlutterFlowTheme.of(context).secondaryBackground
-                          : const Color(0x00FFFFFF),
-                      shape: BoxShape.circle,
-                    ),
-                    child: Align(
-                      alignment: const AlignmentDirectional(0.0, 0.0),
-                      child: Icon(
-                        Icons.groups_rounded,
-                        color: widget.navbar == 5
-                            ? const Color(0xFF164874)
-                            : const Color(0xFF5F9ED6),
-                        size: 24.0,
-                      ),
-                    ),
-                  ),
-                ),
-                Text(
-                  'งานชุมชน',
-                  style: FlutterFlowTheme.of(context).bodySmall.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).bodySmallFamily,
-                        color: widget.navbar == 5
-                            ? FlutterFlowTheme.of(context).secondaryBackground
-                            : const Color(0xFF5F9ED6),
-                        fontSize: () {
-                          if (MediaQuery.sizeOf(context).width <
-                              kBreakpointSmall) {
-                            return 12.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointMedium) {
-                            return 12.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointLarge) {
-                            return 14.0;
-                          } else {
-                            return 14.0;
-                          }
-                        }(),
-                        letterSpacing: 0.0,
-                        useGoogleFonts:
-                            !FlutterFlowTheme.of(context).bodySmallIsCustom,
-                      ),
-                ),
-              ].divide(const SizedBox(height: 4.0)).addToStart(const SizedBox(height: 8.0)),
+                );
+              },
             ),
-          ),
-          Expanded(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  onTap: () async {
-                    context.pushNamed(
-                      SettingWidget.routeName,
-                      extra: <String, dynamic>{
-                        '__transition_info__': const TransitionInfo(
-                          hasTransition: true,
-                          transitionType: PageTransitionType.fade,
-                          duration: Duration(milliseconds: 0),
-                        ),
-                      },
-                    );
-                  },
-                  child: Container(
-                    width: 40.0,
-                    height: 40.0,
-                    decoration: BoxDecoration(
-                      color: widget.navbar == 4
-                          ? FlutterFlowTheme.of(context).secondaryBackground
-                          : const Color(0x00FFFFFF),
-                      shape: BoxShape.circle,
-                    ),
-                    child: Align(
-                      alignment: const AlignmentDirectional(0.0, 0.0),
-                      child: Icon(
-                        Icons.settings_sharp,
-                        color: widget.navbar == 4
-                            ? const Color(0xFF164874)
-                            : const Color(0xFF5F9ED6),
-                        size: 24.0,
-                      ),
-                    ),
-                  ),
-                ),
-                Text(
-                  'ตั้งค่า',
-                  style: FlutterFlowTheme.of(context).bodySmall.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).bodySmallFamily,
-                        color: widget.navbar == 4
-                            ? FlutterFlowTheme.of(context).secondaryBackground
-                            : const Color(0xFF5F9ED6),
-                        fontSize: () {
-                          if (MediaQuery.sizeOf(context).width <
-                              kBreakpointSmall) {
-                            return 12.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointMedium) {
-                            return 12.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointLarge) {
-                            return 14.0;
-                          } else {
-                            return 14.0;
-                          }
-                        }(),
-                        letterSpacing: 0.0,
-                        useGoogleFonts:
-                            !FlutterFlowTheme.of(context).bodySmallIsCustom,
-                      ),
-                ),
-              ].divide(const SizedBox(height: 4.0)).addToStart(const SizedBox(height: 8.0)),
-            ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

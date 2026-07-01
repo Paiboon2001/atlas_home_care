@@ -305,8 +305,8 @@ class _PINCodeWidgetState extends State<PINCodeWidget>
                       // Logo
                       Image.asset(
                         'assets/images/AHC_V2.webp',
-                        width: 120.0,
-                        height: 120.0,
+                        width: 100.0,
+                        height: 100.0,
                         fit: BoxFit.contain,
                       ),
                       const SizedBox(height: 12.0),
