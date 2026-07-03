@@ -5,6 +5,7 @@ import '/profile/widget/logout_system/logout_system_widget.dart';
 import '/utils/navbar/navbar_widget.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'setting_model.dart';
 export 'setting_model.dart';
@@ -24,7 +25,7 @@ class _SettingWidgetState extends State<SettingWidget> {
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
-  static const Color _line = Color(0xFFEDEDED);
+  static const Color _line = Color(0xFFEEF3F7);
   static const Color _gray01 = Color(0xFF8A8F97);
 
   @override
@@ -50,6 +51,8 @@ class _SettingWidgetState extends State<SettingWidget> {
     required List<Color> colors,
     String? asset,
     IconData? icon,
+    double iconWidth = 16.0,
+    double iconHeight = 16.0,
     AlignmentGeometry begin = const AlignmentDirectional(0.0, -1.0),
     AlignmentGeometry end = const AlignmentDirectional(0.0, 1.0),
   }) {
@@ -58,14 +61,14 @@ class _SettingWidgetState extends State<SettingWidget> {
       height: 24.0,
       decoration: BoxDecoration(
         gradient: LinearGradient(colors: colors, begin: begin, end: end),
-        borderRadius: BorderRadius.circular(8.0),
+        shape: BoxShape.circle,
       ),
       child: Center(
         child: asset != null
             ? SvgPicture.asset(
                 asset,
-                width: 16.0,
-                height: 16.0,
+                width: iconWidth,
+                height: iconHeight,
                 fit: BoxFit.contain,
                 colorFilter:
                     const ColorFilter.mode(Colors.white, BlendMode.srcIn),
@@ -81,7 +84,11 @@ class _SettingWidgetState extends State<SettingWidget> {
     required Widget trailing,
     Future<dynamic> Function()? onTap,
   }) {
-    final row = Row(
+    final row = SizedBox(
+      // Uniform row height so switch rows and chevron rows share the same
+      // vertical rhythm across every settings card.
+      height: 36.0,
+      child: Row(
       children: [
         Expanded(
           child: Row(
@@ -109,6 +116,7 @@ class _SettingWidgetState extends State<SettingWidget> {
         ),
         trailing,
       ],
+    ),
     );
     if (onTap == null) return row;
     return InkWell(
@@ -131,6 +139,7 @@ class _SettingWidgetState extends State<SettingWidget> {
     return Switch.adaptive(
       value: value,
       onChanged: onChanged,
+      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
       activeThumbColor: Colors.white,
       activeTrackColor: const Color(0xFF339FF3),
       inactiveTrackColor: const Color(0xFFD0D8E0),
@@ -170,7 +179,7 @@ class _SettingWidgetState extends State<SettingWidget> {
         borderRadius: BorderRadius.circular(16.0),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(12.0),
+        padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -181,8 +190,11 @@ class _SettingWidgetState extends State<SettingWidget> {
   }
 
   Widget _profileHeader() {
+    // Status-bar height: the blue banner paints behind it (edge-to-edge),
+    // while the banner content stays pushed below the notch.
+    final topInset = MediaQuery.paddingOf(context).top;
     return SizedBox(
-      height: 200.0,
+      height: 212.0 + topInset,
       child: Stack(
         children: [
           // Blue banner with concentric ring pattern
@@ -192,23 +204,19 @@ class _SettingWidgetState extends State<SettingWidget> {
             right: 0.0,
             child: ClipRect(
               child: SizedBox(
-                height: 100.0,
+                height: 100.0 + topInset,
                 child: Stack(
                   clipBehavior: Clip.none,
                   children: [
-                    const Positioned.fill(
-                      child: ColoredBox(color: Color(0xFF339FF3)),
-                    ),
-                    Positioned(
-                      top: -48.0,
-                      left: 0.0,
-                      right: 0.0,
-                      child: Center(
-                        child: SvgPicture.asset(
-                          'assets/images/set_header_rings.svg',
-                          width: 387.0,
-                          height: 387.0,
-                        ),
+                    // Figma node 162:376 — concentric rings raster (blur baked
+                    // in). Fills the whole banner (incl. behind the status bar)
+                    // seamlessly, bottom-aligned so the flat bottom edge sits at
+                    // the avatar's middle and the bright centre lands on it.
+                    Positioned.fill(
+                      child: Image.asset(
+                        'assets/images/set_header_rings.png',
+                        fit: BoxFit.cover,
+                        alignment: Alignment.bottomCenter,
                       ),
                     ),
                   ],
@@ -218,13 +226,13 @@ class _SettingWidgetState extends State<SettingWidget> {
           ),
           // Avatar (overlaps the banner)
           Positioned(
-            top: 60.0,
+            top: 48.0 + topInset,
             left: 0.0,
             right: 0.0,
             child: Center(
               child: Container(
-                width: 80.0,
-                height: 80.0,
+                width: 100.0,
+                height: 100.0,
                 decoration: BoxDecoration(
                   color: const Color(0xFF85C5F8),
                   shape: BoxShape.circle,
@@ -241,7 +249,7 @@ class _SettingWidgetState extends State<SettingWidget> {
           ),
           // Name + role row
           Positioned(
-            top: 148.0,
+            top: 160.0 + topInset,
             left: 16.0,
             right: 16.0,
             child: Column(
@@ -261,7 +269,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                             .titleMediumIsCustom,
                       ),
                 ),
-                const SizedBox(height: 8.0),
+                const SizedBox(height: 12.0),
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -327,30 +335,44 @@ class _SettingWidgetState extends State<SettingWidget> {
         FocusScope.of(context).unfocus();
         FocusManager.instance.primaryFocus?.unfocus();
       },
-      child: Scaffold(
+      child: AnnotatedRegion<SystemUiOverlayStyle>(
+        value: SystemUiOverlayStyle.light.copyWith(
+          statusBarColor: Colors.transparent,
+        ),
+        child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+        // Grey-blue so nothing behind the navbar's rounded top corners shows
+        // white; the content bg and this share one colour end-to-end.
+        backgroundColor: const Color(0xFFF2FAFF),
         body: SafeArea(
+          top: false,
           bottom: false,
           child: Column(
             children: [
               Expanded(
-                child: SingleChildScrollView(
-                  child: Column(
+                child: LayoutBuilder(
+                  builder: (context, constraints) => SingleChildScrollView(
+                    child: ConstrainedBox(
+                      constraints:
+                          BoxConstraints(minHeight: constraints.maxHeight),
+                      child: IntrinsicHeight(
+                        child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _profileHeader(),
-                      Container(
+                      Expanded(
+                        child: Container(
                         width: double.infinity,
                         decoration: const BoxDecoration(
-                          color: Color(0xFFEEF3F7),
+                          color: Color(0xFFF2FAFF),
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(24.0),
                             topRight: Radius.circular(24.0),
                           ),
                         ),
                         child: Padding(
-                          padding: const EdgeInsets.all(16.0),
+                          padding:
+                              const EdgeInsets.fromLTRB(16.0, 24.0, 16.0, 16.0),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -424,6 +446,8 @@ class _SettingWidgetState extends State<SettingWidget> {
                                       Color(0xFFFF57D2)
                                     ],
                                     asset: 'assets/images/set_ic_code.svg',
+                                    iconWidth: 14.0,
+                                    iconHeight: 14.0,
                                   ),
                                   label: 'สิทธิใน Authen Code',
                                   trailing: _chevron,
@@ -439,6 +463,8 @@ class _SettingWidgetState extends State<SettingWidget> {
                                       Color(0xFF004078)
                                     ],
                                     asset: 'assets/images/set_ic_world.svg',
+                                    iconWidth: 13.0,
+                                    iconHeight: 13.0,
                                   ),
                                   label: 'เชื่อมต่ออุปกรณ์วัด Vital Sign',
                                   trailing: _chevron,
@@ -511,6 +537,8 @@ class _SettingWidgetState extends State<SettingWidget> {
                                       Color(0xFFFF5D51)
                                     ],
                                     asset: 'assets/images/set_ic_book.svg',
+                                    iconWidth: 14.0,
+                                    iconHeight: 14.0,
                                   ),
                                   label: 'Terms of Use',
                                   trailing: _chevron,
@@ -526,6 +554,8 @@ class _SettingWidgetState extends State<SettingWidget> {
                                       Color(0xFF6D33F4)
                                     ],
                                     asset: 'assets/images/set_ic_protect.svg',
+                                    iconWidth: 12.0,
+                                    iconHeight: 13.5,
                                   ),
                                   label: 'นโยบายความเป็นส่วนตัว',
                                   trailing: _chevron,
@@ -589,7 +619,11 @@ class _SettingWidgetState extends State<SettingWidget> {
                           ),
                         ),
                       ),
+                      ),
                     ],
+                  ),
+                  ),
+                  ),
                   ),
                 ),
               ),
@@ -597,6 +631,7 @@ class _SettingWidgetState extends State<SettingWidget> {
             ],
           ),
         ),
+      ),
       ),
     );
   }

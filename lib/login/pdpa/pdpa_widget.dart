@@ -311,7 +311,7 @@ class _PdpaWidgetState extends State<PdpaWidget> {
                   ),
                   child: Padding(
                     padding: const EdgeInsetsDirectional.fromSTEB(
-                        16.0, 16.0, 16.0, 32.0),
+                        16.0, 12.0, 16.0, 32.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [

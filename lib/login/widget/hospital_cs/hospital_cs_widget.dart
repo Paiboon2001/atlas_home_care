@@ -96,6 +96,7 @@ class _HospitalCsWidgetState extends State<HospitalCsWidget> {
                         color: const Color(0xFF041228),
                         fontSize: 16.0,
                         letterSpacing: -0.16,
+                        lineHeight: 1.0,
                         fontWeight:
                             selected ? FontWeight.w600 : FontWeight.w400,
                         useGoogleFonts:
