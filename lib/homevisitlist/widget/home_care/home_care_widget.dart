@@ -63,8 +63,8 @@ class _HomeCareWidgetState extends State<HomeCareWidget> {
           color: FlutterFlowTheme.of(context).secondaryBackground,
           boxShadow: const [
             BoxShadow(
-              blurRadius: 4.0,
-              color: Color(0x17000000),
+              blurRadius: 8.0,
+              color: Color(0x145F9ED6),
               offset: Offset(
                 0.0,
                 0.0,

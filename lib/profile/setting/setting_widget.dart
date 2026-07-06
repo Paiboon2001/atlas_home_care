@@ -177,6 +177,13 @@ class _SettingWidgetState extends State<SettingWidget> {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(16.0),
+        boxShadow: const [
+          BoxShadow(
+            color: Color(0x145F9ED6),
+            offset: Offset(0.0, 0.0),
+            blurRadius: 8.0,
+          ),
+        ],
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
@@ -226,22 +233,51 @@ class _SettingWidgetState extends State<SettingWidget> {
           ),
           // Avatar (overlaps the banner)
           Positioned(
-            top: 48.0 + topInset,
+            // Blue disc grown 100 -> 108 (+8px); top nudged -4 so the disc
+            // centre stays fixed and the rings remain centred on it.
+            top: 44.0 + topInset,
             left: 0.0,
             right: 0.0,
             child: Center(
               child: Container(
-                width: 100.0,
-                height: 100.0,
+                width: 108.0,
+                height: 108.0,
                 decoration: BoxDecoration(
                   color: const Color(0xFF85C5F8),
                   shape: BoxShape.circle,
-                  border: Border.all(color: Colors.white, width: 2.0),
+                  border: Border.all(color: const Color(0xFFF2FAFF), width: 4.0),
                 ),
-                child: ClipOval(
-                  child: Image.asset(
-                    'assets/images/doc1.png',
-                    fit: BoxFit.cover,
+                // Only the blue disc behind grows; the character art keeps its
+                // original 100px size, centred, so a thin blue halo appears
+                // around the figure instead of scaling it up.
+                child: Center(
+                  child: ClipOval(
+                    child: SizedBox(
+                      width: 100.0,
+                      height: 100.0,
+                      child: Image.network(
+                        'https://randomuser.me/api/portraits/men/32.jpg',
+                        fit: BoxFit.cover,
+                        loadingBuilder: (context, child, progress) {
+                          if (progress == null) return child;
+                          return const Center(
+                            child: SizedBox(
+                              width: 24.0,
+                              height: 24.0,
+                              child: CircularProgressIndicator(
+                                strokeWidth: 2.0,
+                                color: Colors.white,
+                              ),
+                            ),
+                          );
+                        },
+                        errorBuilder: (context, error, stackTrace) =>
+                            Image.asset(
+                          'assets/images/doc1.png',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
                   ),
                 ),
               ),
@@ -504,7 +540,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                     ],
                                     begin: const AlignmentDirectional(0.0, 1.0),
                                     end: const AlignmentDirectional(0.0, -1.0),
-                                    asset: 'assets/images/set_ic_key.svg',
+                                    asset: 'assets/images/set_ic_lock.svg',
                                   ),
                                   label: 'เปลี่ยนรหัส PIN',
                                   trailing: _chevron,

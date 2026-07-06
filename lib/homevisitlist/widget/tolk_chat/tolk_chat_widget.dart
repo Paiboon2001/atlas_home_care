@@ -178,9 +178,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                 fit: BoxFit.cover,
-                                image: Image.asset(
-                                  'assets/images/doc1.png',
-                                ).image,
+                                image: const NetworkImage('https://randomuser.me/api/portraits/men/32.jpg'),
                               ),
                               gradient: LinearGradient(
                                 colors: [
@@ -343,9 +341,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                 fit: BoxFit.cover,
-                                image: Image.asset(
-                                  'assets/images/doc1.png',
-                                ).image,
+                                image: const NetworkImage('https://randomuser.me/api/portraits/men/32.jpg'),
                               ),
                               gradient: LinearGradient(
                                 colors: [

@@ -121,10 +121,16 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                             decoration: const BoxDecoration(
                               shape: BoxShape.circle,
                             ),
-                            child: Image.asset(
-                              'assets/images/doc1.png',
+                            child: Image.network(
+                              'https://randomuser.me/api/portraits/men/32.jpg',
                               fit: BoxFit.cover,
                               alignment: const Alignment(0.0, 1.0),
+                              errorBuilder: (context, error, stackTrace) =>
+                                  Image.asset(
+                                'assets/images/doc1.png',
+                                fit: BoxFit.cover,
+                                alignment: const Alignment(0.0, 1.0),
+                              ),
                             ),
                           ),
                         ],

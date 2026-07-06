@@ -127,15 +127,15 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
       ),
       body: ClipRRect(
         borderRadius: const BorderRadius.only(
-          topLeft: Radius.circular(24.0),
-          topRight: Radius.circular(24.0),
+          topLeft: Radius.circular(32.0),
+          topRight: Radius.circular(32.0),
         ),
         child: Container(
           width: double.infinity,
           height: double.infinity,
-          decoration: BoxDecoration(
-            color: FlutterFlowTheme.of(context).primaryBackground,
-            boxShadow: const [
+          decoration: const BoxDecoration(
+            color: Color(0xFFF2FAFF),
+            boxShadow: [
               BoxShadow(
                 blurRadius: 4.0,
                 color: Color(0x33000000),
@@ -145,9 +145,9 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                 ),
               )
             ],
-            borderRadius: const BorderRadius.only(
-              topLeft: Radius.circular(24.0),
-              topRight: Radius.circular(24.0),
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(32.0),
+              topRight: Radius.circular(32.0),
             ),
           ),
           child: Stack(
@@ -175,6 +175,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                               .override(
                                 fontFamily: FlutterFlowTheme.of(context)
                                     .titleSmallFamily,
+                                fontSize: 14.0,
                                 letterSpacing: 0.0,
                                 useGoogleFonts: !FlutterFlowTheme.of(context)
                                     .titleSmallIsCustom,
@@ -199,8 +200,8 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                               }
                             }(),
                           ),
-                          crossAxisSpacing: 8.0,
-                          mainAxisSpacing: 8.0,
+                          crossAxisSpacing: 12.0,
+                          mainAxisSpacing: 12.0,
                           itemCount: 4,
                           shrinkWrap: true,
                           itemBuilder: (context, index) {
@@ -288,8 +289,8 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                               }
                             }(),
                           ),
-                          crossAxisSpacing: 8.0,
-                          mainAxisSpacing: 8.0,
+                          crossAxisSpacing: 12.0,
+                          mainAxisSpacing: 12.0,
                           itemCount: 6,
                           shrinkWrap: true,
                           itemBuilder: (context, index) {

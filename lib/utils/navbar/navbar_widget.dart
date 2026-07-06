@@ -6,6 +6,38 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'navbar_model.dart';
 export 'navbar_model.dart';
 
+/// Shared open/closed state for the My Service sheet. Every menu bar listens to
+/// this so the "My Service" item can show a selected state while the sheet is
+/// open, and so any bar instance can open or close it.
+final ValueNotifier<bool> myServiceSheetOpen = ValueNotifier<bool>(false);
+
+OverlayEntry? _myServiceEntry;
+
+void _openMyServiceSheet(BuildContext context, Color backgroundColor) {
+  if (_myServiceEntry != null) return;
+  final entry = OverlayEntry(
+    builder: (_) => _MyServiceSheet(backgroundColor: backgroundColor),
+  );
+  _myServiceEntry = entry;
+  Overlay.of(context, rootOverlay: true).insert(entry);
+  myServiceSheetOpen.value = true;
+}
+
+/// Closes the My Service sheet if it is open. Safe to call unconditionally.
+void closeMyServiceSheet() {
+  _myServiceEntry?.remove();
+  _myServiceEntry = null;
+  myServiceSheetOpen.value = false;
+}
+
+void _toggleMyServiceSheet(BuildContext context, Color backgroundColor) {
+  if (_myServiceEntry != null) {
+    closeMyServiceSheet();
+  } else {
+    _openMyServiceSheet(context, backgroundColor);
+  }
+}
+
 class NavbarWidget extends StatefulWidget {
   const NavbarWidget({
     super.key,
@@ -33,15 +65,22 @@ class _NavbarWidgetState extends State<NavbarWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => NavbarModel());
+    // Rebuild so the My Service item reflects the sheet's open/closed state.
+    myServiceSheetOpen.addListener(_onSheetToggled);
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
   void dispose() {
+    myServiceSheetOpen.removeListener(_onSheetToggled);
     _model.maybeDispose();
 
     super.dispose();
+  }
+
+  void _onSheetToggled() {
+    if (mounted) safeSetState(() {});
   }
 
   Widget _navItem({
@@ -111,6 +150,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
               boldAsset: 'assets/images/nav_home_bold.svg',
               label: 'หน้าหลัก',
               onTap: () async {
+                closeMyServiceSheet();
                 context.pushNamed(
                   HomepageNewWidget.routeName,
                   extra: <String, dynamic>{
@@ -129,6 +169,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
               boldAsset: 'assets/images/nav_community_bold.svg',
               label: 'งานชุมชน',
               onTap: () async {
+                closeMyServiceSheet();
                 context.pushNamed(InformationCommunityOneWidget.routeName);
               },
             ),
@@ -138,6 +179,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
               boldAsset: 'assets/images/nav_villages_bold.svg',
               label: 'หมู่บ้านที่ดูแล',
               onTap: () async {
+                closeMyServiceSheet();
                 context.pushNamed(
                   HomeVisitWidget.routeName,
                   extra: <String, dynamic>{
@@ -151,11 +193,25 @@ class _NavbarWidgetState extends State<NavbarWidget> {
               },
             ),
             _navItem(
+              // Selected while its sheet is open (My Service isn't a route).
+              selected: widget.navbar == 2 || myServiceSheetOpen.value,
+              outlineAsset: 'assets/images/nav_myservice_outline.svg',
+              boldAsset: 'assets/images/nav_myservice_bold.svg',
+              label: 'My Service',
+              onTap: () async {
+                _toggleMyServiceSheet(
+                  context,
+                  FlutterFlowTheme.of(context).secondaryBackground,
+                );
+              },
+            ),
+            _navItem(
               selected: widget.navbar == 4,
               outlineAsset: 'assets/images/nav_settings_outline.svg',
               boldAsset: 'assets/images/nav_settings_bold.svg',
               label: 'การตั้งค่า',
               onTap: () async {
+                closeMyServiceSheet();
                 context.pushNamed(
                   SettingWidget.routeName,
                   extra: <String, dynamic>{
@@ -170,6 +226,237 @@ class _NavbarWidgetState extends State<NavbarWidget> {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+/// Full-screen My Service overlay. The sheet slides up from the bottom and its
+/// lower edge is hidden behind the menu bar, which is painted on top and stays
+/// fully interactive (tapping another item closes the sheet and navigates).
+class _MyServiceSheet extends StatefulWidget {
+  const _MyServiceSheet({required this.backgroundColor});
+
+  final Color backgroundColor;
+
+  @override
+  State<_MyServiceSheet> createState() => _MyServiceSheetState();
+}
+
+class _MyServiceSheetState extends State<_MyServiceSheet>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _controller = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 300),
+  )..forward();
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  /// A single My Service entry: round icon + label. Closes the sheet, then runs
+  /// [onOpen] (navigation).
+  Widget _serviceTile({
+    required String asset,
+    required String label,
+    required VoidCallback onOpen,
+  }) {
+    return InkWell(
+      splashColor: Colors.transparent,
+      focusColor: Colors.transparent,
+      hoverColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+      onTap: () {
+        onOpen();
+        closeMyServiceSheet();
+      },
+      child: SizedBox(
+        width: 76.0,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              width: 56.0,
+              height: 56.0,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: AssetImage(asset),
+                ),
+              ),
+            ),
+            const SizedBox(height: 8.0),
+            Text(
+              label,
+              textAlign: TextAlign.center,
+              style: FlutterFlowTheme.of(context).labelSmall.override(
+                    fontFamily: FlutterFlowTheme.of(context).labelSmallFamily,
+                    color: FlutterFlowTheme.of(context).primaryText,
+                    fontSize: 12.0,
+                    letterSpacing: 0.0,
+                    useGoogleFonts:
+                        !FlutterFlowTheme.of(context).labelSmallIsCustom,
+                  ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final sheetHeight = MediaQuery.sizeOf(context).height * 0.70;
+    // Transparent Material so the menu bar's InkWells have a Material ancestor
+    // (the root overlay has none).
+    return Material(
+      type: MaterialType.transparency,
+      child: Stack(
+      children: [
+        // Dimming scrim over the whole screen; tapping it closes the sheet.
+        // Drawn below the sheet and the bar so neither is dimmed.
+        Positioned.fill(
+          child: FadeTransition(
+            opacity: _controller,
+            child: GestureDetector(
+              behavior: HitTestBehavior.opaque,
+              onTap: closeMyServiceSheet,
+              child: const ColoredBox(color: Color(0x66000000)),
+            ),
+          ),
+        ),
+        // The sheet slides up from behind the bar; its bottom runs off-screen
+        // so the bar (painted next) hides the lower edge.
+        Align(
+          alignment: const AlignmentDirectional(0.0, 1.0),
+          child: SlideTransition(
+            position: Tween<Offset>(
+              begin: const Offset(0.0, 1.0),
+              end: Offset.zero,
+            ).animate(
+              CurvedAnimation(parent: _controller, curve: Curves.easeOutCubic),
+            ),
+            child: Container(
+              width: double.infinity,
+              height: sheetHeight,
+              decoration: BoxDecoration(
+                color: widget.backgroundColor,
+                borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(32.0),
+                  topRight: Radius.circular(32.0),
+                ),
+              ),
+              child: SafeArea(
+                top: false,
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(20.0, 12.0, 20.0, 20.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      // Drag handle.
+                      Center(
+                        child: Container(
+                          width: 40.0,
+                          height: 4.0,
+                          decoration: BoxDecoration(
+                            color: const Color(0xFFD0D8E0),
+                            borderRadius: BorderRadius.circular(100.0),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 20.0),
+                      Text(
+                        'My Service',
+                        style: FlutterFlowTheme.of(context).titleMedium.override(
+                              fontFamily: FlutterFlowTheme.of(context)
+                                  .titleMediumFamily,
+                              color: const Color(0xFF041228),
+                              fontSize: 18.0,
+                              letterSpacing: -0.3,
+                              fontWeight: FontWeight.w600,
+                              useGoogleFonts: !FlutterFlowTheme.of(context)
+                                  .titleMediumIsCustom,
+                            ),
+                      ),
+                      const SizedBox(height: 20.0),
+                      Wrap(
+                        spacing: 16.0,
+                        runSpacing: 20.0,
+                        children: [
+                          _serviceTile(
+                            asset: 'assets/images/infor_patient.png',
+                            label: 'ข้อมูลสุขภาพ',
+                            onOpen: () {
+                              context.pushNamed(HealthhistoryWidget.routeName);
+                            },
+                          ),
+                          _serviceTile(
+                            asset: 'assets/images/Book01.png',
+                            label: 'วางแผนเยี่ยม',
+                            onOpen: () {
+                              context.pushNamed(
+                                PlanForVisitWidget.routeName,
+                                extra: <String, dynamic>{
+                                  '__transition_info__': const TransitionInfo(
+                                    hasTransition: true,
+                                    transitionType: PageTransitionType.fade,
+                                    duration: Duration(milliseconds: 0),
+                                  ),
+                                },
+                              );
+                            },
+                          ),
+                          _serviceTile(
+                            asset: 'assets/images/Drug_Delivery.png',
+                            label: 'ส่งเวชภัณฑ์ยา',
+                            onOpen: () {
+                              context.pushNamed(
+                                MedicaldeliveryWidget.routeName,
+                                queryParameters: {
+                                  'photo': serializeParam(
+                                    '',
+                                    ParamType.String,
+                                  ),
+                                  'text': serializeParam(
+                                    '',
+                                    ParamType.String,
+                                  ),
+                                  'chand': serializeParam(
+                                    '',
+                                    ParamType.String,
+                                  ),
+                                }.withoutNulls,
+                                extra: <String, dynamic>{
+                                  '__transition_info__': const TransitionInfo(
+                                    hasTransition: true,
+                                    transitionType: PageTransitionType.fade,
+                                    duration: Duration(milliseconds: 0),
+                                  ),
+                                },
+                              );
+                            },
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+        // The real, interactive menu bar painted on top so the sheet appears to
+        // emerge from behind it. navbar == 2 keeps My Service selected.
+        const Align(
+          alignment: AlignmentDirectional(0.0, 1.0),
+          child: NavbarWidget(navbar: 2),
+        ),
+      ],
       ),
     );
   }
