@@ -1031,10 +1031,10 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                           decoration:
                                                               BoxDecoration(
                                                             image:
-                                                                DecorationImage(
+                                                                const DecorationImage(
                                                               fit: BoxFit.cover,
                                                               image:
-                                                                  const NetworkImage('https://randomuser.me/api/portraits/men/32.jpg'),
+                                                                  NetworkImage('https://randomuser.me/api/portraits/men/32.jpg'),
                                                             ),
                                                             gradient:
                                                                 LinearGradient(
@@ -1306,10 +1306,10 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                           decoration:
                                                               BoxDecoration(
                                                             image:
-                                                                DecorationImage(
+                                                                const DecorationImage(
                                                               fit: BoxFit.cover,
                                                               image:
-                                                                  const NetworkImage('https://randomuser.me/api/portraits/men/32.jpg'),
+                                                                  NetworkImage('https://randomuser.me/api/portraits/men/32.jpg'),
                                                             ),
                                                             gradient:
                                                                 LinearGradient(
@@ -2269,9 +2269,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                       width: 32.0,
                                                       height: 32.0,
                                                       decoration: BoxDecoration(
-                                                        image: DecorationImage(
+                                                        image: const DecorationImage(
                                                           fit: BoxFit.cover,
-                                                          image: const NetworkImage('https://randomuser.me/api/portraits/men/32.jpg'),
+                                                          image: NetworkImage('https://randomuser.me/api/portraits/men/32.jpg'),
                                                         ),
                                                         gradient:
                                                             LinearGradient(
@@ -2526,9 +2526,9 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                       width: 32.0,
                                                       height: 32.0,
                                                       decoration: BoxDecoration(
-                                                        image: DecorationImage(
+                                                        image: const DecorationImage(
                                                           fit: BoxFit.cover,
-                                                          image: const NetworkImage('https://randomuser.me/api/portraits/men/32.jpg'),
+                                                          image: NetworkImage('https://randomuser.me/api/portraits/men/32.jpg'),
                                                         ),
                                                         gradient:
                                                             LinearGradient(

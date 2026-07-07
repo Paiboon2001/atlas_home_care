@@ -117,9 +117,9 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
         body: Container(
           width: double.infinity,
           height: double.infinity,
-          decoration: BoxDecoration(
-            color: const Color(0xFFF2FAFF),
-            boxShadow: const [
+          decoration: const BoxDecoration(
+            color: Color(0xFFF2FAFF),
+            boxShadow: [
               BoxShadow(
                 blurRadius: 4.0,
                 color: Color(0x33000000),
@@ -129,7 +129,7 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
                 ),
               )
             ],
-            borderRadius: const BorderRadius.only(
+            borderRadius: BorderRadius.only(
               topLeft: Radius.circular(32.0),
               topRight: Radius.circular(32.0),
             ),
