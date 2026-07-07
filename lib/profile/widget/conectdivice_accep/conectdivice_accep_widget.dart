@@ -293,7 +293,7 @@ class _ConectdiviceAccepWidgetState extends State<ConectdiviceAccepWidget>
                 ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 32.0),
                 child: MainButton(
                   text: 'เชื่อมต่อ',
                   onPressed: () async {

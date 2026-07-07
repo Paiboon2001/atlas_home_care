@@ -1,7 +1,7 @@
 import '/components/main_button_widget.dart';
+import '/components/secondary_button_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/utils/botton_cancel/botton_cancel_widget.dart';
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -82,7 +82,7 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
           }(),
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).secondaryBackground,
-            borderRadius: BorderRadius.circular(32.0),
+            borderRadius: BorderRadius.circular(40.0),
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -741,10 +741,9 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Expanded(
-                      child: wrapWithModel(
-                        model: _model.bottonCancelModel,
-                        updateCallback: () => safeSetState(() {}),
-                        child: const BottonCancelWidget(),
+                      child: SecondaryButton(
+                        text: 'ยกเลิก',
+                        onPressed: () => Navigator.pop(context),
                       ),
                     ),
                     Expanded(

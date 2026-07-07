@@ -3354,8 +3354,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              16.0, 0.0, 16.0, 24.0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 32.0),
                           child: MainButton(
                             text: 'ทำแบบประเมิน ส่วนที่ 2',
                             onPressed: () async {
@@ -9022,8 +9021,7 @@ class _CareWidgetState extends State<CareWidget> with TickerProviderStateMixin {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              16.0, 16.0, 16.0, 24.0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 32.0),
                           child: MainButton(
                             text: 'บันทึก',
                             onPressed: () async {

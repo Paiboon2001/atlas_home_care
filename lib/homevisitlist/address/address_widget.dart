@@ -97,8 +97,8 @@ class _AddressWidgetState extends State<AddressWidget> {
             end: const AlignmentDirectional(0, 1.0),
           ),
           borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(24.0),
-            topRight: Radius.circular(24.0),
+            topLeft: Radius.circular(32.0),
+            topRight: Radius.circular(32.0),
           ),
         ),
         child: Column(
@@ -814,8 +814,7 @@ class _AddressWidgetState extends State<AddressWidget> {
                   ),
                 ),
                 child: Padding(
-                  padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 32.0),
                   child: MainButton(
                     text: 'บันทึก',
                     onPressed: () async {

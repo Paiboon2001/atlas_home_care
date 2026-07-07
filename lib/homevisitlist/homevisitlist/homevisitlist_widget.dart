@@ -128,8 +128,8 @@ class _HomevisitlistWidgetState extends State<HomevisitlistWidget> {
             )
           ],
           borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(24.0),
-            topRight: Radius.circular(24.0),
+            topLeft: Radius.circular(32.0),
+            topRight: Radius.circular(32.0),
           ),
         ),
         child: Column(

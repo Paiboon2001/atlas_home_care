@@ -24,6 +24,9 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
+  // Currently selected hospital in the "อื่นๆ" radio list (null = none).
+  String? selectedAuthen;
+
   @override
   void initState() {
     super.initState();
@@ -37,6 +40,34 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
     _model.dispose();
 
     super.dispose();
+  }
+
+  // A tappable hospital row with a radio. Tapping selects it (or clears the
+  // selection if it was already the selected one — tap to toggle).
+  Widget _authenCard({
+    required AuthensModel model,
+    required String name,
+  }) {
+    return InkWell(
+      splashColor: Colors.transparent,
+      focusColor: Colors.transparent,
+      hoverColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+      onTap: () async {
+        // Select this hospital: it moves up to "ของฉัน" and hides from the list.
+        safeSetState(() {
+          selectedAuthen = name;
+        });
+      },
+      child: wrapWithModel(
+        model: model,
+        updateCallback: () => safeSetState(() {}),
+        child: AuthensWidget(
+          names: name,
+          selected: selectedAuthen == name,
+        ),
+      ),
+    );
   }
 
   @override
@@ -87,7 +118,7 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
           width: double.infinity,
           height: double.infinity,
           decoration: BoxDecoration(
-            color: FlutterFlowTheme.of(context).primaryBackground,
+            color: const Color(0xFFF2FAFF),
             boxShadow: const [
               BoxShadow(
                 blurRadius: 4.0,
@@ -99,8 +130,8 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
               )
             ],
             borderRadius: const BorderRadius.only(
-              topLeft: Radius.circular(24.0),
-              topRight: Radius.circular(24.0),
+              topLeft: Radius.circular(32.0),
+              topRight: Radius.circular(32.0),
             ),
           ),
           child: Column(
@@ -144,23 +175,24 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
                             Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
-                                if (FFAppState().authen == true)
+                                if (selectedAuthen != null)
                                   InkWell(
                                     splashColor: Colors.transparent,
                                     focusColor: Colors.transparent,
                                     hoverColor: Colors.transparent,
                                     highlightColor: Colors.transparent,
                                     onTap: () async {
-                                      FFAppState().authen = false;
-                                      safeSetState(() {});
+                                      safeSetState(() {
+                                        selectedAuthen = null;
+                                      });
                                     },
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
                                         boxShadow: const [
                                           BoxShadow(
-                                            blurRadius: 4.0,
-                                            color: Color(0x33000000),
+                                            blurRadius: 8.0,
+                                            color: Color(0x145F9ED6),
                                             offset: Offset(
                                               0.0,
                                               0.0,
@@ -193,7 +225,7 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
                                           children: [
                                             Expanded(
                                               child: GradientText(
-                                                'โรงพยาบาลสกลนคร',
+                                                selectedAuthen ?? '',
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -234,12 +266,11 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
                                       ),
                                     ),
                                   ),
-                                if (FFAppState().authen == false)
+                                if (selectedAuthen == null)
                                   Container(
                                     width: double.infinity,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .alternate,
+                                      color: Colors.white,
                                       borderRadius: BorderRadius.circular(16.0),
                                       border: Border.all(
                                         color: const Color(0xFFD5D9E2),
@@ -313,7 +344,7 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3 รายการ',
+                                  '${selectedAuthen == null ? 3 : 2} รายการ',
                                   style: FlutterFlowTheme.of(context)
                                       .bodySmall
                                       .override(
@@ -329,39 +360,21 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
                                 ),
                               ],
                             ),
-                            if (FFAppState().authen == false)
-                              InkWell(
-                                splashColor: Colors.transparent,
-                                focusColor: Colors.transparent,
-                                hoverColor: Colors.transparent,
-                                highlightColor: Colors.transparent,
-                                onTap: () async {
-                                  FFAppState().authen =
-                                      !(FFAppState().authen ?? true);
-                                  safeSetState(() {});
-                                },
-                                child: wrapWithModel(
-                                  model: _model.authensModel1,
-                                  updateCallback: () => safeSetState(() {}),
-                                  child: const AuthensWidget(
-                                    names: 'โรงพยาบาลสกลนคร',
-                                  ),
-                                ),
+                            if (selectedAuthen != 'โรงพยาบาลสกลนคร')
+                              _authenCard(
+                                model: _model.authensModel1,
+                                name: 'โรงพยาบาลสกลนคร',
                               ),
-                            wrapWithModel(
-                              model: _model.authensModel2,
-                              updateCallback: () => safeSetState(() {}),
-                              child: const AuthensWidget(
-                                names: 'โรงพยาบาลบัว',
+                            if (selectedAuthen != 'โรงพยาบาลบัว')
+                              _authenCard(
+                                model: _model.authensModel2,
+                                name: 'โรงพยาบาลบัว',
                               ),
-                            ),
-                            wrapWithModel(
-                              model: _model.authensModel3,
-                              updateCallback: () => safeSetState(() {}),
-                              child: const AuthensWidget(
-                                names: 'โรงพยาบาลหนองจอก',
+                            if (selectedAuthen != 'โรงพยาบาลหนองจอก')
+                              _authenCard(
+                                model: _model.authensModel3,
+                                name: 'โรงพยาบาลหนองจอก',
                               ),
-                            ),
                           ].divide(const SizedBox(height: 12.0)),
                         ),
                       ),

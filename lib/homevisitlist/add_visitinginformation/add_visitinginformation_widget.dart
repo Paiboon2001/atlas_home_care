@@ -131,8 +131,8 @@ class _AddVisitinginformationWidgetState
       ),
       body: ClipRRect(
         borderRadius: const BorderRadius.only(
-          topLeft: Radius.circular(24.0),
-          topRight: Radius.circular(24.0),
+          topLeft: Radius.circular(32.0),
+          topRight: Radius.circular(32.0),
         ),
         child: Container(
           width: double.infinity,
@@ -140,8 +140,8 @@ class _AddVisitinginformationWidgetState
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).primaryBackground,
             borderRadius: const BorderRadius.only(
-              topLeft: Radius.circular(24.0),
-              topRight: Radius.circular(24.0),
+              topLeft: Radius.circular(32.0),
+              topRight: Radius.circular(32.0),
             ),
           ),
           child: Stack(

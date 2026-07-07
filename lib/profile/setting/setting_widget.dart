@@ -201,7 +201,7 @@ class _SettingWidgetState extends State<SettingWidget> {
     // while the banner content stays pushed below the notch.
     final topInset = MediaQuery.paddingOf(context).top;
     return SizedBox(
-      height: 212.0 + topInset,
+      height: 224.0 + topInset,
       child: Stack(
         children: [
           // Blue banner with concentric ring pattern
@@ -297,10 +297,10 @@ class _SettingWidgetState extends State<SettingWidget> {
                   style: FlutterFlowTheme.of(context).titleMedium.override(
                         fontFamily:
                             FlutterFlowTheme.of(context).titleMediumFamily,
-                        color: const Color(0xFF041228),
-                        fontSize: 18.0,
+                        color: const Color(0xFF004078),
+                        fontSize: 20.0,
                         letterSpacing: -0.3,
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.bold,
                         useGoogleFonts: !FlutterFlowTheme.of(context)
                             .titleMediumIsCustom,
                       ),
@@ -353,8 +353,9 @@ class _SettingWidgetState extends State<SettingWidget> {
             style: FlutterFlowTheme.of(context).bodySmall.override(
                   fontFamily: FlutterFlowTheme.of(context).bodySmallFamily,
                   color: const Color(0xFF041228),
-                  fontSize: 12.0,
+                  fontSize: 16.0,
                   letterSpacing: -0.3,
+                  fontWeight: FontWeight.normal,
                   useGoogleFonts:
                       !FlutterFlowTheme.of(context).bodySmallIsCustom,
                 ),

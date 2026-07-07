@@ -92,19 +92,15 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                     },
                   ).then((value) => safeSetState(() {}));
                 },
-                child: Container(
+                child: SizedBox(
                   width: 40.0,
                   height: 40.0,
-                  decoration: const BoxDecoration(
-                    color: Color(0x93164874),
-                    shape: BoxShape.circle,
-                  ),
                   child: Align(
                     alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Icon(
                       Icons.search_rounded,
                       color: FlutterFlowTheme.of(context).secondaryBackground,
-                      size: 24.0,
+                      size: 32.0,
                     ),
                   ),
                 ),
@@ -113,15 +109,6 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
           ].divide(const SizedBox(width: 8.0)),
         ),
         actions: const [],
-        flexibleSpace: FlexibleSpaceBar(
-          background: ClipRRect(
-            borderRadius: const BorderRadius.only(),
-            child: Image.asset(
-              'assets/images/bgappbar.png',
-              fit: BoxFit.cover,
-            ),
-          ),
-        ),
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -157,29 +144,55 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                   0,
                   0,
                   0,
-                  96.0,
+                  72.0,
                 ),
                 shrinkWrap: true,
                 scrollDirection: Axis.vertical,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 8.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'ตำบลพระประแดง',
-                          style: FlutterFlowTheme.of(context)
-                              .titleSmall
-                              .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleSmallFamily,
-                                fontSize: 14.0,
-                                letterSpacing: 0.0,
-                                useGoogleFonts: !FlutterFlowTheme.of(context)
-                                    .titleSmallIsCustom,
-                              ),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 4.0),
+                          child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              'ตำบลพระประแดง',
+                              style: FlutterFlowTheme.of(context)
+                                  .titleSmall
+                                  .override(
+                                    fontFamily: FlutterFlowTheme.of(context)
+                                        .titleSmallFamily,
+                                    fontSize: 20.0,
+                                    letterSpacing: 0.0,
+                                    fontWeight: FontWeight.bold,
+                                    useGoogleFonts:
+                                        !FlutterFlowTheme.of(context)
+                                            .titleSmallIsCustom,
+                                  ),
+                            ),
+                            Text(
+                              'จำนวน 4 หมู่บ้าน',
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .override(
+                                    fontFamily: FlutterFlowTheme.of(context)
+                                        .bodyMediumFamily,
+                                    color: FlutterFlowTheme.of(context).primaryText,
+                                    fontSize: 14.0,
+                                    letterSpacing: 0.0,
+                                    useGoogleFonts:
+                                        !FlutterFlowTheme.of(context)
+                                            .bodyMediumIsCustom,
+                                  ),
+                            ),
+                          ],
+                          ),
                         ),
                         MasonryGridView.builder(
                           physics: const NeverScrollableScrollPhysics(),
@@ -253,22 +266,49 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 16.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'ตำบลศาลาแดง',
-                          style: FlutterFlowTheme.of(context)
-                              .titleSmall
-                              .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleSmallFamily,
-                                letterSpacing: 0.0,
-                                useGoogleFonts: !FlutterFlowTheme.of(context)
-                                    .titleSmallIsCustom,
-                              ),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 4.0),
+                          child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              'ตำบลศาลาแดง',
+                              style: FlutterFlowTheme.of(context)
+                                  .titleSmall
+                                  .override(
+                                    fontFamily: FlutterFlowTheme.of(context)
+                                        .titleSmallFamily,
+                                    fontSize: 20.0,
+                                    letterSpacing: 0.0,
+                                    fontWeight: FontWeight.bold,
+                                    useGoogleFonts:
+                                        !FlutterFlowTheme.of(context)
+                                            .titleSmallIsCustom,
+                                  ),
+                            ),
+                            Text(
+                              'จำนวน 6 หมู่บ้าน',
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .override(
+                                    fontFamily: FlutterFlowTheme.of(context)
+                                        .bodyMediumFamily,
+                                    color: FlutterFlowTheme.of(context).primaryText,
+                                    fontSize: 14.0,
+                                    letterSpacing: 0.0,
+                                    useGoogleFonts:
+                                        !FlutterFlowTheme.of(context)
+                                            .bodyMediumIsCustom,
+                                  ),
+                            ),
+                          ],
+                          ),
                         ),
                         MasonryGridView.builder(
                           physics: const NeverScrollableScrollPhysics(),

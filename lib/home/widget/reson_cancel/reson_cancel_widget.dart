@@ -1,7 +1,7 @@
 import '/components/main_button_widget.dart';
+import '/components/secondary_button_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/utils/botton_cancel/botton_cancel_widget.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'reson_cancel_model.dart';
@@ -72,7 +72,7 @@ class _ResonCancelWidgetState extends State<ResonCancelWidget> {
           }(),
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).secondaryBackground,
-            borderRadius: BorderRadius.circular(32.0),
+            borderRadius: BorderRadius.circular(40.0),
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -206,19 +206,9 @@ class _ResonCancelWidgetState extends State<ResonCancelWidget> {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Expanded(
-                      child: InkWell(
-                        splashColor: Colors.transparent,
-                        focusColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () async {
-                          Navigator.pop(context);
-                        },
-                        child: wrapWithModel(
-                          model: _model.bottonCancelModel,
-                          updateCallback: () => safeSetState(() {}),
-                          child: const BottonCancelWidget(),
-                        ),
+                      child: SecondaryButton(
+                        text: 'ยกเลิก',
+                        onPressed: () => Navigator.pop(context),
                       ),
                     ),
                     Expanded(

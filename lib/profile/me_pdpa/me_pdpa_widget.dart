@@ -270,7 +270,6 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
                         _para(
                             'เราอาจปรับปรุงนโยบายนี้เพื่อให้สอดคล้องกับข้อกำหนดหรือการพัฒนาที่เปลี่ยนแปลงไป ผู้ใช้จะได้รับแจ้งผ่านการแจ้งเตือนในแอปหรืออีเมลหากมีการเปลี่ยนแปลงที่มีนัยสำคัญ'),
                         _para('11. ติดต่อเรา'),
-                        _bullet('เว็บไซต์: atlasplatform.in.th'),
                         _bullet('อีเมล: healthflowdevteam@gmail.com'),
                         _bullet('เว็บไซต์: https://atlasplatform.in.th'),
                       ],

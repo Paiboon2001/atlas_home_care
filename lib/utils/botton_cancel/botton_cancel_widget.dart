@@ -62,8 +62,9 @@ class _BottonCancelWidgetState extends State<BottonCancelWidget> {
         color: FlutterFlowTheme.of(context).secondaryBackground,
         textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
               fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-              color: FlutterFlowTheme.of(context).secondaryText,
+              color: FlutterFlowTheme.of(context).primaryText,
               letterSpacing: 0.0,
+              fontWeight: FontWeight.w600,
               useGoogleFonts: !FlutterFlowTheme.of(context).bodyMediumIsCustom,
             ),
         elevation: 0.0,

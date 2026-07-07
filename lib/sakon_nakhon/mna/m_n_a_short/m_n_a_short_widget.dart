@@ -3065,8 +3065,7 @@ class _MNAShortWidgetState extends State<MNAShortWidget>
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              16.0, 16.0, 16.0, 24.0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 32.0),
                           child: MainButton(
                             text: 'บันทึก',
                             onPressed: () async {

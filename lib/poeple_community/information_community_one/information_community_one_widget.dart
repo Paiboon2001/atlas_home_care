@@ -109,22 +109,13 @@ class _InformationCommunityOneWidgetState
             ].divide(const SizedBox(width: 8.0)),
           ),
           actions: const [],
-          flexibleSpace: FlexibleSpaceBar(
-            background: ClipRRect(
-              borderRadius: const BorderRadius.only(),
-              child: Image.asset(
-                'assets/images/bgappbar.png',
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
           centerTitle: true,
           elevation: 0.0,
         ),
         body: ClipRRect(
           borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(24.0),
-            topRight: Radius.circular(24.0),
+            topLeft: Radius.circular(32.0),
+            topRight: Radius.circular(32.0),
           ),
           child: Container(
             width: double.infinity,
@@ -132,8 +123,8 @@ class _InformationCommunityOneWidgetState
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).primaryBackground,
               borderRadius: const BorderRadius.only(
-                topLeft: Radius.circular(24.0),
-                topRight: Radius.circular(24.0),
+                topLeft: Radius.circular(32.0),
+                topRight: Radius.circular(32.0),
               ),
             ),
             child: Stack(

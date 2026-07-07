@@ -2,7 +2,7 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/components/main_button_widget.dart';
-import '/utils/botton_cancel/botton_cancel_widget.dart';
+import '/components/secondary_button_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'delete_model.dart';
@@ -123,7 +123,7 @@ class _DeleteWidgetState extends State<DeleteWidget>
           height: 400.0,
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).secondaryBackground,
-            borderRadius: BorderRadius.circular(32.0),
+            borderRadius: BorderRadius.circular(40.0),
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -228,19 +228,9 @@ class _DeleteWidgetState extends State<DeleteWidget>
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Expanded(
-                      child: InkWell(
-                        splashColor: Colors.transparent,
-                        focusColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () async {
-                          Navigator.pop(context);
-                        },
-                        child: wrapWithModel(
-                          model: _model.bottonCancelModel,
-                          updateCallback: () => safeSetState(() {}),
-                          child: const BottonCancelWidget(),
-                        ),
+                      child: SecondaryButton(
+                        text: 'ยกเลิก',
+                        onPressed: () => Navigator.pop(context),
                       ),
                     ),
                     Expanded(

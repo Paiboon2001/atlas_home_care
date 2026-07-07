@@ -1,5 +1,4 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import '/utils/botton_cancel/botton_cancel_widget.dart';
 import 'change_datetime_widget.dart' show ChangeDatetimeWidget;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -22,11 +21,9 @@ class ChangeDatetimeModel extends FlutterFlowModel<ChangeDatetimeWidget> {
   TextEditingController? textController3;
   String? Function(BuildContext, String?)? textController3Validator;
   // Model for Botton_cancel component.
-  late BottonCancelModel bottonCancelModel;
 
   @override
   void initState(BuildContext context) {
-    bottonCancelModel = createModel(context, () => BottonCancelModel());
   }
 
   @override
@@ -40,6 +37,5 @@ class ChangeDatetimeModel extends FlutterFlowModel<ChangeDatetimeWidget> {
     textFieldFocusNode3?.dispose();
     textController3?.dispose();
 
-    bottonCancelModel.dispose();
   }
 }

@@ -84,7 +84,7 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
         width: double.infinity,
         height: double.infinity,
         decoration: BoxDecoration(
-          color: FlutterFlowTheme.of(context).primaryBackground,
+          color: const Color(0xFFF2FAFF),
           boxShadow: const [
             BoxShadow(
               blurRadius: 4.0,
@@ -96,8 +96,8 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
             )
           ],
           borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(24.0),
-            topRight: Radius.circular(24.0),
+            topLeft: Radius.circular(32.0),
+            topRight: Radius.circular(32.0),
           ),
         ),
         child: Padding(
@@ -157,10 +157,16 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                     ),
                     Container(
                       width: double.infinity,
-                      height: 110.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        borderRadius: BorderRadius.circular(24.0),
+                        borderRadius: BorderRadius.circular(16.0),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Color(0x145F9ED6),
+                            offset: Offset(0.0, 0.0),
+                            blurRadius: 8.0,
+                          ),
+                        ],
                       ),
                       child: Stack(
                         children: [
@@ -274,10 +280,16 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                     ),
                     Container(
                       width: double.infinity,
-                      height: 110.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        borderRadius: BorderRadius.circular(24.0),
+                        borderRadius: BorderRadius.circular(16.0),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Color(0x145F9ED6),
+                            offset: Offset(0.0, 0.0),
+                            blurRadius: 8.0,
+                          ),
+                        ],
                       ),
                       child: Stack(
                         children: [
@@ -607,11 +619,17 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                         },
                         child: Container(
                           width: double.infinity,
-                          height: 110.0,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: BorderRadius.circular(24.0),
+                            borderRadius: BorderRadius.circular(16.0),
+                            boxShadow: const [
+                              BoxShadow(
+                                color: Color(0x145F9ED6),
+                                offset: Offset(0.0, 0.0),
+                                blurRadius: 8.0,
+                              ),
+                            ],
                           ),
                           child: Stack(
                             children: [
@@ -728,11 +746,17 @@ class _ConnectdevicesWidgetState extends State<ConnectdevicesWidget> {
                           const EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
                       child: Container(
                         width: double.infinity,
-                        height: 110.0,
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          borderRadius: BorderRadius.circular(24.0),
+                          borderRadius: BorderRadius.circular(16.0),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Color(0x145F9ED6),
+                              offset: Offset(0.0, 0.0),
+                              blurRadius: 8.0,
+                            ),
+                          ],
                         ),
                         child: Stack(
                           children: [
