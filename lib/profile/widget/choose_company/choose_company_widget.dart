@@ -1,6 +1,5 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/utils/close/close_widget.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'choose_company_model.dart';
@@ -39,77 +38,54 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
-      alignment: const AlignmentDirectional(0.0, 1.0),
-      child: Container(
+    return Container(
         width: double.infinity,
-        height: 400.0,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
           borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(24.0),
-            topRight: Radius.circular(24.0),
+            topLeft: Radius.circular(32.0),
+            topRight: Radius.circular(32.0),
           ),
         ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    width: () {
-                      if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
-                        return 32.0;
-                      } else if (MediaQuery.sizeOf(context).width <
-                          kBreakpointMedium) {
-                        return 32.0;
-                      } else if (MediaQuery.sizeOf(context).width <
-                          kBreakpointLarge) {
-                        return 40.0;
-                      } else {
-                        return 40.0;
-                      }
-                    }(),
-                    height: () {
-                      if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
-                        return 32.0;
-                      } else if (MediaQuery.sizeOf(context).width <
-                          kBreakpointMedium) {
-                        return 32.0;
-                      } else if (MediaQuery.sizeOf(context).width <
-                          kBreakpointLarge) {
-                        return 40.0;
-                      } else {
-                        return 40.0;
-                      }
-                    }(),
-                    decoration: const BoxDecoration(
-                      shape: BoxShape.circle,
+        child: SafeArea(
+          top: false,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              // Drag handle.
+              Padding(
+                padding: const EdgeInsets.only(top: 12.0, bottom: 8.0),
+                child: Center(
+                  child: Container(
+                    width: 40.0,
+                    height: 4.0,
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFD0D8E0),
+                      borderRadius: BorderRadius.circular(100.0),
                     ),
                   ),
-                  Text(
-                    'กรุณาเลือกบริษัทเครื่องมือ',
-                    style: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).titleSmallFamily,
-                          letterSpacing: 0.0,
-                          useGoogleFonts:
-                              !FlutterFlowTheme.of(context).titleSmallIsCustom,
-                        ),
-                  ),
-                  wrapWithModel(
-                    model: _model.closeModel,
-                    updateCallback: () => safeSetState(() {}),
-                    child: const CloseWidget(),
-                  ),
-                ],
+                ),
               ),
-            ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 16.0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'กรุณาเลือกบริษัทเครื่องมือ',
+                      style: FlutterFlowTheme.of(context).titleSmall.override(
+                            fontFamily:
+                                FlutterFlowTheme.of(context).titleSmallFamily,
+                            letterSpacing: 0.0,
+                            useGoogleFonts: !FlutterFlowTheme.of(context)
+                                .titleSmallIsCustom,
+                          ),
+                    ),
+                  ],
+                ),
+              ),
             ListView(
               padding: const EdgeInsets.fromLTRB(
                 0,
@@ -389,9 +365,9 @@ class _ChooseCompanyWidgetState extends State<ChooseCompanyWidget> {
                 ),
               ].divide(const SizedBox(height: 16.0)),
             ),
-          ],
+            ],
+          ),
         ),
-      ),
     );
   }
 }

@@ -42,6 +42,9 @@ class _ReportWidgetState extends State<ReportWidget> {
 
   @override
   Widget build(BuildContext context) {
+    final bool hasDetail =
+        (_model.textController?.text.trim().isNotEmpty ?? false);
+
     return Scaffold(
       key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).primary,
@@ -85,9 +88,9 @@ class _ReportWidgetState extends State<ReportWidget> {
         child: Container(
           width: double.infinity,
           height: double.infinity,
-          decoration: BoxDecoration(
-            color: FlutterFlowTheme.of(context).primaryBackground,
-            borderRadius: const BorderRadius.only(
+          decoration: const BoxDecoration(
+            color: Color(0xFFF2FAFF),
+            borderRadius: BorderRadius.only(
               topLeft: Radius.circular(32.0),
               topRight: Radius.circular(32.0),
             ),
@@ -111,7 +114,14 @@ class _ReportWidgetState extends State<ReportWidget> {
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          borderRadius: BorderRadius.circular(24.0),
+                          borderRadius: BorderRadius.circular(16.0),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Color(0x145F9ED6),
+                              offset: Offset(0.0, 0.0),
+                              blurRadius: 8.0,
+                            ),
+                          ],
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(16.0),
@@ -120,6 +130,7 @@ class _ReportWidgetState extends State<ReportWidget> {
                             child: TextFormField(
                               controller: _model.textController,
                               focusNode: _model.textFieldFocusNode,
+                              onChanged: (_) => safeSetState(() {}),
                               autofocus: true,
                               enabled: true,
                               obscureText: false,
@@ -203,7 +214,14 @@ class _ReportWidgetState extends State<ReportWidget> {
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          borderRadius: BorderRadius.circular(24.0),
+                          borderRadius: BorderRadius.circular(16.0),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Color(0x145F9ED6),
+                              offset: Offset(0.0, 0.0),
+                              blurRadius: 8.0,
+                            ),
+                          ],
                         ),
                         child: Container(
                           decoration: const BoxDecoration(),
@@ -246,6 +264,7 @@ class _ReportWidgetState extends State<ReportWidget> {
                     padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 32.0),
                     child: MainButton(
                       text: 'บันทึก',
+                      enabled: hasDetail,
                       onPressed: () async {
                         context.safePop();
                       },

@@ -1,6 +1,5 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/utils/close/close_widget.dart';
 import 'package:flutter/material.dart';
 import 'upload_pic_model.dart';
 export 'upload_pic_model.dart';
@@ -38,50 +37,45 @@ class _UploadPicWidgetState extends State<UploadPicWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
-      alignment: const AlignmentDirectional(0.0, 1.0),
-      child: Container(
+    return Container(
         width: double.infinity,
-        height: 300.0,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).primaryBackground,
           borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(24.0),
-            topRight: Radius.circular(24.0),
+            topLeft: Radius.circular(32.0),
+            topRight: Radius.circular(32.0),
           ),
         ),
-        child: Column(
+        child: SafeArea(
+          top: false,
+          child: Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
+            // Drag handle.
             Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  wrapWithModel(
-                    model: _model.closeModel,
-                    updateCallback: () => safeSetState(() {}),
-                    child: const CloseWidget(),
+              padding: const EdgeInsets.only(top: 12.0, bottom: 8.0),
+              child: Center(
+                child: Container(
+                  width: 40.0,
+                  height: 4.0,
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFD0D8E0),
+                    borderRadius: BorderRadius.circular(100.0),
                   ),
-                ],
+                ),
               ),
             ),
-            InkWell(
-              splashColor: Colors.transparent,
-              focusColor: Colors.transparent,
-              hoverColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-              onTap: () async {
-                Navigator.pop(context);
-                FFAppState().picture = !(FFAppState().picture ?? true);
-                safeSetState(() {});
-              },
-              child: Column(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Padding(
+            Column(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                InkWell(
+                  splashColor: Colors.transparent,
+                  focusColor: Colors.transparent,
+                  hoverColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () => Navigator.pop(context, 'gallery'),
+                  child: Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -106,14 +100,21 @@ class _UploadPicWidgetState extends State<UploadPicWidget> {
                       ].divide(const SizedBox(width: 16.0)),
                     ),
                   ),
-                  Divider(
-                    height: 1.0,
-                    thickness: 1.0,
-                    indent: 16.0,
-                    endIndent: 16.0,
-                    color: FlutterFlowTheme.of(context).alternate,
-                  ),
-                  Padding(
+                ),
+                Divider(
+                  height: 1.0,
+                  thickness: 1.0,
+                  indent: 16.0,
+                  endIndent: 16.0,
+                  color: FlutterFlowTheme.of(context).alternate,
+                ),
+                InkWell(
+                  splashColor: Colors.transparent,
+                  focusColor: Colors.transparent,
+                  hoverColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () => Navigator.pop(context, 'camera'),
+                  child: Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -138,14 +139,21 @@ class _UploadPicWidgetState extends State<UploadPicWidget> {
                       ].divide(const SizedBox(width: 16.0)),
                     ),
                   ),
-                  Divider(
-                    height: 1.0,
-                    thickness: 1.0,
-                    indent: 16.0,
-                    endIndent: 16.0,
-                    color: FlutterFlowTheme.of(context).alternate,
-                  ),
-                  Padding(
+                ),
+                Divider(
+                  height: 1.0,
+                  thickness: 1.0,
+                  indent: 16.0,
+                  endIndent: 16.0,
+                  color: FlutterFlowTheme.of(context).alternate,
+                ),
+                InkWell(
+                  splashColor: Colors.transparent,
+                  focusColor: Colors.transparent,
+                  hoverColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () => Navigator.pop(context, 'file'),
+                  child: Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -170,12 +178,12 @@ class _UploadPicWidgetState extends State<UploadPicWidget> {
                       ].divide(const SizedBox(width: 16.0)),
                     ),
                   ),
-                ].divide(const SizedBox(height: 8.0)),
-              ),
+                ),
+              ].divide(const SizedBox(height: 8.0)),
             ),
           ],
+          ),
         ),
-      ),
     );
   }
 }

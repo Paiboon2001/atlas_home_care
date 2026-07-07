@@ -83,5 +83,9 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>ต้องการเข้าถึงคลังรูปภาพเพื่อแนบรูปประกอบการแจ้งปัญหา</string>
+	<key>NSCameraUsageDescription</key>
+	<string>ต้องการใช้กล้องเพื่อถ่ายรูปประกอบการแจ้งปัญหา</string>
 </dict>
 </plist>

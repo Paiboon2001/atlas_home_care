@@ -506,29 +506,14 @@ class _SettingWidgetState extends State<SettingWidget> {
                                   label: 'เชื่อมต่ออุปกรณ์วัด Vital Sign',
                                   trailing: _chevron,
                                   onTap: () async {
-                                    showDialog(
-                                      barrierDismissible: false,
+                                    await showModalBottomSheet(
                                       context: context,
-                                      builder: (dialogContext) {
-                                        return Dialog(
-                                          elevation: 0,
-                                          insetPadding: EdgeInsets.zero,
-                                          backgroundColor: Colors.transparent,
-                                          alignment: const AlignmentDirectional(
-                                                  0.0, 1.0)
-                                              .resolve(
-                                                  Directionality.of(context)),
-                                          child: GestureDetector(
-                                            onTap: () {
-                                              FocusScope.of(dialogContext)
-                                                  .unfocus();
-                                              FocusManager
-                                                  .instance.primaryFocus
-                                                  ?.unfocus();
-                                            },
-                                            child: const ChooseCompanyWidget(),
-                                          ),
-                                        );
+                                      isScrollControlled: true,
+                                      isDismissible: true,
+                                      enableDrag: true,
+                                      backgroundColor: Colors.transparent,
+                                      builder: (sheetContext) {
+                                        return const ChooseCompanyWidget();
                                       },
                                     );
                                   },
