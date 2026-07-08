@@ -102,7 +102,7 @@ class _ProcessUpPicWidgetState extends State<ProcessUpPicWidget> {
         child: Container(
           width: double.infinity,
           decoration: BoxDecoration(
-            color: FlutterFlowTheme.of(context).primaryBackground,
+            color: FlutterFlowTheme.of(context).secondaryBackground,
             borderRadius: BorderRadius.circular(8.0),
             border: Border.all(
               color: FlutterFlowTheme.of(context).alternate,
@@ -156,7 +156,7 @@ class _ProcessUpPicWidgetState extends State<ProcessUpPicWidget> {
               width: double.infinity,
               height: 120.0,
               decoration: BoxDecoration(
-                color: FlutterFlowTheme.of(context).primaryBackground,
+                color: FlutterFlowTheme.of(context).secondaryBackground,
                 borderRadius: BorderRadius.circular(8.0),
                 border: Border.all(
                   color: FlutterFlowTheme.of(context).alternate,

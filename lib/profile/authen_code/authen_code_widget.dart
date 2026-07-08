@@ -1,3 +1,4 @@
+import '/components/bottom_action_bar_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -381,6 +382,14 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
                     ].divide(const SizedBox(height: 16.0)),
                   ),
                 ),
+              ),
+              BottomActionBar(
+                text: 'บันทึก',
+                // Disabled until a hospital is selected.
+                enabled: selectedAuthen != null,
+                onPressed: () async {
+                  context.pushNamed(SettingWidget.routeName);
+                },
               ),
             ],
           ),

@@ -88,19 +88,15 @@ class _HomevisitlistWidgetState extends State<HomevisitlistWidget> {
                 onTap: () async {
                   context.pushNamed(AddHomeWidget.routeName);
                 },
-                child: Container(
+                child: SizedBox(
                   width: 40.0,
                   height: 40.0,
-                  decoration: const BoxDecoration(
-                    color: Color(0x93164874),
-                    shape: BoxShape.circle,
-                  ),
                   child: Align(
                     alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Icon(
                       Icons.add_home,
                       color: FlutterFlowTheme.of(context).secondaryBackground,
-                      size: 24.0,
+                      size: 32.0,
                     ),
                   ),
                 ),
@@ -112,12 +108,17 @@ class _HomevisitlistWidgetState extends State<HomevisitlistWidget> {
         centerTitle: true,
         elevation: 0.0,
       ),
-      body: Container(
+      body: ClipRRect(
+        borderRadius: const BorderRadius.only(
+          topLeft: Radius.circular(32.0),
+          topRight: Radius.circular(32.0),
+        ),
+        child: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
-          color: FlutterFlowTheme.of(context).primaryBackground,
-          boxShadow: const [
+        decoration: const BoxDecoration(
+          color: Color(0xFFF2FAFF),
+          boxShadow: [
             BoxShadow(
               blurRadius: 4.0,
               color: Color(0x33000000),
@@ -127,7 +128,7 @@ class _HomevisitlistWidgetState extends State<HomevisitlistWidget> {
               ),
             )
           ],
-          borderRadius: const BorderRadius.only(
+          borderRadius: BorderRadius.only(
             topLeft: Radius.circular(32.0),
             topRight: Radius.circular(32.0),
           ),
@@ -141,7 +142,7 @@ class _HomevisitlistWidgetState extends State<HomevisitlistWidget> {
                   0,
                   16.0,
                   0,
-                  24.0,
+                  32.0,
                 ),
                 shrinkWrap: true,
                 scrollDirection: Axis.vertical,
@@ -243,11 +244,12 @@ class _HomevisitlistWidgetState extends State<HomevisitlistWidget> {
                       colorarrow: FlutterFlowTheme.of(context).secondaryText,
                     ),
                   ),
-                ].divide(const SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 12.0)),
               ),
             ),
           ],
         ),
+      ),
       ),
     );
   }

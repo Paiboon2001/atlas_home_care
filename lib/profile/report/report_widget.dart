@@ -210,30 +210,10 @@ class _ReportWidgetState extends State<ReportWidget> {
                           ),
                         ),
                       ),
-                      Container(
-                        decoration: BoxDecoration(
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
-                          borderRadius: BorderRadius.circular(16.0),
-                          boxShadow: const [
-                            BoxShadow(
-                              color: Color(0x145F9ED6),
-                              offset: Offset(0.0, 0.0),
-                              blurRadius: 8.0,
-                            ),
-                          ],
-                        ),
-                        child: Container(
-                          decoration: const BoxDecoration(),
-                          child: Padding(
-                            padding: const EdgeInsets.all(16.0),
-                            child: wrapWithModel(
-                              model: _model.processUpPicModel,
-                              updateCallback: () => safeSetState(() {}),
-                              child: const ProcessUpPicWidget(),
-                            ),
-                          ),
-                        ),
+                      wrapWithModel(
+                        model: _model.processUpPicModel,
+                        updateCallback: () => safeSetState(() {}),
+                        child: const ProcessUpPicWidget(),
                       ),
                     ].divide(const SizedBox(height: 16.0)),
                   ),
@@ -261,7 +241,7 @@ class _ReportWidgetState extends State<ReportWidget> {
                     ),
                   ),
                   child: Padding(
-                    padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 32.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 32.0),
                     child: MainButton(
                       text: 'บันทึก',
                       enabled: hasDetail,

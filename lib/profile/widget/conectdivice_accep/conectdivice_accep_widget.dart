@@ -132,18 +132,18 @@ class _ConectdiviceAccepWidgetState extends State<ConectdiviceAccepWidget>
           width: double.infinity,
           height: () {
             if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
-              return 500.0;
+              return 520.0;
             } else if (MediaQuery.sizeOf(context).width < kBreakpointMedium) {
-              return 500.0;
+              return 520.0;
             } else if (MediaQuery.sizeOf(context).width < kBreakpointLarge) {
-              return 600.0;
+              return 620.0;
             } else {
-              return 600.0;
+              return 620.0;
             }
           }(),
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).secondaryBackground,
-            borderRadius: BorderRadius.circular(24.0),
+            borderRadius: BorderRadius.circular(40.0),
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -293,7 +293,7 @@ class _ConectdiviceAccepWidgetState extends State<ConectdiviceAccepWidget>
                 ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 32.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 16.0),
                 child: MainButton(
                   text: 'เชื่อมต่อ',
                   onPressed: () async {
