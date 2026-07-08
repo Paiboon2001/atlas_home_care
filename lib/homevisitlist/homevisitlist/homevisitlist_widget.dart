@@ -117,7 +117,7 @@ class _HomevisitlistWidgetState extends State<HomevisitlistWidget> {
         width: double.infinity,
         height: double.infinity,
         decoration: const BoxDecoration(
-          color: Color(0xFFF2FAFF),
+          color: Color(0xFFF5F7FA),
           boxShadow: [
             BoxShadow(
               blurRadius: 4.0,

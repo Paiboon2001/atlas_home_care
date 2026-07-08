@@ -111,7 +111,7 @@ class _MePdpaWidgetState extends State<MePdpaWidget> {
           width: double.infinity,
           height: double.infinity,
           decoration: const BoxDecoration(
-            color: Color(0xFFF2FAFF),
+            color: Color(0xFFF5F7FA),
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(32.0),
               topRight: Radius.circular(32.0),

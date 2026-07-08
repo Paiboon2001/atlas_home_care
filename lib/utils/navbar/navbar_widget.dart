@@ -262,6 +262,7 @@ class _MyServiceSheetState extends State<_MyServiceSheet>
     required String asset,
     required String label,
     required VoidCallback onOpen,
+    required double width,
   }) {
     return InkWell(
       splashColor: Colors.transparent,
@@ -273,7 +274,7 @@ class _MyServiceSheetState extends State<_MyServiceSheet>
         closeMyServiceSheet();
       },
       child: SizedBox(
-        width: 76.0,
+        width: width,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -310,7 +311,7 @@ class _MyServiceSheetState extends State<_MyServiceSheet>
 
   @override
   Widget build(BuildContext context) {
-    final sheetHeight = MediaQuery.sizeOf(context).height * 0.70;
+    final sheetHeight = MediaQuery.sizeOf(context).height * 0.50;
     // Transparent Material so the menu bar's InkWells have a Material ancestor
     // (the root overlay has none).
     return Material(
@@ -376,7 +377,7 @@ class _MyServiceSheetState extends State<_MyServiceSheet>
                               fontFamily: FlutterFlowTheme.of(context)
                                   .titleMediumFamily,
                               color: const Color(0xFF041228),
-                              fontSize: 18.0,
+                              fontSize: 20.0,
                               letterSpacing: -0.3,
                               fontWeight: FontWeight.w600,
                               useGoogleFonts: !FlutterFlowTheme.of(context)
@@ -384,20 +385,29 @@ class _MyServiceSheetState extends State<_MyServiceSheet>
                             ),
                       ),
                       const SizedBox(height: 20.0),
-                      Wrap(
-                        spacing: 16.0,
-                        runSpacing: 20.0,
-                        children: [
-                          _serviceTile(
-                            asset: 'assets/images/infor_patient.png',
-                            label: 'ข้อมูลสุขภาพ',
-                            onOpen: () {
-                              context.pushNamed(HealthhistoryWidget.routeName);
-                            },
-                          ),
-                          _serviceTile(
-                            asset: 'assets/images/Book01.png',
-                            label: 'วางแผนเยี่ยม',
+                      LayoutBuilder(
+                        builder: (context, constraints) {
+                          const spacing = 16.0;
+                          // Cap at 4 tiles per row; a 5th wraps to a new line.
+                          final tileWidth =
+                              (constraints.maxWidth - spacing * 3) / 4;
+                          return Wrap(
+                            spacing: spacing,
+                            runSpacing: 20.0,
+                            children: [
+                              _serviceTile(
+                                width: tileWidth,
+                                asset: 'assets/images/infor_patient.png',
+                                label: 'ข้อมูลสุขภาพ',
+                                onOpen: () {
+                                  context.pushNamed(
+                                      HealthhistoryWidget.routeName);
+                                },
+                              ),
+                              _serviceTile(
+                                width: tileWidth,
+                                asset: 'assets/images/Book01.png',
+                                label: 'วางแผนเยี่ยม',
                             onOpen: () {
                               context.pushNamed(
                                 PlanForVisitWidget.routeName,
@@ -412,6 +422,7 @@ class _MyServiceSheetState extends State<_MyServiceSheet>
                             },
                           ),
                           _serviceTile(
+                            width: tileWidth,
                             asset: 'assets/images/Drug_Delivery.png',
                             label: 'ส่งเวชภัณฑ์ยา',
                             onOpen: () {
@@ -441,7 +452,9 @@ class _MyServiceSheetState extends State<_MyServiceSheet>
                               );
                             },
                           ),
-                        ],
+                            ],
+                          );
+                        },
                       ),
                     ],
                   ),

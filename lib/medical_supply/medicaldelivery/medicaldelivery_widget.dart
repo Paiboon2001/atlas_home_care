@@ -125,13 +125,9 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                       },
                     ).then((value) => safeSetState(() {}));
                   },
-                  child: Container(
+                  child: SizedBox(
                     width: 40.0,
                     height: 40.0,
-                    decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).customColor5,
-                      shape: BoxShape.circle,
-                    ),
                     child: Align(
                       alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Icon(

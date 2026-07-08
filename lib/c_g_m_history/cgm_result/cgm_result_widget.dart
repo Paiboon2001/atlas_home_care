@@ -1,9 +1,8 @@
+import '/components/thai_date_field_widget.dart';
 import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import '/custom_code/widgets/index.dart' as custom_widgets;
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
@@ -402,96 +401,13 @@ class _CgmResultWidgetState extends State<CgmResultWidget>
                               ),
                             ].divide(const SizedBox(height: 2.0)),
                           ),
-                          Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(100.0),
-                              shape: BoxShape.rectangle,
-                              border: Border.all(
-                                color: FlutterFlowTheme.of(context).alternate,
-                                width: 1.0,
-                              ),
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  12.0, 4.0, 12.0, 4.0),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Text(
-                                    valueOrDefault<String>(
-                                      dateTimeFormat("yMd", _model.datePicked),
-                                      '24/08/2569',
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .labelSmall
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelSmallFamily,
-                                          letterSpacing: 0.0,
-                                          useGoogleFonts:
-                                              !FlutterFlowTheme.of(context)
-                                                  .labelSmallIsCustom,
-                                        ),
-                                  ),
-                                  InkWell(
-                                    splashColor: Colors.transparent,
-                                    focusColor: Colors.transparent,
-                                    hoverColor: Colors.transparent,
-                                    highlightColor: Colors.transparent,
-                                    onTap: () async {
-                                      await showModalBottomSheet<bool>(
-                                          context: context,
-                                          builder: (context) {
-                                            return ScrollConfiguration(
-                                              behavior:
-                                                  const MaterialScrollBehavior()
-                                                      .copyWith(
-                                                dragDevices: {
-                                                  PointerDeviceKind.mouse,
-                                                  PointerDeviceKind.touch,
-                                                  PointerDeviceKind.stylus,
-                                                  PointerDeviceKind.unknown
-                                                },
-                                              ),
-                                              child: SizedBox(
-                                                height: MediaQuery.of(context)
-                                                        .size
-                                                        .height /
-                                                    3,
-                                                width: MediaQuery.of(context)
-                                                    .size
-                                                    .width,
-                                                child: CupertinoDatePicker(
-                                                  mode: CupertinoDatePickerMode
-                                                      .date,
-                                                  minimumDate: DateTime(1900),
-                                                  initialDateTime:
-                                                      getCurrentTimestamp,
-                                                  maximumDate:
-                                                      getCurrentTimestamp,
-                                                  use24hFormat: false,
-                                                  onDateTimeChanged:
-                                                      (newDateTime) =>
-                                                          safeSetState(() {
-                                                    _model.datePicked =
-                                                        newDateTime;
-                                                  }),
-                                                ),
-                                              ),
-                                            );
-                                          });
-                                    },
-                                    child: Icon(
-                                      Icons.calendar_month_sharp,
-                                      color: FlutterFlowTheme.of(context)
-                                          .customColor5,
-                                      size: 24.0,
-                                    ),
-                                  ),
-                                ].divide(const SizedBox(width: 8.0)),
-                              ),
-                            ),
+                          ThaiDateField(
+                            date: _model.datePicked,
+                            lastDate: getCurrentTimestamp,
+                            firstDate: DateTime(1900),
+                            onChanged: (newDateTime) => safeSetState(() {
+                              _model.datePicked = newDateTime;
+                            }),
                           ),
                         ],
                       ),

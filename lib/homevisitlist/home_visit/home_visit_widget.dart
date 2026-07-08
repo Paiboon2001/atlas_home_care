@@ -100,7 +100,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                     child: Icon(
                       Icons.search_rounded,
                       color: FlutterFlowTheme.of(context).secondaryBackground,
-                      size: 32.0,
+                      size: 24.0,
                     ),
                   ),
                 ),
@@ -121,7 +121,7 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
           width: double.infinity,
           height: double.infinity,
           decoration: const BoxDecoration(
-            color: Color(0xFFF2FAFF),
+            color: Color(0xFFF5F7FA),
             boxShadow: [
               BoxShadow(
                 blurRadius: 4.0,

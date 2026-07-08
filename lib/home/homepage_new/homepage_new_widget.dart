@@ -207,8 +207,8 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                         },
                         child: SvgPicture.asset(
                           'assets/images/ic_history_clock.svg',
-                          width: 32.0,
-                          height: 32.0,
+                          width: 24.0,
+                          height: 24.0,
                           colorFilter: const ColorFilter.mode(
                             Color(0xFF041228),
                             BlendMode.srcIn,
@@ -225,8 +225,8 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                         },
                         child: SvgPicture.asset(
                           'assets/images/ic_bell_notify.svg',
-                          width: 32.0,
-                          height: 32.0,
+                          width: 24.0,
+                          height: 24.0,
                           colorFilter: const ColorFilter.mode(
                             Color(0xFF041228),
                             BlendMode.srcIn,

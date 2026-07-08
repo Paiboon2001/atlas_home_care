@@ -380,7 +380,7 @@ class _SettingWidgetState extends State<SettingWidget> {
         key: scaffoldKey,
         // Grey-blue so nothing behind the navbar's rounded top corners shows
         // white; the content bg and this share one colour end-to-end.
-        backgroundColor: const Color(0xFFF2FAFF),
+        backgroundColor: const Color(0xFFF5F7FA),
         body: SafeArea(
           top: false,
           bottom: false,
@@ -401,7 +401,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                         child: Container(
                         width: double.infinity,
                         decoration: const BoxDecoration(
-                          color: Color(0xFFF2FAFF),
+                          color: Color(0xFFF5F7FA),
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(24.0),
                             topRight: Radius.circular(24.0),

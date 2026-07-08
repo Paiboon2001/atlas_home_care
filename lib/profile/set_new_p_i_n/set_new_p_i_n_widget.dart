@@ -157,8 +157,8 @@ class _SetNewPINWidgetState extends State<SetNewPINWidget> {
                       // Logo
                       Image.asset(
                         'assets/images/AHC_V2.webp',
-                        width: 100.0,
-                        height: 100.0,
+                        width: 130.0,
+                        height: 130.0,
                         fit: BoxFit.contain,
                       ),
                       const SizedBox(height: 12.0),
