@@ -91,48 +91,60 @@ class _ProcessUpPicWidgetState extends State<ProcessUpPicWidget> {
   Widget build(BuildContext context) {
     final images = _model.images;
 
-    // Empty state: the full-width upload prompt.
+    // Empty state: a single left-aligned upload tile, sized to one grid cell
+    // (1/N width, matching the trailing "add" tile in the grid).
     if (images.isEmpty) {
-      return InkWell(
-        splashColor: Colors.transparent,
-        focusColor: Colors.transparent,
-        hoverColor: Colors.transparent,
-        highlightColor: Colors.transparent,
-        onTap: _handleAdd,
-        child: Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-            color: FlutterFlowTheme.of(context).secondaryBackground,
-            borderRadius: BorderRadius.circular(8.0),
-            border: Border.all(
-              color: FlutterFlowTheme.of(context).alternate,
-            ),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Icon(
-                  Icons.add_photo_alternate_outlined,
-                  color: FlutterFlowTheme.of(context).primary,
-                  size: 24.0,
+      return LayoutBuilder(
+        builder: (context, constraints) {
+          const spacing = 10.0;
+          final tileWidth =
+              (constraints.maxWidth - (_crossAxisCount - 1) * spacing) /
+                  _crossAxisCount;
+          return Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: InkWell(
+              splashColor: Colors.transparent,
+              focusColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              highlightColor: Colors.transparent,
+              onTap: _handleAdd,
+              child: Container(
+                width: tileWidth,
+                height: 120.0,
+                decoration: BoxDecoration(
+                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                  borderRadius: BorderRadius.circular(8.0),
+                  border: Border.all(
+                    color: FlutterFlowTheme.of(context).alternate,
+                  ),
                 ),
-                Text(
-                  'อัปโหลดรูปภาพ',
-                  textAlign: TextAlign.center,
-                  style: FlutterFlowTheme.of(context).labelSmall.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).labelSmallFamily,
-                        letterSpacing: 0.0,
-                        useGoogleFonts: !FlutterFlowTheme.of(context)
-                            .labelSmallIsCustom,
-                      ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.add_photo_alternate_outlined,
+                      color: FlutterFlowTheme.of(context).primary,
+                      size: 24.0,
+                    ),
+                    Text(
+                      'อัปโหลดรูปภาพ',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).labelSmall.override(
+                            fontFamily:
+                                FlutterFlowTheme.of(context).labelSmallFamily,
+                            fontSize: 12.0,
+                            letterSpacing: 0.0,
+                            useGoogleFonts: !FlutterFlowTheme.of(context)
+                                .labelSmallIsCustom,
+                          ),
+                    ),
+                  ].divide(const SizedBox(height: 8.0)),
                 ),
-              ].divide(const SizedBox(height: 8.0)),
+              ),
             ),
-          ),
-        ),
+          );
+        },
       );
     }
 
