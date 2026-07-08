@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/profile/widget/process_up_pic/process_up_pic_widget.dart';
+import '/utils/sucess/sucess_widget.dart';
 import 'package:flutter/material.dart';
 import 'report_model.dart';
 export 'report_model.dart';
@@ -40,12 +41,42 @@ class _ReportWidgetState extends State<ReportWidget> {
     super.dispose();
   }
 
+  // Navigate away via [navigate], then flash the green "บันทึกสำเร็จ" toast
+  // (~3s) over the destination page. Uses a non-blocking overlay entry
+  // (IgnorePointer) so the page underneath stays fully interactive.
+  Future<void> _saveThenToast(VoidCallback navigate) async {
+    final OverlayState? overlay =
+        Navigator.of(context, rootNavigator: true).overlay;
+    navigate(); // go to the next page first
+    // Let the route transition settle before overlaying the toast.
+    await Future.delayed(const Duration(milliseconds: 20));
+    if (overlay == null || !overlay.mounted) return;
+    final entry = OverlayEntry(
+      builder: (_) => const IgnorePointer(
+        child: Material(
+          type: MaterialType.transparency,
+          child: SizedBox.expand(
+            child: SucessWidget(),
+          ),
+        ),
+      ),
+    );
+    overlay.insert(entry);
+    await Future.delayed(const Duration(milliseconds: 3000));
+    entry.remove();
+  }
+
   @override
   Widget build(BuildContext context) {
     final bool hasDetail =
         (_model.textController?.text.trim().isNotEmpty ?? false);
 
-    return Scaffold(
+    return GestureDetector(
+      onTap: () {
+        FocusScope.of(context).unfocus();
+        FocusManager.instance.primaryFocus?.unfocus();
+      },
+      child: Scaffold(
       key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).primary,
       appBar: AppBar(
@@ -131,7 +162,7 @@ class _ReportWidgetState extends State<ReportWidget> {
                               controller: _model.textController,
                               focusNode: _model.textFieldFocusNode,
                               onChanged: (_) => safeSetState(() {}),
-                              autofocus: true,
+                              autofocus: false,
                               enabled: true,
                               obscureText: false,
                               decoration: InputDecoration(
@@ -246,7 +277,7 @@ class _ReportWidgetState extends State<ReportWidget> {
                       text: 'บันทึก',
                       enabled: hasDetail,
                       onPressed: () async {
-                        context.safePop();
+                        await _saveThenToast(() => context.safePop());
                       },
                     ),
                   ),
@@ -255,6 +286,7 @@ class _ReportWidgetState extends State<ReportWidget> {
             ],
           ),
         ),
+      ),
       ),
     );
   }

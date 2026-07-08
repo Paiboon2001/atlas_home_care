@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/profile/widget/authens/authens_widget.dart';
+import '/utils/sucess/sucess_widget.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -41,6 +42,31 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
     _model.dispose();
 
     super.dispose();
+  }
+
+  // Navigate away via [navigate], then flash the green "บันทึกสำเร็จ" toast
+  // (~3s) over the destination page. Uses a non-blocking overlay entry
+  // (IgnorePointer) so the page underneath stays fully interactive.
+  Future<void> _saveThenToast(VoidCallback navigate) async {
+    final OverlayState? overlay =
+        Navigator.of(context, rootNavigator: true).overlay;
+    navigate(); // go to the next page first
+    // Let the route transition settle before overlaying the toast.
+    await Future.delayed(const Duration(milliseconds: 20));
+    if (overlay == null || !overlay.mounted) return;
+    final entry = OverlayEntry(
+      builder: (_) => const IgnorePointer(
+        child: Material(
+          type: MaterialType.transparency,
+          child: SizedBox.expand(
+            child: SucessWidget(),
+          ),
+        ),
+      ),
+    );
+    overlay.insert(entry);
+    await Future.delayed(const Duration(milliseconds: 3000));
+    entry.remove();
   }
 
   // A tappable hospital row with a radio. Tapping selects it (or clears the
@@ -388,7 +414,8 @@ class _AuthenCodeWidgetState extends State<AuthenCodeWidget> {
                 // Disabled until a hospital is selected.
                 enabled: selectedAuthen != null,
                 onPressed: () async {
-                  context.pushNamed(SettingWidget.routeName);
+                  await _saveThenToast(
+                      () => context.pushNamed(SettingWidget.routeName));
                 },
               ),
             ],
