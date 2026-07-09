@@ -1,9 +1,9 @@
+import '/components/thai_date_picker_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/home/widget/number_calendar/number_calendar_widget.dart';
 import 'dart:ui';
 import '/index.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'tablecalenda_model.dart';
@@ -1049,17 +1049,14 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                               width: MediaQuery.of(context)
                                                   .size
                                                   .width,
-                                              child: CupertinoDatePicker(
-                                                mode: CupertinoDatePickerMode
-                                                    .date,
-                                                minimumDate: DateTime(1900),
-                                                initialDateTime:
-                                                    getCurrentTimestamp,
-                                                maximumDate: DateTime(2050),
-                                                use24hFormat: false,
-                                                onDateTimeChanged:
-                                                    (newDateTime) =>
-                                                        safeSetState(() {
+                                              child: ThaiDatePicker(
+                                                initialDate:
+                                                    _model.datePicked2 ??
+                                                        getCurrentTimestamp,
+                                                firstDate: DateTime(1900),
+                                                lastDate: DateTime(2050),
+                                                onChanged: (newDateTime) =>
+                                                    safeSetState(() {
                                                   _model.datePicked2 =
                                                       newDateTime;
                                                 }),
