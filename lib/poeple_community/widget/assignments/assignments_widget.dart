@@ -108,7 +108,7 @@ class _AssignmentsWidgetState extends State<AssignmentsWidget> {
             maxLines: 2,
             style: FlutterFlowTheme.of(context).labelSmall.override(
                   fontFamily: FlutterFlowTheme.of(context).labelSmallFamily,
-                  color: FlutterFlowTheme.of(context).primary,
+                  color: FlutterFlowTheme.of(context).primaryText,
                   letterSpacing: 0.0,
                   lineHeight: 1.5,
                   useGoogleFonts:
