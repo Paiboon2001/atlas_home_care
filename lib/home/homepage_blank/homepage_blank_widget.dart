@@ -1,4 +1,5 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/components/real_map_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/map/widget/navigatebutton/navigatebutton_widget.dart';
@@ -641,12 +642,6 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
-                                        image: DecorationImage(
-                                          fit: BoxFit.cover,
-                                          image: Image.asset(
-                                            'assets/images/_2568-04-08__09.39.58.png',
-                                          ).image,
-                                        ),
                                         borderRadius:
                                             BorderRadius.circular(24.0),
                                         border: Border.all(
@@ -657,6 +652,16 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                       ),
                                       child: Stack(
                                         children: [
+                                          Positioned.fill(
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(24.0),
+                                              child: const RealMap(
+                                                showCenterPin: false,
+                                                interactive: false,
+                                              ),
+                                            ),
+                                          ),
                                           Align(
                                             alignment:
                                                 const AlignmentDirectional(1.0, 1.0),

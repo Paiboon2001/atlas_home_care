@@ -153,7 +153,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
         borderRadius: BorderRadius.circular(100.0),
         border: Border.all(color: const Color(0xFFD0D8E0), width: 1.0),
       ),
-      padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 12.0, 8.0),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [

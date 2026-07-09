@@ -1,3 +1,4 @@
+import '/components/real_map_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/map/widget/pin/pin_widget.dart';
@@ -114,16 +115,18 @@ class _ItemHomepatientWidgetState extends State<ItemHomepatientWidget> {
               child: Stack(
                 alignment: const AlignmentDirectional(0.0, 0.0),
                 children: [
-                  ClipRRect(
-                    borderRadius: const BorderRadius.only(
+                  const ClipRRect(
+                    borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(24.0),
                       bottomRight: Radius.circular(24.0),
                     ),
-                    child: Image.asset(
-                      'assets/images/_2568-04-08__09.39.58.png',
+                    child: SizedBox(
                       width: double.infinity,
                       height: 120.0,
-                      fit: BoxFit.cover,
+                      child: RealMap(
+                        showCenterPin: true,
+                        interactive: false,
+                      ),
                     ),
                   ),
                   Align(

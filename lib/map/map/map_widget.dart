@@ -1,3 +1,4 @@
+import '/components/real_map_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -51,17 +52,8 @@ class _MapWidgetState extends State<MapWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: Stack(
           children: [
-            Container(
-              width: double.infinity,
-              height: double.infinity,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: Image.asset(
-                    'assets/images/_2568-04-08__09.39.58.png',
-                  ).image,
-                ),
-              ),
+            const SizedBox.expand(
+              child: RealMap(),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),

@@ -1,5 +1,7 @@
+import '/components/connect_bluetooth_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
+import '/profile/widget/choose_company/choose_company_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/poeple_community/confirm/open_visit/open_visit_widget.dart';
 import '/poeple_community/widget/assignments/assignments_widget.dart';
@@ -63,6 +65,32 @@ class _InformationCommunityOneWidgetState
     _model.textFieldFocusNode7 ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
+
+    // Show the "ส่งตรวจ" confirm popup immediately when the community screen
+    // opens (i.e. right after the งานชุมชน menu is tapped).
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      if (!mounted) {
+        return;
+      }
+      await showModalBottomSheet(
+        isScrollControlled: true,
+        backgroundColor: Colors.transparent,
+        enableDrag: false,
+        context: context,
+        builder: (context) {
+          return GestureDetector(
+            onTap: () {
+              FocusScope.of(context).unfocus();
+              FocusManager.instance.primaryFocus?.unfocus();
+            },
+            child: Padding(
+              padding: MediaQuery.viewInsetsOf(context),
+              child: const OpenVisitWidget(),
+            ),
+          );
+        },
+      ).then((value) => safeSetState(() {}));
+    });
   }
 
   @override
@@ -89,26 +117,38 @@ class _InformationCommunityOneWidgetState
           toolbarHeight: 48.0,
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
-          title: Row(
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              Expanded(
-                child: Text(
-                  'งานชุมชน',
-                  textAlign: TextAlign.center,
-                  style: FlutterFlowTheme.of(context).titleMedium.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).titleMediumFamily,
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
-                        letterSpacing: 0.0,
-                        useGoogleFonts:
-                            !FlutterFlowTheme.of(context).titleMediumIsCustom,
-                      ),
+          title: Text(
+            'งานชุมชน',
+            textAlign: TextAlign.center,
+            style: FlutterFlowTheme.of(context).titleMedium.override(
+                  fontFamily: FlutterFlowTheme.of(context).titleMediumFamily,
+                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                  letterSpacing: 0.0,
+                  useGoogleFonts:
+                      !FlutterFlowTheme.of(context).titleMediumIsCustom,
                 ),
-              ),
-            ].divide(const SizedBox(width: 8.0)),
           ),
-          actions: const [],
+          actions: [
+            Padding(
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
+              child: ConnectBluetooth(
+                connected: FFAppState().bluetooth,
+                onPressed: () async {
+                  // Unconnected → open the "กรุณาเลือกบริษัทเครื่องมือ" sheet.
+                  await showModalBottomSheet(
+                    context: context,
+                    isScrollControlled: true,
+                    isDismissible: true,
+                    enableDrag: true,
+                    backgroundColor: Colors.transparent,
+                    builder: (sheetContext) {
+                      return const ChooseCompanyWidget();
+                    },
+                  ).then((value) => safeSetState(() {}));
+                },
+              ),
+            ),
+          ],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -228,18 +268,11 @@ class _InformationCommunityOneWidgetState
                               child: Padding(
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 12.0, 16.0, 12.0),
-                                child: MasonryGridView.builder(
-                                  physics: const NeverScrollableScrollPhysics(),
-                                  gridDelegate:
-                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
-                                    crossAxisCount: 4,
-                                  ),
-                                  crossAxisSpacing: 12.0,
-                                  itemCount: 4,
-                                  shrinkWrap: true,
-                                  itemBuilder: (context, index) {
-                                    return [
-                                      () => InkWell(
+                                child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Expanded(
+                                      child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
                                             hoverColor: Colors.transparent,
@@ -251,7 +284,7 @@ class _InformationCommunityOneWidgetState
                                             child: Container(
                                               decoration: const BoxDecoration(),
                                               child: Column(
-                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisSize: MainAxisSize.min,
                                                 children: [
                                                   Align(
                                                     alignment:
@@ -423,7 +456,7 @@ class _InformationCommunityOneWidgetState
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w500,
-                                                          lineHeight: 1.5,
+                                                          lineHeight: 1.0,
                                                           useGoogleFonts:
                                                               !FlutterFlowTheme
                                                                       .of(context)
@@ -433,8 +466,9 @@ class _InformationCommunityOneWidgetState
                                                 ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
-                                          ),
-                                      () => InkWell(
+                                          )),
+                                      Expanded(
+                                        child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
                                             hoverColor: Colors.transparent,
@@ -446,7 +480,7 @@ class _InformationCommunityOneWidgetState
                                             child: Container(
                                               decoration: const BoxDecoration(),
                                               child: Column(
-                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisSize: MainAxisSize.min,
                                                 children: [
                                                   Align(
                                                     alignment:
@@ -618,7 +652,7 @@ class _InformationCommunityOneWidgetState
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w500,
-                                                          lineHeight: 1.5,
+                                                          lineHeight: 1.0,
                                                           useGoogleFonts:
                                                               !FlutterFlowTheme
                                                                       .of(context)
@@ -628,8 +662,9 @@ class _InformationCommunityOneWidgetState
                                                 ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
-                                          ),
-                                      () => InkWell(
+                                          )),
+                                      Expanded(
+                                        child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
                                             hoverColor: Colors.transparent,
@@ -641,7 +676,7 @@ class _InformationCommunityOneWidgetState
                                             child: Container(
                                               decoration: const BoxDecoration(),
                                               child: Column(
-                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisSize: MainAxisSize.min,
                                                 children: [
                                                   Align(
                                                     alignment:
@@ -813,7 +848,7 @@ class _InformationCommunityOneWidgetState
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w500,
-                                                          lineHeight: 1.5,
+                                                          lineHeight: 1.0,
                                                           useGoogleFonts:
                                                               !FlutterFlowTheme
                                                                       .of(context)
@@ -823,8 +858,9 @@ class _InformationCommunityOneWidgetState
                                                 ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
-                                          ),
-                                      () => InkWell(
+                                          )),
+                                      Expanded(
+                                        child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
                                             hoverColor: Colors.transparent,
@@ -836,7 +872,7 @@ class _InformationCommunityOneWidgetState
                                             child: Container(
                                               decoration: const BoxDecoration(),
                                               child: Column(
-                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisSize: MainAxisSize.min,
                                                 children: [
                                                   Align(
                                                     alignment:
@@ -1008,7 +1044,7 @@ class _InformationCommunityOneWidgetState
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w500,
-                                                          lineHeight: 1.5,
+                                                          lineHeight: 1.0,
                                                           useGoogleFonts:
                                                               !FlutterFlowTheme
                                                                       .of(context)
@@ -1018,9 +1054,8 @@ class _InformationCommunityOneWidgetState
                                                 ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
-                                          ),
-                                    ][index]();
-                                  },
+                                          )),
+                                  ].divide(const SizedBox(width: 12.0)),
                                 ),
                               ),
                             ),
@@ -1041,7 +1076,9 @@ class _InformationCommunityOneWidgetState
                                   wrapWithModel(
                                     model: _model.vitalSignModel,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: const VitalSignWidget(),
+                                    child: const VitalSignWidget(
+                                      showBluetooth: false,
+                                    ),
                                   ),
                                 ],
                               ),

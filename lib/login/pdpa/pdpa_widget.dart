@@ -344,7 +344,7 @@ class _PdpaWidgetState extends State<PdpaWidget> {
                                 checkColor: Colors.white,
                               ),
                             ),
-                            const SizedBox(width: 12.0),
+                            const SizedBox(width: 8.0),
                             Expanded(
                               child: Padding(
                                 padding: const EdgeInsetsDirectional.fromSTEB(

@@ -294,6 +294,9 @@ class _OpenVisitWidgetState extends State<OpenVisitWidget>
                     Expanded(
                       child: FFButtonWidget(
                         onPressed: () async {
+                          // Hide the smartcard details.
+                          FFAppState().smartcard = false;
+                          FFAppState().update(() {});
                           Navigator.pop(context);
                         },
                         text: 'ไม่ต้องการ',

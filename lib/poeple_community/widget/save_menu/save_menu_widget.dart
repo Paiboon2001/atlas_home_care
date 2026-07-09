@@ -1,3 +1,4 @@
+import '/components/main_button_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/poeple_community/confirm/confirm_success/confirm_success_widget.dart';
@@ -144,12 +145,9 @@ class _SaveMenuWidgetState extends State<SaveMenuWidget> {
                   child: Padding(
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 16.0, 16.0),
-                    child: InkWell(
-                      splashColor: Colors.transparent,
-                      focusColor: Colors.transparent,
-                      hoverColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      onTap: () async {
+                    child: MainButton(
+                      text: 'บันทึก',
+                      onPressed: () async {
                         await showModalBottomSheet(
                           isScrollControlled: true,
                           backgroundColor: Colors.transparent,
@@ -163,64 +161,6 @@ class _SaveMenuWidgetState extends State<SaveMenuWidget> {
                           },
                         ).then((value) => safeSetState(() {}));
                       },
-                      child: Container(
-                        width: double.infinity,
-                        height: () {
-                          if (MediaQuery.sizeOf(context).width <
-                              kBreakpointSmall) {
-                            return 48.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointMedium) {
-                            return 48.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointLarge) {
-                            return 56.0;
-                          } else {
-                            return 56.0;
-                          }
-                        }(),
-                        decoration: BoxDecoration(
-                          boxShadow: [
-                            BoxShadow(
-                              blurRadius: 4.0,
-                              color: FlutterFlowTheme.of(context).tertiary,
-                              offset: const Offset(
-                                0.0,
-                                0.0,
-                              ),
-                            )
-                          ],
-                          gradient: const LinearGradient(
-                            colors: [Color(0xFF339FF3), Color(0xFF267EC6)],
-                            stops: [0.0, 1.0],
-                            begin: AlignmentDirectional(0.56, -1.0),
-                            end: AlignmentDirectional(-0.56, 1.0),
-                          ),
-                          borderRadius: BorderRadius.circular(100.0),
-                          border: Border.all(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                          ),
-                        ),
-                        child: Align(
-                          alignment: const AlignmentDirectional(0.0, 0.0),
-                          child: Text(
-                            'บันทึก',
-                            textAlign: TextAlign.center,
-                            style: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily,
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryBackground,
-                                  letterSpacing: 0.0,
-                                  useGoogleFonts: !FlutterFlowTheme.of(context)
-                                      .bodyMediumIsCustom,
-                                ),
-                          ),
-                        ),
-                      ),
                     ),
                   ),
                 ),

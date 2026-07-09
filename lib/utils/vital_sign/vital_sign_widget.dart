@@ -9,7 +9,11 @@ import 'vital_sign_model.dart';
 export 'vital_sign_model.dart';
 
 class VitalSignWidget extends StatefulWidget {
-  const VitalSignWidget({super.key});
+  const VitalSignWidget({super.key, this.showBluetooth = true});
+
+  /// When false, hides the bluetooth "Scan" pill (e.g. the community screen
+  /// shows the bluetooth toggle in its app bar instead).
+  final bool showBluetooth;
 
   @override
   State<VitalSignWidget> createState() => _VitalSignWidgetState();
@@ -81,6 +85,7 @@ class _VitalSignWidgetState extends State<VitalSignWidget> {
       child: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
+          if (widget.showBluetooth)
           Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,

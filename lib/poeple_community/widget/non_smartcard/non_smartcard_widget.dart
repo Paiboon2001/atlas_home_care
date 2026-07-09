@@ -2,7 +2,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'non_smartcard_model.dart';
 export 'non_smartcard_model.dart';
 
@@ -57,45 +57,6 @@ class _NonSmartcardWidgetState extends State<NonSmartcardWidget> {
       ),
       child: Stack(
         children: [
-          Align(
-            alignment: const AlignmentDirectional(1.0, -1.0),
-            child: Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 6.0, 0.0),
-              child: ClipRRect(
-                borderRadius: const BorderRadius.only(),
-                child: Image.asset(
-                  'assets/images/ChatGPT_Image_11_.._2568_08_51_28.png',
-                  width: () {
-                    if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
-                      return 90.0;
-                    } else if (MediaQuery.sizeOf(context).width <
-                        kBreakpointMedium) {
-                      return 90.0;
-                    } else if (MediaQuery.sizeOf(context).width <
-                        kBreakpointLarge) {
-                      return 120.0;
-                    } else {
-                      return 120.0;
-                    }
-                  }(),
-                  height: () {
-                    if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
-                      return 60.0;
-                    } else if (MediaQuery.sizeOf(context).width <
-                        kBreakpointMedium) {
-                      return 60.0;
-                    } else if (MediaQuery.sizeOf(context).width <
-                        kBreakpointLarge) {
-                      return 80.0;
-                    } else {
-                      return 80.0;
-                    }
-                  }(),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-          ),
           Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.start,
@@ -103,72 +64,56 @@ class _NonSmartcardWidgetState extends State<NonSmartcardWidget> {
             children: [
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Container(
-                      width: () {
-                        if (MediaQuery.sizeOf(context).width <
-                            kBreakpointSmall) {
-                          return 32.0;
-                        } else if (MediaQuery.sizeOf(context).width <
-                            kBreakpointMedium) {
-                          return 32.0;
-                        } else if (MediaQuery.sizeOf(context).width <
-                            kBreakpointLarge) {
-                          return 40.0;
-                        } else {
-                          return 40.0;
-                        }
-                      }(),
-                      height: () {
-                        if (MediaQuery.sizeOf(context).width <
-                            kBreakpointSmall) {
-                          return 32.0;
-                        } else if (MediaQuery.sizeOf(context).width <
-                            kBreakpointMedium) {
-                          return 32.0;
-                        } else if (MediaQuery.sizeOf(context).width <
-                            kBreakpointLarge) {
-                          return 40.0;
-                        } else {
-                          return 40.0;
-                        }
-                      }(),
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [
-                            FlutterFlowTheme.of(context).secondaryText,
-                            const Color(0xFF6E6E6E)
+                child: Center(
+                  child: Builder(
+                    builder: (context) {
+                      // Figma: card artwork ≈ 67% of the card width (228 of 343).
+                      final double cardW =
+                          (MediaQuery.sizeOf(context).width - 32.0) * 0.67;
+                      final double cardH = cardW * 159.0 / 239.0;
+                      return Container(
+                        width: cardW,
+                        height: cardH,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8.0),
+                          boxShadow: const [
+                            BoxShadow(
+                              blurRadius: 8.0,
+                              color: Color(0x145F9ED6),
+                              offset: Offset(0.0, 0.0),
+                            ),
                           ],
-                          stops: const [0.0, 1.0],
-                          begin: const AlignmentDirectional(0.56, -1.0),
-                          end: const AlignmentDirectional(-0.56, 1.0),
                         ),
-                        shape: BoxShape.circle,
-                      ),
-                      child: Align(
-                        alignment: const AlignmentDirectional(0.0, 0.0),
-                        child: FaIcon(
-                          FontAwesomeIcons.userAlt,
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
-                          size: 14.0,
-                        ),
-                      ),
-                    ),
-                    Text(
-                      'กรุณาเชื่อมต่อเครื่องอ่านบัตร',
-                      style: FlutterFlowTheme.of(context).titleSmall.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).titleSmallFamily,
-                            letterSpacing: 0.0,
-                            fontWeight: FontWeight.w500,
-                            useGoogleFonts: !FlutterFlowTheme.of(context)
-                                .titleSmallIsCustom,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(8.0),
+                          child: Stack(
+                          children: [
+                            Positioned.fill(
+                              child: SvgPicture.asset(
+                                'assets/images/CID2.svg',
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                            // flutter_svg can't render the SVG's embedded <image>
+                            // pattern fill, so overlay the extracted photo at its
+                            // rect fractions (viewBox 239x159, rect 182.7,84.3
+                            // 42x53.75).
+                            Positioned(
+                              left: cardW * (182.703 / 239.0),
+                              top: cardH * (84.2988 / 159.0),
+                              width: cardW * (42.056 / 239.0),
+                              height: cardH * (53.7549 / 159.0),
+                              child: Image.asset(
+                                'assets/images/cid_person.png',
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ],
                           ),
-                    ),
-                  ].divide(const SizedBox(width: 8.0)),
+                        ),
+                      );
+                    },
+                  ),
                 ),
               ),
               Container(
