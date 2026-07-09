@@ -48,12 +48,17 @@ class ThaiDatePicker extends StatefulWidget {
     required this.firstDate,
     required this.lastDate,
     required this.onChanged,
+    this.yearOnly = false,
   });
 
   final DateTime initialDate;
   final DateTime firstDate;
   final DateTime lastDate;
   final ValueChanged<DateTime> onChanged;
+
+  /// When true, shows a single ปี(พ.ศ.) wheel instead of วัน/เดือน/ปี. The
+  /// day/month of [initialDate] are kept and reported unchanged.
+  final bool yearOnly;
 
   @override
   State<ThaiDatePicker> createState() => _ThaiDatePickerState();
@@ -128,6 +133,22 @@ class _ThaiDatePickerState extends State<ThaiDatePicker> {
         onSelectedItemChanged: onChanged,
         childCount: childCount,
         itemBuilder: itemBuilder,
+      );
+    }
+
+    if (widget.yearOnly) {
+      return DefaultTextStyle(
+        style: textStyle,
+        child: wheel(
+          controller: _yearCtrl,
+          childCount: years.length,
+          onChanged: (i) {
+            setState(() => _year = years[i]);
+            _emit();
+          },
+          itemBuilder: (context, i) =>
+              Center(child: Text('${years[i] + 543}', style: textStyle)),
+        ),
       );
     }
 

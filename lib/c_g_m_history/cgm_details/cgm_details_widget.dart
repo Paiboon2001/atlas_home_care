@@ -1,4 +1,5 @@
 import '/flutter_flow/flutter_flow_button_tabbar.dart';
+import '/c_g_m_history/cgm_details/cgm_search_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -77,10 +78,13 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
           floatHeaderSlivers: true,
           headerSliverBuilder: (context, _) => [
             SliverAppBar(
-              pinned: false,
+              pinned: true,
               floating: true,
               snap: true,
               toolbarHeight: 48.0,
+              expandedHeight: MediaQuery.sizeOf(context).height * 0.2 +
+                  48.0 +
+                  MediaQuery.viewPaddingOf(context).top,
               backgroundColor: FlutterFlowTheme.of(context).primary,
               automaticallyImplyLeading: false,
               leading: FlutterFlowIconButton(
@@ -108,7 +112,34 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                           !FlutterFlowTheme.of(context).titleMediumIsCustom,
                     ),
               ),
-              actions: const [],
+              actions: [
+                FlutterFlowIconButton(
+                  borderColor: Colors.transparent,
+                  borderRadius: 30.0,
+                  borderWidth: 1.0,
+                  buttonSize: 44.0,
+                  icon: const Icon(
+                    Icons.search_rounded,
+                    color: Colors.white,
+                    size: 22.0,
+                  ),
+                  onPressed: () async {
+                    // Capture the status-bar inset here; inside the modal
+                    // (useSafeArea: false) MediaQuery strips the top padding.
+                    final topInset = MediaQuery.viewPaddingOf(context).top;
+                    await showModalBottomSheet(
+                      isScrollControlled: true,
+                      backgroundColor: Colors.transparent,
+                      enableDrag: false,
+                      useSafeArea: false,
+                      context: context,
+                      builder: (context) {
+                        return CgmSearchWidget(topInset: topInset);
+                      },
+                    );
+                  },
+                ),
+              ],
               flexibleSpace: FlexibleSpaceBar(
                 background: ClipRRect(
                   borderRadius: const BorderRadius.only(),
@@ -118,11 +149,6 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                     alignment: const Alignment(0.0, 1.0),
                   ),
                 ),
-              ),
-              bottom: PreferredSize(
-                preferredSize:
-                    Size.fromHeight(MediaQuery.sizeOf(context).height * 0.2),
-                child: Container(),
               ),
               centerTitle: true,
               elevation: 0.0,
@@ -206,103 +232,13 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                           Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    16.0, 8.0, 16.0, 16.0),
-                                child: SizedBox(
-                                  width: double.infinity,
-                                  child: TextFormField(
-                                    controller: _model.textController1,
-                                    focusNode: _model.textFieldFocusNode1,
-                                    autofocus: false,
-                                    obscureText: false,
-                                    decoration: InputDecoration(
-                                      isDense: true,
-                                      hintText: 'ค้นหา ชื่อ-นามสกุล, SN',
-                                      hintStyle: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMediumFamily,
-                                            letterSpacing: 0.0,
-                                            useGoogleFonts:
-                                                !FlutterFlowTheme.of(context)
-                                                    .bodyMediumIsCustom,
-                                          ),
-                                      enabledBorder: OutlineInputBorder(
-                                        borderSide: const BorderSide(
-                                          color: Color(0x00000000),
-                                          width: 1.0,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(100.0),
-                                      ),
-                                      focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
-                                          color: FlutterFlowTheme.of(context)
-                                              .customColor5,
-                                          width: 1.0,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(100.0),
-                                      ),
-                                      errorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
-                                          color: FlutterFlowTheme.of(context)
-                                              .error,
-                                          width: 1.0,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(100.0),
-                                      ),
-                                      focusedErrorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
-                                          color: FlutterFlowTheme.of(context)
-                                              .error,
-                                          width: 1.0,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(100.0),
-                                      ),
-                                      filled: true,
-                                      fillColor: FlutterFlowTheme.of(context)
-                                          .alternate,
-                                      prefixIcon: const Icon(
-                                        Icons.search_rounded,
-                                        size: 20.0,
-                                      ),
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily,
-                                          letterSpacing: 0.0,
-                                          useGoogleFonts:
-                                              !FlutterFlowTheme.of(context)
-                                                  .titleSmallIsCustom,
-                                        ),
-                                    cursorColor:
-                                        FlutterFlowTheme.of(context).primary,
-                                    validator: _model.textController1Validator
-                                        .asValidator(context),
-                                  ),
-                                ),
-                              ),
-                              const Divider(
-                                height: 1.0,
-                                thickness: 1.0,
-                                color: Color(0xFFD7D8D9),
-                              ),
                               Expanded(
                                 child: ListView(
                                   padding: const EdgeInsets.fromLTRB(
                                     0,
-                                    16.0,
+                                    8.0,
                                     0,
-                                    24.0,
+                                    32.0,
                                   ),
                                   shrinkWrap: true,
                                   scrollDirection: Axis.vertical,
@@ -2205,103 +2141,13 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                           Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    16.0, 8.0, 16.0, 16.0),
-                                child: SizedBox(
-                                  width: double.infinity,
-                                  child: TextFormField(
-                                    controller: _model.textController2,
-                                    focusNode: _model.textFieldFocusNode2,
-                                    autofocus: false,
-                                    obscureText: false,
-                                    decoration: InputDecoration(
-                                      isDense: true,
-                                      hintText: 'ค้นหา ชื่อ-นามสกุล, CID',
-                                      hintStyle: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMediumFamily,
-                                            letterSpacing: 0.0,
-                                            useGoogleFonts:
-                                                !FlutterFlowTheme.of(context)
-                                                    .bodyMediumIsCustom,
-                                          ),
-                                      enabledBorder: OutlineInputBorder(
-                                        borderSide: const BorderSide(
-                                          color: Color(0x00000000),
-                                          width: 1.0,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(100.0),
-                                      ),
-                                      focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
-                                          color: FlutterFlowTheme.of(context)
-                                              .customColor5,
-                                          width: 1.0,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(100.0),
-                                      ),
-                                      errorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
-                                          color: FlutterFlowTheme.of(context)
-                                              .error,
-                                          width: 1.0,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(100.0),
-                                      ),
-                                      focusedErrorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
-                                          color: FlutterFlowTheme.of(context)
-                                              .error,
-                                          width: 1.0,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(100.0),
-                                      ),
-                                      filled: true,
-                                      fillColor: FlutterFlowTheme.of(context)
-                                          .alternate,
-                                      prefixIcon: const Icon(
-                                        Icons.search_rounded,
-                                        size: 20.0,
-                                      ),
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily,
-                                          letterSpacing: 0.0,
-                                          useGoogleFonts:
-                                              !FlutterFlowTheme.of(context)
-                                                  .titleSmallIsCustom,
-                                        ),
-                                    cursorColor:
-                                        FlutterFlowTheme.of(context).primary,
-                                    validator: _model.textController2Validator
-                                        .asValidator(context),
-                                  ),
-                                ),
-                              ),
-                              const Divider(
-                                height: 1.0,
-                                thickness: 1.0,
-                                color: Color(0xFFD7D8D9),
-                              ),
                               Expanded(
                                 child: ListView(
                                   padding: const EdgeInsets.fromLTRB(
                                     0,
-                                    16.0,
+                                    8.0,
                                     0,
-                                    24.0,
+                                    32.0,
                                   ),
                                   shrinkWrap: true,
                                   scrollDirection: Axis.vertical,

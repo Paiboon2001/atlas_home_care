@@ -79,16 +79,17 @@ class _HomeVisitWidgetState extends State<HomeVisitWidget> {
                 hoverColor: Colors.transparent,
                 highlightColor: Colors.transparent,
                 onTap: () async {
+                  // Capture the status-bar inset here; inside the modal
+                  // (useSafeArea: false) MediaQuery strips the top padding.
+                  final topInset = MediaQuery.viewPaddingOf(context).top;
                   await showModalBottomSheet(
                     isScrollControlled: true,
                     backgroundColor: Colors.transparent,
                     enableDrag: false,
+                    useSafeArea: false,
                     context: context,
                     builder: (context) {
-                      return Padding(
-                        padding: MediaQuery.viewInsetsOf(context),
-                        child: const SearchVillageWidget(),
-                      );
+                      return SearchVillageWidget(topInset: topInset);
                     },
                   ).then((value) => safeSetState(() {}));
                 },

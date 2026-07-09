@@ -106,22 +106,17 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
+                    // Capture the status-bar inset here; inside the modal
+                    // (useSafeArea: false) MediaQuery strips the top padding.
+                    final topInset = MediaQuery.viewPaddingOf(context).top;
                     await showModalBottomSheet(
                       isScrollControlled: true,
                       backgroundColor: Colors.transparent,
                       enableDrag: false,
+                      useSafeArea: false,
                       context: context,
                       builder: (context) {
-                        return GestureDetector(
-                          onTap: () {
-                            FocusScope.of(context).unfocus();
-                            FocusManager.instance.primaryFocus?.unfocus();
-                          },
-                          child: Padding(
-                            padding: MediaQuery.viewInsetsOf(context),
-                            child: const SearchOrderWidget(),
-                          ),
-                        );
+                        return SearchOrderWidget(topInset: topInset);
                       },
                     ).then((value) => safeSetState(() {}));
                   },

@@ -1,13 +1,13 @@
-import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/planvisit_home/widget/detaile_done/detaile_done_widget.dart';
 import '/planvisit_home/widget/detaile_visit/detaile_visit_widget.dart';
+import '/components/thai_date_picker_widget.dart';
 import '/planvisit_home/widget/search_patient/search_patient_widget.dart';
+import '/utils/navbar/navbar_widget.dart';
 import 'dart:ui';
 import '/index.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'plan_for_visit_model.dart';
@@ -28,6 +28,99 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
   late PlanForVisitModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  /// Selected status filter shown in the "รายการทั้งหมด" pill.
+  static const List<String> _statusOptions = [
+    'รายการทั้งหมด',
+    'วางแผนแล้ว',
+    'ยังไม่วางแผน',
+  ];
+  String _statusFilter = _statusOptions.first;
+
+  /// Status filter bottom sheet with a drag handle and the three options.
+  Future<void> _openStatusFilter() async {
+    await showModalBottomSheet(
+      context: context,
+      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(24.0)),
+      ),
+      builder: (sheetContext) {
+        return SafeArea(
+          top: false,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Padding(
+                padding:
+                    const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 20.0),
+                child: Center(
+                  child: Container(
+                    width: 40.0,
+                    height: 4.0,
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFD0D8E0),
+                      borderRadius: BorderRadius.circular(100.0),
+                    ),
+                  ),
+                ),
+              ),
+              for (final opt in _statusOptions)
+                InkWell(
+                  splashColor: Colors.transparent,
+                  focusColor: Colors.transparent,
+                  hoverColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () {
+                    safeSetState(() => _statusFilter = opt);
+                    Navigator.pop(sheetContext);
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 16.0, vertical: 14.0),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            opt,
+                            style:
+                                FlutterFlowTheme.of(context).bodyLarge.override(
+                                      fontFamily: FlutterFlowTheme.of(context)
+                                          .bodyLargeFamily,
+                                      color: opt == _statusFilter
+                                          ? FlutterFlowTheme.of(context).primary
+                                          : FlutterFlowTheme.of(context)
+                                              .primaryText,
+                                      fontSize: 16.0,
+                                      letterSpacing: 0.0,
+                                      fontWeight: opt == _statusFilter
+                                          ? FontWeight.w600
+                                          : FontWeight.normal,
+                                      useGoogleFonts: !FlutterFlowTheme.of(
+                                              context)
+                                          .bodyLargeIsCustom,
+                                    ),
+                          ),
+                        ),
+                        Icon(
+                          opt == _statusFilter
+                              ? Icons.radio_button_checked
+                              : Icons.radio_button_unchecked,
+                          color: opt == _statusFilter
+                              ? FlutterFlowTheme.of(context).primary
+                              : FlutterFlowTheme.of(context).secondaryText,
+                          size: 22.0,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+            ],
+          ),
+        );
+      },
+    );
+  }
 
   @override
   void initState() {
@@ -50,9 +143,49 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
     super.dispose();
   }
 
+  /// Figma "Frame 1321315728" filter pill: white rounded-100 chip with a
+  /// [#D0D8E0] outline, a Sarabun 14 label, and a muted chevron-down. Wrap it
+  /// in an InkWell to make it tappable.
+  Widget _filterPill(BuildContext context, String text) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(100.0),
+        border: Border.all(color: const Color(0xFFD0D8E0), width: 1.0),
+      ),
+      padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            text,
+            style: FlutterFlowTheme.of(context).bodyMedium.override(
+                  fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                  color: const Color(0xFF041228),
+                  fontSize: 14.0,
+                  letterSpacing: -0.14,
+                  useGoogleFonts:
+                      !FlutterFlowTheme.of(context).bodyMediumIsCustom,
+                ),
+          ),
+          const SizedBox(width: 10.0),
+          const Icon(
+            Icons.keyboard_arrow_down_rounded,
+            color: Color(0xFF8A8F97),
+            size: 24.0,
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     context.watch<FFAppState>();
+
+    // Status filter: DetaileVisit cards = ยังไม่วางแผน, DetaileDone = วางแผนแล้ว.
+    final bool showVisit = _statusFilter != 'วางแผนแล้ว';
+    final bool showDone = _statusFilter != 'ยังไม่วางแผน';
 
     return Scaffold(
       key: scaffoldKey,
@@ -81,7 +214,9 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                   size: 18.0,
                 ),
                 onPressed: () async {
-                  context.pop();
+                  // Back exits this service straight to the homepage.
+                  myServiceReopenOnReturn = false;
+                  context.goNamed(HomepageNewWidget.routeName);
                 },
               ),
             ),
@@ -110,34 +245,27 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                       hoverColor: Colors.transparent,
                       highlightColor: Colors.transparent,
                       onTap: () async {
+                        // Capture the status-bar inset here; inside the modal
+                        // (useSafeArea: false) MediaQuery strips the top padding.
+                        final topInset = MediaQuery.viewPaddingOf(context).top;
                         await showModalBottomSheet(
                           isScrollControlled: true,
                           backgroundColor: Colors.transparent,
                           enableDrag: false,
+                          useSafeArea: false,
                           context: context,
                           builder: (context) {
-                            return Padding(
-                              padding: MediaQuery.viewInsetsOf(context),
-                              child: const SearchPatientWidget(),
-                            );
+                            return SearchPatientWidget(topInset: topInset);
                           },
                         ).then((value) => safeSetState(() {}));
                       },
-                      child: Container(
+                      child: SizedBox(
                         width: 40.0,
                         height: 40.0,
-                        decoration: const BoxDecoration(
-                          color: Color(0x93164874),
-                          shape: BoxShape.circle,
-                        ),
-                        child: Align(
-                          alignment: const AlignmentDirectional(0.0, 0.0),
-                          child: Icon(
-                            Icons.search_rounded,
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            size: 24.0,
-                          ),
+                        child: Icon(
+                          Icons.search_rounded,
+                          color: FlutterFlowTheme.of(context).secondaryBackground,
+                          size: 24.0,
                         ),
                       ),
                     ),
@@ -154,21 +282,13 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                         FFAppState().searchplanvisit = false;
                         safeSetState(() {});
                       },
-                      child: Container(
+                      child: SizedBox(
                         width: 40.0,
                         height: 40.0,
-                        decoration: const BoxDecoration(
-                          color: Color(0x93164874),
-                          shape: BoxShape.circle,
-                        ),
-                        child: Align(
-                          alignment: const AlignmentDirectional(0.0, 0.0),
-                          child: Icon(
-                            Icons.close_rounded,
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            size: 24.0,
-                          ),
+                        child: Icon(
+                          Icons.close_rounded,
+                          color: FlutterFlowTheme.of(context).secondaryBackground,
+                          size: 24.0,
                         ),
                       ),
                     ),
@@ -214,60 +334,6 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                   Expanded(
                     child: Column(
                       children: [
-                        Align(
-                          alignment: const Alignment(0.0, 0),
-                          child: FlutterFlowButtonTabBar(
-                            useToggleButtonStyle: true,
-                            labelStyle: FlutterFlowTheme.of(context)
-                                .labelMedium
-                                .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
-                                  letterSpacing: 0.0,
-                                  useGoogleFonts: !FlutterFlowTheme.of(context)
-                                      .labelMediumIsCustom,
-                                ),
-                            unselectedLabelStyle: FlutterFlowTheme.of(context)
-                                .labelMedium
-                                .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
-                                  letterSpacing: 0.0,
-                                  useGoogleFonts: !FlutterFlowTheme.of(context)
-                                      .labelMediumIsCustom,
-                                ),
-                            labelColor: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            unselectedLabelColor:
-                                FlutterFlowTheme.of(context).secondaryText,
-                            backgroundColor:
-                                FlutterFlowTheme.of(context).primary,
-                            unselectedBackgroundColor: const Color(0xFFE5EAF6),
-                            unselectedBorderColor:
-                                FlutterFlowTheme.of(context).primaryBackground,
-                            borderWidth: 2.0,
-                            borderRadius: 26.0,
-                            elevation: 0.0,
-                            buttonMargin: const EdgeInsetsDirectional.fromSTEB(
-                                8.0, 0.0, 8.0, 0.0),
-                            padding: const EdgeInsets.all(4.0),
-                            tabs: const [
-                              Tab(
-                                text: 'รายการทั้งหมด',
-                              ),
-                              Tab(
-                                text: 'วางแผนแล้ว',
-                              ),
-                              Tab(
-                                text: 'ยังไม่วางแผน',
-                              ),
-                            ],
-                            controller: _model.tabBarController,
-                            onTap: (i) async {
-                              [() async {}, () async {}, () async {}][i]();
-                            },
-                          ),
-                        ),
                         Expanded(
                           child: TabBarView(
                             controller: _model.tabBarController,
@@ -282,7 +348,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                           0,
                                           0,
                                           0,
-                                          24.0,
+                                          32.0,
                                         ),
                                         shrinkWrap: true,
                                         scrollDirection: Axis.vertical,
@@ -295,12 +361,34 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                               mainAxisSize: MainAxisSize.min,
                                               children: [
                                                 InkWell(
-                                                  splashColor:
+                                                  splashColor: Colors.transparent,
+                                                  focusColor: Colors.transparent,
+                                                  hoverColor: Colors.transparent,
+                                                  highlightColor:
                                                       Colors.transparent,
-                                                  focusColor:
+                                                  onTap: () async {},
+                                                  child: const Icon(
+                                                    Icons.tune_rounded,
+                                                    color: Color(0xFF041228),
+                                                    size: 24.0,
+                                                  ),
+                                                ),
+                                                InkWell(
+                                                  splashColor: Colors.transparent,
+                                                  focusColor: Colors.transparent,
+                                                  hoverColor: Colors.transparent,
+                                                  highlightColor:
                                                       Colors.transparent,
-                                                  hoverColor:
-                                                      Colors.transparent,
+                                                  onTap: () async {
+                                                    await _openStatusFilter();
+                                                  },
+                                                  child: _filterPill(
+                                                      context, _statusFilter),
+                                                ),
+                                                InkWell(
+                                                  splashColor: Colors.transparent,
+                                                  focusColor: Colors.transparent,
+                                                  hoverColor: Colors.transparent,
                                                   highlightColor:
                                                       Colors.transparent,
                                                   onTap: () async {
@@ -335,20 +423,16 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                       .size
                                                                       .width,
                                                               child:
-                                                                  CupertinoDatePicker(
-                                                                mode:
-                                                                    CupertinoDatePickerMode
-                                                                        .date,
-                                                                minimumDate:
-                                                                    DateTime(
-                                                                        1900),
-                                                                initialDateTime:
+                                                                  ThaiDatePicker(
+                                                                yearOnly: true,
+                                                                initialDate: _model
+                                                                        .datePicked1 ??
                                                                     getCurrentTimestamp,
-                                                                maximumDate:
+                                                                firstDate:
+                                                                    DateTime(1900),
+                                                                lastDate:
                                                                     getCurrentTimestamp,
-                                                                use24hFormat:
-                                                                    false,
-                                                                onDateTimeChanged:
+                                                                onChanged:
                                                                     (newDateTime) =>
                                                                         safeSetState(
                                                                             () {
@@ -360,270 +444,14 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                           );
                                                         });
                                                   },
-                                                  child: Row(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    children: [
-                                                      Align(
-                                                        alignment:
-                                                            const AlignmentDirectional(
-                                                                -1.0, 0.0),
-                                                        child: Text(
-                                                          valueOrDefault<
-                                                              String>(
-                                                            dateTimeFormat(
-                                                                "yyyy",
-                                                                _model
-                                                                    .datePicked1),
-                                                            '2026',
-                                                          ),
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .headlineSmall
-                                                              .override(
-                                                                fontFamily: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .headlineSmallFamily,
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .customColor5,
-                                                                letterSpacing:
-                                                                    0.0,
-                                                                useGoogleFonts:
-                                                                    !FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .headlineSmallIsCustom,
-                                                              ),
-                                                        ),
-                                                      ),
-                                                      Icon(
-                                                        Icons
-                                                            .keyboard_arrow_down_rounded,
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .secondaryText,
-                                                        size: 24.0,
-                                                      ),
-                                                    ].divide(
-                                                        const SizedBox(width: 4.0)),
+                                                  child: _filterPill(
+                                                    context,
+                                                    _model.datePicked1 != null
+                                                        ? '${_model.datePicked1!.year + 543}'
+                                                        : '2569',
                                                   ),
                                                 ),
-                                                Expanded(
-                                                  child: Row(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment.end,
-                                                    children: [
-                                                      Container(
-                                                        height: 40.0,
-                                                        decoration:
-                                                            BoxDecoration(
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .secondaryBackground,
-                                                          boxShadow: const [
-                                                            BoxShadow(
-                                                              blurRadius: 4.0,
-                                                              color: Color(
-                                                                  0x1B000000),
-                                                              offset: Offset(
-                                                                0.0,
-                                                                0.0,
-                                                              ),
-                                                            )
-                                                          ],
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      100.0),
-                                                        ),
-                                                        child: Padding(
-                                                          padding:
-                                                              const EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      4.0,
-                                                                      0.0,
-                                                                      12.0,
-                                                                      0.0),
-                                                          child: Row(
-                                                            mainAxisSize:
-                                                                MainAxisSize
-                                                                    .max,
-                                                            children: [
-                                                              Container(
-                                                                width: 32.0,
-                                                                height: 32.0,
-                                                                decoration:
-                                                                    BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .success,
-                                                                  shape: BoxShape
-                                                                      .circle,
-                                                                ),
-                                                                child: Align(
-                                                                  alignment:
-                                                                      const AlignmentDirectional(
-                                                                          0.0,
-                                                                          0.0),
-                                                                  child: Text(
-                                                                    '6',
-                                                                    style: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .titleSmall
-                                                                        .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).titleSmallFamily,
-                                                                          color:
-                                                                              FlutterFlowTheme.of(context).secondaryBackground,
-                                                                          letterSpacing:
-                                                                              0.0,
-                                                                          useGoogleFonts:
-                                                                              !FlutterFlowTheme.of(context).titleSmallIsCustom,
-                                                                        ),
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                              Text(
-                                                                'วางแผนแล้ว',
-                                                                style: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodySmall
-                                                                    .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodySmallFamily,
-                                                                      letterSpacing:
-                                                                          0.0,
-                                                                      useGoogleFonts:
-                                                                          !FlutterFlowTheme.of(context)
-                                                                              .bodySmallIsCustom,
-                                                                    ),
-                                                              ),
-                                                            ].divide(const SizedBox(
-                                                                width: 6.0)),
-                                                          ),
-                                                        ),
-                                                      ),
-                                                      Container(
-                                                        height: 40.0,
-                                                        decoration:
-                                                            BoxDecoration(
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .secondaryBackground,
-                                                          boxShadow: const [
-                                                            BoxShadow(
-                                                              blurRadius: 4.0,
-                                                              color: Color(
-                                                                  0x1B000000),
-                                                              offset: Offset(
-                                                                0.0,
-                                                                0.0,
-                                                              ),
-                                                            )
-                                                          ],
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      100.0),
-                                                        ),
-                                                        child: Padding(
-                                                          padding:
-                                                              const EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      4.0,
-                                                                      0.0,
-                                                                      12.0,
-                                                                      0.0),
-                                                          child: Row(
-                                                            mainAxisSize:
-                                                                MainAxisSize
-                                                                    .max,
-                                                            children: [
-                                                              Container(
-                                                                width: 32.0,
-                                                                height: 32.0,
-                                                                decoration:
-                                                                    BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .secondaryText,
-                                                                  shape: BoxShape
-                                                                      .circle,
-                                                                ),
-                                                                child: Align(
-                                                                  alignment:
-                                                                      const AlignmentDirectional(
-                                                                          0.0,
-                                                                          0.0),
-                                                                  child: Text(
-                                                                    '3',
-                                                                    style: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .titleSmall
-                                                                        .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).titleSmallFamily,
-                                                                          color:
-                                                                              FlutterFlowTheme.of(context).secondaryBackground,
-                                                                          letterSpacing:
-                                                                              0.0,
-                                                                          useGoogleFonts:
-                                                                              !FlutterFlowTheme.of(context).titleSmallIsCustom,
-                                                                        ),
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                              Text(
-                                                                'ยังไม่วางแผน',
-                                                                style: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodySmall
-                                                                    .override(
-                                                                      fontFamily:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .bodySmallFamily,
-                                                                      letterSpacing:
-                                                                          0.0,
-                                                                      useGoogleFonts:
-                                                                          !FlutterFlowTheme.of(context)
-                                                                              .bodySmallIsCustom,
-                                                                    ),
-                                                              ),
-                                                            ].divide(const SizedBox(
-                                                                width: 6.0)),
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ].divide(
-                                                        SizedBox(width: () {
-                                                      if (MediaQuery.sizeOf(
-                                                                  context)
-                                                              .width <
-                                                          kBreakpointSmall) {
-                                                        return 8.0;
-                                                      } else if (MediaQuery
-                                                                  .sizeOf(
-                                                                      context)
-                                                              .width <
-                                                          kBreakpointMedium) {
-                                                        return 8.0;
-                                                      } else if (MediaQuery
-                                                                  .sizeOf(
-                                                                      context)
-                                                              .width <
-                                                          kBreakpointLarge) {
-                                                        return 12.0;
-                                                      } else {
-                                                        return 12.0;
-                                                      }
-                                                    }())),
-                                                  ),
-                                                ),
-                                              ],
+                                              ].divide(const SizedBox(width: 16.0)),
                                             ),
                                           ),
                                           Padding(
@@ -661,9 +489,9 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                         .secondaryBackground,
                                                     boxShadow: const [
                                                       BoxShadow(
-                                                        blurRadius: 4.0,
+                                                        blurRadius: 8.0,
                                                         color:
-                                                            Color(0x33000000),
+                                                            Color(0x145F9ED6),
                                                         offset: Offset(
                                                           0.0,
                                                           0.0,
@@ -678,6 +506,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                     mainAxisSize:
                                                         MainAxisSize.max,
                                                     children: [
+                                                      if (showVisit)
                                                       InkWell(
                                                         splashColor:
                                                             Colors.transparent,
@@ -717,6 +546,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                           ),
                                                         ),
                                                       ),
+                                                      if (showVisit)
                                                       Divider(
                                                         height: 1.0,
                                                         thickness: 1.0,
@@ -747,6 +577,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                     context)
                                                                 .alternate,
                                                       ),
+                                                      if (showVisit)
                                                       InkWell(
                                                         splashColor:
                                                             Colors.transparent,
@@ -786,6 +617,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                           ),
                                                         ),
                                                       ),
+                                                      if (showVisit)
                                                       Divider(
                                                         height: 1.0,
                                                         thickness: 1.0,
@@ -816,6 +648,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                     context)
                                                                 .alternate,
                                                       ),
+                                                      if (showVisit)
                                                       InkWell(
                                                         splashColor:
                                                             Colors.transparent,
@@ -855,6 +688,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                           ),
                                                         ),
                                                       ),
+                                                      if (showVisit && showDone)
                                                       Divider(
                                                         height: 1.0,
                                                         thickness: 1.0,
@@ -885,6 +719,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                     context)
                                                                 .alternate,
                                                       ),
+                                                      if (showDone)
                                                       wrapWithModel(
                                                         model: _model
                                                             .detaileDoneModel1,
@@ -915,6 +750,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                               ].divide(const SizedBox(height: 8.0)),
                                             ),
                                           ),
+                                          if (showDone)
                                           Padding(
                                             padding:
                                                 const EdgeInsetsDirectional.fromSTEB(
@@ -950,9 +786,9 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                         .secondaryBackground,
                                                     boxShadow: const [
                                                       BoxShadow(
-                                                        blurRadius: 4.0,
+                                                        blurRadius: 8.0,
                                                         color:
-                                                            Color(0x33000000),
+                                                            Color(0x145F9ED6),
                                                         offset: Offset(
                                                           0.0,
                                                           0.0,
@@ -1105,6 +941,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                               ].divide(const SizedBox(height: 8.0)),
                                             ),
                                           ),
+                                          if (showDone)
                                           Padding(
                                             padding:
                                                 const EdgeInsetsDirectional.fromSTEB(
@@ -1140,9 +977,9 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                         .secondaryBackground,
                                                     boxShadow: const [
                                                       BoxShadow(
-                                                        blurRadius: 4.0,
+                                                        blurRadius: 8.0,
                                                         color:
-                                                            Color(0x33000000),
+                                                            Color(0x145F9ED6),
                                                         offset: Offset(
                                                           0.0,
                                                           0.0,
@@ -1301,20 +1138,16 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                                       .size
                                                                       .width,
                                                               child:
-                                                                  CupertinoDatePicker(
-                                                                mode:
-                                                                    CupertinoDatePickerMode
-                                                                        .date,
-                                                                minimumDate:
-                                                                    DateTime(
-                                                                        1900),
-                                                                initialDateTime:
+                                                                  ThaiDatePicker(
+                                                                yearOnly: true,
+                                                                initialDate: _model
+                                                                        .datePicked2 ??
                                                                     getCurrentTimestamp,
-                                                                maximumDate:
+                                                                firstDate:
+                                                                    DateTime(1900),
+                                                                lastDate:
                                                                     getCurrentTimestamp,
-                                                                use24hFormat:
-                                                                    false,
-                                                                onDateTimeChanged:
+                                                                onChanged:
                                                                     (newDateTime) =>
                                                                         safeSetState(
                                                                             () {
@@ -1335,14 +1168,10 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                             const AlignmentDirectional(
                                                                 -1.0, 0.0),
                                                         child: Text(
-                                                          valueOrDefault<
-                                                              String>(
-                                                            dateTimeFormat(
-                                                                "yyyy",
-                                                                _model
-                                                                    .datePicked2),
-                                                            '2026',
-                                                          ),
+                                                          _model.datePicked2 !=
+                                                                  null
+                                                              ? '${_model.datePicked2!.year + 543}'
+                                                              : '2569',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .headlineSmall
@@ -1391,9 +1220,9 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                               .secondaryBackground,
                                                           boxShadow: const [
                                                             BoxShadow(
-                                                              blurRadius: 4.0,
+                                                              blurRadius: 8.0,
                                                               color: Color(
-                                                                  0x1B000000),
+                                                                  0x145F9ED6),
                                                               offset: Offset(
                                                                 0.0,
                                                                 0.0,
@@ -1482,9 +1311,9 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                               .secondaryBackground,
                                                           boxShadow: const [
                                                             BoxShadow(
-                                                              blurRadius: 4.0,
+                                                              blurRadius: 8.0,
                                                               color: Color(
-                                                                  0x1B000000),
+                                                                  0x145F9ED6),
                                                               offset: Offset(
                                                                 0.0,
                                                                 0.0,
@@ -1622,8 +1451,8 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                       .secondaryBackground,
                                               boxShadow: const [
                                                 BoxShadow(
-                                                  blurRadius: 4.0,
-                                                  color: Color(0x33000000),
+                                                  blurRadius: 8.0,
+                                                  color: Color(0x145F9ED6),
                                                   offset: Offset(
                                                     0.0,
                                                     0.0,
@@ -1671,7 +1500,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                   0,
                                   0,
                                   0,
-                                  124.0,
+                                  32.0,
                                 ),
                                 shrinkWrap: true,
                                 scrollDirection: Axis.vertical,
@@ -1715,18 +1544,16 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                               .size
                                                               .width,
                                                       child:
-                                                          CupertinoDatePicker(
-                                                        mode:
-                                                            CupertinoDatePickerMode
-                                                                .date,
-                                                        minimumDate:
+                                                          ThaiDatePicker(
+                                                        yearOnly: true,
+                                                        initialDate: _model
+                                                                .datePicked3 ??
+                                                            getCurrentTimestamp,
+                                                        firstDate:
                                                             DateTime(1900),
-                                                        initialDateTime:
+                                                        lastDate:
                                                             getCurrentTimestamp,
-                                                        maximumDate:
-                                                            getCurrentTimestamp,
-                                                        use24hFormat: false,
-                                                        onDateTimeChanged:
+                                                        onChanged:
                                                             (newDateTime) =>
                                                                 safeSetState(
                                                                     () {
@@ -1745,11 +1572,9 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                 alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Text(
-                                                  valueOrDefault<String>(
-                                                    dateTimeFormat("yyyy",
-                                                        _model.datePicked3),
-                                                    '2026',
-                                                  ),
+                                                  _model.datePicked3 != null
+                                                      ? '${_model.datePicked3!.year + 543}'
+                                                      : '2569',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .headlineSmall
@@ -1795,8 +1620,8 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                       .secondaryBackground,
                                                   boxShadow: const [
                                                     BoxShadow(
-                                                      blurRadius: 4.0,
-                                                      color: Color(0x1B000000),
+                                                      blurRadius: 8.0,
+                                                      color: Color(0x145F9ED6),
                                                       offset: Offset(
                                                         0.0,
                                                         0.0,
@@ -1929,8 +1754,8 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                 .secondaryBackground,
                                             boxShadow: const [
                                               BoxShadow(
-                                                blurRadius: 4.0,
-                                                color: Color(0x33000000),
+                                                blurRadius: 8.0,
+                                                color: Color(0x145F9ED6),
                                                 offset: Offset(
                                                   0.0,
                                                   0.0,
@@ -1999,8 +1824,8 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                 .secondaryBackground,
                                             boxShadow: const [
                                               BoxShadow(
-                                                blurRadius: 4.0,
-                                                color: Color(0x33000000),
+                                                blurRadius: 8.0,
+                                                color: Color(0x145F9ED6),
                                                 offset: Offset(
                                                   0.0,
                                                   0.0,
@@ -2164,8 +1989,8 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                 .secondaryBackground,
                                             boxShadow: const [
                                               BoxShadow(
-                                                blurRadius: 4.0,
-                                                color: Color(0x33000000),
+                                                blurRadius: 8.0,
+                                                color: Color(0x145F9ED6),
                                                 offset: Offset(
                                                   0.0,
                                                   0.0,
@@ -2259,7 +2084,7 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                   0,
                                   0,
                                   0,
-                                  124.0,
+                                  32.0,
                                 ),
                                 shrinkWrap: true,
                                 scrollDirection: Axis.vertical,
@@ -2303,18 +2128,16 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                               .size
                                                               .width,
                                                       child:
-                                                          CupertinoDatePicker(
-                                                        mode:
-                                                            CupertinoDatePickerMode
-                                                                .date,
-                                                        minimumDate:
+                                                          ThaiDatePicker(
+                                                        yearOnly: true,
+                                                        initialDate: _model
+                                                                .datePicked4 ??
+                                                            getCurrentTimestamp,
+                                                        firstDate:
                                                             DateTime(1900),
-                                                        initialDateTime:
+                                                        lastDate:
                                                             getCurrentTimestamp,
-                                                        maximumDate:
-                                                            getCurrentTimestamp,
-                                                        use24hFormat: false,
-                                                        onDateTimeChanged:
+                                                        onChanged:
                                                             (newDateTime) =>
                                                                 safeSetState(
                                                                     () {
@@ -2333,11 +2156,9 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                 alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Text(
-                                                  valueOrDefault<String>(
-                                                    dateTimeFormat("yyyy",
-                                                        _model.datePicked4),
-                                                    '2026',
-                                                  ),
+                                                  _model.datePicked4 != null
+                                                      ? '${_model.datePicked4!.year + 543}'
+                                                      : '2569',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .headlineSmall
@@ -2383,8 +2204,8 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                       .secondaryBackground,
                                                   boxShadow: const [
                                                     BoxShadow(
-                                                      blurRadius: 4.0,
-                                                      color: Color(0x1B000000),
+                                                      blurRadius: 8.0,
+                                                      color: Color(0x145F9ED6),
                                                       offset: Offset(
                                                         0.0,
                                                         0.0,
@@ -2517,8 +2338,8 @@ class _PlanForVisitWidgetState extends State<PlanForVisitWidget>
                                                 .secondaryBackground,
                                             boxShadow: const [
                                               BoxShadow(
-                                                blurRadius: 4.0,
-                                                color: Color(0x33000000),
+                                                blurRadius: 8.0,
+                                                color: Color(0x145F9ED6),
                                                 offset: Offset(
                                                   0.0,
                                                   0.0,

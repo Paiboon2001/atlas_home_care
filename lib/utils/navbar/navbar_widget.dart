@@ -13,7 +13,14 @@ final ValueNotifier<bool> myServiceSheetOpen = ValueNotifier<bool>(false);
 
 OverlayEntry? _myServiceEntry;
 
+/// True while a page launched from a My Service tile (with
+/// `reopenMenuOnReturn`) is on screen, so that page's back button can bring the
+/// menu back on return. Only ever set for tiles that opt in; consumed (cleared)
+/// by the returning page and reset on any fresh open/close of the sheet.
+bool myServiceReopenOnReturn = false;
+
 void _openMyServiceSheet(BuildContext context, Color backgroundColor) {
+  myServiceReopenOnReturn = false;
   if (_myServiceEntry != null) return;
   final entry = OverlayEntry(
     builder: (_) => _MyServiceSheet(backgroundColor: backgroundColor),
@@ -23,8 +30,19 @@ void _openMyServiceSheet(BuildContext context, Color backgroundColor) {
   myServiceSheetOpen.value = true;
 }
 
+/// Re-opens the My Service sheet — used when returning (back) from a page that
+/// was launched from the menu, so the user lands back on the menu they came
+/// from. No-op if it is already open.
+void reopenMyServiceSheet(BuildContext context) {
+  _openMyServiceSheet(
+    context,
+    FlutterFlowTheme.of(context).secondaryBackground,
+  );
+}
+
 /// Closes the My Service sheet if it is open. Safe to call unconditionally.
 void closeMyServiceSheet() {
+  myServiceReopenOnReturn = false;
   _myServiceEntry?.remove();
   _myServiceEntry = null;
   myServiceSheetOpen.value = false;
@@ -263,6 +281,7 @@ class _MyServiceSheetState extends State<_MyServiceSheet>
     required String label,
     required VoidCallback onOpen,
     required double width,
+    bool reopenMenuOnReturn = false,
   }) {
     return InkWell(
       splashColor: Colors.transparent,
@@ -272,6 +291,9 @@ class _MyServiceSheetState extends State<_MyServiceSheet>
       onTap: () {
         onOpen();
         closeMyServiceSheet();
+        // Set after closeMyServiceSheet (which clears the flag) so the opted-in
+        // tile can ask its target page to bring the menu back on return.
+        myServiceReopenOnReturn = reopenMenuOnReturn;
       },
       child: SizedBox(
         width: width,

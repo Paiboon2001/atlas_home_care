@@ -1,6 +1,5 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/utils/close/close_widget.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'option1_model.dart';
@@ -39,37 +38,35 @@ class _Option1WidgetState extends State<Option1Widget> {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
-      alignment: const AlignmentDirectional(0.0, 1.0),
-      child: Container(
-        width: double.infinity,
-        height: 200.0,
-        decoration: BoxDecoration(
-          color: FlutterFlowTheme.of(context).secondaryBackground,
-          borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(24.0),
-            topRight: Radius.circular(24.0),
-          ),
+    return Container(
+      width: double.infinity,
+      decoration: BoxDecoration(
+        color: FlutterFlowTheme.of(context).secondaryBackground,
+        borderRadius: const BorderRadius.only(
+          topLeft: Radius.circular(24.0),
+          topRight: Radius.circular(24.0),
         ),
+      ),
+      child: SafeArea(
+        top: false,
         child: Column(
-          mainAxisSize: MainAxisSize.max,
+          mainAxisSize: MainAxisSize.min,
           children: [
             Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  wrapWithModel(
-                    model: _model.closeModel,
-                    updateCallback: () => safeSetState(() {}),
-                    child: const CloseWidget(),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 20.0),
+              child: Center(
+                child: Container(
+                  width: 40.0,
+                  height: 4.0,
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFD0D8E0),
+                    borderRadius: BorderRadius.circular(100.0),
                   ),
-                ].divide(const SizedBox(width: 8.0)),
+                ),
               ),
             ),
             Column(
-              mainAxisSize: MainAxisSize.max,
+              mainAxisSize: MainAxisSize.min,
               children: [
                 Padding(
                   padding: const EdgeInsets.all(16.0),
@@ -116,6 +113,7 @@ class _Option1WidgetState extends State<Option1Widget> {
                 ),
               ].divide(const SizedBox(height: 8.0)),
             ),
+            const SizedBox(height: 56.0),
           ],
         ),
       ),
