@@ -1417,10 +1417,10 @@ class _InformationCommunityOneWidgetState
                               ),
                             if (FFAppState().munity == 4)
                               Column(
-                                mainAxisSize: MainAxisSize.max,
+                                mainAxisSize: MainAxisSize.min,
                                 children: [
                                   Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
@@ -1446,7 +1446,7 @@ class _InformationCommunityOneWidgetState
                                       SingleChildScrollView(
                                         scrollDirection: Axis.horizontal,
                                         child: Row(
-                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisSize: MainAxisSize.min,
                                           children: [
                                             Container(
                                               width: () {
@@ -2218,7 +2218,7 @@ class _InformationCommunityOneWidgetState
                                     ].divide(const SizedBox(height: 8.0)),
                                   ),
                                   Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
@@ -2244,7 +2244,7 @@ class _InformationCommunityOneWidgetState
                                       SingleChildScrollView(
                                         scrollDirection: Axis.horizontal,
                                         child: Row(
-                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisSize: MainAxisSize.min,
                                           children: [
                                             Container(
                                               width: () {
@@ -3016,7 +3016,7 @@ class _InformationCommunityOneWidgetState
                                     ].divide(const SizedBox(height: 8.0)),
                                   ),
                                   Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
@@ -3058,7 +3058,7 @@ class _InformationCommunityOneWidgetState
                                           child: Padding(
                                             padding: const EdgeInsets.all(16.0),
                                             child: Column(
-                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisSize: MainAxisSize.min,
                                               crossAxisAlignment:
                                                   CrossAxisAlignment.start,
                                               children: [
@@ -3278,7 +3278,7 @@ class _InformationCommunityOneWidgetState
                                           child: Padding(
                                             padding: const EdgeInsets.all(16.0),
                                             child: Column(
-                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisSize: MainAxisSize.min,
                                               crossAxisAlignment:
                                                   CrossAxisAlignment.start,
                                               children: [
@@ -3409,7 +3409,7 @@ class _InformationCommunityOneWidgetState
                                     ].divide(const SizedBox(height: 8.0)),
                                   ),
                                   Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
@@ -3455,7 +3455,7 @@ class _InformationCommunityOneWidgetState
                                             child: Padding(
                                               padding: const EdgeInsets.all(16.0),
                                               child: Column(
-                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisSize: MainAxisSize.min,
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.start,
                                                 children: [
