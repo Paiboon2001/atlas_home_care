@@ -666,7 +666,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                     Stack(
                       children: [
                         Column(
-                          mainAxisSize: MainAxisSize.max,
+                          mainAxisSize: MainAxisSize.min,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Row(
@@ -699,7 +699,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -742,7 +742,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -785,7 +785,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -828,7 +828,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -871,7 +871,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -914,7 +914,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -957,7 +957,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1000,7 +1000,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1043,7 +1043,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1088,7 +1088,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1131,7 +1131,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1174,7 +1174,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1217,7 +1217,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1260,7 +1260,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1303,7 +1303,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1346,7 +1346,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1389,7 +1389,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1432,7 +1432,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1475,7 +1475,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1518,7 +1518,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1561,7 +1561,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1604,7 +1604,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1647,7 +1647,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1690,7 +1690,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1733,7 +1733,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Divider(
                                         height: 0.5,
@@ -1749,7 +1749,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                           ].divide(const SizedBox(height: 20.0)),
                         ),
                         Column(
-                          mainAxisSize: MainAxisSize.max,
+                          mainAxisSize: MainAxisSize.min,
                           children: [
                             Expanded(
                               child: Row(
@@ -1955,7 +1955,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
-                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisSize: MainAxisSize.min,
                                               mainAxisAlignment:
                                                   MainAxisAlignment.center,
                                               crossAxisAlignment:
@@ -2047,7 +2047,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
-                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisSize: MainAxisSize.min,
                                               mainAxisAlignment:
                                                   MainAxisAlignment.center,
                                               crossAxisAlignment:
@@ -2146,7 +2146,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
-                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisSize: MainAxisSize.min,
                                               mainAxisAlignment:
                                                   MainAxisAlignment.center,
                                               crossAxisAlignment:
@@ -2238,7 +2238,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
-                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisSize: MainAxisSize.min,
                                               mainAxisAlignment:
                                                   MainAxisAlignment.center,
                                               crossAxisAlignment:
@@ -2339,7 +2339,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
-                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisSize: MainAxisSize.min,
                                               mainAxisAlignment:
                                                   MainAxisAlignment.center,
                                               crossAxisAlignment:
@@ -2459,7 +2459,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
-                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisSize: MainAxisSize.min,
                                               mainAxisAlignment:
                                                   MainAxisAlignment.center,
                                               crossAxisAlignment:
@@ -2558,7 +2558,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
-                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisSize: MainAxisSize.min,
                                               mainAxisAlignment:
                                                   MainAxisAlignment.center,
                                               crossAxisAlignment:
@@ -2648,7 +2648,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
-                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisSize: MainAxisSize.min,
                                               mainAxisAlignment:
                                                   MainAxisAlignment.center,
                                               crossAxisAlignment:
@@ -2747,7 +2747,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
-                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisSize: MainAxisSize.min,
                                               mainAxisAlignment:
                                                   MainAxisAlignment.center,
                                               crossAxisAlignment:
@@ -2846,7 +2846,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Column(
-                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisSize: MainAxisSize.min,
                                               mainAxisAlignment:
                                                   MainAxisAlignment.center,
                                               crossAxisAlignment:
