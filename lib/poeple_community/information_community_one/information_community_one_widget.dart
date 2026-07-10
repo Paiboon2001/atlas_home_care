@@ -341,8 +341,7 @@ class _InformationCommunityOneWidgetState
                                                           FFAppState().munity ==
                                                                   1
                                                               ? FlutterFlowTheme
-                                                                      .of(
-                                                                          context)
+                                                                      .of(context)
                                                                   .primary
                                                               : FlutterFlowTheme
                                                                       .of(context)
@@ -353,7 +352,7 @@ class _InformationCommunityOneWidgetState
                                                         ),
                                                         borderRadius:
                                                             BorderRadius
-                                                                .circular(24.0),
+                                                                .circular(300.0),
                                                         border: Border.all(
                                                           color: FlutterFlowTheme
                                                                   .of(context)
@@ -537,8 +536,7 @@ class _InformationCommunityOneWidgetState
                                                           FFAppState().munity ==
                                                                   4
                                                               ? FlutterFlowTheme
-                                                                      .of(
-                                                                          context)
+                                                                      .of(context)
                                                                   .primary
                                                               : FlutterFlowTheme
                                                                       .of(context)
@@ -549,7 +547,7 @@ class _InformationCommunityOneWidgetState
                                                         ),
                                                         borderRadius:
                                                             BorderRadius
-                                                                .circular(24.0),
+                                                                .circular(300.0),
                                                         border: Border.all(
                                                           color: FlutterFlowTheme
                                                                   .of(context)
@@ -733,8 +731,7 @@ class _InformationCommunityOneWidgetState
                                                           FFAppState().munity ==
                                                                   2
                                                               ? FlutterFlowTheme
-                                                                      .of(
-                                                                          context)
+                                                                      .of(context)
                                                                   .primary
                                                               : FlutterFlowTheme
                                                                       .of(context)
@@ -745,7 +742,7 @@ class _InformationCommunityOneWidgetState
                                                         ),
                                                         borderRadius:
                                                             BorderRadius
-                                                                .circular(24.0),
+                                                                .circular(300.0),
                                                         border: Border.all(
                                                           color: FlutterFlowTheme
                                                                   .of(context)
@@ -929,8 +926,7 @@ class _InformationCommunityOneWidgetState
                                                           FFAppState().munity ==
                                                                   3
                                                               ? FlutterFlowTheme
-                                                                      .of(
-                                                                          context)
+                                                                      .of(context)
                                                                   .primary
                                                               : FlutterFlowTheme
                                                                       .of(context)
@@ -941,7 +937,7 @@ class _InformationCommunityOneWidgetState
                                                         ),
                                                         borderRadius:
                                                             BorderRadius
-                                                                .circular(24.0),
+                                                                .circular(300.0),
                                                         border: Border.all(
                                                           color: FlutterFlowTheme
                                                                   .of(context)

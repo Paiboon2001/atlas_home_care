@@ -13,7 +13,7 @@ class ConnectBluetooth extends StatelessWidget {
     required this.connected,
     this.onPressed,
     this.connectedLabel = 'เชื่อม 1',
-    this.unconnectedLabel = 'ไม่ได้เชื่อม\nต่ออุปกรณ์ IT',
+    this.unconnectedLabel = 'เชื่อมต่อ\nอุปกรณ์ IT',
   });
 
   final bool connected;

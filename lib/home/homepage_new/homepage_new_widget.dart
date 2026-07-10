@@ -1,4 +1,5 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/components/home_calendar_strip_widget.dart';
 import '/components/real_map_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -274,6 +275,11 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                           ),
                           scrollDirection: Axis.vertical,
                           children: [
+                            const Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  16.0, 0.0, 16.0, 16.0),
+                              child: HomeCalendarStrip(),
+                            ),
                             Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),

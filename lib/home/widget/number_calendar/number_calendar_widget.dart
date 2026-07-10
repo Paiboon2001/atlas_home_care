@@ -47,37 +47,35 @@ class _NumberCalendarWidgetState extends State<NumberCalendarWidget> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisSize: MainAxisSize.max,
+      mainAxisSize: MainAxisSize.min,
       children: [
-        Expanded(
-          child: Container(
-            width: 56.0,
-            height: 56.0,
-            decoration: BoxDecoration(
-              color: valueOrDefault<Color>(
-                widget.piccorlor,
-                FlutterFlowTheme.of(context).tertiary,
-              ),
-              shape: BoxShape.circle,
+        Container(
+          width: 56.0,
+          height: 56.0,
+          decoration: BoxDecoration(
+            color: valueOrDefault<Color>(
+              widget.piccorlor,
+              FlutterFlowTheme.of(context).tertiary,
             ),
-            child: Align(
-              alignment: const AlignmentDirectional(0.0, 0.0),
-              child: Text(
-                valueOrDefault<String>(
-                  widget.numcalen,
-                  '0',
-                ),
-                style: FlutterFlowTheme.of(context).titleSmall.override(
-                      fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
-                      color: valueOrDefault<Color>(
-                        widget.textcorlor,
-                        FlutterFlowTheme.of(context).primaryText,
-                      ),
-                      letterSpacing: 0.0,
-                      useGoogleFonts:
-                          !FlutterFlowTheme.of(context).titleSmallIsCustom,
-                    ),
+            shape: BoxShape.circle,
+          ),
+          child: Align(
+            alignment: const AlignmentDirectional(0.0, 0.0),
+            child: Text(
+              valueOrDefault<String>(
+                widget.numcalen,
+                '0',
               ),
+              style: FlutterFlowTheme.of(context).titleSmall.override(
+                    fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
+                    color: valueOrDefault<Color>(
+                      widget.textcorlor,
+                      FlutterFlowTheme.of(context).primaryText,
+                    ),
+                    letterSpacing: 0.0,
+                    useGoogleFonts:
+                        !FlutterFlowTheme.of(context).titleSmallIsCustom,
+                  ),
             ),
           ),
         ),

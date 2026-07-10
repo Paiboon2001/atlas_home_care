@@ -65,14 +65,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                   alignment: const AlignmentDirectional(-1.0, -1.0),
                   child: Container(
                     width: double.infinity,
-                    height: 92.0,
+                    height: 92.0 + MediaQuery.paddingOf(context).top,
                     decoration: BoxDecoration(
-                      image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: Image.asset(
-                          'assets/images/bgappbar.png',
-                        ).image,
-                      ),
                       gradient: LinearGradient(
                         colors: [
                           const Color(0xFF2370BC),
@@ -86,7 +80,9 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                     ),
                   ),
                 ),
-                Column(
+                SafeArea(
+                  bottom: false,
+                  child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     SizedBox(
@@ -464,6 +460,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                       ),
                     ),
                   ].divide(const SizedBox(height: 16.0)),
+                ),
                 ),
               ],
             ),
@@ -1748,48 +1745,49 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                             ),
                           ].divide(const SizedBox(height: 20.0)),
                         ),
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Expanded(
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Expanded(
-                                    child: Container(
-                                      width: 56.0,
-                                      height: 52.0,
-                                      decoration: BoxDecoration(
-                                        borderRadius:
-                                            BorderRadius.circular(8.0),
+                        Positioned.fill(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Expanded(
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Expanded(
+                                      child: Container(
+                                        width: 56.0,
+                                        height: 52.0,
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(8.0),
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                ]
-                                    .divide(const SizedBox(width: 4.0))
-                                    .addToStart(const SizedBox(width: 66.0)),
+                                  ]
+                                      .divide(const SizedBox(width: 4.0))
+                                      .addToStart(const SizedBox(width: 66.0)),
+                                ),
                               ),
-                            ),
-                            Expanded(
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Expanded(
-                                    child: Container(
-                                      width: 56.0,
-                                      height: 52.0,
-                                      decoration: BoxDecoration(
-                                        borderRadius:
-                                            BorderRadius.circular(8.0),
+                              Expanded(
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Expanded(
+                                      child: Container(
+                                        width: 56.0,
+                                        height: 52.0,
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(8.0),
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                ]
-                                    .divide(const SizedBox(width: 4.0))
-                                    .addToStart(const SizedBox(width: 66.0)),
+                                  ]
+                                      .divide(const SizedBox(width: 4.0))
+                                      .addToStart(const SizedBox(width: 66.0)),
+                                ),
                               ),
-                            ),
-                            Expanded(
+                              Expanded(
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
@@ -3048,6 +3046,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                           ]
                               .divide(const SizedBox(height: 8.0))
                               .addToStart(const SizedBox(height: 24.0)),
+                          ),
                         ),
                       ],
                     ),
