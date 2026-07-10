@@ -87,19 +87,36 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                   MediaQuery.viewPaddingOf(context).top,
               backgroundColor: FlutterFlowTheme.of(context).primary,
               automaticallyImplyLeading: false,
-              leading: FlutterFlowIconButton(
-                borderColor: Colors.transparent,
-                borderRadius: 30.0,
-                borderWidth: 1.0,
-                buttonSize: 44.0,
-                icon: const Icon(
-                  Icons.arrow_back_ios_new_rounded,
-                  color: Colors.white,
-                  size: 18.0,
+              leading: Padding(
+                padding: const EdgeInsets.all(4.0),
+                child: Container(
+                  decoration: const BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 4.0,
+                        color: Color(0x33000000),
+                        offset: Offset(0.0, 2.0),
+                      )
+                    ],
+                    shape: BoxShape.circle,
+                  ),
+                  child: FlutterFlowIconButton(
+                    borderColor: Colors.transparent,
+                    borderRadius: 30.0,
+                    borderWidth: 1.0,
+                    buttonSize: 40.0,
+                    fillColor:
+                        FlutterFlowTheme.of(context).secondaryBackground,
+                    icon: Icon(
+                      Icons.arrow_back_ios_new_rounded,
+                      color: FlutterFlowTheme.of(context).primaryText,
+                      size: 18.0,
+                    ),
+                    onPressed: () async {
+                      context.safePop();
+                    },
+                  ),
                 ),
-                onPressed: () async {
-                  context.safePop();
-                },
               ),
               title: Text(
                 'ข้อมูลค่าน้ำตาล',
@@ -113,14 +130,28 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                     ),
               ),
               actions: [
-                FlutterFlowIconButton(
+                Padding(
+                  padding: const EdgeInsets.all(4.0),
+                  child: Container(
+                  decoration: const BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 4.0,
+                        color: Color(0x33000000),
+                        offset: Offset(0.0, 2.0),
+                      )
+                    ],
+                    shape: BoxShape.circle,
+                  ),
+                  child: FlutterFlowIconButton(
                   borderColor: Colors.transparent,
                   borderRadius: 30.0,
                   borderWidth: 1.0,
-                  buttonSize: 44.0,
-                  icon: const Icon(
+                  buttonSize: 40.0,
+                  fillColor: FlutterFlowTheme.of(context).secondaryBackground,
+                  icon: Icon(
                     Icons.search_rounded,
-                    color: Colors.white,
+                    color: FlutterFlowTheme.of(context).primaryText,
                     size: 22.0,
                   ),
                   onPressed: () async {
@@ -138,6 +169,8 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                       },
                     );
                   },
+                ),
+                ),
                 ),
               ],
               flexibleSpace: FlexibleSpaceBar(

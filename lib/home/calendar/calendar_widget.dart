@@ -176,7 +176,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                           }
                                         },
                                         child: Icon(
-                                          Icons.calendar_month,
+                                          Icons.calendar_month_rounded,
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
                                           size: 24.0,

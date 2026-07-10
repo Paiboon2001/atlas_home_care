@@ -192,7 +192,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                     }
                                   },
                                   child: Icon(
-                                    Icons.calendar_month,
+                                    Icons.calendar_month_rounded,
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
                                     size: 24.0,
@@ -1104,7 +1104,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                         });
                                   },
                                   child: Icon(
-                                    Icons.calendar_month,
+                                    Icons.calendar_month_rounded,
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
                                     size: () {
@@ -2032,7 +2032,7 @@ class _TablecalendaWidgetState extends State<TablecalendaWidget> {
                                     }
                                   },
                                   child: Icon(
-                                    Icons.calendar_month,
+                                    Icons.calendar_month_rounded,
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
                                     size: 24.0,

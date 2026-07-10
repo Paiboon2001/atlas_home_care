@@ -55,7 +55,8 @@ class _MapWidgetState extends State<MapWidget> {
             const SizedBox.expand(
               child: RealMap(),
             ),
-            Padding(
+            SafeArea(
+              child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
@@ -185,6 +186,7 @@ class _MapWidgetState extends State<MapWidget> {
                   ),
                 ],
               ),
+            ),
             ),
             Align(
               alignment: const AlignmentDirectional(0.15, -0.41),

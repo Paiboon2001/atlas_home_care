@@ -3907,7 +3907,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                                             0.0),
                                                                     child: Icon(
                                                                       Icons
-                                                                          .calendar_month,
+                                                                          .calendar_month_rounded,
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .customColor5,

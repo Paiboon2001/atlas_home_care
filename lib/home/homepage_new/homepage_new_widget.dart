@@ -68,7 +68,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
           floatHeaderSlivers: true,
           headerSliverBuilder: (context, _) => [
             SliverAppBar(
-              expandedHeight: 64.0,
+              expandedHeight: 56.0,
               pinned: false,
               floating: true,
               snap: true,
@@ -269,16 +269,28 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                         child: ListView(
                           padding: const EdgeInsets.fromLTRB(
                             0,
-                            16.0,
+                            20.0,
                             0,
                             124.0,
                           ),
                           scrollDirection: Axis.vertical,
                           children: [
-                            const Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                            Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 16.0),
-                              child: HomeCalendarStrip(),
+                              child: HomeCalendarStrip(
+                                onViewChanged: (view) {
+                                  if (view == HomeCalendarView.map) {
+                                    context.pushNamed(MapWidget.routeName);
+                                  } else if (view ==
+                                      HomeCalendarView.calendar) {
+                                    context
+                                        .pushNamed(CalendarWidget.routeName);
+                                  }
+                                },
+                                onDaySelected: (day) =>
+                                    context.pushNamed(CalendarWidget.routeName),
+                              ),
                             ),
                             Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(

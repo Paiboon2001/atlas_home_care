@@ -35,6 +35,10 @@ const List<String> _thaiMonthsAbbr = [
 String formatThaiDate(DateTime date) =>
     '${date.day} ${_thaiMonthsAbbr[date.month - 1]} ${date.year + 543}';
 
+/// Formats [date] as full Thai month + Buddhist-era year — e.g. "กรกฎาคม 2569".
+String formatThaiMonthYear(DateTime date) =>
+    '${_thaiMonths[date.month - 1]} ${date.year + 543}';
+
 /// Thai-style date picker: three wheels ordered วัน → เดือน(ไทย) → ปี(พ.ศ.).
 ///
 /// Works on Gregorian [DateTime] internally (day/month/year) and only converts

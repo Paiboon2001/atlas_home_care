@@ -309,7 +309,7 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                                   .fromSTEB(
                                                       0.0, 0.0, 12.0, 0.0),
                                               child: Icon(
-                                                Icons.calendar_month,
+                                                Icons.calendar_month_rounded,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .customColor5,

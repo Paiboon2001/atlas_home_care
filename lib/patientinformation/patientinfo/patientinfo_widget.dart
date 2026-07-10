@@ -935,7 +935,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                                     0.0, 0.0),
                                                             child: Icon(
                                                               Icons
-                                                                  .calendar_month_sharp,
+                                                                  .calendar_month_rounded,
                                                               color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryBackground,
@@ -1166,7 +1166,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                                   0.0, 0.0),
                                                           child: Icon(
                                                             Icons
-                                                                .calendar_month_sharp,
+                                                                .calendar_month_rounded,
                                                             color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,
@@ -1371,7 +1371,7 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                                                                   0.0, 0.0),
                                                           child: Icon(
                                                             Icons
-                                                                .calendar_month_sharp,
+                                                                .calendar_month_rounded,
                                                             color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,

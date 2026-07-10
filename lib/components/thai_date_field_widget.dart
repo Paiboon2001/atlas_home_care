@@ -94,7 +94,7 @@ class ThaiDateField extends StatelessWidget {
               ),
               const SizedBox(width: 8.0),
               Icon(
-                Icons.calendar_month_sharp,
+                Icons.calendar_month_rounded,
                 color: FlutterFlowTheme.of(context).customColor5,
                 size: 24.0,
               ),
