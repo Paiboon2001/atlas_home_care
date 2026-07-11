@@ -67,13 +67,28 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
         body: NestedScrollView(
           floatHeaderSlivers: true,
           headerSliverBuilder: (context, _) => [
+            // Always-pinned status-bar-height background so the collapsed
+            // capsule app bar never touches the status bar.
+            SliverPersistentHeader(
+              pinned: true,
+              delegate: HomeStickyHeaderDelegate(
+                height: MediaQuery.of(context).padding.top,
+                child: AnnotatedRegion<SystemUiOverlayStyle>(
+                  value: SystemUiOverlayStyle.light,
+                  child: Container(
+                    color: FlutterFlowTheme.of(context).primary,
+                  ),
+                ),
+              ),
+            ),
             SliverAppBar(
+              primary: false,
               expandedHeight: 56.0,
               pinned: false,
               floating: true,
               snap: true,
-              backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-              systemOverlayStyle: SystemUiOverlayStyle.dark,
+              backgroundColor: FlutterFlowTheme.of(context).primary,
+              systemOverlayStyle: SystemUiOverlayStyle.light,
               automaticallyImplyLeading: false,
               title: Row(
                 mainAxisSize: MainAxisSize.max,
@@ -140,7 +155,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                               .override(
                                 fontFamily: FlutterFlowTheme.of(context)
                                     .bodySmallFamily,
-                                color: const Color(0xFF8A8F97),
+                                color: Colors.white,
                                 fontSize: 12.0,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.w400,
@@ -162,7 +177,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                     .override(
                                       fontFamily: FlutterFlowTheme.of(context)
                                           .bodyLargeFamily,
-                                      color: const Color(0xFF004078),
+                                      color: Colors.white,
                                       fontSize: 16.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
@@ -177,7 +192,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                 .override(
                                   fontFamily: FlutterFlowTheme.of(context)
                                       .bodyLargeFamily,
-                                  color: const Color(0xFF004078),
+                                  color: Colors.white,
                                   fontSize: 16.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w600,
@@ -212,7 +227,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                           width: 24.0,
                           height: 24.0,
                           colorFilter: const ColorFilter.mode(
-                            Color(0xFF041228),
+                            Colors.white,
                             BlendMode.srcIn,
                           ),
                         ),
@@ -230,7 +245,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                           width: 24.0,
                           height: 24.0,
                           colorFilter: const ColorFilter.mode(
-                            Color(0xFF041228),
+                            Colors.white,
                             BlendMode.srcIn,
                           ),
                         ),
@@ -241,7 +256,36 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
               ],
               centerTitle: false,
               elevation: 0.0,
-            )
+            ),
+            // Full strip at rest; collapses to a pinned capsule app bar on
+            // scroll (wordmark/month/toggle clip away, week row stays).
+            SliverPersistentHeader(
+              pinned: true,
+              delegate: HomeCollapsingStripDelegate(
+                expandedHeight: 196.0,
+                collapsedHeight: 112.0,
+                expandedColor:
+                    FlutterFlowTheme.of(context).primaryBackground,
+                collapsedColor: FlutterFlowTheme.of(context).primary,
+                child: Container(
+                  height: 196.0,
+                  alignment: Alignment.bottomCenter,
+                  padding: const EdgeInsetsDirectional.fromSTEB(
+                      16.0, 20.0, 16.0, 0.0),
+                  child: HomeCalendarStrip(
+                    onViewChanged: (view) {
+                      if (view == HomeCalendarView.map) {
+                        context.pushNamed(MapWidget.routeName);
+                      } else if (view == HomeCalendarView.calendar) {
+                        context.pushNamed(CalendarWidget.routeName);
+                      }
+                    },
+                    onDaySelected: (day) =>
+                        context.pushNamed(CalendarWidget.routeName),
+                  ),
+                ),
+              ),
+            ),
           ],
           body: Builder(
             builder: (context) {
@@ -266,33 +310,17 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                     children: [
                       Align(
                         alignment: const AlignmentDirectional(0.0, 0.0),
-                        child: ListView(
-                          padding: const EdgeInsets.fromLTRB(
-                            0,
-                            20.0,
-                            0,
-                            124.0,
-                          ),
-                          scrollDirection: Axis.vertical,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 0.0, 16.0, 16.0),
-                              child: HomeCalendarStrip(
-                                onViewChanged: (view) {
-                                  if (view == HomeCalendarView.map) {
-                                    context.pushNamed(MapWidget.routeName);
-                                  } else if (view ==
-                                      HomeCalendarView.calendar) {
-                                    context
-                                        .pushNamed(CalendarWidget.routeName);
-                                  }
-                                },
-                                onDaySelected: (day) =>
-                                    context.pushNamed(CalendarWidget.routeName),
-                              ),
-                            ),
-                            Padding(
+                        child: CustomScrollView(
+                          slivers: [
+                            const SliverToBoxAdapter(
+                                child: SizedBox(height: 20.0)),
+                            // (Calendar strip lives in the app bar header below.)
+                            SliverList(
+                              delegate: SliverChildListDelegate([
+                            // Hidden (not deleted): set visible: true to restore.
+                            Visibility(
+                              visible: false,
+                              child: Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Container(
@@ -927,6 +955,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                 ),
                               ),
                             ),
+                            ),
                             Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -1192,6 +1221,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 12.0, 16.0, 0.0),
                                   child: MasonryGridView.builder(
+                                    padding: EdgeInsets.zero,
                                     physics:
                                         const NeverScrollableScrollPhysics(),
                                     gridDelegate:
@@ -1893,6 +1923,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 12.0, 16.0, 0.0),
                                   child: MasonryGridView.builder(
+                                    padding: EdgeInsets.zero,
                                     physics:
                                         const NeverScrollableScrollPhysics(),
                                     gridDelegate:
@@ -2052,6 +2083,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 12.0, 16.0, 0.0),
                                   child: MasonryGridView.builder(
+                                    padding: EdgeInsets.zero,
                                     physics:
                                         const NeverScrollableScrollPhysics(),
                                     gridDelegate:
@@ -2107,21 +2139,29 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                 ),
                               ],
                             ),
-                            Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 0.0, 16.0, 0.0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  wrapWithModel(
-                                    model: _model.tablecalendaModel,
-                                    updateCallback: () => safeSetState(() {}),
-                                    child: const TablecalendaWidget(),
-                                  ),
-                                ],
+                            // Hidden (not deleted): set visible: true to restore.
+                            Visibility(
+                              visible: false,
+                              child: Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    16.0, 0.0, 16.0, 0.0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    wrapWithModel(
+                                      model: _model.tablecalendaModel,
+                                      updateCallback: () => safeSetState(() {}),
+                                      child: const TablecalendaWidget(),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
-                          ].divide(const SizedBox(height: 16.0)),
+                              ].divide(const SizedBox(height: 16.0))),
+                            ),
+                            const SliverToBoxAdapter(
+                                child: SizedBox(height: 124.0)),
+                          ],
                         ),
                       ),
                       Align(

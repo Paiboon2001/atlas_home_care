@@ -17,7 +17,7 @@ const String _cardViewSvg = '''
 /// white view-toggle pill (agenda / map / calendar) on the right. Below it a
 /// horizontal week strip of day capsules, each showing the weekday label,
 /// colored task dots, and the day number (the selected day gets a blue circle).
-class HomeCalendarStrip extends StatefulWidget {
+class HomeCalendarStrip extends StatelessWidget {
   const HomeCalendarStrip({
     super.key,
     this.initialDate,
@@ -61,15 +61,52 @@ class HomeCalendarStrip extends StatefulWidget {
   ];
 
   @override
-  State<HomeCalendarStrip> createState() => _HomeCalendarStripState();
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        HomeCalendarHeader(
+          initialDate: initialDate,
+          selectedView: selectedView,
+          onViewChanged: onViewChanged,
+          onMonthTap: onMonthTap,
+        ),
+        const SizedBox(height: 16.0),
+        HomeWeekStrip(onDaySelected: onDaySelected),
+      ],
+    );
+  }
 }
 
-class _HomeCalendarStripState extends State<HomeCalendarStrip> {
+/// Top part of the calendar strip: the "AtlasHomeCare" wordmark, the month
+/// selector, and the agenda / map / calendar view toggle. Kept separate from
+/// [HomeWeekStrip] so the week row can pin as a sticky sliver header while this
+/// part scrolls away.
+class HomeCalendarHeader extends StatefulWidget {
+  const HomeCalendarHeader({
+    super.key,
+    this.initialDate,
+    this.selectedView = HomeCalendarView.agenda,
+    this.onViewChanged,
+    this.onMonthTap,
+  });
+
+  final DateTime? initialDate;
+  final HomeCalendarView selectedView;
+  final ValueChanged<HomeCalendarView>? onViewChanged;
+  final VoidCallback? onMonthTap;
+
+  @override
+  State<HomeCalendarHeader> createState() => _HomeCalendarHeaderState();
+}
+
+class _HomeCalendarHeaderState extends State<HomeCalendarHeader> {
   late HomeCalendarView _selected = widget.selectedView;
   late DateTime _pickedDate = widget.initialDate ?? DateTime(2026, 7, 10);
 
   @override
-  void didUpdateWidget(covariant HomeCalendarStrip oldWidget) {
+  void didUpdateWidget(covariant HomeCalendarHeader oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.selectedView != widget.selectedView) {
       _selected = widget.selectedView;
@@ -99,56 +136,65 @@ class _HomeCalendarStripState extends State<HomeCalendarStrip> {
 
   @override
   Widget build(BuildContext context) {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Expanded(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const _Wordmark(),
+              const SizedBox(height: 8.0),
+              InkWell(
+                onTap: widget.onMonthTap ?? _openMonthPicker,
+                splashColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const Icon(Icons.calendar_month_rounded,
+                        size: 16.0, color: HomeCalendarStrip._secondary),
+                    const SizedBox(width: 8.0),
+                    Text(
+                      formatThaiMonthYear(_pickedDate),
+                      style: const TextStyle(
+                        fontSize: 16.0,
+                        fontWeight: FontWeight.w500,
+                        color: HomeCalendarStrip._primaryText,
+                      ),
+                    ),
+                    const SizedBox(width: 8.0),
+                    const Icon(Icons.unfold_more_rounded,
+                        size: 16.0, color: HomeCalendarStrip._gray01),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+        _ViewToggle(
+          selected: _selected,
+          onChanged: _select,
+        ),
+      ],
+    );
+  }
+}
+
+/// The horizontal week row of day capsules plus the bottom divider. Used both
+/// inline (inside [HomeCalendarStrip]) and as the pinned sticky sliver header.
+class HomeWeekStrip extends StatelessWidget {
+  const HomeWeekStrip({super.key, this.onDaySelected});
+
+  final ValueChanged<int>? onDaySelected;
+
+  @override
+  Widget build(BuildContext context) {
     return Column(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // ── Top row: wordmark + month, view toggle ────────────────────────
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Expanded(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const _Wordmark(),
-                  const SizedBox(height: 8.0),
-                  InkWell(
-                    onTap: widget.onMonthTap ?? _openMonthPicker,
-                    splashColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        const Icon(Icons.calendar_month_rounded,
-                            size: 16.0, color: HomeCalendarStrip._secondary),
-                        const SizedBox(width: 8.0),
-                        Text(
-                          formatThaiMonthYear(_pickedDate),
-                          style: const TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.w500,
-                            color: HomeCalendarStrip._primaryText,
-                          ),
-                        ),
-                        const SizedBox(width: 8.0),
-                        const Icon(Icons.unfold_more_rounded,
-                            size: 16.0, color: HomeCalendarStrip._gray01),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            _ViewToggle(
-              selected: _selected,
-              onChanged: _select,
-            ),
-          ],
-        ),
-        const SizedBox(height: 16.0),
-        // ── Week strip ────────────────────────────────────────────────────
         Row(
           spacing: 12.0,
           children: HomeCalendarStrip._days
@@ -156,14 +202,116 @@ class _HomeCalendarStripState extends State<HomeCalendarStrip> {
                     child: _DayCapsule(
                       data: d,
                       dotColors: HomeCalendarStrip._progressColors,
-                      onTap: () => widget.onDaySelected?.call(d.day),
+                      onTap: () => onDaySelected?.call(d.day),
                     ),
                   ))
               .toList(),
         ),
+        const SizedBox(height: 12.0),
+        // ── Bottom divider line (full-bleed to screen edges) ──────────────
+        // Overflows the parent's 16px horizontal padding so the line spans the
+        // full device width.
+        SizedBox(
+          height: 1.0,
+          child: OverflowBox(
+            maxWidth: MediaQuery.of(context).size.width,
+            maxHeight: 1.0,
+            child: Container(
+              height: 1.0,
+              width: MediaQuery.of(context).size.width,
+              color: const Color(0xFFD0D8E0), // gray_03
+            ),
+          ),
+        ),
       ],
     );
   }
+}
+
+/// [SliverPersistentHeaderDelegate] for pinning [HomeWeekStrip] under the app
+/// bar. Fixed height (no shrink), opaque background supplied by the child.
+class HomeStickyHeaderDelegate extends SliverPersistentHeaderDelegate {
+  const HomeStickyHeaderDelegate({required this.height, required this.child});
+
+  final double height;
+  final Widget child;
+
+  @override
+  double get minExtent => height;
+
+  @override
+  double get maxExtent => height;
+
+  @override
+  Widget build(
+          BuildContext context, double shrinkOffset, bool overlapsContent) =>
+      SizedBox.expand(child: child);
+
+  @override
+  bool shouldRebuild(covariant HomeStickyHeaderDelegate oldDelegate) =>
+      oldDelegate.height != height || oldDelegate.child != child;
+}
+
+/// Collapsing sticky header for the calendar strip. Expanded it shows the full
+/// strip ([expandedHeight]); as the user scrolls it shrinks to [collapsedHeight]
+/// by clipping the top (wordmark + month + toggle) away, leaving just the week
+/// capsule row pinned as an app bar. [child] must be exactly [expandedHeight]
+/// tall so the bottom-anchored clip reveals the capsules.
+class HomeCollapsingStripDelegate extends SliverPersistentHeaderDelegate {
+  const HomeCollapsingStripDelegate({
+    required this.expandedHeight,
+    required this.collapsedHeight,
+    required this.child,
+    this.expandedColor = Colors.transparent,
+    this.collapsedColor = Colors.transparent,
+  });
+
+  final double expandedHeight;
+  final double collapsedHeight;
+  final Widget child;
+
+  /// Background at rest (fully expanded) and when fully collapsed. The delegate
+  /// lerps between them as the header shrinks, so the pinned capsule bar can
+  /// fade to a solid colour (e.g. the status-bar blue) only while scrolled.
+  final Color expandedColor;
+  final Color collapsedColor;
+
+  @override
+  double get maxExtent => expandedHeight;
+
+  @override
+  double get minExtent => collapsedHeight;
+
+  @override
+  Widget build(
+      BuildContext context, double shrinkOffset, bool overlapsContent) {
+    final double range = expandedHeight - collapsedHeight;
+    final double t =
+        range <= 0 ? 1.0 : (shrinkOffset / range).clamp(0.0, 1.0);
+    final Color bg =
+        Color.lerp(expandedColor, collapsedColor, t) ?? expandedColor;
+    // Anchor the full-height strip to the bottom and clip the overflow, so the
+    // top (wordmark/month/toggle) is what disappears as the header shrinks.
+    return ColoredBox(
+      color: bg,
+      child: ClipRect(
+        child: OverflowBox(
+          alignment: Alignment.bottomCenter,
+          minHeight: expandedHeight,
+          maxHeight: expandedHeight,
+          child: child,
+        ),
+      ),
+    );
+  }
+
+  @override
+  bool shouldRebuild(covariant HomeCollapsingStripDelegate oldDelegate) =>
+      oldDelegate.expandedHeight != expandedHeight ||
+      oldDelegate.collapsedHeight != collapsedHeight ||
+      oldDelegate.child != child ||
+      oldDelegate.expandedColor != expandedColor ||
+      oldDelegate.collapsedColor != collapsedColor;
 }
 
 enum HomeCalendarView { agenda, map, calendar }
