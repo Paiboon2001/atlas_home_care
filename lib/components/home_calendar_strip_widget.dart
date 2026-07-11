@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '/components/thai_date_picker_widget.dart';
@@ -36,7 +38,6 @@ class HomeCalendarStrip extends StatefulWidget {
   static const Color _secondary = Color(0xFF004078);
   static const Color _primaryText = Color(0xFF041228);
   static const Color _gray01 = Color(0xFF8A8F97);
-  static const Color _line = Color(0xFFE3F1FF);
   static const Color _white = Color(0xFFFFFFFF);
 
   // "Progress" component segment colors (Figma node 324:396), left → right.
@@ -126,7 +127,7 @@ class _HomeCalendarStripState extends State<HomeCalendarStrip> {
                         Text(
                           formatThaiMonthYear(_pickedDate),
                           style: const TextStyle(
-                            fontSize: 13.0,
+                            fontSize: 16.0,
                             fontWeight: FontWeight.w500,
                             color: HomeCalendarStrip._primaryText,
                           ),
@@ -149,12 +150,14 @@ class _HomeCalendarStripState extends State<HomeCalendarStrip> {
         const SizedBox(height: 16.0),
         // ── Week strip ────────────────────────────────────────────────────
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          spacing: 12.0,
           children: HomeCalendarStrip._days
-              .map((d) => _DayCapsule(
-                    data: d,
-                    dotColors: HomeCalendarStrip._progressColors,
-                    onTap: () => widget.onDaySelected?.call(d.day),
+              .map((d) => Expanded(
+                    child: _DayCapsule(
+                      data: d,
+                      dotColors: HomeCalendarStrip._progressColors,
+                      onTap: () => widget.onDaySelected?.call(d.day),
+                    ),
                   ))
               .toList(),
         ),
@@ -173,13 +176,55 @@ class _DayData {
   final bool selected;
 }
 
-class _Wordmark extends StatelessWidget {
+class _Wordmark extends StatefulWidget {
   const _Wordmark();
 
   @override
+  State<_Wordmark> createState() => _WordmarkState();
+}
+
+class _WordmarkState extends State<_Wordmark>
+    with SingleTickerProviderStateMixin {
+  // One light sweep across the text, then a pause before the next.
+  static const Duration _sweepDuration = Duration(milliseconds: 1100);
+  static const Duration _pauseDuration = Duration(milliseconds: 3000);
+
+  static const String _text = 'AtlasHomeCare';
+  static const TextStyle _style = TextStyle(
+    fontSize: 28.0,
+    fontWeight: FontWeight.w800,
+    letterSpacing: -0.3,
+    height: 1.0,
+    color: Colors.white, // painted by the gradient shader
+  );
+
+  late final AnimationController _controller =
+      AnimationController(vsync: this, duration: _sweepDuration);
+
+  @override
+  void initState() {
+    super.initState();
+    _loop();
+  }
+
+  Future<void> _loop() async {
+    while (mounted) {
+      await _controller.forward(from: 0.0);
+      if (!mounted) return;
+      await Future<void>.delayed(_pauseDuration);
+    }
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    // Horizontal gradient across the whole wordmark: blue → navy → purple.
-    return ShaderMask(
+    // Base: horizontal gradient across the whole wordmark: blue → navy → purple.
+    final Widget gradientText = ShaderMask(
       shaderCallback: (bounds) => const LinearGradient(
         begin: Alignment.centerLeft,
         end: Alignment.centerRight,
@@ -192,16 +237,41 @@ class _Wordmark extends StatelessWidget {
         ],
         stops: [0.0, 0.30, 0.50, 0.80, 1.0],
       ).createShader(bounds),
-      child: const Text(
-        'AtlasHomeCare',
-        style: TextStyle(
-          fontSize: 28.0,
-          fontWeight: FontWeight.w800,
-          letterSpacing: -0.3,
-          height: 1.0,
-          color: Colors.white, // painted by the gradient shader
-        ),
-      ),
+      child: const Text(_text, style: _style),
+    );
+
+    return AnimatedBuilder(
+      animation: _controller,
+      builder: (context, child) {
+        // Bright band travels left → right across the glyphs.
+        final double pos = -0.3 + _controller.value * 1.6;
+        return Stack(
+          children: [
+            child!,
+            ShaderMask(
+              blendMode: BlendMode.srcIn,
+              shaderCallback: (bounds) => LinearGradient(
+                begin: Alignment.centerLeft,
+                end: Alignment.centerRight,
+                // Tilt the light band 45°.
+                transform: const GradientRotation(-math.pi / 4),
+                colors: const [
+                  Color(0x00FFFFFF),
+                  Color(0xD9FFFFFF), // ~85% white glint
+                  Color(0x00FFFFFF),
+                ],
+                stops: [
+                  (pos - 0.14).clamp(0.0, 1.0),
+                  pos.clamp(0.0, 1.0),
+                  (pos + 0.14).clamp(0.0, 1.0),
+                ],
+              ).createShader(bounds),
+              child: const Text(_text, style: _style),
+            ),
+          ],
+        );
+      },
+      child: gradientText,
     );
   }
 }
@@ -215,20 +285,23 @@ class _ViewToggle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 32.0,
-      padding: const EdgeInsets.symmetric(horizontal: 4.0),
+      padding: const EdgeInsets.all(4.0),
       decoration: BoxDecoration(
         color: HomeCalendarStrip._white,
-        borderRadius: BorderRadius.circular(200.0),
+        borderRadius: BorderRadius.circular(1000.0),
         boxShadow: const [
+          // Figma "tabbr" effect: three stacked #004078 drop shadows.
           BoxShadow(
               color: Color(0x1A004078), blurRadius: 1.0, offset: Offset(0, 0)),
+          BoxShadow(
+              color: Color(0x14004078), blurRadius: 2.0, offset: Offset(0, 0)),
           BoxShadow(
               color: Color(0x14004078), blurRadius: 4.0, offset: Offset(0, 2)),
         ],
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
+        spacing: 8.0,
         children: [
           _ToggleIcon(
             svg: _cardViewSvg,
@@ -271,12 +344,11 @@ class _ToggleIcon extends StatelessWidget {
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
       child: Container(
-        width: 36.0,
-        height: 24.0,
+        padding: const EdgeInsets.all(8.0),
         alignment: Alignment.center,
         decoration: BoxDecoration(
           color: active ? HomeCalendarStrip._primary : Colors.transparent,
-          borderRadius: BorderRadius.circular(200.0),
+          borderRadius: BorderRadius.circular(100.0),
         ),
         child: svg != null
             ? SvgPicture.string(
@@ -307,16 +379,14 @@ class _DayCapsule extends StatelessWidget {
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
       child: Container(
-        width: 40.0,
         padding: const EdgeInsets.symmetric(vertical: 4.0),
         decoration: BoxDecoration(
           color: HomeCalendarStrip._white,
           borderRadius: BorderRadius.circular(200.0),
-          border: Border.all(color: HomeCalendarStrip._line, width: 1.0),
           boxShadow: const [
-            // DS_Card (Figma): soft #5F9ED6 @ 8%, blur 8.
+            // Neutral black @ 5%, blur 8.
             BoxShadow(
-              color: Color(0x145F9ED6),
+              color: Color(0x0D000000),
               blurRadius: 8.0,
               offset: Offset(0, 0),
             ),
@@ -333,16 +403,16 @@ class _DayCapsule extends StatelessWidget {
                 color: HomeCalendarStrip._gray01,
               ),
             ),
-            const SizedBox(height: 6.0),
+            const SizedBox(height: 8.0),
             SizedBox(
-              height: 4.0,
+              height: 6.0,
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: List.generate(
                   data.dotCount,
                   (i) => Container(
-                    width: 5.0,
-                    height: 4.0,
+                    width: 7.0,
+                    height: 6.0,
                     decoration: BoxDecoration(
                       color: dotColors[i % dotColors.length],
                       borderRadius: BorderRadius.horizontal(
@@ -358,10 +428,10 @@ class _DayCapsule extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 6.0),
+            const SizedBox(height: 8.0),
             Container(
-              width: 32.0,
-              height: 32.0,
+              width: 36.0,
+              height: 36.0,
               alignment: Alignment.center,
               decoration: BoxDecoration(
                 color:
