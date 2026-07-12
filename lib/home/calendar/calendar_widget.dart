@@ -44,22 +44,16 @@ class _CalendarWidgetState extends State<CalendarWidget> {
         width: double.infinity,
         height: double.infinity,
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              const Color(0xFF339FF3),
-              FlutterFlowTheme.of(context).primaryBackground,
-              FlutterFlowTheme.of(context).primaryBackground
-            ],
-            stops: const [0.0, 0.3, 1.0],
-            begin: const AlignmentDirectional(0.0, -1.0),
-            end: const AlignmentDirectional(0, 1.0),
-          ),
-          borderRadius: BorderRadius.circular(0.0),
+          color: FlutterFlowTheme.of(context).primaryBackground,
         ),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
-            Stack(
+            // Month-picker header hidden: the homepage capsule strip is the
+            // date picker; the agenda below syncs to it.
+            Visibility(
+              visible: false,
+              child: Stack(
               children: [
                 Align(
                   alignment: const AlignmentDirectional(-1.0, -1.0),
@@ -464,6 +458,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                 ),
               ],
             ),
+            ),
             Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 12.0),
               child: SingleChildScrollView(
@@ -650,7 +645,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
             Expanded(
               child: Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                child: ListView(
+                child: InteractiveViewer(
+                  panEnabled: false,
+                  minScale: 1.0,
+                  maxScale: 3.0,
+                  child: ListView(
                   padding: const EdgeInsets.fromLTRB(
                     0,
                     0,
@@ -3051,6 +3050,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                       ],
                     ),
                   ],
+                ),
                 ),
               ),
             ),

@@ -1,3 +1,5 @@
+import '/components/main_button_widget.dart';
+import '/components/secondary_button_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -1595,8 +1597,9 @@ class _DetailesPatientNewtaskWidgetState
                 ),
                 child: Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 24.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 32.0),
                   child: MasonryGridView.builder(
+                    padding: EdgeInsets.zero,
                     physics: const NeverScrollableScrollPhysics(),
                     gridDelegate:
                         const SliverSimpleGridDelegateWithFixedCrossAxisCount(
@@ -1608,12 +1611,9 @@ class _DetailesPatientNewtaskWidgetState
                     shrinkWrap: true,
                     itemBuilder: (context, index) {
                       return [
-                        () => InkWell(
-                              splashColor: Colors.transparent,
-                              focusColor: Colors.transparent,
-                              hoverColor: Colors.transparent,
-                              highlightColor: Colors.transparent,
-                              onTap: () async {
+                        () => SecondaryButton(
+                              text: 'ปฏิเสธ',
+                              onPressed: () async {
                                 await showModalBottomSheet(
                                   isScrollControlled: true,
                                   backgroundColor: Colors.transparent,
@@ -1627,108 +1627,12 @@ class _DetailesPatientNewtaskWidgetState
                                   },
                                 ).then((value) => safeSetState(() {}));
                               },
-                              child: Container(
-                                width: 100.0,
-                                height: () {
-                                  if (MediaQuery.sizeOf(context).width <
-                                      kBreakpointSmall) {
-                                    return 48.0;
-                                  } else if (MediaQuery.sizeOf(context).width <
-                                      kBreakpointMedium) {
-                                    return 48.0;
-                                  } else if (MediaQuery.sizeOf(context).width <
-                                      kBreakpointLarge) {
-                                    return 56.0;
-                                  } else {
-                                    return 56.0;
-                                  }
-                                }(),
-                                decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryBackground,
-                                  borderRadius: BorderRadius.circular(100.0),
-                                  border: Border.all(
-                                    color: const Color(0xFFBDBDBD),
-                                    width: 1.0,
-                                  ),
-                                ),
-                                child: Align(
-                                  alignment: const AlignmentDirectional(0.0, 0.0),
-                                  child: Text(
-                                    'ปฏิเสธ',
-                                    style: FlutterFlowTheme.of(context)
-                                        .labelMedium
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily,
-                                          color: FlutterFlowTheme.of(context)
-                                              .error,
-                                          letterSpacing: 0.0,
-                                          useGoogleFonts:
-                                              !FlutterFlowTheme.of(context)
-                                                  .labelMediumIsCustom,
-                                        ),
-                                  ),
-                                ),
-                              ),
                             ),
-                        () => InkWell(
-                              splashColor: Colors.transparent,
-                              focusColor: Colors.transparent,
-                              hoverColor: Colors.transparent,
-                              highlightColor: Colors.transparent,
-                              onTap: () async {
+                        () => MainButton(
+                              text: 'รับงาน',
+                              onPressed: () async {
                                 context.pushNamed(HomepageNewWidget.routeName);
                               },
-                              child: Container(
-                                width: 100.0,
-                                height: () {
-                                  if (MediaQuery.sizeOf(context).width <
-                                      kBreakpointSmall) {
-                                    return 48.0;
-                                  } else if (MediaQuery.sizeOf(context).width <
-                                      kBreakpointMedium) {
-                                    return 48.0;
-                                  } else if (MediaQuery.sizeOf(context).width <
-                                      kBreakpointLarge) {
-                                    return 56.0;
-                                  } else {
-                                    return 56.0;
-                                  }
-                                }(),
-                                decoration: BoxDecoration(
-                                  gradient: LinearGradient(
-                                    colors: [
-                                      FlutterFlowTheme.of(context).success,
-                                      const Color(0xFF1D8B6B)
-                                    ],
-                                    stops: const [0.0, 1.0],
-                                    begin: const AlignmentDirectional(0.0, -1.0),
-                                    end: const AlignmentDirectional(0, 1.0),
-                                  ),
-                                  borderRadius: BorderRadius.circular(100.0),
-                                ),
-                                child: Align(
-                                  alignment: const AlignmentDirectional(0.0, 0.0),
-                                  child: Text(
-                                    'รับงาน',
-                                    style: FlutterFlowTheme.of(context)
-                                        .labelMedium
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMediumFamily,
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryBackground,
-                                          letterSpacing: 0.0,
-                                          useGoogleFonts:
-                                              !FlutterFlowTheme.of(context)
-                                                  .labelMediumIsCustom,
-                                        ),
-                                  ),
-                                ),
-                              ),
                             ),
                       ][index]();
                     },

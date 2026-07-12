@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/components/main_button_widget.dart';
+import '/components/secondary_button_widget.dart';
 import '/home/widget/reson_cancel/reson_cancel_widget.dart';
 import '/homevisitlist/widget/visit_h_o_m_e_s/visit_h_o_m_e_s_widget.dart';
 import '/poeple_community/widget/haealth/haealth_widget.dart';
@@ -2542,8 +2543,9 @@ class _AddVisitinginformationWidgetState
                   ),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 24.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 32.0),
                     child: MasonryGridView.builder(
+                      padding: EdgeInsets.zero,
                       physics: const NeverScrollableScrollPhysics(),
                       gridDelegate:
                           const SliverSimpleGridDelegateWithFixedCrossAxisCount(
@@ -2595,12 +2597,9 @@ class _AddVisitinginformationWidgetState
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Expanded(
-                                    child: InkWell(
-                                      splashColor: Colors.transparent,
-                                      focusColor: Colors.transparent,
-                                      hoverColor: Colors.transparent,
-                                      highlightColor: Colors.transparent,
-                                      onTap: () async {
+                                    child: SecondaryButton(
+                                      text: 'ยกเลิกงาน',
+                                      onPressed: () async {
                                         await showModalBottomSheet(
                                           isScrollControlled: true,
                                           backgroundColor: Colors.transparent,
@@ -2615,58 +2614,6 @@ class _AddVisitinginformationWidgetState
                                           },
                                         ).then((value) => safeSetState(() {}));
                                       },
-                                      child: Container(
-                                        width: 100.0,
-                                        height: () {
-                                          if (MediaQuery.sizeOf(context).width <
-                                              kBreakpointSmall) {
-                                            return 48.0;
-                                          } else if (MediaQuery.sizeOf(context)
-                                                  .width <
-                                              kBreakpointMedium) {
-                                            return 48.0;
-                                          } else if (MediaQuery.sizeOf(context)
-                                                  .width <
-                                              kBreakpointLarge) {
-                                            return 56.0;
-                                          } else {
-                                            return 56.0;
-                                          }
-                                        }(),
-                                        decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryBackground,
-                                          borderRadius:
-                                              BorderRadius.circular(100.0),
-                                          border: Border.all(
-                                            color: const Color(0xFFBDBDBD),
-                                            width: 1.0,
-                                          ),
-                                        ),
-                                        child: Align(
-                                          alignment:
-                                              const AlignmentDirectional(0.0, 0.0),
-                                          child: Text(
-                                            'ยกเลิกงาน',
-                                            style: FlutterFlowTheme.of(context)
-                                                .labelMedium
-                                                .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumFamily,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .error,
-                                                  letterSpacing: 0.0,
-                                                  useGoogleFonts:
-                                                      !FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMediumIsCustom,
-                                                ),
-                                          ),
-                                        ),
-                                      ),
                                     ),
                                   ),
                                   Expanded(

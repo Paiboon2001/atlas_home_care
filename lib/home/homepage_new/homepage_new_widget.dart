@@ -37,6 +37,10 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
+  // Which body view the calendar-strip toggle shows: agenda cards, map, or
+  // month calendar.
+  HomeCalendarView _homeView = HomeCalendarView.agenda;
+
   @override
   void initState() {
     super.initState();
@@ -87,7 +91,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
               pinned: false,
               floating: true,
               snap: true,
-              backgroundColor: FlutterFlowTheme.of(context).primary,
+              backgroundColor: Colors.transparent,
               systemOverlayStyle: SystemUiOverlayStyle.light,
               automaticallyImplyLeading: false,
               title: Row(
@@ -262,26 +266,20 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
             SliverPersistentHeader(
               pinned: true,
               delegate: HomeCollapsingStripDelegate(
-                expandedHeight: 196.0,
+                expandedHeight: 208.0,
                 collapsedHeight: 112.0,
                 expandedColor:
                     FlutterFlowTheme.of(context).primaryBackground,
                 collapsedColor: FlutterFlowTheme.of(context).primary,
                 child: Container(
-                  height: 196.0,
+                  height: 208.0,
                   alignment: Alignment.bottomCenter,
                   padding: const EdgeInsetsDirectional.fromSTEB(
-                      16.0, 20.0, 16.0, 0.0),
+                      16.0, 32.0, 16.0, 0.0),
                   child: HomeCalendarStrip(
-                    onViewChanged: (view) {
-                      if (view == HomeCalendarView.map) {
-                        context.pushNamed(MapWidget.routeName);
-                      } else if (view == HomeCalendarView.calendar) {
-                        context.pushNamed(CalendarWidget.routeName);
-                      }
-                    },
-                    onDaySelected: (day) =>
-                        context.pushNamed(CalendarWidget.routeName),
+                    selectedView: _homeView,
+                    onViewChanged: (view) =>
+                        safeSetState(() => _homeView = view),
                   ),
                 ),
               ),
@@ -310,7 +308,11 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                     children: [
                       Align(
                         alignment: const AlignmentDirectional(0.0, 0.0),
-                        child: CustomScrollView(
+                        child: _homeView == HomeCalendarView.map
+                            ? const SizedBox.expand(child: RealMap())
+                            : _homeView == HomeCalendarView.calendar
+                                ? const SizedBox.expand(child: CalendarWidget())
+                                : CustomScrollView(
                           slivers: [
                             const SliverToBoxAdapter(
                                 child: SizedBox(height: 20.0)),

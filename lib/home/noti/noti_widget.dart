@@ -70,35 +70,15 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
         ),
         title: Text(
           'แจ้งเตือน',
-          style: FlutterFlowTheme.of(context).titleMedium.override(
-                fontFamily: FlutterFlowTheme.of(context).titleMediumFamily,
+          style: FlutterFlowTheme.of(context).titleLarge.override(
+                fontFamily: FlutterFlowTheme.of(context).titleLargeFamily,
                 color: FlutterFlowTheme.of(context).secondaryBackground,
                 letterSpacing: 0.0,
                 useGoogleFonts:
-                    !FlutterFlowTheme.of(context).titleMediumIsCustom,
+                    !FlutterFlowTheme.of(context).titleLargeIsCustom,
               ),
         ),
         actions: const [],
-        flexibleSpace: FlexibleSpaceBar(
-          background: Opacity(
-            opacity: 0.3,
-            child: Align(
-              alignment: const AlignmentDirectional(1.0, 1.0),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(8.0),
-                child: Image.network(
-                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/5yfb9q5kks4p/noti.png',
-                  fit: BoxFit.cover,
-                  alignment: const Alignment(1.0, 1.0),
-                ),
-              ),
-            ),
-          ),
-        ),
-        bottom: PreferredSize(
-          preferredSize: const Size.fromHeight(8.0),
-          child: Container(),
-        ),
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -107,19 +87,9 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
         height: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).primaryBackground,
-          boxShadow: const [
-            BoxShadow(
-              blurRadius: 8.0,
-              color: Color(0x33000000),
-              offset: Offset(
-                0.0,
-                0.0,
-              ),
-            )
-          ],
           borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(32.0),
-            topRight: Radius.circular(32.0),
+            topLeft: Radius.circular(24.0),
+            topRight: Radius.circular(24.0),
           ),
         ),
         child: Column(
@@ -223,8 +193,8 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                                           .secondaryBackground,
                                       boxShadow: const [
                                         BoxShadow(
-                                          blurRadius: 4.0,
-                                          color: Color(0x33000000),
+                                          blurRadius: 8.0,
+                                          color: Color(0x145F9ED6),
                                           offset: Offset(
                                             0.0,
                                             0.0,
@@ -438,8 +408,8 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                                           .secondaryBackground,
                                       boxShadow: const [
                                         BoxShadow(
-                                          blurRadius: 4.0,
-                                          color: Color(0x33000000),
+                                          blurRadius: 8.0,
+                                          color: Color(0x145F9ED6),
                                           offset: Offset(
                                             0.0,
                                             0.0,
@@ -585,8 +555,8 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                                           .secondaryBackground,
                                       boxShadow: const [
                                         BoxShadow(
-                                          blurRadius: 4.0,
-                                          color: Color(0x33000000),
+                                          blurRadius: 8.0,
+                                          color: Color(0x145F9ED6),
                                           offset: Offset(
                                             0.0,
                                             0.0,

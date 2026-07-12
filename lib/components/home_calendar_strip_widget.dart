@@ -17,7 +17,7 @@ const String _cardViewSvg = '''
 /// white view-toggle pill (agenda / map / calendar) on the right. Below it a
 /// horizontal week strip of day capsules, each showing the weekday label,
 /// colored task dots, and the day number (the selected day gets a blue circle).
-class HomeCalendarStrip extends StatelessWidget {
+class HomeCalendarStrip extends StatefulWidget {
   const HomeCalendarStrip({
     super.key,
     this.initialDate,
@@ -35,30 +35,98 @@ class HomeCalendarStrip extends StatelessWidget {
 
   // Design tokens (from Figma variables).
   static const Color _primary = Color(0xFF339FF3);
-  static const Color _secondary = Color(0xFF004078);
   static const Color _primaryText = Color(0xFF041228);
   static const Color _gray01 = Color(0xFF8A8F97);
   static const Color _white = Color(0xFFFFFFFF);
 
-  // "Progress" component segment colors (Figma node 324:396), left → right.
-  // Each day shows N segments of this fixed sequence as one continuous bar.
-  static const List<Color> _progressColors = [
-    Color(0xFF0DCDFC),
-    Color(0xFF004078),
-    Color(0xFFE3F1FF),
-    Color(0xFFFF8600),
-    Color(0xFF10B981),
-  ];
+  // Per-day job-status indicator colours (Google-Calendar style). Each dot on a
+  // day capsule is one job, coloured by its status.
+  static const Map<JobStatus, Color> statusColors = {
+    JobStatus.newOrder: Color(0xFFFF8600), // orange — new order to accept
+    JobStatus.today: Color(0xFFFFBD00), // yellow — due today
+    JobStatus.overdue: Color(0xFFF44336), // red — overdue, not done
+    JobStatus.upcoming: Color(0xFF0DCDFC), // blue — upcoming (tomorrow onward)
+    JobStatus.done: Color(0xFF10B981), // green — completed
+  };
 
-  static const List<_DayData> _days = [
-    _DayData('อา', 5, 0),
-    _DayData('จ', 6, 0),
-    _DayData('อ', 7, 2),
-    _DayData('พ', 8, 4),
-    _DayData('พฤ', 9, 5),
-    _DayData('ศ', 10, 3, selected: true),
-    _DayData('ส', 11, 1),
-  ];
+  /// Builds the current Sunday→Saturday week from [now], tagging each day with
+  /// mock job statuses relative to today. To wire real data, replace
+  /// [_mockStatuses] with a lookup into the actual calendar/job source.
+  /// Sunday→Saturday week containing [anchor]. The filled day is [selected]
+  /// (null = none); job-status colours are computed relative to [today].
+  static List<_DayData> buildWeek(
+      DateTime anchor, DateTime? selected, DateTime today) {
+    final DateTime a = DateTime(anchor.year, anchor.month, anchor.day);
+    final DateTime t = DateTime(today.year, today.month, today.day);
+    final DateTime? sel = selected == null
+        ? null
+        : DateTime(selected.year, selected.month, selected.day);
+    final int fromSunday = a.weekday % 7; // Dart: Mon=1..Sun=7 → Sun=0
+    final DateTime sunday = a.subtract(Duration(days: fromSunday));
+    const List<String> labels = ['อา', 'จ', 'อ', 'พ', 'พฤ', 'ศ', 'ส'];
+    return List<_DayData>.generate(7, (i) {
+      final DateTime d = sunday.add(Duration(days: i));
+      final int diff = d.difference(t).inDays;
+      return _DayData(labels[i], d, _mockStatuses(diff), selected: d == sel);
+    });
+  }
+
+  // Mock jobs per day, keyed by offset from today. Status is date-relative:
+  // past-and-undone → overdue (red), today → yellow, future → blue; new orders
+  // (orange) and completed (green) can appear on any day.
+  // At most one dot per status in a single day.
+  static List<JobStatus> _mockStatuses(int diff) {
+    switch (diff) {
+      case -2:
+        return const [JobStatus.overdue, JobStatus.done];
+      case -1:
+        return const [JobStatus.overdue, JobStatus.done];
+      case 0:
+        return const [JobStatus.newOrder, JobStatus.today, JobStatus.done];
+      case 1:
+        return const [JobStatus.newOrder, JobStatus.upcoming];
+      case 2:
+        return const [JobStatus.upcoming, JobStatus.done];
+      case 3:
+        return const [JobStatus.upcoming];
+      default:
+        if (diff < -2) return const [JobStatus.done];
+        return const []; // free day — no jobs
+    }
+  }
+
+  @override
+  State<HomeCalendarStrip> createState() => _HomeCalendarStripState();
+}
+
+class _HomeCalendarStripState extends State<HomeCalendarStrip> {
+  late DateTime _anchorDate; // week + month currently shown
+  DateTime? _selectedDate; // day with the filled circle (null = none)
+
+  @override
+  void initState() {
+    super.initState();
+    final DateTime n = widget.initialDate ?? DateTime.now();
+    final DateTime d = DateTime(n.year, n.month, n.day);
+    _anchorDate = d;
+    _selectedDate = d; // today starts selected
+  }
+
+  // Tap a day / pick from the calendar → select it and jump to its week.
+  void _selectDate(DateTime date) {
+    final DateTime d = DateTime(date.year, date.month, date.day);
+    setState(() {
+      _selectedDate = d;
+      _anchorDate = d;
+    });
+  }
+
+  // Swipe → move the viewed week only; the selection stays put.
+  void _setAnchor(DateTime date) {
+    final DateTime d = DateTime(date.year, date.month, date.day);
+    if (d == _anchorDate) return;
+    setState(() => _anchorDate = d);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -67,13 +135,22 @@ class HomeCalendarStrip extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         HomeCalendarHeader(
-          initialDate: initialDate,
-          selectedView: selectedView,
-          onViewChanged: onViewChanged,
-          onMonthTap: onMonthTap,
+          date: _anchorDate,
+          selectedView: widget.selectedView,
+          onViewChanged: widget.onViewChanged,
+          onMonthTap: widget.onMonthTap,
+          onDatePicked: _selectDate,
         ),
         const SizedBox(height: 16.0),
-        HomeWeekStrip(onDaySelected: onDaySelected),
+        HomeWeekStrip(
+          anchorDate: _anchorDate,
+          selectedDate: _selectedDate,
+          onAnchorChanged: _setAnchor,
+          onDaySelected: (DateTime date) {
+            _selectDate(date);
+            widget.onDaySelected?.call(date.day);
+          },
+        ),
       ],
     );
   }
@@ -86,16 +163,18 @@ class HomeCalendarStrip extends StatelessWidget {
 class HomeCalendarHeader extends StatefulWidget {
   const HomeCalendarHeader({
     super.key,
-    this.initialDate,
+    required this.date,
     this.selectedView = HomeCalendarView.agenda,
     this.onViewChanged,
     this.onMonthTap,
+    this.onDatePicked,
   });
 
-  final DateTime? initialDate;
+  final DateTime date;
   final HomeCalendarView selectedView;
   final ValueChanged<HomeCalendarView>? onViewChanged;
   final VoidCallback? onMonthTap;
+  final ValueChanged<DateTime>? onDatePicked;
 
   @override
   State<HomeCalendarHeader> createState() => _HomeCalendarHeaderState();
@@ -103,7 +182,6 @@ class HomeCalendarHeader extends StatefulWidget {
 
 class _HomeCalendarHeaderState extends State<HomeCalendarHeader> {
   late HomeCalendarView _selected = widget.selectedView;
-  late DateTime _pickedDate = widget.initialDate ?? DateTime(2026, 7, 10);
 
   @override
   void didUpdateWidget(covariant HomeCalendarHeader oldWidget) {
@@ -125,10 +203,10 @@ class _HomeCalendarHeaderState extends State<HomeCalendarHeader> {
         height: MediaQuery.of(context).size.height / 3,
         width: MediaQuery.of(context).size.width,
         child: ThaiDatePicker(
-          initialDate: _pickedDate,
+          initialDate: widget.date,
           firstDate: DateTime(1900),
           lastDate: DateTime(2050),
-          onChanged: (d) => setState(() => _pickedDate = d),
+          onChanged: (d) => widget.onDatePicked?.call(d),
         ),
       ),
     );
@@ -154,10 +232,10 @@ class _HomeCalendarHeaderState extends State<HomeCalendarHeader> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     const Icon(Icons.calendar_month_rounded,
-                        size: 16.0, color: HomeCalendarStrip._secondary),
+                        size: 16.0, color: HomeCalendarStrip._primaryText),
                     const SizedBox(width: 8.0),
                     Text(
-                      formatThaiMonthYear(_pickedDate),
+                      formatThaiMonthYear(widget.date),
                       style: const TextStyle(
                         fontSize: 16.0,
                         fontWeight: FontWeight.w500,
@@ -166,7 +244,7 @@ class _HomeCalendarHeaderState extends State<HomeCalendarHeader> {
                     ),
                     const SizedBox(width: 8.0),
                     const Icon(Icons.unfold_more_rounded,
-                        size: 16.0, color: HomeCalendarStrip._gray01),
+                        size: 16.0, color: HomeCalendarStrip._primaryText),
                   ],
                 ),
               ),
@@ -184,28 +262,84 @@ class _HomeCalendarHeaderState extends State<HomeCalendarHeader> {
 
 /// The horizontal week row of day capsules plus the bottom divider. Used both
 /// inline (inside [HomeCalendarStrip]) and as the pinned sticky sliver header.
-class HomeWeekStrip extends StatelessWidget {
-  const HomeWeekStrip({super.key, this.onDaySelected});
+class HomeWeekStrip extends StatefulWidget {
+  const HomeWeekStrip({
+    super.key,
+    required this.anchorDate,
+    this.selectedDate,
+    this.onAnchorChanged,
+    this.onDaySelected,
+  });
 
-  final ValueChanged<int>? onDaySelected;
+  final DateTime anchorDate;
+  final DateTime? selectedDate;
+  final ValueChanged<DateTime>? onAnchorChanged;
+  final ValueChanged<DateTime>? onDaySelected;
+
+  @override
+  State<HomeWeekStrip> createState() => _HomeWeekStripState();
+}
+
+class _HomeWeekStripState extends State<HomeWeekStrip> {
+  // Slide-in direction for the next rebuild: 1 = from the right (next week),
+  // -1 = from the left (previous week), 0 = no animation (first build).
+  int _dir = 0;
+
+  @override
+  void didUpdateWidget(covariant HomeWeekStrip oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.anchorDate.isAfter(oldWidget.anchorDate)) {
+      _dir = 1;
+    } else if (widget.anchorDate.isBefore(oldWidget.anchorDate)) {
+      _dir = -1;
+    }
+  }
+
+  void _shiftWeek(int weeks) => widget.onAnchorChanged
+      ?.call(widget.anchorDate.add(Duration(days: 7 * weeks)));
 
   @override
   Widget build(BuildContext context) {
+    final DateTime sunday = widget.anchorDate
+        .subtract(Duration(days: widget.anchorDate.weekday % 7));
+    final List<_DayData> days = HomeCalendarStrip.buildWeek(
+        widget.anchorDate, widget.selectedDate, DateTime.now());
     return Column(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Row(
-          spacing: 12.0,
-          children: HomeCalendarStrip._days
-              .map((d) => Expanded(
-                    child: _DayCapsule(
-                      data: d,
-                      dotColors: HomeCalendarStrip._progressColors,
-                      onTap: () => onDaySelected?.call(d.day),
-                    ),
-                  ))
-              .toList(),
+        GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onHorizontalDragEnd: (details) {
+            final double v = details.primaryVelocity ?? 0;
+            if (v < -80) {
+              _shiftWeek(1); // swipe left → next week
+            } else if (v > 80) {
+              _shiftWeek(-1); // swipe right → previous week
+            }
+          },
+          // Paint-only slide (Transform) keeps the row's layout height stable.
+          child: TweenAnimationBuilder<double>(
+            key: ValueKey<DateTime>(sunday),
+            tween: Tween<double>(begin: _dir.toDouble(), end: 0.0),
+            duration: const Duration(milliseconds: 220),
+            curve: Curves.easeOut,
+            builder: (context, value, child) => Transform.translate(
+              offset: Offset(value * MediaQuery.of(context).size.width, 0),
+              child: child,
+            ),
+            child: Row(
+              spacing: 12.0,
+              children: days
+                  .map((d) => Expanded(
+                        child: _DayCapsule(
+                          data: d,
+                          onTap: () => widget.onDaySelected?.call(d.date),
+                        ),
+                      ))
+                  .toList(),
+            ),
+          ),
         ),
         const SizedBox(height: 12.0),
         // ── Bottom divider line (full-bleed to screen edges) ──────────────
@@ -288,12 +422,21 @@ class HomeCollapsingStripDelegate extends SliverPersistentHeaderDelegate {
     final double range = expandedHeight - collapsedHeight;
     final double t =
         range <= 0 ? 1.0 : (shrinkOffset / range).clamp(0.0, 1.0);
-    final Color bg =
-        Color.lerp(expandedColor, collapsedColor, t) ?? expandedColor;
+    // Expanded: a blue→light gradient (blends the profile bar into the strip).
+    // As it collapses the light stops lerp to blue, so the pinned capsule bar
+    // ends up a solid blue that matches the status bar.
+    final Color mid = Color.lerp(expandedColor, collapsedColor, t) ?? expandedColor;
     // Anchor the full-height strip to the bottom and clip the overflow, so the
     // top (wordmark/month/toggle) is what disappears as the header shrinks.
-    return ColoredBox(
-      color: bg,
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [collapsedColor, mid, mid],
+          stops: const [0.0, 0.4, 0.8],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+        ),
+      ),
       child: ClipRect(
         child: OverflowBox(
           alignment: Alignment.bottomCenter,
@@ -316,12 +459,19 @@ class HomeCollapsingStripDelegate extends SliverPersistentHeaderDelegate {
 
 enum HomeCalendarView { agenda, map, calendar }
 
+/// Job status shown as a coloured dot on a day capsule.
+/// newOrder = order to accept, today = due today, overdue = past & undone,
+/// upcoming = tomorrow onward, done = completed.
+enum JobStatus { newOrder, today, overdue, upcoming, done }
+
 class _DayData {
-  const _DayData(this.weekday, this.day, this.dotCount, {this.selected = false});
+  const _DayData(this.weekday, this.date, this.statuses,
+      {this.selected = false});
   final String weekday;
-  final int day;
-  final int dotCount;
+  final DateTime date;
+  final List<JobStatus> statuses;
   final bool selected;
+  int get day => date.day;
 }
 
 class _Wordmark extends StatefulWidget {
@@ -344,6 +494,23 @@ class _WordmarkState extends State<_Wordmark>
     letterSpacing: -0.3,
     height: 1.0,
     color: Colors.white, // painted by the gradient shader
+  );
+
+  // Behind the gradient text: transparent glyphs that cast only the drop
+  // shadow (so the shadow isn't tinted/masked by the gradient ShaderMask).
+  static const TextStyle _shadowStyle = TextStyle(
+    fontSize: 28.0,
+    fontWeight: FontWeight.w800,
+    letterSpacing: -0.3,
+    height: 1.0,
+    color: Colors.transparent,
+    shadows: [
+      Shadow(
+        color: Color(0x2C000000),
+        offset: Offset(0, 2),
+        blurRadius: 4,
+      ),
+    ],
   );
 
   late final AnimationController _controller =
@@ -372,20 +539,23 @@ class _WordmarkState extends State<_Wordmark>
   @override
   Widget build(BuildContext context) {
     // Base: horizontal gradient across the whole wordmark: blue → navy → purple.
-    final Widget gradientText = ShaderMask(
-      shaderCallback: (bounds) => const LinearGradient(
-        begin: Alignment.centerLeft,
-        end: Alignment.centerRight,
-        colors: [
-          Color(0xFF33A0F3), // primary blue (Atlas)
-          Color(0xFF004078), // secondary navy
-          Color(0xFF041228), // primary text (Home)
-          Color(0xFF8A3FD1), // violet
-          Color(0xFFC24DE8), // purple (Care)
-        ],
-        stops: [0.0, 0.30, 0.50, 0.80, 1.0],
-      ).createShader(bounds),
-      child: const Text(_text, style: _style),
+    final Widget gradientText = Stack(
+      children: [
+        const Text(_text, style: _shadowStyle),
+        ShaderMask(
+          shaderCallback: (bounds) => const LinearGradient(
+            begin: Alignment.centerLeft,
+            end: Alignment.centerRight,
+            colors: [
+              Color(0xFF004078), // secondary navy
+              Color(0xFFB238EB), // purple
+              Color(0xFFFD41B2), // pink
+            ],
+            stops: [0.0, 0.54327, 1.0],
+          ).createShader(bounds),
+          child: const Text(_text, style: _style),
+        ),
+      ],
     );
 
     return AnimatedBuilder(
@@ -512,15 +682,17 @@ class _ToggleIcon extends StatelessWidget {
 }
 
 class _DayCapsule extends StatelessWidget {
-  const _DayCapsule(
-      {required this.data, required this.dotColors, required this.onTap});
+  const _DayCapsule({required this.data, required this.onTap});
 
   final _DayData data;
-  final List<Color> dotColors;
   final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
+    final DateTime now = DateTime.now();
+    final bool isToday = data.date.year == now.year &&
+        data.date.month == now.month &&
+        data.date.day == now.day;
     return InkWell(
       onTap: onTap,
       borderRadius: BorderRadius.circular(200.0),
@@ -557,17 +729,17 @@ class _DayCapsule extends StatelessWidget {
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: List.generate(
-                  data.dotCount,
+                  data.statuses.length,
                   (i) => Container(
                     width: 7.0,
                     height: 6.0,
                     decoration: BoxDecoration(
-                      color: dotColors[i % dotColors.length],
+                      color: HomeCalendarStrip.statusColors[data.statuses[i]],
                       borderRadius: BorderRadius.horizontal(
                         left: i == 0
                             ? const Radius.circular(10.0)
                             : Radius.zero,
-                        right: i == data.dotCount - 1
+                        right: i == data.statuses.length - 1
                             ? const Radius.circular(10.0)
                             : Radius.zero,
                       ),
@@ -582,9 +754,14 @@ class _DayCapsule extends StatelessWidget {
               height: 36.0,
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                color:
-                    data.selected ? HomeCalendarStrip._primary : Colors.transparent,
+                color: data.selected
+                    ? HomeCalendarStrip._primary
+                    : Colors.transparent,
                 shape: BoxShape.circle,
+                // Today (when it isn't the selected day) is marked with a ring.
+                border: !data.selected && isToday
+                    ? Border.all(color: HomeCalendarStrip._primary, width: 1.5)
+                    : null,
               ),
               child: Text(
                 '${data.day}',
@@ -593,7 +770,9 @@ class _DayCapsule extends StatelessWidget {
                   fontWeight: FontWeight.w600,
                   color: data.selected
                       ? HomeCalendarStrip._white
-                      : HomeCalendarStrip._primaryText,
+                      : (isToday
+                          ? HomeCalendarStrip._primary
+                          : HomeCalendarStrip._primaryText),
                 ),
               ),
             ),
