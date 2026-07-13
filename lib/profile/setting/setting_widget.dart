@@ -89,34 +89,34 @@ class _SettingWidgetState extends State<SettingWidget> {
       // vertical rhythm across every settings card.
       height: 36.0,
       child: Row(
-      children: [
-        Expanded(
-          child: Row(
-            children: [
-              leading,
-              const SizedBox(width: 12.0),
-              Flexible(
-                child: Text(
-                  label,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: FlutterFlowTheme.of(context).bodyLarge.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).bodyLargeFamily,
-                        color: Colors.black,
-                        fontSize: 16.0,
-                        letterSpacing: -0.3,
-                        useGoogleFonts:
-                            !FlutterFlowTheme.of(context).bodyLargeIsCustom,
-                      ),
+        children: [
+          Expanded(
+            child: Row(
+              children: [
+                leading,
+                const SizedBox(width: 12.0),
+                Flexible(
+                  child: Text(
+                    label,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: FlutterFlowTheme.of(context).bodyLarge.override(
+                          fontFamily:
+                              FlutterFlowTheme.of(context).bodyLargeFamily,
+                          color: Colors.black,
+                          fontSize: 16.0,
+                          letterSpacing: -0.3,
+                          useGoogleFonts:
+                              !FlutterFlowTheme.of(context).bodyLargeIsCustom,
+                        ),
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
-        trailing,
-      ],
-    ),
+          trailing,
+        ],
+      ),
     );
     if (onTap == null) return row;
     return InkWell(
@@ -154,8 +154,7 @@ class _SettingWidgetState extends State<SettingWidget> {
               color: _gray01,
               fontSize: 16.0,
               letterSpacing: -0.3,
-              useGoogleFonts:
-                  !FlutterFlowTheme.of(context).bodyMediumIsCustom,
+              useGoogleFonts: !FlutterFlowTheme.of(context).bodyMediumIsCustom,
             ),
       );
 
@@ -245,7 +244,8 @@ class _SettingWidgetState extends State<SettingWidget> {
                 decoration: BoxDecoration(
                   color: const Color(0xFF85C5F8),
                   shape: BoxShape.circle,
-                  border: Border.all(color: const Color(0xFFF2FAFF), width: 4.0),
+                  border:
+                      Border.all(color: const Color(0xFFF2FAFF), width: 4.0),
                 ),
                 // Only the blue disc behind grows; the character art keeps its
                 // original 100px size, centred, so a thin blue halo appears
@@ -255,22 +255,9 @@ class _SettingWidgetState extends State<SettingWidget> {
                     child: SizedBox(
                       width: 100.0,
                       height: 100.0,
-                      child: Image.network(
-                        'https://randomuser.me/api/portraits/men/32.jpg',
+                      child: Image.asset(
+                        'assets/images/user_avatar.jpg',
                         fit: BoxFit.cover,
-                        loadingBuilder: (context, child, progress) {
-                          if (progress == null) return child;
-                          return const Center(
-                            child: SizedBox(
-                              width: 24.0,
-                              height: 24.0,
-                              child: CircularProgressIndicator(
-                                strokeWidth: 2.0,
-                                color: Colors.white,
-                              ),
-                            ),
-                          );
-                        },
                         errorBuilder: (context, error, stackTrace) =>
                             Image.asset(
                           'assets/images/doc1.png',
@@ -301,8 +288,8 @@ class _SettingWidgetState extends State<SettingWidget> {
                         fontSize: 20.0,
                         letterSpacing: -0.3,
                         fontWeight: FontWeight.bold,
-                        useGoogleFonts: !FlutterFlowTheme.of(context)
-                            .titleMediumIsCustom,
+                        useGoogleFonts:
+                            !FlutterFlowTheme.of(context).titleMediumIsCustom,
                       ),
                 ),
                 const SizedBox(height: 12.0),
@@ -318,8 +305,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                       color: const Color(0xFFD0D8E0),
                     ),
                     Flexible(
-                      child: _roleChip(
-                          'assets/images/set_ic_role_hospital.svg',
+                      child: _roleChip('assets/images/set_ic_role_hospital.svg',
                           'รพ.บางกอก เมดิคอล เทคโนโลยี'),
                     ),
                   ],
@@ -377,283 +363,311 @@ class _SettingWidgetState extends State<SettingWidget> {
           statusBarColor: Colors.transparent,
         ),
         child: Scaffold(
-        key: scaffoldKey,
-        // Grey-blue so nothing behind the navbar's rounded top corners shows
-        // white; the content bg and this share one colour end-to-end.
-        backgroundColor: const Color(0xFFF5F7FA),
-        body: SafeArea(
-          top: false,
-          bottom: false,
-          child: Column(
-            children: [
-              Expanded(
-                child: LayoutBuilder(
-                  builder: (context, constraints) => SingleChildScrollView(
-                    child: ConstrainedBox(
-                      constraints:
-                          BoxConstraints(minHeight: constraints.maxHeight),
-                      child: IntrinsicHeight(
-                        child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      _profileHeader(),
-                      Expanded(
-                        child: Container(
-                        width: double.infinity,
-                        decoration: const BoxDecoration(
-                          color: Color(0xFFF5F7FA),
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(24.0),
-                            topRight: Radius.circular(24.0),
-                          ),
-                        ),
-                        child: Padding(
-                          padding:
-                              const EdgeInsets.fromLTRB(16.0, 24.0, 16.0, 16.0),
+          key: scaffoldKey,
+          // Grey-blue so nothing behind the navbar's rounded top corners shows
+          // white; the content bg and this share one colour end-to-end.
+          backgroundColor: const Color(0xFFF5F7FA),
+          body: SafeArea(
+            top: false,
+            bottom: false,
+            child: Column(
+              children: [
+                Expanded(
+                  child: LayoutBuilder(
+                    builder: (context, constraints) => SingleChildScrollView(
+                      child: ConstrainedBox(
+                        constraints:
+                            BoxConstraints(minHeight: constraints.maxHeight),
+                        child: IntrinsicHeight(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
-                                'การตั้งค่าและความปลอดภัย',
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily,
-                                      color: _gray01,
-                                      fontSize: 14.0,
-                                      letterSpacing: -0.3,
-                                      useGoogleFonts:
-                                          !FlutterFlowTheme.of(context)
-                                              .bodyMediumIsCustom,
+                              _profileHeader(),
+                              Expanded(
+                                child: Container(
+                                  width: double.infinity,
+                                  decoration: const BoxDecoration(
+                                    color: Color(0xFFF5F7FA),
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(24.0),
+                                      topRight: Radius.circular(24.0),
                                     ),
-                              ),
-                              const SizedBox(height: 16.0),
-                              // Card 1
-                              _card([
-                                _tile(
-                                  leading: _iconBox(
-                                    colors: const [
-                                      Color(0xFF29E5B4),
-                                      Color(0xFF008E6D)
-                                    ],
-                                    asset: 'assets/images/set_ic_notify.svg',
                                   ),
-                                  label: 'การแจ้งเตือน',
-                                  trailing: _switch(
-                                    _model.switchValue1!,
-                                    (v) => safeSetState(
-                                        () => _model.switchValue1 = v),
-                                  ),
-                                ),
-                                _tile(
-                                  leading: _iconBox(
-                                    colors: const [
-                                      Color(0xFF8CF5A0),
-                                      Color(0xFF14B633)
-                                    ],
-                                    asset: 'assets/images/set_ic_call.svg',
-                                  ),
-                                  label: 'Telemedicine Settings',
-                                  trailing: _switch(
-                                    _model.switchValue2!,
-                                    (v) => safeSetState(
-                                        () => _model.switchValue2 = v),
-                                  ),
-                                ),
-                                _tile(
-                                  leading: _iconBox(
-                                    colors: const [
-                                      Color(0xFF9DF4FF),
-                                      Color(0xFF00B2FF)
-                                    ],
-                                    icon: Icons.mic,
-                                  ),
-                                  label: 'ส่งตรวจ',
-                                  trailing: _switch(
-                                    _model.switchValue3!,
-                                    (v) => safeSetState(
-                                        () => _model.switchValue3 = v),
-                                  ),
-                                ),
-                                _tile(
-                                  leading: _iconBox(
-                                    colors: const [
-                                      Color(0xFFFFBFE6),
-                                      Color(0xFFFF57D2)
-                                    ],
-                                    asset: 'assets/images/set_ic_code.svg',
-                                    iconWidth: 14.0,
-                                    iconHeight: 14.0,
-                                  ),
-                                  label: 'สิทธิใน Authen Code',
-                                  trailing: _chevron,
-                                  onTap: () async {
-                                    context
-                                        .pushNamed(AuthenCodeWidget.routeName);
-                                  },
-                                ),
-                                _tile(
-                                  leading: _iconBox(
-                                    colors: const [
-                                      Color(0xFF4DA3FF),
-                                      Color(0xFF004078)
-                                    ],
-                                    asset: 'assets/images/set_ic_world.svg',
-                                    iconWidth: 13.0,
-                                    iconHeight: 13.0,
-                                  ),
-                                  label: 'เชื่อมต่ออุปกรณ์วัด Vital Sign',
-                                  trailing: _chevron,
-                                  onTap: () async {
-                                    await showModalBottomSheet(
-                                      context: context,
-                                      isScrollControlled: true,
-                                      isDismissible: true,
-                                      enableDrag: true,
-                                      backgroundColor: Colors.transparent,
-                                      builder: (sheetContext) {
-                                        return const ChooseCompanyWidget();
-                                      },
-                                    );
-                                  },
-                                ),
-                                _tile(
-                                  leading: _iconBox(
-                                    colors: const [
-                                      Color(0xFFFFAE00),
-                                      Color(0xFFF6F0BD)
-                                    ],
-                                    begin: const AlignmentDirectional(0.0, 1.0),
-                                    end: const AlignmentDirectional(0.0, -1.0),
-                                    asset: 'assets/images/set_ic_lock.svg',
-                                  ),
-                                  label: 'เปลี่ยนรหัส PIN',
-                                  trailing: _chevron,
-                                  onTap: () async {
-                                    context.pushNamed(OldPINWidget.routeName);
-                                  },
-                                ),
-                              ]),
-                              const SizedBox(height: 16.0),
-                              // Card 2
-                              _card([
-                                _tile(
-                                  leading: _iconBox(
-                                    colors: const [
-                                      Color(0xFF28E841),
-                                      Color(0xFF259029)
-                                    ],
-                                    icon: Icons.report_rounded,
-                                  ),
-                                  label: 'แจ้งปัญหาการใช้งาน',
-                                  trailing: _chevron,
-                                  onTap: () async {
-                                    context.pushNamed(ReportWidget.routeName);
-                                  },
-                                ),
-                                _tile(
-                                  leading: _iconBox(
-                                    colors: const [
-                                      Color(0xFFFFDBCE),
-                                      Color(0xFFFF5D51)
-                                    ],
-                                    asset: 'assets/images/set_ic_book.svg',
-                                    iconWidth: 14.0,
-                                    iconHeight: 14.0,
-                                  ),
-                                  label: 'Terms of Use',
-                                  trailing: _chevron,
-                                  onTap: () async {
-                                    await launchURL(
-                                        'https://atlasplatform.in.th/termsOfUse');
-                                  },
-                                ),
-                                _tile(
-                                  leading: _iconBox(
-                                    colors: const [
-                                      Color(0xFFCDADFF),
-                                      Color(0xFF6D33F4)
-                                    ],
-                                    asset: 'assets/images/set_ic_protect.svg',
-                                    iconWidth: 12.0,
-                                    iconHeight: 13.5,
-                                  ),
-                                  label: 'นโยบายความเป็นส่วนตัว',
-                                  trailing: _chevron,
-                                  onTap: () async {
-                                    context.pushNamed(MePdpaWidget.routeName);
-                                  },
-                                ),
-                                _tile(
-                                  leading: _iconBox(
-                                    colors: const [
-                                      Color(0xFF339FF3),
-                                      Color(0xFFA6CDFF)
-                                    ],
-                                    begin: const AlignmentDirectional(0.0, 1.0),
-                                    end: const AlignmentDirectional(0.0, -1.0),
-                                    asset: 'assets/images/set_ic_info.svg',
-                                  ),
-                                  label: 'เกี่ยวกับแอปพลเคชั่น',
-                                  trailing: _trailingText('เวอร์ชัน 2.0.0'),
-                                ),
-                              ]),
-                              const SizedBox(height: 16.0),
-                              // Card 3
-                              _card([
-                                _tile(
-                                  leading: _iconBox(
-                                    colors: const [
-                                      Color(0xFFFFA7A8),
-                                      Color(0xFFFF0000)
-                                    ],
-                                    asset: 'assets/images/set_ic_logout.svg',
-                                  ),
-                                  label: 'ออกจากระบบ',
-                                  trailing: _chevron,
-                                  onTap: () async {
-                                    await showModalBottomSheet(
-                                      isScrollControlled: true,
-                                      backgroundColor: Colors.transparent,
-                                      enableDrag: false,
-                                      context: context,
-                                      builder: (context) {
-                                        return GestureDetector(
-                                          onTap: () {
-                                            FocusScope.of(context).unfocus();
-                                            FocusManager.instance.primaryFocus
-                                                ?.unfocus();
-                                          },
-                                          child: Padding(
-                                            padding:
-                                                MediaQuery.viewInsetsOf(context),
-                                            child: const LogoutSystemWidget(),
+                                  child: Padding(
+                                    padding: const EdgeInsets.fromLTRB(
+                                        16.0, 24.0, 16.0, 16.0),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          'การตั้งค่าและความปลอดภัย',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMediumFamily,
+                                                color: _gray01,
+                                                fontSize: 14.0,
+                                                letterSpacing: -0.3,
+                                                useGoogleFonts:
+                                                    !FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMediumIsCustom,
+                                              ),
+                                        ),
+                                        const SizedBox(height: 16.0),
+                                        // Card 1
+                                        _card([
+                                          _tile(
+                                            leading: _iconBox(
+                                              colors: const [
+                                                Color(0xFF29E5B4),
+                                                Color(0xFF008E6D)
+                                              ],
+                                              asset:
+                                                  'assets/images/set_ic_notify.svg',
+                                            ),
+                                            label: 'การแจ้งเตือน',
+                                            trailing: _switch(
+                                              _model.switchValue1!,
+                                              (v) => safeSetState(() =>
+                                                  _model.switchValue1 = v),
+                                            ),
                                           ),
-                                        );
-                                      },
-                                    ).then((value) => safeSetState(() {}));
-                                  },
+                                          _tile(
+                                            leading: _iconBox(
+                                              colors: const [
+                                                Color(0xFF8CF5A0),
+                                                Color(0xFF14B633)
+                                              ],
+                                              asset:
+                                                  'assets/images/set_ic_call.svg',
+                                            ),
+                                            label: 'Telemedicine Settings',
+                                            trailing: _switch(
+                                              _model.switchValue2!,
+                                              (v) => safeSetState(() =>
+                                                  _model.switchValue2 = v),
+                                            ),
+                                          ),
+                                          _tile(
+                                            leading: _iconBox(
+                                              colors: const [
+                                                Color(0xFF9DF4FF),
+                                                Color(0xFF00B2FF)
+                                              ],
+                                              icon: Icons.mic,
+                                            ),
+                                            label: 'ส่งตรวจ',
+                                            trailing: _switch(
+                                              _model.switchValue3!,
+                                              (v) => safeSetState(() =>
+                                                  _model.switchValue3 = v),
+                                            ),
+                                          ),
+                                          _tile(
+                                            leading: _iconBox(
+                                              colors: const [
+                                                Color(0xFFFFBFE6),
+                                                Color(0xFFFF57D2)
+                                              ],
+                                              asset:
+                                                  'assets/images/set_ic_code.svg',
+                                              iconWidth: 14.0,
+                                              iconHeight: 14.0,
+                                            ),
+                                            label: 'สิทธิใน Authen Code',
+                                            trailing: _chevron,
+                                            onTap: () async {
+                                              context.pushNamed(
+                                                  AuthenCodeWidget.routeName);
+                                            },
+                                          ),
+                                          _tile(
+                                            leading: _iconBox(
+                                              colors: const [
+                                                Color(0xFF4DA3FF),
+                                                Color(0xFF004078)
+                                              ],
+                                              asset:
+                                                  'assets/images/set_ic_world.svg',
+                                              iconWidth: 13.0,
+                                              iconHeight: 13.0,
+                                            ),
+                                            label:
+                                                'เชื่อมต่ออุปกรณ์วัด Vital Sign',
+                                            trailing: _chevron,
+                                            onTap: () async {
+                                              await showModalBottomSheet(
+                                                context: context,
+                                                isScrollControlled: true,
+                                                isDismissible: true,
+                                                enableDrag: true,
+                                                backgroundColor:
+                                                    Colors.transparent,
+                                                builder: (sheetContext) {
+                                                  return const ChooseCompanyWidget();
+                                                },
+                                              );
+                                            },
+                                          ),
+                                          _tile(
+                                            leading: _iconBox(
+                                              colors: const [
+                                                Color(0xFFFFAE00),
+                                                Color(0xFFF6F0BD)
+                                              ],
+                                              begin: const AlignmentDirectional(
+                                                  0.0, 1.0),
+                                              end: const AlignmentDirectional(
+                                                  0.0, -1.0),
+                                              asset:
+                                                  'assets/images/set_ic_lock.svg',
+                                            ),
+                                            label: 'เปลี่ยนรหัส PIN',
+                                            trailing: _chevron,
+                                            onTap: () async {
+                                              context.pushNamed(
+                                                  OldPINWidget.routeName);
+                                            },
+                                          ),
+                                        ]),
+                                        const SizedBox(height: 16.0),
+                                        // Card 2
+                                        _card([
+                                          _tile(
+                                            leading: _iconBox(
+                                              colors: const [
+                                                Color(0xFF28E841),
+                                                Color(0xFF259029)
+                                              ],
+                                              icon: Icons.report_rounded,
+                                            ),
+                                            label: 'แจ้งปัญหาการใช้งาน',
+                                            trailing: _chevron,
+                                            onTap: () async {
+                                              context.pushNamed(
+                                                  ReportWidget.routeName);
+                                            },
+                                          ),
+                                          _tile(
+                                            leading: _iconBox(
+                                              colors: const [
+                                                Color(0xFFFFDBCE),
+                                                Color(0xFFFF5D51)
+                                              ],
+                                              asset:
+                                                  'assets/images/set_ic_book.svg',
+                                              iconWidth: 14.0,
+                                              iconHeight: 14.0,
+                                            ),
+                                            label: 'Terms of Use',
+                                            trailing: _chevron,
+                                            onTap: () async {
+                                              await launchURL(
+                                                  'https://atlasplatform.in.th/termsOfUse');
+                                            },
+                                          ),
+                                          _tile(
+                                            leading: _iconBox(
+                                              colors: const [
+                                                Color(0xFFCDADFF),
+                                                Color(0xFF6D33F4)
+                                              ],
+                                              asset:
+                                                  'assets/images/set_ic_protect.svg',
+                                              iconWidth: 12.0,
+                                              iconHeight: 13.5,
+                                            ),
+                                            label: 'นโยบายความเป็นส่วนตัว',
+                                            trailing: _chevron,
+                                            onTap: () async {
+                                              context.pushNamed(
+                                                  MePdpaWidget.routeName);
+                                            },
+                                          ),
+                                          _tile(
+                                            leading: _iconBox(
+                                              colors: const [
+                                                Color(0xFF339FF3),
+                                                Color(0xFFA6CDFF)
+                                              ],
+                                              begin: const AlignmentDirectional(
+                                                  0.0, 1.0),
+                                              end: const AlignmentDirectional(
+                                                  0.0, -1.0),
+                                              asset:
+                                                  'assets/images/set_ic_info.svg',
+                                            ),
+                                            label: 'เกี่ยวกับแอปพลเคชั่น',
+                                            trailing:
+                                                _trailingText('เวอร์ชัน 2.0.0'),
+                                          ),
+                                        ]),
+                                        const SizedBox(height: 16.0),
+                                        // Card 3
+                                        _card([
+                                          _tile(
+                                            leading: _iconBox(
+                                              colors: const [
+                                                Color(0xFFFFA7A8),
+                                                Color(0xFFFF0000)
+                                              ],
+                                              asset:
+                                                  'assets/images/set_ic_logout.svg',
+                                            ),
+                                            label: 'ออกจากระบบ',
+                                            trailing: _chevron,
+                                            onTap: () async {
+                                              await showModalBottomSheet(
+                                                isScrollControlled: true,
+                                                backgroundColor:
+                                                    Colors.transparent,
+                                                enableDrag: false,
+                                                context: context,
+                                                builder: (context) {
+                                                  return GestureDetector(
+                                                    onTap: () {
+                                                      FocusScope.of(context)
+                                                          .unfocus();
+                                                      FocusManager
+                                                          .instance.primaryFocus
+                                                          ?.unfocus();
+                                                    },
+                                                    child: Padding(
+                                                      padding: MediaQuery
+                                                          .viewInsetsOf(
+                                                              context),
+                                                      child:
+                                                          const LogoutSystemWidget(),
+                                                    ),
+                                                  );
+                                                },
+                                              ).then((value) =>
+                                                  safeSetState(() {}));
+                                            },
+                                          ),
+                                        ]),
+                                        const SizedBox(height: 16.0),
+                                      ],
+                                    ),
+                                  ),
                                 ),
-                              ]),
-                              const SizedBox(height: 16.0),
+                              ),
                             ],
                           ),
                         ),
                       ),
-                      ),
-                    ],
-                  ),
-                  ),
-                  ),
+                    ),
                   ),
                 ),
-              ),
-              const NavbarWidget(navbar: 4),
-            ],
+                const NavbarWidget(navbar: 4),
+              ],
+            ),
           ),
         ),
-      ),
       ),
     );
   }

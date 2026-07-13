@@ -122,8 +122,8 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                             decoration: const BoxDecoration(
                               shape: BoxShape.circle,
                             ),
-                            child: Image.network(
-                              'https://randomuser.me/api/portraits/men/32.jpg',
+                            child: Image.asset(
+                              'assets/images/user_avatar.jpg',
                               fit: BoxFit.cover,
                               alignment: const Alignment(0.0, 1.0),
                               errorBuilder: (context, error, stackTrace) =>
@@ -223,8 +223,8 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                     Align(
                       alignment: const AlignmentDirectional(-0.63, 0.0),
                       child: Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            0.0, 8.0, 0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -254,8 +254,8 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                       ),
                     ),
                     Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 16.0, 0.0),
+                      padding: const EdgeInsetsDirectional.fromSTEB(
+                          0.0, 8.0, 16.0, 0.0),
                       child: badges.Badge(
                         badgeContent: Text(
                           '5',
@@ -334,8 +334,8 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                     Align(
                       alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            1.0, 0.0, 0.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -412,7 +412,8 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                   }
                                                 }(),
                                                 decoration: BoxDecoration(
-                                                  gradient: const LinearGradient(
+                                                  gradient:
+                                                      const LinearGradient(
                                                     colors: [
                                                       Color(0xFFFFE7A2),
                                                       Color(0xFFFFBD00)
@@ -425,7 +426,8 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                   ),
                                                   shape: BoxShape.circle,
                                                   border: Border.all(
-                                                    color: const Color(0xFFFFDB00),
+                                                    color:
+                                                        const Color(0xFFFFDB00),
                                                   ),
                                                 ),
                                                 child: Align(
@@ -518,7 +520,8 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                       color: Color(0x6AD3A30D),
                                                     )
                                                   ],
-                                                  gradient: const LinearGradient(
+                                                  gradient:
+                                                      const LinearGradient(
                                                     colors: [
                                                       Color(0xFFFFE7A2),
                                                       Color(0xFFFFBD00)
@@ -533,7 +536,8 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                       BorderRadius.circular(
                                                           100.0),
                                                   border: Border.all(
-                                                    color: const Color(0xFFFFDB00),
+                                                    color:
+                                                        const Color(0xFFFFDB00),
                                                   ),
                                                 ),
                                                 child: Align(
@@ -544,7 +548,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                     padding:
                                                         const EdgeInsetsDirectional
                                                             .fromSTEB(12.0, 4.0,
-                                                                12.0, 4.0),
+                                                            12.0, 4.0),
                                                     child: Text(
                                                       '0/0 งาน',
                                                       style: FlutterFlowTheme
@@ -578,7 +582,8 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(const SizedBox(width: 8.0)),
+                                            ].divide(
+                                                const SizedBox(width: 8.0)),
                                           ),
                                           Container(
                                             width: double.infinity,
@@ -591,8 +596,9 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                   BorderRadius.circular(100.0),
                                             ),
                                             child: Align(
-                                              alignment: const AlignmentDirectional(
-                                                  -1.0, 0.0),
+                                              alignment:
+                                                  const AlignmentDirectional(
+                                                      -1.0, 0.0),
                                               child: Container(
                                                 width:
                                                     MediaQuery.sizeOf(context)
@@ -600,7 +606,8 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                         0.2,
                                                 height: 8.0,
                                                 decoration: BoxDecoration(
-                                                  gradient: const LinearGradient(
+                                                  gradient:
+                                                      const LinearGradient(
                                                     colors: [
                                                       Color(0xFFFFE7A2),
                                                       Color(0xFFFFBD00)
@@ -664,10 +671,13 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(1.0, 1.0),
+                                                const AlignmentDirectional(
+                                                    1.0, 1.0),
                                             child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(0.0, 0.0, 8.0, 8.0),
+                                              padding:
+                                                  const EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                      0.0, 0.0, 8.0, 8.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 mainAxisAlignment:
@@ -726,7 +736,8 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                         return 56.0;
                                                       }
                                                     }(),
-                                                    decoration: const BoxDecoration(
+                                                    decoration:
+                                                        const BoxDecoration(
                                                       boxShadow: [
                                                         BoxShadow(
                                                           blurRadius: 4.0,
@@ -804,7 +815,8 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                                                       },
                                                     ),
                                                   ),
-                                                ].divide(const SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(
+                                                    height: 8.0)),
                                               ),
                                             ),
                                           ),

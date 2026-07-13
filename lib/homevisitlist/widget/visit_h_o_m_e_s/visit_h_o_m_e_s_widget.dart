@@ -1034,7 +1034,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                 const DecorationImage(
                                                               fit: BoxFit.cover,
                                                               image:
-                                                                  NetworkImage('https://randomuser.me/api/portraits/men/32.jpg'),
+                                                                  AssetImage('assets/images/user_avatar.jpg'),
                                                             ),
                                                             gradient:
                                                                 LinearGradient(
@@ -1309,7 +1309,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                 const DecorationImage(
                                                               fit: BoxFit.cover,
                                                               image:
-                                                                  NetworkImage('https://randomuser.me/api/portraits/men/32.jpg'),
+                                                                  AssetImage('assets/images/user_avatar.jpg'),
                                                             ),
                                                             gradient:
                                                                 LinearGradient(
@@ -2271,7 +2271,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                       decoration: BoxDecoration(
                                                         image: const DecorationImage(
                                                           fit: BoxFit.cover,
-                                                          image: NetworkImage('https://randomuser.me/api/portraits/men/32.jpg'),
+                                                          image: AssetImage('assets/images/user_avatar.jpg'),
                                                         ),
                                                         gradient:
                                                             LinearGradient(
@@ -2528,7 +2528,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                       decoration: BoxDecoration(
                                                         image: const DecorationImage(
                                                           fit: BoxFit.cover,
-                                                          image: NetworkImage('https://randomuser.me/api/portraits/men/32.jpg'),
+                                                          image: AssetImage('assets/images/user_avatar.jpg'),
                                                         ),
                                                         gradient:
                                                             LinearGradient(
