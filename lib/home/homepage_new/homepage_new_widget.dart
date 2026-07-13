@@ -1105,7 +1105,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                             safeSetState(() {}),
                                         child: const NewJobWidget(
                                           img:
-                                              'https://randomuser.me/api/portraits/men/45.jpg',
+                                              'assets/images/patient_photo_1.jpg',
                                           mainname: 'เด็กชายพัฒนา ศรีโอพาส',
                                           year: '46',
                                           month: '5',
@@ -1122,7 +1122,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                             safeSetState(() {}),
                                         child: const NewJobWidget(
                                           img:
-                                              'https://randomuser.me/api/portraits/men/78.jpg',
+                                              'assets/images/patient_photo_2.jpg',
                                           mainname: 'นายมโน สิริสาทร',
                                           year: '34',
                                           month: '5',
@@ -1139,7 +1139,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                             safeSetState(() {}),
                                         child: const NewJobWidget(
                                           img:
-                                              'https://randomuser.me/api/portraits/women/68.jpg',
+                                              'assets/images/patient_photo_3.jpg',
                                           mainname: 'นางอรดี ศรีอุดมการ',
                                           year: '78',
                                           month: '6',

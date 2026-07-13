@@ -92,10 +92,17 @@ class _NewJobWidgetState extends State<NewJobWidget> {
                     child: Stack(
                       children: [
                         Positioned.fill(
-                          child: Image.network(
-                            widget.img!,
-                            fit: BoxFit.cover,
-                          ),
+                          // Asset paths render on web too; remote hosts without
+                          // CORS headers (e.g. randomuser.me) are blocked there.
+                          child: widget.img!.startsWith('http')
+                              ? Image.network(
+                                  widget.img!,
+                                  fit: BoxFit.cover,
+                                )
+                              : Image.asset(
+                                  widget.img!,
+                                  fit: BoxFit.cover,
+                                ),
                         ),
                         const Positioned(
                           top: 8.0,
