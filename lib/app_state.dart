@@ -161,6 +161,7 @@ class FFAppState extends ChangeNotifier {
   bool get smartcard => _smartcard;
   set smartcard(bool value) {
     _smartcard = value;
+    notifyListeners();
   }
 
   bool _monitor = false;

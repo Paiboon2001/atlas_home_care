@@ -1,5 +1,6 @@
 import 'dart:math' as math;
 
+import '/components/card_shadow.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '/components/thai_date_picker_widget.dart';
@@ -607,15 +608,7 @@ class _ViewToggle extends StatelessWidget {
       decoration: BoxDecoration(
         color: HomeCalendarStrip._white,
         borderRadius: BorderRadius.circular(1000.0),
-        boxShadow: const [
-          // Figma "tabbr" effect: three stacked #004078 drop shadows.
-          BoxShadow(
-              color: Color(0x1A004078), blurRadius: 1.0, offset: Offset(0, 0)),
-          BoxShadow(
-              color: Color(0x14004078), blurRadius: 2.0, offset: Offset(0, 0)),
-          BoxShadow(
-              color: Color(0x14004078), blurRadius: 4.0, offset: Offset(0, 2)),
-        ],
+        boxShadow: kCapsuleShadow,
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,

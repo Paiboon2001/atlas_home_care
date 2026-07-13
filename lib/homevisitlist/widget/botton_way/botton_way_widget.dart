@@ -44,7 +44,14 @@ class _BottonWayWidgetState extends State<BottonWayWidget> {
         color: FlutterFlowTheme.of(context).secondaryBackground,
       ),
       child: Padding(
-        padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 24.0),
+        // 32px clear of the physical screen edge: the home indicator inset
+        // already accounts for part of that gap.
+        padding: EdgeInsetsDirectional.fromSTEB(
+          16.0,
+          12.0,
+          16.0,
+          (32.0 - MediaQuery.viewPaddingOf(context).bottom).clamp(0.0, 32.0),
+        ),
         child: MasonryGridView.builder(
           physics: const NeverScrollableScrollPhysics(),
           gridDelegate: const SliverSimpleGridDelegateWithFixedCrossAxisCount(

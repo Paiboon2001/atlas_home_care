@@ -381,6 +381,9 @@ class _ItemHouseHoldMembersWidgetState
                   ),
                 ),
                 MasonryGridView.builder(
+                  // Without this the grid inherits the sheet's bottom safe-area
+                  // inset as padding, adding ~34px of dead space under the last row.
+                  padding: EdgeInsets.zero,
                   physics: const NeverScrollableScrollPhysics(),
                   gridDelegate: SliverSimpleGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: () {

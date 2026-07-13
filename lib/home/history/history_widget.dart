@@ -405,8 +405,8 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                             textre: 'นางรัตนาการ สนามฉันท์',
                                             picture:
                                                 'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/m7xdpmwhlgki/girl1.png',
-                                            gradientone: const Color(0xFF117D4C),
-                                            gradienttwo: const Color(0xFFA8FFCC),
+                                            gradientone: const Color(0xFF79DF9E),
+                                            gradienttwo: const Color(0xFF79DF9E),
                                             textcolor:
                                                 FlutterFlowTheme.of(context)
                                                     .primaryText,
@@ -457,8 +457,8 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                             textre: 'นางสาวกนกร อมรศรี',
                                             picture:
                                                 'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/16ztnqju67da/student_girl.png',
-                                            gradientone: const Color(0xFF117D4C),
-                                            gradienttwo: const Color(0xFFA8FFCC),
+                                            gradientone: const Color(0xFF79DF9E),
+                                            gradienttwo: const Color(0xFF79DF9E),
                                             textcolor:
                                                 FlutterFlowTheme.of(context)
                                                     .primaryText,
@@ -531,8 +531,8 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                             textre: 'นายฉันทยนา สนามฉันท์',
                                             picture:
                                                 'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/4fytd19jk0eu/callege_Boy.png',
-                                            gradientone: const Color(0xFF117D4C),
-                                            gradienttwo: const Color(0xFFA8FFCC),
+                                            gradientone: const Color(0xFF79DF9E),
+                                            gradienttwo: const Color(0xFF79DF9E),
                                             textcolor:
                                                 FlutterFlowTheme.of(context)
                                                     .primaryText,
@@ -804,8 +804,8 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                             textre: 'นายกิริยากร ธนสานสมบัติ',
                                             picture:
                                                 'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/4mq6lu0xx1l8/oldman1.png',
-                                            gradientone: const Color(0xFF117D4C),
-                                            gradienttwo: const Color(0xFFA8FFCC),
+                                            gradientone: const Color(0xFF79DF9E),
+                                            gradienttwo: const Color(0xFF79DF9E),
                                             textcolor:
                                                 FlutterFlowTheme.of(context)
                                                     .primaryText,
@@ -856,8 +856,8 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                             textre: 'นางหทัยรัตน์ เจริญปุระ',
                                             picture:
                                                 'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/9e97rkkhahtb/oldgirl1.png',
-                                            gradientone: const Color(0xFF117D4C),
-                                            gradienttwo: const Color(0xFFA8FFCC),
+                                            gradientone: const Color(0xFF79DF9E),
+                                            gradienttwo: const Color(0xFF79DF9E),
                                             textcolor:
                                                 FlutterFlowTheme.of(context)
                                                     .primaryText,

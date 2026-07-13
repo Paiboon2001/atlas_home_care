@@ -1,9 +1,13 @@
 import '/flutter_flow/flutter_flow_animations.dart';
+import '/components/real_map_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/map/widget/navigatebutton/navigatebutton_widget.dart';
+import '/map/widget/pin/pin_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_map/flutter_map.dart';
+import 'package:latlong2/latlong.dart' as ll;
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'delivery_map_model.dart';
@@ -64,6 +68,44 @@ class _DeliveryMapWidgetState extends State<DeliveryMapWidget>
     super.dispose();
   }
 
+  /// Delivery pins: the courier's current position and the drop-off address.
+  List<Marker> _pins(BuildContext context) {
+    final pins = <List<Object>>[
+      // ตำแหน่งของคุณ
+      [
+        13.7563,
+        100.5018,
+        '1',
+        const Color(0xFF0761B8),
+        FlutterFlowTheme.of(context).accent1
+      ],
+      // ปลายทาง (โรงพยาบาลบางปะกอก 3)
+      [
+        13.6820,
+        100.5010,
+        '1',
+        FlutterFlowTheme.of(context).error,
+        FlutterFlowTheme.of(context).customColor4
+      ],
+    ];
+
+    return pins
+        .map(
+          (pin) => Marker(
+            point: ll.LatLng(pin[0] as double, pin[1] as double),
+            width: 48.0,
+            height: 67.0,
+            alignment: Alignment.topCenter,
+            child: PinWidget(
+              num: pin[2] as String,
+              color2: pin[3] as Color,
+              color1: pin[4] as Color,
+            ),
+          ),
+        )
+        .toList();
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -74,59 +116,43 @@ class _DeliveryMapWidgetState extends State<DeliveryMapWidget>
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        appBar: AppBar(
+          toolbarHeight: 48.0,
+          backgroundColor: FlutterFlowTheme.of(context).primary,
+          automaticallyImplyLeading: false,
+          leading: FlutterFlowIconButton(
+            borderColor: Colors.transparent,
+            borderRadius: 30.0,
+            borderWidth: 1.0,
+            buttonSize: 44.0,
+            icon: const Icon(
+              Icons.arrow_back_ios_new_rounded,
+              color: Colors.white,
+              size: 18.0,
+            ),
+            onPressed: () async {
+              context.pop();
+            },
+          ),
+          title: Text(
+            'เส้นทางส่งเวชภัณฑ์',
+            style: FlutterFlowTheme.of(context).titleMedium.override(
+                  fontFamily: FlutterFlowTheme.of(context).titleMediumFamily,
+                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                  letterSpacing: 0.0,
+                  useGoogleFonts:
+                      !FlutterFlowTheme.of(context).titleMediumIsCustom,
+                ),
+          ),
+          centerTitle: true,
+          elevation: 0.0,
+        ),
         body: Stack(
           children: [
-            Container(
-              width: double.infinity,
-              height: double.infinity,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: Image.network(
-                    'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/pepfy4gwzjg2/ภาพถ่ายหน้าจอ_2568-04-08_เวลา_09.39.58.png',
-                  ).image,
-                ),
-              ),
-              child: const Stack(
-                children: [],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    decoration: const BoxDecoration(
-                      boxShadow: [
-                        BoxShadow(
-                          blurRadius: 4.0,
-                          color: Color(0x33000000),
-                          offset: Offset(
-                            0.0,
-                            2.0,
-                          ),
-                        )
-                      ],
-                      shape: BoxShape.circle,
-                    ),
-                    child: FlutterFlowIconButton(
-                      borderRadius: 30.0,
-                      buttonSize: 48.0,
-                      fillColor:
-                          FlutterFlowTheme.of(context).secondaryBackground,
-                      icon: Icon(
-                        Icons.arrow_back_ios_new_rounded,
-                        color: FlutterFlowTheme.of(context).secondaryText,
-                        size: 18.0,
-                      ),
-                      onPressed: () async {
-                        context.pop();
-                      },
-                    ),
-                  ),
-                ].divide(const SizedBox(width: 8.0)),
+            SizedBox.expand(
+              child: RealMap(
+                showCenterPin: false,
+                markers: _pins(context),
               ),
             ),
             Align(

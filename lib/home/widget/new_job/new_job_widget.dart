@@ -1,3 +1,6 @@
+import 'dart:math' as math;
+
+import '/components/card_shadow.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
@@ -66,412 +69,178 @@ class _NewJobWidgetState extends State<NewJobWidget> {
         context.pushNamed(DetailesPatientNewtaskWidget.routeName);
       },
       child: Container(
-        width: () {
-          if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
-            return 355.0;
-          } else if (MediaQuery.sizeOf(context).width < kBreakpointMedium) {
-            return 355.0;
-          } else if (MediaQuery.sizeOf(context).width < kBreakpointLarge) {
-            return 400.0;
-          } else {
-            return 400.0;
-          }
-        }(),
+        width: 180.0,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          boxShadow: const [
-            BoxShadow(
-              blurRadius: 4.0,
-              color: Color(0x17000000),
-              offset: Offset(
-                0.0,
-                0.0,
-              ),
-            )
-          ],
-          borderRadius: BorderRadius.circular(24.0),
+          borderRadius: BorderRadius.circular(16.0),
+          boxShadow: kCardShadow,
         ),
-        child: Column(
-          mainAxisSize: MainAxisSize.max,
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(12.0),
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.start,
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(16.0),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(4.0, 4.0, 4.0, 0.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(12.0),
+                  child: Container(
+                    height: 140.0,
+                    width: double.infinity,
+                    color: const Color(0x40FF8600),
+                    child: Stack(
+                      children: [
+                        Positioned.fill(
+                          child: Image.network(
+                            widget.img!,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        const Positioned(
+                          top: 8.0,
+                          right: -80.0,
+                          child: _NewJobRibbon(),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Column(
+                mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
-                    width: () {
-                      if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
-                        return 48.0;
-                      } else if (MediaQuery.sizeOf(context).width <
-                          kBreakpointMedium) {
-                        return 48.0;
-                      } else if (MediaQuery.sizeOf(context).width <
-                          kBreakpointLarge) {
-                        return 56.0;
-                      } else {
-                        return 56.0;
-                      }
-                    }(),
-                    height: () {
-                      if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
-                        return 48.0;
-                      } else if (MediaQuery.sizeOf(context).width <
-                          kBreakpointMedium) {
-                        return 48.0;
-                      } else if (MediaQuery.sizeOf(context).width <
-                          kBreakpointLarge) {
-                        return 56.0;
-                      } else {
-                        return 56.0;
-                      }
-                    }(),
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: Image.network(
-                          widget.img!,
-                        ).image,
-                      ),
-                      gradient: const LinearGradient(
-                        colors: [Color(0xFFFFCA76), Color(0xFFFF7100)],
-                        stops: [0.0, 1.0],
-                        begin: AlignmentDirectional(0.0, -1.0),
-                        end: AlignmentDirectional(0, 1.0),
-                      ),
-                      shape: BoxShape.circle,
+                  Padding(
+                    padding: const EdgeInsetsDirectional.fromSTEB(
+                        12.0, 8.0, 12.0, 0.0),
+                    child: Text(
+                      widget.mainname!,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily:
+                                FlutterFlowTheme.of(context).bodyMediumFamily,
+                            color: FlutterFlowTheme.of(context).primaryText,
+                            fontSize: 16.0,
+                            letterSpacing: -0.3,
+                            fontWeight: FontWeight.w500,
+                            useGoogleFonts: !FlutterFlowTheme.of(context)
+                                .bodyMediumIsCustom,
+                          ),
                     ),
                   ),
-                  Expanded(
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          valueOrDefault<String>(
-                            widget.mainname,
-                            'na',
+                  Padding(
+                    padding: const EdgeInsetsDirectional.fromSTEB(
+                        12.0, 4.0, 12.0, 12.0),
+                    child: Text(
+                      'อายุ ${widget.year} ปี ${widget.month} เดือน ${widget.day} วัน',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: FlutterFlowTheme.of(context).bodySmall.override(
+                            fontFamily:
+                                FlutterFlowTheme.of(context).bodySmallFamily,
+                            color: const Color(0xFF8A8F97),
+                            fontSize: 12.0,
+                            letterSpacing: -0.3,
+                            fontWeight: FontWeight.normal,
+                            useGoogleFonts: !FlutterFlowTheme.of(context)
+                                .bodySmallIsCustom,
                           ),
-                          style: FlutterFlowTheme.of(context)
-                              .titleSmall
-                              .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .titleSmallFamily,
-                                color: const Color(0xFFFF7600),
-                                letterSpacing: 0.0,
-                                useGoogleFonts: !FlutterFlowTheme.of(context)
-                                    .titleSmallIsCustom,
-                              ),
-                        ),
-                        RichText(
-                          textScaler: MediaQuery.of(context).textScaler,
-                          text: TextSpan(
-                            children: [
-                              TextSpan(
-                                text: 'อายุ ',
-                                style: FlutterFlowTheme.of(context)
-                                    .labelSmall
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelSmallFamily,
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryText,
-                                      letterSpacing: 0.0,
-                                      useGoogleFonts:
-                                          !FlutterFlowTheme.of(context)
-                                              .labelSmallIsCustom,
-                                    ),
-                              ),
-                              TextSpan(
-                                text: valueOrDefault<String>(
-                                  widget.year,
-                                  'na',
-                                ),
-                                style: FlutterFlowTheme.of(context)
-                                    .bodySmall
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodySmallFamily,
-                                      letterSpacing: 0.0,
-                                      fontWeight: FontWeight.w500,
-                                      useGoogleFonts:
-                                          !FlutterFlowTheme.of(context)
-                                              .bodySmallIsCustom,
-                                    ),
-                              ),
-                              const TextSpan(
-                                text: ' ปี ',
-                                style: TextStyle(),
-                              ),
-                              TextSpan(
-                                text: valueOrDefault<String>(
-                                  widget.month,
-                                  'na',
-                                ),
-                                style: FlutterFlowTheme.of(context)
-                                    .bodySmall
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodySmallFamily,
-                                      letterSpacing: 0.0,
-                                      fontWeight: FontWeight.w500,
-                                      useGoogleFonts:
-                                          !FlutterFlowTheme.of(context)
-                                              .bodySmallIsCustom,
-                                    ),
-                              ),
-                              const TextSpan(
-                                text: ' เดือน ',
-                                style: TextStyle(),
-                              ),
-                              TextSpan(
-                                text: valueOrDefault<String>(
-                                  widget.day,
-                                  'na',
-                                ),
-                                style: FlutterFlowTheme.of(context)
-                                    .bodySmall
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodySmallFamily,
-                                      letterSpacing: 0.0,
-                                      fontWeight: FontWeight.w500,
-                                      useGoogleFonts:
-                                          !FlutterFlowTheme.of(context)
-                                              .bodySmallIsCustom,
-                                    ),
-                              ),
-                              const TextSpan(
-                                text: ' วัน',
-                                style: TextStyle(),
-                              )
-                            ],
-                            style: FlutterFlowTheme.of(context)
-                                .labelSmall
-                                .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelSmallFamily,
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryText,
-                                  letterSpacing: 0.0,
-                                  useGoogleFonts: !FlutterFlowTheme.of(context)
-                                      .labelSmallIsCustom,
-                                ),
-                          ),
-                        ),
-                      ].divide(SizedBox(height: () {
-                        if (MediaQuery.sizeOf(context).width <
-                            kBreakpointSmall) {
-                          return 4.0;
-                        } else if (MediaQuery.sizeOf(context).width <
-                            kBreakpointMedium) {
-                          return 4.0;
-                        } else if (MediaQuery.sizeOf(context).width <
-                            kBreakpointLarge) {
-                          return 6.0;
-                        } else {
-                          return 6.0;
-                        }
-                      }())),
                     ),
                   ),
                   Container(
-                    width: () {
-                      if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
-                        return 28.0;
-                      } else if (MediaQuery.sizeOf(context).width <
-                          kBreakpointMedium) {
-                        return 28.0;
-                      } else if (MediaQuery.sizeOf(context).width <
-                          kBreakpointLarge) {
-                        return 32.0;
-                      } else {
-                        return 32.0;
-                      }
-                    }(),
-                    height: () {
-                      if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
-                        return 28.0;
-                      } else if (MediaQuery.sizeOf(context).width <
-                          kBreakpointMedium) {
-                        return 28.0;
-                      } else if (MediaQuery.sizeOf(context).width <
-                          kBreakpointLarge) {
-                        return 32.0;
-                      } else {
-                        return 32.0;
-                      }
-                    }(),
-                    decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).primaryBackground,
-                      shape: BoxShape.circle,
+                    width: double.infinity,
+                    padding: const EdgeInsetsDirectional.fromSTEB(
+                        12.0, 8.0, 12.0, 8.0),
+                    decoration: const BoxDecoration(
+                      border: Border(
+                        top: BorderSide(color: Color(0xFFEAEFFB)),
+                      ),
                     ),
-                    child: const Icon(
-                      Icons.keyboard_arrow_right_rounded,
-                      color: Color(0xFF9DA7A7),
-                      size: 20.0,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Icon(
+                          Icons.medical_services_outlined,
+                          color: FlutterFlowTheme.of(context).primary,
+                          size: 16.0,
+                        ),
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                4.0, 0.0, 0.0, 0.0),
+                            child: Text(
+                              '${widget.date} ${widget.time}',
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: FlutterFlowTheme.of(context)
+                                  .bodySmall
+                                  .override(
+                                    fontFamily: FlutterFlowTheme.of(context)
+                                        .bodySmallFamily,
+                                    color:
+                                        FlutterFlowTheme.of(context).primaryText,
+                                    fontSize: 14.0,
+                                    letterSpacing: -0.3,
+                                    fontWeight: FontWeight.w500,
+                                    useGoogleFonts: !FlutterFlowTheme.of(context)
+                                        .bodySmallIsCustom,
+                                  ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                ].divide(SizedBox(width: () {
-                  if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
-                    return 8.0;
-                  } else if (MediaQuery.sizeOf(context).width <
-                      kBreakpointMedium) {
-                    return 8.0;
-                  } else if (MediaQuery.sizeOf(context).width <
-                      kBreakpointLarge) {
-                    return 16.0;
-                  } else {
-                    return 16.0;
-                  }
-                }())),
+                ],
               ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// The orange "งานใหม่" banner rotated 45° across the top-right corner of the
+/// image tile.
+class _NewJobRibbon extends StatelessWidget {
+  const _NewJobRibbon();
+
+  @override
+  Widget build(BuildContext context) {
+    // Wider than the corner it crosses so both ends are cut off by the image
+    // tile's clip, leaving a banner flush with the top and right edges.
+    return SizedBox(
+      width: 200.0,
+      height: 24.0,
+      child: Transform.rotate(
+        angle: math.pi / 4,
+        child: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xFFFED26D), Color(0xFFFF8600)],
+              begin: AlignmentDirectional(0.0, -1.0),
+              end: AlignmentDirectional(0.0, 1.0),
             ),
-            Container(
-              width: double.infinity,
-              decoration: BoxDecoration(
-                gradient: const LinearGradient(
-                  colors: [Color(0xFFFCF3EB), Color(0xFFFFE9D5)],
-                  stops: [0.1, 1.0],
-                  begin: AlignmentDirectional(0.0, -1.0),
-                  end: AlignmentDirectional(0, 1.0),
-                ),
-                borderRadius: BorderRadius.circular(24.0),
-                border: Border.all(
-                  color: FlutterFlowTheme.of(context).secondaryBackground,
-                  width: 2.0,
-                ),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'วันที่เยี่ยม',
-                                style: FlutterFlowTheme.of(context)
-                                    .labelSmall
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelSmallFamily,
-                                      color: const Color(0xFFFF7600),
-                                      letterSpacing: 0.0,
-                                      useGoogleFonts:
-                                          !FlutterFlowTheme.of(context)
-                                              .labelSmallIsCustom,
-                                    ),
-                              ),
-                              Text(
-                                valueOrDefault<String>(
-                                  widget.date,
-                                  'na',
-                                ),
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily,
-                                      letterSpacing: 0.0,
-                                      useGoogleFonts:
-                                          !FlutterFlowTheme.of(context)
-                                              .bodyMediumIsCustom,
-                                    ),
-                              ),
-                            ].divide(const SizedBox(height: 2.0)),
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'เวลาเยี่ยม',
-                                style: FlutterFlowTheme.of(context)
-                                    .labelSmall
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .labelSmallFamily,
-                                      color: const Color(0xFFFF7600),
-                                      letterSpacing: 0.0,
-                                      useGoogleFonts:
-                                          !FlutterFlowTheme.of(context)
-                                              .labelSmallIsCustom,
-                                    ),
-                              ),
-                              Text(
-                                valueOrDefault<String>(
-                                  widget.time,
-                                  'na',
-                                ),
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily,
-                                      letterSpacing: 0.0,
-                                      useGoogleFonts:
-                                          !FlutterFlowTheme.of(context)
-                                              .bodyMediumIsCustom,
-                                    ),
-                              ),
-                            ].divide(const SizedBox(height: 2.0)),
-                          ),
-                        ),
-                      ].divide(const SizedBox(width: 8.0)),
-                    ),
-                    Column(
-                      mainAxisSize: MainAxisSize.max,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'วัตถุประสงค์ในการเยี่ยม',
-                          style: FlutterFlowTheme.of(context)
-                              .labelSmall
-                              .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .labelSmallFamily,
-                                color: const Color(0xFFFF7600),
-                                letterSpacing: 0.0,
-                                useGoogleFonts: !FlutterFlowTheme.of(context)
-                                    .labelSmallIsCustom,
-                              ),
-                        ),
-                        Text(
-                          valueOrDefault<String>(
-                            widget.details,
-                            'na',
-                          ),
-                          maxLines: 1,
-                          style: FlutterFlowTheme.of(context)
-                              .bodyMedium
-                              .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyMediumFamily,
-                                letterSpacing: 0.0,
-                                useGoogleFonts: !FlutterFlowTheme.of(context)
-                                    .bodyMediumIsCustom,
-                              ),
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                      ].divide(const SizedBox(height: 2.0)),
-                    ),
-                  ].divide(const SizedBox(height: 12.0)),
-                ),
-              ),
-            ),
-          ],
+          ),
+          alignment: Alignment.center,
+          child: Text(
+              'งานใหม่',
+              textAlign: TextAlign.center,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: FlutterFlowTheme.of(context).bodySmall.override(
+                    fontFamily: FlutterFlowTheme.of(context).bodySmallFamily,
+                    color: Colors.white,
+                    fontSize: 12.0,
+                    letterSpacing: -0.3,
+                    fontWeight: FontWeight.bold,
+                    useGoogleFonts:
+                        !FlutterFlowTheme.of(context).bodySmallIsCustom,
+                  ),
+          ),
         ),
       ),
     );

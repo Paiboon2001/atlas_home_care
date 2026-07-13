@@ -66,6 +66,55 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                 hoverColor: Colors.transparent,
                 highlightColor: Colors.transparent,
                 onTap: () async {
+                  context.pushNamed(AddHomememberWidget.routeName);
+                },
+                child: Container(
+                  height: double.infinity,
+                  decoration: const BoxDecoration(),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(1.0),
+                        child: Container(
+                          width: 80.0,
+                          height: 80.0,
+                          decoration: BoxDecoration(
+                            color: FlutterFlowTheme.of(context).alternate,
+                            shape: BoxShape.circle,
+                          ),
+                          child: Icon(
+                            Icons.add_rounded,
+                            color: FlutterFlowTheme.of(context).secondaryText,
+                            size: 32.0,
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Text(
+                          'เพิ่มสมาชิก',
+                          textAlign: TextAlign.center,
+                          maxLines: 1,
+                          style: GoogleFonts.sarabun(
+                            color: FlutterFlowTheme.of(context).primaryText,
+                            fontWeight: FontWeight.normal,
+                            fontSize: 12.0,
+                            height: 1.7,
+                          ),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              InkWell(
+                splashColor: Colors.transparent,
+                focusColor: Colors.transparent,
+                hoverColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                onTap: () async {
                   FFAppState().parents = 1;
                   safeSetState(() {});
                 },

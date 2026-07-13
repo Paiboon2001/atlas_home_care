@@ -1,7 +1,7 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/homevisitlist/widget/buttonsheetfamily/buttonsheetfamily_widget.dart';
+import '/home/widget/buttonsheetpatient/buttonsheetpatient_widget.dart';
 import '/homevisitlist/widget/item_home/item_home_widget.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
@@ -156,12 +156,11 @@ class _HomevisitlistWidgetState extends State<HomevisitlistWidget> {
                       showModalBottomSheet(
                         isScrollControlled: true,
                         backgroundColor: Colors.transparent,
-                        isDismissible: false,
                         context: context,
                         builder: (context) {
                           return Padding(
                             padding: MediaQuery.viewInsetsOf(context),
-                            child: const ButtonsheetfamilyWidget(),
+                            child: const ButtonsheetpatientWidget(),
                           );
                         },
                       ).then((value) => safeSetState(() {}));

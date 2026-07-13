@@ -1,7 +1,6 @@
 import '/components/real_map_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/map/widget/pin/pin_widget.dart';
 import 'package:flutter/material.dart';
 import 'item_homepatient_model.dart';
 export 'item_homepatient_model.dart';
@@ -110,38 +109,21 @@ class _ItemHomepatientWidgetState extends State<ItemHomepatientWidget> {
                 color: FlutterFlowTheme.of(context).secondaryBackground,
               ),
             ),
-            child: Align(
-              alignment: const AlignmentDirectional(0.0, 0.0),
-              child: Stack(
-                alignment: const AlignmentDirectional(0.0, 0.0),
-                children: [
-                  const ClipRRect(
-                    borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(24.0),
-                      bottomRight: Radius.circular(24.0),
-                    ),
-                    child: SizedBox(
-                      width: double.infinity,
-                      height: 120.0,
-                      child: RealMap(
-                        showCenterPin: true,
-                        interactive: false,
-                      ),
-                    ),
+            child: const Align(
+              alignment: AlignmentDirectional(0.0, 0.0),
+              child: ClipRRect(
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(24.0),
+                  bottomRight: Radius.circular(24.0),
+                ),
+                child: SizedBox(
+                  width: double.infinity,
+                  height: 120.0,
+                  child: RealMap(
+                    showCenterPin: true,
+                    interactive: false,
                   ),
-                  Align(
-                    alignment: const AlignmentDirectional(-0.03, 0.06),
-                    child: wrapWithModel(
-                      model: _model.pinModel,
-                      updateCallback: () => safeSetState(() {}),
-                      child: const PinWidget(
-                        num: '1',
-                        color2: Color(0xFFFFBD00),
-                        color1: Color(0xFFFFE7A2),
-                      ),
-                    ),
-                  ),
-                ],
+                ),
               ),
             ),
           ),

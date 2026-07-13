@@ -3,11 +3,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/patientinformation/home_visit_appointment/home_visit_appointment_widget.dart';
-import '/utils/sucess/sucess_widget.dart';
-import 'dart:async';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'patientinfo_model.dart';
 export 'patientinfo_model.dart';
@@ -32,38 +29,6 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
   void initState() {
     super.initState();
     _model = createModel(context, () => PatientinfoModel());
-
-    // On page load action.
-    SchedulerBinding.instance.addPostFrameCallback((_) async {
-      showDialog(
-        barrierColor: Colors.transparent,
-        context: context,
-        builder: (dialogContext) {
-          return Dialog(
-            elevation: 0,
-            insetPadding: EdgeInsets.zero,
-            backgroundColor: Colors.transparent,
-            alignment: const AlignmentDirectional(0.0, 1.0)
-                .resolve(Directionality.of(context)),
-            child: const SizedBox(
-              width: 180.0,
-              child: SucessWidget(),
-            ),
-          );
-        },
-      );
-
-      await Future.delayed(
-        const Duration(
-          milliseconds: 2000,
-        ),
-      );
-      unawaited(
-        () async {
-          Navigator.pop(context);
-        }(),
-      );
-    });
 
     _model.tabBarController = TabController(
       vsync: this,

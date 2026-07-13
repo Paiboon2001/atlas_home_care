@@ -3,13 +3,17 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/homevisitlist/widget/botton_way/botton_way_widget.dart';
 import '/homevisitlist/widget/total_parents/total_parents_widget.dart';
 import '/map/widget/item_homepatient/item_homepatient_widget.dart';
-import '/index.dart';
 import 'package:flutter/material.dart';
 import 'buttonsheetpatient_model.dart';
 export 'buttonsheetpatient_model.dart';
 
 class ButtonsheetpatientWidget extends StatefulWidget {
-  const ButtonsheetpatientWidget({super.key});
+  const ButtonsheetpatientWidget({super.key, this.scrollController});
+
+  /// Supplied when the sheet is hosted in a DraggableScrollableSheet: the
+  /// content scrolls with it, so the sheet fills its parent instead of using a
+  /// fixed height fraction.
+  final ScrollController? scrollController;
 
   @override
   State<ButtonsheetpatientWidget> createState() =>
@@ -46,7 +50,9 @@ class _ButtonsheetpatientWidgetState extends State<ButtonsheetpatientWidget> {
       alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
-        height: 840.0,
+        height: widget.scrollController != null
+            ? double.infinity
+            : MediaQuery.sizeOf(context).height * 0.9,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).primaryBackground,
           borderRadius: const BorderRadius.only(
@@ -57,6 +63,17 @@ class _ButtonsheetpatientWidgetState extends State<ButtonsheetpatientWidget> {
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
+            Padding(
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+              child: Container(
+                width: 40.0,
+                height: 4.0,
+                decoration: BoxDecoration(
+                  color: const Color(0xFFD0D8E0),
+                  borderRadius: BorderRadius.circular(100.0),
+                ),
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
@@ -165,40 +182,6 @@ class _ButtonsheetpatientWidgetState extends State<ButtonsheetpatientWidget> {
                     hoverColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () async {
-                      context.pushNamed(AddHomememberWidget.routeName);
-                    },
-                    child: Container(
-                      width: 32.0,
-                      height: 32.0,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [
-                            FlutterFlowTheme.of(context).customColor2,
-                            FlutterFlowTheme.of(context).customColor1
-                          ],
-                          stops: const [0.0, 1.0],
-                          begin: const AlignmentDirectional(0.0, -1.0),
-                          end: const AlignmentDirectional(0, 1.0),
-                        ),
-                        shape: BoxShape.circle,
-                      ),
-                      child: Align(
-                        alignment: const AlignmentDirectional(0.0, 0.0),
-                        child: Icon(
-                          Icons.person_add_alt_rounded,
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
-                          size: 16.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  InkWell(
-                    splashColor: Colors.transparent,
-                    focusColor: Colors.transparent,
-                    hoverColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
-                    onTap: () async {
                       Navigator.pop(context);
                     },
                     child: Container(
@@ -267,6 +250,7 @@ class _ButtonsheetpatientWidgetState extends State<ButtonsheetpatientWidget> {
             ),
             Expanded(
               child: SingleChildScrollView(
+                controller: widget.scrollController,
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [

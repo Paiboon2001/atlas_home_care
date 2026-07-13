@@ -7,6 +7,8 @@ import '/map/widget/pin/pin_widget.dart';
 import '/map/widget/selecclinic/selecclinic_widget.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_map/flutter_map.dart';
+import 'package:latlong2/latlong.dart' as ll;
 import 'map_model.dart';
 export 'map_model.dart';
 
@@ -29,291 +31,171 @@ class _MapWidgetState extends State<MapWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => MapModel());
-
-    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
   void dispose() {
-    _model.dispose();
-
+    _model.maybeDispose();
     super.dispose();
+  }
+
+  Future<void> _openClinicSheet() async {
+    await showModalBottomSheet(
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      context: context,
+      builder: (context) => Padding(
+        padding: MediaQuery.viewInsetsOf(context),
+        child: const SelecclinicWidget(),
+      ),
+    );
+    if (mounted) safeSetState(() {});
+  }
+
+  /// Visit pins anchored to real coordinates, so they pan and zoom with the
+  /// map. Colours follow the job status (yellow = new, green = done,
+  /// blue = in progress, red = overdue).
+  List<Marker> _pins(BuildContext context) {
+    final pins = <List<Object>>[
+      [13.7563, 100.5018, '2', const Color(0xFFFFBD00), const Color(0xFFFFE7A2)],
+      [
+        13.7700,
+        100.5230,
+        '1',
+        const Color(0xFF0761B8),
+        FlutterFlowTheme.of(context).accent1
+      ],
+      [
+        13.7420,
+        100.4820,
+        '1',
+        const Color(0xFF1D8B6B),
+        FlutterFlowTheme.of(context).success
+      ],
+      [
+        13.7880,
+        100.4640,
+        '1',
+        FlutterFlowTheme.of(context).error,
+        FlutterFlowTheme.of(context).customColor4
+      ],
+      [13.7650, 100.4760, '1', const Color(0xFFFFBD00), const Color(0xFFFFE7A2)],
+      [13.7340, 100.5350, '1', const Color(0xFFFFBD00), const Color(0xFFFFE7A2)],
+      [
+        13.7180,
+        100.5100,
+        '1',
+        const Color(0xFF1D8B6B),
+        FlutterFlowTheme.of(context).success
+      ],
+      [13.7520, 100.5520, '1', const Color(0xFFFFBD00), const Color(0xFFFFE7A2)],
+    ];
+
+    return pins
+        .map(
+          (pin) => Marker(
+            point: ll.LatLng(pin[0] as double, pin[1] as double),
+            width: 48.0,
+            height: 67.0,
+            alignment: Alignment.topCenter,
+            child: InkWell(
+              splashColor: Colors.transparent,
+              focusColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              highlightColor: Colors.transparent,
+              onTap: () async {
+                context.pushNamed(
+                  MapHomeWidget.routeName,
+                  extra: <String, dynamic>{
+                    '__transition_info__': const TransitionInfo(
+                      hasTransition: true,
+                      transitionType: PageTransitionType.fade,
+                    ),
+                  },
+                );
+              },
+              child: PinWidget(
+                num: pin[2] as String,
+                color2: pin[3] as Color,
+                color1: pin[4] as Color,
+              ),
+            ),
+          ),
+        )
+        .toList();
   }
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        FocusScope.of(context).unfocus();
-        FocusManager.instance.primaryFocus?.unfocus();
-      },
-      child: Scaffold(
-        key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        body: Stack(
-          children: [
-            const SizedBox.expand(
-              child: RealMap(),
-            ),
-            SafeArea(
-              child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    decoration: const BoxDecoration(
-                      boxShadow: [
-                        BoxShadow(
-                          blurRadius: 4.0,
-                          color: Color(0x33000000),
-                          offset: Offset(
-                            0.0,
-                            2.0,
-                          ),
-                        )
-                      ],
-                      shape: BoxShape.circle,
-                    ),
-                    child: FlutterFlowIconButton(
-                      borderColor: Colors.transparent,
-                      borderRadius: 30.0,
-                      borderWidth: 1.0,
-                      buttonSize: 48.0,
-                      fillColor:
-                          FlutterFlowTheme.of(context).secondaryBackground,
-                      icon: Icon(
-                        Icons.arrow_back_ios_new_rounded,
-                        color: FlutterFlowTheme.of(context).primaryText,
-                        size: 18.0,
-                      ),
-                      onPressed: () async {
-                        context.pop();
-                      },
-                    ),
-                  ),
-                  InkWell(
-                    splashColor: Colors.transparent,
-                    focusColor: Colors.transparent,
-                    hoverColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
-                    onTap: () async {
-                      showModalBottomSheet(
-                        isScrollControlled: true,
-                        backgroundColor: Colors.transparent,
-                        isDismissible: false,
-                        enableDrag: false,
-                        context: context,
-                        builder: (context) {
-                          return GestureDetector(
-                            onTap: () {
-                              FocusScope.of(context).unfocus();
-                              FocusManager.instance.primaryFocus?.unfocus();
-                            },
-                            child: Padding(
-                              padding: MediaQuery.viewInsetsOf(context),
-                              child: const SelecclinicWidget(),
-                            ),
-                          );
-                        },
-                      ).then((value) => safeSetState(() {}));
-                    },
-                    child: Container(
-                      width: () {
-                        if (MediaQuery.sizeOf(context).width <
-                            kBreakpointSmall) {
-                          return 300.0;
-                        } else if (MediaQuery.sizeOf(context).width <
-                            kBreakpointMedium) {
-                          return 300.0;
-                        } else if (MediaQuery.sizeOf(context).width <
-                            kBreakpointLarge) {
-                          return 500.0;
-                        } else {
-                          return 500.0;
-                        }
-                      }(),
-                      height: 48.0,
-                      decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
-                        boxShadow: const [
-                          BoxShadow(
-                            blurRadius: 4.0,
-                            color: Color(0x33000000),
-                            offset: Offset(
-                              0.0,
-                              2.0,
-                            ),
-                          )
-                        ],
-                        borderRadius: BorderRadius.circular(100.0),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            16.0, 0.0, 16.0, 0.0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Align(
-                              alignment: const AlignmentDirectional(0.0, 0.0),
-                              child: Icon(
-                                Icons.filter_list,
-                                color:
-                                    FlutterFlowTheme.of(context).secondaryText,
-                                size: 24.0,
-                              ),
-                            ),
-                            Text(
-                              'คลินิก',
-                              maxLines: 1,
-                              style: FlutterFlowTheme.of(context)
-                                  .titleSmall
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.w500,
-                                    useGoogleFonts:
-                                        !FlutterFlowTheme.of(context)
-                                            .titleSmallIsCustom,
-                                  ),
-                            ),
-                          ].divide(const SizedBox(width: 12.0)),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            ),
-            Align(
-              alignment: const AlignmentDirectional(0.15, -0.41),
-              child: wrapWithModel(
-                model: _model.pinModel1,
-                updateCallback: () => safeSetState(() {}),
-                child: const PinWidget(
-                  num: '2',
-                  color2: Color(0xFFFFBD00),
-                  color1: Color(0xFFFFE7A2),
-                ),
-              ),
-            ),
-            Align(
-              alignment: const AlignmentDirectional(1.0, 1.0),
-              child: Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 24.0),
-                child: wrapWithModel(
-                  model: _model.navigatebuttonModel,
-                  updateCallback: () => safeSetState(() {}),
-                  child: const NavigatebuttonWidget(),
-                ),
-              ),
-            ),
-            Align(
-              alignment: const AlignmentDirectional(0.64, -0.28),
-              child: wrapWithModel(
-                model: _model.pinModel2,
-                updateCallback: () => safeSetState(() {}),
-                child: PinWidget(
-                  num: '1',
-                  color2: const Color(0xFF0761B8),
-                  color1: FlutterFlowTheme.of(context).accent1,
-                ),
-              ),
-            ),
-            Align(
-              alignment: const AlignmentDirectional(-0.39, 0.25),
-              child: wrapWithModel(
-                model: _model.pinModel3,
-                updateCallback: () => safeSetState(() {}),
-                child: PinWidget(
-                  num: '1',
-                  color2: const Color(0xFF1D8B6B),
-                  color1: FlutterFlowTheme.of(context).success,
-                ),
-              ),
-            ),
-            Align(
-              alignment: const AlignmentDirectional(-0.79, -0.59),
-              child: wrapWithModel(
-                model: _model.pinModel4,
-                updateCallback: () => safeSetState(() {}),
-                child: PinWidget(
-                  num: '1',
-                  color2: FlutterFlowTheme.of(context).error,
-                  color1: FlutterFlowTheme.of(context).customColor4,
-                ),
-              ),
-            ),
-            Align(
-              alignment: const AlignmentDirectional(-0.49, -0.23),
-              child: InkWell(
-                splashColor: Colors.transparent,
-                focusColor: Colors.transparent,
-                hoverColor: Colors.transparent,
-                highlightColor: Colors.transparent,
-                onTap: () async {
-                  context.pushNamed(
-                    MapHomeWidget.routeName,
-                    extra: <String, dynamic>{
-                      '__transition_info__': const TransitionInfo(
-                        hasTransition: true,
-                        transitionType: PageTransitionType.fade,
-                      ),
-                    },
-                  );
-                },
-                child: wrapWithModel(
-                  model: _model.pinModel5,
-                  updateCallback: () => safeSetState(() {}),
-                  child: const PinWidget(
-                    num: '1',
-                    color2: Color(0xFFFFBD00),
-                    color1: Color(0xFFFFE7A2),
-                  ),
-                ),
-              ),
-            ),
-            Align(
-              alignment: const AlignmentDirectional(0.34, -0.11),
-              child: wrapWithModel(
-                model: _model.pinModel6,
-                updateCallback: () => safeSetState(() {}),
-                child: const PinWidget(
-                  num: '1',
-                  color2: Color(0xFFFFBD00),
-                  color1: Color(0xFFFFE7A2),
-                ),
-              ),
-            ),
-            Align(
-              alignment: const AlignmentDirectional(0.11, 0.27),
-              child: wrapWithModel(
-                model: _model.pinModel7,
-                updateCallback: () => safeSetState(() {}),
-                child: PinWidget(
-                  num: '1',
-                  color2: const Color(0xFF1D8B6B),
-                  color1: FlutterFlowTheme.of(context).success,
-                ),
-              ),
-            ),
-            Align(
-              alignment: const AlignmentDirectional(0.73, -0.03),
-              child: wrapWithModel(
-                model: _model.pinModel8,
-                updateCallback: () => safeSetState(() {}),
-                child: const PinWidget(
-                  num: '1',
-                  color2: Color(0xFFFFBD00),
-                  color1: Color(0xFFFFE7A2),
-                ),
-              ),
-            ),
-          ],
+    return Scaffold(
+      key: scaffoldKey,
+      backgroundColor: FlutterFlowTheme.of(context).primary,
+      appBar: AppBar(
+        toolbarHeight: 48.0,
+        backgroundColor: FlutterFlowTheme.of(context).primary,
+        automaticallyImplyLeading: false,
+        leading: FlutterFlowIconButton(
+          borderColor: Colors.transparent,
+          borderRadius: 30.0,
+          borderWidth: 1.0,
+          buttonSize: 44.0,
+          icon: const Icon(
+            Icons.arrow_back_ios_new_rounded,
+            color: Colors.white,
+            size: 18.0,
+          ),
+          onPressed: () async {
+            context.pop();
+          },
         ),
+        title: Text(
+          'แผนที่',
+          style: FlutterFlowTheme.of(context).titleMedium.override(
+                fontFamily: FlutterFlowTheme.of(context).titleMediumFamily,
+                color: FlutterFlowTheme.of(context).secondaryBackground,
+                letterSpacing: 0.0,
+                useGoogleFonts:
+                    !FlutterFlowTheme.of(context).titleMediumIsCustom,
+              ),
+        ),
+        actions: [
+          Padding(
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 0.0),
+            child: FlutterFlowIconButton(
+              borderColor: Colors.transparent,
+              borderRadius: 30.0,
+              borderWidth: 1.0,
+              buttonSize: 44.0,
+              icon: const Icon(
+                Icons.filter_list,
+                color: Colors.white,
+                size: 22.0,
+              ),
+              onPressed: _openClinicSheet,
+            ),
+          ),
+        ],
+        centerTitle: true,
+        elevation: 0.0,
+      ),
+      body: Stack(
+        children: [
+          SizedBox.expand(
+            child: RealMap(
+              showCenterPin: false,
+              markers: _pins(context),
+            ),
+          ),
+          Positioned(
+            right: 16.0,
+            bottom: 24.0,
+            child: wrapWithModel(
+              model: _model.navigatebuttonModel,
+              updateCallback: () => safeSetState(() {}),
+              child: const NavigatebuttonWidget(),
+            ),
+          ),
+        ],
       ),
     );
   }
