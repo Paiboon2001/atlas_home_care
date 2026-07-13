@@ -87,34 +87,40 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                   MediaQuery.viewPaddingOf(context).top,
               backgroundColor: FlutterFlowTheme.of(context).primary,
               automaticallyImplyLeading: false,
+              leadingWidth: 72.0,
               leading: Padding(
-                padding: const EdgeInsets.all(4.0),
-                child: Container(
-                  decoration: const BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 4.0,
-                        color: Color(0x33000000),
-                        offset: Offset(0.0, 2.0),
-                      )
-                    ],
-                    shape: BoxShape.circle,
-                  ),
-                  child: FlutterFlowIconButton(
-                    borderColor: Colors.transparent,
-                    borderRadius: 30.0,
-                    borderWidth: 1.0,
-                    buttonSize: 40.0,
-                    fillColor:
-                        FlutterFlowTheme.of(context).secondaryBackground,
-                    icon: Icon(
-                      Icons.arrow_back_ios_new_rounded,
-                      color: FlutterFlowTheme.of(context).primaryText,
-                      size: 18.0,
+                padding:
+                    const EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 4.0, 4.0),
+                child: Center(
+                  child: Container(
+                    width: 40.0,
+                    height: 40.0,
+                    decoration: const BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 4.0,
+                          color: Color(0x33000000),
+                          offset: Offset(0.0, 2.0),
+                        )
+                      ],
+                      shape: BoxShape.circle,
                     ),
-                    onPressed: () async {
-                      context.safePop();
-                    },
+                    child: FlutterFlowIconButton(
+                      borderColor: Colors.transparent,
+                      borderRadius: 30.0,
+                      borderWidth: 1.0,
+                      buttonSize: 40.0,
+                      fillColor:
+                          FlutterFlowTheme.of(context).secondaryBackground,
+                      icon: Icon(
+                        Icons.arrow_back_ios_new_rounded,
+                        color: FlutterFlowTheme.of(context).primaryText,
+                        size: 18.0,
+                      ),
+                      onPressed: () async {
+                        context.safePop();
+                      },
+                    ),
                   ),
                 ),
               ),
@@ -131,9 +137,13 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
               ),
               actions: [
                 Padding(
-                  padding: const EdgeInsets.all(4.0),
-                  child: Container(
-                  decoration: const BoxDecoration(
+                  padding: const EdgeInsetsDirectional.fromSTEB(
+                      4.0, 4.0, 16.0, 4.0),
+                  child: Center(
+                    child: Container(
+                    width: 40.0,
+                    height: 40.0,
+                    decoration: const BoxDecoration(
                     boxShadow: [
                       BoxShadow(
                         blurRadius: 4.0,
@@ -169,6 +179,7 @@ class _CgmDetailsWidgetState extends State<CgmDetailsWidget>
                       },
                     );
                   },
+                ),
                 ),
                 ),
                 ),
