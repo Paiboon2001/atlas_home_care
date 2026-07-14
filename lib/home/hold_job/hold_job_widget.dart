@@ -162,20 +162,9 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
               padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
               child: MasonryGridView.builder(
                 physics: const NeverScrollableScrollPhysics(),
-                gridDelegate: SliverSimpleGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: () {
-                    if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
-                      return 1;
-                    } else if (MediaQuery.sizeOf(context).width <
-                        kBreakpointMedium) {
-                      return 1;
-                    } else if (MediaQuery.sizeOf(context).width <
-                        kBreakpointLarge) {
-                      return 2;
-                    } else {
-                      return 2;
-                    }
-                  }(),
+                gridDelegate:
+                    const SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 1,
                 ),
                 crossAxisSpacing: 8.0,
                 mainAxisSpacing: 8.0,

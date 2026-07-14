@@ -3388,14 +3388,13 @@ class _InformationCommunityOneWidgetState
                                                         const SizedBox(width: 8.0)),
                                                   ),
                                                 ),
-                                                Expanded(
-                                                  child: wrapWithModel(
-                                                    model: _model
-                                                        .processUpPicModel,
-                                                    updateCallback: () =>
-                                                        safeSetState(() {}),
-                                                    child: const ProcessUpPicWidget(),
-                                                  ),
+                                                wrapWithModel(
+                                                  model:
+                                                      _model.processUpPicModel,
+                                                  updateCallback: () =>
+                                                      safeSetState(() {}),
+                                                  child:
+                                                      const ProcessUpPicWidget(),
                                                 ),
                                               ],
                                             ),

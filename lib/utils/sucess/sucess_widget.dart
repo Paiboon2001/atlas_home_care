@@ -69,8 +69,10 @@ class _SucessWidgetState extends State<SucessWidget>
       child: Padding(
         padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 112.0),
         child: Container(
-          width: 170.0,
-          height: 56.0,
+          // Sized by its content: a fixed 170×56 box overflowed once the label
+          // grew (titleSmall is larger on tablets).
+          constraints: const BoxConstraints(minHeight: 56.0),
+          margin: const EdgeInsets.symmetric(horizontal: 24.0),
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
@@ -90,7 +92,7 @@ class _SucessWidgetState extends State<SucessWidget>
           child: Padding(
             padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 8.0),
             child: Row(
-              mainAxisSize: MainAxisSize.max,
+              mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
@@ -98,18 +100,23 @@ class _SucessWidgetState extends State<SucessWidget>
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                   size: 32.0,
                 ),
-                Text(
-                  'บันทึกสำเร็จ',
-                  textAlign: TextAlign.center,
-                  style: FlutterFlowTheme.of(context).titleSmall.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).titleSmallFamily,
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
-                        letterSpacing: 0.0,
-                        lineHeight: 1.5,
-                        useGoogleFonts:
-                            !FlutterFlowTheme.of(context).titleSmallIsCustom,
-                      ),
+                Flexible(
+                  child: Text(
+                    'บันทึกสำเร็จ',
+                    textAlign: TextAlign.center,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: FlutterFlowTheme.of(context).titleSmall.override(
+                          fontFamily:
+                              FlutterFlowTheme.of(context).titleSmallFamily,
+                          color:
+                              FlutterFlowTheme.of(context).secondaryBackground,
+                          letterSpacing: 0.0,
+                          lineHeight: 1.5,
+                          useGoogleFonts:
+                              !FlutterFlowTheme.of(context).titleSmallIsCustom,
+                        ),
+                  ),
                 ),
               ].divide(const SizedBox(width: 8.0)),
             ),

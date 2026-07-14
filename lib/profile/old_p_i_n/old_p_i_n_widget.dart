@@ -106,6 +106,10 @@ class _OldPINWidgetState extends State<OldPINWidget> {
     );
   }
 
+  /// Spacing multiplier: tablets get double the padding/spacing of a phone.
+  double get _gap =>
+      MediaQuery.sizeOf(context).shortestSide >= 600 ? 2.0 : 1.0;
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -155,8 +159,9 @@ class _OldPINWidgetState extends State<OldPINWidget> {
             child: Center(
               child: SingleChildScrollView(
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(
-                      24.0, 16.0, 24.0, 16.0),
+                  // Tablets get double the padding and spacing of a phone.
+                  padding: EdgeInsetsDirectional.fromSTEB(
+                      24.0 * _gap, 16.0 * _gap, 24.0 * _gap, 16.0 * _gap),
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -167,7 +172,7 @@ class _OldPINWidgetState extends State<OldPINWidget> {
                         height: 130.0,
                         fit: BoxFit.contain,
                       ),
-                      const SizedBox(height: 12.0),
+                      SizedBox(height: 12.0 * _gap),
                       // Title
                       Text(
                         'กรุณากรอกรหัส PIN เดิมเพื่อยืนยันการเปลี่ยน',
@@ -183,7 +188,7 @@ class _OldPINWidgetState extends State<OldPINWidget> {
                                   .bodyLargeIsCustom,
                             ),
                       ),
-                      const SizedBox(height: 32.0),
+                      SizedBox(height: 32.0 * _gap),
                       // PIN indicator dots
                       SizedBox(
                         width: 176.0,
@@ -234,18 +239,18 @@ class _OldPINWidgetState extends State<OldPINWidget> {
                               .asValidator(context),
                         ),
                       ),
-                      const SizedBox(height: 32.0),
+                      SizedBox(height: 32.0 * _gap),
                       // Keypad
                       SizedBox(
-                        width: 296.0,
+                        width: 296.0 + 32.0 * (_gap - 1),
                         child: MasonryGridView.builder(
                           physics: const NeverScrollableScrollPhysics(),
                           gridDelegate:
                               const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 3,
                           ),
-                          crossAxisSpacing: 16.0,
-                          mainAxisSpacing: 24.0,
+                          crossAxisSpacing: 16.0 * _gap,
+                          mainAxisSpacing: 24.0 * _gap,
                           itemCount: 12,
                           shrinkWrap: true,
                           itemBuilder: (context, index) {

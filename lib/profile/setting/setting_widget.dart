@@ -4,6 +4,7 @@ import '/profile/widget/choose_company/choose_company_widget.dart';
 import '/profile/widget/logout_system/logout_system_widget.dart';
 import '/utils/navbar/navbar_widget.dart';
 import '/index.dart';
+import '/components/app_switch.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -135,17 +136,8 @@ class _SettingWidgetState extends State<SettingWidget> {
         size: 24.0,
       );
 
-  Widget _switch(bool value, ValueChanged<bool> onChanged) {
-    return Switch.adaptive(
-      value: value,
-      onChanged: onChanged,
-      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-      activeThumbColor: Colors.white,
-      activeTrackColor: const Color(0xFF339FF3),
-      inactiveTrackColor: const Color(0xFFD0D8E0),
-      inactiveThumbColor: Colors.white,
-    );
-  }
+  Widget _switch(bool value, ValueChanged<bool> onChanged) =>
+      AppSwitch(value: value, onChanged: onChanged);
 
   Widget _trailingText(String text) => Text(
         text,

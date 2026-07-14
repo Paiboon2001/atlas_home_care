@@ -38,6 +38,14 @@ class HomepageNewModel extends FlutterFlowModel<HomepageNewWidget> {
   late NewJobModel newJobModel2;
   // Model for New_Job component.
   late NewJobModel newJobModel3;
+  // Model for new_job component.
+  late NewJobModel newJobModel4;
+  // Model for new_job component.
+  late NewJobModel newJobModel5;
+  // Model for new_job component.
+  late NewJobModel newJobModel6;
+  // Model for new_job component.
+  late NewJobModel newJobModel7;
   // Model for respon_job component.
   late ResponJobModel responJobModel1;
   // Model for respon_job component.
@@ -71,6 +79,10 @@ class HomepageNewModel extends FlutterFlowModel<HomepageNewWidget> {
     newJobModel1 = createModel(context, () => NewJobModel());
     newJobModel2 = createModel(context, () => NewJobModel());
     newJobModel3 = createModel(context, () => NewJobModel());
+    newJobModel4 = createModel(context, () => NewJobModel());
+    newJobModel5 = createModel(context, () => NewJobModel());
+    newJobModel6 = createModel(context, () => NewJobModel());
+    newJobModel7 = createModel(context, () => NewJobModel());
     responJobModel1 = createModel(context, () => ResponJobModel());
     responJobModel2 = createModel(context, () => ResponJobModel());
     responJobModel3 = createModel(context, () => ResponJobModel());
@@ -96,6 +108,10 @@ class HomepageNewModel extends FlutterFlowModel<HomepageNewWidget> {
     newJobModel1.dispose();
     newJobModel2.dispose();
     newJobModel3.dispose();
+    newJobModel4.dispose();
+    newJobModel5.dispose();
+    newJobModel6.dispose();
+    newJobModel7.dispose();
     responJobModel1.dispose();
     responJobModel2.dispose();
     responJobModel3.dispose();

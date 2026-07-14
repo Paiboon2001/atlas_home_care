@@ -6,6 +6,7 @@ import '/components/main_button_widget.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/homevisitlist/widget/pines/pines_widget.dart';
 import '/index.dart';
+import '/utils/save_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -116,8 +117,8 @@ class _AddressWidgetState extends State<AddressWidget> {
                 scrollDirection: Axis.vertical,
                 children: [
                   Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(
+                        16.0, 0.0, 16.0, 0.0),
                     child: Container(
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -228,8 +229,9 @@ class _AddressWidgetState extends State<AddressWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: const EdgeInsetsDirectional
-                                                      .fromSTEB(
+                                                  margin:
+                                                      const EdgeInsetsDirectional
+                                                          .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
                                                   isOverButton: false,
@@ -237,7 +239,8 @@ class _AddressWidgetState extends State<AddressWidget> {
                                                   isMultiSelect: false,
                                                 ),
                                               ),
-                                            ].divide(const SizedBox(height: 8.0)),
+                                            ].divide(
+                                                const SizedBox(height: 8.0)),
                                           ),
                                       () => Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -323,8 +326,9 @@ class _AddressWidgetState extends State<AddressWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: const EdgeInsetsDirectional
-                                                      .fromSTEB(
+                                                  margin:
+                                                      const EdgeInsetsDirectional
+                                                          .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
                                                   isOverButton: false,
@@ -332,7 +336,8 @@ class _AddressWidgetState extends State<AddressWidget> {
                                                   isMultiSelect: false,
                                                 ),
                                               ),
-                                            ].divide(const SizedBox(height: 8.0)),
+                                            ].divide(
+                                                const SizedBox(height: 8.0)),
                                           ),
                                       () => Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -418,8 +423,9 @@ class _AddressWidgetState extends State<AddressWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: const EdgeInsetsDirectional
-                                                      .fromSTEB(
+                                                  margin:
+                                                      const EdgeInsetsDirectional
+                                                          .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
                                                   isOverButton: false,
@@ -427,7 +433,8 @@ class _AddressWidgetState extends State<AddressWidget> {
                                                   isMultiSelect: false,
                                                 ),
                                               ),
-                                            ].divide(const SizedBox(height: 8.0)),
+                                            ].divide(
+                                                const SizedBox(height: 8.0)),
                                           ),
                                       () => Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -513,8 +520,9 @@ class _AddressWidgetState extends State<AddressWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: const EdgeInsetsDirectional
-                                                      .fromSTEB(
+                                                  margin:
+                                                      const EdgeInsetsDirectional
+                                                          .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
                                                   isOverButton: false,
@@ -522,7 +530,8 @@ class _AddressWidgetState extends State<AddressWidget> {
                                                   isMultiSelect: false,
                                                 ),
                                               ),
-                                            ].divide(const SizedBox(height: 8.0)),
+                                            ].divide(
+                                                const SizedBox(height: 8.0)),
                                           ),
                                     ][index]();
                                   },
@@ -735,8 +744,8 @@ class _AddressWidgetState extends State<AddressWidget> {
                                           ),
                                         ),
                                         Align(
-                                          alignment:
-                                              const AlignmentDirectional(1.0, 1.0),
+                                          alignment: const AlignmentDirectional(
+                                              1.0, 1.0),
                                           child: Padding(
                                             padding: EdgeInsets.all(
                                                 valueOrDefault<double>(
@@ -774,7 +783,8 @@ class _AddressWidgetState extends State<AddressWidget> {
                                                       safeSetState(() {}),
                                                   child: const PinesWidget(),
                                                 ),
-                                              ].divide(const SizedBox(height: 8.0)),
+                                              ].divide(
+                                                  const SizedBox(height: 8.0)),
                                             ),
                                           ),
                                         ),
@@ -814,11 +824,12 @@ class _AddressWidgetState extends State<AddressWidget> {
                   ),
                 ),
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 32.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(
+                      16.0, 12.0, 16.0, 32.0),
                   child: MainButton(
                     text: 'บันทึก',
                     onPressed: () async {
-                      context.safePop();
+                      await saveThenToast(context, () => context.safePop());
                     },
                   ),
                 ),

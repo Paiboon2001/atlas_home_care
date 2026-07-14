@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/utils/close/close_widget.dart';
 import '/index.dart';
+import '/utils/save_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'save_draft_model.dart';
@@ -199,7 +200,8 @@ class _SaveDraftWidgetState extends State<SaveDraftWidget>
                 ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                padding:
+                    const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                 child: SizedBox(
                   width: 160.0,
                   height: 160.0,
@@ -291,7 +293,8 @@ class _SaveDraftWidgetState extends State<SaveDraftWidget>
                 ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                padding:
+                    const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -351,14 +354,17 @@ class _SaveDraftWidgetState extends State<SaveDraftWidget>
                       child: MainButton(
                         text: 'บันทึก',
                         onPressed: () async {
-                          context.pushNamed(HomepageNewWidget.routeName);
-
-                          FFAppState().draft = !(FFAppState().draft ?? true);
-                          safeSetState(() {});
+                          await saveThenToast(context, () {
+                            context.pushNamed(HomepageNewWidget.routeName);
+                            FFAppState().draft = !(FFAppState().draft ?? true);
+                            safeSetState(() {});
+                          });
                         },
                       ),
                     ),
-                  ].divide(const SizedBox(width: 16.0)).around(const SizedBox(width: 16.0)),
+                  ]
+                      .divide(const SizedBox(width: 16.0))
+                      .around(const SizedBox(width: 16.0)),
                 ),
               ),
             ],

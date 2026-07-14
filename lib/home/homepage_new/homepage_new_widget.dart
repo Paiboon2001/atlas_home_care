@@ -1242,7 +1242,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                           ),
                                                     ),
                                                     Text(
-                                                      'จำนวน 3 งาน',
+                                                      'จำนวน 7 งาน',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -1332,6 +1332,70 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                             'โรคเบาหวานมีความเป็นกรดสูงมาก มีการทำให้เป็นโรคเรื้อรังทางระบบประสาทและสมอง กินยาเป็นระยะเวลานานแล้ว',
                                                       ),
                                                     ),
+                                                  wrapWithModel(
+                                                    model: _model.newJobModel4,
+                                                    updateCallback: () =>
+                                                        safeSetState(() {}),
+                                                    child: const NewJobWidget(
+                                                      img: 'assets/images/patient_photo_4.jpg',
+                                                      mainname: 'นางสาวปิยะดา ทองอินทร์',
+                                                      year: '29',
+                                                      month: '2',
+                                                      day: '14',
+                                                      date: '13 ม.ค. 2569',
+                                                      time: '09:00 น.',
+                                                      details:
+                                                          'โรคเบาหวานมีความเป็นกรดสูงมาก มีการทำให้เป็นโรคเรื้อรังทางระบบประสาทและสมอง กินยาเป็นระยะเวลานานแล้ว',
+                                                    ),
+                                                  ),
+                                                  wrapWithModel(
+                                                    model: _model.newJobModel5,
+                                                    updateCallback: () =>
+                                                        safeSetState(() {}),
+                                                    child: const NewJobWidget(
+                                                      img: 'assets/images/patient_photo_5.jpg',
+                                                      mainname: 'นายสุชาติ ภูวเดช',
+                                                      year: '61',
+                                                      month: '8',
+                                                      day: '2',
+                                                      date: '14 ม.ค. 2569',
+                                                      time: '10:30 น.',
+                                                      details:
+                                                          'โรคเบาหวานมีความเป็นกรดสูงมาก มีการทำให้เป็นโรคเรื้อรังทางระบบประสาทและสมอง กินยาเป็นระยะเวลานานแล้ว',
+                                                    ),
+                                                  ),
+                                                  wrapWithModel(
+                                                    model: _model.newJobModel6,
+                                                    updateCallback: () =>
+                                                        safeSetState(() {}),
+                                                    child: const NewJobWidget(
+                                                      img: 'assets/images/patient_photo_6.jpg',
+                                                      mainname: 'นางสาวกนกวรรณ ใจงาม',
+                                                      year: '24',
+                                                      month: '11',
+                                                      day: '7',
+                                                      date: '14 ม.ค. 2569',
+                                                      time: '13:30 น.',
+                                                      details:
+                                                          'โรคเบาหวานมีความเป็นกรดสูงมาก มีการทำให้เป็นโรคเรื้อรังทางระบบประสาทและสมอง กินยาเป็นระยะเวลานานแล้ว',
+                                                    ),
+                                                  ),
+                                                  wrapWithModel(
+                                                    model: _model.newJobModel7,
+                                                    updateCallback: () =>
+                                                        safeSetState(() {}),
+                                                    child: const NewJobWidget(
+                                                      img: 'assets/images/patient_photo_7.jpg',
+                                                      mainname: 'นายธนกร แสงทอง',
+                                                      year: '45',
+                                                      month: '3',
+                                                      day: '28',
+                                                      date: '15 ม.ค. 2569',
+                                                      time: '15:00 น.',
+                                                      details:
+                                                          'โรคเบาหวานมีความเป็นกรดสูงมาก มีการทำให้เป็นโรคเรื้อรังทางระบบประสาทและสมอง กินยาเป็นระยะเวลานานแล้ว',
+                                                    ),
+                                                  ),
                                                   ]
                                                       .divide(const SizedBox(
                                                           width: 8.0))
@@ -1461,29 +1525,8 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
-                                                    crossAxisCount: () {
-                                                      if (MediaQuery.sizeOf(
-                                                                  context)
-                                                              .width <
-                                                          kBreakpointSmall) {
-                                                        return 1;
-                                                      } else if (MediaQuery
-                                                                  .sizeOf(
-                                                                      context)
-                                                              .width <
-                                                          kBreakpointMedium) {
-                                                        return 1;
-                                                      } else if (MediaQuery
-                                                                  .sizeOf(
-                                                                      context)
-                                                              .width <
-                                                          kBreakpointLarge) {
-                                                        return 2;
-                                                      } else {
-                                                        return 2;
-                                                      }
-                                                    }(),
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                    crossAxisCount: 1,
                                                   ),
                                                   crossAxisSpacing: 8.0,
                                                   mainAxisSpacing: 8.0,
@@ -1678,29 +1721,8 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
-                                                    crossAxisCount: () {
-                                                      if (MediaQuery.sizeOf(
-                                                                  context)
-                                                              .width <
-                                                          kBreakpointSmall) {
-                                                        return 1;
-                                                      } else if (MediaQuery
-                                                                  .sizeOf(
-                                                                      context)
-                                                              .width <
-                                                          kBreakpointMedium) {
-                                                        return 1;
-                                                      } else if (MediaQuery
-                                                                  .sizeOf(
-                                                                      context)
-                                                              .width <
-                                                          kBreakpointLarge) {
-                                                        return 2;
-                                                      } else {
-                                                        return 2;
-                                                      }
-                                                    }(),
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                    crossAxisCount: 1,
                                                   ),
                                                   crossAxisSpacing: 8.0,
                                                   mainAxisSpacing: 8.0,
@@ -1856,29 +1878,8 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                   physics:
                                                       const NeverScrollableScrollPhysics(),
                                                   gridDelegate:
-                                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
-                                                    crossAxisCount: () {
-                                                      if (MediaQuery.sizeOf(
-                                                                  context)
-                                                              .width <
-                                                          kBreakpointSmall) {
-                                                        return 1;
-                                                      } else if (MediaQuery
-                                                                  .sizeOf(
-                                                                      context)
-                                                              .width <
-                                                          kBreakpointMedium) {
-                                                        return 1;
-                                                      } else if (MediaQuery
-                                                                  .sizeOf(
-                                                                      context)
-                                                              .width <
-                                                          kBreakpointLarge) {
-                                                        return 2;
-                                                      } else {
-                                                        return 2;
-                                                      }
-                                                    }(),
+                                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                    crossAxisCount: 1,
                                                   ),
                                                   crossAxisSpacing: 8.0,
                                                   mainAxisSpacing: 8.0,

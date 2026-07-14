@@ -4,6 +4,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
+import '/utils/save_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'change_datetime_model.dart';
@@ -89,7 +90,8 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+                padding:
+                    const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -119,8 +121,8 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
               ),
               Expanded(
                 child: Padding(
-                  padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(
+                      16.0, 24.0, 16.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -192,13 +194,15 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                               stops: const [0.0, 1.0],
                                               begin: const AlignmentDirectional(
                                                   0.0, -1.0),
-                                              end: const AlignmentDirectional(0, 1.0),
+                                              end: const AlignmentDirectional(
+                                                  0, 1.0),
                                             ),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(
+                                                    0.0, 0.0),
                                             child: Icon(
                                               Icons.calendar_month_rounded,
                                               color:
@@ -239,7 +243,8 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                         children: [
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(-1.0, 0.0),
+                                                const AlignmentDirectional(
+                                                    -1.0, 0.0),
                                             child: SizedBox(
                                               width: double.infinity,
                                               child: TextFormField(
@@ -276,8 +281,8 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                                       InputBorder.none,
                                                   contentPadding:
                                                       const EdgeInsetsDirectional
-                                                          .fromSTEB(16.0, 0.0,
-                                                              16.0, 0.0),
+                                                          .fromSTEB(
+                                                          16.0, 0.0, 16.0, 0.0),
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -303,10 +308,12 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(1.0, 0.0),
+                                                const AlignmentDirectional(
+                                                    1.0, 0.0),
                                             child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
+                                              padding:
+                                                  const EdgeInsetsDirectional
+                                                      .fromSTEB(
                                                       0.0, 0.0, 12.0, 0.0),
                                               child: Icon(
                                                 Icons.calendar_month_rounded,
@@ -454,7 +461,8 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                           ),
                                           child: Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(
+                                                    0.0, 0.0),
                                             child: Icon(
                                               Icons.access_time_filled_rounded,
                                               color:
@@ -495,7 +503,8 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                         children: [
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(-1.0, 0.0),
+                                                const AlignmentDirectional(
+                                                    -1.0, 0.0),
                                             child: SizedBox(
                                               width: double.infinity,
                                               child: TextFormField(
@@ -532,8 +541,8 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                                       InputBorder.none,
                                                   contentPadding:
                                                       const EdgeInsetsDirectional
-                                                          .fromSTEB(16.0, 0.0,
-                                                              16.0, 0.0),
+                                                          .fromSTEB(
+                                                          16.0, 0.0, 16.0, 0.0),
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -559,10 +568,12 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(1.0, 0.0),
+                                                const AlignmentDirectional(
+                                                    1.0, 0.0),
                                             child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
+                                              padding:
+                                                  const EdgeInsetsDirectional
+                                                      .fromSTEB(
                                                       0.0, 0.0, 12.0, 0.0),
                                               child: Icon(
                                                 Icons.access_time_rounded,
@@ -736,7 +747,8 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                padding:
+                    const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -750,7 +762,8 @@ class _ChangeDatetimeWidgetState extends State<ChangeDatetimeWidget> {
                       child: MainButton(
                         text: 'บันทึก',
                         onPressed: () async {
-                          Navigator.pop(context);
+                          await saveThenToast(
+                              context, () => Navigator.pop(context));
                         },
                       ),
                     ),

@@ -2,6 +2,7 @@ import 'dart:math' as math;
 
 import '/components/card_shadow.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '/components/thai_date_picker_widget.dart';
 
@@ -56,7 +57,8 @@ class HomeCalendarStrip extends StatefulWidget {
   /// Sunday→Saturday week containing [anchor]. The filled day is [selected]
   /// (null = none); job-status colours are computed relative to [today].
   static List<_DayData> buildWeek(
-      DateTime anchor, DateTime? selected, DateTime today) {
+      DateTime anchor, DateTime? selected, DateTime today,
+      {int weeks = 1}) {
     final DateTime a = DateTime(anchor.year, anchor.month, anchor.day);
     final DateTime t = DateTime(today.year, today.month, today.day);
     final DateTime? sel = selected == null
@@ -65,10 +67,10 @@ class HomeCalendarStrip extends StatefulWidget {
     final int fromSunday = a.weekday % 7; // Dart: Mon=1..Sun=7 → Sun=0
     final DateTime sunday = a.subtract(Duration(days: fromSunday));
     const List<String> labels = ['อา', 'จ', 'อ', 'พ', 'พฤ', 'ศ', 'ส'];
-    return List<_DayData>.generate(7, (i) {
+    return List<_DayData>.generate(7 * weeks, (i) {
       final DateTime d = sunday.add(Duration(days: i));
       final int diff = d.difference(t).inDays;
-      return _DayData(labels[i], d, _mockStatuses(diff), selected: d == sel);
+      return _DayData(labels[i % 7], d, _mockStatuses(diff), selected: d == sel);
     });
   }
 
@@ -301,10 +303,14 @@ class _HomeWeekStripState extends State<HomeWeekStrip> {
 
   @override
   Widget build(BuildContext context) {
+    // Tablets are wide enough to show a fortnight; phones stay on one week.
+    final int weeks =
+        MediaQuery.sizeOf(context).shortestSide >= 600 ? 2 : 1;
     final DateTime sunday = widget.anchorDate
         .subtract(Duration(days: widget.anchorDate.weekday % 7));
     final List<_DayData> days = HomeCalendarStrip.buildWeek(
-        widget.anchorDate, widget.selectedDate, DateTime.now());
+        widget.anchorDate, widget.selectedDate, DateTime.now(),
+        weeks: weeks);
     return Column(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -314,9 +320,9 @@ class _HomeWeekStripState extends State<HomeWeekStrip> {
           onHorizontalDragEnd: (details) {
             final double v = details.primaryVelocity ?? 0;
             if (v < -80) {
-              _shiftWeek(1); // swipe left → next week
+              _shiftWeek(weeks); // swipe left → next week(s)
             } else if (v > 80) {
-              _shiftWeek(-1); // swipe right → previous week
+              _shiftWeek(-weeks); // swipe right → previous week(s)
             }
           },
           // Paint-only slide (Transform) keeps the row's layout height stable.
@@ -603,6 +609,9 @@ class _ViewToggle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Tablets have room for the labelled segmented control from Figma;
+    // phones keep the icon-only capsule.
+    final bool labelled = MediaQuery.sizeOf(context).shortestSide >= 600;
     return Container(
       padding: const EdgeInsets.all(4.0),
       decoration: BoxDecoration(
@@ -612,20 +621,23 @@ class _ViewToggle extends StatelessWidget {
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
-        spacing: 8.0,
+        spacing: labelled ? 0.0 : 8.0,
         children: [
           _ToggleIcon(
             svg: _cardViewSvg,
+            label: labelled ? 'การ์ด' : null,
             active: selected == HomeCalendarView.agenda,
             onTap: () => onChanged?.call(HomeCalendarView.agenda),
           ),
           _ToggleIcon(
             icon: Icons.map_outlined,
+            label: labelled ? 'แผนที่' : null,
             active: selected == HomeCalendarView.map,
             onTap: () => onChanged?.call(HomeCalendarView.map),
           ),
           _ToggleIcon(
             icon: Icons.calendar_month_rounded,
+            label: labelled ? 'ปฏิทิน' : null,
             active: selected == HomeCalendarView.calendar,
             onTap: () => onChanged?.call(HomeCalendarView.calendar),
           ),
@@ -637,38 +649,80 @@ class _ViewToggle extends StatelessWidget {
 
 class _ToggleIcon extends StatelessWidget {
   const _ToggleIcon(
-      {this.icon, this.svg, required this.active, required this.onTap})
+      {this.icon,
+      this.svg,
+      this.label,
+      required this.active,
+      required this.onTap})
       : assert(icon != null || svg != null);
+
+  static const Color _inactiveLabel = Color(0xFF5D6C87);
 
   final IconData? icon;
   final String? svg;
+
+  /// When set, the item renders as a labelled segment (tablet layout).
+  final String? label;
   final bool active;
   final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
-    final color =
-        active ? HomeCalendarStrip._white : HomeCalendarStrip._primaryText;
+    final color = active
+        ? HomeCalendarStrip._white
+        : (label != null ? _inactiveLabel : HomeCalendarStrip._primaryText);
+    final Widget graphic = svg != null
+        ? SvgPicture.string(
+            svg!,
+            width: 16.0,
+            height: 16.0,
+            colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
+          )
+        : Icon(icon, size: 16.0, color: color);
+
     return InkWell(
       onTap: onTap,
       borderRadius: BorderRadius.circular(200.0),
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
       child: Container(
-        padding: const EdgeInsets.all(8.0),
+        height: label != null ? 32.0 : null,
+        padding: label != null
+            ? const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0)
+            : const EdgeInsets.all(8.0),
         alignment: Alignment.center,
         decoration: BoxDecoration(
           color: active ? HomeCalendarStrip._primary : Colors.transparent,
           borderRadius: BorderRadius.circular(100.0),
+          boxShadow: active && label != null ? kCapsuleShadow : null,
         ),
-        child: svg != null
-            ? SvgPicture.string(
-                svg!,
-                width: 16.0,
-                height: 16.0,
-                colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
-              )
-            : Icon(icon, size: 16.0, color: color),
+        child: label == null
+            ? graphic
+            : Row(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  graphic,
+                  const SizedBox(width: 8.0),
+                  Text(
+                    label!,
+                    // Trim the Sarabun line box: with a 1.5 line-height the
+                    // extra leading pushed the glyphs below the icon.
+                    strutStyle: const StrutStyle(
+                      fontSize: 16.0,
+                      height: 1.0,
+                      forceStrutHeight: true,
+                    ),
+                    style: GoogleFonts.sarabun(
+                      color: color,
+                      fontSize: 16.0,
+                      height: 1.0,
+                      letterSpacing: -0.096,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ],
+              ),
       ),
     );
   }

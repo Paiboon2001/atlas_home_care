@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/components/main_button_widget.dart';
 import '/index.dart';
+import '/utils/save_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'summarry_a_d_l_model.dart';
@@ -184,7 +185,8 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
                                       FlutterFlowTheme.of(context).primary
                                     ],
                                     stops: const [0.0, 1.0],
-                                    begin: const AlignmentDirectional(0.0, -1.0),
+                                    begin:
+                                        const AlignmentDirectional(0.0, -1.0),
                                     end: const AlignmentDirectional(0, 1.0),
                                   ),
                                   shape: BoxShape.circle,
@@ -207,7 +209,8 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
                                       FlutterFlowTheme.of(context).primary
                                     ],
                                     stops: const [0.0, 1.0],
-                                    begin: const AlignmentDirectional(0.0, -1.0),
+                                    begin:
+                                        const AlignmentDirectional(0.0, -1.0),
                                     end: const AlignmentDirectional(0, 1.0),
                                   ),
                                   shape: BoxShape.circle,
@@ -279,8 +282,8 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
                       ),
                     ),
                     Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                      padding: const EdgeInsetsDirectional.fromSTEB(
+                          16.0, 0.0, 16.0, 0.0),
                       child: Text(
                         'ภาวะพึ่งพารุนแรง : low initial score, severe dependence',
                         textAlign: TextAlign.center,
@@ -299,11 +302,15 @@ class _SummarryADLWidgetState extends State<SummarryADLWidget>
                 ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 13.0),
+                padding:
+                    const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 13.0),
                 child: MainButton(
                   text: 'บันทึก',
                   onPressed: () async {
-                    context.pushNamed(AddVisitinginformationWidget.routeName);
+                    await saveThenToast(
+                        context,
+                        () => context
+                            .pushNamed(AddVisitinginformationWidget.routeName));
                   },
                 ),
               ),

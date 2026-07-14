@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/components/main_button_widget.dart';
+import '/utils/save_toast.dart';
 import 'package:flutter/material.dart';
 import 'resoncc_model.dart';
 export 'resoncc_model.dart';
@@ -195,9 +196,11 @@ class _ResonccWidgetState extends State<ResonccWidget> {
                 child: MainButton(
                   text: 'บันทึก',
                   onPressed: () async {
-                    Navigator.pop(context);
-                    FFAppState().adi = !(FFAppState().adi ?? true);
-                    safeSetState(() {});
+                    await saveThenToast(context, () {
+                      Navigator.pop(context);
+                      FFAppState().adi = !(FFAppState().adi ?? true);
+                      safeSetState(() {});
+                    });
                   },
                 ),
               ),

@@ -11,6 +11,8 @@ import '/utils/vital_sign/vital_sign_widget.dart';
 import '/index.dart';
 import 'package:sticky_headers/sticky_headers.dart';
 import 'package:expandable/expandable.dart';
+import '/components/app_switch.dart';
+import '/utils/save_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -157,8 +159,8 @@ class _AddVisitinginformationWidgetState
                 scrollDirection: Axis.vertical,
                 children: [
                   Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(
+                        16.0, 0.0, 16.0, 0.0),
                     child: Material(
                       color: Colors.transparent,
                       elevation: 2.0,
@@ -191,7 +193,8 @@ class _AddVisitinginformationWidgetState
                                       FlutterFlowTheme.of(context).primary
                                     ],
                                     stops: const [0.0, 1.0],
-                                    begin: const AlignmentDirectional(0.0, -1.0),
+                                    begin:
+                                        const AlignmentDirectional(0.0, -1.0),
                                     end: const AlignmentDirectional(0, 1.0),
                                   ),
                                   borderRadius: BorderRadius.circular(24.0),
@@ -214,9 +217,10 @@ class _AddVisitinginformationWidgetState
                                                   .primary
                                             ],
                                             stops: const [0.0, 1.0],
-                                            begin:
-                                                const AlignmentDirectional(0.0, -1.0),
-                                            end: const AlignmentDirectional(0, 1.0),
+                                            begin: const AlignmentDirectional(
+                                                0.0, -1.0),
+                                            end: const AlignmentDirectional(
+                                                0, 1.0),
                                           ),
                                           shape: BoxShape.circle,
                                           border: Border.all(
@@ -276,7 +280,8 @@ class _AddVisitinginformationWidgetState
                                                 ))
                                                   Container(
                                                     decoration: BoxDecoration(
-                                                      gradient: const LinearGradient(
+                                                      gradient:
+                                                          const LinearGradient(
                                                         colors: [
                                                           Color(0xFFFF7600),
                                                           Color(0xFFFFB85C)
@@ -296,11 +301,8 @@ class _AddVisitinginformationWidgetState
                                                     child: Padding(
                                                       padding:
                                                           const EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  4.0,
-                                                                  4.0,
-                                                                  8.0,
-                                                                  4.0),
+                                                              .fromSTEB(4.0,
+                                                              4.0, 8.0, 4.0),
                                                       child: Row(
                                                         mainAxisSize:
                                                             MainAxisSize.max,
@@ -362,8 +364,10 @@ class _AddVisitinginformationWidgetState
                                               ],
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(0.0, 8.0, 0.0, 0.0),
+                                              padding:
+                                                  const EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                      0.0, 8.0, 0.0, 0.0),
                                               child: RichText(
                                                 textScaler:
                                                     MediaQuery.of(context)
@@ -399,22 +403,23 @@ class _AddVisitinginformationWidgetState
                                                       style: TextStyle(),
                                                     )
                                                   ],
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMediumFamily,
-                                                        color:
-                                                            const Color(0xFFF9E7C9),
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts:
-                                                            !FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMediumIsCustom,
-                                                      ),
+                                                  style:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMediumFamily,
+                                                            color: const Color(
+                                                                0xFFF9E7C9),
+                                                            letterSpacing: 0.0,
+                                                            useGoogleFonts:
+                                                                !FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMediumIsCustom,
+                                                          ),
                                                 ),
                                               ),
                                             ),
@@ -430,8 +435,8 @@ class _AddVisitinginformationWidgetState
                                                   Padding(
                                                     padding:
                                                         const EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 8.0,
-                                                                0.0, 0.0),
+                                                            .fromSTEB(
+                                                            0.0, 8.0, 0.0, 0.0),
                                                     child: Container(
                                                       decoration: BoxDecoration(
                                                         gradient:
@@ -456,11 +461,8 @@ class _AddVisitinginformationWidgetState
                                                       child: Padding(
                                                         padding:
                                                             const EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    4.0,
-                                                                    4.0,
-                                                                    8.0,
-                                                                    4.0),
+                                                                .fromSTEB(4.0,
+                                                                4.0, 8.0, 4.0),
                                                         child: Row(
                                                           mainAxisSize:
                                                               MainAxisSize.max,
@@ -514,8 +516,9 @@ class _AddVisitinginformationWidgetState
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(const SizedBox(
-                                                              width: 4.0)),
+                                                          ].divide(
+                                                              const SizedBox(
+                                                                  width: 4.0)),
                                                         ),
                                                       ),
                                                     ),
@@ -562,8 +565,9 @@ class _AddVisitinginformationWidgetState
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        16.0, 0.0, 16.0, 16.0),
+                                    padding:
+                                        const EdgeInsetsDirectional.fromSTEB(
+                                            16.0, 0.0, 16.0, 16.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -762,10 +766,10 @@ class _AddVisitinginformationWidgetState
                                                                 contentPadding:
                                                                     const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                            16.0,
-                                                                            0.0,
-                                                                            16.0,
-                                                                            0.0),
+                                                                        16.0,
+                                                                        0.0,
+                                                                        16.0,
+                                                                        0.0),
                                                               ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -791,8 +795,8 @@ class _AddVisitinginformationWidgetState
                                                           ),
                                                         ),
                                                       ),
-                                                    ].divide(
-                                                        const SizedBox(height: 8.0)),
+                                                    ].divide(const SizedBox(
+                                                        height: 8.0)),
                                                   ),
                                               () => Column(
                                                     mainAxisSize:
@@ -975,10 +979,10 @@ class _AddVisitinginformationWidgetState
                                                                 contentPadding:
                                                                     const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                            16.0,
-                                                                            0.0,
-                                                                            16.0,
-                                                                            0.0),
+                                                                        16.0,
+                                                                        0.0,
+                                                                        16.0,
+                                                                        0.0),
                                                               ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -1004,8 +1008,8 @@ class _AddVisitinginformationWidgetState
                                                           ),
                                                         ),
                                                       ),
-                                                    ].divide(
-                                                        const SizedBox(height: 8.0)),
+                                                    ].divide(const SizedBox(
+                                                        height: 8.0)),
                                                   ),
                                             ][index]();
                                           },
@@ -1218,8 +1222,8 @@ class _AddVisitinginformationWidgetState
                                                           ),
                                                         ),
                                                       ),
-                                                    ].divide(
-                                                        const SizedBox(height: 8.0)),
+                                                    ].divide(const SizedBox(
+                                                        height: 8.0)),
                                                   ),
                                             ][index]();
                                           },
@@ -1285,8 +1289,9 @@ class _AddVisitinginformationWidgetState
                                                       begin:
                                                           const AlignmentDirectional(
                                                               0.56, -1.0),
-                                                      end: const AlignmentDirectional(
-                                                          -0.56, 1.0),
+                                                      end:
+                                                          const AlignmentDirectional(
+                                                              -0.56, 1.0),
                                                     ),
                                                     shape: BoxShape.circle,
                                                   ),
@@ -1354,11 +1359,8 @@ class _AddVisitinginformationWidgetState
                                                     child: Padding(
                                                       padding:
                                                           const EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  12.0,
-                                                                  8.0,
-                                                                  12.0,
-                                                                  8.0),
+                                                              .fromSTEB(12.0,
+                                                              8.0, 12.0, 8.0),
                                                       child: Row(
                                                         mainAxisSize:
                                                             MainAxisSize.max,
@@ -1396,7 +1398,8 @@ class _AddVisitinginformationWidgetState
                                                     ),
                                                   ),
                                                 ),
-                                              ].divide(const SizedBox(width: 8.0)),
+                                              ].divide(
+                                                  const SizedBox(width: 8.0)),
                                             ),
                                             Container(
                                               width: double.infinity,
@@ -1408,10 +1411,12 @@ class _AddVisitinginformationWidgetState
                                                     BorderRadius.circular(8.0),
                                               ),
                                               child: Align(
-                                                alignment: const AlignmentDirectional(
-                                                    -1.0, 0.0),
+                                                alignment:
+                                                    const AlignmentDirectional(
+                                                        -1.0, 0.0),
                                                 child: Padding(
-                                                  padding: const EdgeInsets.all(12.0),
+                                                  padding: const EdgeInsets.all(
+                                                      12.0),
                                                   child: Text(
                                                     'บ้านเลขที่ 1 หมู่ 6 บ้านกฤษดานคร แขวงราษฎร์บูรณะ เขตราษฎร์บูรณะ กรุงเทพมหานคร 10140',
                                                     style: FlutterFlowTheme.of(
@@ -1537,8 +1542,9 @@ class _AddVisitinginformationWidgetState
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Align(
-                                                alignment: const AlignmentDirectional(
-                                                    0.0, 0.0),
+                                                alignment:
+                                                    const AlignmentDirectional(
+                                                        0.0, 0.0),
                                                 child: Container(
                                                   width: () {
                                                     if (MediaQuery.sizeOf(
@@ -1613,7 +1619,8 @@ class _AddVisitinginformationWidgetState
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            const EdgeInsets.all(8.0),
+                                                            const EdgeInsets
+                                                                .all(8.0),
                                                         child: ClipRRect(
                                                           borderRadius:
                                                               BorderRadius
@@ -1708,7 +1715,8 @@ class _AddVisitinginformationWidgetState
                                                               .bodySmallIsCustom,
                                                     ),
                                               ),
-                                            ].divide(const SizedBox(height: 8.0)),
+                                            ].divide(
+                                                const SizedBox(height: 8.0)),
                                           ),
                                         ),
                                       ),
@@ -1727,8 +1735,9 @@ class _AddVisitinginformationWidgetState
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Align(
-                                                alignment: const AlignmentDirectional(
-                                                    0.0, 0.0),
+                                                alignment:
+                                                    const AlignmentDirectional(
+                                                        0.0, 0.0),
                                                 child: Container(
                                                   width: () {
                                                     if (MediaQuery.sizeOf(
@@ -1803,7 +1812,8 @@ class _AddVisitinginformationWidgetState
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            const EdgeInsets.all(8.0),
+                                                            const EdgeInsets
+                                                                .all(8.0),
                                                         child: ClipRRect(
                                                           borderRadius:
                                                               BorderRadius
@@ -1898,7 +1908,8 @@ class _AddVisitinginformationWidgetState
                                                               .bodySmallIsCustom,
                                                     ),
                                               ),
-                                            ].divide(const SizedBox(height: 8.0)),
+                                            ].divide(
+                                                const SizedBox(height: 8.0)),
                                           ),
                                         ),
                                       ),
@@ -1917,8 +1928,9 @@ class _AddVisitinginformationWidgetState
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Align(
-                                                alignment: const AlignmentDirectional(
-                                                    0.0, 0.0),
+                                                alignment:
+                                                    const AlignmentDirectional(
+                                                        0.0, 0.0),
                                                 child: Container(
                                                   width: () {
                                                     if (MediaQuery.sizeOf(
@@ -1993,7 +2005,8 @@ class _AddVisitinginformationWidgetState
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            const EdgeInsets.all(8.0),
+                                                            const EdgeInsets
+                                                                .all(8.0),
                                                         child: ClipRRect(
                                                           borderRadius:
                                                               BorderRadius
@@ -2088,7 +2101,8 @@ class _AddVisitinginformationWidgetState
                                                               .bodySmallIsCustom,
                                                     ),
                                               ),
-                                            ].divide(const SizedBox(height: 8.0)),
+                                            ].divide(
+                                                const SizedBox(height: 8.0)),
                                           ),
                                         ),
                                       ),
@@ -2107,8 +2121,9 @@ class _AddVisitinginformationWidgetState
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Align(
-                                                alignment: const AlignmentDirectional(
-                                                    0.0, 0.0),
+                                                alignment:
+                                                    const AlignmentDirectional(
+                                                        0.0, 0.0),
                                                 child: Container(
                                                   width: () {
                                                     if (MediaQuery.sizeOf(
@@ -2183,7 +2198,8 @@ class _AddVisitinginformationWidgetState
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            const EdgeInsets.all(8.0),
+                                                            const EdgeInsets
+                                                                .all(8.0),
                                                         child: ClipRRect(
                                                           borderRadius:
                                                               BorderRadius
@@ -2278,7 +2294,8 @@ class _AddVisitinginformationWidgetState
                                                               .bodySmallIsCustom,
                                                     ),
                                               ),
-                                            ].divide(const SizedBox(height: 8.0)),
+                                            ].divide(
+                                                const SizedBox(height: 8.0)),
                                           ),
                                         ),
                                       ),
@@ -2297,8 +2314,9 @@ class _AddVisitinginformationWidgetState
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Align(
-                                                alignment: const AlignmentDirectional(
-                                                    0.0, 0.0),
+                                                alignment:
+                                                    const AlignmentDirectional(
+                                                        0.0, 0.0),
                                                 child: Container(
                                                   width: () {
                                                     if (MediaQuery.sizeOf(
@@ -2373,7 +2391,8 @@ class _AddVisitinginformationWidgetState
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            const EdgeInsets.all(8.0),
+                                                            const EdgeInsets
+                                                                .all(8.0),
                                                         child: ClipRRect(
                                                           borderRadius:
                                                               BorderRadius
@@ -2468,7 +2487,8 @@ class _AddVisitinginformationWidgetState
                                                               .bodySmallIsCustom,
                                                     ),
                                               ),
-                                            ].divide(const SizedBox(height: 8.0)),
+                                            ].divide(
+                                                const SizedBox(height: 8.0)),
                                           ),
                                         ),
                                       ),
@@ -2542,8 +2562,8 @@ class _AddVisitinginformationWidgetState
                     ),
                   ),
                   child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 32.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(
+                        16.0, 8.0, 16.0, 32.0),
                     child: MasonryGridView.builder(
                       padding: EdgeInsets.zero,
                       physics: const NeverScrollableScrollPhysics(),
@@ -2576,20 +2596,12 @@ class _AddVisitinginformationWidgetState
                                                   .bodyMediumIsCustom,
                                         ),
                                   ),
-                                  Switch.adaptive(
+                                  AppSwitch(
                                     value: _model.switchValue!,
-                                    onChanged: (newValue) async {
+                                    onChanged: (newValue) {
                                       safeSetState(
                                           () => _model.switchValue = newValue);
                                     },
-                                    activeColor: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                    activeTrackColor:
-                                        FlutterFlowTheme.of(context).primary,
-                                    inactiveTrackColor: const Color(0xFFE2E2E2),
-                                    inactiveThumbColor:
-                                        FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
                                   ),
                                 ].divide(const SizedBox(width: 24.0)),
                               ),
@@ -2620,8 +2632,10 @@ class _AddVisitinginformationWidgetState
                                     child: MainButton(
                                       text: 'บันทึก',
                                       onPressed: () async {
-                                        context.pushNamed(
-                                            PatientinfoWidget.routeName);
+                                        await saveThenToast(
+                                            context,
+                                            () => context.pushNamed(
+                                                PatientinfoWidget.routeName));
                                       },
                                     ),
                                   ),

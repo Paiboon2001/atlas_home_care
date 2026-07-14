@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/utils/sucess/sucess_widget.dart';
 import '/components/main_button_widget.dart';
 import 'dart:async';
+import '/utils/save_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'confirm_success_model.dart';
@@ -266,36 +267,8 @@ class _ConfirmSuccessWidgetState extends State<ConfirmSuccessWidget>
                         builder: (context) => MainButton(
                           text: 'บันทึก',
                           onPressed: () async {
-                            Navigator.pop(context);
-                            showDialog(
-                              barrierColor: Colors.transparent,
-                              context: context,
-                              builder: (dialogContext) {
-                                return Dialog(
-                                  elevation: 0,
-                                  insetPadding: EdgeInsets.zero,
-                                  backgroundColor: Colors.transparent,
-                                  alignment: const AlignmentDirectional(0.0, 1.0)
-                                      .resolve(Directionality.of(context)),
-                                  child: const SizedBox(
-                                    width: 180.0,
-                                    child: SucessWidget(),
-                                  ),
-                                );
-                              },
-                            );
-
-                            await Future.delayed(
-                              const Duration(
-                                milliseconds: 2000,
-                              ),
-                            );
-                            unawaited(
-                              () async {
-                                Navigator.pop(context);
-                              }(),
-                            );
-                            Navigator.pop(context);
+                            await saveThenToast(
+                                context, () => Navigator.pop(context));
                           },
                         ),
                       ),

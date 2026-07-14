@@ -3,6 +3,7 @@ import '/components/secondary_button_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
+import '/utils/save_toast.dart';
 import 'package:flutter/material.dart';
 import 'reson_cancel_model.dart';
 export 'reson_cancel_model.dart';
@@ -79,7 +80,8 @@ class _ResonCancelWidgetState extends State<ResonCancelWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+                padding:
+                    const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -103,8 +105,8 @@ class _ResonCancelWidgetState extends State<ResonCancelWidget> {
                 children: [
                   Expanded(
                     child: Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                      padding: const EdgeInsetsDirectional.fromSTEB(
+                          16.0, 0.0, 16.0, 0.0),
                       child: SizedBox(
                         width: 200.0,
                         child: TextFormField(
@@ -201,7 +203,8 @@ class _ResonCancelWidgetState extends State<ResonCancelWidget> {
                 }())),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                padding:
+                    const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -215,7 +218,10 @@ class _ResonCancelWidgetState extends State<ResonCancelWidget> {
                       child: MainButton(
                         text: 'บันทึก',
                         onPressed: () async {
-                          context.pushNamed(HomepageNewWidget.routeName);
+                          await saveThenToast(
+                              context,
+                              () => context
+                                  .pushNamed(HomepageNewWidget.routeName));
                         },
                       ),
                     ),

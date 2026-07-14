@@ -6,6 +6,7 @@ import '/components/main_button_widget.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
+import '/utils/save_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
@@ -196,8 +197,8 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                     ],
                   ),
                   Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(
+                        16.0, 0.0, 16.0, 0.0),
                     child: Container(
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -336,14 +337,15 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                     margin:
                                                         const EdgeInsetsDirectional
                                                             .fromSTEB(12.0, 0.0,
-                                                                12.0, 0.0),
+                                                            12.0, 0.0),
                                                     hidesUnderline: true,
                                                     isOverButton: false,
                                                     isSearchable: false,
                                                     isMultiSelect: false,
                                                   ),
                                                 ),
-                                              ].divide(const SizedBox(height: 8.0)),
+                                              ].divide(
+                                                  const SizedBox(height: 8.0)),
                                             ),
                                         () => Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -513,7 +515,8 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                     ),
                                                   ),
                                                 ),
-                                              ].divide(const SizedBox(height: 8.0)),
+                                              ].divide(
+                                                  const SizedBox(height: 8.0)),
                                             ),
                                         () => Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -683,7 +686,8 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                     ),
                                                   ),
                                                 ),
-                                              ].divide(const SizedBox(height: 8.0)),
+                                              ].divide(
+                                                  const SizedBox(height: 8.0)),
                                             ),
                                       ][index]();
                                     },
@@ -882,7 +886,10 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                           .dropDownValueController2 ??=
                                                       FormFieldController<
                                                           String>(null),
-                                                  options: const ['ชาย', 'หญิง'],
+                                                  options: const [
+                                                    'ชาย',
+                                                    'หญิง'
+                                                  ],
                                                   onChanged: (val) =>
                                                       safeSetState(() => _model
                                                               .dropDownValue2 =
@@ -920,15 +927,17 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: const EdgeInsetsDirectional
-                                                      .fromSTEB(
+                                                  margin:
+                                                      const EdgeInsetsDirectional
+                                                          .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
                                                   isOverButton: false,
                                                   isSearchable: false,
                                                   isMultiSelect: false,
                                                 ),
-                                              ].divide(const SizedBox(height: 8.0)),
+                                              ].divide(
+                                                  const SizedBox(height: 8.0)),
                                             ),
                                         () => Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1035,11 +1044,8 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                     child: Padding(
                                                       padding:
                                                           const EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  12.0,
-                                                                  0.0,
-                                                                  12.0,
-                                                                  0.0),
+                                                              .fromSTEB(12.0,
+                                                              0.0, 12.0, 0.0),
                                                       child: Row(
                                                         mainAxisSize:
                                                             MainAxisSize.max,
@@ -1080,7 +1086,8 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                     ),
                                                   ),
                                                 ),
-                                              ].divide(const SizedBox(height: 8.0)),
+                                              ].divide(
+                                                  const SizedBox(height: 8.0)),
                                             ),
                                         () => Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1112,7 +1119,10 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                           .dropDownValueController3 ??=
                                                       FormFieldController<
                                                           String>(null),
-                                                  options: const ['ทดสอบ', 'ทดสอบ'],
+                                                  options: const [
+                                                    'ทดสอบ',
+                                                    'ทดสอบ'
+                                                  ],
                                                   onChanged: (val) =>
                                                       safeSetState(() => _model
                                                               .dropDownValue3 =
@@ -1150,15 +1160,17 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: const EdgeInsetsDirectional
-                                                      .fromSTEB(
+                                                  margin:
+                                                      const EdgeInsetsDirectional
+                                                          .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
                                                   isOverButton: false,
                                                   isSearchable: false,
                                                   isMultiSelect: false,
                                                 ),
-                                              ].divide(const SizedBox(height: 8.0)),
+                                              ].divide(
+                                                  const SizedBox(height: 8.0)),
                                             ),
                                         () => Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1190,7 +1202,10 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                           .dropDownValueController4 ??=
                                                       FormFieldController<
                                                           String>(null),
-                                                  options: const ['ทดสอบ', 'ทดสอบ'],
+                                                  options: const [
+                                                    'ทดสอบ',
+                                                    'ทดสอบ'
+                                                  ],
                                                   onChanged: (val) =>
                                                       safeSetState(() => _model
                                                               .dropDownValue4 =
@@ -1228,15 +1243,17 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: const EdgeInsetsDirectional
-                                                      .fromSTEB(
+                                                  margin:
+                                                      const EdgeInsetsDirectional
+                                                          .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
                                                   isOverButton: false,
                                                   isSearchable: false,
                                                   isMultiSelect: false,
                                                 ),
-                                              ].divide(const SizedBox(height: 8.0)),
+                                              ].divide(
+                                                  const SizedBox(height: 8.0)),
                                             ),
                                         () => Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1268,7 +1285,10 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                           .dropDownValueController5 ??=
                                                       FormFieldController<
                                                           String>(null),
-                                                  options: const ['ทดสอบ', 'ทดสอบ'],
+                                                  options: const [
+                                                    'ทดสอบ',
+                                                    'ทดสอบ'
+                                                  ],
                                                   onChanged: (val) =>
                                                       safeSetState(() => _model
                                                               .dropDownValue5 =
@@ -1306,15 +1326,17 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: const EdgeInsetsDirectional
-                                                      .fromSTEB(
+                                                  margin:
+                                                      const EdgeInsetsDirectional
+                                                          .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
                                                   isOverButton: false,
                                                   isSearchable: false,
                                                   isMultiSelect: false,
                                                 ),
-                                              ].divide(const SizedBox(height: 8.0)),
+                                              ].divide(
+                                                  const SizedBox(height: 8.0)),
                                             ),
                                         () => Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1346,7 +1368,10 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                           .dropDownValueController6 ??=
                                                       FormFieldController<
                                                           String>(null),
-                                                  options: const ['ทดสอบ', 'ทดสอบ'],
+                                                  options: const [
+                                                    'ทดสอบ',
+                                                    'ทดสอบ'
+                                                  ],
                                                   onChanged: (val) =>
                                                       safeSetState(() => _model
                                                               .dropDownValue6 =
@@ -1384,15 +1409,17 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: const EdgeInsetsDirectional
-                                                      .fromSTEB(
+                                                  margin:
+                                                      const EdgeInsetsDirectional
+                                                          .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
                                                   isOverButton: false,
                                                   isSearchable: false,
                                                   isMultiSelect: false,
                                                 ),
-                                              ].divide(const SizedBox(height: 8.0)),
+                                              ].divide(
+                                                  const SizedBox(height: 8.0)),
                                             ),
                                         () => Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1424,7 +1451,10 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                           .dropDownValueController7 ??=
                                                       FormFieldController<
                                                           String>(null),
-                                                  options: const ['ทดสอบ', 'ทดสอบ'],
+                                                  options: const [
+                                                    'ทดสอบ',
+                                                    'ทดสอบ'
+                                                  ],
                                                   onChanged: (val) =>
                                                       safeSetState(() => _model
                                                               .dropDownValue7 =
@@ -1462,15 +1492,17 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: const EdgeInsetsDirectional
-                                                      .fromSTEB(
+                                                  margin:
+                                                      const EdgeInsetsDirectional
+                                                          .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
                                                   isOverButton: false,
                                                   isSearchable: false,
                                                   isMultiSelect: false,
                                                 ),
-                                              ].divide(const SizedBox(height: 8.0)),
+                                              ].divide(
+                                                  const SizedBox(height: 8.0)),
                                             ),
                                         () => Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1502,7 +1534,10 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                           .dropDownValueController8 ??=
                                                       FormFieldController<
                                                           String>(null),
-                                                  options: const ['ทดสอบ', 'ทดสอบ'],
+                                                  options: const [
+                                                    'ทดสอบ',
+                                                    'ทดสอบ'
+                                                  ],
                                                   onChanged: (val) =>
                                                       safeSetState(() => _model
                                                               .dropDownValue8 =
@@ -1540,15 +1575,17 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                       Colors.transparent,
                                                   borderWidth: 0.0,
                                                   borderRadius: 8.0,
-                                                  margin: const EdgeInsetsDirectional
-                                                      .fromSTEB(
+                                                  margin:
+                                                      const EdgeInsetsDirectional
+                                                          .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   hidesUnderline: true,
                                                   isOverButton: false,
                                                   isSearchable: false,
                                                   isMultiSelect: false,
                                                 ),
-                                              ].divide(const SizedBox(height: 8.0)),
+                                              ].divide(
+                                                  const SizedBox(height: 8.0)),
                                             ),
                                       ][index]();
                                     },
@@ -1559,8 +1596,9 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                   phone: false,
                                 ))
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 16.0),
+                                    padding:
+                                        const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 0.0, 16.0),
                                     child: MasonryGridView.builder(
                                       physics:
                                           const NeverScrollableScrollPhysics(),
@@ -1603,7 +1641,10 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                             .dropDownValueController9 ??=
                                                         FormFieldController<
                                                             String>(null),
-                                                    options: const ['ทดสอบ', 'ทดสอบ'],
+                                                    options: const [
+                                                      'ทดสอบ',
+                                                      'ทดสอบ'
+                                                    ],
                                                     onChanged: (val) =>
                                                         safeSetState(() => _model
                                                                 .dropDownValue9 =
@@ -1646,13 +1687,14 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                     margin:
                                                         const EdgeInsetsDirectional
                                                             .fromSTEB(12.0, 0.0,
-                                                                12.0, 0.0),
+                                                            12.0, 0.0),
                                                     hidesUnderline: true,
                                                     isOverButton: false,
                                                     isSearchable: false,
                                                     isMultiSelect: false,
                                                   ),
-                                                ].divide(const SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(
+                                                    height: 8.0)),
                                               ),
                                           () => Column(
                                                 mainAxisSize: MainAxisSize.max,
@@ -1828,7 +1870,8 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                                       ),
                                                     ),
                                                   ),
-                                                ].divide(const SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(
+                                                    height: 8.0)),
                                               ),
                                         ][index]();
                                       },
@@ -1841,8 +1884,9 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                   desktop: false,
                                 ))
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 16.0),
+                                    padding:
+                                        const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 0.0, 16.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -1898,9 +1942,8 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                                           borderColor: Colors.transparent,
                                           borderWidth: 0.0,
                                           borderRadius: 8.0,
-                                          margin:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  12.0, 0.0, 12.0, 0.0),
+                                          margin: const EdgeInsetsDirectional
+                                              .fromSTEB(12.0, 0.0, 12.0, 0.0),
                                           hidesUnderline: true,
                                           isOverButton: false,
                                           isSearchable: false,
@@ -2093,11 +2136,12 @@ class _AddHomememberWidgetState extends State<AddHomememberWidget> {
                   ),
                 ),
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 32.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(
+                      16.0, 12.0, 16.0, 32.0),
                   child: MainButton(
                     text: 'บันทึก',
                     onPressed: () async {
-                      context.safePop();
+                      await saveThenToast(context, () => context.safePop());
                     },
                   ),
                 ),
