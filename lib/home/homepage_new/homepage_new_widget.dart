@@ -1657,7 +1657,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                           Colors.transparent,
                                                       onTap: () async {
                                                         context.pushNamed(
-                                                            HoldJobWidget
+                                                            LateJobsWidget
                                                                 .routeName);
                                                       },
                                                       child: Row(
@@ -1814,7 +1814,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                           Colors.transparent,
                                                       onTap: () async {
                                                         context.pushNamed(
-                                                            HoldJobWidget
+                                                            DoneJobsWidget
                                                                 .routeName);
                                                       },
                                                       child: Row(
@@ -1971,7 +1971,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                           Colors.transparent,
                                                       onTap: () async {
                                                         context.pushNamed(
-                                                            HoldJobWidget
+                                                            FutureJobsWidget
                                                                 .routeName);
                                                       },
                                                       child: Row(

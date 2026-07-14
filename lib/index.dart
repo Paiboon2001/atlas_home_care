@@ -57,6 +57,8 @@ export '/assessmentform/inhomesss/form_i_n_h_o_m_e_s_s_s/form_i_n_h_o_m_e_s_s_s_
     show FormINHOMESSSWidget;
 export '/home/homepage_new/homepage_new_widget.dart' show HomepageNewWidget;
 export '/home/hold_job/hold_job_widget.dart' show HoldJobWidget;
+export '/home/job_list/job_list_pages.dart'
+    show LateJobsWidget, DoneJobsWidget, FutureJobsWidget;
 export '/planvisit_home/planvisit_new/planvisit_new_widget.dart'
     show PlanvisitNewWidget;
 export '/sakon_nakhon/crisisvictims/two_q/two_q_widget.dart' show TwoQWidget;

@@ -87,20 +87,10 @@ class _SaveMenuWidgetState extends State<SaveMenuWidget> {
                       },
                       child: Container(
                         width: double.infinity,
-                        height: () {
-                          if (MediaQuery.sizeOf(context).width <
-                              kBreakpointSmall) {
-                            return 48.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointMedium) {
-                            return 48.0;
-                          } else if (MediaQuery.sizeOf(context).width <
-                              kBreakpointLarge) {
-                            return 56.0;
-                          } else {
-                            return 56.0;
-                          }
-                        }(),
+                        // Match MainButton's fixed 48px height; the old
+                        // responsive closure grew to 56 on wide screens while
+                        // the save button stayed at 48.
+                        height: 48.0,
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,

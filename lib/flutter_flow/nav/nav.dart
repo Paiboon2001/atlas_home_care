@@ -38,14 +38,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           ? Builder(
               builder: (context) => Container(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
-                child: Center(
-                  child: Image.asset(
-                    'assets/images/AHC_V2.webp',
-                    width: 220.0,
-                    height: 200.0,
-                    fit: BoxFit.contain,
-                  ),
-                ),
+                child: const Center(child: _SplashLogo()),
               ),
             )
           : const LoginWidget(),
@@ -57,14 +50,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ? Builder(
                   builder: (context) => Container(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    child: Center(
-                      child: Image.asset(
-                        'assets/images/AHC_V2.webp',
-                        width: 220.0,
-                        height: 200.0,
-                        fit: BoxFit.contain,
-                      ),
-                    ),
+                    child: const Center(child: _SplashLogo()),
                   ),
                 )
               : const LoginWidget(),
@@ -281,6 +267,21 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: HoldJobWidget.routeName,
           path: HoldJobWidget.routePath,
           builder: (context, params) => const HoldJobWidget(),
+        ),
+        FFRoute(
+          name: LateJobsWidget.routeName,
+          path: LateJobsWidget.routePath,
+          builder: (context, params) => const LateJobsWidget(),
+        ),
+        FFRoute(
+          name: DoneJobsWidget.routeName,
+          path: DoneJobsWidget.routePath,
+          builder: (context, params) => const DoneJobsWidget(),
+        ),
+        FFRoute(
+          name: FutureJobsWidget.routeName,
+          path: FutureJobsWidget.routePath,
+          builder: (context, params) => const FutureJobsWidget(),
         ),
         FFRoute(
           name: PlanvisitNewWidget.routeName,
@@ -689,5 +690,21 @@ extension GoRouterLocationExtension on GoRouter {
         ? lastMatch.matches
         : routerDelegate.currentConfiguration;
     return matchList.uri.toString();
+  }
+}
+
+/// Splash logo: bigger on tablets, unchanged on phones.
+class _SplashLogo extends StatelessWidget {
+  const _SplashLogo();
+
+  @override
+  Widget build(BuildContext context) {
+    final bool isTablet = MediaQuery.sizeOf(context).shortestSide >= 600;
+    return Image.asset(
+      'assets/images/AHC_V2.webp',
+      width: isTablet ? 320.0 : 220.0,
+      height: isTablet ? 300.0 : 200.0,
+      fit: BoxFit.contain,
+    );
   }
 }

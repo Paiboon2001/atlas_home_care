@@ -1517,6 +1517,9 @@ class _AddVisitinginformationWidgetState
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 12.0, 16.0, 12.0),
                             child: MasonryGridView.builder(
+                              // Without this the grid inherits the page's
+                              // bottom safe-area inset as padding.
+                              padding: EdgeInsets.zero,
                               physics: const NeverScrollableScrollPhysics(),
                               gridDelegate:
                                   const SliverSimpleGridDelegateWithFixedCrossAxisCount(
@@ -1603,7 +1606,7 @@ class _AddVisitinginformationWidgetState
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            24.0),
+                                                            300.0),
                                                     border: Border.all(
                                                       color: FlutterFlowTheme
                                                               .of(context)
@@ -1796,7 +1799,7 @@ class _AddVisitinginformationWidgetState
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            24.0),
+                                                            300.0),
                                                     border: Border.all(
                                                       color: FlutterFlowTheme
                                                               .of(context)
@@ -1989,7 +1992,7 @@ class _AddVisitinginformationWidgetState
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            24.0),
+                                                            300.0),
                                                     border: Border.all(
                                                       color: FlutterFlowTheme
                                                               .of(context)
@@ -2182,7 +2185,7 @@ class _AddVisitinginformationWidgetState
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            24.0),
+                                                            300.0),
                                                     border: Border.all(
                                                       color: FlutterFlowTheme
                                                               .of(context)
@@ -2375,7 +2378,7 @@ class _AddVisitinginformationWidgetState
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            24.0),
+                                                            300.0),
                                                     border: Border.all(
                                                       color: FlutterFlowTheme
                                                               .of(context)
