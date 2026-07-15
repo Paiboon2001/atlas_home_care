@@ -178,7 +178,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                             decoration: BoxDecoration(
                               image: const DecorationImage(
                                 fit: BoxFit.cover,
-                                image: AssetImage('assets/images/user_avatar.jpg'),
+                                image: AssetImage('assets/images/Medical Personnel/Nurs_girl.webp'),
                               ),
                               gradient: LinearGradient(
                                 colors: [
@@ -207,7 +207,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                               image: DecorationImage(
                                 fit: BoxFit.cover,
                                 image: Image.asset(
-                                  'assets/images/oldgirl1.png',
+                                  'assets/images/Patients/granma.webp',
                                 ).image,
                               ),
                               gradient: LinearGradient(
@@ -263,7 +263,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                               image: DecorationImage(
                                 fit: BoxFit.cover,
                                 image: Image.asset(
-                                  'assets/images/oldgirl1.png',
+                                  'assets/images/Patients/granma.webp',
                                 ).image,
                               ),
                               gradient: LinearGradient(
@@ -341,7 +341,7 @@ class _TolkChatWidgetState extends State<TolkChatWidget> {
                             decoration: BoxDecoration(
                               image: const DecorationImage(
                                 fit: BoxFit.cover,
-                                image: AssetImage('assets/images/user_avatar.jpg'),
+                                image: AssetImage('assets/images/Medical Personnel/Nurs_girl.webp'),
                               ),
                               gradient: LinearGradient(
                                 colors: [

@@ -1222,7 +1222,7 @@ class _PlanvisitNewWidgetState extends State<PlanvisitNewWidget>
                                                   shape: BoxShape.circle,
                                                 ),
                                                 child: Image.asset(
-                                                  'assets/images/girl1.png',
+                                                  'assets/images/Patients/mama.webp',
                                                   fit: BoxFit.cover,
                                                 ),
                                               ),

@@ -137,8 +137,8 @@ class _CgmResultHistoryWidgetState extends State<CgmResultHistoryWidget>
                           decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                           ),
-                          child: Image.network(
-                            'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/16ztnqju67da/student_girl.png',
+                          child: Image.asset(
+                            'assets/images/Patients/Nurs_girl.webp',
                             fit: BoxFit.cover,
                             alignment: const Alignment(0.0, 1.0),
                           ),

@@ -127,7 +127,8 @@ class _ItemHouseHoldMembersWidgetState
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+                padding:
+                    const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -158,7 +159,7 @@ class _ItemHouseHoldMembersWidgetState
                         decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                         ),
-                        child: Image.network(
+                        child: Image.asset(
                           widget.img!,
                           fit: BoxFit.cover,
                         ),
@@ -311,7 +312,8 @@ class _ItemHouseHoldMembersWidgetState
             color: FlutterFlowTheme.of(context).alternate,
           ),
           Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
+            padding:
+                const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -394,9 +396,9 @@ class _ItemHouseHoldMembersWidgetState
                         return 2;
                       } else if (MediaQuery.sizeOf(context).width <
                           kBreakpointLarge) {
-                        return 4;
+                        return 2;
                       } else {
-                        return 4;
+                        return 2;
                       }
                     }(),
                   ),
@@ -467,7 +469,8 @@ class _ItemHouseHoldMembersWidgetState
                                       ],
                                     ),
                                     Align(
-                                      alignment: const AlignmentDirectional(1.0, 0.0),
+                                      alignment:
+                                          const AlignmentDirectional(1.0, 0.0),
                                       child: ClipRRect(
                                         borderRadius:
                                             BorderRadius.circular(8.0),
@@ -545,7 +548,8 @@ class _ItemHouseHoldMembersWidgetState
                                       ],
                                     ),
                                     Align(
-                                      alignment: const AlignmentDirectional(1.0, 0.0),
+                                      alignment:
+                                          const AlignmentDirectional(1.0, 0.0),
                                       child: ClipRRect(
                                         borderRadius:
                                             BorderRadius.circular(8.0),
@@ -623,7 +627,8 @@ class _ItemHouseHoldMembersWidgetState
                                       ],
                                     ),
                                     Align(
-                                      alignment: const AlignmentDirectional(1.0, 0.0),
+                                      alignment:
+                                          const AlignmentDirectional(1.0, 0.0),
                                       child: ClipRRect(
                                         borderRadius:
                                             BorderRadius.circular(8.0),
@@ -701,7 +706,8 @@ class _ItemHouseHoldMembersWidgetState
                                       ],
                                     ),
                                     Align(
-                                      alignment: const AlignmentDirectional(1.0, 0.0),
+                                      alignment:
+                                          const AlignmentDirectional(1.0, 0.0),
                                       child: ClipRRect(
                                         borderRadius:
                                             BorderRadius.circular(8.0),

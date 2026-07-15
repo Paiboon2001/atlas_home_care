@@ -1034,7 +1034,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                 const DecorationImage(
                                                               fit: BoxFit.cover,
                                                               image:
-                                                                  AssetImage('assets/images/user_avatar.jpg'),
+                                                                  AssetImage('assets/images/Medical Personnel/Nurs_girl.webp'),
                                                             ),
                                                             gradient:
                                                                 LinearGradient(
@@ -1087,7 +1087,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                               fit: BoxFit.cover,
                                                               image:
                                                                   Image.asset(
-                                                                'assets/images/oldgirl1.png',
+                                                                'assets/images/Patients/granma.webp',
                                                               ).image,
                                                             ),
                                                             gradient:
@@ -1179,7 +1179,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                               fit: BoxFit.cover,
                                                               image:
                                                                   Image.asset(
-                                                                'assets/images/oldgirl1.png',
+                                                                'assets/images/Patients/granma.webp',
                                                               ).image,
                                                             ),
                                                             gradient:
@@ -1309,7 +1309,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                                 const DecorationImage(
                                                               fit: BoxFit.cover,
                                                               image:
-                                                                  AssetImage('assets/images/user_avatar.jpg'),
+                                                                  AssetImage('assets/images/Medical Personnel/Nurs_girl.webp'),
                                                             ),
                                                             gradient:
                                                                 LinearGradient(
@@ -2271,7 +2271,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                       decoration: BoxDecoration(
                                                         image: const DecorationImage(
                                                           fit: BoxFit.cover,
-                                                          image: AssetImage('assets/images/user_avatar.jpg'),
+                                                          image: AssetImage('assets/images/Medical Personnel/Nurs_girl.webp'),
                                                         ),
                                                         gradient:
                                                             LinearGradient(
@@ -2316,7 +2316,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         image: DecorationImage(
                                                           fit: BoxFit.cover,
                                                           image: Image.asset(
-                                                            'assets/images/oldgirl1.png',
+                                                            'assets/images/Patients/granma.webp',
                                                           ).image,
                                                         ),
                                                         gradient:
@@ -2402,7 +2402,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                         image: DecorationImage(
                                                           fit: BoxFit.cover,
                                                           image: Image.asset(
-                                                            'assets/images/oldgirl1.png',
+                                                            'assets/images/Patients/granma.webp',
                                                           ).image,
                                                         ),
                                                         gradient:
@@ -2528,7 +2528,7 @@ class _VisitHOMESWidgetState extends State<VisitHOMESWidget>
                                                       decoration: BoxDecoration(
                                                         image: const DecorationImage(
                                                           fit: BoxFit.cover,
-                                                          image: AssetImage('assets/images/user_avatar.jpg'),
+                                                          image: AssetImage('assets/images/Medical Personnel/Nurs_girl.webp'),
                                                         ),
                                                         gradient:
                                                             LinearGradient(

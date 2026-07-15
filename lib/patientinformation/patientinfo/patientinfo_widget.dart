@@ -560,8 +560,8 @@ class _PatientinfoWidgetState extends State<PatientinfoWidget>
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                 fit: BoxFit.cover,
-                                image: Image.network(
-                                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/jsj3wzutwz6p/man1.png',
+                                image: Image.asset(
+                                  'assets/images/Patients/papa.webp',
                                 ).image,
                               ),
                               gradient: LinearGradient(

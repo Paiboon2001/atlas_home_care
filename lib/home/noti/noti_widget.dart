@@ -231,7 +231,7 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                                               colore: const Color(0xFFFF8600),
                                               textre: 'นายสุขภาพดี จิตแจ่มใส',
                                               picture:
-                                                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/m7xdpmwhlgki/girl1.png',
+                                                  'assets/images/Patients/mama.webp',
                                               gradientone: const Color(0xFF44B0FF),
                                               gradienttwo: const Color(0xFF9ACEF6),
                                               textcolor:
@@ -283,7 +283,7 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                                             colore: const Color(0xFFFF8600),
                                             textre: 'นางรัตนา ศรีสุข',
                                             picture:
-                                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/16ztnqju67da/student_girl.png',
+                                                'assets/images/Patients/Nurs_girl.webp',
                                             gradientone: const Color(0xFF44B0FF),
                                             gradienttwo: const Color(0xFF9ACEF6),
                                             textcolor:
@@ -446,7 +446,7 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                                               colore: const Color(0xFFFF8600),
                                               textre: 'นายสุขภาพดี จิตแจ่มใส',
                                               picture:
-                                                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/m7xdpmwhlgki/girl1.png',
+                                                  'assets/images/Patients/mama.webp',
                                               gradientone: const Color(0xFF44B0FF),
                                               gradienttwo: const Color(0xFF9ACEF6),
                                               textcolor:
@@ -498,7 +498,7 @@ class _NotiWidgetState extends State<NotiWidget> with TickerProviderStateMixin {
                                             colore: const Color(0xFFFF8600),
                                             textre: 'นางรัตนา ศรีสุข',
                                             picture:
-                                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/16ztnqju67da/student_girl.png',
+                                                'assets/images/Patients/Nurs_girl.webp',
                                             gradientone: const Color(0xFF44B0FF),
                                             gradienttwo: const Color(0xFF9ACEF6),
                                             textcolor:

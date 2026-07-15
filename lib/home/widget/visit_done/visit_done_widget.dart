@@ -126,9 +126,9 @@ class _VisitDoneWidgetState extends State<VisitDoneWidget> {
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     fit: BoxFit.cover,
-                    image: Image.network(
-                      widget.picture!,
-                    ).image,
+                    image: (widget.picture!.startsWith('http')
+                        ? NetworkImage(widget.picture!)
+                        : AssetImage(widget.picture!)) as ImageProvider,
                   ),
                   gradient: LinearGradient(
                     colors: [

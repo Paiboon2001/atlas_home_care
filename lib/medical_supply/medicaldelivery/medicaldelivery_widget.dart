@@ -378,8 +378,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                       color: const Color(0xFFE0F9FF),
                                                       image: DecorationImage(
                                                         fit: BoxFit.cover,
-                                                        image: Image.network(
-                                                          'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/4mq6lu0xx1l8/oldman1.png',
+                                                        image: Image.asset(
+                                                          'assets/images/Patients/granpa.webp',
                                                         ).image,
                                                       ),
                                                       shape: BoxShape.circle,
@@ -752,8 +752,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                     color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
-                                                      image: Image.network(
-                                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/jtmomjwzh164/Baby_Boy.png',
+                                                      image: Image.asset(
+                                                        'assets/images/Patients/baby_boy.webp',
                                                       ).image,
                                                     ),
                                                     shape: BoxShape.circle,
@@ -1121,8 +1121,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                     color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
-                                                      image: Image.network(
-                                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/4fytd19jk0eu/callege_Boy.png',
+                                                      image: Image.asset(
+                                                        'assets/images/Patients/boy.webp',
                                                       ).image,
                                                     ),
                                                     shape: BoxShape.circle,
@@ -1490,8 +1490,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                     color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
-                                                      image: Image.network(
-                                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/m7xdpmwhlgki/girl1.png',
+                                                      image: Image.asset(
+                                                        'assets/images/Patients/mama.webp',
                                                       ).image,
                                                     ),
                                                     shape: BoxShape.circle,
@@ -1877,8 +1877,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                     color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
-                                                      image: Image.network(
-                                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/16ztnqju67da/student_girl.png',
+                                                      image: Image.asset(
+                                                        'assets/images/Patients/Nurs_girl.webp',
                                                       ).image,
                                                     ),
                                                     shape: BoxShape.circle,
@@ -2264,8 +2264,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                     color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
-                                                      image: Image.network(
-                                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/9e97rkkhahtb/oldgirl1.png',
+                                                      image: Image.asset(
+                                                        'assets/images/Patients/granma.webp',
                                                       ).image,
                                                     ),
                                                     shape: BoxShape.circle,
@@ -2677,8 +2677,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                     color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
-                                                      image: Image.network(
-                                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/jtmomjwzh164/Baby_Boy.png',
+                                                      image: Image.asset(
+                                                        'assets/images/Patients/baby_boy.webp',
                                                       ).image,
                                                     ),
                                                     shape: BoxShape.circle,
@@ -3072,8 +3072,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                     color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
-                                                      image: Image.network(
-                                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/4mq6lu0xx1l8/oldman1.png',
+                                                      image: Image.asset(
+                                                        'assets/images/Patients/granpa.webp',
                                                       ).image,
                                                     ),
                                                     shape: BoxShape.circle,
@@ -3467,8 +3467,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                     color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
-                                                      image: Image.network(
-                                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/4fytd19jk0eu/callege_Boy.png',
+                                                      image: Image.asset(
+                                                        'assets/images/Patients/boy.webp',
                                                       ).image,
                                                     ),
                                                     shape: BoxShape.circle,
@@ -3862,8 +3862,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                     color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
-                                                      image: Image.network(
-                                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/m7xdpmwhlgki/girl1.png',
+                                                      image: Image.asset(
+                                                        'assets/images/Patients/mama.webp',
                                                       ).image,
                                                     ),
                                                     shape: BoxShape.circle,
@@ -4275,8 +4275,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                     color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
-                                                      image: Image.network(
-                                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/16ztnqju67da/student_girl.png',
+                                                      image: Image.asset(
+                                                        'assets/images/Patients/Nurs_girl.webp',
                                                       ).image,
                                                     ),
                                                     shape: BoxShape.circle,
@@ -4688,8 +4688,8 @@ class _MedicaldeliveryWidgetState extends State<MedicaldeliveryWidget>
                                                     color: const Color(0xFFE0F9FF),
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
-                                                      image: Image.network(
-                                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/9e97rkkhahtb/oldgirl1.png',
+                                                      image: Image.asset(
+                                                        'assets/images/Patients/granma.webp',
                                                       ).image,
                                                     ),
                                                     shape: BoxShape.circle,

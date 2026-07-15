@@ -3,15 +3,15 @@ import '/home/job_list/job_list_widget.dart';
 import 'package:flutter/material.dart';
 
 const String _oldman =
-    'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/4mq6lu0xx1l8/oldman1.png';
+    'assets/images/Patients/granpa.webp';
 const String _girl =
-    'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/m7xdpmwhlgki/girl1.png';
+    'assets/images/Patients/mama.webp';
 const String _studentGirl =
-    'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/16ztnqju67da/student_girl.png';
+    'assets/images/Patients/Nurs_girl.webp';
 const String _oldgirl =
-    'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/9e97rkkhahtb/oldgirl1.png';
+    'assets/images/Patients/granma.webp';
 const String _collegeGirl =
-    'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/0a355akt4mcc/callege_Girl.png';
+    'assets/images/Patients/girl.webp';
 
 const String _assignee = 'นางสาวกมลวรรณ ศรีนาบดี';
 const String _age = '48 ปี 2 เดือน 15 วัน';

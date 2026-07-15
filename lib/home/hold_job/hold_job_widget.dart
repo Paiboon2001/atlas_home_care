@@ -174,7 +174,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                   return [
                     () => JobCard(
                           img:
-                              'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/4mq6lu0xx1l8/oldman1.png',
+                              'assets/images/Patients/granpa.webp',
                           mainname: 'นายสมรชัย กุลศรีมา',
                           age: '48 ปี 2 เดือน 15 วัน',
                           date: '14 ธันวาคม 2568',
@@ -191,7 +191,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                           updateCallback: () => safeSetState(() {}),
                           child: const ResponJobWidget(
                             img:
-                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/4mq6lu0xx1l8/oldman1.png',
+                                'assets/images/Patients/granpa.webp',
                             mainname: 'นายมังการ มุสยานา',
                           ),
                         ),
@@ -200,7 +200,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                           updateCallback: () => safeSetState(() {}),
                           child: const ResponJobWidget(
                             img:
-                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/16ztnqju67da/student_girl.png',
+                                'assets/images/Patients/Nurs_girl.webp',
                             mainname: 'เด็กหญิงกัญญา มหานคร',
                           ),
                         ),
@@ -209,7 +209,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                           updateCallback: () => safeSetState(() {}),
                           child: const ResponJobWidget(
                             img:
-                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/m7xdpmwhlgki/girl1.png',
+                                'assets/images/Patients/mama.webp',
                             mainname: 'นางวิมล สกุลลุนช่อง',
                           ),
                         ),
@@ -218,7 +218,7 @@ class _HoldJobWidgetState extends State<HoldJobWidget> {
                           updateCallback: () => safeSetState(() {}),
                           child: const ResponJobWidget(
                             img:
-                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/9e97rkkhahtb/oldgirl1.png',
+                                'assets/images/Patients/granma.webp',
                             mainname: 'นางธรณี พันปีหลวง',
                           ),
                         ),

@@ -132,6 +132,8 @@ flutter:
   assets:
     - assets/fonts/
     - assets/images/
+    - assets/images/Medical Personnel/
+    - assets/images/Patients/
     - assets/videos/
     - assets/audios/
     - assets/rive_animations/

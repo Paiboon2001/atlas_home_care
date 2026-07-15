@@ -52,6 +52,15 @@ class _RoomCheckWidgetState extends State<RoomCheckWidget> {
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
+            Container(
+              width: 40.0,
+              height: 4.0,
+              margin: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+              decoration: BoxDecoration(
+                color: const Color(0xFFD0D8E0),
+                borderRadius: BorderRadius.circular(2.0),
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(

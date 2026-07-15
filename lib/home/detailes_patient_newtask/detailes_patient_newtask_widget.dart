@@ -212,7 +212,7 @@ class _DetailesPatientNewtaskWidgetState
                                               shape: BoxShape.circle,
                                             ),
                                             child: Image.asset(
-                                              'assets/images/man1.png',
+                                              'assets/images/Patients/papa.webp',
                                               fit: BoxFit.cover,
                                             ),
                                           ),

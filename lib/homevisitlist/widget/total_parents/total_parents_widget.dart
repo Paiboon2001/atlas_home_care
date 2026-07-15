@@ -148,7 +148,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                               image: DecorationImage(
                                 fit: BoxFit.cover,
                                 image: Image.asset(
-                                  'assets/images/man1.png',
+                                  'assets/images/Patients/papa.webp',
                                 ).image,
                               ),
                               gradient: LinearGradient(
@@ -279,7 +279,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
-                                    'assets/images/girl1.png',
+                                    'assets/images/Patients/mama.webp',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -373,7 +373,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
-                                    'assets/images/oldgirl1.png',
+                                    'assets/images/Patients/granma.webp',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -467,7 +467,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
-                                    'assets/images/oldman1.png',
+                                    'assets/images/Patients/granpa.webp',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -561,7 +561,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
-                                    'assets/images/student_Boy.png',
+                                    'assets/images/Patients/yung_boy.webp',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -655,7 +655,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
-                                    'assets/images/student_girl.png',
+                                    'assets/images/Patients/Nurs_girl.webp',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -749,7 +749,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
-                                    'assets/images/callege_Boy.png',
+                                    'assets/images/Patients/boy.webp',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -843,7 +843,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
-                                    'assets/images/callege_Girl.png',
+                                    'assets/images/Patients/girl.webp',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -937,7 +937,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
-                                    'assets/images/Baby_Girl.png',
+                                    'assets/images/Patients/baby_girl.webp',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -1031,7 +1031,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.asset(
-                                    'assets/images/Baby_Boy.png',
+                                    'assets/images/Patients/baby_boy.webp',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -1102,7 +1102,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                       potbellycolor1: const Color(0x324CAF50),
                       potbellycolor2: FlutterFlowTheme.of(context).customColor1,
                       img:
-                          'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/jsj3wzutwz6p/man1.png',
+                          'assets/images/Patients/papa.webp',
                     ),
                   ),
                 ),
@@ -1136,7 +1136,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                         FlutterFlowTheme.of(context).primaryBackground,
                     potbellycolor2: FlutterFlowTheme.of(context).secondaryText,
                     img:
-                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/m7xdpmwhlgki/girl1.png',
+                        'assets/images/Patients/mama.webp',
                   ),
                 ),
               ),
@@ -1169,7 +1169,7 @@ class _TotalParentsWidgetState extends State<TotalParentsWidget> {
                         FlutterFlowTheme.of(context).primaryBackground,
                     potbellycolor2: FlutterFlowTheme.of(context).secondaryText,
                     img:
-                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/9e97rkkhahtb/oldgirl1.png',
+                        'assets/images/Patients/granma.webp',
                   ),
                 ),
               ),

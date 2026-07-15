@@ -404,7 +404,7 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                                 .success,
                                             textre: 'นางรัตนาการ สนามฉันท์',
                                             picture:
-                                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/m7xdpmwhlgki/girl1.png',
+                                                'assets/images/Patients/mama.webp',
                                             gradientone: const Color(0xFF79DF9E),
                                             gradienttwo: const Color(0xFF79DF9E),
                                             textcolor:
@@ -456,7 +456,7 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                                 .success,
                                             textre: 'นางสาวกนกร อมรศรี',
                                             picture:
-                                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/16ztnqju67da/student_girl.png',
+                                                'assets/images/Patients/Nurs_girl.webp',
                                             gradientone: const Color(0xFF79DF9E),
                                             gradienttwo: const Color(0xFF79DF9E),
                                             textcolor:
@@ -530,7 +530,7 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                                 .success,
                                             textre: 'นายฉันทยนา สนามฉันท์',
                                             picture:
-                                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/4fytd19jk0eu/callege_Boy.png',
+                                                'assets/images/Patients/boy.webp',
                                             gradientone: const Color(0xFF79DF9E),
                                             gradienttwo: const Color(0xFF79DF9E),
                                             textcolor:
@@ -603,7 +603,7 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                             colore: const Color(0xFFFFC200),
                                             textre: 'นางสาวสุรีพร ศาสนสภาน',
                                             picture:
-                                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/0a355akt4mcc/callege_Girl.png',
+                                                'assets/images/Patients/girl.webp',
                                             gradientone: const Color(0xFF44B0FF),
                                             gradienttwo: const Color(0xFF9ACEF6),
                                             textcolor:
@@ -677,7 +677,7 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                                 .error,
                                             textre: 'นางสาวศิริกาญจนา มหานทีกร',
                                             picture:
-                                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/m7xdpmwhlgki/girl1.png',
+                                                'assets/images/Patients/mama.webp',
                                             gradientone: const Color(0xFF44B0FF),
                                             gradienttwo: const Color(0xFF9ACEF6),
                                             textcolor:
@@ -729,7 +729,7 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                                 .error,
                                             textre: 'นางรัตนา ศรีสุข',
                                             picture:
-                                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/0a355akt4mcc/callege_Girl.png',
+                                                'assets/images/Patients/girl.webp',
                                             gradientone: const Color(0xFF44B0FF),
                                             gradienttwo: const Color(0xFF9ACEF6),
                                             textcolor:
@@ -803,7 +803,7 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                                 .success,
                                             textre: 'นายกิริยากร ธนสานสมบัติ',
                                             picture:
-                                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/4mq6lu0xx1l8/oldman1.png',
+                                                'assets/images/Patients/granpa.webp',
                                             gradientone: const Color(0xFF79DF9E),
                                             gradienttwo: const Color(0xFF79DF9E),
                                             textcolor:
@@ -855,7 +855,7 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                                 .success,
                                             textre: 'นางหทัยรัตน์ เจริญปุระ',
                                             picture:
-                                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/9e97rkkhahtb/oldgirl1.png',
+                                                'assets/images/Patients/granma.webp',
                                             gradientone: const Color(0xFF79DF9E),
                                             gradienttwo: const Color(0xFF79DF9E),
                                             textcolor:

@@ -37,17 +37,20 @@ class _PdpaWidgetState extends State<PdpaWidget> {
     super.dispose();
   }
 
+  // Tablet (iPad) layout: wider screens get larger type and a capped
+  // content width so line length stays readable.
+  bool get _isTablet => MediaQuery.sizeOf(context).width >= 700.0;
+
   // Shared text style for the long-form policy body.
-  TextStyle _policyStyle() =>
-      FlutterFlowTheme.of(context).bodyMedium.override(
-            fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-            color: const Color(0xFF3D3D3D),
-            fontSize: 14.0,
-            letterSpacing: 0.0,
-            fontWeight: FontWeight.w400,
-            lineHeight: 1.7,
-            useGoogleFonts: !FlutterFlowTheme.of(context).bodyMediumIsCustom,
-          );
+  TextStyle _policyStyle() => FlutterFlowTheme.of(context).bodyMedium.override(
+        fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+        color: const Color(0xFF3D3D3D),
+        fontSize: _isTablet ? 16.0 : 14.0,
+        letterSpacing: 0.0,
+        fontWeight: FontWeight.w400,
+        lineHeight: 1.7,
+        useGoogleFonts: !FlutterFlowTheme.of(context).bodyMediumIsCustom,
+      );
 
   Widget _para(String text) => Padding(
         padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
@@ -167,7 +170,7 @@ class _PdpaWidgetState extends State<PdpaWidget> {
                                         fontFamily: FlutterFlowTheme.of(context)
                                             .headlineSmallFamily,
                                         color: Colors.white,
-                                        fontSize: 20.0,
+                                        fontSize: _isTablet ? 26.0 : 20.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.bold,
                                         lineHeight: 1.4,
@@ -187,7 +190,7 @@ class _PdpaWidgetState extends State<PdpaWidget> {
                                       fontFamily: FlutterFlowTheme.of(context)
                                           .bodyMediumFamily,
                                       color: Colors.black,
-                                      fontSize: 14.0,
+                                      fontSize: _isTablet ? 16.0 : 14.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w400,
                                       lineHeight: 1.7,
@@ -332,8 +335,8 @@ class _PdpaWidgetState extends State<PdpaWidget> {
                               child: Checkbox(
                                 value: _model.checkboxValue1 ??= false,
                                 onChanged: (newValue) async {
-                                  safeSetState(() =>
-                                      _model.checkboxValue1 = newValue!);
+                                  safeSetState(
+                                      () => _model.checkboxValue1 = newValue!);
                                 },
                                 side: const BorderSide(
                                   width: 1.5,
@@ -359,7 +362,7 @@ class _PdpaWidgetState extends State<PdpaWidget> {
                                         color: consented
                                             ? Colors.black
                                             : const Color(0xFF8A8F97),
-                                        fontSize: 12.0,
+                                        fontSize: _isTablet ? 14.0 : 12.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w400,
                                         lineHeight: 1.7,

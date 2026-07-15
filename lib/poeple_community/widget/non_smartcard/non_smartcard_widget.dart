@@ -104,7 +104,7 @@ class _NonSmartcardWidgetState extends State<NonSmartcardWidget> {
                               width: cardW * (42.056 / 239.0),
                               height: cardH * (53.7549 / 159.0),
                               child: Image.asset(
-                                'assets/images/cid_person.png',
+                                'assets/images/Patients/granpa.webp',
                                 fit: BoxFit.cover,
                               ),
                             ),

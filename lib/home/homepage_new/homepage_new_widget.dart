@@ -206,15 +206,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                       width: 40.0,
                       height: 40.0,
                       decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [
-                            const Color(0xFFA0D6FF),
-                            FlutterFlowTheme.of(context).primary
-                          ],
-                          stops: const [0.0, 1.0],
-                          begin: const AlignmentDirectional(0.0, -1.0),
-                          end: const AlignmentDirectional(0, 1.0),
-                        ),
+                        color: const Color(0xFF85C5F8),
                         shape: BoxShape.circle,
                         border: Border.all(
                           color:
@@ -231,7 +223,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                               shape: BoxShape.circle,
                             ),
                             child: Image.asset(
-                              'assets/images/user_avatar.jpg',
+                              'assets/images/Medical Personnel/Nurs_girl.webp',
                               fit: BoxFit.cover,
                               alignment: const Alignment(0.0, 1.0),
                               errorBuilder: (context, error, stackTrace) =>
@@ -1242,7 +1234,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                           ),
                                                     ),
                                                     Text(
-                                                      'จำนวน 7 งาน',
+                                                      'จำนวน 11 งาน',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -1282,10 +1274,10 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                           safeSetState(() {}),
                                                       child: const NewJobWidget(
                                                         img:
-                                                            'assets/images/patient_photo_1.jpg',
+                                                            'assets/images/Patients/yung_boy.webp',
                                                         mainname:
                                                             'เด็กชายพัฒนา ศรีโอพาส',
-                                                        year: '46',
+                                                        year: '12',
                                                         month: '5',
                                                         day: '23',
                                                         date: '12 ม.ค. 2569',
@@ -1301,7 +1293,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                           safeSetState(() {}),
                                                       child: const NewJobWidget(
                                                         img:
-                                                            'assets/images/patient_photo_2.jpg',
+                                                            'assets/images/Patients/boy.webp',
                                                         mainname:
                                                             'นายมโน สิริสาทร',
                                                         year: '34',
@@ -1320,7 +1312,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                           safeSetState(() {}),
                                                       child: const NewJobWidget(
                                                         img:
-                                                            'assets/images/patient_photo_3.jpg',
+                                                            'assets/images/Patients/granma.webp',
                                                         mainname:
                                                             'นางอรดี ศรีอุดมการ',
                                                         year: '78',
@@ -1337,7 +1329,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                     updateCallback: () =>
                                                         safeSetState(() {}),
                                                     child: const NewJobWidget(
-                                                      img: 'assets/images/patient_photo_4.jpg',
+                                                      img: 'assets/images/Patients/girl.webp',
                                                       mainname: 'นางสาวปิยะดา ทองอินทร์',
                                                       year: '29',
                                                       month: '2',
@@ -1353,7 +1345,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                     updateCallback: () =>
                                                         safeSetState(() {}),
                                                     child: const NewJobWidget(
-                                                      img: 'assets/images/patient_photo_5.jpg',
+                                                      img: 'assets/images/Patients/granpa.webp',
                                                       mainname: 'นายสุชาติ ภูวเดช',
                                                       year: '61',
                                                       month: '8',
@@ -1369,7 +1361,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                     updateCallback: () =>
                                                         safeSetState(() {}),
                                                     child: const NewJobWidget(
-                                                      img: 'assets/images/patient_photo_6.jpg',
+                                                      img: 'assets/images/Patients/girl.webp',
                                                       mainname: 'นางสาวกนกวรรณ ใจงาม',
                                                       year: '24',
                                                       month: '11',
@@ -1385,13 +1377,77 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                     updateCallback: () =>
                                                         safeSetState(() {}),
                                                     child: const NewJobWidget(
-                                                      img: 'assets/images/patient_photo_7.jpg',
+                                                      img: 'assets/images/Patients/papa.webp',
                                                       mainname: 'นายธนกร แสงทอง',
                                                       year: '45',
                                                       month: '3',
                                                       day: '28',
                                                       date: '15 ม.ค. 2569',
                                                       time: '15:00 น.',
+                                                      details:
+                                                          'โรคเบาหวานมีความเป็นกรดสูงมาก มีการทำให้เป็นโรคเรื้อรังทางระบบประสาทและสมอง กินยาเป็นระยะเวลานานแล้ว',
+                                                    ),
+                                                  ),
+                                                  wrapWithModel(
+                                                    model: _model.newJobModel8,
+                                                    updateCallback: () =>
+                                                        safeSetState(() {}),
+                                                    child: const NewJobWidget(
+                                                      img: 'assets/images/Patients/mama.webp',
+                                                      mainname: 'นางสุนีย์ ทองมา',
+                                                      year: '52',
+                                                      month: '6',
+                                                      day: '20',
+                                                      date: '15 ม.ค. 2569',
+                                                      time: '16:30 น.',
+                                                      details:
+                                                          'โรคเบาหวานมีความเป็นกรดสูงมาก มีการทำให้เป็นโรคเรื้อรังทางระบบประสาทและสมอง กินยาเป็นระยะเวลานานแล้ว',
+                                                    ),
+                                                  ),
+                                                  wrapWithModel(
+                                                    model: _model.newJobModel9,
+                                                    updateCallback: () =>
+                                                        safeSetState(() {}),
+                                                    child: const NewJobWidget(
+                                                      img: 'assets/images/Patients/Nurs_girl.webp',
+                                                      mainname: 'เด็กหญิงชนากานต์ ศรีสุข',
+                                                      year: '9',
+                                                      month: '4',
+                                                      day: '12',
+                                                      date: '16 ม.ค. 2569',
+                                                      time: '09:30 น.',
+                                                      details:
+                                                          'โรคเบาหวานมีความเป็นกรดสูงมาก มีการทำให้เป็นโรคเรื้อรังทางระบบประสาทและสมอง กินยาเป็นระยะเวลานานแล้ว',
+                                                    ),
+                                                  ),
+                                                  wrapWithModel(
+                                                    model: _model.newJobModel10,
+                                                    updateCallback: () =>
+                                                        safeSetState(() {}),
+                                                    child: const NewJobWidget(
+                                                      img: 'assets/images/Patients/baby_boy.webp',
+                                                      mainname: 'เด็กชายภูมิพัฒน์ ใจดี',
+                                                      year: '1',
+                                                      month: '2',
+                                                      day: '10',
+                                                      date: '16 ม.ค. 2569',
+                                                      time: '11:00 น.',
+                                                      details:
+                                                          'โรคเบาหวานมีความเป็นกรดสูงมาก มีการทำให้เป็นโรคเรื้อรังทางระบบประสาทและสมอง กินยาเป็นระยะเวลานานแล้ว',
+                                                    ),
+                                                  ),
+                                                  wrapWithModel(
+                                                    model: _model.newJobModel11,
+                                                    updateCallback: () =>
+                                                        safeSetState(() {}),
+                                                    child: const NewJobWidget(
+                                                      img: 'assets/images/Patients/baby_girl.webp',
+                                                      mainname: 'เด็กหญิงพิมพ์ลภัส ทองสุข',
+                                                      year: '1',
+                                                      month: '3',
+                                                      day: '5',
+                                                      date: '17 ม.ค. 2569',
+                                                      time: '10:00 น.',
                                                       details:
                                                           'โรคเบาหวานมีความเป็นกรดสูงมาก มีการทำให้เป็นโรคเรื้อรังทางระบบประสาทและสมอง กินยาเป็นระยะเวลานานแล้ว',
                                                     ),
@@ -1537,7 +1593,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                     return [
                                                       () => JobCard(
                                                             img:
-                                                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/4mq6lu0xx1l8/oldman1.png',
+                                                                'assets/images/Patients/granpa.webp',
                                                             mainname:
                                                                 'นายสมรชัย กุลศรีมา',
                                                             age:
@@ -1569,7 +1625,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                             child:
                                                                 const ResponJobWidget(
                                                               img:
-                                                                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/4mq6lu0xx1l8/oldman1.png',
+                                                                  'assets/images/Patients/granpa.webp',
                                                               mainname:
                                                                   'นายมังการ มุสยานา',
                                                             ),
@@ -1585,7 +1641,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                               mainname:
                                                                   'เด็กหญิงกัญญา มหานคร',
                                                               img:
-                                                                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/16ztnqju67da/student_girl.png',
+                                                                  'assets/images/Patients/Nurs_girl.webp',
                                                             ),
                                                           ),
                                                       () => wrapWithModel(
@@ -1599,7 +1655,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                               mainname:
                                                                   'นางวิมล สกุลลุนช่อง',
                                                               img:
-                                                                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/m7xdpmwhlgki/girl1.png',
+                                                                  'assets/images/Patients/mama.webp',
                                                             ),
                                                           ),
                                                     ][index]();
@@ -1740,7 +1796,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                             child:
                                                                 const LateWidget(
                                                               img:
-                                                                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/4mq6lu0xx1l8/oldman1.png',
+                                                                  'assets/images/Patients/granpa.webp',
                                                               mainname:
                                                                   'นายสกลนคร ยามาราตรี',
                                                             ),
@@ -1754,7 +1810,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                             child:
                                                                 const LateWidget(
                                                               img:
-                                                                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/m7xdpmwhlgki/girl1.png',
+                                                                  'assets/images/Patients/mama.webp',
                                                               mainname:
                                                                   'นางกรกนก นรงค์ศรี',
                                                             ),
@@ -1897,7 +1953,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                             child:
                                                                 const SuccessfullWidget(
                                                               img:
-                                                                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/tazm936iga7w/Baby_Girl.png',
+                                                                  'assets/images/Patients/baby_girl.webp',
                                                               mainname:
                                                                   'เด็กหญิงสุขาวดี ตรีสวัสดิ์',
                                                             ),
@@ -1911,7 +1967,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                             child:
                                                                 const SuccessfullWidget(
                                                               img:
-                                                                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/0a355akt4mcc/callege_Girl.png',
+                                                                  'assets/images/Patients/girl.webp',
                                                               mainname:
                                                                   'นางสาวรัตนาการ สนามฉันท์',
                                                             ),
@@ -2047,7 +2103,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                     return [
                                                       () => JobCard(
                                                             img:
-                                                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/16ztnqju67da/student_girl.png',
+                                                                'assets/images/Patients/Nurs_girl.webp',
                                                             mainname:
                                                                 'เด็กหญิงพิมพ์ชนก ใจดี',
                                                             age:
@@ -2070,7 +2126,7 @@ class _HomepageNewWidgetState extends State<HomepageNewWidget> {
                                                           ),
                                                       () => JobCard(
                                                             img:
-                                                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/4mq6lu0xx1l8/oldman1.png',
+                                                                'assets/images/Patients/granpa.webp',
                                                             mainname:
                                                                 'นายประเสริฐ ทองสุข',
                                                             age:

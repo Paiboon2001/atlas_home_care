@@ -427,8 +427,8 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                     color: const Color(0xFFE0F9FF),
                                     image: DecorationImage(
                                       fit: BoxFit.cover,
-                                      image: Image.network(
-                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/healflow-1ya11l/assets/4mq6lu0xx1l8/oldman1.png',
+                                      image: Image.asset(
+                                        'assets/images/Patients/granpa.webp',
                                       ).image,
                                     ),
                                     shape: BoxShape.circle,

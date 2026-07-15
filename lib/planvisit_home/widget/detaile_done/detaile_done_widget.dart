@@ -145,9 +145,9 @@ class _DetaileDoneWidgetState extends State<DetaileDoneWidget> {
                         decoration: BoxDecoration(
                           image: DecorationImage(
                             fit: BoxFit.cover,
-                            image: Image.network(
-                              widget.picture!,
-                            ).image,
+                            image: (widget.picture!.startsWith('http')
+                                ? NetworkImage(widget.picture!)
+                                : AssetImage(widget.picture!)) as ImageProvider,
                           ),
                           gradient: const LinearGradient(
                             colors: [Color(0xFF9ACEF6), Color(0xFF44B0FF)],

@@ -248,7 +248,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                       width: 100.0,
                       height: 100.0,
                       child: Image.asset(
-                        'assets/images/user_avatar.jpg',
+                        'assets/images/Medical Personnel/Nurs_girl.webp',
                         fit: BoxFit.cover,
                         errorBuilder: (context, error, stackTrace) =>
                             Image.asset(
@@ -288,7 +288,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    _roleChip('assets/images/set_ic_role_user.svg', 'อสม.'),
+                    _roleChip('assets/images/set_ic_role_user.svg', 'พยาบาล'),
                     Container(
                       width: 1.0,
                       height: 16.0,

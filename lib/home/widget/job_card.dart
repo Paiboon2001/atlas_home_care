@@ -81,7 +81,7 @@ class JobCard extends StatelessWidget {
                                 color: avatarColor,
                                 image: DecorationImage(
                                   fit: BoxFit.cover,
-                                  image: Image.network(img).image,
+                                  image: Image.asset(img).image,
                                 ),
                                 shape: BoxShape.circle,
                               ),

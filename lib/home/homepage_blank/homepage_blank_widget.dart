@@ -98,15 +98,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                         }
                       }(),
                       decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [
-                            const Color(0xFFA0D6FF),
-                            FlutterFlowTheme.of(context).primary
-                          ],
-                          stops: const [0.0, 1.0],
-                          begin: const AlignmentDirectional(0.0, -1.0),
-                          end: const AlignmentDirectional(0, 1.0),
-                        ),
+                        color: const Color(0xFF85C5F8),
                         shape: BoxShape.circle,
                         border: Border.all(
                           color:
@@ -123,7 +115,7 @@ class _HomepageBlankWidgetState extends State<HomepageBlankWidget> {
                               shape: BoxShape.circle,
                             ),
                             child: Image.asset(
-                              'assets/images/user_avatar.jpg',
+                              'assets/images/Medical Personnel/Nurs_girl.webp',
                               fit: BoxFit.cover,
                               alignment: const Alignment(0.0, 1.0),
                               errorBuilder: (context, error, stackTrace) =>

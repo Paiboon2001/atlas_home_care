@@ -96,7 +96,7 @@ class _SmartcardCerectWidgetState extends State<SmartcardCerectWidget> {
                     image: DecorationImage(
                       fit: BoxFit.cover,
                       image: Image.asset(
-                        'assets/images/man1.png',
+                        'assets/images/Patients/papa.webp',
                       ).image,
                     ),
                     gradient: LinearGradient(
